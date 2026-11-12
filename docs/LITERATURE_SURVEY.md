@@ -7,7 +7,7 @@ Legend — ✅ verified (title/venue/year seen online this session or earlier) �
 
 | # | Paper | Year | Data | Method / best | Metric reported | Relevance to our gap | Check |
 |---|---|---|---|---|---|---|---|
-| 1 | Ferdous, Mahmud, Ahmed, Arman, Tasnim — *Predicting Pre-Owned Bike Values with ML Techniques in Bangladesh*, 2nd IEEE ICDSNS | 2024 | Bangladesh merchant bike data | DT, SVR, KNN, SGD; DT best | "97% accuracy" (regression!) | **Base paper.** No EVs, no tax, no explanation; misuse of accuracy | ✅ abstract; get PDF |
+| 1 | Ferdous, Arman, Ahmed, Tasnim, Mahmud, Revathi — *Predicting Pre-Owned Bike Values with Machine Learning Techniques in Bangladesh*, ICDSNS 2024 (Tiptur, India), doi:10.1109/ICDSNS62112.2024.10691304 | 2024 | Bangladesh motorcycle-merchant data | DT, SVR, KNN, SGD in a "hybrid architecture"; DT best | "97% accuracy" (regression!) | **Base paper.** No EVs, no tax, no explanation; misuse of accuracy. Notes: `docs/BASE_PAPER.md` | ✅ IEEE page (full text paywalled) |
 | 2 | *Interpretable ML for Price Prediction in India's Used Two-Wheeler Market using XAI Tools* | 2025 | Indian used bikes | Tree models + SHAP/LIME | R² | Already does XAI → SHAP is *supporting*, not our novelty | ⚠️ |
 | 3 | Sathyanarayanan, K. — *Pre-Owned Bike Price Prediction Using ML*, MSc thesis, National College of Ireland | 2023 | ~5,063 Indian Kaggle listings | LR, Elastic Net, SVR, RF, XGBoost; RF & XGB best | R², RMSE | Closest prior work; no EVs, no location-tax | ✅ (norma.ncirl.ie/7264) |
 | 4 | *Used Car Price Prediction and Feature Importance Analysis Using XGBoost and SHAP* | 2025 | 7,253 Indian cars | XGBoost + SHAP | R² 0.87 | Same toolkit as ours, cars only | ⚠️ |
@@ -40,6 +40,6 @@ Legend — ✅ verified (title/venue/year seen online this session or earlier) �
 Used two-wheelers are India's largest second-hand vehicle segment, yet ML pricing research concentrates on cars. The few bike studies (Ferdous et al. 2024; Sathyanarayanan 2023; IJSTD 2024; the 2025 XAI study) use only vehicle attributes and treat location as a label. None studies electric two-wheelers, even though EV resale value is an open question for buyers and lenders, and existing EV resale work covers only cars in the US (Roberson et al. 2024). We therefore (i) build an explained XGBoost price model for Indian two-wheelers reported with proper regression metrics, and (ii) give the first same-variant comparison of EV and petrol two-wheeler depreciation in India, with (iii) a short check on whether state road tax carries into used prices.
 
 ## D. To do before submission
-- [ ] Download the full Ferdous et al. PDF from IEEE Xplore (college login) and fill in their exact dataset size and metrics.
+- [x] Base paper: cited from the IEEE Xplore page (full text paywalled); we replicate its four algorithms on our data instead (Colab Module 4).
 - [ ] Confirm years for rows marked ⚠️ (open each PDF's first page).
 - [ ] Optionally swap rows 8-10 (2022) for two 2026 papers listed above.

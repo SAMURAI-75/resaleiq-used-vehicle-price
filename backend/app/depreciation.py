@@ -4,10 +4,12 @@ The Kaggle data (2020-21) has only motorcycles that existed then: no scooters, n
 Those vehicles are priced from their official 2026 new price (BikeWale / CarWale) and a measured
 yearly value loss:
 
-  Two-wheelers - Module 6 same-variant regression, 5,694 BikeWale ads, Nov 2026
-      petrol motorcycles  -6.4 %/yr      petrol scooters  -8.5 %/yr
-      EVs (non-Ola)       -7.3 %/yr      Ola               -12.0 %/yr
-      median value kept under 1 year: petrol 87 %, other EVs 88 %, Ola 78 %
+  Two-wheelers - same-variant regression on 30,527 BikeWale ads collected 12 Nov 2026 (ages <= 7,
+      variant + city fixed effects, SEs clustered by variant; Colab Module 7):
+      petrol motorcycles  -6.1 %/yr (16,378 ads)    petrol scooters  -7.6 %/yr (2,789 ads)
+      EVs, all brands     -12.0 %/yr (847 ads; EV - petrol = -5.7 pts, p = 0.001)
+      Which EV brand drives the gap is NOT stable (Ola was steepest in the 5 Nov collection, flatter on 12 Nov),
+      so one pooled EV rate is used. Starting value (drive-off) from the 5 Nov under-1-year medians.
   Cars - same-model fit on 2,720 CarDekho listings of 55 models still on sale (train.py: car_value_curve)
 
   used price = new on-road price x start x (1 - loss)^age x km factor x owner factor
@@ -17,10 +19,10 @@ import math
 from .road_tax import road_tax_rate
 
 TWO_WHEELER = {
-    "ola":        {"start": 0.83, "loss": 0.120, "label": "Ola scooters"},
-    "ev":         {"start": 0.91, "loss": 0.073, "label": "EVs other than Ola"},
-    "scooter":    {"start": 0.90, "loss": 0.085, "label": "petrol scooters"},
-    "motorcycle": {"start": 0.90, "loss": 0.064, "label": "petrol motorcycles"},
+    "ola":        {"start": 0.88, "loss": 0.120, "label": "electric two-wheelers"},
+    "ev":         {"start": 0.88, "loss": 0.120, "label": "electric two-wheelers"},
+    "scooter":    {"start": 0.90, "loss": 0.076, "label": "petrol scooters"},
+    "motorcycle": {"start": 0.90, "loss": 0.061, "label": "petrol motorcycles"},
 }
 OWNER_FACTOR = {1: 1.0, 2: 0.95, 3: 0.91, 4: 0.88}
 OWNER_WORD = {1: "first", 2: "second", 3: "third", 4: "fourth-or-later"}
@@ -70,7 +72,7 @@ def predict_2w(brand, info, exs, age, km, owners, state, kwh=None):
         {"feature": "Drive-off drop", "value": f"keeps {r['start']*100:.0f}%", "effect": round((r["start"] - 1) * 100, 1),
          "note": "Median value kept by used ads under one year old (BikeWale, Nov 2026)."},
         {"feature": "Age", "value": f"{age:g} yr", "effect": round((age_f - 1) * 100, 1),
-         "note": f"{r['label'].capitalize()} lose about {r['loss']*100:.1f}% a year (same-variant regression, Module 6)."},
+         "note": f"{r['label'].capitalize()} lose about {r['loss']*100:.1f}% a year (same-variant regression on 30,527 BikeWale ads, Nov 2026)."},
         {"feature": "Kilometres", "value": f"{km:,.0f} km", "effect": round((km_f - 1) * 100, 1),
          "note": f"Compared with a typical {expected:,.0f} km at this age (assumption: 2% per extra 10,000 km)."},
         {"feature": "Owners", "value": OWNER_WORD.get(owners, str(owners)), "effect": round((own_f - 1) * 100, 1),
@@ -87,7 +89,7 @@ def predict_2w(brand, info, exs, age, km, owners, state, kwh=None):
     out = {"price": round(price, -2), "low": round(price * 0.9, -2), "high": round(price * 1.1, -2),
            "new_price": round(new_on_road, -2), "value_kept": round(price / new_on_road * 100, 1),
            "factors": factors, "curve": curve, "rate_key": key,
-           "range_note": "Range = ±10%. Depreciation rates come from 5,694 BikeWale ads; the EV sample is small (424 ads)."}
+           "range_note": "Range = ±10%. Depreciation rates come from 30,527 BikeWale ads (Nov 2026); EV rate from 847 EV ads."}
     if electric:
         k = kwh or info.get("kwh_est") or 3.0
         out["battery_health"] = round(battery_health(age, km, k), 1)

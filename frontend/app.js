@@ -98,9 +98,9 @@ function lineChart(svg, series, { xLabel = (x) => x, yLabel = (y) => y, yMin, yM
 function drawFindings() {
   const mk = (start, loss) => Array.from({ length: 8 }, (_, a) => ({ x: a, y: start * Math.pow(1 - loss, a) * 100 }));
   lineChart($("#findChart"), [
-    { points: mk(0.90, 0.069), color: "var(--petrol)" },
-    { points: mk(0.91, 0.073), color: "var(--ev)" },
-    { points: mk(0.83, 0.12), color: "var(--ola)" },
+    { points: mk(0.90, 0.061), color: "var(--petrol)" },
+    { points: mk(0.90, 0.076), color: "var(--ola)" },
+    { points: mk(0.88, 0.12), color: "var(--ev)" },
   ], { xLabel: (x) => `${x}y`, yLabel: (y) => `${Math.round(y)}%`, yMin: 30, yMax: 100 });
 }
 const fc = $("#findChart");
@@ -262,7 +262,7 @@ function show(d, first, m) {
   const minis = [];
   if (isMl) {
     minis.push(["Age", d.age + " yr"]);
-    minis.push(d.similar ? [`Similar ads (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
+    minis.push(d.similar ? [`Similar ${d.similar.year === 2026 ? "2026 " : ""}ads (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
     minis.push(d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
   } else {
     minis.push(["Value kept", d.value_kept + "%"]);
@@ -301,7 +301,7 @@ function show(d, first, m) {
 
   const money = (y) => y >= 1e5 ? `₹${(y / 1e5).toFixed(1)}L` : `₹${Math.round(y / 1e3)}k`;
   if (isEv) {
-    const col = F.brand.value === "OLA" ? "var(--ola)" : "var(--ev)";
+    const col = "var(--ev)";
     $("#curveIntro").textContent = "Share of the new on-road price kept, by age — this EV vs a petrol two-wheeler of the same type.";
     lineChart($("#curveChart"), [
       { points: d.curve.map((c) => ({ x: c.age, y: c.petrol })), color: "var(--petrol)", dash: true },

@@ -1,0 +1,542 @@
+brand,model,type,fuel,cc,new_price,on_sale
+Royal Enfield,Bear 650,motorcycle,petrol,648.0,378208.0,True
+Royal Enfield,Bullet 350,motorcycle,petrol,349.0,166981.0,True
+Royal Enfield,Bullet 650,motorcycle,petrol,647.95,364856.0,True
+Royal Enfield,Classic 350,motorcycle,petrol,349.0,188934.0,True
+Royal Enfield,Classic 650,motorcycle,petrol,647.95,367592.0,True
+Royal Enfield,Continental GT 650,motorcycle,petrol,648.0,358427.0,True
+Royal Enfield,Flying Flea C6,motorcycle,electric,,279000.0,True
+Royal Enfield,Goan Classic 350,motorcycle,petrol,349.0,227114.0,True
+Royal Enfield,Guerrilla 450,motorcycle,petrol,452.0,251063.0,True
+Royal Enfield,Himalayan 440,motorcycle,petrol,443.0,229900.0,True
+Royal Enfield,Himalayan 450,motorcycle,petrol,451.65,308029.0,True
+Royal Enfield,Hunter 350,motorcycle,petrol,349.34,137640.0,True
+Royal Enfield,Interceptor 650,motorcycle,petrol,648.0,337909.0,True
+Royal Enfield,Meteor 350,motorcycle,petrol,349.34,201052.0,True
+Royal Enfield,Scram 440,motorcycle,petrol,443.0,224381.0,True
+Royal Enfield,Shotgun 650,motorcycle,petrol,648.0,401002.0,True
+Royal Enfield,Super Meteor 650,motorcycle,petrol,648.0,405988.0,True
+Royal Enfield,Bullet 500,motorcycle,petrol,,,False
+Royal Enfield,Classic 500,motorcycle,petrol,,,False
+Royal Enfield,Continental GT,motorcycle,petrol,,,False
+Royal Enfield,Electra,motorcycle,petrol,,,False
+Royal Enfield,Himalayan,motorcycle,petrol,,,False
+Royal Enfield,Thunderbird 350,motorcycle,petrol,,,False
+Royal Enfield,Thunderbird 350X,motorcycle,petrol,,,False
+Royal Enfield,Thunderbird 500,motorcycle,petrol,,,False
+Royal Enfield,Thunderbird 500X,motorcycle,petrol,,,False
+TVS,Apache RR 310,motorcycle,petrol,312.2,266179.0,True
+TVS,Apache RTR 160,motorcycle,petrol,159.7,110528.0,True
+TVS,Apache RTR 160 4V,motorcycle,petrol,159.7,116488.0,True
+TVS,Apache RTR 180,motorcycle,petrol,177.4,128078.0,True
+TVS,Apache RTR 200 4V,motorcycle,petrol,197.75,138404.0,True
+TVS,Apache RTR 310,motorcycle,petrol,312.12,229990.0,True
+TVS,Apache RTX,motorcycle,petrol,299.0,199496.0,True
+TVS,Jupiter,scooter,petrol,113.3,77349.0,True
+TVS,Jupiter 125,scooter,petrol,124.8,87854.0,True
+TVS,Ntorq 125,scooter,petrol,124.8,91060.0,True
+TVS,Ntorq 150,scooter,petrol,149.7,112931.0,True
+TVS,Orbiter,scooter,electric,,102461.0,True
+TVS,Radeon,motorcycle,petrol,109.7,73709.0,True
+TVS,Raider 125,motorcycle,petrol,124.8,86939.0,True
+TVS,Ronin,motorcycle,petrol,225.9,130809.0,True
+TVS,Sport,motorcycle,petrol,109.7,65707.0,True
+TVS,Star City Plus,motorcycle,petrol,109.7,72016.0,True
+TVS,X,scooter,electric,,264842.0,True
+TVS,XL 100 Comfort,moped,petrol,99.7,60348.0,True
+TVS,XL 100 Heavy Duty,moped,petrol,99.7,47932.0,True
+TVS,Zest 110,scooter,petrol,109.7,70570.0,True
+TVS,iQube,scooter,electric,,119547.0,True
+TVS,Apache,motorcycle,petrol,,,False
+TVS,Flame,motorcycle,petrol,,,False
+TVS,Jive,motorcycle,petrol,,,False
+TVS,Phoenix,motorcycle,petrol,,,False
+TVS,Victor,motorcycle,petrol,,,False
+Honda,ADV 160,scooter,petrol,156.9,170000.0,True
+Honda,Activa,scooter,petrol,109.51,78947.0,True
+Honda,Activa 125,scooter,petrol,123.92,92794.0,True
+Honda,Activa e,scooter,electric,,120133.0,True
+Honda,CB 125 Hornet,motorcycle,petrol,123.94,115324.0,True
+Honda,CB1000 Hornet,motorcycle,petrol,999.0,1329390.0,True
+Honda,CB350,motorcycle,petrol,348.36,195608.0,True
+Honda,CB350C,motorcycle,petrol,348.36,200300.0,True
+Honda,CB350RS,motorcycle,petrol,348.36,199900.0,True
+Honda,CB500,motorcycle,petrol,501.0,275000.0,True
+Honda,CB750 Hornet,motorcycle,petrol,755.0,1049000.0,True
+Honda,CBR1000RR-R Fireblade,motorcycle,petrol,1000.0,3350000.0,True
+Honda,Dio,scooter,petrol,109.51,75080.0,True
+Honda,Dio 125,scooter,petrol,123.92,94277.0,True
+Honda,Goldwing,motorcycle,petrol,1833.0,4430000.0,True
+Honda,Hornet 2.0,motorcycle,petrol,184.4,150312.0,True
+Honda,Livo,motorcycle,petrol,109.51,81028.0,True
+Honda,NX200,motorcycle,petrol,184.4,161301.0,True
+Honda,NX500,motorcycle,petrol,471.0,743900.0,True
+Honda,QC1,scooter,electric,,90708.0,True
+Honda,QC3,scooter,electric,,135000.0,True
+Honda,Rebel 300,motorcycle,petrol,286.0,222000.0,True
+Honda,SP 125,motorcycle,petrol,123.94,91374.0,True
+Honda,SP160,motorcycle,petrol,162.71,118563.0,True
+Honda,Shine,motorcycle,petrol,123.94,84366.0,True
+Honda,Shine 100,motorcycle,petrol,98.98,65970.0,True
+Honda,Transalp XL750,motorcycle,petrol,755.0,1320000.0,True
+Honda,Unicorn,motorcycle,petrol,162.71,115835.0,True
+Honda,XR300 Rally,motorcycle,petrol,293.5,199900.0,True
+Honda,XR300L,motorcycle,petrol,293.5,183000.0,True
+Honda,CB Hornet 160R,motorcycle,petrol,,,False
+Honda,CB Trigger,motorcycle,petrol,,,False
+Honda,CB Twister,motorcycle,petrol,,,False
+Honda,CB Unicorn 150,motorcycle,petrol,,,False
+Honda,CB Unicorn 160,motorcycle,petrol,,,False
+Honda,CBF Stunner,motorcycle,petrol,,,False
+Honda,CBR150 R,motorcycle,petrol,,,False
+Honda,CBR250R,motorcycle,petrol,,,False
+Honda,CD 110 Dream,motorcycle,petrol,,,False
+Honda,Dream Neo,motorcycle,petrol,,,False
+Honda,Dream Yuga,motorcycle,petrol,,,False
+Honda,X-Blade,motorcycle,petrol,,,False
+Bajaj,Avenger Cruise 220,motorcycle,petrol,220.0,135145.0,True
+Bajaj,Avenger Street 220,motorcycle,petrol,220.0,135085.0,True
+Bajaj,CT 110,motorcycle,petrol,115.45,74859.0,True
+Bajaj,Chetak,scooter,electric,,120237.0,True
+Bajaj,Chetak C25,scooter,electric,,104600.0,True
+Bajaj,Dominar 250,motorcycle,petrol,248.8,186839.0,True
+Bajaj,Dominar 400,motorcycle,petrol,349.13,209531.0,True
+Bajaj,Freedom,motorcycle,cng,125.0,104243.0,True
+Bajaj,Platina 100,motorcycle,petrol,99.59,71033.0,True
+Bajaj,Platina 110,motorcycle,petrol,115.45,75770.0,True
+Bajaj,Pulsar 125,motorcycle,petrol,124.58,94490.0,True
+Bajaj,Pulsar 150,motorcycle,petrol,149.5,116355.0,True
+Bajaj,Pulsar 180,motorcycle,petrol,178.61,122911.0,True
+Bajaj,Pulsar 220F,motorcycle,petrol,220.0,140602.0,True
+Bajaj,Pulsar N125,motorcycle,petrol,124.58,93694.0,True
+Bajaj,Pulsar N160 2V,motorcycle,petrol,164.82,123007.0,True
+Bajaj,Pulsar N160 4V,motorcycle,petrol,164.5,135483.0,True
+Bajaj,Pulsar N250,motorcycle,petrol,249.0,145485.0,True
+Bajaj,Pulsar N250 SS,motorcycle,petrol,249.0,159406.0,True
+Bajaj,Pulsar NS125,motorcycle,petrol,124.45,94043.0,True
+Bajaj,Pulsar NS160,motorcycle,petrol,160.3,126804.0,True
+Bajaj,Pulsar NS200,motorcycle,petrol,199.5,139314.0,True
+Bajaj,Pulsar NS400Z,motorcycle,petrol,349.13,191358.0,True
+Bajaj,Pulsar RS 200,motorcycle,petrol,199.5,181960.0,True
+Bajaj,Avenger,motorcycle,petrol,,,False
+Bajaj,Avenger Street 150,motorcycle,petrol,,,False
+Bajaj,Avenger Street 160,motorcycle,petrol,,,False
+Bajaj,Avenger Street 180,motorcycle,petrol,,,False
+Bajaj,Boxer,motorcycle,petrol,,,False
+Bajaj,CT 100,motorcycle,petrol,,,False
+Bajaj,Discover 100,motorcycle,petrol,,,False
+Bajaj,Discover 110,motorcycle,petrol,,,False
+Bajaj,Discover 125,motorcycle,petrol,,,False
+Bajaj,Discover 135,motorcycle,petrol,,,False
+Bajaj,Discover 150,motorcycle,petrol,,,False
+Bajaj,Pulsar 135 LS,motorcycle,petrol,,,False
+Bajaj,Pulsar 200,motorcycle,petrol,,,False
+Bajaj,Pulsar AS150,motorcycle,petrol,,,False
+Bajaj,Pulsar AS200,motorcycle,petrol,,,False
+Bajaj,V12,motorcycle,petrol,,,False
+Bajaj,V15,motorcycle,petrol,,,False
+Bajaj,Xcd,motorcycle,petrol,,,False
+Hero,Destini 110,scooter,petrol,110.9,76400.0,True
+Hero,Destini 125,scooter,petrol,124.6,82424.0,True
+Hero,Destini Prime,scooter,petrol,124.6,78323.0,True
+Hero,Glamour,motorcycle,petrol,124.7,85628.0,True
+Hero,Glamour X 125,motorcycle,petrol,124.7,90401.0,True
+Hero,HF Deluxe,motorcycle,petrol,97.2,58671.0,True
+Hero,HF Deluxe Flex Fuel,motorcycle,petrol,97.2,69907.0,True
+Hero,Karizma XMR,motorcycle,petrol,210.0,186771.0,True
+Hero,Passion Plus,motorcycle,petrol,97.2,81048.0,True
+Hero,Pleasure Plus,scooter,petrol,110.9,70920.0,True
+Hero,Pleasure Plus Xtec,scooter,petrol,110.9,78504.0,True
+Hero,Splendor Plus,motorcycle,petrol,97.2,77813.0,True
+Hero,Splendor Plus Flex Fuel,motorcycle,petrol,97.2,81984.0,True
+Hero,Splendor Plus Xtec,motorcycle,petrol,97.2,82582.0,True
+Hero,Super Splendor Xtec,motorcycle,petrol,124.7,84510.0,True
+Hero,Super Splendor Xtec 2.0,motorcycle,petrol,124.7,86507.0,True
+Hero,Xoom 110,scooter,petrol,110.9,78922.0,True
+Hero,Xoom 125,scooter,petrol,124.6,86870.0,True
+Hero,Xoom 160,scooter,petrol,156.0,144430.0,True
+Hero,Xpulse 200 4V,motorcycle,petrol,199.6,149482.0,True
+Hero,Xpulse 210,motorcycle,petrol,210.0,168227.0,True
+Hero,Xtreme 125R,motorcycle,petrol,124.7,92865.0,True
+Hero,Xtreme 160R,motorcycle,petrol,163.2,113653.0,True
+Hero,Xtreme 160R 4V,motorcycle,petrol,163.0,127000.0,True
+Hero,Xtreme 250R,motorcycle,petrol,249.03,184000.0,True
+Hero,Achiever 150,motorcycle,petrol,,,False
+Hero,CBZ,motorcycle,petrol,,,False
+Hero,CD Dawn,motorcycle,petrol,,,False
+Hero,CD Deluxe,motorcycle,petrol,,,False
+Hero,Hunk,motorcycle,petrol,,,False
+Hero,Ignitor,motorcycle,petrol,,,False
+Hero,Karizma,motorcycle,petrol,,,False
+Hero,Karizma ZMR,motorcycle,petrol,,,False
+Hero,Passion Pro,motorcycle,petrol,,,False
+Hero,Passion XPro,motorcycle,petrol,,,False
+Hero,Splendor NXG,motorcycle,petrol,,,False
+Hero,Splendor PRO,motorcycle,petrol,,,False
+Hero,Splendor iSmart,motorcycle,petrol,,,False
+Hero,Super Splendor,motorcycle,petrol,,,False
+Hero,Xtreme,motorcycle,petrol,,,False
+Hero,Xtreme 200R,motorcycle,petrol,,,False
+Hero,Xtreme Sports,motorcycle,petrol,,,False
+Yamaha,Aerox 155,scooter,petrol,155.0,146265.0,True
+Yamaha,Aerox E,scooter,electric,,281648.0,True
+Yamaha,EC 06,scooter,electric,,173062.0,True
+Yamaha,FZ Blue Flex,motorcycle,petrol,149.0,126102.0,True
+Yamaha,FZ FI,motorcycle,petrol,149.0,116361.0,True
+Yamaha,FZ Rave,motorcycle,petrol,149.0,125643.0,True
+Yamaha,FZ S Hybrid,motorcycle,petrol,149.0,141761.0,True
+Yamaha,FZ X,motorcycle,petrol,149.0,126538.0,True
+Yamaha,FZ X Hybrid,motorcycle,petrol,149.0,145967.0,True
+Yamaha,FZS FI V4,motorcycle,petrol,149.0,120404.0,True
+Yamaha,Fascino 125,scooter,petrol,125.0,81255.0,True
+Yamaha,MT 15 V2,motorcycle,petrol,155.0,166582.0,True
+Yamaha,R15 V4,motorcycle,petrol,155.0,175691.0,True
+Yamaha,R15S,motorcycle,petrol,155.0,160025.0,True
+Yamaha,R2,motorcycle,petrol,204.0,231496.0,True
+Yamaha,Ray ZR 125,scooter,petrol,125.0,82683.0,True
+Yamaha,XSR 155,motorcycle,petrol,155.0,150957.0,True
+Yamaha,FZ S,motorcycle,petrol,,,False
+Yamaha,FZ V 2.0,motorcycle,petrol,,,False
+Yamaha,FZ16,motorcycle,petrol,,,False
+Yamaha,FZ25,motorcycle,petrol,,,False
+Yamaha,Fazer,motorcycle,petrol,,,False
+Yamaha,Fazer 25,motorcycle,petrol,,,False
+Yamaha,Gladiator,motorcycle,petrol,,,False
+Yamaha,MT 15,motorcycle,petrol,,,False
+Yamaha,SS 125,motorcycle,petrol,,,False
+Yamaha,SZ-RR,motorcycle,petrol,,,False
+Yamaha,Saluto,motorcycle,petrol,,,False
+Yamaha,YZF R1,motorcycle,petrol,,,False
+Yamaha,YZF R15,motorcycle,petrol,,,False
+Yamaha,YZF R15 V3,motorcycle,petrol,,,False
+Yamaha,YZF R3,motorcycle,petrol,,,False
+KTM,1290 Super Adventure S,motorcycle,petrol,1301.0,2273900.0,True
+KTM,1390 Super Duke R,motorcycle,petrol,1350.0,2295800.0,True
+KTM,160 Duke,motorcycle,petrol,164.2,183581.0,True
+KTM,200 Duke,motorcycle,petrol,199.5,206518.0,True
+KTM,250 Adventure,motorcycle,petrol,248.76,253621.0,True
+KTM,250 Duke,motorcycle,petrol,249.07,227635.0,True
+KTM,250 SX-F,motorcycle,petrol,249.9,958000.0,True
+KTM,350 EXC-F,motorcycle,petrol,349.7,1295800.0,True
+KTM,390 Adventure,motorcycle,petrol,349.32,289222.0,True
+KTM,390 Adventure R,motorcycle,petrol,398.7,387868.0,True
+KTM,390 Adventure S,motorcycle,petrol,398.63,406746.0,True
+KTM,390 Adventure X,motorcycle,petrol,398.63,351195.0,True
+KTM,390 Duke,motorcycle,petrol,349.32,286987.0,True
+KTM,390 Duke R,motorcycle,petrol,398.63,348626.0,True
+KTM,390 Enduro R,motorcycle,petrol,398.63,339259.0,True
+KTM,450 SX-F,motorcycle,petrol,449.9,1025100.0,True
+KTM,50 SX,motorcycle,petrol,49.9,475000.0,True
+KTM,65 SX,motorcycle,petrol,64.9,546500.0,True
+KTM,85 SX,motorcycle,petrol,84.9,669000.0,True
+KTM,890 Adventure R,motorcycle,petrol,889.0,1580000.0,True
+KTM,890 Duke R,motorcycle,petrol,889.0,1450000.0,True
+KTM,RC 160,motorcycle,petrol,164.2,201014.0,True
+KTM,RC 200,motorcycle,petrol,199.5,232714.0,True
+KTM,RC 390,motorcycle,petrol,373.27,333532.0,True
+KTM,125 Duke,motorcycle,petrol,,,False
+KTM,RC 125,motorcycle,petrol,,,False
+Triumph,Bonneville Bobber,motorcycle,petrol,1200.0,1351600.0,True
+Triumph,Bonneville Speedmaster,motorcycle,petrol,1200.0,1351600.0,True
+Triumph,Bonneville T100,motorcycle,petrol,900.0,1085400.0,True
+Triumph,Bonneville T120,motorcycle,petrol,1200.0,1217000.0,True
+Triumph,Bonneville T40,motorcycle,petrol,349.0,255167.0,True
+Triumph,Daytona 660,motorcycle,petrol,660.0,988400.0,True
+Triumph,Rocket 3,motorcycle,petrol,2458.0,2403100.0,True
+Triumph,Scrambler,motorcycle,petrol,1200.0,1264100.0,True
+Triumph,Scrambler 400 X,motorcycle,petrol,349.0,266312.0,True
+Triumph,Scrambler 400 XC,motorcycle,petrol,349.0,300800.0,True
+Triumph,Scrambler 900,motorcycle,petrol,900.0,1074700.0,True
+Triumph,Speed 400,motorcycle,petrol,349.0,235484.0,True
+Triumph,Speed T4,motorcycle,petrol,349.0,210278.0,True
+Triumph,Speed Triple 1200 RS,motorcycle,petrol,1160.0,2175900.0,True
+Triumph,Speed Twin,motorcycle,petrol,1200.0,1383800.0,True
+Triumph,Speed Twin 1200 Cafe Racer Edition,motorcycle,petrol,1200.0,1799000.0,True
+Triumph,Speed Twin 1200 TFC,motorcycle,petrol,1200.0,2099000.0,True
+Triumph,Speed Twin 900,motorcycle,petrol,900.0,971300.0,True
+Triumph,Street Triple R,motorcycle,petrol,765.0,1116300.0,True
+Triumph,Street Triple RS,motorcycle,petrol,765.0,1322800.0,True
+Triumph,Street Triple RX,motorcycle,petrol,765.0,1390600.0,True
+Triumph,Thruxton 400,motorcycle,petrol,349.0,276655.0,True
+Triumph,Tiger,motorcycle,petrol,1160.0,1939000.0,True
+Triumph,Tiger 900,motorcycle,petrol,888.0,1440000.0,True
+Triumph,Tiger 900 Alpine Edition,motorcycle,petrol,888.0,1535000.0,True
+Triumph,Tiger 900 Desert Edition,motorcycle,petrol,888.0,1605000.0,True
+Triumph,Tiger Sport 660,motorcycle,petrol,660.0,945000.0,True
+Triumph,Tracker 400,motorcycle,petrol,349.0,243248.0,True
+Triumph,Trident 660,motorcycle,petrol,660.0,899000.0,True
+Triumph,Street Triple 765,motorcycle,petrol,,,False
+Ampere,Magnus G Max,scooter,electric,,102999.0,True
+Ampere,Magnus Neo,scooter,electric,,90999.0,True
+Ampere,Nexus,scooter,electric,,129999.0,True
+Ampere,Reo,scooter,electric,,71999.0,True
+Aprilia,RS 457,motorcycle,petrol,457.0,433410.0,True
+Aprilia,RS 660,motorcycle,petrol,659.0,1895878.0,True
+Aprilia,RSV4 1100 Factory,motorcycle,petrol,1099.0,3340763.0,True
+Aprilia,SR 125,scooter,petrol,124.45,113315.0,True
+Aprilia,SR 160,scooter,petrol,160.03,121428.0,True
+Aprilia,SR 175,scooter,petrol,174.7,125797.0,True
+Aprilia,SXR GT 125 hp-e,scooter,petrol,124.45,110000.0,True
+Aprilia,SXR GT 175 hp-e,scooter,petrol,174.7,130000.0,True
+Aprilia,Storm 125,scooter,petrol,124.45,118925.0,True
+Aprilia,Tuareg 660,motorcycle,petrol,659.0,2014504.0,True
+Aprilia,Tuono 457,motorcycle,petrol,457.0,406169.0,True
+Aprilia,Tuono 660,motorcycle,petrol,659.0,1863817.0,True
+Ather,450 Apex,scooter,electric,,196278.0,True
+Ather,450S,scooter,electric,,130307.0,True
+Ather,450X,scooter,electric,,150512.0,True
+Ather,Konarc,scooter,electric,,101217.0,True
+Ather,Rizta,scooter,electric,,121147.0,True
+Avore,EX1,motorcycle,electric,,124999.0,True
+Avore,EX2,motorcycle,electric,,149999.0,True
+Avore,EX2S,motorcycle,electric,,169999.0,True
+Benelli,502C,motorcycle,petrol,500.0,580000.0,True
+Benelli,Leoncino 500,motorcycle,petrol,500.0,560000.0,True
+Benelli,TRK 552,motorcycle,petrol,554.0,722485.0,True
+Benelli,TRK 552X,motorcycle,petrol,554.0,774485.0,True
+Benelli,TNT 300,motorcycle,petrol,,,False
+Benelli,TNT600i,motorcycle,petrol,,,False
+BGauss,BG RUV 350,scooter,electric,,146990.0,True
+BGauss,C12,scooter,electric,,109990.0,True
+BGauss,C12 MaxR,scooter,electric,,159990.0,True
+BGauss,Oowah,scooter,electric,,96990.0,True
+BMW,C 400 GT,scooter,petrol,350.0,1150000.0,True
+BMW,CE 02,scooter,electric,,449900.0,True
+BMW,CE 04,scooter,electric,,1525000.0,True
+BMW,F 450 GS,motorcycle,petrol,420.0,535000.0,True
+BMW,F 900 GS,motorcycle,petrol,895.0,1600000.0,True
+BMW,F 900 GS Adventure,motorcycle,petrol,895.0,1750000.0,True
+BMW,G310 RR,motorcycle,petrol,312.12,290000.0,True
+BMW,K,motorcycle,petrol,1649.0,3800000.0,True
+BMW,M 1000 R,motorcycle,petrol,999.0,3350000.0,True
+BMW,R 12,motorcycle,petrol,1170.0,2250000.0,True
+BMW,R 12 nine T,motorcycle,petrol,1170.0,2350000.0,True
+BMW,R 1300 GS,motorcycle,petrol,1300.0,2350000.0,True
+BMW,R 1300 GS Adventure,motorcycle,petrol,1300.0,2650000.0,True
+BMW,S 1000 R,motorcycle,petrol,999.0,2225000.0,True
+BMW,S1000RR,motorcycle,petrol,999.0,2375000.0,True
+BMW,G 310 R,motorcycle,petrol,,,False
+Bounce,Infinity E1,scooter,electric,,115605.0,True
+Brixton Motorcycles,Cromwell,motorcycle,petrol,1222.0,823778.0,True
+Brixton Motorcycles,Cromwell 1200 X,motorcycle,petrol,1222.0,973819.0,True
+Brixton Motorcycles,Crossfire 500 X,motorcycle,petrol,486.0,497277.0,True
+Brixton Motorcycles,Crossfire 500 XC,motorcycle,petrol,486.0,399999.0,True
+BSA,Gold Star 650,motorcycle,petrol,652.0,344242.0,True
+BSA,Scrambler 650,motorcycle,petrol,652.0,327244.0,True
+Ducati,DesertX,motorcycle,petrol,937.0,1959200.0,True
+Ducati,Desmo450 EDX,motorcycle,petrol,449.6,1855000.0,True
+Ducati,Desmo450 MX,motorcycle,petrol,449.6,1723600.0,True
+Ducati,Desmo450 MX Factory,motorcycle,petrol,449.6,2126000.0,True
+Ducati,Diavel V4,motorcycle,petrol,1158.0,2966000.0,True
+Ducati,Formula 73,motorcycle,petrol,803.0,2000000.0,True
+Ducati,Hypermotard 698 Mono,motorcycle,petrol,659.0,1799000.0,True
+Ducati,Hypermotard 950,motorcycle,petrol,937.0,1710500.0,True
+Ducati,Hypermotard V2,motorcycle,petrol,890.0,1653000.0,True
+Ducati,Monster,motorcycle,petrol,890.0,1399000.0,True
+Ducati,Multistrada V2,motorcycle,petrol,890.0,1926000.0,True
+Ducati,Multistrada V4,motorcycle,petrol,1158.0,2506000.0,True
+Ducati,Multistrada V4 RS,motorcycle,petrol,1103.0,4346700.0,True
+Ducati,Multistrada V4 Rally,motorcycle,petrol,1158.0,3240000.0,True
+Ducati,Panigale V2,motorcycle,petrol,890.0,1951000.0,True
+Ducati,Panigale V4,motorcycle,petrol,1103.0,3270000.0,True
+Ducati,Panigale V4 Lamborghini,motorcycle,petrol,1103.0,10000000.0,True
+Ducati,Panigale V4 R,motorcycle,petrol,998.0,8499000.0,True
+Ducati,Scrambler Full Throttle,motorcycle,petrol,803.0,1374000.0,True
+Ducati,Scrambler Icon,motorcycle,petrol,803.0,1087000.0,True
+Ducati,Scrambler Nightshift,motorcycle,petrol,803.0,1346600.0,True
+Ducati,Streetfighter V2,motorcycle,petrol,890.0,1786000.0,True
+Ducati,Streetfighter V4,motorcycle,petrol,1103.0,2926000.0,True
+Ducati,SuperSport,motorcycle,petrol,937.0,1716100.0,True
+Ducati,XDiavel V4,motorcycle,petrol,1158.0,3151000.0,True
+Ducati,959 Panigale,motorcycle,petrol,,,False
+Ducati,Monster 797,motorcycle,petrol,,,False
+E3 Electric,E3 Trion,scooter,electric,,99999.0,True
+Evolet,Derby,scooter,electric,,78999.0,True
+Evolet,Pony,scooter,electric,,59999.0,True
+Ferrato,FEV 650,motorcycle,electric,,174339.0,True
+Gemopai,Astrid Lite,scooter,electric,,111195.0,True
+Gemopai,Ryder,scooter,electric,,70850.0,True
+Gemopai,Ryder SuperMax,scooter,electric,,79999.0,True
+Harley-Davidson,Breakout,motorcycle,petrol,1923.0,3436000.0,True
+Harley-Davidson,Fat Bob,motorcycle,petrol,1868.0,2296641.0,True
+Harley-Davidson,Fat Boy,motorcycle,petrol,1868.0,2803000.0,True
+Harley-Davidson,Heritage Classic,motorcycle,petrol,1868.0,2571000.0,True
+Harley-Davidson,Nightster,motorcycle,petrol,975.0,1454000.0,True
+Harley-Davidson,Nightster Special,motorcycle,petrol,975.0,1538000.0,True
+Harley-Davidson,PAN America 1250 Special,motorcycle,petrol,1252.0,2716000.0,True
+Harley-Davidson,Road Glide,motorcycle,petrol,1923.0,4575000.0,True
+Harley-Davidson,Sportster S,motorcycle,petrol,1252.0,1805000.0,True
+Harley-Davidson,Street Bob,motorcycle,petrol,1923.0,2023000.0,True
+Harley-Davidson,Street Glide,motorcycle,petrol,1923.0,4250000.0,True
+Harley-Davidson,X440,motorcycle,petrol,440.0,235000.0,True
+Harley-Davidson,X440 T,motorcycle,petrol,440.0,286000.0,True
+Harley-Davidson,1200 Custom,motorcycle,petrol,,,False
+Harley-Davidson,Iron 883,motorcycle,petrol,,,False
+Harley-Davidson,Street 750,motorcycle,petrol,,,False
+Hop Electric,LEO,scooter,electric,,84360.0,True
+Hop Electric,OXO,motorcycle,electric,,133999.0,True
+Husqvarna,Svartpilen 401,motorcycle,petrol,398.63,300369.0,True
+Husqvarna,Vitpilen 250,motorcycle,petrol,249.0,227769.0,True
+Indian,101 Scout,motorcycle,petrol,1250.0,1708855.0,True
+Indian,Chief Bobber Dark Horse,motorcycle,petrol,1890.0,2286943.0,True
+Indian,Chief Dark Horse,motorcycle,petrol,1890.0,2158779.0,True
+Indian,Scout Bobber,motorcycle,petrol,1250.0,1495115.0,True
+Indian,Scout Classic,motorcycle,petrol,1250.0,1498321.0,True
+Indian,Scout Sixty Bobber,motorcycle,petrol,999.0,1388244.0,True
+Indian,Scout Sixty Classic,motorcycle,petrol,999.0,1434198.0,True
+Indian,Sport Scout,motorcycle,petrol,1250.0,1505802.0,True
+Indian,Sport Scout Sixty,motorcycle,petrol,999.0,1419237.0,True
+Indian,Super Chief Limited,motorcycle,petrol,1890.0,2438944.0,True
+Indian,Super Scout,motorcycle,petrol,1250.0,1725954.0,True
+iVOOMi,Jeet X,scooter,electric,,84999.0,True
+iVOOMi,S1,scooter,electric,,79999.0,True
+Jawa,350,motorcycle,petrol,334.0,184465.0,True
+Jawa,All Stars 42,motorcycle,petrol,294.72,186925.0,True
+Jawa,All Stars 42 Bobber,motorcycle,petrol,334.0,210985.0,True
+Jawa,All Stars 42 FJ,motorcycle,petrol,334.0,203531.0,True
+Jawa,Perak,motorcycle,petrol,334.0,221819.0,True
+Jawa,42,motorcycle,petrol,,,False
+Joy e-bike,Gen Nxt,scooter,electric,,60825.0,True
+Joy e-bike,Glob,scooter,electric,,70000.0,True
+Joy e-bike,Mihos,scooter,electric,,113000.0,True
+Joy e-bike,Wolf,scooter,electric,,61875.0,True
+Kawasaki,Eliminator,motorcycle,petrol,451.0,616000.0,True
+Kawasaki,KLX 140R F,motorcycle,petrol,144.0,379000.0,True
+Kawasaki,KLX110R L,motorcycle,petrol,112.0,288000.0,True
+Kawasaki,KLX230,motorcycle,petrol,233.0,184000.0,True
+Kawasaki,KLX230 S,motorcycle,petrol,233.0,219000.0,True
+Kawasaki,KLX230R,motorcycle,petrol,233.0,179000.0,True
+Kawasaki,KLX230R S,motorcycle,petrol,233.0,189000.0,True
+Kawasaki,KLX230RS,motorcycle,petrol,233.0,481000.0,True
+Kawasaki,KLX450R,motorcycle,petrol,449.0,961000.0,True
+Kawasaki,KX 85,motorcycle,petrol,84.0,388000.0,True
+Kawasaki,KX112,motorcycle,petrol,112.0,450000.0,True
+Kawasaki,KX450,motorcycle,petrol,449.0,992000.0,True
+Kawasaki,Ninja 1100SX,motorcycle,petrol,1099.0,1442000.0,True
+Kawasaki,Ninja 300,motorcycle,petrol,296.0,317000.0,True
+Kawasaki,Ninja 500,motorcycle,petrol,451.0,566000.0,True
+Kawasaki,Ninja 650,motorcycle,petrol,649.0,777000.0,True
+Kawasaki,Ninja H2 SX SE,motorcycle,petrol,998.0,3628000.0,True
+Kawasaki,Ninja ZX-10R,motorcycle,petrol,998.0,2079000.0,True
+Kawasaki,Ninja ZX-6R,motorcycle,petrol,636.0,1249000.0,True
+Kawasaki,Versys,motorcycle,petrol,1099.0,1379000.0,True
+Kawasaki,Versys 650,motorcycle,petrol,649.0,863000.0,True
+Kawasaki,Versys-X 300,motorcycle,petrol,296.0,349000.0,True
+Kawasaki,Vulcan S,motorcycle,petrol,649.0,823000.0,True
+Kawasaki,W175,motorcycle,petrol,177.0,115000.0,True
+Kawasaki,Z1100,motorcycle,petrol,1099.0,1279000.0,True
+Kawasaki,Z300,motorcycle,petrol,296.0,324000.0,True
+Kawasaki,Z650,motorcycle,petrol,649.0,726000.0,True
+Kawasaki,Z650RS,motorcycle,petrol,649.0,769000.0,True
+Kawasaki,Z650S,motorcycle,petrol,649.0,759000.0,True
+Kawasaki,Z900,motorcycle,petrol,948.0,999000.0,True
+Kawasaki,ER-6n,motorcycle,petrol,,,False
+Kawasaki,Ninja 250R,motorcycle,petrol,,,False
+Kawasaki,Z250,motorcycle,petrol,,,False
+Kawasaki,Z800,motorcycle,petrol,,,False
+Keeway,Hypevolt-R,scooter,electric,,199000.0,True
+Keeway,SR125,motorcycle,petrol,125.0,129000.0,True
+Keeway,SR250,motorcycle,petrol,223.0,159000.0,True
+Keeway,V302C,motorcycle,petrol,298.0,449000.0,True
+Kinetic,DX,scooter,electric,,111570.0,True
+Kinetic Green,E Luna,moped,electric,,69990.0,True
+Kinetic Green,Zing,scooter,electric,,71990.0,True
+Kinetic Green,Zulu,scooter,electric,,84990.0,True
+Lectrix,LXS 2.0,scooter,electric,,84990.0,True
+Lectrix,LXS 3.0,scooter,electric,,91990.0,True
+Lectrix,Nduro,scooter,electric,,94753.0,True
+Lectrix,SX25,scooter,electric,,54999.0,True
+Lectrix,Zyro,scooter,electric,,51741.0,True
+Matter,AERA,motorcycle,electric,,182567.0,True
+Moto Guzzi,V85 TT,motorcycle,petrol,853.0,1645802.0,True
+Moto Morini,Seiemmezzo,motorcycle,petrol,649.0,439000.0,True
+Moto Morini,X-Cape,motorcycle,petrol,649.0,640000.0,True
+Numeros,Diplos,scooter,electric,,134999.0,True
+Numeros,n-First,scooter,electric,,114999.0,True
+Oben,Rorr EVO,motorcycle,electric,,139999.0,True
+Oben,Rorr EZ Sigma,motorcycle,electric,,109999.0,True
+Odysse,E2Go,scooter,electric,,71100.0,True
+Odysse,Evoqis,motorcycle,electric,,118000.0,True
+Odysse,Hawk,scooter,electric,,99400.0,True
+Odysse,Racer,scooter,electric,,100450.0,True
+Odysse,Trot,scooter,electric,,99999.0,True
+Odysse,Vader,motorcycle,electric,,161574.0,True
+Okinawa,Dual 100,scooter,electric,,119085.0,True
+Okinawa,Lite,scooter,electric,,69093.0,True
+Okinawa,OKHI-90,scooter,electric,,149991.0,True
+Okinawa,Praise,scooter,electric,,85215.0,True
+Okinawa,R30,scooter,electric,,61998.0,True
+Okinawa,Ridge 100,scooter,electric,,115311.0,True
+Okinawa,Ridge Plus,scooter,electric,,90606.0,True
+Okinawa,i-Praise,scooter,electric,,123190.0,True
+OLA,Roadster,motorcycle,electric,,104999.0,True
+OLA,Roadster Pro,motorcycle,electric,,199999.0,True
+OLA,Roadster X,motorcycle,electric,,100400.0,True
+OLA,Roadster X Plus,motorcycle,electric,,129152.0,True
+OLA,S1 Pro,scooter,electric,,135846.0,True
+OLA,S1 X,scooter,electric,,89999.0,True
+OLA,S1 Z,scooter,electric,,79999.0,True
+OPG Mobility,Faast F2B,scooter,electric,,100309.0,True
+OPG Mobility,Faast F2F,scooter,electric,,81999.0,True
+OPG Mobility,Faast F4,scooter,electric,,127482.0,True
+OPG Mobility,Freedum,scooter,electric,,74676.0,True
+PURE EV,EPluto 7G,scooter,electric,,86089.0,True
+PURE EV,ETrance Neo,scooter,electric,,84836.0,True
+PURE EV,EcoDryft,motorcycle,electric,,118699.0,True
+PURE EV,Etryst 350,motorcycle,electric,,149999.0,True
+QJ Motor,SRC 250,motorcycle,petrol,249.0,137000.0,True
+QJ Motor,SRC 500,motorcycle,petrol,480.0,210000.0,True
+QJ Motor,SRK 400,motorcycle,petrol,400.0,399000.0,True
+QJ Motor,SRV 300,motorcycle,petrol,296.0,329000.0,True
+Quantum Energy,Bziness,scooter,electric,,95000.0,True
+Quantum Energy,Plasma,scooter,electric,,89999.0,True
+Raptee HV,T30,motorcycle,electric,,239000.0,True
+Revolt,RV BlazeX,motorcycle,electric,,134990.0,True
+Revolt,RV1,motorcycle,electric,,99999.0,True
+Revolt,RV400,motorcycle,electric,,129950.0,True
+Revolt,RVX,motorcycle,electric,,129996.0,True
+River,Indie,scooter,electric,,158576.0,True
+Simple,One,scooter,electric,,204999.0,True
+Simple,Ultra,scooter,electric,,244999.0,True
+Simple,Wave,scooter,electric,,109999.0,True
+Suzuki,Access 125,scooter,petrol,124.0,85577.0,True
+Suzuki,Avenis 125,scooter,petrol,124.3,94353.0,True
+Suzuki,Burgman Street 125,scooter,petrol,124.0,107423.0,True
+Suzuki,Burgman Street EX,scooter,petrol,124.0,116619.0,True
+Suzuki,E Access,scooter,electric,,178194.0,True
+Suzuki,GSX-8R,motorcycle,petrol,776.0,991228.0,True
+Suzuki,Gixxer,motorcycle,petrol,155.0,129434.0,True
+Suzuki,Gixxer 250,motorcycle,petrol,249.0,184521.0,True
+Suzuki,Gixxer SF,motorcycle,petrol,155.0,143257.0,True
+Suzuki,Gixxer SF 250,motorcycle,petrol,249.0,195312.0,True
+Suzuki,Gixxer SF 250 Flex Fuel,motorcycle,petrol,249.0,200846.0,True
+Suzuki,Hayabusa,motorcycle,petrol,1340.0,1899000.0,True
+Suzuki,V-Strom 800 DE,motorcycle,petrol,776.0,1103440.0,True
+Suzuki,V-Strom SX,motorcycle,petrol,249.0,204619.0,True
+Suzuki,GS150R,motorcycle,petrol,,,False
+Suzuki,Hayate,motorcycle,petrol,,,False
+Suzuki,Intruder 150,motorcycle,petrol,,,False
+Suzuki,SlingShot,motorcycle,petrol,,,False
+Ultraviolette,F77 Mach 2,motorcycle,electric,,309000.0,True
+Ultraviolette,F77 SuperStreet,motorcycle,electric,,309000.0,True
+Ultraviolette,X-47 Venom,motorcycle,electric,,265000.0,True
+Vespa,125,scooter,petrol,124.45,132671.0,True
+Vespa,150,scooter,petrol,149.5,146707.0,True
+Vespa,Officina 8,scooter,petrol,124.45,140492.0,True
+Vespa,S 125,scooter,petrol,124.45,136955.0,True
+Vespa,S 150,scooter,petrol,149.5,149774.0,True
+Vespa,ZX 125,scooter,petrol,124.45,118706.0,True
+VIDA,V2,scooter,electric,,150245.0,True
+VIDA,VX2,scooter,electric,,109936.0,True
+VLF,Mobster,scooter,petrol,124.6,136999.0,True
+VLF,Strada,scooter,electric,,119999.0,True
+VLF,Tennis,scooter,electric,,120225.0,True
+Yezdi,Adventure,motorcycle,petrol,334.0,208102.0,True
+Yezdi,Roadster,motorcycle,petrol,334.0,201928.0,True
+Yezdi,Scrambler,motorcycle,petrol,334.0,201965.0,True
+Yo,Drift,scooter,electric,,71300.0,True
+Yo,Edge,scooter,electric,,67500.0,True
+Zontes,350R,motorcycle,petrol,348.0,257000.0,True
+Zontes,350T,motorcycle,petrol,348.0,275000.0,True
+Zontes,350X,motorcycle,petrol,348.0,237000.0,True
+Zontes,GK350,motorcycle,petrol,348.0,322000.0,True

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <!-- NAV -->
@@ -47,8 +47,8 @@
       <h2 class="section-title reveal">Built on real listings.<br><span class="muted">Not guesswork.</span></h2>
       <div class="stats">
         <div class="stat reveal"><div class="stat-num" data-count="32648">0</div><div class="stat-label">bike listings loaded (Kaggle)</div></div>
-        <div class="stat reveal"><div class="stat-num" data-count="5694">0</div><div class="stat-label">2026 BikeWale ads, matched to their exact variant</div></div>
-        <div class="stat reveal"><div class="stat-num" data-count="424">0</div><div class="stat-label">used EV ads across India</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="30527">0</div><div class="stat-label">live 2026 BikeWale ads, 1,151 cities</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="956">0</div><div class="stat-label">used EV ads across India</div></div>
         <div class="stat reveal"><div class="stat-num" id="statModels" data-count="0">0</div><div class="stat-label">verified models you can price (BikeWale + CarWale)</div></div>
       </div>
       <div class="overview-grid">
@@ -87,20 +87,20 @@
   <section class="section" id="findings">
     <div class="wrap">
       <p class="eyebrow reveal">Findings</p>
-      <h2 class="section-title reveal">EVs don't lose value faster.<br><span class="muted">One brand does.</span></h2>
+      <h2 class="section-title reveal">Used EVs lose value<br><span class="muted">about twice as fast.</span></h2>
       <div class="findings-grid">
         <div class="card big reveal">
           <div class="card-head">
             <h3>Value kept vs age</h3>
-            <div class="legend"><span class="lg lg-p"></span>Petrol <span class="lg lg-e"></span>EV (non-Ola) <span class="lg lg-o"></span>Ola</div>
+            <div class="legend"><span class="lg lg-p"></span>Petrol motorcycle <span class="lg lg-o"></span>Petrol scooter <span class="lg lg-e"></span>Electric</div>
           </div>
-          <svg id="findChart" class="chart" viewBox="0 0 600 300" role="img" aria-label="Value kept by age for petrol, non-Ola EV and Ola two-wheelers"></svg>
-          <p class="fine">Same-variant regression on 5,694 BikeWale ads, Nov 2026. Lines start at the median value kept under one year old.</p>
+          <svg id="findChart" class="chart" viewBox="0 0 600 300" role="img" aria-label="Value kept by age for petrol motorcycles, petrol scooters and electric two-wheelers"></svg>
+          <p class="fine">Same-variant regression on 30,527 BikeWale ads across 1,151 cities, collected 12 Nov 2026 (ages up to 7). Lines start at the median value kept under one year old.</p>
         </div>
         <div class="kpis">
-          <div class="kpi reveal"><div class="kpi-num">−6.9%</div><div class="kpi-label">Petrol, per year</div></div>
-          <div class="kpi reveal"><div class="kpi-num">−7.3%</div><div class="kpi-label">EVs without Ola, per year <span class="tag">p = 0.85 vs petrol</span></div></div>
-          <div class="kpi reveal accent"><div class="kpi-num">−12.0%</div><div class="kpi-label">Ola, per year <span class="tag">p = 0.002</span></div></div>
+          <div class="kpi reveal"><div class="kpi-num">−6.3%</div><div class="kpi-label">Petrol, per year <span class="tag">19,167 ads</span></div></div>
+          <div class="kpi reveal"><div class="kpi-num">−12.0%</div><div class="kpi-label">Electric, per year <span class="tag">847 ads · p = 0.001 vs petrol</span></div></div>
+          <div class="kpi reveal accent"><div class="kpi-num">≠</div><div class="kpi-label">Which EV brand drives it changed between two collections a week apart, so we don't claim a brand effect.</div></div>
         </div>
       </div>
 
@@ -220,10 +220,10 @@
   <footer class="footer">
     <div class="wrap">
       <p><b>ResaleIQ</b> — AIML (CS52) course project, M.S. Ramaiah Institute of Technology.</p>
-      <p class="fine">Limits: prices are seller-quoted listing prices; no data on condition or accident history; Kaggle prices (2020-21) are scaled to 2026 rupees; the EV sample is small (424 ads), so EV prices are indicative. Base paper: Ferdous et al., IEEE ICDSNS 2024.</p>
+      <p class="fine">Limits: prices are seller-quoted listing prices; no data on condition or accident history; Kaggle prices (2020-21) are scaled to 2026 rupees; the EV sample is small (956 ads), so EV prices are indicative. XGBoost bike prices are calibrated against 13,598 live 2026 ads. Base paper: Ferdous et al., IEEE ICDSNS 2024.</p>
     </div>
   </footer>
 
-  <script src="app.js?v=5" defer></script>
+  <script src="app.js?v=6" defer></script>
 </body>
 </html>

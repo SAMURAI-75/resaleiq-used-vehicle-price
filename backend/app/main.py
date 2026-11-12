@@ -43,6 +43,18 @@ CATALOG = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())
 MODELS = {k: joblib.load(ROOT / "models" / f"{k}_xgb.joblib") for k in ("bike", "car")}
 BOOSTERS = {k: v["pipe"].named_steps["m"].get_booster() for k, v in MODELS.items()}
 GROWTH = META["growth"]
+_cal_path = ROOT / "models" / "calibration_2026.json"
+CAL = json.loads(_cal_path.read_text()) if _cal_path.exists() else None   # from calibrate_2026.py
+
+
+def cal_factor(mk, age):
+    """2026 calibration for the bike model: median(actual 2026 ad / prediction) for this age band."""
+    if mk != "bike" or not CAL:
+        return 1.0
+    for lo, hi in CAL["bands"]:
+        if lo < age <= hi:
+            return CAL["factor_by_age"].get(f"{lo + 1}-{hi}", 1.0)
+    return 1.0
 OWNER_WORD = dep.OWNER_WORD
 
 POPULAR_2W = ["Hero", "Honda", "Bajaj", "TVS", "Royal Enfield", "Yamaha", "Suzuki", "KTM", "Ather", "OLA", "VIDA",
@@ -179,11 +191,12 @@ def predict_ml(kind, p: PredictIn, info):
     scale = GROWTH ** (NOW - ref)
     ages = list(range(0, 16))
     pipe = MODELS[mk]["pipe"]
-    curve_prices = np.expm1(pipe.predict(_frame(mk, p, info, ages))) * scale
+    curve_prices = np.expm1(pipe.predict(_frame(mk, p, info, ages))) * scale * np.array([cal_factor(mk, a) for a in ages])
     row = _frame(mk, p, info, [age])
     Z = pipe.named_steps["pre"].transform(row)
     contrib = BOOSTERS[mk].predict(xgb.DMatrix(Z), pred_contribs=True)[0]
-    price = float(math.expm1(contrib.sum()) * scale)          # SHAP values sum exactly to the prediction
+    cal = cal_factor(mk, age)
+    price = float(math.expm1(contrib.sum()) * scale * cal)    # SHAP values sum exactly to the prediction
     ms = (time.perf_counter() - t0) * 1000
 
     bias = float(contrib[-1])
@@ -194,11 +207,13 @@ def predict_ml(kind, p: PredictIn, info):
     lo, hi = MODELS[mk]["band"]
     top = factors[0]
     title = f"{p.year} {p.brand} {p.model}"
-    sim = META[mk]["similar"].get(f"{p.brand} | {p.model}|{age}")
+    sim26 = CAL["similar"].get(f"{p.brand} | {p.model}|{age}") if (CAL and mk == "bike") else None
+    sim = sim26 or META[mk]["similar"].get(f"{p.brand} | {p.model}|{age}")
     out = {
         "title": title, "age": age, "price": round(price, -2), "low": round(price * lo, -2), "high": round(price * hi, -2),
-        "base_price": round(math.expm1(bias) * scale, -2), "factors": factors,
-        "similar": {"median": round(sim[0] * scale, -2), "count": sim[1]} if sim else None,
+        "base_price": round(math.expm1(bias) * scale * cal, -2), "factors": factors,
+        "similar": ({"median": round(sim[0] * (1 if sim26 else scale), -2), "count": sim[1], "year": 2026 if sim26 else ref}
+                    if sim else None),
         "curve": [{"age": a, "price": round(float(v), -2)} for a, v in zip(ages, curve_prices)],
         "new_price": info.get("new_price"),
         "summary": (f"A {title} with {p.km:,.0f} km and a {OWNER_WORD[p.owners]} owner"
@@ -209,7 +224,9 @@ def predict_ml(kind, p: PredictIn, info):
                    "detail": (f"Predicted live by the XGBoost model trained on {METRICS[mk]['train']:,} listings "
                               f"({info['train_rows']} of this model). Test R² {METRICS[mk]['models']['XGBoost']['R2']:.3f}.")},
         "method": (f"Factor sizes are exact Tree SHAP values from the same XGBoost run, relative to the typical listing. "
-                   f"Kaggle prices (~{ref}) scaled to 2026 rupees at {round((GROWTH - 1) * 100)}% a year (×{scale:.2f})."),
+                   f"Kaggle prices (~{ref}) scaled to 2026 rupees at {round((GROWTH - 1) * 100)}% a year (×{scale:.2f})"
+                   + (f", then calibrated ×{cal:.2f} against {CAL['test']['ads_tested']:,} live 2026 BikeWale ads of the same models."
+                      if cal != 1.0 else ".")),
         "range_note": "Range = the middle 60% of the model's errors on unseen test listings.",
     }
     if kind == "2w" and p.state and p.state != "Other":
@@ -248,9 +265,9 @@ def predict_dep(kind, p: PredictIn, info):
                    "detail": f"Not the ML model, because {why}. Priced from its official {src} 2026 price and measured yearly value loss."},
         "method": "Each factor multiplies the price in turn (shown as % change).",
     })
-    if out.get("rate_key") == "ola":
-        out["brand_note"] = ("Ola scooters lose about 12% a year against ~7% for other EVs and petrol — "
-                             "that one brand drives the whole 'EVs lose value fast' story.")
+    if info.get("fuel") == "electric":
+        out["brand_note"] = ("Used EVs lose about 12% a year against about 6-8% for petrol two-wheelers "
+                             "(30,527 BikeWale ads, Nov 2026).")
     return out
 
 

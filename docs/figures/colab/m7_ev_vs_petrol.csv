@@ -1,0 +1,5 @@
+Check,Ads,EV ads,Petrol %/yr,EV %/yr,EV − petrol (pts),p
+"All two-wheelers, age ≤ 7",20014,847,-6.3,-12.0,-5.7,0.001
+Without Ola,19627,460,-6.3,-13.0,-6.7,0.002
+Ola only vs petrol,19554,387,-6.3,-10.6,-4.4,0.125
+Scooters only,3506,717,-7.6,-12.9,-5.2,0.01

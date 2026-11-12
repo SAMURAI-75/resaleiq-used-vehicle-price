@@ -1,32 +1,28 @@
 # Roadmap — due tomorrow
 
-## Where things stand (12 Nov 2026)
+## Where things stand (12 Nov 2026, evening)
 | Piece | State |
 |---|---|
 | Topic, abstract, novelty | ✅ |
-| Colab M1-3 (load, clean, road tax) | ✅ |
-| Colab M6 EV study | ✅ numbers; ⚠️ CSV still in browser tab |
-| Website (frontend + backend + trained models) | ✅ runs locally, all 3 vehicle types |
-| Datasets doc, lit survey, Colab guide | ✅ in this repo |
-| Colab M4, M5, M7, M8 | ⏳ code ready in `colab/COLAB_GUIDE.md` |
-| Final report + slides | ⏳ |
-| Deploy website online | ⏳ optional |
+| Title | ✅ "Used Two-Wheeler Resale Price Prediction with EV Depreciation Analysis" |
+| Base paper | ✅ cited from IEEE page (`docs/BASE_PAPER.md`); full text paywalled → we replicate its 4 models instead |
+| 2026 data | ✅ re-collected: all-India BikeWale used ads (`backend/scrape_used_2026.py`) |
+| Website | ✅ local demo; verified model list; XGBoost calibrated on 2026 ads |
+| One-click Colab notebook | ✅ `colab/ResaleIQ_pipeline.ipynb` (all modules) |
+| Kartik: run notebook in Colab, save to Drive | ⏳ 15 min — `colab/COLAB_GUIDE.md` |
+| Report | ⏳ Claude drafts after the notebook run |
+| Demo on laptop | local only (decided) |
 
-## Tonight (≈4 h total)
-| # | Task | Who | Time | Done when |
-|---|---|---|---|---|
-| 1 | Download `two_wheelers_2026_same_variant.csv` from the BikeWale tab | Kartik | 10 min | CSV in Drive |
-| 2 | Run Colab Module 4 (copy from guide) | Kartik | 20 min | Results table with LR/RF/XGB |
-| 3 | Run Module 5 (two small tables) | Kartik | 20 min | R² table + LOSO table |
-| 4 | Run Module 7 SHAP | Kartik | 10 min | Beeswarm + waterfall saved |
-| 5 | Run Module 8 figures | Kartik | 20 min | 3 PNGs saved |
-| 6 | Get Ferdous et al. PDF; confirm ⚠️ paper years | Kartik | 30 min | Survey table final |
-| 7 | Write report (template below) | Kartik + Claude | 90 min | PDF/Doc ready |
-| 8 | Rehearse website demo (script below) | Kartik | 15 min | Can demo in 3 min |
+## Left to do
+| # | Task | Who | Time |
+|---|---|---|---|
+| 1 | Run the notebook in Colab, unzip figures to `docs/figures/colab/` | Kartik | 15 min |
+| 2 | Draft report (Claude Doc) from notebook outputs | Claude | — |
+| 3 | Read through report, fix anything | Kartik | 30 min |
+| 4 | Rehearse demo (script below) | Kartik | 15 min |
 
 ## Tomorrow morning
-- Start the site: `.venv/bin/uvicorn backend.app.main:app --port 8000` → open http://localhost:8000 on the laptop **before** the presentation (works offline once loaded, except Google Fonts — falls back to system font).
-- Optional: deploy to Render (free) so it's reachable by URL — needs your GitHub + Render login.
+`.venv/bin/uvicorn backend.app.main:app --port 8000` → http://localhost:8000 (start before class; works offline).
 
 ## Report structure (matches teacher's requirements)
 1. Abstract · 2. Problem definition · 3. Objectives · 4. Literature survey (`docs/LITERATURE_SURVEY.md`) + research gap

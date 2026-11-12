@@ -44,11 +44,19 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
 | Random Forest | 0.952 | ₹10,011 | 0.896 | ₹69,827 |
 | XGBoost (served) | 0.946 | **₹9,632** | **0.917** | **₹64,620** |
 
+### Headline results (12 Nov, from `colab/ResaleIQ_pipeline_executed.ipynb`)
+| Result | Number |
+|---|---|
+| XGBoost on Kaggle test split | R² 0.919, MAE ₹10,442, 79.7% within ±20% |
+| Base paper's best (Decision Tree) on same split | R² 0.842, MAE ₹14,547, 65.3% within ±20% |
+| Old model on 13,598 live 2026 ads | 8% too low overall (16% for 6-12 yr bikes); median error 19.5% → 18.0% after calibration |
+| EV vs petrol, same variant, 30,527 ads | EV −12.0%/yr vs petrol −6.3%/yr, gap −5.7 pts, p = 0.001 |
+| Brand effect (Ola) | Not stable: Ola steepest on 5 Nov, flattest on 12 Nov → not claimed |
+| Road tax | State helps a little (R² 0.940 → 0.945); tax rate adds nothing on top; LOSO: helps in 5 of 11 states → side note only |
+
 ### Open questions for Kartik
-1. **Most important:** upload `two_wheelers_2026_same_variant.csv` — lets us test the Kaggle-trained XGBoost on real 2026 ads and recalibrate if it runs low. Also (+ Colab `bikes_clean_with_prices_and_tax.csv`) so the site can use the exact Colab data.
-2. Full Ferdous et al. PDF (IEEE Xplore via college login).
-3. Keep "Road Tax Features" in the title, or shorten to "…with EV Depreciation Analysis"?
-4. Deploy online (needs a Render/Railway login) or demo on localhost?
+1. Run `colab/ResaleIQ_pipeline.ipynb` in Colab (steps in `colab/COLAB_GUIDE.md`), save a copy to Drive.
+(Resolved: 2026 data re-collected by Claude; base paper cited from IEEE page; title shortened; demo local only.)
 
 ## 5. Log
 - **2026-11-12 — Session start.** Received full handoff. Request: Apple-style website (2W/car switch, predict, "why this price" tab, overview section, fast, animated), frontend + backend, datasets list, Colab steps, proper literature survey, roadmap, and this progress file in a GitHub repo. Due tomorrow.
@@ -68,3 +76,10 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
   - UI: grouped dropdown (motorcycles / scooters on sale / discontinued), engine hint under Model, engine badge on result ("Predicted live by XGBoost · 7 ms"), "How this was priced" box with server and round-trip time.
   - Retrained: bike XGBoost R² 0.946 / MAE ₹9,632 (better MAE than before); RF has higher R² (0.952) but higher MAE, so "best" = lowest MAE. Fixed: f-string, form validation blocking submit.
   - Answer to "is it live?": yes — every request runs XGBoost inference (or the depreciation formula) on the server; it's fast because a trained tree model only does ~900 small tree lookups.
+- **2026-11-12 — Prompt 3/4: tab gone, base paper, Colab, title, "go".**
+  - Old BikeWale tab was in an ended cloud session → re-collected 2026 data ourselves: `backend/scrape_used_2026.py` pulls BikeWale's used-search JSON (offset paging, 24/request, 0.4 s apart) → **30,527 ads, 956 EVs, 1,151 cities**.
+  - **2026 test** (`backend/calibrate_2026.py`): Kaggle-trained XGBoost on 13,598 ads of 157 known models → 8% too low overall, ~15% too low for 6+ yr bikes, 4% high for <1 yr. R² (log) 0.67 vs 0.95 in-sample → model goes stale. Website now applies an age-band calibration and shows "Similar 2026 ads" (real 2026 medians).
+  - **EV result changed with the bigger sample**: EV −12.0%/yr vs petrol −6.3% (p = 0.001), without Ola −13.0%, Ola alone −10.6% (p = 0.13). Per-brand slopes are noisy (30-70 ads each). New honest claim: *used EVs lose value about twice as fast as petrol; no stable brand effect*. Site Findings, depreciation engine (EV 12%, petrol motorcycles 6.1%, scooters 7.6%) and docs updated.
+  - Base paper: full text paywalled; read the public IEEE page → `docs/BASE_PAPER.md`. Six authors (Mahmud, Revathi were missing), DOI 10.1109/ICDSNS62112.2024.10691304. We replicate its four models instead.
+  - **One-click Colab notebook** `colab/ResaleIQ_pipeline.ipynb` (+ data zip `colab/resaleiq_colab_data.zip`): all modules incl. base-paper replication, 2026 test, EV regression, SHAP. Executed locally in 45 s → `colab/ResaleIQ_pipeline_executed.ipynb`, figures in `docs/figures/colab/`. Base paper's Decision Tree R² 0.842 vs our XGBoost 0.919 on the same split.
+  - Title → "Used Two-Wheeler Resale Price Prediction with EV Depreciation Analysis". Demo: local only.

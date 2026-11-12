@@ -1,7 +1,7 @@
 # ResaleIQ — Used Two-Wheeler (and Car) Resale Price Prediction
 
 AIML (CS52) course project, M.S. Ramaiah Institute of Technology.
-**Title:** *Used Two-Wheeler Resale Price Prediction with Road Tax Features and EV Depreciation Analysis*
+**Title:** *Used Two-Wheeler Resale Price Prediction with EV Depreciation Analysis* (road tax kept as a side check)
 
 An Apple-style web app that predicts the fair listing price of a used **petrol two-wheeler, electric scooter or car** in India and explains the price feature by feature (Tree SHAP), with an EV vs petrol depreciation view.
 
