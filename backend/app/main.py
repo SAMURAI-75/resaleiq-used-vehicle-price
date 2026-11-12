@@ -313,7 +313,12 @@ def predict_market(kind, p: PredictIn, info):
         k = p.kwh or info.get("kwh_est") or 3.0
         out["battery_health"] = round(dep.battery_health(age, p.km, k), 1)
     y0, y1 = info["years"]
-    if p.year < y0 or p.year > y1:
+    if var and var.get("n") and var.get("years"):          # the chosen variant's own years
+        vy0, vy1 = var["years"]
+        if p.year < vy0 or (not var.get("official") and p.year > vy1):
+            out["warning"] = (f"The {var['name']} variant appears in ads from {vy0}"
+                              f"{'' if var.get('official') else f' to {vy1}'}; check the year, this price is rough.")
+    if "warning" not in out and (p.year < y0 or p.year > y1):
         out["warning"] = (f"Few or no {p.model} ads are from {p.year} (listings run {y0}-{y1}), so treat this price as rough."
                           if p.year < y0 else f"No {p.model} ads from {p.year} yet; treat this price as rough.")
     out["tax"] = tax_note(kind, p, info, newp, fuel)

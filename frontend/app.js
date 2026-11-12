@@ -232,9 +232,16 @@ function updateFields() {
     : `Few ads exist · <b>estimated</b> from the official price ${inr(m.new_price)}`;
 }
 
-function setYears(m) {
+// years a vehicle can be from: the chosen variant's own years (e.g. Guerrilla 450 Apex: 2026 only),
+// else the model's. A variant still on sale runs to this year; a discontinued one stops at its last year.
+function yearRange(m, v) {
+  const now = META.now;
+  if (v && v.n > 0 && v.years) return [v.years[0], v.official ? now : v.years[1]];
+  return (m && m.years) || [now - 15, now];
+}
+function setYears(m, v) {
   const now = META.now, cur = +F.year.value || now - 4;
-  let [y0, y1] = (m && m.years) || [now - 15, now];
+  let [y0, y1] = yearRange(m, v);
   y0 = Math.max(1995, Math.min(y0, now)); y1 = Math.min(now, Math.max(y1, y0));
   F.year.innerHTML = Array.from({ length: y1 - y0 + 1 }, (_, i) => `<option>${y1 - i}</option>`).join("");
   F.year.value = String(Math.max(y0, Math.min(y1, cur)));
@@ -258,7 +265,7 @@ seg($("#fuelSeg"), (v) => { FUELF = v; fillBrands(v === "electric" ? "Ather" : u
 
 F.brand.addEventListener("change", () => { fillModels(); if (lastResult) schedule(); });
 F.model.addEventListener("change", () => { onModel(); if (lastResult) schedule(); });
-F.variant.addEventListener("change", () => { updateFields(); if (lastResult) schedule(); });
+F.variant.addEventListener("change", () => { setYears(current(), currentVariant()); updateFields(); if (lastResult) schedule(); });
 F.state.addEventListener("change", () => { fillCities(); if (lastResult) schedule(); });
 ["year", "km", "owner", "seller", "city", "trans", "fuel", "cc", "power", "seats", "exs", "kwh"].forEach((k) =>
   F[k].addEventListener("input", () => lastResult && schedule()));
