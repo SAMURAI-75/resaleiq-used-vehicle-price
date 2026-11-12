@@ -172,7 +172,7 @@ b { font-weight: 600; }
 @media (max-width: 920px) { .predict-grid { grid-template-columns: 1fr; } }
 .form { display: grid; gap: 14px; }
 .field { display: grid; gap: 6px; }
-.field.hide { display: none; }
+.hide, .field.hide, .row2.hide { display: none !important; }
 .field label { font-size: 12px; font-weight: 600; color: var(--muted); }
 .field input, .field select { font: inherit; font-size: 16px; color: var(--text); background: var(--bg-alt); border: 1px solid transparent;
   border-radius: 12px; padding: 12px 14px; width: 100%; outline: none; transition: border-color .2s, box-shadow .2s, background .2s; appearance: none; -webkit-appearance: none; }

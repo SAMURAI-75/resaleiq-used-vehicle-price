@@ -3,9 +3,9 @@
   "models_checked": 1104,
   "models_with_issues": 0,
   "edge_cases_failed": 0,
-  "similar_ad_comparisons": 484,
-  "median_abs_gap_to_similar_ads": 0.05368029739776947,
-  "gaps_over_40pct": 1
+  "similar_ad_comparisons": 460,
+  "median_abs_gap_to_similar_ads": 0.05366666666666664,
+  "gaps_over_40pct": 0
  },
  "issues": [],
  "edges": [
@@ -83,18 +83,5 @@
    "ok": true
   }
  ],
- "big_gaps": [
-  [
-   "car",
-   "Tata",
-   "Indigo eCS",
-   {
-    "year": 2014,
-    "price": 176800.0,
-    "similar": 120000.0,
-    "n": 17,
-    "gap": 0.4733333333333334
-   }
-  ]
- ]
+ "big_gaps": []
 }

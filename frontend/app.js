@@ -214,7 +214,7 @@ async function onModel() {
     if (my !== variantReq) return;
     VARIANTS = vs;
     F.variant.innerHTML = `<option value="">Not sure</option>` + vs.map((v) =>
-      `<option value="${esc(v.id)}">${esc(v.name)} (${v.years[0] === v.years[1] ? v.years[0] : v.years[0] + "–" + v.years[1]})${v.new_price ? " · " + inr(v.new_price) + " new" : ""}</option>`).join("");
+      `<option value="${esc(v.id)}">${esc(v.name)}${v.n ? " (" + (v.years[0] === v.years[1] ? v.years[0] : v.years[0] + "–" + v.years[1]) + ")" : " (current)"}${v.new_price ? " · " + inr(v.new_price) + " new" : ""}</option>`).join("");
   } catch { /* variants are optional */ }
   updateFields();
 }
@@ -357,13 +357,23 @@ function show(d, first, m) {
   $("#engineBox").innerHTML = `<b>How this was priced.</b> ${esc(d.engine.detail)}`;
 
   const tn = $("#taxNote");
-  if (d.road_tax) {
-    const t = d.road_tax, pct = (x) => (x * 100).toFixed(1).replace(".0", "") + "%";
-    const gap = t.rate - t.cheapest_rate;
-    tn.hidden = false;
-    tn.innerHTML = `<b>Road tax side note.</b> A new one (~${inr(t.new_price_est)}) pays <b>${pct(t.rate)}</b> road tax in ${esc(t.state)}` +
-      (gap > 0 ? ` vs ${pct(t.cheapest_rate)} in ${esc(t.cheapest_state)}. Our Classic 350 check found ~₹1,430 more on the used price per extra 1% of tax, so roughly ${inr(gap * t.new_price_est)} of this price may reflect the higher tax.` : `, the lowest of the states we tracked.`) +
-      ` <span class="fine">Source: ${esc(t.source)}.</span>`;
+  if (d.tax) {
+    const t = d.tax, pct = (x) => (Math.round(x * 1000) / 10).toString().replace(/\.0$/, "") + "%";
+    const parts = [];
+    if (t.gst_now != null) {
+      const when = t.gst_then == null ? ` If it was bought before 22 Sep 2025 it paid ${t.cc > 350 ? "31%" : "28%"}.`
+        : t.gst_then !== t.gst_now ? ` Bought in ${esc(String(F.year.value))}, it paid ${pct(t.gst_then)}.` : "";
+      parts.push(`<b>GST ${pct(t.gst_now)}</b>${t.cc ? ` (${Math.round(t.cc)} cc)` : ""}, already inside the ex-showroom price. ${esc(t.gst_note || "")}${when}`);
+    }
+    if (t.road_rate != null) {
+      parts.push(`<b>Road tax ${pct(t.road_rate)}</b> in ${esc(t.state)}${t.road_cess ? ` (${pct(t.road_base)} + ${pct(t.road_cess)} cess on the tax)` : ""}, about ${inr(t.road_amount)} on a new one, paid on top of the ex-showroom price` +
+        (t.road_rate > t.cheapest_rate ? `; ${esc(t.cheapest_state)} charges ${pct(t.cheapest_rate)}.` : `, the lowest of the states we track.`));
+    }
+    if (t.premium != null && Math.abs(t.premium) >= 0.01) {
+      parts.push(`In 2026 ads, the same variant and year asks <b>${t.premium > 0 ? "+" : ""}${pct(t.premium)}</b> in ${esc(t.state)} versus the all-India median (${t.premium_ads.toLocaleString("en-IN")} ads); the price above already includes this.`);
+    }
+    tn.hidden = !parts.length;
+    tn.innerHTML = `<b>Taxes.</b> ` + parts.join(" ") + (t.source ? ` <span class="fine">Road tax: ${esc(t.source)}; GST: GST Council, Sep 2025.</span>` : "");
   } else tn.hidden = true;
   $("#method").textContent = d.method + " " + (d.range_note || "");
 

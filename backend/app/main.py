@@ -30,7 +30,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from . import depreciation as dep
-from .road_tax import SOURCES, cheapest_state, road_tax_rate
+from .road_tax import CESS, SOURCES, base_road_tax_rate, cheapest_state, gst_two_wheeler, road_tax_rate
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONT = ROOT.parent / "frontend"
@@ -45,6 +45,9 @@ KAGGLE_BOOST = {k: v["pipe"].named_steps["m"].get_booster() for k, v in KAGGLE.i
 MARKET = {k: joblib.load(ROOT / "models" / f"{k}_market.joblib") for k in ("bike", "car")
           if (ROOT / "models" / f"{k}_market.joblib").exists()}
 GROWTH = META["growth"]
+# full variant lists (official + every variant seen in an ad), built by build_variants.py
+VARIANTS = {k: json.loads((ROOT / "models" / f"variants_{k}.json").read_text()) for k in ("bike", "car")
+            if (ROOT / "models" / f"variants_{k}.json").exists()}
 
 
 def _json(name):
@@ -52,6 +55,7 @@ def _json(name):
     return json.loads(p.read_text()) if p.exists() else None
 
 
+PREMIUM = _json("state_premium.json") or {}   # same variant + year: state median / national median (state_premium.py)
 CAL = _json("calibration_2026.json")          # Kaggle bike model vs 2026 ads (calibrate_2026.py)
 DEP_CAL = _json("dep_calibration_2026.json")  # depreciation formula vs 2026 ads
 CITY_STATE = pd.read_csv(ROOT / "data" / "city_state.csv").drop_duplicates("city").set_index("city").state.to_dict()
@@ -133,7 +137,7 @@ def _build_index():
                      "n": (mi or {}).get("n", 0) if engine == "market" else (kag or {}).get("n", 0),
                      "years": [int(years[0]), int(min(NOW, years[1] if engine == "market" else NOW))],
                      "cc": e.get("cc") or (kag or {}).get("cc"), "kwh_est": e.get("kwh_est"),
-                     "variants": len(MARKET.get(mk, {}).get("variants", {}).get(key, [])) if engine == "market" else 0}
+                     "variants": len(VARIANTS.get(mk, {}).get(key, [])) if engine == "market" else 0}
             if engine == "market" and not entry["new_price"]:
                 entry["new_price"] = mi.get("new_price")
             if kind == "car" and kag:
@@ -215,7 +219,7 @@ LABELS = {
 def _variant(mk, key, vid):
     if not vid:
         return None
-    return next((v for v in MARKET[mk]["variants"].get(key, []) if v["id"] == str(vid)), None)
+    return next((v for v in VARIANTS.get(mk, {}).get(key, []) if v["id"] == str(vid)), None)
 
 
 def predict_market(kind, p: PredictIn, info):
@@ -244,7 +248,8 @@ def predict_market(kind, p: PredictIn, info):
     newp = fin(p.new_price, (var or {}).get("new_price"), year_price, mi.get("new_price"), info.get("new_price_catalog"))
     cat_price = fin(info.get("new_price_catalog"))
     city = p.city if p.city in M["cats"]["city"] else None
-    row = {"brand": p.brand, "model_key": key, "variant": (var or {}).get("id"), "fuel": fuel, "body": mi["body"],
+    var_id = (var or {}).get("id") if (var or {}).get("learned") else None
+    row = {"brand": p.brand, "model_key": key, "variant": var_id, "fuel": fuel, "body": mi["body"],
            "transmission": trans, "state": p.state or "Other", "city": city, "seller": p.seller or "individual",
            "log_km": math.log1p(p.km), "owners": p.owners,
            "log_new": math.log(newp) if newp else np.nan,
@@ -311,13 +316,34 @@ def predict_market(kind, p: PredictIn, info):
     if p.year < y0 or p.year > y1:
         out["warning"] = (f"Few or no {p.model} ads are from {p.year} (listings run {y0}-{y1}), so treat this price as rough."
                           if p.year < y0 else f"No {p.model} ads from {p.year} yet; treat this price as rough.")
-    if kind == "2w" and fuel != "Electric" and p.state and p.state != "Other" and newp:
-        rate = road_tax_rate(p.state, newp, info.get("cc") or 125)
-        if rate is not None:
-            cs, cr = cheapest_state(newp, info.get("cc") or 125)
-            out["road_tax"] = {"state": p.state, "rate": rate, "cheapest_state": cs, "cheapest_rate": cr,
-                               "new_price_est": round(newp, -2), "source": SOURCES.get(p.state)}
+    out["tax"] = tax_note(kind, p, info, newp, fuel)
     return out
+
+
+def tax_note(kind, p, info, newp, fuel):
+    """Taxes on this vehicle, kept apart from the price model: GST (inside the ex-showroom price),
+    state road tax on top, and how much more or less this state's used ads ask for the same variant and year."""
+    mk = "bike" if kind == "2w" else "car"
+    t = {"state": p.state if p.state and p.state != "Other" else None}
+    prem = PREMIUM.get(mk, {}).get(p.state) if t["state"] else None
+    if prem:
+        t["premium"] = round(prem["ratio"] - 1, 3)
+        t["premium_ads"] = prem["ads"]
+    if kind == "2w":
+        cc = info.get("cc")
+        ev = fuel == "Electric"
+        g_now, g_then, g_note = gst_two_wheeler(cc, ev, p.year)
+        if g_now is not None:
+            t.update({"gst_now": g_now, "gst_then": g_then, "gst_note": g_note, "cc": cc})
+        if t["state"] and newp:
+            base = base_road_tax_rate(p.state, newp, cc or 125, ev)
+            if base is not None:
+                eff = road_tax_rate(p.state, newp, cc or 125, ev)
+                cs, cr = cheapest_state(newp, cc or 125)
+                t.update({"road_base": base, "road_cess": CESS.get(p.state, 0.0), "road_rate": eff,
+                          "road_amount": round(eff * newp, -2), "ex_showroom": round(newp, -2),
+                          "cheapest_state": cs, "cheapest_rate": cr, "source": SOURCES.get(p.state)})
+    return t if len(t) > 1 else None
 
 
 # ------------------------------------------------------------------ Kaggle engine (older models, no 2026 ads)
@@ -442,8 +468,9 @@ def variants(type: Literal["2w", "car"], brand: str, model: str):
     mk = "bike" if type == "2w" else "car"
     if info["engine"] != "market":
         return []
-    vs = MARKET[mk]["variants"].get(f"{brand} | {model}", [])
-    return sorted(vs, key=lambda v: (v["new_price"] or 0, v["name"]))
+    clean = lambda v: {k: (None if isinstance(x, float) and not math.isfinite(x) else x) for k, x in v.items()}
+    vs = [clean({**v, "new_price": fin(v.get("new_price"))}) for v in VARIANTS.get(mk, {}).get(f"{brand} | {model}", [])]
+    return sorted(vs, key=lambda v: (v["new_price"] or 0, v["name"], v["years"][0]))
 
 
 @app.get("/api/metrics")
