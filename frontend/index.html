@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResaleIQ</title>
+  <meta name="description" content="Predict the fair resale price of a used two-wheeler or car in India, and see why.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo"><span class="logo-dot"></span>ResaleIQ</a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#how">How it works</a>
+        <a href="#findings">Findings</a>
+        <a href="#models">Models</a>
+      </div>
+      <a href="#predict" class="nav-cta">Get a price</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-glow"></div>
+    <p class="eyebrow reveal">Used vehicle pricing for India</p>
+    <h1 class="hero-title reveal">Know what it's<br><span class="grad">really worth.</span></h1>
+    <p class="hero-sub reveal">Petrol bikes, electric scooters and cars. A machine-learning price in under a second, and a plain-English reason for every rupee.</p>
+    <div class="hero-ctas reveal">
+      <a href="#predict" class="btn btn-primary">Predict a price</a>
+      <a href="#how" class="btn btn-link">See how it works <span aria-hidden="true">›</span></a>
+    </div>
+    <div class="hero-chips reveal">
+      <span class="chip">XGBoost</span><span class="chip">Random Forest</span><span class="chip">SHAP explanations</span><span class="chip">EV depreciation</span>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <p class="eyebrow reveal">Overview</p>
+      <h2 class="section-title reveal">Built on real listings.<br><span class="muted">Not guesswork.</span></h2>
+      <div class="stats">
+        <div class="stat reveal"><div class="stat-num" data-count="32648">0</div><div class="stat-label">bike listings loaded (Kaggle)</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="5694">0</div><div class="stat-label">2026 BikeWale ads, matched to their exact variant</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="424">0</div><div class="stat-label">used EV ads across India</div></div>
+        <div class="stat reveal"><div class="stat-num" id="statCars" data-count="0">0</div><div class="stat-label">used car listings (CarDekho)</div></div>
+      </div>
+      <div class="overview-grid">
+        <div class="card reveal">
+          <h3>The problem</h3>
+          <p>Used two-wheeler prices in India are set by gut feel. Most research is on cars, and nobody has measured how electric scooters lose value against petrol ones.</p>
+        </div>
+        <div class="card reveal">
+          <h3>What we built</h3>
+          <p>Three price models — petrol two-wheelers, EVs and cars — behind one fast API, with a breakdown of what pushed the price up or down.</p>
+        </div>
+        <div class="card reveal">
+          <h3>What's new</h3>
+          <p>The first same-variant EV vs petrol depreciation study for Indian two-wheelers, plus a check on how state road tax carries into used prices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section alt" id="how">
+    <div class="wrap">
+      <p class="eyebrow reveal">How it works</p>
+      <h2 class="section-title reveal">From raw ads to a fair price.</h2>
+      <ol class="pipeline">
+        <li class="step reveal"><span class="step-n">1</span><h4>Collect</h4><p>Kaggle bike and car listings, plus 2026 BikeWale ads for EVs and petrol.</p></li>
+        <li class="step reveal"><span class="step-n">2</span><h4>Clean</h4><p>Drop duplicates, fix km and price outliers per model family and age.</p></li>
+        <li class="step reveal"><span class="step-n">3</span><h4>Engineer</h4><p>City → state, road-tax rate, model family, log of price as target.</p></li>
+        <li class="step reveal"><span class="step-n">4</span><h4>Train</h4><p>Linear Regression baseline, Random Forest and XGBoost on an 80/20 split.</p></li>
+        <li class="step reveal"><span class="step-n">5</span><h4>Explain</h4><p>Tree SHAP splits each prediction into the push from every feature.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FINDINGS -->
+  <section class="section" id="findings">
+    <div class="wrap">
+      <p class="eyebrow reveal">Findings</p>
+      <h2 class="section-title reveal">EVs don't lose value faster.<br><span class="muted">One brand does.</span></h2>
+      <div class="findings-grid">
+        <div class="card big reveal">
+          <div class="card-head">
+            <h3>Value kept vs age</h3>
+            <div class="legend"><span class="lg lg-p"></span>Petrol <span class="lg lg-e"></span>EV (non-Ola) <span class="lg lg-o"></span>Ola</div>
+          </div>
+          <svg id="findChart" class="chart" viewBox="0 0 600 300" role="img" aria-label="Value kept by age for petrol, non-Ola EV and Ola two-wheelers"></svg>
+          <p class="fine">Same-variant regression on 5,694 BikeWale ads, Nov 2026. Lines start at the median value kept under one year old.</p>
+        </div>
+        <div class="kpis">
+          <div class="kpi reveal"><div class="kpi-num">−6.9%</div><div class="kpi-label">Petrol, per year</div></div>
+          <div class="kpi reveal"><div class="kpi-num">−7.3%</div><div class="kpi-label">EVs without Ola, per year <span class="tag">p = 0.85 vs petrol</span></div></div>
+          <div class="kpi reveal accent"><div class="kpi-num">−12.0%</div><div class="kpi-label">Ola, per year <span class="tag">p = 0.002</span></div></div>
+        </div>
+      </div>
+
+      <div class="card reveal tax-card">
+        <div class="card-head"><h3>Side note: road tax shows up in used prices</h3><span class="tag">Spearman 0.78 · p = 0.008</span></div>
+        <p>A 2–5 year old Royal Enfield Classic 350 costs more where the road tax was higher when it was bought — about <b>₹1,430 per extra 1% of tax</b>.</p>
+        <div id="taxBars" class="bars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section class="section alt" id="models">
+    <div class="wrap">
+      <p class="eyebrow reveal">Models</p>
+      <h2 class="section-title reveal">Measured on bikes it never saw.</h2>
+      <p class="lead reveal">20% of listings were hidden during training, then predicted. MAE is the average rupees off; R² is the share of price variation explained.</p>
+      <div class="seg reveal" id="metricSeg" role="tablist">
+        <button class="seg-btn active" data-v="bike" role="tab">Two-wheelers</button>
+        <button class="seg-btn" data-v="car" role="tab">Cars</button>
+        <span class="seg-pill"></span>
+      </div>
+      <div class="table-wrap reveal"><table class="mtable" id="metricTable"><thead><tr><th>Model</th><th>MAE</th><th>RMSE</th><th>R²</th><th class="barcol"></th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+
+  <!-- PREDICT -->
+  <section class="section predict" id="predict">
+    <div class="wrap">
+      <p class="eyebrow reveal">Predict</p>
+      <h2 class="section-title reveal">What's yours worth?</h2>
+
+      <div class="seg big reveal" id="typeSeg" role="tablist">
+        <button class="seg-btn active" data-v="2w" role="tab">Two-wheeler</button>
+        <button class="seg-btn" data-v="car" role="tab">Car</button>
+        <span class="seg-pill"></span>
+      </div>
+
+      <div class="predict-grid">
+        <form class="card form reveal" id="form" autocomplete="off">
+          <div class="seg small" id="fuelSeg">
+            <button type="button" class="seg-btn active" data-v="bike">Petrol</button>
+            <button type="button" class="seg-btn" data-v="ev">Electric</button>
+            <span class="seg-pill"></span>
+          </div>
+
+          <div class="field"><label for="brand">Brand</label><select id="brand"></select></div>
+          <div class="field"><label for="model">Model</label><select id="model"></select></div>
+
+          <div class="row2">
+            <div class="field"><label for="year">Year bought</label><select id="year"></select></div>
+            <div class="field"><label for="km">Kilometres</label><input id="km" type="number" min="0" step="500" value="15000" inputmode="numeric"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="owner">Owner</label>
+              <select id="owner"><option value="1">First</option><option value="2">Second</option><option value="3">Third</option><option value="4">Fourth +</option></select></div>
+            <div class="field" data-for="bike ev"><label for="state">State</label><select id="state"></select></div>
+            <div class="field" data-for="car"><label for="trans">Transmission</label><select id="trans"><option>Manual</option><option>Automatic</option></select></div>
+          </div>
+
+          <div class="field" data-for="car"><label for="fuel">Fuel</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>LPG</option></select></div>
+
+          <details class="adv">
+            <summary>Advanced</summary>
+            <div class="field" data-for="bike car"><label for="cc">Engine (cc)</label><input id="cc" type="number" min="50" step="1"></div>
+            <div class="field" data-for="car"><label for="power">Power (bhp)</label><input id="power" type="number" min="20" step="1"></div>
+            <div class="field" data-for="car"><label for="seats">Seats</label><input id="seats" type="number" min="2" max="10" step="1"></div>
+            <div class="field" data-for="ev"><label for="exs">New ex-showroom price (₹)</label><input id="exs" type="number" min="20000" step="1000"></div>
+            <div class="field" data-for="ev"><label for="kwh">Battery (kWh)</label><input id="kwh" type="number" min="0.5" step="0.1"></div>
+          </details>
+
+          <button class="btn btn-primary wide" id="go" type="submit"><span class="go-label">Estimate price</span><span class="spinner" aria-hidden="true"></span></button>
+          <p class="fine center" id="formNote">Prices in 2026 rupees. Listing prices, not final sale prices.</p>
+        </form>
+
+        <div class="card result" id="result" aria-live="polite">
+          <div class="empty" id="empty">
+            <div class="empty-ring"></div>
+            <p>Fill in the details and hit <b>Estimate price</b>.</p>
+          </div>
+          <div class="res" id="res" hidden>
+            <div class="tabs" id="resTabs" role="tablist">
+              <button class="tab active" data-t="price" role="tab">Price</button>
+              <button class="tab" data-t="why" role="tab">Why this price</button>
+              <button class="tab" data-t="curve" role="tab">Depreciation</button>
+              <span class="tab-pill"></span>
+            </div>
+
+            <div class="pane active" data-p="price">
+              <p class="res-title" id="resTitle"></p>
+              <div class="price" id="price">₹0</div>
+              <p class="range" id="range"></p>
+              <div class="mini-stats" id="miniStats"></div>
+              <p class="res-summary" id="summary"></p>
+            </div>
+
+            <div class="pane" data-p="why">
+              <p class="why-intro" id="whyIntro"></p>
+              <div class="factors" id="factors"></div>
+              <div class="note-box" id="taxNote" hidden></div>
+              <p class="fine" id="method"></p>
+            </div>
+
+            <div class="pane" data-p="curve">
+              <p class="why-intro" id="curveIntro"></p>
+              <svg id="curveChart" class="chart" viewBox="0 0 600 300" role="img" aria-label="Predicted value by age"></svg>
+              <div class="legend" id="curveLegend"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><b>ResaleIQ</b> — AIML (CS52) course project, M.S. Ramaiah Institute of Technology.</p>
+      <p class="fine">Limits: prices are seller-quoted listing prices; no data on condition or accident history; Kaggle prices (2020-21) are scaled to 2026 rupees; the EV sample is small (424 ads), so EV prices are indicative. Base paper: Ferdous et al., IEEE ICDSNS 2024.</p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2" defer></script>
+</body>
+</html>
