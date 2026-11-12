@@ -198,11 +198,15 @@ def scores(y_true_log, y_pred_log):
 def train(df, cat, numc, tag):
     X, y = df[cat + numc], np.log1p(df.price)
     Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.2, random_state=42)
+    # price never rises with age, km or owners (one constraint per column after one-hot encoding)
+    n_cat = len(make_pre(cat, numc).fit(Xtr).get_feature_names_out()) - len(numc)
+    mono = tuple([0] * n_cat + [{"age": -1, "log_km": -1, "owners": -1}.get(c, 0) for c in numc])
     models = {
         "Linear Regression": LinearRegression(),
         "Random Forest": RandomForestRegressor(n_estimators=300, min_samples_leaf=2, n_jobs=-1, random_state=42),
         "XGBoost": XGBRegressor(n_estimators=900, learning_rate=0.04, max_depth=6, subsample=0.85,
-                                colsample_bytree=0.8, min_child_weight=2, reg_lambda=1.0, random_state=42, n_jobs=-1),
+                                colsample_bytree=0.8, min_child_weight=2, reg_lambda=1.0, random_state=42, n_jobs=-1,
+                                monotone_constraints=mono),
     }
     out, fitted = {}, {}
     for name, m in models.items():
@@ -317,7 +321,10 @@ def main():
     print("Training cars ...");  cm, ctr, cte = train(cars, CAR_CAT, CAR_NUM, "car")
     metrics = {"bike": {"models": bm, "train": btr, "test": bte, "cleaning": blog},
                "car": {"models": cm, "train": ctr, "test": cte, "cleaning": clog}}
-    (MODELS / "metrics.json").write_text(json.dumps(metrics, indent=2))
+    mp = MODELS / "metrics.json"                    # merge: other scripts (train_market.py) keep their entries
+    allm = json.loads(mp.read_text()) if mp.exists() else {}
+    allm.update(metrics)
+    mp.write_text(json.dumps(allm, indent=2))
     (MODELS / "meta.json").write_text(json.dumps(build_meta(bikes, cars)))
     curve = car_value_curve(cars)
     print("  car value curve:", {k: round(v, 4) for k, v in curve.items()})

@@ -256,3 +256,13 @@ b { font-weight: 600; }
 
 .opt { font-weight: 400; color: var(--faint); }
 .warn { margin: 6px 0 2px; font-size: 13px; color: var(--ola); }
+
+/* ---------- small screens: nothing may be wider than the phone ---------- */
+.seg { max-width: 100%; }
+.table-wrap { max-width: 100%; }
+@media (max-width: 560px) {
+  .seg-btn { padding: 7px 10px; font-size: 13px; white-space: normal; line-height: 1.25; }
+  .seg.big .seg-btn { font-size: 15px; padding: 9px 12px; }
+  .nav-inner { gap: 12px; }
+  .mtable th, .mtable td { padding: 12px 12px; font-size: 14px; }
+}

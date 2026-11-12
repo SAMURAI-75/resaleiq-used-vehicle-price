@@ -48,6 +48,9 @@ GROWTH = META["growth"]
 # full variant lists (official + every variant seen in an ad), built by build_variants.py
 VARIANTS = {k: json.loads((ROOT / "models" / f"variants_{k}.json").read_text()) for k in ("bike", "car")
             if (ROOT / "models" / f"variants_{k}.json").exists()}
+# verified years per model (build_variants.py + years.py): official ranges where stated, else typo-trimmed ad years
+MODEL_YEARS = {k: json.loads((ROOT / "models" / f"model_years_{k}.json").read_text()) for k in ("bike", "car")
+               if (ROOT / "models" / f"model_years_{k}.json").exists()}
 
 
 def _json(name):
@@ -124,18 +127,16 @@ def _build_index():
                 engine = "dep"
             else:
                 continue
-            if engine == "market":
-                years = MARKET[mk]["years"].get(key, [NOW - 15, NOW])
-            elif engine == "ml":
-                years = [META[mk]["ref_year"] - 15, NOW]
-            else:
-                years = [NOW - 8, NOW]
+            year_list = MODEL_YEARS.get(mk, {}).get(key)
+            if not year_list:          # no ad anywhere: a new launch, sold new this year and last
+                year_list = [NOW - 1, NOW] if e.get("on_sale") else [NOW - 8 + i for i in range(9)]
+            years = [min(year_list), max(year_list)]
             typ = e.get("type") or ("scooter" if (mi or {}).get("body") == "scooter" else "motorcycle")
             entry = {"model": e["model"], "type": typ if kind == "2w" else None, "fuel": fuel,
                      "on_sale": bool(e.get("on_sale")), "new_price": e.get("new_price"),
                      "new_price_catalog": e.get("new_price"), "engine": engine,
                      "n": (mi or {}).get("n", 0) if engine == "market" else (kag or {}).get("n", 0),
-                     "years": [int(years[0]), int(min(NOW, years[1] if engine == "market" else NOW))],
+                     "years": [int(years[0]), int(min(NOW, years[1]))], "year_list": [int(y) for y in year_list if y <= NOW],
                      "cc": e.get("cc") or (kag or {}).get("cc"), "kwh_est": e.get("kwh_est"),
                      "variants": len(VARIANTS.get(mk, {}).get(key, [])) if engine == "market" else 0}
             if engine == "market" and not entry["new_price"]:
@@ -169,7 +170,7 @@ class PredictIn(BaseModel):
     brand: str
     model: str
     variant: Optional[str] = None
-    year: int = Field(ge=1990, le=NOW)
+    year: int = Field(ge=1980, le=NOW)     # Maruti 800 ads go back to the 1980s
     km: float = Field(ge=0, le=1_000_000)
     owners: int = Field(1, ge=1, le=4)
     state: Optional[str] = None
@@ -318,7 +319,7 @@ def predict_market(kind, p: PredictIn, info):
         if p.year < vy0 or (not var.get("official") and p.year > vy1):
             out["warning"] = (f"The {var['name']} variant appears in ads from {vy0}"
                               f"{'' if var.get('official') else f' to {vy1}'}; check the year, this price is rough.")
-    if "warning" not in out and (p.year < y0 or p.year > y1):
+    if "warning" not in out and p.year not in info.get("year_list", range(y0, y1 + 1)):
         out["warning"] = (f"Few or no {p.model} ads are from {p.year} (listings run {y0}-{y1}), so treat this price as rough."
                           if p.year < y0 else f"No {p.model} ads from {p.year} yet; treat this price as rough.")
     out["tax"] = tax_note(kind, p, info, newp, fuel)

@@ -17,7 +17,7 @@ An Apple-style web app that predicts the fair listing price of a used **petrol t
 \*How far apart asking prices are for the very same variant, year and seller — roughly the best any model can do.
 By segment: electric cars 7.3% / 88.9% · petrol cars 8.3% · diesel 8.6% · petrol motorcycles 12.0% · petrol scooters 13.6% · electric scooters 14.1% / 61.6%.
 
-Course baseline (Kaggle 2020-21 bikes, `train.py`): XGBoost R² 0.946, MAE ₹9,632; the base paper's Decision Tree R² 0.864 on the same split (Colab).
+Course baseline (Kaggle 2020-21 bikes): in Colab, XGBoost R² 0.921 vs the base paper's Decision Tree 0.864 on the same split. The website's copy (`train.py`, with never-rises-with-age/km rules) scores R² 0.908 and only prices 29 older models with no 2026 ads.
 
 **Features of the main models:** brand, model, exact variant, the variant's new price, fuel, body type, gearbox, state, city, seller type (dealer / private), age, km, owners. Monotone rules: the price never rises with age, km or owners, never falls as the new price rises.
 **Checked end to end:** `backend/tests/sweep_test.py` prices every one of the 1,104 models in the dropdowns at three years plus 15 edge cases — 0 failures; median gap to real ads of the same model and age 5.4%.
@@ -39,7 +39,7 @@ Open http://localhost:8000. Models are already trained in `backend/models/`. To 
 ```bash
 cd backend && ../.venv/bin/python train.py && ../.venv/bin/python train_market.py bike && ../.venv/bin/python train_market.py car && ../.venv/bin/python calibrate_2026.py
 ```
-Test everything (server running): `.venv/bin/python backend/tests/sweep_test.py`
+Test everything (server running): `.venv/bin/python backend/tests/sweep_test.py` (prices) and `.venv/bin/python backend/tests/year_check.py` (years); `backend/tests/year_audit.py` compares ad years with official years.
 macOS note: XGBoost needs OpenMP — `brew install libomp`.
 
 ## How it works

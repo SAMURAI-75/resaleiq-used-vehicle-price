@@ -17,8 +17,11 @@ import joblib
 import numpy as np
 import pandas as pd
 
+from years import NOW, final_range, official_years, trimmed_ad_years
+
+BRACKET_RANGE = re.compile(r"\[\d{4}\s*-\s*\d{4}\]")
+
 ROOT = Path(__file__).resolve().parent
-NOW = 2026
 
 
 def clean_model(s):
@@ -54,12 +57,25 @@ def build(kind):
         return next((v for k, v in fuel_map.items() if k in s and not (k == "electric" and "hybrid" in s)), "Petrol")
 
     rows = []
+    u = u[u.makeYear.between(1980, NOW)]
     g = u.groupby(["model_key", "vid"])
-    seen = g.agg(name=("versionName", "first"), n=("price", "size"), y0=("makeYear", "min"), y1=("makeYear", "max"),
+    seen = g.agg(name=("versionName", "first"), mname=("modelName", "first"), n=("price", "size"),
                  fuel=("fuel", "first"), trans=("transmission", "first"),
                  onroad=("onRoadPrice", lambda s: float(np.nanmedian(s[s > 50_000])) if (s > 50_000).any() else np.nan))
+    counts = {k: grp.makeYear.value_counts().to_dict() for k, grp in g}
+    cat = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())["car" if kind == "car" else "bike"]
+    on_sale_models = {f"{b} | {m['model']}" for b, ms in cat.items() for m in ms if m.get("on_sale")}
+    # the listing site's launch date of each model on sale (its latest launch or update; see years.trimmed_ad_years)
+    launched = {}
+    for b, ms in cat.items():
+        for m in ms:
+            try:
+                launched[f"{b} | {m['model']}"] = int(str(m.get("launched") or "")[6:10])
+            except ValueError:
+                pass
     for (key, vid), r in seen.iterrows():
-        rows.append({"model_key": key, "id": vid, "raw": r["name"], "n": int(r["n"]), "years": [int(r.y0), int(r.y1)],
+        rows.append({"model_key": key, "id": vid, "raw": r["name"], "mname": r["mname"], "n": int(r["n"]),
+                     "counts": {int(y): int(c) for y, c in counts[(key, vid)].items()},
                      "fuel": fuel_of(r.fuel), "transmission": ("Automatic" if re.search(r"auto|amt|cvt|dct", str(r.trans), re.I)
                                                                else "Manual") if kind == "car" else "NA",
                      "new_price": r.onroad if kind == "car" else np.nan})
@@ -70,12 +86,43 @@ def build(kind):
         for r in v.itertuples():
             key = f"{r.brand} | {r.model}"
             if (key, str(r.versionId)) not in have:
-                rows.append({"model_key": key, "id": str(r.versionId), "raw": r.versionName, "n": 0, "years": [NOW, NOW],
-                             "fuel": None, "transmission": "NA", "new_price": np.nan})
+                rows.append({"model_key": key, "id": str(r.versionId), "raw": r.versionName, "mname": r.model, "n": 0,
+                             "counts": {}, "fuel": None, "transmission": "NA", "new_price": np.nan})
         for r in rows:
             if r["id"] in price:
                 r["new_price"] = float(price[r["id"]])
                 r["official"] = True
+    # years each variant can be from (years.py: official ranges where the site states them, else typo-trimmed ad years)
+    for r in rows:
+        off = official_years(r["raw"], r["mname"])
+        if kind == "bike":
+            on_sale = bool(r.get("official"))                   # in BikeWale's current variant list
+        else:                                                   # current generation of a model on sale
+            on_sale = r["model_key"] in on_sale_models and not BRACKET_RANGE.search(str(r["mname"])) and \
+                not (off and off[1] < NOW - 1)
+        fr = final_range(off, r["counts"], on_sale, kind, launched.get(r["model_key"]))
+        r["years"] = [int(fr[0]), int(fr[1])] if fr else [NOW, NOW]
+        r["years_source"] = fr[2] if fr else "new"
+    # a model only lists variants of its own fuel: the electric Chetak must not inherit the 1972-2006 petrol Chetak
+    model_fuel = {f"{b} | {m['model']}": m.get("fuel") for b, ms in cat.items() for m in ms}
+    def same_fuel(r):
+        mf = model_fuel.get(r["model_key"])
+        if kind != "bike" or not mf or not r.get("fuel"):
+            return True
+        return (mf == "electric") == (r["fuel"] == "Electric")
+    rows = [r for r in rows if same_fuel(r)]
+    # the same thin-tail rule at model level: small variants can each hold a few mis-filed old ads
+    # (R15 V4 "2019"); ad-based years before the model's real start are cut, official years are kept
+    model_counts = {}
+    for r in rows:
+        mc = model_counts.setdefault(r["model_key"], {})
+        for y, c in r["counts"].items():
+            mc[y] = mc.get(y, 0) + c
+    model_start = {k: trimmed_ad_years(c, launched.get(k))[0] for k, c in model_counts.items() if c}
+    for r in rows:
+        st = model_start.get(r["model_key"])
+        if st and r.get("years_source") == "ads" and r["years"][0] < st:
+            r["years"] = [st, max(st, r["years"][1])]
     out = {}
     for key, grp in pd.DataFrame(rows).groupby("model_key"):
         model_new = M["models"].get(key, {}).get("new_price")
@@ -120,8 +167,43 @@ def build(kind):
                 final.append({k: (None if isinstance(v, float) and v != v else v) for k, v in rec.items()})   # NaN -> null
         out[key] = sorted(final, key=lambda o: ((o["new_price"] or 0), o["name"]))
     (ROOT / "models" / f"variants_{kind}.json").write_text(json.dumps(out))
+    # model-level years (no variant chosen): the span of its variants' years
+    # every year at least one variant covers -- a list, so gaps between generations are left out
+    # (Grand Vitara: 2003-2015 and 2022-2026, not 2003-2026)
+    model_years = {k: sorted({y for o in vs for y in range(o["years"][0], o["years"][1] + 1)}) for k, vs in out.items() if vs}
+    model_years.update({k: list(range(v[0], v[1] + 1)) for k, v in kaggle_years(kind).items() if k not in model_years})
+    (ROOT / "models" / f"model_years_{kind}.json").write_text(json.dumps(model_years))
     n = sum(len(v) for v in out.values())
     print(f"{kind}: {n:,} variants across {len(out):,} models ({sum(o['learned'] for v in out.values() for o in v):,} with a learned effect)")
+
+
+def kaggle_years(kind):
+    """Years for the older models priced from the Kaggle 2020-21 data (no 2026 ads): from that data, typo-trimmed."""
+    import glob
+    home = Path.home() / ".cache" / "kagglehub" / "datasets"
+    if kind == "bike":
+        f = glob.glob(str(home / "saisaathvik" / "*" / "versions" / "*" / "*.csv"))
+        if not f:
+            return {}
+        d = pd.read_csv(f[0]).drop_duplicates()
+        d["bike_name"] = d.bike_name.str.replace("\u200e", "").str.replace(r"\s+", " ", regex=True).str.strip()
+        nm = pd.read_csv(ROOT / "data" / "catalog" / "name_map_bike.csv")
+        d = d.merge(nm, left_on=["brand", "bike_name"], right_on=["kaggle_brand", "kaggle_name"], how="inner")
+        d["key"] = d.brand_y + " | " + d.official_model
+        d["year"] = (2021 - d.age).astype(int)
+    else:
+        f = glob.glob(str(home / "nehalbirla" / "vehicle-dataset-from-cardekho" / "versions" / "*" / "Car details v3.csv"))
+        if not f:
+            return {}
+        d = pd.read_csv(f[0]).drop_duplicates()
+        nm = pd.read_csv(ROOT / "data" / "catalog" / "name_map_car.csv")
+        d = d.merge(nm, left_on="name", right_on="kaggle_name", how="inner")
+        d["key"] = d.brand + " | " + d.official_model
+    out = {}
+    for k, grp in d.dropna(subset=["key"]).groupby("key"):
+        y1, y2 = trimmed_ad_years(grp.year.value_counts().to_dict())
+        out[k] = [int(y1), int(min(NOW, y2 + 1))]
+    return out
 
 
 if __name__ == "__main__":

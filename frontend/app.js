@@ -234,17 +234,20 @@ function updateFields() {
 
 // years a vehicle can be from: the chosen variant's own years (e.g. Guerrilla 450 Apex: 2026 only),
 // else the model's. A variant still on sale runs to this year; a discontinued one stops at its last year.
-function yearRange(m, v) {
-  const now = META.now;
-  if (v && v.n > 0 && v.years) return [v.years[0], v.official ? now : v.years[1]];
-  return (m && m.years) || [now - 15, now];
+// years a vehicle can be from (verified server-side, see backend/years.py): the chosen variant's own years,
+// else every year the model's variants cover (gaps between generations left out)
+function yearList(m, v) {
+  const now = META.now, span = (a, b) => Array.from({ length: Math.max(0, b - a + 1) }, (_, i) => a + i);
+  if (v && v.years) return span(v.years[0], Math.min(now, v.years[1]));
+  if (m && m.year_list && m.year_list.length) return m.year_list.filter((y) => y <= now);
+  return span(now - 15, now);
 }
 function setYears(m, v) {
-  const now = META.now, cur = +F.year.value || now - 4;
-  let [y0, y1] = yearRange(m, v);
-  y0 = Math.max(1995, Math.min(y0, now)); y1 = Math.min(now, Math.max(y1, y0));
-  F.year.innerHTML = Array.from({ length: y1 - y0 + 1 }, (_, i) => `<option>${y1 - i}</option>`).join("");
-  F.year.value = String(Math.max(y0, Math.min(y1, cur)));
+  const cur = +F.year.value || META.now - 4;
+  const ys = yearList(m, v).sort((a, b) => b - a);
+  F.year.innerHTML = ys.map((y) => `<option>${y}</option>`).join("");
+  const best = ys.includes(cur) ? cur : ys.reduce((a, y) => (Math.abs(y - cur) < Math.abs(a - cur) ? y : a), ys[0]);
+  F.year.value = String(best);
 }
 function fillCities() {
   const cs = META.cities[F.state.value] || [], prev = F.city.value;

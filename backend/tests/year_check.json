@@ -1,0 +1,288 @@
+{
+ "report": {
+  "models": 1104,
+  "models_with_bad_year_list": 0,
+  "variants": 9368,
+  "variants_outside_model_years": 0,
+  "2w_ads_checked": 29692,
+  "2w_ads_year_offered_for_model": "98.91%",
+  "2w_ads_year_offered_for_variant": "97.70% of 24,719",
+  "car_ads_checked": 91083,
+  "car_ads_year_offered_for_model": "99.88%",
+  "car_ads_year_offered_for_variant": "98.79% of 90,147",
+  "spot_checks_ok": "26/27"
+ },
+ "spots": [
+  [
+   [
+    "2w",
+    "Honda",
+    "Activa"
+   ],
+   2001,
+   2000,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Bajaj",
+    "Pulsar NS200"
+   ],
+   2012,
+   2012,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Royal Enfield",
+    "Classic 350"
+   ],
+   2009,
+   2010,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Royal Enfield",
+    "Himalayan"
+   ],
+   2016,
+   2015,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Royal Enfield",
+    "Meteor 350"
+   ],
+   2020,
+   2020,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Royal Enfield",
+    "Hunter 350"
+   ],
+   2022,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Royal Enfield",
+    "Guerrilla 450"
+   ],
+   2024,
+   2024,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Bajaj",
+    "Pulsar NS400Z"
+   ],
+   2024,
+   2024,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Ather",
+    "450X"
+   ],
+   2020,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "OLA",
+    "S1 Pro"
+   ],
+   2021,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "TVS",
+    "iQube"
+   ],
+   2020,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Bajaj",
+    "Chetak"
+   ],
+   2020,
+   2020,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "TVS",
+    "Raider 125"
+   ],
+   2021,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "Yamaha",
+    "R15 V4"
+   ],
+   2021,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "2w",
+    "KTM",
+    "390 Duke"
+   ],
+   2013,
+   2013,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Hyundai",
+    "Creta"
+   ],
+   2015,
+   2015,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Kia",
+    "Seltos"
+   ],
+   2019,
+   2019,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Tata",
+    "Nexon"
+   ],
+   2017,
+   2017,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Tata",
+    "Nexon EV"
+   ],
+   2020,
+   2020,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Maruti Suzuki",
+    "Brezza"
+   ],
+   2022,
+   2022,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Maruti Suzuki",
+    "Fronx"
+   ],
+   2023,
+   2023,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Tata",
+    "Punch"
+   ],
+   2021,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Mahindra",
+    "XUV700"
+   ],
+   2021,
+   2021,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Kia",
+    "Sonet"
+   ],
+   2020,
+   2020,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "MG",
+    "Hector"
+   ],
+   2019,
+   2019,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Hyundai",
+    "Venue"
+   ],
+   2019,
+   2019,
+   "ok"
+  ],
+  [
+   [
+    "car",
+    "Mahindra",
+    "Thar"
+   ],
+   2010,
+   2014,
+   "later than launch"
+  ]
+ ],
+ "variants_outside": []
+}

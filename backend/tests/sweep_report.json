@@ -3,9 +3,9 @@
   "models_checked": 1104,
   "models_with_issues": 0,
   "edge_cases_failed": 0,
-  "similar_ad_comparisons": 460,
+  "similar_ad_comparisons": 405,
   "median_abs_gap_to_similar_ads": 0.05366666666666664,
-  "gaps_over_40pct": 0
+  "gaps_over_40pct": 1
  },
  "issues": [],
  "edges": [
@@ -50,7 +50,7 @@
    "ok": true
   },
   {
-   "case": "year 1989",
+   "case": "year 1979",
    "status": 422,
    "ok": true
   },
@@ -83,5 +83,18 @@
    "ok": true
   }
  ],
- "big_gaps": []
+ "big_gaps": [
+  [
+   "car",
+   "Toyota",
+   "Corolla Altis",
+   {
+    "year": 2013,
+    "price": 445700.0,
+    "similar": 297000.0,
+    "n": 12,
+    "gap": 0.5006734006734006
+   }
+  ]
+ ]
 }

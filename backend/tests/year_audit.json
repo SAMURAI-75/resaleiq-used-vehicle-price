@@ -1,0 +1,426 @@
+{
+ "summary": [
+  {
+   "type": "car cng",
+   "variants": 279,
+   "ads": 3120,
+   "variants_with_official_years": "68%",
+   "ads_outside_official_years": "0.91%",
+   "variants_with_an_impossible_ad": "5.3%",
+   "official_years_missing_from_ads": "43%",
+   "typo_ads_dropped_(no_official_years)": 4
+  },
+  {
+   "type": "car diesel",
+   "variants": 3274,
+   "ads": 32938,
+   "variants_with_official_years": "75%",
+   "ads_outside_official_years": "1.57%",
+   "variants_with_an_impossible_ad": "5.1%",
+   "official_years_missing_from_ads": "44%",
+   "typo_ads_dropped_(no_official_years)": 53
+  },
+  {
+   "type": "car electric",
+   "variants": 263,
+   "ads": 1734,
+   "variants_with_official_years": "35%",
+   "ads_outside_official_years": "0.13%",
+   "variants_with_an_impossible_ad": "1.1%",
+   "official_years_missing_from_ads": "45%",
+   "typo_ads_dropped_(no_official_years)": 3
+  },
+  {
+   "type": "car hybrid",
+   "variants": 133,
+   "ads": 1198,
+   "variants_with_official_years": "38%",
+   "ads_outside_official_years": "0.00%",
+   "variants_with_an_impossible_ad": "0.0%",
+   "official_years_missing_from_ads": "41%",
+   "typo_ads_dropped_(no_official_years)": 4
+  },
+  {
+   "type": "car petrol",
+   "variants": 4581,
+   "ads": 52758,
+   "variants_with_official_years": "74%",
+   "ads_outside_official_years": "1.38%",
+   "variants_with_an_impossible_ad": "4.9%",
+   "official_years_missing_from_ads": "44%",
+   "typo_ads_dropped_(no_official_years)": 58
+  },
+  {
+   "type": "two-wheeler electric motorcycle",
+   "variants": 45,
+   "ads": 156,
+   "variants_with_official_years": "0%",
+   "ads_outside_official_years": "0.00%",
+   "variants_with_an_impossible_ad": "-",
+   "official_years_missing_from_ads": "-",
+   "typo_ads_dropped_(no_official_years)": 3
+  },
+  {
+   "type": "two-wheeler electric scooter",
+   "variants": 155,
+   "ads": 794,
+   "variants_with_official_years": "6%",
+   "ads_outside_official_years": "5.26%",
+   "variants_with_an_impossible_ad": "33.3%",
+   "official_years_missing_from_ads": "67%",
+   "typo_ads_dropped_(no_official_years)": 12
+  },
+  {
+   "type": "two-wheeler petrol motorcycle",
+   "variants": 1558,
+   "ads": 24619,
+   "variants_with_official_years": "16%",
+   "ads_outside_official_years": "10.02%",
+   "variants_with_an_impossible_ad": "41.3%",
+   "official_years_missing_from_ads": "53%",
+   "typo_ads_dropped_(no_official_years)": 592
+  },
+  {
+   "type": "two-wheeler petrol scooter",
+   "variants": 364,
+   "ads": 4735,
+   "variants_with_official_years": "14%",
+   "ads_outside_official_years": "9.89%",
+   "variants_with_an_impossible_ad": "48.1%",
+   "official_years_missing_from_ads": "51%",
+   "typo_ads_dropped_(no_official_years)": 127
+  }
+ ],
+ "worst": [
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Hyundai",
+   "model": "Creta [2015-2017]",
+   "variant": "1.6 SX Plus AT Petrol",
+   "ads": 148,
+   "ad_years": [
+    2016,
+    2021
+   ],
+   "official": [
+    2015,
+    2017
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 0.0,
+   "ads_after": 37.0,
+   "years_without_ads": 1.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Maruti Suzuki",
+   "model": "Wagon R 1.0 [2014-2019]",
+   "variant": "VXI",
+   "ads": 527,
+   "ad_years": [
+    2007,
+    2019
+   ],
+   "official": [
+    2014,
+    2019
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 36.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Hyundai",
+   "model": "Venue [2023-2025]",
+   "variant": "SX 1.5 Diesel",
+   "ads": 35,
+   "ad_years": [
+    2021,
+    2024
+   ],
+   "official": [
+    2023,
+    2025
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 25.0,
+   "ads_after": 0.0,
+   "years_without_ads": 1.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Hyundai",
+   "model": "Verna [2011-2015]",
+   "variant": "Fluidic 1.6 VTVT SX",
+   "ads": 102,
+   "ad_years": [
+    2011,
+    2019
+   ],
+   "official": [
+    2011,
+    2015
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 0.0,
+   "ads_after": 24.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Honda",
+   "model": "City 4th Generation",
+   "variant": "SV Petrol [2017-2019]",
+   "ads": 53,
+   "ad_years": [
+    2014,
+    2019
+   ],
+   "official": [
+    2017,
+    2019
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "variant name",
+   "ads_before": 24.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Hyundai",
+   "model": "Grand i10",
+   "variant": "Sportz (O) 1.2 Kappa VTVT [2017-2018]",
+   "ads": 106,
+   "ad_years": [
+    2013,
+    2019
+   ],
+   "official": [
+    2017,
+    2018
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "variant name",
+   "ads_before": 20.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Mercedes-Benz",
+   "model": "GLA [2017-2020]",
+   "variant": "200 Sport",
+   "ads": 37,
+   "ad_years": [
+    2015,
+    2020
+   ],
+   "official": [
+    2017,
+    2020
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 17.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Tata",
+   "model": "Safari [2015-2017]",
+   "variant": "4x2 LX DiCOR 2.2 VTT",
+   "ads": 17,
+   "ad_years": [
+    2008,
+    2013
+   ],
+   "official": [
+    2015,
+    2017
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 17.0,
+   "ads_after": 0.0,
+   "years_without_ads": 3.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Jeep",
+   "model": "Meridian",
+   "variant": "Limited (O) 4x2 AT [2024-2026]",
+   "ads": 30,
+   "ad_years": [
+    2023,
+    2025
+   ],
+   "official": [
+    2024,
+    2026
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "variant name",
+   "ads_before": 17.0,
+   "ads_after": 0.0,
+   "years_without_ads": 1.0
+  },
+  {
+   "site": "bikewale",
+   "type": "two-wheeler petrol motorcycle",
+   "brand": "Yamaha",
+   "model": "FZ S [2012-2016]",
+   "variant": "Standard",
+   "ads": 87,
+   "ad_years": [
+    2009,
+    2026
+   ],
+   "official": [
+    2012,
+    2016
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 7.0,
+   "ads_after": 9.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Honda",
+   "model": "City 4th Generation",
+   "variant": "VX CVT Petrol [2017-2019]",
+   "ads": 25,
+   "ad_years": [
+    2014,
+    2019
+   ],
+   "official": [
+    2017,
+    2019
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "variant name",
+   "ads_before": 16.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car petrol",
+   "brand": "Maruti Suzuki",
+   "model": "Dzire [2017-2020]",
+   "variant": "VXi",
+   "ads": 235,
+   "ad_years": [
+    2008,
+    2020
+   ],
+   "official": [
+    2017,
+    2020
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 15.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Ford",
+   "model": "EcoSport [2017-2019]",
+   "variant": "Ambiente 1.5L TDCi",
+   "ads": 28,
+   "ad_years": [
+    2013,
+    2019
+   ],
+   "official": [
+    2017,
+    2019
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 14.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Toyota",
+   "model": "Innova [2012-2013]",
+   "variant": "2.5 G 7 STR BS-III",
+   "ads": 22,
+   "ad_years": [
+    2007,
+    2013
+   ],
+   "official": [
+    2012,
+    2013
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "model name",
+   "ads_before": 12.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  },
+  {
+   "site": "carwale",
+   "type": "car diesel",
+   "brand": "Mahindra",
+   "model": "Old Generation XUV700",
+   "variant": "AX 7 Diesel AT 7 STR [2023-2024]",
+   "ads": 27,
+   "ad_years": [
+    2022,
+    2025
+   ],
+   "official": [
+    2023,
+    2024
+   ],
+   "trimmed": NaN,
+   "typo_ads_dropped": NaN,
+   "source": "variant name",
+   "ads_before": 12.0,
+   "ads_after": 0.0,
+   "years_without_ads": 0.0
+  }
+ ]
+}

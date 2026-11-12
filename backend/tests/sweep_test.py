@@ -95,7 +95,7 @@ def edge_cases(meta):
         ("km 0", {**base, "km": 0}, 200), ("km 999,999", {**base, "km": 999999}, 200), ("4th owner", {**base, "owners": 4}, 200),
         ("no city", {**base, "city": None}, 200), ("state Other", {**base, "state": "Other"}, 200),
         ("unknown state", {**base, "state": "Atlantis"}, 422), ("unknown model", {**base, "model": "Nope 9000"}, 422),
-        ("unknown variant", {**base, "variant": "999999999"}, 200), ("year 1989", {**base, "year": 1989}, 422),
+        ("unknown variant", {**base, "variant": "999999999"}, 200), ("year 1979", {**base, "year": 1979}, 422),
         ("year 2027", {**base, "year": 2027}, 422), ("negative km", {**base, "km": -5}, 422),
         ("dealer", {**base, "seller": "dealer"}, 200), ("bad seller", {**base, "seller": "robot"}, 422)]:
         st, r = call("/api/predict", body)
