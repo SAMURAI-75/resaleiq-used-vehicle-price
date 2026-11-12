@@ -47,6 +47,21 @@ _cal_path = ROOT / "models" / "calibration_2026.json"
 CAL = json.loads(_cal_path.read_text()) if _cal_path.exists() else None   # from calibrate_2026.py
 
 
+_dep_path = ROOT / "models" / "dep_calibration_2026.json"
+DEP_CAL = json.loads(_dep_path.read_text()) if _dep_path.exists() else None   # from calibrate_2026.py
+
+
+def dep_factor(info, age):
+    """Backtest correction for the depreciation engine: median(2026 ad / prediction) by group and age band."""
+    if not DEP_CAL:
+        return 1.0
+    grp = "ev" if info.get("fuel") == "electric" else ("scooter" if info.get("type") in ("scooter", "moped") else "motorcycle")
+    for lo, hi in DEP_CAL["bands"]:
+        if lo < age <= hi:
+            return DEP_CAL["factor"].get(grp, {}).get(f"{lo + 1}-{hi}", 1.0)
+    return 1.0
+
+
 def cal_factor(mk, age):
     """2026 calibration for the bike model: median(actual 2026 ad / prediction) for this age band."""
     if mk != "bike" or not CAL:
@@ -248,6 +263,20 @@ def predict_dep(kind, p: PredictIn, info):
     if kind == "2w":
         out = dep.predict_2w(p.brand, info, exs, age, p.km, p.owners, p.state, p.kwh)
         src = "BikeWale"
+        f = dep_factor(info, age)
+        if f != 1.0:
+            for k in ("price", "low", "high"):
+                out[k] = round(out[k] * f, -2)
+            out["value_kept"] = round(out["price"] / out["new_price"] * 100, 1)
+            for c in out["curve"]:
+                fc = dep_factor(info, c["age"])
+                c["price"] = round(c["price"] * fc, -2)
+                c["kept"] = round(c["kept"] * fc, 1)
+            out["factors"].append({"feature": "2026 market check", "value": f"x{f:.2f}", "effect": round((f - 1) * 100, 1),
+                                   "note": (f"Measured correction: real 2026 BikeWale ads of this kind and age list at {f:.2f}x "
+                                            f"what the formula alone gives (backtest on {sum(v['ads'] for v in DEP_CAL['test'].values()):,} ads).")})
+        sim = CAL["similar"].get(f"{p.brand} | {p.model}|{age}") if CAL else None
+        out["similar"] = {"median": round(sim[0], -2), "count": sim[1], "year": 2026} if sim else None
     else:
         out = dep.predict_car(META["car_curve"], exs, age, p.km, p.owners)
         src = "CarWale"

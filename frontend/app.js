@@ -266,7 +266,8 @@ function show(d, first, m) {
     minis.push(d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
   } else {
     minis.push(["Value kept", d.value_kept + "%"]);
-    minis.push(isEv ? ["Battery health", "~" + Math.round(d.battery_health) + "%"] : ["Age", d.age + " yr"]);
+    minis.push(d.similar ? [`Real 2026 ads (${d.similar.count})`, inr(d.similar.median)]
+      : isEv ? ["Battery health", "~" + Math.round(d.battery_health) + "%"] : ["Age", d.age + " yr"]);
     minis.push([KIND === "car" ? "New (ex-showroom)" : "New on-road", inr(d.new_price)]);
   }
   $("#miniStats").innerHTML = minis.map(([k, v]) => `<div class="mini"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");

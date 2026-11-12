@@ -71,5 +71,43 @@ def main():
     print(json.dumps(test, indent=1))
 
 
+def dep_calibration():
+    """Backtest the depreciation engine (app/depreciation.py) on every 2026 ad it would price and save
+    median(actual / predicted) by group (EV / scooter / motorcycle) and age band -> models/dep_calibration_2026.json."""
+    import sys
+    sys.path.insert(0, str(ROOT.parent))
+    from backend.app import depreciation as dep
+    cat = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())["bike"]
+    info = {(b, m["model"]): m for b, ms in cat.items() for m in ms if m.get("new_price")}
+    u = pd.read_csv(ROOT / "data" / "used_2026" / "bikewale_used_2026.csv")
+    u["model"] = (u.modelName.astype(str).str.replace(r"\[.*?\]", "", regex=True)
+                  .str.replace(r"^(Old Generation|New|Old)\s+", "", regex=True).str.strip())
+    u["age"] = NOW - u.makeYear
+    u = u[(u.priceNumeric > 5_000) & u.kmNumeric.between(0, 150_000) & u.age.between(0, 25)]
+    rows = []
+    for r in u.itertuples():
+        m = info.get((r.makeName, r.model))
+        if not m:
+            continue
+        out = dep.predict_2w(r.makeName, m, m["new_price"], r.age, r.kmNumeric, int(min(max(r.ownersId, 1), 4)), None)
+        grp = "ev" if m["fuel"] == "electric" else ("scooter" if m["type"] != "motorcycle" else "motorcycle")
+        rows.append((grp, band(r.age), r.priceNumeric / out["price"]))
+    d = pd.DataFrame(rows, columns=["grp", "band", "ratio"])
+    fac = {}
+    for g, gd in d.groupby("grp"):
+        overall = float(gd.ratio.median())
+        fac[g] = {}
+        last = overall
+        for lo, hi in BANDS:
+            b = f"{lo + 1}-{hi}"
+            s = gd[gd.band == b].ratio
+            last = float(s.median()) if len(s) >= 30 else last   # thin band -> carry the previous band's factor
+            fac[g][b] = last
+    test = {g: {"ads": int(len(gd)), "median_ratio": float(gd.ratio.median())} for g, gd in d.groupby("grp")}
+    (ROOT / "models" / "dep_calibration_2026.json").write_text(json.dumps({"bands": BANDS, "factor": fac, "test": test}, indent=1))
+    print(json.dumps(fac, indent=1))
+
+
 if __name__ == "__main__":
     main()
+    dep_calibration()
