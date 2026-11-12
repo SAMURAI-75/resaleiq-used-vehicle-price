@@ -13,7 +13,9 @@ An Apple-style web app that predicts the fair listing price of a used **petrol t
 
 **Verified vehicle list:** 541 two-wheeler models (59 brands) and 345 car models (29 brands), official names and 2026 prices scraped from BikeWale / CarWale (`backend/scrape_catalog.py`, `backend/build_catalog.py`). Every Kaggle listing name is mapped to an official model name (98.4% of bike rows, 99.7% of car rows).
 
-**Two pricing engines, chosen per model and shown on every result:**
+**Main two-wheeler model (2026):** XGBoost trained on 28,912 live BikeWale ads (Nov 2026, incl. 920 EVs and all scooters): R² (log) 0.871, MAE ₹15,140, 68.7% within ±20% (`backend/train_2026.py`).
+
+**Pricing engines, chosen per model and shown on every result:**
 - **XGBoost (live ML)** — models with ≥3 listings in the Kaggle training data. Runs on every request (~5–20 ms); the "Why" factors are exact Tree SHAP values from that same run.
 - **Depreciation model** — EVs, scooters and anything launched after 2021 (e.g. Pulsar NS400Z, Activa, Ola S1). Official 2026 new price × measured yearly loss (Module 6 for two-wheelers; a same-model fit on 2,720 CarDekho listings for cars, 11.4%/yr).
 

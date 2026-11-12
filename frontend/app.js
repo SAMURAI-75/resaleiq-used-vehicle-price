@@ -185,8 +185,8 @@ function updateFields() {
   const m = current() || {};
   const flags = new Set([KIND, m.engine, m.fuel === "electric" ? "ev" : "ice"]);
   $$("[data-for]").forEach((f) => f.classList.toggle("hide", !f.dataset.for.split(" ").every((t) => flags.has(t))));
-  $("#engineHint").innerHTML = !m.engine ? "" : m.engine === "ml"
-    ? `Priced live by <b>XGBoost</b> · ${m.train_rows} training listings of this model`
+  $("#engineHint").innerHTML = !m.engine ? "" : (m.engine === "ml" || m.engine === "ml26")
+    ? `Priced live by <b>XGBoost</b> · learned from ${m.train_rows} real ads of this model`
     : `Priced by the <b>depreciation model</b> · official ${KIND === "car" ? "CarWale" : "BikeWale"} price ${inr(m.new_price)}`;
 }
 
@@ -249,6 +249,7 @@ function show(d, first, m) {
   $("#empty").hidden = true; const res = $("#res"); res.hidden = false;
   if (first) { res.style.animation = "none"; res.offsetHeight; res.style.animation = ""; }
   const isMl = d.engine.kind === "ml", isEv = m.fuel === "electric";
+  const evMl = isMl && isEv;
   const badge = $("#engineBadge");
   badge.className = "engine-badge" + (isMl ? "" : " dep");
   badge.innerHTML = `<i></i>${isMl ? `Predicted live by XGBoost · ${d.engine.ms} ms` : `Depreciation model · ${d.engine.ms} ms`}`;
@@ -262,11 +263,12 @@ function show(d, first, m) {
   const minis = [];
   if (isMl) {
     minis.push(["Age", d.age + " yr"]);
-    minis.push(d.similar ? [`Similar ${d.similar.year === 2026 ? "2026 " : ""}ads (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
-    minis.push(d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
+    minis.push(d.similar ? [`${d.similar.year === 2026 ? "All-India 2026 ads" : "Similar ads"} (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
+    minis.push(evMl && d.battery_health ? ["Battery health", "~" + Math.round(d.battery_health) + "%"]
+      : d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
   } else {
     minis.push(["Value kept", d.value_kept + "%"]);
-    minis.push(d.similar ? [`Real 2026 ads (${d.similar.count})`, inr(d.similar.median)]
+    minis.push(d.similar ? [`All-India 2026 ads (${d.similar.count})`, inr(d.similar.median)]
       : isEv ? ["Battery health", "~" + Math.round(d.battery_health) + "%"] : ["Age", d.age + " yr"]);
     minis.push([KIND === "car" ? "New (ex-showroom)" : "New on-road", inr(d.new_price)]);
   }
@@ -274,8 +276,8 @@ function show(d, first, m) {
   $("#summary").textContent = d.summary + (d.brand_note ? " " + d.brand_note : "");
 
   $("#whyIntro").innerHTML = isMl
-    ? `We start from the <b>typical listing</b> in the training data (${inr(d.base_price)}) and add the push from each feature, measured with Tree SHAP on this exact prediction. Green raises the price, red lowers it. Effects are relative to an average ${KIND === "car" ? "car" : "bike"}, so a newer-than-average vehicle shows a positive age effect.`
-    : `Start from the price when new, then each factor multiplies it in turn.`;
+    ? `We start from a <b>typical ad</b> (${inr(d.base_price)}) and show how much each detail you entered pushes the price up (green) or down (red). These come straight from the model's own calculation (Tree SHAP). They compare with an average ${KIND === "car" ? "car" : "two-wheeler"}, so a newer-than-average vehicle shows a positive age effect.`
+    : `We start from the price when new, then apply each factor in turn.`;
   const maxAbs = Math.max(10, ...d.factors.map((f) => Math.abs(f.effect || 0)));
   $("#factors").innerHTML = d.factors.map((f, i) => {
     const e = f.effect, has = e !== null && e !== undefined, cls = !has ? "" : e >= 0 ? "up" : "down";
@@ -287,7 +289,7 @@ function show(d, first, m) {
       <div class="note">${esc(f.note)}</div></div>`;
   }).join("");
   requestAnimationFrame(() => requestAnimationFrame(() => $$("#factors .track i").forEach((i) => (i.style.width = i.dataset.w + "%"))));
-  $("#engineBox").innerHTML = `<b>How this was priced.</b> ${esc(d.engine.detail)} Server time ${d.engine.ms} ms, round trip ${Math.round(lastRtt)} ms.`;
+  $("#engineBox").innerHTML = `<b>How this was priced.</b> ${esc(d.engine.detail)}`;
 
   const tn = $("#taxNote");
   if (d.road_tax) {
@@ -301,7 +303,7 @@ function show(d, first, m) {
   $("#method").textContent = d.method + " " + (d.range_note || "");
 
   const money = (y) => y >= 1e5 ? `₹${(y / 1e5).toFixed(1)}L` : `₹${Math.round(y / 1e3)}k`;
-  if (isEv) {
+  if (isEv && !isMl) {
     const col = "var(--ev)";
     $("#curveIntro").textContent = "Share of the new on-road price kept, by age — this EV vs a petrol two-wheeler of the same type.";
     lineChart($("#curveChart"), [
@@ -339,7 +341,7 @@ function show(d, first, m) {
   F.state.value = "Karnataka";
   const sm = $("#statModels"); sm.dataset.count = META.counts["2w"] + META.counts.car;
   if (sm.classList.contains("in")) countUp(sm);
-  renderMetrics("bike");
+  renderMetrics("bike2026");
   setYears(); F.year.value = String(META.now - 4);
   fillBrands("Royal Enfield"); F.model.value = "Classic 350"; fillSpecs();
 })();
