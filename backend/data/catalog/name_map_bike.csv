@@ -1,0 +1,468 @@
+kaggle_brand,kaggle_name,rows,brand,official_model,how
+Royal Enfield,Royal Enfield Classic 350cc,358,Royal Enfield,Classic 350,override
+Bajaj,Bajaj Pulsar 150cc,265,Bajaj,Pulsar 150,auto
+Royal Enfield,Royal Enfield Thunderbird 350cc,237,Royal Enfield,Thunderbird 350,override
+Bajaj,Bajaj Avenger 220cc,165,Bajaj,Avenger,override
+Hero,Hero Passion Pro 100cc,160,Hero,Passion Pro,override
+Hero,Hero Splendor Plus 100cc,149,Hero,Splendor Plus,override
+Honda,Honda CB Shine 125cc,131,Honda,Shine,override
+Bajaj,Bajaj V15 150cc,129,Bajaj,V15,auto
+Yamaha,Yamaha YZF-R15 2.0 150cc,111,Yamaha,YZF R15,override
+Bajaj,Bajaj Avenger Street 150,109,Bajaj,Avenger Street 150,override
+Royal Enfield,Royal Enfield Bullet Electra 350cc,105,Royal Enfield,Electra,override
+TVS,TVS Apache RTR 160cc,105,TVS,Apache RTR 160,override
+Bajaj,Bajaj Pulsar 180cc,100,Bajaj,Pulsar 180,auto
+KTM,KTM Duke 390cc,99,KTM,390 Duke,override
+Yamaha,Yamaha FZs 150cc,96,Yamaha,FZ S,override
+Bajaj,Bajaj Pulsar RS200 ABS,94,Bajaj,Pulsar RS 200,override
+KTM,KTM RC 200cc,83,KTM,RC 200,override
+Royal Enfield,Royal Enfield Thunderbird 500cc,82,Royal Enfield,Thunderbird 500,override
+Hero,Hero HF Deluxe 100cc,82,Hero,HF Deluxe,override
+KTM,KTM RC 390cc,82,KTM,RC 390,override
+Bajaj,Bajaj Pulsar 220cc,77,Bajaj,Pulsar 220F,override
+Bajaj,Bajaj Discover 125cc,76,Bajaj,Discover 125,override
+KTM,KTM Duke 200cc,71,KTM,200 Duke,override
+Bajaj,Bajaj Pulsar NS200,71,Bajaj,Pulsar NS200,override
+Royal Enfield,Royal Enfield Classic 500cc,70,Royal Enfield,Classic 500,override
+Bajaj,Bajaj Dominar 400 ABS,68,Bajaj,Dominar 400,override
+Bajaj,Bajaj Avenger Street 220,67,Bajaj,Avenger Street 220,override
+Royal Enfield,Royal Enfield Bullet 350cc,64,Royal Enfield,Bullet 350,override
+Bajaj,Bajaj Pulsar RS200,63,Bajaj,Pulsar RS 200,override
+Bajaj,Bajaj Platina 100cc,63,Bajaj,Platina 100,override
+Bajaj,Bajaj Discover 100cc,62,Bajaj,Discover 100,override
+Bajaj,Bajaj CT 100 100cc,62,Bajaj,CT 100,override
+Bajaj,Bajaj Avenger Cruise 220,61,Bajaj,Avenger Cruise 220,override
+Bajaj,Bajaj Pulsar 135LS,59,Bajaj,Pulsar 135 LS,override
+Yamaha,Yamaha YZF-R15 150cc,58,Yamaha,YZF R15,override
+Honda,Honda CBF Stunner 125cc,58,Honda,CBF Stunner,override
+Hero,Hero CD Deluxe 100cc,58,Hero,CD Deluxe,override
+Hero,Hero Passion Plus 100cc,58,Hero,Passion Plus,override
+Suzuki,Suzuki Gixxer 150cc,55,Suzuki,Gixxer,override
+Bajaj,Bajaj Pulsar 220F,53,Bajaj,Pulsar 220F,override
+Hero,Hero CBZ Xtreme 150cc,53,Hero,Xtreme,override
+TVS,TVS Apache RTR 180cc,53,TVS,Apache RTR 180,override
+Honda,Honda CB Unicorn 150cc,52,Honda,CB Unicorn 150,override
+Honda,Honda CBR 150R 150cc,50,Honda,CBR150 R,override
+Honda,Honda CB Trigger 150cc,49,Honda,CB Trigger,override
+Hero,Hero Splendor Pro 100cc,48,Hero,Splendor PRO,override
+Harley-Davidson,Harley-Davidson Street 750,48,Harley-Davidson,Street 750,override
+Yamaha,Yamaha Fazer 150cc,45,Yamaha,Fazer,override
+Royal Enfield,Royal Enfield Bullet Twinspark 350cc,44,Royal Enfield,Bullet 350,override
+Hero,Hero Karizma R 223cc,44,Hero,Karizma,override
+Royal Enfield,Royal Enfield Classic Desert Storm 500cc,43,Royal Enfield,Classic 500,override
+Royal Enfield,Royal Enfield Himalayan 410cc,40,Royal Enfield,Himalayan,override
+Yamaha,Yamaha FZ16 150cc,40,Yamaha,FZ16,override
+Honda,Honda Dream Yuga 110cc,39,Honda,Dream Yuga,override
+Hero,Hero Passion Xpro 110cc,38,Hero,Passion XPro,override
+TVS,TVS Sport 100cc,37,TVS,Sport,override
+Royal Enfield,Royal Enfield Bullet Electra Twinspark 350cc,37,Royal Enfield,Electra,override
+Bajaj,Bajaj Discover 135cc,37,Bajaj,Discover 135,override
+Hero,Hero Splendor iSmart 110cc,35,Hero,Splendor iSmart,override
+Honda,Honda CBR 250R,35,Honda,CBR250R,override
+Hero,Hero Super Splendor 125cc,33,Hero,Super Splendor,override
+Yamaha,Yamaha FZ S V 2.0 150cc,33,Yamaha,FZ S,override
+TVS,TVS Apache RTR 200 4V Carburetor,32,TVS,Apache RTR 200 4V,override
+Yamaha,Yamaha FZ 150cc,32,Yamaha,FZ16,override
+Bajaj,Bajaj Discover 125ST,31,Bajaj,Discover 125,override
+Hero,Hero Karizma ZMR 223cc,31,Hero,Karizma ZMR,override
+Bajaj,Bajaj Pulsar AS150,31,Bajaj,Pulsar AS150,auto
+Yamaha,Yamaha FZ25 250cc,31,Yamaha,FZ25,override
+Hero,Hero Hunk 150cc,31,Hero,Hunk,override
+Hero,Hero Glamour 125cc,30,Hero,Glamour,override
+Honda,Honda CB Twister 110cc,30,Honda,CB Twister,override
+Yamaha,Yamaha YZF-R15 V3 150cc,29,Yamaha,YZF R15 V3,override
+Suzuki,Suzuki Gixxer SF 150cc,29,Suzuki,Gixxer SF,override
+Hero,Hero Splendor 100cc,28,Hero,Splendor Plus,override
+Honda,Honda CB Hornet 160R CBS,27,Honda,CB Hornet 160R,override
+Yamaha,Yamaha SZR 150cc,26,Yamaha,SZ-RR,override
+TVS,TVS Star City Plus 110cc,26,TVS,Star City Plus,override
+Royal Enfield,Royal Enfield Standard 350cc,26,Royal Enfield,Bullet 350,override
+Bajaj,Bajaj Platina Alloy ES-100cc,26,Bajaj,Platina 100,override
+Bajaj,Bajaj Discover 100M,26,Bajaj,Discover 100,override
+Royal Enfield,Royal Enfield Classic Chrome 500cc,26,Royal Enfield,Classic 500,override
+Bajaj,Bajaj Pulsar 200 NS 200cc,26,Bajaj,Pulsar NS200,override
+TVS,TVS Star City 110cc,25,TVS,Star City Plus,override
+Suzuki,Suzuki Intruder 150cc,24,Suzuki,Intruder 150,override
+Hyosung,Hyosung GT250R,23,,,unmatched
+Harley-Davidson,Harley-Davidson Iron 883,23,Harley-Davidson,Iron 883,override
+Hero,Hero Ignitor 125cc,23,Hero,Ignitor,override
+TVS,TVS Apache RR310,23,TVS,Apache RR 310,override
+Mahindra,Mahindra Centuro 110cc,23,,,unmatched
+Royal Enfield,Royal Enfield Electra 350cc,22,Royal Enfield,Electra,override
+Honda,Honda Livo 110cc,22,Honda,Livo,override
+Bajaj,Bajaj Dominar 400,22,Bajaj,Dominar 400,override
+KTM,KTM Duke 250cc,22,KTM,250 Duke,override
+Bajaj,Bajaj Pulsar AS200,21,Bajaj,Pulsar AS200,auto
+Royal Enfield,Royal Enfield Classic Gunmetal Grey 350cc,20,Royal Enfield,Classic 350,override
+Yamaha,Yamaha FZ V 2.0 150cc,20,Yamaha,FZ V 2.0,override
+Bajaj,Bajaj Discover 150cc,19,Bajaj,Discover 150,override
+Honda,Honda CBR 250R ABS,19,Honda,CBR250R,override
+Hero,Hero Splendor iSmart 100cc,18,Hero,Splendor iSmart,override
+Royal Enfield,Royal Enfield Continental GT 535cc,18,Royal Enfield,Continental GT,override
+Bajaj,Bajaj Pulsar NS160,18,Bajaj,Pulsar NS160,auto
+Royal Enfield,Royal Enfield Standard 500cc,18,Royal Enfield,Bullet 500,override
+Benelli,Benelli TNT 300,18,Benelli,TNT 300,override
+TVS,TVS Star Sport 100cc,17,TVS,Sport,override
+Hero,Hero Passion Pro i3S Alloy 100cc,17,Hero,Passion Pro,override
+TVS,TVS Apache RTR 160 4V Disc,16,TVS,Apache RTR 160 4V,override
+Honda,Honda CB Hornet 160R STD,16,Honda,CB Hornet 160R,override
+TVS,TVS Apache RTR 180cc ABS,16,TVS,Apache RTR 180,override
+Kawasaki,Kawasaki Ninja 650cc,16,Kawasaki,Ninja 650,override
+Mahindra,Mahindra Mojo 300cc,14,,,unmatched
+Bajaj,Bajaj Discover 150F,14,Bajaj,Discover 150,override
+Yamaha,Yamaha YZF-R15 S 150cc,14,Yamaha,YZF R15,override
+Bajaj,Bajaj Discover 125M,13,Bajaj,Discover 125,override
+Honda,Honda CB Unicorn 160,12,Honda,CB Unicorn 160,override
+TVS,TVS Apache RTR 200 4V FI,12,TVS,Apache RTR 200 4V,override
+Royal Enfield,Royal Enfield Thunderbird X 350cc,11,Royal Enfield,Thunderbird 350X,override
+Honda,Honda Livo Disc 110cc,11,Honda,Livo,override
+TVS,TVS Apache RTR 200 4V Fi,11,TVS,Apache RTR 200 4V,override
+Hero,Hero HF Deluxe Eco 100cc,11,Hero,HF Deluxe,override
+Honda,Honda CD 110 Dream,11,Honda,CD 110 Dream,override
+Kawasaki,Kawasaki Ninja 300cc,11,Kawasaki,Ninja 300,override
+Hyosung,Hyosung Aquila GV250,11,,,unmatched
+Hero,Hero Splendor Plus Self Alloy 100cc,11,Hero,Splendor Plus,override
+TVS,TVS Apache RTR 200 4V ABS Race Edition,11,TVS,Apache RTR 200 4V,override
+Bajaj,Bajaj Discover 110cc,11,Bajaj,Discover 110,override
+Bajaj,Bajaj V12 125cc,11,Bajaj,V12,auto
+Hero,Hero Honda Splendor Plus 100cc,10,Hero,Splendor Plus,override
+Benelli,Benelli TNT 25 250cc,10,Benelli,TNT 300,override
+Hero,Hero Passion 100cc,10,Hero,Passion Plus,override
+Harley-Davidson,Harley-Davidson Street 750 ABS,10,Harley-Davidson,Street 750,override
+Royal Enfield,Royal Enfield Classic Stealth Black 500cc,10,Royal Enfield,Classic 500,override
+Hyosung,Hyosung GT650R,10,,,unmatched
+Honda,Honda CB Unicorn 160 STD,10,Honda,CB Unicorn 160,override
+Royal Enfield,Royal Enfield Bullet 500cc,10,Royal Enfield,Bullet 500,override
+TVS,TVS Apache 150cc,10,TVS,Apache,override
+Royal Enfield,Royal Enfield Interceptor 650cc,9,Royal Enfield,Interceptor 650,override
+Honda,Honda CB Shine 125cc Disc,9,Honda,Shine,override
+Honda,Honda CB Unicorn 160 CBS,9,Honda,CB Unicorn 160,override
+Hero,Hero Honda Splendor 100cc,9,Hero,Splendor Plus,override
+Honda,Honda CB Unicorn Dazzler 150cc,9,Honda,CB Unicorn 150,override
+Hero,Hero CBZ 150cc,9,Hero,CBZ,override
+Royal Enfield,Royal Enfield Bullet Twinspark 500cc,9,Royal Enfield,Bullet 500,override
+Bajaj,Bajaj CT 100 ES Alloy,9,Bajaj,CT 100,override
+Royal Enfield,Royal Enfield Classic Squadron Blue 500cc,9,Royal Enfield,Classic 500,override
+Honda,Honda CB Hornet 160R Special Edition-CBS,8,Honda,CB Hornet 160R,override
+Honda,Honda Dream Neo 110cc,8,Honda,Dream Neo,override
+Suzuki,Suzuki Gixxer 150cc SP Rear Disc,8,Suzuki,Gixxer,override
+Suzuki,Suzuki Gixxer SF 150cc SP Rear Disc,8,Suzuki,Gixxer SF,override
+Royal Enfield,Royal Enfield Himalayan 410cc Fi ABS,8,Royal Enfield,Himalayan,override
+Yamaha,Yamaha Gladiator 125cc,8,Yamaha,Gladiator,override
+Royal Enfield,Royal Enfield Thunderbird X 350cc ABS,8,Royal Enfield,Thunderbird 350X,override
+Hero,Hero CD Dawn 100cc,8,Hero,CD Dawn,override
+Bajaj,Bajaj Avenger Street 180,8,Bajaj,Avenger Street 180,override
+Bajaj,Bajaj Avenger 200cc,8,Bajaj,Avenger,override
+Bajaj,Bajaj Pulsar NS200 ABS,8,Bajaj,Pulsar NS200,override
+Yamaha,Yamaha FZS FI 150cc,8,Yamaha,FZ S,override
+Hero,Hero Ignitor Disc 125cc,7,Hero,Ignitor,override
+TVS,TVS Apache RTR 200 4V Race Edition 2.0,7,TVS,Apache RTR 200 4V,override
+Suzuki,Suzuki Hayabusa 1300cc,7,Suzuki,Hayabusa,override
+Suzuki,Suzuki Gixxer SF 150cc Rear Disc,7,Suzuki,Gixxer SF,override
+Suzuki,Suzuki GS 150 R 150cc,7,Suzuki,GS150R,override
+Suzuki,Suzuki Gixxer SF 150cc Special MOTOGP Edition Rear Disc,7,Suzuki,Gixxer SF,override
+Honda,Honda CB Hornet 160R Special Edition STD,7,Honda,CB Hornet 160R,override
+Yamaha,Yamaha FZ S V 2.0 150cc Rear Disc,7,Yamaha,FZ S,override
+Hero,Hero Xtreme 200R,7,Hero,Xtreme 200R,override
+Hero,Hero Splendor NXG 100cc,7,Hero,Splendor NXG,override
+Royal Enfield,Royal Enfield Classic 350cc-Redditch Edition,7,Royal Enfield,Classic 350,override
+Yamaha,Yamaha YZF-R3 320cc,7,Yamaha,YZF R3,override
+KTM,KTM Duke 125cc,6,KTM,125 Duke,override
+Honda,Honda CB ShineSP 125cc,6,Honda,SP 125,override
+Honda,Honda CB Shine 125cc CBS,6,Honda,Shine,override
+Honda,Honda CB ShineSP 125cc Disc,6,Honda,SP 125,override
+Yamaha,Yamaha Saluto 125cc,6,Yamaha,Saluto,override
+Bajaj,Bajaj Platina 125cc,6,Bajaj,Platina 100,override
+Suzuki,Suzuki Slingshot Plus 125cc,6,Suzuki,SlingShot,override
+TVS,TVS Apache RTR 160 4V DISC ABS,6,TVS,Apache RTR 160 4V,override
+TVS,TVS Apache RTR 200 4V ABS,6,TVS,Apache RTR 200 4V,override
+TVS,TVS Victor 110cc Disc,6,TVS,Victor,override
+Yamaha,Yamaha Fazer FI V 2.0 150cc,6,Yamaha,Fazer,override
+Hero,Hero Splendor plus 100cc,6,Hero,Splendor Plus,override
+Yamaha,Yamaha FZ S V 2.0 150cc-Ltd. Edition,6,Yamaha,FZ S,override
+Suzuki,Suzuki Gixxer 150cc Dual Tone Rear Disc,6,Suzuki,Gixxer,override
+Hero,Hero HF Deluxe Self 100cc,6,Hero,HF Deluxe,override
+Yamaha,Yamaha Fazer 25 250cc,6,Yamaha,Fazer 25,override
+Yamaha,Yamaha SZ-RR 150cc,6,Yamaha,SZ-RR,override
+Royal Enfield,Royal Enfield Machismo 500cc,6,Royal Enfield,Bullet 500,override
+Hero,Hero Xtreme 150cc,6,Hero,Xtreme,override
+Hero,Hero Passion Pro i3S Disc 100cc,6,Hero,Passion Pro,override
+Royal Enfield,Royal Enfield Thunderbird 350cc ABS,6,Royal Enfield,Thunderbird 350,override
+Bajaj,Bajaj Discover 100T,5,Bajaj,Discover 100,override
+TVS,TVS Apache RTR 200 4V Carburetor Race Edition 2.0,5,TVS,Apache RTR 200 4V,override
+Bajaj,Bajaj Platina 100cc ComforTec Alloy,5,Bajaj,Platina 100,override
+Yamaha,Yamaha YZF-R1 1000cc,5,Yamaha,YZF R1,auto
+Royal Enfield,Royal Enfield Machismo 350cc,5,Royal Enfield,Bullet 350,override
+TVS,TVS Apache RTR 160 4V Carburetor,5,TVS,Apache RTR 160 4V,override
+Bajaj,Bajaj CT 100 Alloy,5,Bajaj,CT 100,override
+Royal Enfield,Royal Enfield Classic 350cc Dual Disc,5,Royal Enfield,Classic 350,override
+TVS,TVS Apache RTR 160cc Rear Disc,5,TVS,Apache RTR 160,override
+BMW,BMW G 310 R,5,BMW,G 310 R,auto
+Hero,Hero Achiever Disc 150cc,5,Hero,Achiever 150,override
+Hero,Hero Karizma 223cc,5,Hero,Karizma,override
+Royal Enfield,Royal Enfield Thunderbird X 500cc,5,Royal Enfield,Thunderbird 500X,override
+KTM,KTM RC 200cc ABS,5,KTM,RC 200,override
+Bajaj,Bajaj Pulsar NS160 Rear Disc,5,Bajaj,Pulsar NS160,auto
+Ducati,Ducati Monster 797,5,Ducati,Monster 797,auto
+Suzuki,Suzuki Gixxer SF Fi 150cc ABS,5,Suzuki,Gixxer SF,override
+Suzuki,Suzuki Gixxer SF Fi 150cc,5,Suzuki,Gixxer SF,override
+Kawasaki,Kawasaki Z650,5,Kawasaki,Z650,override
+Jawa,Jawa Forty Two 295CC,5,Jawa,42,override
+Bajaj,Bajaj Pulsar 200cc,5,Bajaj,Pulsar 200,auto
+Mahindra,Mahindra Centuro NXT 110cc,4,,,unmatched
+KTM,KTM RC 125CC,4,KTM,RC 125,override
+Suzuki,Suzuki Gixxer SF 150cc ABS,4,Suzuki,Gixxer SF,override
+Royal Enfield,Royal Enfield Classic 350cc Signals Edition,4,Royal Enfield,Classic 350,override
+Royal Enfield,Royal Enfield Classic Gunmetal Grey 350cc ABS,4,Royal Enfield,Classic 350,override
+Hyosung,Hyosung Aquila Pro GV650,4,,,unmatched
+TVS,TVS Apache RTR 160 4V Carburetor With Rear Disc,4,TVS,Apache RTR 160 4V,override
+Suzuki,Suzuki Intruder 150cc FI,4,Suzuki,Intruder 150,override
+Kawasaki,Kawasaki Z800,4,Kawasaki,Z800,override
+Kawasaki,Kawasaki Z900,4,Kawasaki,Z900,override
+Kawasaki,Kawasaki ER-6n 650cc,4,Kawasaki,ER-6n,auto
+Honda,Honda X-Blade 160cc,4,Honda,X-Blade,auto
+Bajaj,Bajaj Discover 150S Disc,4,Bajaj,Discover 150,override
+Hero,Hero Glamour Fi 125cc,4,Hero,Glamour,override
+Benelli,Benelli 302R 300CC,4,Benelli,TNT 300,override
+Bajaj,Bajaj Pulsar NS 200cc,4,Bajaj,Pulsar NS200,override
+Hero,Hero Splendor Plus IBS i3S 100cc,4,Hero,Splendor Plus,override
+Bajaj,Bajaj Discover 125T,4,Bajaj,Discover 125,override
+Yamaha,Yamaha FZ25 ABS 250cc,4,Yamaha,FZ25,override
+Hero,Hero HF Deluxe self Alloy 100cc,4,Hero,HF Deluxe,override
+Yamaha,Yamaha SS 125 125cc,4,Yamaha,SS 125,override
+Hero,Hero Glamour i3s 125cc,4,Hero,Glamour,override
+Hero,Hero Glamour Disc 125cc,4,Hero,Glamour,override
+Triumph,Triumph Street Triple 765,4,Triumph,Street Triple 765,auto
+Hero,Hero Xtreme 200R ABS,4,Hero,Xtreme 200R,override
+Benelli,Benelli TNT 600i,4,Benelli,TNT600i,override
+Benelli,Benelli TNT 600i ABS,3,Benelli,TNT600i,override
+Hero,Hero Splendor Plus Kick Alloy 100cc,3,Hero,Splendor Plus,override
+Hero,Hero Splendor Pro Classic 100cc,3,Hero,Splendor PRO,override
+Kawasaki,Kawasaki Z250,3,Kawasaki,Z250,auto
+Hero,Hero Splendor iSmart Plus IBS 110cc,3,Hero,Splendor iSmart,override
+TVS,TVS Star City Plus Dual Tone 110cc,3,TVS,Star City Plus,override
+Bajaj,Bajaj XCD 135,3,Bajaj,Xcd,auto
+Yamaha,Yamaha Fazer25 250cc,3,Yamaha,Fazer 25,override
+Kawasaki,Kawasaki Versys 650cc,3,Kawasaki,Versys 650,override
+Hero,Hero Passion Pro 110cc Drum,3,Hero,Passion Pro,override
+Mahindra,Mahindra Mojo Tourer Edition 300cc,3,,,unmatched
+Mahindra,Mahindra Mojo UT300,3,,,unmatched
+Hero,Hero Passion PRO 100 cc,3,Hero,Passion Pro,override
+TVS,TVS Radeon 110cc Drum SBT,3,TVS,Radeon,override
+Hero,Hero HF Deluxe i3s 100cc,3,Hero,HF Deluxe,override
+Ducati,Ducati Panigale 959,3,Ducati,959 Panigale,auto
+TVS,TVS Flame 125cc,3,TVS,Flame,override
+Yamaha,Yamaha MT-15 150cc,3,Yamaha,MT 15,override
+TVS,TVS Jive 110cc,3,TVS,Jive,override
+Royal Enfield,Royal Enfield Classic Desert Storm 500cc Dual Disc,3,Royal Enfield,Classic 500,override
+Hero,Hero Achiever 150cc,3,Hero,Achiever 150,override
+Bajaj,Bajaj XCD 125,3,Bajaj,Xcd,auto
+Harley-Davidson,Harley-Davidson 1200 Custom,3,Harley-Davidson,1200 Custom,auto
+Yamaha,Yamaha FZ S V 3.0 150cc,3,Yamaha,FZ S,override
+TVS,TVS Apache RTR 200 4V,3,TVS,Apache RTR 200 4V,override
+Honda,Honda CBR 150R Deluxe,3,Honda,CBR150 R,override
+Hyosung,Hyosung GT 650N,3,,,unmatched
+Bajaj,Bajaj CT 100 B,3,Bajaj,CT 100,override
+TVS,TVS Apache RTR 200 4V Carburetor Pirelli Tyres Race Edition 2.0,3,TVS,Apache RTR 200 4V,override
+Suzuki,Suzuki Intruder SP 150cc,3,Suzuki,Intruder 150,override
+Bajaj,Bajaj Platina 110 CBS,3,Bajaj,Platina 100,override
+Honda,Honda Livo Disc 110cc CBS,3,Honda,Livo,override
+TVS,TVS Victor 110cc,3,TVS,Victor,override
+Bajaj,Bajaj CT 100 Spoke,3,Bajaj,CT 100,override
+Bajaj,Bajaj Pulsar 135LS 135cc,3,Bajaj,Pulsar 135 LS,override
+Bajaj,Bajaj Pulsar NS 200,3,Bajaj,Pulsar NS200,override
+Hero,Hero Xtreme Sports Rear Disc 150cc,3,Hero,Xtreme Sports,auto
+Hero,Hero Xtreme Sports 150cc,3,Hero,Xtreme Sports,auto
+Bajaj,Bajaj Avenger Street 160 ABS,3,Bajaj,Avenger Street 160,override
+Kawasaki,Kawasaki Ninja 250cc,3,Kawasaki,Ninja 250R,override
+Ducati,Ducati Multistrada 1200 Enduro,2,Ducati,Multistrada 1200 Enduro,auto
+Bajaj,Bajaj CT 100 KS Alloy,2,Bajaj,CT 100,override
+Yamaha,Yamaha YZF-R1M 1000cc,2,Yamaha,YZF-R1M,auto
+Yamaha,Yamaha RX135 135cc 4-Speed,2,Yamaha,RX135,override
+Ducati,Ducati Monster 796 Corse Stripe,2,Ducati,Monster 796,auto
+Yamaha,Yamaha Libero G5 110cc,2,Yamaha,Libero,auto
+Bajaj,Bajaj Avenger Street 220 ABS,2,Bajaj,Avenger Street 220,override
+Bajaj,Bajaj Boxer CT100,2,Bajaj,CT 100,override
+Royal Enfield,Royal Enfield Himalayan 410cc Sleet Edition,2,Royal Enfield,Himalayan,override
+Ducati,Ducati Diavel 1200cc,2,Ducati,Diavel,auto
+Bajaj,Bajaj Boxer BM150,2,Bajaj,Boxer,auto
+TVS,TVS Apache RTR 160 4V DISC ABS BS6,2,TVS,Apache RTR 160 4V,override
+Yamaha,Yamaha SZ RR V 2.0 150cc Limited Edition,2,Yamaha,SZ-RR,override
+Yamaha,Yamaha SZ 150cc,2,Yamaha,SZ-RR,override
+Yamaha,Yamaha SZ RR V 2.0 150cc,2,Yamaha,SZ-RR,override
+Bajaj,Bajaj V12 125cc Disc,2,Bajaj,V12,auto
+Benelli,Benelli TNT 899,2,Benelli,TNT 899,auto
+Bajaj,Bajaj Discover 150F Disc,2,Bajaj,Discover 150,override
+Bajaj,Bajaj Discover150 150cc,2,Bajaj,,unmatched
+Yamaha,Yamaha YBR 110cc,2,Yamaha,YBR 125,override
+Suzuki,Suzuki Hayate EP 110cc,2,Suzuki,Hayate,override
+Benelli,Benelli 302R,2,Benelli,TNT 300,override
+Suzuki,Suzuki Hayate 110cc,2,Suzuki,Hayate,override
+Suzuki,Suzuki Gixxer 150cc ABS,2,Suzuki,Gixxer,override
+Yamaha,Yamaha Saluto RX 110cc,2,Yamaha,Saluto,override
+Suzuki,Suzuki Gixxer SF Fi 150cc SP ABS,2,Suzuki,Gixxer SF,override
+Bajaj,Bajaj Pulsar 150cc Rear Disc,2,Bajaj,Pulsar 150,auto
+Suzuki,Suzuki Gixxer 150cc SP ABS,2,Suzuki,Gixxer,override
+Triumph,Triumph Speed Triple 1050cc,2,Triumph,,unmatched
+Royal Enfield,Royal Enfield Classic 350cc-Redditch Edition Dual Disc,2,Royal Enfield,Classic 350,override
+Harley-Davidson,Harley-Davidson Sportster 883,2,Harley-Davidson,Sportster,auto
+Hero,Hero Splendor Plus 100 cc,2,Hero,Splendor Plus,override
+Hero,Hero Super Splendor 125cc i3s,2,Hero,Super Splendor,override
+Kawasaki,Kawasaki Ninja 650 KRT Edition,2,Kawasaki,Ninja 650,override
+Kawasaki,Kawasaki Ninja 300 ABS,2,Kawasaki,Ninja 300,override
+Harley-Davidson,Harley-Davidson Street Rod XG750A ABS,2,Harley-Davidson,Street Rod,override
+Hero,Hero Xtreme Sports 149cc,2,Hero,Xtreme Sports,auto
+Yamaha,Yamaha Crux 110cc,2,Yamaha,Crux,override
+KTM,KTM Duke 250cc ABS,2,KTM,250 Duke,override
+Honda,Honda CB Hornet 160R ABS DLX,2,Honda,CB Hornet 160R,override
+Honda,Honda CB Hornet 160R ABS STD,2,Honda,CB Hornet 160R,override
+Jawa,Jawa Standard 295CC,2,Jawa,Standard,auto
+Indian,Indian Scout Bobber 1130cc,2,Indian,Scout Bobber,auto
+Triumph,Triumph Tiger 800 XCA,2,Triumph,Tiger 800 XCA,auto
+Triumph,Triumph Thruxton R 1200cc,2,Triumph,Thruxton R,auto
+Honda,Honda CBR 250R Repsol,2,Honda,CBR250R,override
+Hyosung,Hyosung Aquila 250 250cc,2,,,unmatched
+BMW,BMW G 310 GS,2,BMW,G 310 GS,auto
+Triumph,Triumph Bonneville T100 865cc,2,Triumph,Bonneville T100,auto
+Triumph,Triumph Street Triple ABS 675cc,2,Triumph,Street Triple 675 ABS,auto
+Honda,Honda CBR1000RR Fireblade,2,Honda,CBR1000RR Fireblade,auto
+Yamaha,Yamaha FZ S V 3.0 150cc ABS Dark Knight BS VI,2,Yamaha,FZ S,override
+Yamaha,Yamaha FZ Fi Version 2.0 150cc,2,Yamaha,FZ FI,override
+Royal Enfield,Royal Enfield Bullet Twinspark Kickstart 350cc,2,Royal Enfield,Bullet 350,override
+Royal Enfield,Royal Enfield Bullet Electra Twinspark 350CC ABS,2,Royal Enfield,Electra,override
+Hero,Hero Passion Pro TR 100cc,2,Hero,Passion Pro,override
+MV,MV Agusta F3 800cc,2,,,unmatched
+Yamaha,Yamaha Fazer FI 150cc,2,Yamaha,Fazer,override
+TVS,TVS Phoenix 125cc,2,TVS,Phoenix,override
+Royal Enfield,Royal Enfield Bullet 350 cc,2,Royal Enfield,Bullet 350,override
+Hero,Hero CBZ Star 160cc,2,Hero,CBZ,override
+Hero,Hero HF Dawn 100cc,2,Hero,HF Deluxe,override
+Royal Enfield,Royal Enfield Classic 500cc Dual Disc,2,Royal Enfield,Classic 500,override
+Hero,Hero CD 100SS,2,Hero,,unmatched
+Hero,Hero HF Deluxe i3s iBS 100cc,2,Hero,HF Deluxe,override
+TVS,TVS Victor 110cc Disc SBT,1,TVS,Victor,override
+Triumph,Triumph Thunderbird Storm 1700cc,1,Triumph,Thunderbird Storm,auto
+Triumph,Triumph Daytona 675R,1,Triumph,Daytona 675R,auto
+TVS,TVS Victor GX 110cc,1,TVS,Victor,override
+TVS,TVS Fiero 150cc,1,TVS,Fiero,auto
+Triumph,Triumph Street Twin 900cc,1,Triumph,Street Twin,auto
+TVS,TVS MAX 4R 110cc,1,TVS,MAX4R,auto
+Triumph,Triumph Bonneville T100 900cc,1,Triumph,Bonneville T100,auto
+Triumph,Triumph Daytona 675 ABS,1,Triumph,Daytona 675 ABS,auto
+Yamaha,Yamaha YZF-R3 320cc ABS,1,Yamaha,YZF R3,override
+TVS,TVS Apache RTR 200 4V Carburetor Pirelli Tyres,1,TVS,Apache RTR 200 4V,override
+TVS,TVS Star 100cc,1,TVS,,unmatched
+Yamaha,Yamaha RX-Z 135cc,1,Yamaha,RXZ,auto
+Yamaha,Yamaha FZS FI 150cc Rear Disc,1,Yamaha,FZ S,override
+Yamaha,Yamaha FZ V 3.0 150cc,1,Yamaha,FZ FI,override
+TVS,TVS Sports plus ES 100cc,1,TVS,Sport,override
+TVS,TVS Apache RTR 200 4V FI Race Edition 2.0,1,TVS,Apache RTR 200 4V,override
+Yamaha,Yamaha SZS 150cc,1,Yamaha,SZ-RR,override
+TVS,TVS Suzuki Shogun 110cc,1,TVS,,unmatched
+TVS,TVS Phoenix Disc 125cc,1,TVS,Phoenix,override
+Yamaha,Yamaha Saluto 125cc Disc Special Edition,1,Yamaha,Saluto,override
+Triumph,Triumph Tiger 800 XR,1,Triumph,Tiger 800 XR,auto
+TVS,TVS Apache RTR 200 4V Dual Channel ABS BS6,1,TVS,Apache RTR 200 4V,override
+TVS,TVS Apache RTR 160cc White Race Edition Rear Disc,1,TVS,Apache RTR 160,override
+Yamaha,Yamaha Saluto 125cc-Special Edition,1,Yamaha,Saluto,override
+Yamaha,Yamaha FZS FI 150cc Special Edition,1,Yamaha,FZ S,override
+Triumph,Triumph Tiger 800 XRX,1,Triumph,Tiger 800 XRx,auto
+Yamaha,Yamaha YZF R6 600cc,1,Yamaha,R6,auto
+Yamaha,Yamaha SZX 150cc,1,Yamaha,SZ-RR,override
+BMW,BMW F750 GS 850cc,1,BMW,F750 GS,auto
+TVS,TVS Apache RTR 160cc White Race Edition,1,TVS,Apache RTR 160,override
+TVS,TVS Apache RTR 160cc Matt Red Rear Disc,1,TVS,Apache RTR 160,override
+Ducati,Ducati Scrambler 1100 Special,1,Ducati,Scrambler,auto
+Ducati,Ducati XDiavel 1262CC S,1,Ducati,XDiavel,auto
+Harley-Davidson,Harley-Davidson Fat Bob 107 Ci,1,Harley-Davidson,Fat Bob,override
+Harley-Davidson,Harley-Davidson Roadster XL 1200CX,1,Harley-Davidson,Roadster,override
+Harley-Davidson,Harley-Davidson XG750 750cc,1,Harley-Davidson,,unmatched
+Hero,Hero Ambition 135cc,1,Hero,Ambition,auto
+Hero,Hero CBZ Xtreme 150 cc,1,Hero,Xtreme,override
+Hero,Hero Glamour PGM Fi 125cc,1,Hero,Glamour,override
+Hero,Hero HF Deluxe 100 cc,1,Hero,HF Deluxe,override
+Hero,Hero HF Deluxe Self Spoke 100cc,1,Hero,HF Deluxe,override
+Hero,Hero Honda Ambition 135cc,1,Hero,Ambition,auto
+Hero,Hero Hunk Rear Disc 150cc,1,Hero,Hunk,override
+Hero,Hero Karizma 223 cc,1,Hero,Karizma,override
+Hero,Hero Passion Pro 100cc Drum Alloy,1,Hero,Passion Pro,override
+Hero,Hero Passion Pro i3S Alloy 100cc IBS,1,Hero,Passion Pro,override
+Hero,Hero Passion XPRO 110 cc,1,Hero,Passion XPro,override
+Hero,Hero Splendor Plus 100 CC,1,Hero,Splendor Plus,override
+Hero,Hero Splendor+ 100cc,1,Hero,Splendor Plus,override
+Hero,Hero Xpulse 200T,1,Hero,Xpulse 200T,override
+Hero,Hero Xpulse 200cc FI,1,Hero,Xpulse 200,override
+Hero,Hero i Smart 125cc,1,Hero,,unmatched
+Ducati,Ducati Monster 821 Dark,1,Ducati,Monster 821 Dark,auto
+Ducati,Ducati Monster 1200,1,Ducati,Monster,auto
+Ducati,Ducati 1299 Superleggera,1,Ducati,1299 Superleggera,auto
+Bajaj,Bajaj Platina 110 H Gear Disc,1,Bajaj,Platina 100,override
+BMW,BMW S 1000 RR Pro,1,BMW,S 1000 RR,auto
+BMW,BMW S 1000 XR Pro,1,BMW,S 1000 XR,auto
+Bajaj,Bajaj Avenger 150cc,1,Bajaj,Avenger,auto
+Bajaj,Bajaj Avenger 180cc,1,Bajaj,Avenger,auto
+Bajaj,Bajaj Avenger Cruise 220 ABS,1,Bajaj,Avenger Cruise 220,override
+Bajaj,Bajaj Boxer AT100,1,Bajaj,Boxer,auto
+Bajaj,Bajaj CT110 ES Alloy,1,Bajaj,CT 110,auto
+Bajaj,Bajaj Discover 125cc Disc,1,Bajaj,Discover 125,override
+Bajaj,Bajaj Discover150S 150cc,1,Bajaj,Discover 150S,auto
+Bajaj,Bajaj Platina Alloy ES 100cc,1,Bajaj,Platina 100,override
+Ducati,Ducati 1198 SP 1198cc,1,Ducati,1198,auto
+Bajaj,Bajaj Pulsar 125cc Disc CBS,1,Bajaj,Pulsar 125,auto
+Bajaj,Bajaj Pulsar 150cc Classic,1,Bajaj,Pulsar 150,auto
+Bajaj,Bajaj Pulsar 150cc Neon,1,Bajaj,Pulsar 150,auto
+Bajaj,Bajaj Pulsar 150cc Rear Disc ABS,1,Bajaj,Pulsar 150,auto
+Bajaj,Bajaj Pulsar RS200 ABS-200cc,1,Bajaj,Pulsar RS 200,override
+Bajaj,Bajaj V15 150cc POWER UP,1,Bajaj,V15,auto
+Benelli,Benelli TNT 600 GT,1,Benelli,TNT600i,override
+Benelli,Benelli TNT R 1130cc,1,Benelli,TNT R,auto
+Benelli,Benelli TRK 502X,1,Benelli,TRK 502X,auto
+Honda,Honda CB 1000R,1,Honda,CB1000R,auto
+Honda,Honda CB Hornet 160R,1,Honda,CB Hornet 160R,override
+Honda,Honda CB Hornet 160R 160cc STD,1,Honda,CB Hornet 160R,override
+Suzuki,Suzuki GSX-S750,1,Suzuki,GSX S750,auto
+Mahindra,Mahindra Mojo XT300,1,,,unmatched
+Mahindra,Mahindra Pantero 110cc,1,,,unmatched
+Rajdoot,Rajdoot GTX 175cc,1,,,unmatched
+Royal Enfield,Royal Enfield Bullet Electra Twinspark 350cc Double Disc,1,Royal Enfield,Electra,override
+Royal Enfield,Royal Enfield Classic Chrome 500cc ABS,1,Royal Enfield,Classic 500,override
+Royal Enfield,Royal Enfield Continental GT 650cc,1,Royal Enfield,Continental GT 650,override
+Royal Enfield,Royal Enfield Himalayan 410cc Fi,1,Royal Enfield,Himalayan,override
+Royal Enfield,Royal Enfield Himalayan 410cc Sleet ABS,1,Royal Enfield,Himalayan,override
+Suzuki,Suzuki GSX-R 1000cc,1,Suzuki,GSX-R1000,auto
+Suzuki,Suzuki Gixxer Fi 150cc ABS,1,Suzuki,Gixxer,override
+MV,MV Agusta Brutale 1090,1,,,unmatched
+Suzuki,Suzuki Gixxer SF 150cc Special MOTOGP Edition,1,Suzuki,Gixxer SF,override
+Suzuki,Suzuki Gixxer SF 250cc ABS,1,Suzuki,Gixxer SF 250,override
+Suzuki,Suzuki Heat 125cc,1,Suzuki,Heat,auto
+Suzuki,Suzuki V-Strom 1000cc,1,Suzuki,V-Strom,auto
+Suzuki,Suzuki Zeus 125cc,1,Suzuki,Zeus EU,auto
+TVS,TVS Apache RR310 Slipper Clutch,1,TVS,Apache RR 310,override
+TVS,TVS Apache RTR 160 4V DRUM ABS,1,TVS,Apache RTR 160 4V,override
+TVS,TVS Apache RTR 160 4V Drum,1,TVS,Apache RTR 160 4V,override
+TVS,TVS Apache RTR 160 4V FI,1,TVS,Apache RTR 160 4V,override
+Mahindra,Mahindra Centuro Rockstar 110cc,1,,,unmatched
+LML,LML Freedom DX 110cc,1,,,unmatched
+Honda,Honda CB Hornet 160R 160cc STD SP,1,Honda,CB Hornet 160R,override
+Honda,Honda CD 110 Dream DX,1,Honda,CD 110 Dream,override
+Honda,Honda CB Shine 125cc Drum BS6,1,Honda,Shine,override
+Honda,Honda CB ShineSP 125cc CBS,1,Honda,SP 125,override
+Honda,Honda CB ShineSP 125cc CBS Disc,1,Honda,SP 125,override
+Honda,Honda CB Unicorn 150 150cc,1,Honda,CB Unicorn 150,override
+Honda,Honda CB Unicorn ABS 150cc,1,Honda,CB Unicorn 150,override
+Honda,Honda CBR 250R Repsol ABS,1,Honda,CBR250R,override
+Honda,Honda CBR 600RR,1,Honda,CBR 600RR,auto
+Honda,Honda CBR 650 F,1,Honda,CBR650F,auto
+Honda,Honda CBR650R,1,Honda,CBR 650R,auto
+Honda,Honda CD 110 Dream Self,1,Honda,CD 110 Dream,override
+Kawasaki,Kawasaki Z1000,1,Kawasaki,Z1000,auto
+Honda,Honda Dream Yuga 110cc CBS,1,Honda,Dream Yuga,override
+Honda,Honda SP125 Disc BS6,1,Honda,SP 125,override
+Honda,Honda X-Blade 160CC ABS,1,Honda,X-Blade,auto
+Ideal,Ideal Jawa Yezdi CL-II 250 cc,1,,,unmatched
+Indian,Indian Chief Classic 1800cc,1,Indian,Chief Classic,auto
+KTM,KTM Duke 200cc ABS,1,KTM,200 Duke,override
+Kawasaki,Kawasaki Ninja 400,1,Kawasaki,Ninja 400,auto
+Kawasaki,Kawasaki Versys 1000,1,Kawasaki,Versys,auto
+Kawasaki,Kawasaki Vulcan S 650cc,1,Kawasaki,Vulcan S,auto
+Yezdi,Yezdi Classic 250cc,1,Yezdi,,unmatched

@@ -2,13 +2,21 @@
 
   uvicorn backend.app.main:app --reload     (from the repo root)
 
-GET  /api/meta      dropdown data (brands, models, states, EV catalog)
-GET  /api/metrics   test-set metrics of every model
-POST /api/predict   {"type": "bike" | "ev" | "car", ...}  -> price, range, factors (SHAP), curve
+GET  /api/meta      verified model list (BikeWale / CarWale) + which engine prices each model
+GET  /api/metrics   test-set metrics of every ML model
+POST /api/predict   {"type": "2w" | "car", brand, model, year, km, owners, ...}
+                    -> price, range, factors, curve, and which engine produced it (+ time taken)
 Everything else serves the frontend.
+
+Two pricing engines, chosen per model:
+  "ml"  XGBoost trained on Kaggle listings, run live on every request; factors are exact Tree SHAP values.
+        Used when the model has >= MIN_TRAIN listings in the training data.
+  "dep" Depreciation model (app/depreciation.py) on the official 2026 new price.
+        Used for EVs, scooters and anything launched after the training data was collected.
 """
 import json
 import math
+import time
 from pathlib import Path
 from typing import Literal, Optional
 
@@ -21,18 +29,27 @@ from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import ev as ev_model
+from . import depreciation as dep
 from .road_tax import SOURCES, cheapest_state, road_tax_rate
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONT = ROOT.parent / "frontend"
 NOW = 2026
+MIN_TRAIN = 3
 
 META = json.loads((ROOT / "models" / "meta.json").read_text())
 METRICS = json.loads((ROOT / "models" / "metrics.json").read_text())
+CATALOG = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())
 MODELS = {k: joblib.load(ROOT / "models" / f"{k}_xgb.joblib") for k in ("bike", "car")}
 BOOSTERS = {k: v["pipe"].named_steps["m"].get_booster() for k, v in MODELS.items()}
 GROWTH = META["growth"]
+OWNER_WORD = dep.OWNER_WORD
+
+POPULAR_2W = ["Hero", "Honda", "Bajaj", "TVS", "Royal Enfield", "Yamaha", "Suzuki", "KTM", "Ather", "OLA", "VIDA",
+              "Jawa", "Yezdi", "Kawasaki", "Harley-Davidson", "Triumph", "BMW", "Ducati"]
+POPULAR_CAR = ["Maruti Suzuki", "Hyundai", "Tata", "Mahindra", "Toyota", "Kia", "Honda", "MG", "Skoda", "Volkswagen", "Renault"]
+
+
 def inr(x):
     """Indian digit grouping: 1234567 -> 12,34,567."""
     s = f"{int(round(x)):d}"
@@ -47,16 +64,46 @@ def inr(x):
     return ",".join(parts) + "," + tail
 
 
-OWNER_WORD = {1: "first", 2: "second", 3: "third", 4: "fourth-or-later"}
+def _order(brands, popular):
+    return sorted(brands, key=lambda b: (popular.index(b) if b in popular else len(popular), b.lower()))
 
-app = FastAPI(title="ResaleIQ", version="1.0")
+
+def _build_index():
+    """Join the verified catalog with the trained models -> one entry per selectable model."""
+    idx = {"2w": {}, "car": {}}
+    for brand, models in CATALOG["bike"].items():
+        for m in models:
+            key = f"{brand} | {m['model']}"
+            tr = META["bike"]["trained"].get(key)
+            ml = tr is not None and tr["n"] >= MIN_TRAIN and m["fuel"] != "electric"
+            engine = "ml" if ml else ("dep" if m.get("new_price") else None)
+            if not engine:
+                continue
+            idx["2w"].setdefault(brand, {})[m["model"]] = {
+                **m, "engine": engine, "cc": m.get("cc") or (tr or {}).get("cc"), "train_rows": (tr or {}).get("n", 0)}
+    for brand, models in CATALOG["car"].items():
+        for m in models:
+            key = f"{brand} | {m['model']}"
+            tr = META["car"]["trained"].get(key)
+            ml = tr is not None and tr["n"] >= MIN_TRAIN
+            engine = "ml" if ml else ("dep" if m.get("new_price") else None)
+            if not engine:
+                continue
+            idx["car"].setdefault(brand, {})[m["model"]] = {**m, **({k: tr[k] for k in ("cc", "power", "seats", "mileage", "fuel", "transmission")} if tr else {}),
+                                                         "engine": engine, "train_rows": (tr or {}).get("n", 0)}
+    return idx
+
+
+INDEX = _build_index()
+
+app = FastAPI(title="ResaleIQ", version="2.0")
 app.add_middleware(GZipMiddleware, minimum_size=800)
 
 
 class PredictIn(BaseModel):
-    type: Literal["bike", "ev", "car"]
+    type: Literal["2w", "car"]
     brand: str
-    model: str                     # model key "Brand | Family" for bike/car, variant name for EV
+    model: str
     year: int = Field(ge=1990, le=NOW)
     km: float = Field(ge=0, le=1_000_000)
     owners: int = Field(1, ge=1, le=4)
@@ -67,148 +114,154 @@ class PredictIn(BaseModel):
     seller_type: Optional[str] = "Individual"
     power: Optional[float] = None
     seats: Optional[float] = None
-    ex_showroom: Optional[float] = None
+    new_price: Optional[float] = None
     kwh: Optional[float] = None
 
 
-def _model_info(kind, brand, key):
-    for r in META[kind]["brands"].get(brand, []):
-        if r["key"] == key:
-            return r
-    raise HTTPException(422, f"Unknown model {key!r} for brand {brand!r}")
+def _info(kind, brand, model):
+    info = INDEX[kind].get(brand, {}).get(model)
+    if not info:
+        raise HTTPException(422, f"{brand} {model} is not in the verified list")
+    return info
 
 
-def _frame(kind, p: PredictIn, ages):
-    info = _model_info(kind, p.brand, p.model)
-    n = len(ages)
+# ------------------------------------------------------------------ ML engine
+def _frame(kind, p: PredictIn, info, ages):
+    n, key = len(ages), f"{p.brand} | {p.model}"
     log_km = math.log1p(p.km)
     if kind == "bike":
-        return pd.DataFrame({
-            "brand": [p.brand] * n, "model_key": [p.model] * n, "state": [p.state or "Other"] * n,
-            "age": ages, "log_km": [log_km] * n, "owners": [p.owners] * n, "power": [p.cc or info["cc"]] * n})
+        return pd.DataFrame({"brand": [p.brand] * n, "model_key": [key] * n, "state": [p.state or "Other"] * n,
+                             "age": ages, "log_km": [log_km] * n, "owners": [p.owners] * n,
+                             "power": [p.cc or info["cc"]] * n})
     return pd.DataFrame({
-        "brand": [p.brand] * n, "model_key": [p.model] * n, "fuel": [p.fuel or info["fuel"]] * n,
+        "brand": [p.brand] * n, "model_key": [key] * n, "fuel": [p.fuel or info["fuel"]] * n,
         "seller_type": [p.seller_type or "Individual"] * n, "transmission": [p.transmission or info["transmission"]] * n,
         "age": ages, "log_km": [log_km] * n, "owners": [p.owners] * n,
         "engine_cc": [p.cc or info["cc"]] * n, "power_bhp": [p.power or info["power"]] * n,
         "mileage_kmpl": [info["mileage"]] * n, "seats": [p.seats or info["seats"]] * n})
 
 
-def _explain(kind, row: pd.DataFrame, p: PredictIn, scale):
-    m = MODELS[kind]
-    Z = m["pipe"].named_steps["pre"].transform(row)
-    contrib = BOOSTERS[kind].predict(xgb.DMatrix(Z), pred_contribs=True)[0]
-    bias, contrib = float(contrib[-1]), contrib[:-1]
-    by = pd.Series(contrib, index=m["groups"]).groupby(level=0).sum()
-    base_price = math.expm1(bias) * scale
-
-    r = row.iloc[0].to_dict()
-    r = {k: (f"{v:g}" if isinstance(v, (int, float, np.floating, np.integer)) else v) for k, v in r.items()}
-    r.setdefault("power", ""); r.setdefault("engine_cc", ""); r.setdefault("power_bhp", ""); r.setdefault("mileage_kmpl", ""); r.setdefault("seats", ""); r.setdefault("fuel", ""); r.setdefault("transmission", ""); r.setdefault("seller_type", "")
-    family = p.model.split(" | ", 1)[-1]
-    labels = {
-        "brand": ("Brand", p.brand, "How the market rates this brand overall."),
-        "model_key": ("Model", family, "Demand and original price of this exact model family."),
-        "state": ("State", p.state or "Other", "Local demand and road tax paid when it was bought."),
-        "age": ("Age", f"{r['age']} yr", "Older vehicles are worth less; this is usually the biggest factor."),
-        "log_km": ("Kilometres", f"{p.km:,.0f} km", "More km means more wear."),
-        "owners": ("Owners", OWNER_WORD[p.owners], "Each extra owner lowers buyer trust."),
-        "power": ("Engine", f"{r['power']} cc", "Bigger engines usually cost more new and used."),
-        "engine_cc": ("Engine", f"{r['engine_cc']} cc", "Bigger engines usually cost more new and used."),
-        "power_bhp": ("Power", f"{r['power_bhp']} bhp", "More power signals a higher variant."),
-        "mileage_kmpl": ("Mileage", f"{r['mileage_kmpl']} kmpl", "Fuel efficiency of the variant."),
-        "seats": ("Seats", f"{r['seats']}", "Seating capacity."),
-        "fuel": ("Fuel", r["fuel"], "Diesel and CNG cars price differently from petrol."),
-        "transmission": ("Gearbox", r["transmission"], "Automatics usually ask more."),
-        "seller_type": ("Seller", r["seller_type"], "Dealers usually ask more than individuals."),
-    }
-    factors = []
-    for g, c in by.sort_values(key=np.abs, ascending=False).items():
-        name, val, note = labels[g]
-        factors.append({"feature": name, "value": str(val), "effect": round((math.exp(c) - 1) * 100, 1), "note": note})
-    return base_price, factors
+LABELS = {
+    "brand": ("Brand", "How the market rates this brand overall."),
+    "model_key": ("Model", "Demand and original price of this exact model."),
+    "state": ("State", "Local demand and road tax paid when it was bought."),
+    "age": ("Age", "Older vehicles are worth less; usually the biggest factor."),
+    "log_km": ("Kilometres", "More km means more wear."),
+    "owners": ("Owners", "Each extra owner lowers buyer trust."),
+    "power": ("Engine", "Bigger engines usually cost more new and used."),
+    "engine_cc": ("Engine", "Bigger engines usually cost more new and used."),
+    "power_bhp": ("Power", "More power signals a higher variant."),
+    "mileage_kmpl": ("Mileage", "Fuel efficiency of the variant."),
+    "seats": ("Seats", "Seating capacity."),
+    "fuel": ("Fuel", "Diesel and CNG cars price differently from petrol."),
+    "transmission": ("Gearbox", "Automatics usually ask more."),
+    "seller_type": ("Seller", "Dealers usually ask more than individuals."),
+}
 
 
-def _similar(kind, key, age, scale):
-    s = META[kind]["similar"].get(f"{key}|{int(round(age))}")
-    if not s:
-        return None
-    return {"median": round(s[0] * scale, -2), "count": s[1]}
+def _value_text(col, r, p):
+    v = r[col]
+    if col == "model_key":
+        return p.model
+    if col == "log_km":
+        return f"{p.km:,.0f} km"
+    if col == "owners":
+        return OWNER_WORD[p.owners]
+    unit = {"age": " yr", "power": " cc", "engine_cc": " cc", "power_bhp": " bhp", "mileage_kmpl": " kmpl", "seats": ""}
+    return f"{float(v):g}{unit[col]}" if col in unit else str(v)
 
 
-def predict_ml(kind, p: PredictIn):
-    ref = META[kind]["ref_year"]
+def predict_ml(kind, p: PredictIn, info):
+    t0 = time.perf_counter()
+    mk = "bike" if kind == "2w" else "car"
+    ref = META[mk]["ref_year"]
     age = max(0, NOW - p.year)
-    scale = GROWTH ** (NOW - ref)                 # Kaggle-era rupees -> 2026 rupees
+    scale = GROWTH ** (NOW - ref)
     ages = list(range(0, 16))
-    curve_df = _frame(kind, p, ages)
-    curve_prices = np.expm1(MODELS[kind]["pipe"].predict(curve_df)) * scale
-    row = _frame(kind, p, [age])
-    price = float(np.expm1(MODELS[kind]["pipe"].predict(row))[0] * scale)
-    lo, hi = MODELS[kind]["band"]
-    base_price, factors = _explain(kind, row, p, scale)
-    family = p.model.split(" | ", 1)[-1]
-    title = f"{p.year} {p.brand} {family}"
-    top = max(factors, key=lambda f: abs(f["effect"]))
-    summary = (f"A {title} with {p.km:,.0f} km and a {OWNER_WORD[p.owners]} owner"
-               f"{' in ' + p.state if kind == 'bike' and p.state and p.state != 'Other' else ''} should list for about "
-               f"₹{inr(round(price, -2))}. The biggest single factor is {top['feature'].lower()} "
-               f"({'+' if top['effect'] > 0 else ''}{top['effect']}%).")
+    pipe = MODELS[mk]["pipe"]
+    curve_prices = np.expm1(pipe.predict(_frame(mk, p, info, ages))) * scale
+    row = _frame(mk, p, info, [age])
+    Z = pipe.named_steps["pre"].transform(row)
+    contrib = BOOSTERS[mk].predict(xgb.DMatrix(Z), pred_contribs=True)[0]
+    price = float(math.expm1(contrib.sum()) * scale)          # SHAP values sum exactly to the prediction
+    ms = (time.perf_counter() - t0) * 1000
+
+    bias = float(contrib[-1])
+    by = pd.Series(contrib[:-1], index=MODELS[mk]["groups"]).groupby(level=0).sum()
+    r = row.iloc[0]
+    factors = [{"feature": LABELS[g][0], "value": _value_text(g, r, p), "effect": round((math.exp(c) - 1) * 100, 1),
+                "note": LABELS[g][1]} for g, c in by.sort_values(key=np.abs, ascending=False).items()]
+    lo, hi = MODELS[mk]["band"]
+    top = factors[0]
+    title = f"{p.year} {p.brand} {p.model}"
+    sim = META[mk]["similar"].get(f"{p.brand} | {p.model}|{age}")
     out = {
-        "title": title, "price": round(price, -2), "low": round(price * lo, -2), "high": round(price * hi, -2),
-        "base_price": round(base_price, -2), "factors": factors, "summary": summary,
-        "similar": _similar(kind, p.model, age, scale),
+        "title": title, "age": age, "price": round(price, -2), "low": round(price * lo, -2), "high": round(price * hi, -2),
+        "base_price": round(math.expm1(bias) * scale, -2), "factors": factors,
+        "similar": {"median": round(sim[0] * scale, -2), "count": sim[1]} if sim else None,
         "curve": [{"age": a, "price": round(float(v), -2)} for a, v in zip(ages, curve_prices)],
-        "age": age,
-        "method": (f"XGBoost trained on {METRICS[kind]['train']:,} {kind} listings (Kaggle, ~{ref}); "
-                   f"test R² {METRICS[kind]['models']['XGBoost']['R2']:.3f}. Factor sizes are Tree SHAP values. "
-                   f"Prices scaled to 2026 rupees at {round((GROWTH - 1) * 100)}% a year (×{scale:.2f})."),
+        "new_price": info.get("new_price"),
+        "summary": (f"A {title} with {p.km:,.0f} km and a {OWNER_WORD[p.owners]} owner"
+                    f"{' in ' + p.state if kind == '2w' and p.state and p.state != 'Other' else ''} should list for about "
+                    f"₹{inr(round(price, -2))}. The biggest single factor is {top['feature'].lower()} "
+                    f"({'+' if top['effect'] > 0 else ''}{top['effect']}%)."),
+        "engine": {"kind": "ml", "name": "XGBoost", "ms": round(ms, 1),
+                   "detail": (f"Predicted live by the XGBoost model trained on {METRICS[mk]['train']:,} listings "
+                              f"({info['train_rows']} of this model). Test R² {METRICS[mk]['models']['XGBoost']['R2']:.3f}.")},
+        "method": (f"Factor sizes are exact Tree SHAP values from the same XGBoost run, relative to the typical listing. "
+                   f"Kaggle prices (~{ref}) scaled to 2026 rupees at {round((GROWTH - 1) * 100)}% a year (×{scale:.2f})."),
         "range_note": "Range = the middle 60% of the model's errors on unseen test listings.",
     }
-    if kind == "bike":
-        new_est = float(curve_prices[0]) / 0.90
+    if kind == "2w" and p.state and p.state != "Other":
+        exs = info.get("new_price") or float(curve_prices[0]) / 0.90
         cc = float(row.power.iat[0])
-        if p.state and p.state != "Other":
-            rate = road_tax_rate(p.state, new_est, cc)
-            if rate is not None:
-                cs, cr = cheapest_state(new_est, cc)
-                out["road_tax"] = {"state": p.state, "rate": rate, "cheapest_state": cs, "cheapest_rate": cr,
-                                   "new_price_est": round(new_est, -2), "source": SOURCES.get(p.state)}
+        rate = road_tax_rate(p.state, exs, cc)
+        if rate is not None:
+            cs, cr = cheapest_state(exs, cc)
+            out["road_tax"] = {"state": p.state, "rate": rate, "cheapest_state": cs, "cheapest_rate": cr,
+                               "new_price_est": round(exs, -2), "source": SOURCES.get(p.state)}
     return out
 
 
-def predict_ev(p: PredictIn):
-    catalog = ev_model.EV_CATALOG.get(p.brand)
-    if not catalog:
-        raise HTTPException(422, f"Unknown EV brand {p.brand!r}")
-    variant = next((v for v in catalog if v[0] == p.model), None)
-    if not variant:
-        raise HTTPException(422, f"Unknown EV variant {p.model!r}")
-    exs = p.ex_showroom or variant[1]
-    kwh = p.kwh or variant[2]
+# ------------------------------------------------------------------ depreciation engine
+def predict_dep(kind, p: PredictIn, info):
+    t0 = time.perf_counter()
     age = max(0, NOW - p.year)
-    out = ev_model.predict_ev(p.brand, exs, kwh, age, p.km, p.owners)
+    exs = p.new_price or info["new_price"]
+    if kind == "2w":
+        out = dep.predict_2w(p.brand, info, exs, age, p.km, p.owners, p.state, p.kwh)
+        src = "BikeWale"
+    else:
+        out = dep.predict_car(META["car_curve"], exs, age, p.km, p.owners)
+        src = "CarWale"
+    ms = (time.perf_counter() - t0) * 1000
     title = f"{p.year} {p.brand} {p.model}"
+    why = ("it is electric — the 2020-21 training data has almost no EVs" if info.get("fuel") == "electric"
+           else "it is a scooter — the training data has motorcycles only" if info.get("type") in ("scooter", "moped")
+           else "it isn't in the 2020-21 training data (launched or renamed later)")
     out.update({
         "title": title, "age": age,
         "summary": (f"A {title} with {p.km:,.0f} km should list for about ₹{inr(out['price'])}, "
-                    f"{out['value_kept']}% of its ₹{inr(out['new_price'])} on-road price new. "
-                    f"Estimated battery health is about {out['battery_health']:.0f}%."),
-        "range_note": "Range = ±10%; the EV sample is small (424 ads), so treat this as indicative.",
+                    f"{out['value_kept']}% of its ₹{inr(out['new_price'])} price new."
+                    + (f" Estimated battery health is about {out['battery_health']:.0f}%." if "battery_health" in out else "")),
+        "engine": {"kind": "dep", "name": "Depreciation model", "ms": round(ms, 2),
+                   "detail": f"Not the ML model, because {why}. Priced from its official {src} 2026 price and measured yearly value loss."},
+        "method": "Each factor multiplies the price in turn (shown as % change).",
     })
-    if p.brand == "Ola":
-        out["brand_note"] = ("Ola scooters lose about 12% a year against 7% for other EVs and petrol — "
+    if out.get("rate_key") == "ola":
+        out["brand_note"] = ("Ola scooters lose about 12% a year against ~7% for other EVs and petrol — "
                              "that one brand drives the whole 'EVs lose value fast' story.")
     return out
 
 
 @app.get("/api/meta")
 def meta():
-    strip = lambda d: {k: v for k, v in d.items() if k != "similar"}
-    return {"bike": strip(META["bike"]), "car": strip(META["car"]),
-            "ev": {"brands": {b: [{"model": m, "price": pr, "kwh": k} for m, pr, k in vs]
-                              for b, vs in ev_model.EV_CATALOG.items()}},
-            "now": NOW}
+    def pack(kind, popular):
+        return {b: sorted(INDEX[kind][b].values(), key=lambda m: m["model"].lower()) for b in _order(INDEX[kind], popular)}
+    return {"2w": {"brands": pack("2w", POPULAR_2W), "states": META["bike"]["states"]},
+            "car": {"brands": pack("car", POPULAR_CAR), "fuels": META["car"]["fuels"]},
+            "sources": CATALOG["sources"], "now": NOW,
+            "counts": {"2w": sum(len(v) for v in INDEX["2w"].values()), "car": sum(len(v) for v in INDEX["car"].values())}}
 
 
 @app.get("/api/metrics")
@@ -218,9 +271,8 @@ def metrics():
 
 @app.post("/api/predict")
 def predict(p: PredictIn):
-    if p.type == "ev":
-        return predict_ev(p)
-    return predict_ml(p.type, p)
+    info = _info(p.type, p.brand, p.model)
+    return predict_ml(p.type, p, info) if info["engine"] == "ml" else predict_dep(p.type, p, info)
 
 
 app.mount("/", StaticFiles(directory=FRONT, html=True), name="site")

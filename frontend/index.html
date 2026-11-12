@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <!-- NAV -->
@@ -49,7 +49,7 @@
         <div class="stat reveal"><div class="stat-num" data-count="32648">0</div><div class="stat-label">bike listings loaded (Kaggle)</div></div>
         <div class="stat reveal"><div class="stat-num" data-count="5694">0</div><div class="stat-label">2026 BikeWale ads, matched to their exact variant</div></div>
         <div class="stat reveal"><div class="stat-num" data-count="424">0</div><div class="stat-label">used EV ads across India</div></div>
-        <div class="stat reveal"><div class="stat-num" id="statCars" data-count="0">0</div><div class="stat-label">used car listings (CarDekho)</div></div>
+        <div class="stat reveal"><div class="stat-num" id="statModels" data-count="0">0</div><div class="stat-label">verified models you can price (BikeWale + CarWale)</div></div>
       </div>
       <div class="overview-grid">
         <div class="card reveal">
@@ -74,7 +74,7 @@
       <p class="eyebrow reveal">How it works</p>
       <h2 class="section-title reveal">From raw ads to a fair price.</h2>
       <ol class="pipeline">
-        <li class="step reveal"><span class="step-n">1</span><h4>Collect</h4><p>Kaggle bike and car listings, plus 2026 BikeWale ads for EVs and petrol.</p></li>
+        <li class="step reveal"><span class="step-n">1</span><h4>Collect</h4><p>Kaggle bike and car listings, 2026 BikeWale ads, and the official model lists of BikeWale and CarWale.</p></li>
         <li class="step reveal"><span class="step-n">2</span><h4>Clean</h4><p>Drop duplicates, fix km and price outliers per model family and age.</p></li>
         <li class="step reveal"><span class="step-n">3</span><h4>Engineer</h4><p>City → state, road-tax rate, model family, log of price as target.</p></li>
         <li class="step reveal"><span class="step-n">4</span><h4>Train</h4><p>Linear Regression baseline, Random Forest and XGBoost on an 80/20 split.</p></li>
@@ -117,7 +117,7 @@
     <div class="wrap">
       <p class="eyebrow reveal">Models</p>
       <h2 class="section-title reveal">Measured on bikes it never saw.</h2>
-      <p class="lead reveal">20% of listings were hidden during training, then predicted. MAE is the average rupees off; R² is the share of price variation explained.</p>
+      <p class="lead reveal">20% of listings were hidden during training, then predicted. MAE is the average rupees off (lowest wins); R² is the share of price variation explained.</p>
       <div class="seg reveal" id="metricSeg" role="tablist">
         <button class="seg-btn active" data-v="bike" role="tab">Two-wheelers</button>
         <button class="seg-btn" data-v="car" role="tab">Cars</button>
@@ -140,15 +140,15 @@
       </div>
 
       <div class="predict-grid">
-        <form class="card form reveal" id="form" autocomplete="off">
+        <form class="card form reveal" id="form" autocomplete="off" novalidate>
           <div class="seg small" id="fuelSeg">
-            <button type="button" class="seg-btn active" data-v="bike">Petrol</button>
-            <button type="button" class="seg-btn" data-v="ev">Electric</button>
+            <button type="button" class="seg-btn active" data-v="petrol">Petrol</button>
+            <button type="button" class="seg-btn" data-v="electric">Electric</button>
             <span class="seg-pill"></span>
           </div>
 
           <div class="field"><label for="brand">Brand</label><select id="brand"></select></div>
-          <div class="field"><label for="model">Model</label><select id="model"></select></div>
+          <div class="field"><label for="model">Model</label><select id="model"></select><div class="engine-hint" id="engineHint"></div></div>
 
           <div class="row2">
             <div class="field"><label for="year">Year bought</label><select id="year"></select></div>
@@ -157,19 +157,19 @@
           <div class="row2">
             <div class="field"><label for="owner">Owner</label>
               <select id="owner"><option value="1">First</option><option value="2">Second</option><option value="3">Third</option><option value="4">Fourth +</option></select></div>
-            <div class="field" data-for="bike ev"><label for="state">State</label><select id="state"></select></div>
-            <div class="field" data-for="car"><label for="trans">Transmission</label><select id="trans"><option>Manual</option><option>Automatic</option></select></div>
+            <div class="field" data-for="2w"><label for="state">State</label><select id="state"></select></div>
+            <div class="field" data-for="car ml"><label for="trans">Transmission</label><select id="trans"><option>Manual</option><option>Automatic</option></select></div>
           </div>
 
-          <div class="field" data-for="car"><label for="fuel">Fuel</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>LPG</option></select></div>
+          <div class="field" data-for="car ml"><label for="fuel">Fuel</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>LPG</option></select></div>
 
           <details class="adv">
             <summary>Advanced</summary>
-            <div class="field" data-for="bike car"><label for="cc">Engine (cc)</label><input id="cc" type="number" min="50" step="1"></div>
-            <div class="field" data-for="car"><label for="power">Power (bhp)</label><input id="power" type="number" min="20" step="1"></div>
-            <div class="field" data-for="car"><label for="seats">Seats</label><input id="seats" type="number" min="2" max="10" step="1"></div>
-            <div class="field" data-for="ev"><label for="exs">New ex-showroom price (₹)</label><input id="exs" type="number" min="20000" step="1000"></div>
-            <div class="field" data-for="ev"><label for="kwh">Battery (kWh)</label><input id="kwh" type="number" min="0.5" step="0.1"></div>
+            <div class="field" data-for="ml"><label for="cc">Engine (cc)</label><input id="cc" type="number" min="50" step="1"></div>
+            <div class="field" data-for="car ml"><label for="power">Power (bhp)</label><input id="power" type="number" min="20" step="1"></div>
+            <div class="field" data-for="car ml"><label for="seats">Seats</label><input id="seats" type="number" min="2" max="10" step="1"></div>
+            <div class="field" data-for="dep"><label for="exs">New ex-showroom price (₹, official 2026)</label><input id="exs" type="number" min="20000" step="1000"></div>
+            <div class="field" data-for="ev"><label for="kwh">Battery (kWh, estimated from range)</label><input id="kwh" type="number" min="0.5" step="0.1"></div>
           </details>
 
           <button class="btn btn-primary wide" id="go" type="submit"><span class="go-label">Estimate price</span><span class="spinner" aria-hidden="true"></span></button>
@@ -190,6 +190,7 @@
             </div>
 
             <div class="pane active" data-p="price">
+              <div class="engine-badge" id="engineBadge"></div>
               <p class="res-title" id="resTitle"></p>
               <div class="price" id="price">₹0</div>
               <p class="range" id="range"></p>
@@ -200,6 +201,7 @@
             <div class="pane" data-p="why">
               <p class="why-intro" id="whyIntro"></p>
               <div class="factors" id="factors"></div>
+              <div class="engine-box" id="engineBox"></div>
               <div class="note-box" id="taxNote" hidden></div>
               <p class="fine" id="method"></p>
             </div>
@@ -222,6 +224,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=2" defer></script>
+  <script src="app.js?v=5" defer></script>
 </body>
 </html>

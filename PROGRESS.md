@@ -30,21 +30,22 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
 | Topic, novelty, abstract | ✅ done (earlier sessions) |
 | Colab modules 1–3, 6 (clean, road tax, EV v2) | ✅ done in Colab (earlier sessions) |
 | Colab modules 4, 5, 7, 8 | ⏳ to do — code ready in `colab/COLAB_GUIDE.md` |
-| Website backend (FastAPI, 3 models, SHAP) | ✅ runs locally, ~15-20 ms per prediction |
+| Website backend (FastAPI, 3 models, SHAP) | ✅ runs locally, ~5-20 ms per prediction |
+| Verified vehicle list (BikeWale + CarWale) | ✅ 541 two-wheeler + 345 car models |
 | Website frontend (Apple-style) | ✅ tested in browser: bike, EV, car, all 3 tabs |
 | Docs: roadmap, datasets, lit survey | ✅ `docs/` |
 | Report + slides | ⏳ |
 | Online deployment | ⏳ optional (Render) |
 
-### Website model scores (test set, 20%)
+### Website model scores (test set, 20%, after official-name mapping)
 | | Bikes R² | Bikes MAE | Cars R² | Cars MAE |
 |---|---|---|---|---|
-| Linear Regression | 0.865 | ₹12,816 | 0.915 | ₹74,699 |
-| Random Forest | 0.894 | ₹11,767 | 0.917 | ₹76,701 |
-| XGBoost | **0.932** | **₹10,134** | **0.925** | **₹69,849** |
+| Linear Regression | 0.621 | ₹13,979 | 0.892 | ₹73,676 |
+| Random Forest | 0.952 | ₹10,011 | 0.896 | ₹69,827 |
+| XGBoost (served) | 0.946 | **₹9,632** | **0.917** | **₹64,620** |
 
 ### Open questions for Kartik
-1. Upload `two_wheelers_2026_same_variant.csv` (+ Colab `bikes_clean_with_prices_and_tax.csv`) so the site can use the exact Colab data.
+1. **Most important:** upload `two_wheelers_2026_same_variant.csv` — lets us test the Kaggle-trained XGBoost on real 2026 ads and recalibrate if it runs low. Also (+ Colab `bikes_clean_with_prices_and_tax.csv`) so the site can use the exact Colab data.
 2. Full Ferdous et al. PDF (IEEE Xplore via college login).
 3. Keep "Road Tax Features" in the title, or shorten to "…with EV Depreciation Analysis"?
 4. Deploy online (needs a Render/Railway login) or demo on localhost?
@@ -59,3 +60,11 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
 - **2026-11-12 — Frontend** (`frontend/`). Apple-style single page: frosted nav, hero, overview stats with count-up, 5-step pipeline, findings chart (EV vs petrol vs Ola), road-tax bars, model table, predictor with 2W/Car segmented control + Petrol/Electric switch, result tabs Price / Why this price / Depreciation, live re-prediction on input change, dark mode, reduced-motion support. Fixed: empty-state overlay (`[hidden]` rule), cache-busting.
 - **2026-11-12 — Docs.** `README.md`, `docs/ROADMAP.md` (tonight's plan, report outline, flowchart, demo script, viva answers), `docs/DATASETS.md`, `docs/LITERATURE_SURVEY.md` (16 + 3 new papers, gap paragraph), `colab/COLAB_GUIDE.md` (Modules 4-8 code).
 - **2026-11-12 — GitHub.** Created private repo `resaleiq-used-vehicle-price` and pushed everything (private because the log names the student and college; flip to public in repo settings if wanted).
+- **2026-11-12 — Prompt 2: model-list bugs + "is it really live?".** Problems: dropdown used crude families ("Pulsar" = a series, not a bike), and was missing anything after 2021 (Pulsar NS400Z) plus all scooters. Fixes:
+  - `backend/scrape_catalog.py`: scraped official model lists from BikeWale (61 brands) and CarWale (29 brands) — names, 2026 ex-showroom price, cc, bhp, body type, fuel, on-sale/discontinued.
+  - `backend/build_catalog.py`: mapped all 467 Kaggle bike names / 2,058 car names to official names (rules + auto-match; all targets verified official). 98.4% / 99.7% of rows matched. Found the Kaggle bike data has no scooters and nothing after 2021.
+  - Dropdown now = on-sale models (official) + discontinued models that are in the training data. 541 2W, 345 cars.
+  - Two engines: XGBoost (live, for models in training data) and a depreciation model (`app/depreciation.py`) for EVs, scooters and post-2021 models — Module 6 rates (motorcycles −6.4%/yr, scooters −8.5%, EVs −7.3%, Ola −12%) on official price + state road tax; cars −11.4%/yr fitted within-model on 2,720 CarDekho listings.
+  - UI: grouped dropdown (motorcycles / scooters on sale / discontinued), engine hint under Model, engine badge on result ("Predicted live by XGBoost · 7 ms"), "How this was priced" box with server and round-trip time.
+  - Retrained: bike XGBoost R² 0.946 / MAE ₹9,632 (better MAE than before); RF has higher R² (0.952) but higher MAE, so "best" = lowest MAE. Fixed: f-string, form validation blocking submit.
+  - Answer to "is it live?": yes — every request runs XGBoost inference (or the depreciation formula) on the server; it's fast because a trained tree model only does ~900 small tree lookups.

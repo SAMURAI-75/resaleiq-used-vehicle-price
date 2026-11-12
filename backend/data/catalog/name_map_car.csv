@@ -1,0 +1,2059 @@
+kaggle_brand,kaggle_name,rows,brand,official_model,how
+Maruti,Maruti Swift Dzire VDI,118,Maruti Suzuki,Dzire,override
+Maruti,Maruti Alto 800 LXI,76,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Alto LXi,69,Maruti Suzuki,Alto,override
+Maruti,Maruti Swift VDI,60,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VDI BSIV,56,Maruti Suzuki,Swift,auto
+Maruti,Maruti Alto K10 VXI,47,Maruti Suzuki,Alto K10,override
+Hyundai,Hyundai EON Era Plus,44,Hyundai,Eon,override
+Maruti,Maruti Alto LX,43,Maruti Suzuki,Alto,override
+Maruti,Maruti Wagon R VXI BS IV,43,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Ertiga VDI,42,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ritz VDi,40,Maruti Suzuki,Ritz,auto
+Maruti,Maruti 800 AC,37,Maruti Suzuki,800,override
+Maruti,Maruti Swift Dzire VXI,37,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire VDi,33,Maruti Suzuki,Dzire,override
+Hyundai,Hyundai EON Magna Plus,30,Hyundai,Eon,override
+Renault,Renault KWID RXT,30,Renault,Kwid,override
+Hyundai,Hyundai Verna 1.6 SX,29,Hyundai,Verna,override
+Ford,Ford Figo Diesel Titanium,27,Ford,Figo,override
+Maruti,Maruti Alto 800 VXI,27,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Alto K10 2010-2014 VXI,27,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Wagon R LXI Minor,27,Maruti Suzuki,Wagon R,override
+Hyundai,Hyundai i10 Magna,26,Hyundai,i10,override
+Mahindra,Mahindra XUV500 W6 2WD,26,Mahindra,XUV500,override
+Volkswagen,Volkswagen Vento Diesel Highline,25,Volkswagen,Vento,override
+Maruti,Maruti Swift VXI,24,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai i10 Sportz,24,Hyundai,i10,override
+Hyundai,Hyundai Grand i10 Sportz,24,Hyundai,Grand i10,override
+Hyundai,Hyundai Santro Xing GLS,24,Hyundai,Santro,override
+Hyundai,Hyundai Verna 1.6 SX CRDi (O),23,Hyundai,Verna,override
+Mahindra,Mahindra Bolero 2011-2019 SLX,23,Mahindra,Bolero,override
+Maruti,Maruti Swift Dzire ZDI,23,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra XUV500 W8 2WD,22,Mahindra,XUV500,override
+Maruti,Maruti Wagon R LXI,22,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Eeco 5 Seater AC BSIV,21,Maruti Suzuki,Eeco,auto
+Hyundai,Hyundai i10 Era,20,Hyundai,i10,override
+Toyota,Toyota Etios GD,20,Toyota,Etios,override
+Mahindra,Mahindra XUV500 W10 2WD,20,Mahindra,XUV500,override
+Maruti,Maruti Alto LXi BSIII,20,Maruti Suzuki,Alto,override
+Maruti,Maruti Ertiga ZDI,20,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti 800 Std,19,Maruti Suzuki,800,override
+Tata,Tata Tiago 1.2 Revotron XZ,19,Tata,Tiago,override
+Chevrolet,Chevrolet Beat Diesel LT,19,Chevrolet,Beat,override
+Honda,Honda City 2017-2020 GXi,19,Honda,City,override
+Renault,Renault Duster 110PS Diesel RxZ,18,Renault,Duster,override
+Chevrolet,Chevrolet Beat LT,18,Chevrolet,Beat,override
+Maruti,Maruti Swift Vdi BSIII,18,Maruti Suzuki,Swift,auto
+Renault,Renault KWID 1.0 RXT Optional,18,Renault,Kwid,override
+Mahindra,Mahindra TUV 300 T8,18,Mahindra,TUV300,override
+Mahindra,Mahindra Bolero 2011-2019 ZLX,17,Mahindra,Bolero,override
+Maruti,Maruti Ertiga SHVS VDI,17,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Celerio VXI,17,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Swift Dzire VXi,17,Maruti Suzuki,Dzire,override
+Chevrolet,Chevrolet Spark 1.0 LT,17,Chevrolet,Spark,override
+Hyundai,Hyundai i10 Magna 1.1L,17,Hyundai,i10,override
+Maruti,Maruti Swift VXI Optional,16,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai Grand i10 1.2 Kappa Sportz BSIV,16,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 Magna,16,Hyundai,Grand i10,override
+Hyundai,Hyundai Creta 1.6 CRDi SX,16,Hyundai,Creta,override
+Hyundai,Hyundai i20 Sportz 1.4 CRDi,16,Hyundai,i20,override
+Maruti,Maruti Baleno Delta 1.2,16,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Swift Dzire LDI,15,Maruti Suzuki,Dzire,override
+Maruti,Maruti Wagon R VXI,15,Maruti Suzuki,Wagon R,override
+Toyota,Toyota Innova 2.5 G (Diesel) 8 Seater,15,Toyota,Innova,override
+Maruti,Maruti Alto K10 LXI,15,Maruti Suzuki,Alto K10,override
+Hyundai,Hyundai i20 Asta 1.4 CRDi,15,Hyundai,i20,override
+Ford,Ford Figo Diesel EXI,15,Ford,Figo,override
+Renault,Renault KWID RXL,15,Renault,Kwid,override
+Maruti,Maruti Swift 1.3 VXi,14,Maruti Suzuki,Swift,auto
+Toyota,Toyota Etios Liva GD,14,Toyota,Etios Liva,override
+Tata,Tata New Safari DICOR 2.2 EX 4x2,14,Tata,Safari,override
+Maruti,Maruti Wagon R VXI Optional,14,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R LXI BS IV,14,Maruti Suzuki,Wagon R,override
+Renault,Renault KWID RXT Optional,14,Renault,Kwid,override
+Maruti,Maruti Swift Dzire ZDi,14,Maruti Suzuki,Dzire,override
+Maruti,Maruti A-Star Vxi,14,Maruti Suzuki,A-Star,auto
+Hyundai,Hyundai i20 Magna,14,Hyundai,i20,override
+Maruti,Maruti Wagon R LXI CNG,14,Maruti Suzuki,Wagon R,override
+Mahindra,Mahindra XUV500 W8 4WD,14,Mahindra,XUV500,override
+Maruti,Maruti Omni E MPI STD BS IV,13,Maruti Suzuki,Omni,override
+Chevrolet,Chevrolet Spark 1.0 LS,13,Chevrolet,Spark,override
+Maruti,Maruti Ertiga SHVS ZDI Plus,13,Maruti Suzuki,Ertiga,auto
+Tata,Tata Indica Vista TDI LS,13,Tata,Indica,override
+Hyundai,Hyundai i20 1.2 Asta,13,Hyundai,i20,override
+Maruti,Maruti Vitara Brezza ZDi Plus Dual Tone,13,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Swift VDI Optional,13,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai i20 Sportz 1.2,13,Hyundai,i20,override
+Maruti,Maruti Eeco CNG 5 Seater AC BSIV,13,Maruti Suzuki,Eeco,auto
+Toyota,Toyota Innova 2.5 VX (Diesel) 7 Seater,13,Toyota,Innova,override
+Mahindra,Mahindra Bolero 2011-2019 SLE,13,Mahindra,Bolero,override
+Ford,Ford EcoSport 1.5 Diesel Titanium Plus BSIV,13,Ford,EcoSport,override
+Volkswagen,Volkswagen Polo Diesel Highline 1.2L,13,Volkswagen,Polo,override
+Hyundai,Hyundai i20 1.4 CRDi Asta,13,Hyundai,i20,override
+Hyundai,Hyundai i20 Asta 1.2,12,Hyundai,i20,override
+Ford,Ford EcoSport 1.5 TDCi Titanium BSIV,12,Ford,EcoSport,override
+Tata,Tata Indica Vista TDI LX,12,Tata,Indica,override
+Maruti,Maruti Vitara Brezza ZDi Plus,12,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Vitara Brezza ZDi,12,Maruti Suzuki,Vitara Brezza,override
+Honda,Honda City i DTEC VX,12,Honda,City,override
+Toyota,Toyota Innova 2.5 G (Diesel) 7 Seater,12,Toyota,Innova,override
+Toyota,Toyota Innova 2.5 V Diesel 7-seater,12,Toyota,Innova,override
+Renault,Renault Duster 110PS Diesel RxL,12,Renault,Duster,override
+Ford,Ford EcoSport 1.5 Diesel Titanium BSIV,12,Ford,EcoSport,override
+Mahindra,Mahindra Bolero SLX,12,Mahindra,Bolero,override
+Hyundai,Hyundai Grand i10 CRDi Sportz,12,Hyundai,Grand i10,override
+Ford,Ford Figo Diesel ZXI,12,Ford,Figo,override
+Hyundai,Hyundai i20 1.2 Spotz,11,Hyundai,i20,override
+Maruti,Maruti Ritz LDi,11,Maruti Suzuki,Ritz,auto
+Maruti,Maruti Vitara Brezza VDi,11,Maruti Suzuki,Vitara Brezza,override
+Toyota,Toyota Innova 2.5 G (Diesel) 8 Seater BS IV,11,Toyota,Innova,override
+Tata,Tata Indigo LX,11,Tata,Indigo,override
+Maruti,Maruti Omni E 8 Str STD,11,Maruti Suzuki,Omni,override
+Hyundai,Hyundai Verna 1.6 CRDI,11,Hyundai,Verna,override
+Hyundai,Hyundai i10 Magna 1.2 iTech SE,11,Hyundai,i10,override
+Honda,Honda Amaze S i-Dtech,11,Honda,Amaze,override
+Maruti,Maruti Eeco 7 Seater Standard BSIV,11,Maruti Suzuki,Eeco,auto
+Tata,Tata Indigo CR4,11,Tata,Indigo,override
+Hyundai,Hyundai Creta 1.6 CRDi SX Option,11,Hyundai,Creta,override
+Maruti,Maruti Zen LXI,11,Maruti Suzuki,Zen,auto
+Hyundai,Hyundai EON Sportz,11,Hyundai,Eon,override
+Tata,Tata Tiago 1.2 Revotron XT,10,Tata,Tiago,override
+Tata,Tata Zest Revotron 1.2 XT,10,Tata,Zest,override
+Hyundai,Hyundai i20 Magna 1.2,10,Hyundai,i20,override
+Tata,Tata Indigo CS LX (TDI) BS III,10,Tata,Indigo,override
+Hyundai,Hyundai EON D Lite Plus,10,Hyundai,Eon,override
+Tata,Tata Indigo CS eLX BS IV,10,Tata,Indigo,override
+Tata,Tata Safari DICOR 2.2 EX 4x2,10,Tata,Safari,override
+Maruti,Maruti Alto LX BSIII,10,Maruti Suzuki,Alto,override
+Ford,Ford Figo Diesel Celebration Edition,10,Ford,Figo,override
+Honda,Honda City i VTEC V,10,Honda,City,override
+Tata,Tata Indica V2 DLS TC,10,Tata,Indica,override
+Mahindra,Mahindra Scorpio S10 7 Seater,10,Mahindra,Scorpio,override
+Maruti,Maruti Vitara Brezza VDi Option,10,Maruti Suzuki,Vitara Brezza,override
+Tata,Tata Indigo CS LS (TDI) BS-III,10,Tata,Indigo,override
+Honda,Honda Amaze VX i-DTEC,10,Honda,Amaze,override
+Toyota,Toyota Fortuner 3.0 Diesel,10,Toyota,Fortuner,override
+Mahindra,Mahindra Xylo D2,10,Mahindra,Xylo,override
+Mahindra,Mahindra Bolero 2011-2019 DI - AC BS III,10,Mahindra,Bolero,override
+Maruti,Maruti Ertiga VXI,10,Maruti Suzuki,Ertiga,auto
+Mahindra,Mahindra Scorpio LX,9,Mahindra,Scorpio,override
+Ford,Ford Fiesta Classic 1.4 Duratorq CLXI,9,Ford,Fiesta,override
+Tata,Tata Indigo CS LS (TDI) BS III,9,Tata,Indigo,override
+Tata,Tata Indica Vista Aqua 1.4 TDI,9,Tata,Indica,override
+Maruti,Maruti Ciaz ZDi Plus SHVS,9,Maruti Suzuki,Ciaz,auto
+Hyundai,Hyundai Verna CRDi SX,9,Hyundai,Verna,override
+Mahindra,Mahindra XUV500 W4,9,Mahindra,XUV500,override
+Chevrolet,Chevrolet Beat LS,9,Chevrolet,Beat,override
+Maruti,Maruti Wagon R AMT VXI,9,Maruti Suzuki,Wagon R,override
+Maruti,Maruti S-Cross 2017-2020 Zeta DDiS 200 SH,9,Maruti Suzuki,S-Cross,override
+Toyota,Toyota Innova 2.5 G (Diesel) 7 Seater BS IV,9,Toyota,Innova,override
+Maruti,Maruti Alto LXI,9,Maruti Suzuki,Alto,override
+Mahindra,Mahindra Thar CRDe,9,Mahindra,Thar,override
+Mahindra,Mahindra TUV 300 mHAWK100 T8,9,Mahindra,TUV300,override
+Chevrolet,Chevrolet Cruze LTZ,9,Chevrolet,Cruze,override
+Honda,Honda WR-V i-DTEC VX,9,Honda,WR-V,override
+Tata,Tata Indigo LS,9,Tata,Indigo,override
+Mahindra,Mahindra Scorpio M2DI,9,Mahindra,Scorpio,override
+Hyundai,Hyundai Accent GLE,8,Hyundai,Accent,override
+Tata,Tata Safari Storme EX,8,Tata,Safari,override
+Maruti,Maruti Baleno Alpha 1.3,8,Maruti Suzuki,Baleno,auto
+Ford,Ford EcoSport 1.5 TDCi Titanium Plus BSIV,8,Ford,EcoSport,override
+Maruti,Maruti Swift Dzire LDi,8,Maruti Suzuki,Dzire,override
+Hyundai,Hyundai EON 1.0 Era Plus,8,Hyundai,Eon,override
+Renault,Renault Duster 85PS Diesel RxL Optional,8,Renault,Duster,override
+Hyundai,Hyundai Xcent 1.1 CRDi S,8,Hyundai,Xcent,override
+Ford,Ford Figo Aspire 1.5 TDCi Titanium,8,Ford,Aspire,override
+Honda,Honda City V MT,8,Honda,City,override
+Hyundai,Hyundai Verna CRDi SX ABS,8,Hyundai,Verna,override
+Maruti,Maruti Swift Dzire VXI 1.2,8,Maruti Suzuki,Dzire,override
+Maruti,Maruti 800 AC BSIII,8,Maruti Suzuki,800,override
+Tata,Tata Nexon 1.2 Revotron XM,8,Tata,Nexon,override
+Toyota,Toyota Innova 2.5 VX (Diesel) 8 Seater,8,Toyota,Innova,override
+Maruti,Maruti Celerio ZXI,8,Maruti Suzuki,Celerio,auto
+Hyundai,Hyundai i10 Sportz 1.1L,8,Hyundai,i10,override
+Hyundai,Hyundai i20 1.2 Asta Option,8,Hyundai,i20,override
+Honda,Honda City i VTEC VX,8,Honda,City,override
+Maruti,Maruti Swift ZDi,8,Maruti Suzuki,Swift,auto
+Tata,Tata Manza Aura (ABS) Quadrajet BS IV,8,Tata,Manza,auto
+Hyundai,Hyundai i20 1.4 Asta Option,8,Hyundai,i20,override
+Hyundai,Hyundai Xcent 1.2 VTVT S,8,Hyundai,Xcent,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Comfortline,8,Volkswagen,Ameo,override
+Maruti,Maruti SX4 S Cross 2015-2017 DDiS 200 Zeta,7,Maruti Suzuki,S-Cross,override
+Mahindra,Mahindra XUV500 W8 AWD,7,Mahindra,XUV500,override
+Hyundai,Hyundai i20 1.4 CRDi Sportz,7,Hyundai,i20,override
+Maruti,Maruti Swift Dzire Vdi BSIV,7,Maruti Suzuki,Dzire,override
+Hyundai,Hyundai i20 1.4 CRDi Magna,7,Hyundai,i20,override
+Maruti,Maruti Vitara Brezza LDi Option,7,Maruti Suzuki,Vitara Brezza,override
+Hyundai,Hyundai Santro Xing GL Plus,7,Hyundai,Santro,override
+Mahindra,Mahindra Scorpio EX,7,Mahindra,Scorpio,override
+Hyundai,Hyundai i20 1.2 Sportz,7,Hyundai,i20,override
+Hyundai,Hyundai i20 1.2 Magna Executive,7,Hyundai,i20,override
+Honda,Honda City 1.5 S MT,7,Honda,City,override
+Hyundai,Hyundai Grand i10 Asta,7,Hyundai,Grand i10,override
+Maruti,Maruti Ritz VXi,7,Maruti Suzuki,Ritz,auto
+Maruti,Maruti Baleno Alpha 1.2,7,Maruti Suzuki,Baleno,auto
+Chevrolet,Chevrolet Sail 1.2 LS ABS,7,Chevrolet,Sail,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Magna AT,7,Hyundai,Grand i10,override
+Ford,Ford Figo Diesel LXI,7,Ford,Figo,override
+Hyundai,Hyundai Grand i10 1.2 CRDi Asta,7,Hyundai,Grand i10,override
+Honda,Honda WR-V i-VTEC VX,7,Honda,WR-V,override
+Maruti,Maruti Wagon R LXI BSIII,7,Maruti Suzuki,Wagon R,override
+Hyundai,Hyundai i20 Asta Option 1.4 CRDi,7,Hyundai,i20,override
+Volkswagen,Volkswagen Polo 1.5 TDI Comfortline,7,Volkswagen,Polo,override
+Hyundai,Hyundai EON Era,7,Hyundai,Eon,override
+Maruti,Maruti Wagon R Stingray VXI,7,Maruti Suzuki,Wagon R,override
+Mahindra,Mahindra Bolero Power Plus SLE,7,Mahindra,Bolero,override
+Hyundai,Hyundai Creta 1.6 CRDi AT SX Plus,7,Hyundai,Creta,override
+Mahindra,Mahindra KUV 100 mFALCON D75 K8,7,Mahindra,KUV100,override
+Mahindra,Mahindra TUV 300 T6 Plus,7,Mahindra,TUV300,override
+Hyundai,Hyundai i20 Active 1.2 S,7,Hyundai,i20 Active,override
+Toyota,Toyota Innova Crysta 2.8 ZX AT BSIV,7,Toyota,Innova Crysta,override
+Toyota,Toyota Innova 2.5 V Diesel 8-seater,7,Toyota,Innova,override
+Mahindra,Mahindra Bolero 2011-2019 Plus AC,7,Mahindra,Bolero,override
+Datsun,Datsun RediGO 1.0 S,7,Datsun,redi-GO,override
+Honda,Honda City 2017-2020 EXi,7,Honda,City,override
+Maruti,Maruti Swift Dzire VDI Optional,7,Maruti Suzuki,Dzire,override
+Chevrolet,Chevrolet Beat Diesel,6,Chevrolet,Beat,override
+Toyota,Toyota Corolla Altis Diesel D4DG,6,Toyota,Corolla Altis,override
+Maruti,Maruti Wagon R LXI DUO BSIII,6,Maruti Suzuki,Wagon R,override
+Maruti,Maruti 800 DX,6,Maruti Suzuki,800,override
+Hyundai,Hyundai i20 2015-2017 Asta 1.4 CRDi,6,Hyundai,i20,override
+Volkswagen,Volkswagen Vento Diesel Comfortline,6,Volkswagen,Vento,override
+Maruti,Maruti Swift ZXI,6,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai i20 Asta Option 1.2,6,Hyundai,i20,override
+Maruti,Maruti Wagon R LXI Optional,6,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Zen Estilo LXI BS IV,6,Maruti Suzuki,Estilo,override
+Chevrolet,Chevrolet Beat Diesel LS,6,Chevrolet,Beat,override
+Renault,Renault Duster 85PS Diesel RxL,6,Renault,Duster,override
+Ford,Ford Fiesta EXi 1.4 TDCi Ltd,6,Ford,Fiesta,override
+Maruti,Maruti Swift Dzire AMT VXI,6,Maruti Suzuki,Dzire,override
+Volkswagen,Volkswagen Polo 1.5 TDI Highline,6,Volkswagen,Polo,override
+Ford,Ford Figo 1.2P Titanium MT,6,Ford,Figo,override
+Maruti,Maruti Ertiga ZXI,6,Maruti Suzuki,Ertiga,auto
+Renault,Renault Duster 85PS Diesel RxE,6,Renault,Duster,override
+Maruti,Maruti Baleno Delta 1.3,6,Maruti Suzuki,Baleno,auto
+Mahindra,Mahindra Bolero 2011-2019 ZLX BSIII,6,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero DI,6,Mahindra,Bolero,override
+Ford,Ford Figo 1.5D Titanium MT,6,Ford,Figo,override
+Maruti,Maruti Swift LXI,6,Maruti Suzuki,Swift,auto
+Ford,Ford Figo 1.5D Trend MT,6,Ford,Figo,override
+Tata,Tata Nexon 1.5 Revotorq XZ Plus,6,Tata,Nexon,override
+Hyundai,Hyundai Grand i10 CRDi Magna,6,Hyundai,Grand i10,override
+Honda,Honda Brio S MT,6,Honda,Brio,override
+Maruti,Maruti Swift VDI BSIV W ABS,6,Maruti Suzuki,Swift,auto
+Toyota,Toyota Innova Crysta 2.4 VX MT BSIV,6,Toyota,Innova Crysta,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Magna BSIV,6,Hyundai,Grand i10,override
+Honda,Honda City i DTEC V,6,Honda,City,override
+Honda,Honda City i-DTEC VX,6,Honda,City,override
+Maruti,Maruti Baleno Zeta Automatic,6,Maruti Suzuki,Baleno,auto
+Honda,Honda City 1.5 V MT,6,Honda,City,override
+Tata,Tata Indica Vista Quadrajet VX,6,Tata,Indica,override
+Hyundai,Hyundai Verna 1.4 CRDi,6,Hyundai,Verna,override
+Tata,Tata Indica Vista Terra 1.4 TDI,6,Tata,Indica,override
+Mahindra,Mahindra Bolero Power Plus ZLX,6,Mahindra,Bolero,override
+Tata,Tata Indica V2 DLS,6,Tata,Indica,override
+Datsun,Datsun GO T BSIV,6,Datsun,GO,override
+Tata,Tata Hexa XT,6,Tata,Hexa,override
+Maruti,Maruti Ciaz 1.3 Alpha,6,Maruti Suzuki,Ciaz,auto
+Hyundai,Hyundai Creta 1.4 CRDi S,6,Hyundai,Creta,override
+Mahindra,Mahindra Scorpio 1.99 S6 Plus,6,Mahindra,Scorpio,override
+Hyundai,Hyundai Grand i10 1.2 CRDi Sportz,6,Hyundai,Grand i10,override
+Nissan,Nissan Terrano XL 85 PS,6,Nissan,Terrano,override
+Tata,Tata Indigo CS LX (TDI) BS-III,6,Tata,Indigo,override
+Maruti,Maruti Swift VXI Deca,6,Maruti Suzuki,Swift,auto
+Tata,Tata Safari Storme LX,6,Tata,Safari,override
+Tata,Tata Manza Aura Quadrajet,6,Tata,Manza,auto
+Hyundai,Hyundai Santro Xing XG,6,Hyundai,Santro,override
+Volkswagen,Volkswagen Polo 1.2 MPI Comfortline,6,Volkswagen,Polo,override
+Maruti,Maruti Alto 800 LX,6,Maruti Suzuki,Alto 800,override
+Chevrolet,Chevrolet Enjoy TCDi LTZ 7 Seater,5,Chevrolet,Enjoy,override
+Honda,Honda City i DTEC SV,5,Honda,City,override
+Tata,Tata Safari DICOR 2.2 LX 4x2,5,Tata,Safari,override
+Maruti,Maruti Omni 8 Seater BSII,5,Maruti Suzuki,Omni,override
+Maruti,Maruti Ignis 1.2 Delta BSIV,5,Maruti Suzuki,Ignis,auto
+Hyundai,Hyundai Elite i20 Magna Plus BSIV,5,Hyundai,i20,override
+Maruti,Maruti Estilo LXI,5,Maruti Suzuki,Estilo,auto
+Hyundai,Hyundai Verna 1.6 CRDi S,5,Hyundai,Verna,override
+Maruti,Maruti Ciaz ZDi,5,Maruti Suzuki,Ciaz,auto
+Tata,Tata Indica DLS,5,Tata,Indica,override
+Tata,Tata Indica Vista Quadrajet LS,5,Tata,Indica,override
+Tata,Tata Zest Revotron 1.2T XMS,5,Tata,Zest,override
+Jeep,Jeep Compass 2.0 Longitude Option BSIV,5,Jeep,Compass,override
+Maruti,Maruti Wagon R VXI Minor,5,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R VXI BSIII,5,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Swift Dzire ZDI Plus,5,Maruti Suzuki,Dzire,override
+Hyundai,Hyundai Creta 1.6 CRDi SX Plus,5,Hyundai,Creta,override
+Maruti,Maruti Zen LX,5,Maruti Suzuki,Zen,auto
+Tata,Tata Indica GLS BS IV,5,Tata,Indica,override
+Maruti,Maruti Ertiga BSIV VXI,5,Maruti Suzuki,Ertiga,auto
+Volkswagen,Volkswagen Polo Diesel Trendline 1.2L,5,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo Diesel Comfortline 1.2L,5,Volkswagen,Polo,override
+Maruti,Maruti Wagon R VXI 1.2,5,Maruti Suzuki,Wagon R,override
+Hyundai,Hyundai Accent Executive,5,Hyundai,Accent,override
+Hyundai,Hyundai i20 Magna 1.4 CRDi (Diesel),5,Hyundai,i20,override
+Maruti,Maruti Wagon R LX BSIII,5,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Zen Estilo VXI BSIV,5,Maruti Suzuki,Estilo,override
+Maruti,Maruti Ertiga ZDI Plus,5,Maruti Suzuki,Ertiga,auto
+Mahindra,Mahindra Bolero 2011-2019 SLE BSIII,5,Mahindra,Bolero,override
+Maruti,Maruti Wagon R LX Minor,5,Maruti Suzuki,Wagon R,override
+Hyundai,Hyundai i20 Active 1.4 SX with AVN,5,Hyundai,i20 Active,override
+Honda,Honda Jazz 1.2 VX i VTEC,5,Honda,Jazz,override
+Toyota,Toyota Innova Crysta 2.8 GX AT BSIV,5,Toyota,Innova Crysta,override
+Toyota,Toyota Fortuner 4x4 MT,5,Toyota,Fortuner,override
+Hyundai,Hyundai i20 1.4 Sportz,5,Hyundai,i20,override
+Maruti,Maruti Swift Ldi BSIII,5,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai Santro GLS I - Euro II,5,Hyundai,Santro,override
+Maruti,Maruti SX4 Vxi BSIII,5,Maruti Suzuki,SX4,auto
+Mahindra,Mahindra Scorpio VLS AT 2.2 mHAWK,5,Mahindra,Scorpio,override
+Tata,Tata Zest Quadrajet 1.3 75PS XM,5,Tata,Zest,override
+Hyundai,Hyundai Santro Sportz BSIV,5,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing GL,5,Hyundai,Santro,override
+Maruti,Maruti Swift Ldi BSIV,5,Maruti Suzuki,Swift,auto
+Nissan,Nissan Sunny Diesel XV,5,Nissan,Sunny,override
+Mahindra,Mahindra Verito 1.5 D4 BSIV,5,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Verito 1.5 D4 BSIII,5,Mahindra,Logan/Verito,override
+Tata,Tata Indigo eCS LX BSIV,5,Tata,Indigo,override
+Tata,Tata Zest Quadrajet 1.3 75PS XE,5,Tata,Zest,override
+Hyundai,Hyundai Santro Xing XL,5,Hyundai,Santro,override
+Nissan,Nissan Micra XV CVT,5,Nissan,Micra,override
+Mahindra,Mahindra Scorpio VLX 2WD AIRBAG BSIV,5,Mahindra,Scorpio,override
+Ford,Ford Endeavour 2.5L 4X2 MT,5,Ford,Endeavour,override
+Maruti,Maruti Swift AMT VXI,5,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai Santro Xing XS,5,Hyundai,Santro,override
+Hyundai,Hyundai i20 1.2 Magna,5,Hyundai,i20,override
+Mahindra,Mahindra Thar CRDe AC,5,Mahindra,Thar,override
+Hyundai,Hyundai i10 Sportz AT,5,Hyundai,i10,override
+Toyota,Toyota Innova 2.5 GX (Diesel) 8 Seater,5,Toyota,Innova,override
+Tata,Tata Tigor 1.2 Revotron XZ,5,Tata,Tigor,override
+Hyundai,Hyundai i20 2015-2017 Asta Option 1.4 CRDi,5,Hyundai,i20,override
+Tata,Tata Nexon 1.2 Revotron XZ Plus,5,Tata,Nexon,override
+Tata,Tata Hexa XE,5,Tata,Hexa,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Asta,5,Hyundai,Grand i10,override
+Ford,Ford Figo Petrol EXI,5,Ford,Figo,override
+Maruti,Maruti Wagon R Duo Lxi,5,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Zen Estilo LXI BSIII,5,Maruti Suzuki,Estilo,override
+Hyundai,Hyundai Verna VTVT 1.6 SX,5,Hyundai,Verna,override
+Mahindra,Mahindra Scorpio 1.99 S10,5,Mahindra,Scorpio,override
+Hyundai,Hyundai i20 Active 1.4 SX,5,Hyundai,i20 Active,override
+Tata,Tata Zest Quadrajet 1.3 XM,5,Tata,Zest,override
+Ford,Ford Figo Aspire 1.5 TDCi Trend,5,Ford,Aspire,override
+Mahindra,Mahindra Scorpio 1.99 S4,5,Mahindra,Scorpio,override
+Tata,Tata Tigor 1.2 Revotron XT,5,Tata,Tigor,override
+Tata,Tata Manza Aura (ABS) Quadrajet,5,Tata,Manza,auto
+Toyota,Toyota Fortuner 4x2 AT,5,Toyota,Fortuner,override
+Tata,Tata Indica Vista Aqua 1.3 Quadrajet (ABS),5,Tata,Indica,override
+Tata,Tata Tiago 1.2 Revotron XE,5,Tata,Tiago,override
+Hyundai,Hyundai i20 2015-2017 Sportz 1.2,5,Hyundai,i20,override
+Honda,Honda Brio 1.2 VX MT,5,Honda,Brio,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Sportz Option,5,Hyundai,Grand i10,override
+Toyota,Toyota Fortuner 2.8 4WD AT BSIV,5,Toyota,Fortuner,override
+Datsun,Datsun RediGO T Option,5,Datsun,redi-GO,override
+Maruti,Maruti Baleno Alpha,4,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Celerio VXI AT,4,Maruti Suzuki,Celerio,auto
+Honda,Honda Civic 1.8 V MT,4,Honda,Civic,override
+Honda,Honda Jazz 1.2 V i VTEC,4,Honda,Jazz,override
+Renault,Renault Lodgy 85PS RxE 7 Seater,4,Renault,Lodgy,override
+Maruti,Maruti Baleno Delta,4,Maruti Suzuki,Baleno,auto
+Tata,Tata Tiago 1.2 Revotron XM,4,Tata,Tiago,override
+Maruti,Maruti Baleno Zeta 1.2,4,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Zeta 1.3,4,Maruti Suzuki,Baleno,auto
+Hyundai,Hyundai Accent CRDi,4,Hyundai,Accent,override
+Mahindra,Mahindra Bolero 2011-2019 DI NON AC BS III White,4,Mahindra,Bolero,override
+Maruti,Maruti Alto K10 VXI Airbag,4,Maruti Suzuki,Alto K10,override
+Tata,Tata Bolt Quadrajet XE,4,Tata,Bolt,override
+Hyundai,Hyundai Xcent 1.1 CRDi Base,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.1 CRDi S Option,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.1 CRDi SX,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.1 CRDi SX Option,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 CRDi E Plus,4,Hyundai,Xcent,override
+Mahindra,Mahindra Scorpio S2 7 Seater,4,Mahindra,Scorpio,override
+Hyundai,Hyundai Xcent 1.2 Kappa S,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa S Option,4,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa SX Option,4,Hyundai,Xcent,override
+Hyundai,Hyundai i10 Asta,4,Hyundai,i10,override
+Tata,Tata Manza Aqua Quadrajet BS IV,4,Tata,Manza,auto
+Tata,Tata Indigo eCS VX BSIV,4,Tata,Indigo,override
+Maruti,Maruti Alto 800 LXI Optional,4,Maruti Suzuki,Alto 800,override
+Hyundai,Hyundai i10 Sportz Option,4,Hyundai,i10,override
+Hyundai,Hyundai i20 2015-2017 Magna 1.2,4,Hyundai,i20,override
+Hyundai,Hyundai i20 2015-2017 Sportz 1.4 CRDi,4,Hyundai,i20,override
+Mahindra,Mahindra Scorpio 2.6 SLX Turbo 7 Seater,4,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2.6 CRDe,4,Mahindra,Scorpio,override
+Tata,Tata Hexa XTA,4,Tata,Hexa,override
+Hyundai,Hyundai i20 Asta 1.4 CRDi (Diesel),4,Hyundai,i20,override
+Hyundai,Hyundai i20 Sportz Option 1.4 CRDi,4,Hyundai,i20,override
+Tata,Tata Indica V2 2001-2011 DLS BSIII,4,Tata,Indica,override
+Jeep,Jeep Compass 2.0 Limited,4,Jeep,Compass,override
+Tata,Tata Indica V2 DLE BSIII,4,Tata,Indica,override
+Hyundai,Hyundai Verna Xi (Petrol),4,Hyundai,Verna,override
+Hyundai,Hyundai Verna VTVT 1.6 SX Option,4,Hyundai,Verna,override
+Hyundai,Hyundai Verna Transform CRDi VGT SX ABS,4,Hyundai,Verna,override
+Mahindra,Mahindra Scorpio SLE BSIII,4,Mahindra,Scorpio,override
+Tata,Tata Indica V2 eLS,4,Tata,Indica,override
+Maruti,Maruti Alto 800 Base,4,Maruti Suzuki,Alto 800,override
+Tata,Tata Sumo Gold EX,4,Tata,Sumo,override
+Maruti,Maruti 800 Std MPFi,4,Maruti Suzuki,800,override
+Hyundai,Hyundai Elantra CRDi SX,4,Hyundai,Elantra,override
+Hyundai,Hyundai Getz GLS,4,Hyundai,Getz,override
+Mahindra,Mahindra Xylo E4,4,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo D4,4,Mahindra,Xylo,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Sportz Dual Tone,4,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 Asta Option,4,Hyundai,Grand i10,override
+Mahindra,Mahindra Bolero 2011-2019 SLX 2WD BSIII,4,Mahindra,Bolero,override
+Hyundai,Hyundai Grand i10 CRDi Asta,4,Hyundai,Grand i10,override
+Hyundai,Hyundai Santro Era,4,Hyundai,Santro,override
+Mahindra,Mahindra XUV500 AT W6 2WD,4,Mahindra,XUV500,override
+Tata,Tata New Safari DICOR 2.2 VX 4x2,4,Tata,Safari,override
+Mahindra,Mahindra XUV500 AT W10 FWD,4,Mahindra,XUV500,override
+Hyundai,Hyundai Santro Xing GLS LPG,4,Hyundai,Santro,override
+Mahindra,Mahindra Verito 1.5 D2 BSIII,4,Mahindra,Logan/Verito,override
+Mahindra,Mahindra TUV 300 T8 AMT,4,Mahindra,TUV300,override
+Hyundai,Hyundai Verna 1.4 VTVT,4,Hyundai,Verna,override
+Tata,Tata Nano Cx,4,Tata,Nano,override
+Hyundai,Hyundai Verna 1.6 CRDi SX,4,Hyundai,Verna,override
+Hyundai,Hyundai Verna CRDi 1.6 SX Option,4,Hyundai,Verna,override
+Tata,Tata Nano Lx BSIV,4,Tata,Nano,override
+Mahindra,Mahindra Bolero Power Plus SLX,4,Mahindra,Bolero,override
+Toyota,Toyota Innova 2.5 GX 7 STR,4,Toyota,Innova,override
+Maruti,Maruti Ertiga SHVS ZDI,4,Maruti Suzuki,Ertiga,auto
+Toyota,Toyota Innova Crysta 2.4 ZX MT BSIV,4,Toyota,Innova Crysta,override
+Fiat,Fiat Grande Punto 1.3 Emotion (Diesel),4,Fiat,Punto,override
+Maruti,Maruti Ignis 1.2 Zeta BSIV,4,Maruti Suzuki,Ignis,auto
+Datsun,Datsun GO T Option BSIV,4,Datsun,GO,override
+Toyota,Toyota Platinum Etios 1.4 GXD,4,Toyota,Etios,override
+Toyota,Toyota Etios G,4,Toyota,Etios,override
+Maruti,Maruti Swift VXI BSIV,4,Maruti Suzuki,Swift,auto
+Nissan,Nissan Sunny XL,4,Nissan,Sunny,override
+Chevrolet,Chevrolet Tavera Neo 3 LT 9 Seats BSIII,4,Chevrolet,Tavera,override
+Toyota,Toyota Corolla Altis 1.8 VL AT,4,Toyota,Corolla Altis,override
+Fiat,Fiat Linea Emotion (Diesel),4,Fiat,Linea,override
+Chevrolet,Chevrolet Spark 1.0,4,Chevrolet,Spark,override
+Toyota,Toyota Corolla AE,4,Toyota,Corolla,auto
+Chevrolet,Chevrolet Optra Magnum 2.0 LS,4,Chevrolet,Optra,override
+Chevrolet,Chevrolet Enjoy TCDi LS 8 Seater,4,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Cruze LTZ AT,4,Chevrolet,Cruze,override
+Maruti,Maruti Wagon R LXI LPG BSIV,4,Maruti Suzuki,Wagon R,override
+Honda,Honda BRV i-DTEC V MT,4,Honda,BR-V,override
+Tata,Tata Zest Revotron 1.2T XM,4,Tata,Zest,override
+Chevrolet,Chevrolet Aveo U-VA 1.2 LS,4,Chevrolet,Aveo,override
+Toyota,Toyota Innova Crysta 2.4 VX MT 8S BSIV,4,Toyota,Innova Crysta,override
+Maruti,Maruti Omni 8 Seater BSIV,4,Maruti Suzuki,Omni,override
+BMW,BMW X4 M Sport X xDrive20d,4,BMW,X4,override
+Nissan,Nissan Sunny XV,4,Nissan,Sunny,override
+Maruti,Maruti Swift 1.3 LXI,4,Maruti Suzuki,Swift,auto
+Nissan,Nissan Sunny Diesel XL,4,Nissan,Sunny,override
+Ford,Ford Endeavour 3.2 Titanium AT 4X4,4,Ford,Endeavour,override
+Toyota,Toyota Innova 2.5 G4 Diesel 8-seater,4,Toyota,Innova,override
+Ford,Ford Ecosport 1.5 Diesel Titanium,4,Ford,EcoSport,override
+Maruti,Maruti SX4 VDI,4,Maruti Suzuki,SX4,auto
+Maruti,Maruti Swift Dzire 1.2 Vxi BSIV,4,Maruti Suzuki,Dzire,override
+Toyota,Toyota Innova 2.5 GX (Diesel) 7 Seater,4,Toyota,Innova,override
+Ford,Ford EcoSport 1.5 Ti VCT MT Titanium BSIV,4,Ford,EcoSport,override
+Maruti,Maruti S-Cross 2017-2020 Delta DDiS 200 SH,4,Maruti Suzuki,S-Cross,override
+Ford,Ford Freestyle Titanium Petrol BSIV,4,Ford,Freestyle,override
+Maruti,Maruti Swift Dzire AMT ZDI Plus,4,Maruti Suzuki,Dzire,override
+Ford,Ford Figo Aspire 1.2 Ti-VCT Trend,4,Ford,Aspire,override
+Maruti,Maruti Ritz LXi,4,Maruti Suzuki,Ritz,auto
+Toyota,Toyota Innova 2.5 VX 7 STR,4,Toyota,Innova,override
+Toyota,Toyota Etios VX,4,Toyota,Etios,override
+Maruti,Maruti Omni MPI STD BSIV,4,Maruti Suzuki,Omni,override
+Nissan,Nissan Micra Diesel XV,4,Nissan,Micra,override
+Maruti,Maruti Swift Dzire Tour LDI,4,Maruti Suzuki,Dzire,override
+Toyota,Toyota Etios Liva G,4,Toyota,Etios Liva,override
+Tata,Tata Zest Quadrajet 1.3 XT,4,Tata,Zest,override
+Ford,Ford Fiesta 1.4 SXi TDCi ABS,4,Ford,Fiesta,override
+Maruti,Maruti Wagon R VXI BS IV with ABS,4,Maruti Suzuki,Wagon R,override
+BMW,BMW 6 Series GT 630d Luxury Line,4,BMW,6 Series GT,auto
+Audi,Audi Q7 3.0 TDI Quattro,4,Audi,Q7,override
+Renault,Renault KWID Climber 1.0 MT,4,Renault,Kwid,override
+Honda,Honda City i DTEC S,4,Honda,City,override
+Maruti,Maruti Celerio ZXI Optional,4,Maruti Suzuki,Celerio,auto
+Audi,Audi A4 35 TDI Premium Plus,4,Audi,A4,override
+BMW,BMW 5 Series 520d Sport Line,4,BMW,5 Series,override
+Tata,Tata Tigor 1.2 Revotron XZ Option,4,Tata,Tigor,override
+Volkswagen,Volkswagen Polo Petrol Comfortline 1.2L,4,Volkswagen,Polo,override
+Maruti,Maruti Ciaz 1.4 Alpha,4,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz VDi Plus,4,Maruti Suzuki,Ciaz,auto
+Tata,Tata Nano XTA,3,Tata,Nano,override
+Mahindra,Mahindra Scorpio S2 9 Seater,3,Mahindra,Scorpio,override
+Maruti,Maruti Swift Dzire AMT ZDI,3,Maruti Suzuki,Dzire,override
+Audi,Audi Q3 2.0 TDI Quattro Premium Plus,3,Audi,Q3,override
+Ford,Ford EcoSport 1.5 Diesel Trend Plus BSIV,3,Ford,EcoSport,override
+Mahindra,Mahindra Scorpio SLE BSIV,3,Mahindra,Scorpio,override
+Maruti,Maruti Swift 1.3 ZXI,3,Maruti Suzuki,Swift,auto
+Mahindra,Mahindra Bolero SLE,3,Mahindra,Bolero,override
+Hyundai,Hyundai Verna Transform SX VGT CRDi,3,Hyundai,Verna,override
+Mahindra,Mahindra KUV 100 D75 K8,3,Mahindra,KUV100,override
+Ford,Ford Classic 1.4 Duratorq CLXI,3,Ford,Classic,auto
+Mahindra,Mahindra KUV 100 G80 K2,3,Mahindra,KUV100,override
+Maruti,Maruti Swift Dzire LXI,3,Maruti Suzuki,Dzire,override
+Volkswagen,Volkswagen Vento Diesel Trendline,3,Volkswagen,Vento,override
+Mahindra,Mahindra Bolero 2011-2019 Plus - AC BSIII,3,Mahindra,Bolero,override
+Toyota,Toyota Innova 2.5 GX 8 STR BSIV,3,Toyota,Innova,override
+Mahindra,Mahindra Bolero 2011-2019 EX NON AC,3,Mahindra,Bolero,override
+Ford,Ford Aspire Titanium BSIV,3,Ford,Aspire,override
+Maruti,Maruti Swift Dzire Tour S CNG,3,Maruti Suzuki,Dzire,override
+Fiat,Fiat Punto 1.3 Emotion,3,Fiat,Punto,override
+Maruti,Maruti Swift Dzire VXI 1.2 BS IV,3,Maruti Suzuki,Dzire,override
+Hyundai,Hyundai Xcent 1.2 CRDi E,3,Hyundai,Xcent,override
+Toyota,Toyota Innova Crysta 2.4 GX MT BSIV,3,Toyota,Innova Crysta,override
+Toyota,Toyota Innova 2.5 EV (Diesel) PS 7 Seater BS IV,3,Toyota,Innova,override
+Hyundai,Hyundai Xcent 1.2 CRDi S,3,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 CRDi SX,3,Hyundai,Xcent,override
+Maruti,Maruti SX4 Zxi BSIII,3,Maruti Suzuki,SX4,auto
+Mahindra,Mahindra Scorpio VLX 2WD AIRBAG BSIII,3,Mahindra,Scorpio,override
+Skoda,Skoda Rapid 1.6 TDI Elegance,3,Skoda,Rapid,override
+Maruti,Maruti Swift AMT ZXI,3,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai Verna CRDi,3,Hyundai,Verna,override
+Hyundai,Hyundai Santro Xing XS eRLX Euro III,3,Hyundai,Santro,override
+Tata,Tata New Safari 3L Dicor LX 4x2,3,Tata,Safari,override
+Hyundai,Hyundai Sonata 2.4 GDi MT,3,Hyundai,Sonata,auto
+Toyota,Toyota Innova 2.5 G4 Diesel 7-seater,3,Toyota,Innova,override
+Mahindra,Mahindra Bolero SLX 2WD,3,Mahindra,Bolero,override
+Tata,Tata Indica Vista Aqua 1.3 Quadrajet BSIV,3,Tata,Indica,override
+Mahindra,Mahindra Bolero SLX 2WD BSIII,3,Mahindra,Bolero,override
+Ford,Ford Ecosport 1.5 DV5 MT Titanium,3,Ford,EcoSport,override
+Tata,Tata Indica V2 eLX,3,Tata,Indica,override
+Mahindra,Mahindra Bolero DI DX 8 Seater,3,Mahindra,Bolero,override
+Mahindra,Mahindra TUV 300 T4 Plus,3,Mahindra,TUV300,override
+Mahindra,Mahindra Bolero Power Plus Plus AC BSIV PS,3,Mahindra,Bolero,override
+Mahindra,Mahindra TUV 300 T4,3,Mahindra,TUV300,override
+Honda,Honda City i VTEC VX Option,3,Honda,City,override
+Ford,Ford EcoSport 1.5 TDCi Trend Plus BSIV,3,Ford,EcoSport,override
+Toyota,Toyota Innova 2.5 GX 8 STR,3,Toyota,Innova,override
+Volkswagen,Volkswagen Vento Petrol Highline,3,Volkswagen,Vento,override
+Mahindra,Mahindra Ssangyong Rexton RX7,3,Mahindra,,unmatched
+Audi,Audi A6 35 TFSI Matrix,3,Audi,A6,override
+Hyundai,Hyundai Verna 1.6 VGT CRDi,3,Hyundai,Verna,override
+Volkswagen,Volkswagen Vento 1.6 Highline,3,Volkswagen,Vento,override
+Mahindra,Mahindra Scorpio VLX 2WD BSIV,3,Mahindra,Scorpio,override
+Hyundai,Hyundai Verna 1.6 VTVT S,3,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 VTVT S Option,3,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 Xi ABS,3,Hyundai,Verna,override
+Volkswagen,Volkswagen Polo GT TDI,3,Volkswagen,Polo,override
+Nissan,Nissan Micra Active XL Petrol,3,Nissan,Micra,override
+Maruti,Maruti Zen Estilo 1.1 LXI BSIII,3,Maruti Suzuki,Estilo,override
+Chevrolet,Chevrolet Optra Magnum 2.0 LT,3,Chevrolet,Optra,override
+Maruti,Maruti Swift ZXI ABS,3,Maruti Suzuki,Swift,auto
+Chevrolet,Chevrolet Spark 1.0 PS,3,Chevrolet,Spark,override
+Hyundai,Hyundai i20 Active 1.2 SX,3,Hyundai,i20 Active,override
+Maruti,Maruti Swift ZXI Plus,3,Maruti Suzuki,Swift,auto
+Tata,Tata Indigo CS LE (TDI) BS-III,3,Tata,Indigo,override
+Maruti,Maruti Vitara Brezza ZDi AMT,3,Maruti Suzuki,Vitara Brezza,override
+Mahindra,Mahindra Scorpio 1.99 S10 4WD,3,Mahindra,Scorpio,override
+Volkswagen,Volkswagen Jetta 2.0L TDI Highline AT,3,Volkswagen,Jetta,override
+Tata,Tata Indigo TDI,3,Tata,Indigo,override
+Mercedes-Benz,Mercedes-Benz New C-Class 220 CDI AT,3,Mercedes-Benz,C-Class,override
+Tata,Tata Hexa XM,3,Tata,Hexa,override
+Maruti,Maruti Wagon R LX,3,Maruti Suzuki,Wagon R,override
+Mahindra,Mahindra Renault Logan 1.5 DLE Diesel,3,Mahindra,Logan/Verito,override
+Volkswagen,Volkswagen Polo Petrol Highline 1.2L,3,Volkswagen,Polo,override
+Chevrolet,Chevrolet Tavera Neo 3 LS 10 Seats BSIII,3,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Enjoy TCDi LT 7 Seater,3,Chevrolet,Enjoy,override
+Tata,Tata Indica V2 DL BSIII,3,Tata,Indica,override
+Chevrolet,Chevrolet Enjoy 1.3 TCDi LS 7,3,Chevrolet,Enjoy,override
+Mahindra,Mahindra Quanto C6,3,Mahindra,Quanto,override
+Chevrolet,Chevrolet Captiva LT,3,Chevrolet,Captiva,override
+Chevrolet,Chevrolet Beat Diesel LT Option,3,Chevrolet,Beat,override
+Mahindra,Mahindra Marazzo M2 BSIV,3,Mahindra,Marazzo,override
+Hyundai,Hyundai i20 Magna 1.4 CRDi,3,Hyundai,i20,override
+Tata,Tata Indigo CS eGLX BS IV,3,Tata,Indigo,override
+Hyundai,Hyundai i20 Magna Optional 1.4 CRDi,3,Hyundai,i20,override
+Volkswagen,Volkswagen Polo 2015-2019 1.5 TDI Highline Plus,3,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo GT TSI,3,Volkswagen,Polo,override
+Hyundai,Hyundai i20 Sportz Option 1.2,3,Hyundai,i20,override
+Chevrolet,Chevrolet Tavera Neo 3 10 Seats BSIII,3,Chevrolet,Tavera,override
+Jeep,Jeep Compass 2.0 Limited 4X4,3,Jeep,Compass,override
+Maruti,Maruti Swift Dzire ZXI,3,Maruti Suzuki,Dzire,override
+Datsun,Datsun RediGO 1.0 T Option,3,Datsun,redi-GO,override
+BMW,BMW X1 sDrive20d M Sport,3,BMW,X1,override
+Mahindra,Mahindra Scorpio LX BSIV,3,Mahindra,Scorpio,override
+Hyundai,Hyundai Xcent 1.2 VTVT E,3,Hyundai,Xcent,override
+Maruti,Maruti Zen Estilo 1.1 LX BSIII,3,Maruti Suzuki,Estilo,override
+Maruti,Maruti Swift LDI,3,Maruti Suzuki,Swift,auto
+Mahindra,Mahindra Scorpio Intelli Hybrid S6 Plus,3,Mahindra,Scorpio,override
+Maruti,Maruti Zen D,3,Maruti Suzuki,Zen,auto
+Fiat,Fiat Grande Punto 1.3 Dynamic (Diesel),3,Fiat,Punto,override
+Fiat,Fiat Avventura Power Up 1.3 Emotion,3,Fiat,Avventura,auto
+Hyundai,Hyundai i10 Era 1.1,3,Hyundai,i10,override
+Tata,Tata Manza Aqua Safire,3,Tata,Manza,auto
+Maruti,Maruti Swift LXI Optional-O,3,Maruti Suzuki,Swift,auto
+Mitsubishi,Mitsubishi Pajero Sport 4X4,3,Mitsubishi,Pajero Sport,override
+BMW,BMW 3 Series 320d Luxury Line,3,BMW,3-Series,override
+Jeep,Jeep Compass 2.0 Limited Option,3,Jeep,Compass,override
+Hyundai,Hyundai i10 Magna LPG,3,Hyundai,i10,override
+Volkswagen,Volkswagen Vento 1.5 TDI Highline,3,Volkswagen,Vento,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K2,3,Mahindra,KUV100,override
+Tata,Tata Aria Pure LX 4x2,3,Tata,Aria,auto
+Datsun,Datsun GO Plus Anniversary Edition,3,Datsun,GO+,override
+Volkswagen,Volkswagen Vento 1.5 TDI Comfortline,3,Volkswagen,Vento,override
+Maruti,Maruti Swift VVT VXI,3,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai i20 1.2 Asta Dual Tone,3,Hyundai,i20,override
+Tata,Tata Indica V2 DLE BSII,3,Tata,Indica,override
+BMW,BMW 5 Series 520d Luxury Line,3,BMW,5 Series,override
+Mahindra,Mahindra Scorpio 2009-2014 SLE 7S BSIV,3,Mahindra,Scorpio,override
+Hyundai,Hyundai i20 1.4 CRDi Era,3,Hyundai,i20,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Highline 16 Alloy,3,Volkswagen,Ameo,override
+Volkswagen,Volkswagen Ameo 1.2 MPI Comfortline,3,Volkswagen,Ameo,override
+Maruti,Maruti Celerio X ZXI BSIV,3,Maruti Suzuki,Celerio X,auto
+Honda,Honda Civic 1.8 V AT,3,Honda,Civic,override
+Skoda,Skoda Octavia Ambiente 1.9 TDI MT,3,Skoda,Octavia,override
+Nissan,Nissan Terrano XL Plus 85 PS,3,Nissan,Terrano,override
+Honda,Honda City 1.5 EXI,3,Honda,City,override
+Renault,Renault KWID 1.0 RXT 02 Anniversary Edition,3,Renault,Kwid,override
+Hyundai,Hyundai Elite i20 Petrol Asta Option,3,Hyundai,i20,override
+Honda,Honda Mobilio RS i DTEC,3,Honda,Mobilio,override
+Tata,Tata Safari Storme VX,3,Tata,Safari,override
+Maruti,Maruti Alto STD,3,Maruti Suzuki,Alto,override
+Maruti,Maruti Alto Std,3,Maruti Suzuki,Alto,override
+Hyundai,Hyundai Elite i20 Sportz Plus BSIV,3,Hyundai,i20,override
+Mahindra,Mahindra Xylo E4 BS IV,3,Mahindra,Xylo,override
+Toyota,Toyota Etios Liva 1.4 GD,3,Toyota,Etios Liva,override
+Nissan,Nissan Terrano XL D Option,3,Nissan,Terrano,override
+Toyota,Toyota Etios Liva GD SP,3,Toyota,Etios Liva,override
+Mahindra,Mahindra Xylo D2 BSIV,3,Mahindra,Xylo,override
+Nissan,Nissan Terrano XL 110 PS,3,Nissan,Terrano,override
+Mahindra,Mahindra Xylo D4 BSIV,3,Mahindra,Xylo,override
+Hyundai,Hyundai Grand i10 1.2 CRDi Sportz Option,3,Hyundai,Grand i10,override
+Hyundai,Hyundai Creta 1.6 SX Automatic,3,Hyundai,Creta,override
+Mahindra,Mahindra Xylo D4 BSIII,3,Mahindra,Xylo,override
+Ford,Ford Figo Diesel EXI Option,3,Ford,Figo,override
+Ford,Ford Figo Aspire Facelift,3,Ford,Aspire,override
+Maruti,Maruti Ritz LXI,3,Maruti Suzuki,Ritz,auto
+Honda,Honda City 2017-2020 VTEC,3,Honda,City,override
+Hyundai,Hyundai Grand i10 AT Asta,3,Hyundai,Grand i10,override
+Maruti,Maruti Ciaz Alpha Diesel,3,Maruti Suzuki,Ciaz,auto
+Ford,Ford Figo Aspire 1.2 Ti-VCT Titanium,3,Ford,Aspire,override
+Honda,Honda City 1.5 E MT,3,Honda,City,override
+Hyundai,Hyundai Elite i20 Asta Option Diesel,3,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Asta Option CVT BSIV,3,Hyundai,i20,override
+Honda,Honda City 1.3 EXI,3,Honda,City,override
+Maruti,Maruti Eeco CNG HTR 5-STR,3,Maruti Suzuki,Eeco,auto
+Renault,Renault Triber RXZ BSIV,3,Renault,Triber,override
+Honda,Honda Amaze i-VTEC Privilege Edition,3,Honda,Amaze,override
+Maruti,Maruti Alto 800 CNG LXI,3,Maruti Suzuki,Alto 800,override
+Honda,Honda Amaze S i-DTEC,3,Honda,Amaze,override
+Renault,Renault Fluence Diesel E4,3,Renault,Fluence,auto
+Honda,Honda Amaze S Diesel,3,Honda,Amaze,override
+Hyundai,Hyundai Creta 1.4 E Plus,3,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.4 CRDi S Plus,3,Hyundai,Creta,override
+Hyundai,Hyundai EON D Lite,3,Hyundai,Eon,override
+Renault,Renault KWID 1.0,3,Renault,Kwid,override
+Maruti,Maruti Esteem LX - BSIII,3,Maruti Suzuki,Esteem,auto
+Tata,Tata New Safari DICOR 2.2 LX 4x2,3,Tata,Safari,override
+Hyundai,Hyundai Accent GLS 1.6 ABS,3,Hyundai,Accent,override
+Honda,Honda Brio 1.2 S MT,3,Honda,Brio,override
+Maruti,Maruti Ciaz ZDi Plus,3,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Gypsy King Soft Top MPI BSIV,3,Maruti Suzuki,Gypsy,override
+Maruti,Maruti 800 Std BSII,3,Maruti Suzuki,800,override
+Honda,Honda Brio V MT,3,Honda,Brio,override
+Tata,Tata Tiago 1.05 Revotorq XZ,3,Tata,Tiago,override
+Maruti,Maruti Ciaz VDi Plus SHVS,3,Maruti Suzuki,Ciaz,auto
+Honda,Honda CR-V 2.4L 4WD AT AVN,3,Honda,CR-V,override
+Skoda,Skoda Fabia 1.2L Diesel Elegance,3,Skoda,Fabia,override
+Honda,Honda WR-V i-DTEC S,3,Honda,WR-V,override
+Hyundai,Hyundai Elantra SX,3,Hyundai,Elantra,override
+Honda,Honda Jazz 1.5 V i DTEC,3,Honda,Jazz,override
+Maruti,Maruti Omni LPG STD BSIV,3,Maruti Suzuki,Omni,override
+Renault,Renault Pulse RxL,3,Renault,Pulse,override
+Honda,Honda City i-VTEC CVT ZX,3,Honda,City,override
+Maruti,Maruti Baleno Sigma 1.3,3,Maruti Suzuki,Baleno,auto
+Skoda,Skoda Rapid 1.5 TDI Ambition,3,Skoda,Rapid,override
+Mahindra,Mahindra XUV500 AT W10 AWD,3,Mahindra,XUV500,override
+Skoda,Skoda Rapid 1.5 TDI AT Style Plus,3,Skoda,Rapid,override
+Maruti,Maruti SX4 ZDI Leather,3,Maruti Suzuki,SX4,auto
+Honda,Honda City i DTec SV,3,Honda,City,override
+Hyundai,Hyundai Santro Sportz AMT BSIV,3,Hyundai,Santro,override
+Hyundai,Hyundai Santro Asta BSIV,3,Hyundai,Santro,override
+Ford,Ford Fiesta Classic 1.4 Duratorq LXI,3,Ford,Fiesta,override
+Mahindra,Mahindra XUV500 W9 BSIV,3,Mahindra,XUV500,override
+Hyundai,Hyundai Santro GLS I - Euro I,3,Hyundai,Santro,override
+Renault,Renault KWID AMT,3,Renault,Kwid,override
+Ford,Ford Fiesta 1.5 TDCi Titanium,3,Ford,Fiesta,override
+Toyota,Toyota Innova 2.5 E Diesel MS 7-seater,3,Toyota,Innova,override
+Tata,Tata New Safari DICOR 2.2 VX 4x2 BS IV,3,Tata,Safari,override
+Tata,Tata Tiago XT,3,Tata,Tiago,override
+Maruti,Maruti Celerio LXI,3,Maruti Suzuki,Celerio,auto
+Maruti,Maruti SX4 Vxi BSIV,3,Maruti Suzuki,SX4,auto
+Maruti,Maruti Baleno Sigma 1.2,3,Maruti Suzuki,Baleno,auto
+Tata,Tata Tigor 2017-2020 XZ Plus,3,Tata,Tigor,override
+Honda,Honda City i VTEC CVT VX,3,Honda,City,override
+Tata,Tata Nexon 1.5 Revotorq XM,3,Tata,Nexon,override
+Mahindra,Mahindra XUV300 W8 Option BSIV,3,Mahindra,XUV300,override
+Maruti,Maruti SX4 ZXI AT,3,Maruti Suzuki,SX4,auto
+Honda,Honda City V AT,3,Honda,City,override
+Maruti,Maruti Celerio ZXI Optional AMT BSIV,3,Maruti Suzuki,Celerio,auto
+Mahindra,Mahindra Xylo D2 BS IV,3,Mahindra,Xylo,override
+Honda,Honda City i-VTEC VX,3,Honda,City,override
+Maruti,Maruti Ritz ZXi,3,Maruti Suzuki,Ritz,auto
+Maruti,Maruti Baleno RS 1.0 Petrol,3,Maruti Suzuki,Baleno,auto
+Hyundai,Hyundai Grand i10 SportZ Edition,3,Hyundai,Grand i10,override
+Mahindra,Mahindra Bolero SLE BSIII,2,Mahindra,Bolero,override
+Mahindra,Mahindra Marazzo M8,2,Mahindra,Marazzo,override
+Renault,Renault Triber RXT BSIV,2,Renault,Triber,override
+Maruti,Maruti Celerio VDi,2,Maruti Suzuki,Celerio,auto
+Renault,Renault Duster Adventure Edition,2,Renault,Duster,override
+Maruti,Maruti Eeco Smiles 5 Seater AC,2,Maruti Suzuki,Eeco,auto
+Mercedes-Benz,Mercedes-Benz B Class B200 CDI Sport,2,Mercedes-Benz,B-Class,override
+Renault,Renault Pulse RxZ,2,Renault,Pulse,override
+Maruti,Maruti Alto Green LXi (CNG),2,Maruti Suzuki,Alto,override
+Mahindra,Mahindra Marazzo M6 8Str,2,Mahindra,Marazzo,override
+Maruti,Maruti Celerio ZDi,2,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Alto K10 VXI AGS Optional,2,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Alto K10 VXI AGS,2,Maruti Suzuki,Alto K10,override
+Mahindra,Mahindra Quanto C4,2,Mahindra,Quanto,override
+Maruti,Maruti Zen LXi - BS III,2,Maruti Suzuki,Zen,auto
+Maruti,Maruti Alto K10 Knightracer,2,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Zen VXI,2,Maruti Suzuki,Zen,auto
+Maruti,Maruti Alto 800 VXI Optional,2,Maruti Suzuki,Alto 800,override
+Mahindra,Mahindra Quanto C8,2,Mahindra,Quanto,override
+Maruti,Maruti Ciaz ZXi,2,Maruti Suzuki,Ciaz,auto
+Mercedes-Benz,Mercedes-Benz E-Class E250 CDI Avantgarde,2,Mercedes-Benz,E-Class,override
+Mahindra,Mahindra NuvoSport N8,2,Mahindra,NuvoSport,override
+Mahindra,Mahindra NuvoSport N8 AMT,2,Mahindra,NuvoSport,override
+Maruti,Maruti Alto 800 VXI BSIV,2,Maruti Suzuki,Alto 800,override
+Mercedes-Benz,Mercedes-Benz M-Class ML 350 CDI,2,Mercedes-Benz,GLE,override
+Tata,Tata Indica V2 Turbomax DLS BS IV,2,Tata,Indica,override
+Mahindra,Mahindra Bolero SLX 4WD BSIII,2,Mahindra,Bolero,override
+Renault,Renault KWID 1.0 RXL,2,Renault,Kwid,override
+Maruti,Maruti Zen Estilo LX BSIV,2,Maruti Suzuki,Estilo,override
+Maruti,Maruti Wagon R VXI Opt 1.2,2,Maruti Suzuki,Wagon R,override
+Tata,Tata Indica V2 DLX,2,Tata,Indica,override
+Maruti,Maruti Ciaz RS ZDi Plus SHVS,2,Maruti Suzuki,Ciaz,auto
+Renault,Renault KWID 1.0 RXT BSIV,2,Renault,Kwid,override
+Maruti,Maruti Baleno Delta Automatic,2,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Zen Estilo 1.1 VXI BSIII,2,Maruti Suzuki,Estilo,override
+Maruti,Maruti Baleno Alpha Automatic,2,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Wagon R VXI Plus,2,Maruti Suzuki,Wagon R,override
+Maruti,Maruti XL6 Alpha,2,Maruti Suzuki,XL6,auto
+Mahindra,Mahindra KUV 100 mFALCON D75 K6 Plus,2,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON D75 K6,2,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON D75 K2 Plus,2,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 G80 K8 Dual Tone,2,Mahindra,KUV100,override
+Renault,Renault Pulse RxL Optional,2,Renault,Pulse,override
+Maruti,Maruti Ciaz S 1.3,2,Maruti Suzuki,Ciaz,auto
+Mahindra,Mahindra KUV 100 mFALCON G80 K6 AW,2,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K8,2,Mahindra,KUV100,override
+Tata,Tata Indica V2 LSi,2,Tata,Indica,override
+Mahindra,Mahindra Marazzo M2 8Str BSIV,2,Mahindra,Marazzo,override
+Mercedes-Benz,Mercedes-Benz GLA Class 200 CDI SPORT,2,Mercedes-Benz,GLA,override
+Maruti,Maruti Zen Estilo VXI BSIV W ABS,2,Maruti Suzuki,Estilo,override
+Tata,Tata Indica V2 2001-2011 eLX,2,Tata,Indica,override
+Mahindra,Mahindra Jeep CL 500 MDI,2,Mahindra,Jeep,auto
+Maruti,Maruti Celerio LDi,2,Maruti Suzuki,Celerio,auto
+Mahindra,Mahindra KUV 100 mFALCON G80 K8 5str,2,Mahindra,KUV100,override
+Maruti,Maruti Celerio ZXI AT,2,Maruti Suzuki,Celerio,auto
+Mahindra,Mahindra Jeep MM 540,2,Mahindra,Jeep,auto
+Tata,Tata Indica V2 GLX BSIII,2,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz GL-Class 220d 4MATIC Sport,2,Mercedes-Benz,GLS,override
+Maruti,Maruti Zen Estilo LXI Green (CNG),2,Maruti Suzuki,Estilo,override
+Maruti,Maruti Ciaz VDI SHVS,2,Maruti Suzuki,Ciaz,auto
+Tata,Tata Indica V2 DLX TC,2,Tata,Indica,override
+Maruti,Maruti Wagon R AMT VXI Option,2,Maruti Suzuki,Wagon R,override
+Skoda,Skoda Rapid 1.5 TDI Ambition BSIV,2,Skoda,Rapid,override
+Maruti,Maruti Alto 800 LXI Anniversary Edition,2,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Ritz VXI,2,Maruti Suzuki,Ritz,auto
+Mahindra,Mahindra Supro LX 8 Str,2,Mahindra,,unmatched
+Nissan,Nissan Sunny XV D,2,Nissan,Sunny,override
+Mahindra,Mahindra XUV500 W9 2WD,2,Mahindra,XUV500,override
+Mahindra,Mahindra Scorpio VLX AT AIRBAG BSIV,2,Mahindra,Scorpio,override
+Maruti,Maruti S-Cross 2017-2020 Alpha DDiS 200 SH,2,Maruti Suzuki,S-Cross,override
+Mahindra,Mahindra Scorpio VLX 2WD BSIII,2,Mahindra,Scorpio,override
+Maruti,Maruti Ritz ZDi,2,Maruti Suzuki,Ritz,auto
+Maruti,Maruti Ritz VXi (ABS) BS IV,2,Maruti Suzuki,Ritz,auto
+Mahindra,Mahindra Scorpio VLX 2WD ABS AT BSIII,2,Mahindra,Scorpio,override
+Maruti,Maruti Swift Dzire AMT VXI BS IV,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra Scorpio VLS 2.2 mHawk,2,Mahindra,Scorpio,override
+Nissan,Nissan Terrano XE 85 PS,2,Nissan,Terrano,override
+Maruti,Maruti Ritz VDi ABS,2,Maruti Suzuki,Ritz,auto
+Skoda,Skoda Rapid Ultima 1.6 TDI Elegance,2,Skoda,Rapid,override
+Mahindra,Mahindra Scorpio SLX 2.6 Turbo 8 Str,2,Mahindra,Scorpio,override
+Maruti,Maruti Swift Dzire LDI Optional,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra Scorpio S7 120,2,Mahindra,Scorpio,override
+Nissan,Nissan Micra Diesel XV Premium,2,Nissan,Micra,override
+Skoda,Skoda Octavia Classic 1.9 TDI MT,2,Skoda,Octavia,override
+Mahindra,Mahindra Scorpio S4 Plus 4WD,2,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S4 Plus,2,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S4 7 Seater,2,Mahindra,Scorpio,override
+Maruti,Maruti SX4 Celebration Diesel,2,Maruti Suzuki,SX4,auto
+Mahindra,Mahindra TUV 300 Plus P4 BSIV,2,Mahindra,TUV300,override
+Maruti,Maruti SX4 S Cross 2015-2017 DDiS 200 Alpha,2,Maruti Suzuki,S-Cross,override
+Mahindra,Mahindra XUV500 W7 BSIV,2,Mahindra,XUV500,override
+Mahindra,Mahindra Verito Vibe 1.5 dCi D4,2,Mahindra,Logan/Verito,override
+Skoda,Skoda Rapid 1.6 MPI AT Elegance,2,Skoda,Rapid,override
+Maruti,Maruti SX4 Zxi with Leather BSIII,2,Maruti Suzuki,SX4,auto
+Mahindra,Mahindra XUV300 W8 Option Diesel BSIV,2,Mahindra,XUV300,override
+Mahindra,Mahindra Verito 1.5 D2 BSIV,2,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Thar DI 4X4 PS,2,Mahindra,Thar,override
+Mahindra,Mahindra Thar DI 4X4,2,Mahindra,Thar,override
+Maruti,Maruti SX4 ZDI,2,Maruti Suzuki,SX4,auto
+Maruti,Maruti Swift AMT ZDI,2,Maruti Suzuki,Swift,auto
+Mahindra,Mahindra Thar CRDe ABS,2,Mahindra,Thar,override
+Mahindra,Mahindra XUV500 W10 1.99 mHawk,2,Mahindra,XUV500,override
+Nissan,Nissan Micra XV,2,Nissan,Micra,override
+Mahindra,Mahindra Thar 4X4,2,Mahindra,Thar,override
+Mahindra,Mahindra TUV 300 mHAWK100 T8 Dual Tone,2,Mahindra,TUV300,override
+Mahindra,Mahindra XUV500 W11 Option BSIV,2,Mahindra,XUV500,override
+Maruti,Maruti Swift AMT ZXI Plus BSIV,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift Dzire 1.2 Lxi BSIV,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra XUV500 W5 BSIV,2,Mahindra,XUV500,override
+Maruti,Maruti SX4 S Cross 2015-2017 DDiS 200 Sigma,2,Maruti Suzuki,S-Cross,override
+Skoda,Skoda Octavia L and K 1.9 TDI (MT),2,Skoda,Octavia,override
+Maruti,Maruti Swift Dzire AMT VDI,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra Scorpio S3 9 Seater BSIV,2,Mahindra,Scorpio,override
+Maruti,Maruti Omni LPG CARGO BSIII W IMMOBILISER,2,Maruti Suzuki,Omni,override
+Maruti,Maruti Alto 800 LXI Airbag,2,Maruti Suzuki,Alto 800,override
+Mahindra,Mahindra Scorpio 2006-2009 LX 2.6 Turbo 9 Str,2,Mahindra,Scorpio,override
+Maruti,Maruti 800 Std BSIII,2,Maruti Suzuki,800,override
+Maruti,Maruti Esteem Vxi - BSII,2,Maruti Suzuki,Esteem,auto
+Skoda,Skoda Fabia 1.2 TDI Active Plus,2,Skoda,Fabia,override
+Maruti,Maruti Swift VXI Windsong Limited edition,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VXI with ABS,2,Maruti Suzuki,Swift,auto
+Renault,Renault Duster 4x4,2,Renault,Duster,override
+Maruti,Maruti A-Star Lxi,2,Maruti Suzuki,A-Star,auto
+Mahindra,Mahindra Scorpio 2009-2014 SLE 7S BSIII,2,Mahindra,Scorpio,override
+Maruti,Maruti Swift ZDI BSIV,2,Maruti Suzuki,Swift,auto
+Tata,Tata Bolt Revotron XE,2,Tata,Bolt,override
+Maruti,Maruti Swift ZDI Plus,2,Maruti Suzuki,Swift,auto
+Skoda,Skoda Octavia Ambition 2.0 TDI MT,2,Skoda,Octavia,override
+Mahindra,Mahindra Scorpio 2.6 Turbo 9 Str,2,Mahindra,Scorpio,override
+Maruti,Maruti Ertiga LXI,2,Maruti Suzuki,Ertiga,auto
+Mitsubishi,Mitsubishi Lancer 2.0 GLd,2,Mitsubishi,Lancer,override
+Mahindra,Mahindra Scorpio 2.6 Turbo 7 Str,2,Mahindra,Scorpio,override
+Mercedes-Benz,Mercedes-Benz S-Class S 350 CDI,2,Mercedes-Benz,S-Class,override
+Mahindra,Mahindra Scorpio 2.6 DX,2,Mahindra,Scorpio,override
+Renault,Renault Duster 85PS Diesel RxL Plus,2,Renault,Duster,override
+Maruti,Maruti Vitara Brezza VDi AMT,2,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Ertiga BSIV ZXI Plus,2,Maruti Suzuki,Ertiga,auto
+Mercedes-Benz,Mercedes-Benz New C-Class C 220 CDI Elegance AT,2,Mercedes-Benz,C-Class,override
+Mitsubishi,Mitsubishi Lancer 2.0 LXd,2,Mitsubishi,Lancer,override
+Maruti,Maruti Swift VXI BSIII,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VXI 2018,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VVT ZXI,2,Maruti Suzuki,Swift,auto
+Mahindra,Mahindra Scorpio S11 BSIV,2,Mahindra,Scorpio,override
+Maruti,Maruti Swift Dzire VXi AT,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra Xylo E4 BS III,2,Mahindra,Xylo,override
+Maruti,Maruti Swift Dzire ZXi,2,Maruti Suzuki,Dzire,override
+Mahindra,Mahindra Scorpio LX 2.6 Turbo,2,Mahindra,Scorpio,override
+Mahindra,Mahindra Xylo E8,2,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo E8 ABS Airbag,2,Mahindra,Xylo,override
+Tata,Tata Aria Pride,2,Tata,Aria,auto
+Mahindra,Mahindra Xylo H4,2,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo H9,2,Mahindra,Xylo,override
+Maruti,Maruti Swift LXI Option,2,Maruti Suzuki,Swift,auto
+Nissan,Nissan Terrano XV Premium 110 PS,2,Nissan,Terrano,override
+Maruti,Maruti 800 AC BSII,2,Maruti Suzuki,800,override
+Maruti,Maruti Swift Star VDI,2,Maruti Suzuki,Swift,auto
+Skoda,Skoda Kodiaq 2.0 TDI Style,2,Skoda,Kodiaq,auto
+Maruti,Maruti Ignis 1.2 AMT Zeta BSIV,2,Maruti Suzuki,Ignis,auto
+Renault,Renault Captur 1.5 Diesel RXT,2,Renault,Captur,override
+Maruti,Maruti Swift VDI Deca,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VDI Windsong Limited edition,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Ignis 1.2 AMT Alpha BSIV,2,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Swift VDi BSIII W/ ABS,2,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VXi BSIV,2,Maruti Suzuki,Swift,auto
+Hyundai,Hyundai i20 1.4 Asta,2,Hyundai,i20,override
+Mahindra,Mahindra Bolero Power Plus Plus Non AC BSIV PS,2,Mahindra,Bolero,override
+Tata,Tata Zest Quadrajet 1.3 XMS,2,Tata,Zest,override
+Honda,Honda Amaze SX i-DTEC,2,Honda,Amaze,override
+Honda,Honda Amaze V Petrol BSIV,2,Honda,Amaze,override
+Honda,Honda Amaze VX Diesel BSIV,2,Honda,Amaze,override
+Honda,Honda Amaze VX O iDTEC,2,Honda,Amaze,override
+Toyota,Toyota Camry 2.5 Hybrid,2,Toyota,Camry,override
+Honda,Honda BRV i-VTEC V CVT,2,Honda,BR-V,override
+Honda,Honda Brio Exclusive Edition,2,Honda,Brio,override
+Honda,Honda CR-V 2.0L 2WD AT,2,Honda,CR-V,override
+Honda,Honda CR-V 2.4 4WD AT,2,Honda,CR-V,override
+Honda,Honda CR-V 2.4L 4WD AT,2,Honda,CR-V,override
+Honda,Honda City i-VTEC CVT VX,2,Honda,City,override
+Honda,Honda City 1.5 V AT,2,Honda,City,override
+Honda,Honda City Corporate Edition,2,Honda,City,override
+Honda,Honda City S,2,Honda,City,override
+Tata,Tata Venture EX 7 Str,2,Tata,Venture,auto
+Tata,Tata Indica Vista Aqua 1.3 Quadrajet,2,Tata,Indica,override
+Tata,Tata Tigor 1.2 Revotron XZA,2,Tata,Tigor,override
+Honda,Honda City i DTec VX,2,Honda,City,override
+Honda,Honda City i VTEC S,2,Honda,City,override
+Honda,Honda City i VTEC SV,2,Honda,City,override
+Toyota,Toyota Corolla Altis 1.8 J,2,Toyota,Corolla Altis,override
+Honda,Honda Amaze S i-VTEC,2,Honda,Amaze,override
+Honda,Honda Amaze S Petrol BSIV,2,Honda,Amaze,override
+Toyota,Toyota Corolla Altis D-4D J,2,Toyota,Corolla Altis,override
+Ford,Ford Figo Petrol LXI,2,Ford,Figo,override
+Ford,Ford Figo Petrol Titanium,2,Ford,Figo,override
+Ford,Ford Figo Petrol ZXI,2,Ford,Figo,override
+Toyota,Toyota Etios Liva VD,2,Toyota,Etios Liva,override
+Ford,Ford Freestyle Titanium Plus Diesel BSIV,2,Ford,Freestyle,override
+Toyota,Toyota Etios Liva 1.2 V Dual Tone,2,Toyota,Etios Liva,override
+Ford,Ford Fusion 1.4 TDCi Diesel,2,Ford,Fusion,auto
+Toyota,Toyota Etios GD SP,2,Toyota,Etios,override
+Ford,Ford Ikon 1.3 Flair,2,Ford,Ikon,override
+Ford,Ford Ikon 1.4 TDCi DuraTorq,2,Ford,Ikon,override
+Ford,Ford Ikon 1.6 Nxt,2,Ford,Ikon,override
+Toyota,Toyota Etios Diesel TRD Sportivo,2,Toyota,Etios,override
+Toyota,Toyota Etios Cross 1.4L GD,2,Toyota,Etios,override
+Toyota,Toyota Etios Cross 1.2L G,2,Toyota,Etios,override
+Honda,Honda Accord V6 AT,2,Honda,Accord,override
+Toyota,Toyota Corolla H2,2,Toyota,Corolla,auto
+Honda,Honda Amaze E i-DTEC,2,Honda,Amaze,override
+Honda,Honda Amaze E i-Dtech,2,Honda,Amaze,override
+Honda,Honda Amaze S AT i-Vtech,2,Honda,Amaze,override
+Honda,Honda City i-DTEC ZX,2,Honda,City,override
+Tata,Tata Tigor 1.05 Revotorq XZ,2,Tata,Tigor,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Sportz AT,2,Hyundai,Grand i10,override
+Hyundai,Hyundai EON Magna Optional,2,Hyundai,Eon,override
+Hyundai,Hyundai Creta 1.6 CRDi SX Plus Dual Tone,2,Hyundai,Creta,override
+Tata,Tata Sumo MKII Turbo 2.0 LX,2,Tata,Sumo,override
+Hyundai,Hyundai Creta 1.6 SX,2,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 SX Option,2,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 VTVT E Plus,2,Hyundai,Creta,override
+Tata,Tata Sumo Gold GX,2,Tata,Sumo,override
+Hyundai,Hyundai EON 1.0 Kappa Magna Plus,2,Hyundai,Eon,override
+Tata,Tata Sumo Gold EX BSIII,2,Tata,Sumo,override
+Tata,Tata Sumo GX,2,Tata,Sumo,override
+Tata,Tata Sumo EX 10/7 Str BSIII,2,Tata,Sumo,override
+Honda,Honda City i-VTEC V,2,Honda,City,override
+Tata,Tata Sumo CX,2,Tata,Sumo,override
+Hyundai,Hyundai Elite i20 Diesel Sportz,2,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Petrol Asta,2,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Petrol Sportz,2,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Sportz Plus CVT BSIV,2,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Sportz Plus Diesel,2,Hyundai,i20,override
+Hyundai,Hyundai Getz 1.5 CRDi GVS,2,Hyundai,Getz,override
+Hyundai,Hyundai Getz GLE,2,Hyundai,Getz,override
+Hyundai,Hyundai Getz GLX,2,Hyundai,Getz,override
+Hyundai,Hyundai Creta 1.6 CRDi Anniversary Edition,2,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.4 EX Diesel,2,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.4 CRDi Base,2,Hyundai,Creta,override
+Hyundai,Hyundai Accent VIVA CRDi,2,Hyundai,Accent,override
+Honda,Honda Civic 1.8 S MT,2,Honda,Civic,override
+Tata,Tata Tiago NRG Petrol,2,Tata,Tiago,override
+Honda,Honda Jazz 1.2 S i VTEC,2,Honda,Jazz,override
+Honda,Honda Jazz 1.2 V AT i VTEC,2,Honda,Jazz,override
+Tata,Tata Tiago 1.2 Revotron XZA,2,Tata,Tiago,override
+Tata,Tata Tiago 1.2 Revotron XZ WO Alloy,2,Tata,Tiago,override
+Honda,Honda Jazz 1.5 S i DTEC,2,Honda,Jazz,override
+Honda,Honda Jazz 1.5 VX i DTEC,2,Honda,Jazz,override
+Honda,Honda Jazz V CVT,2,Honda,Jazz,override
+Honda,Honda Jazz VX CVT,2,Honda,Jazz,override
+Honda,Honda Mobilio RS Option i DTEC,2,Honda,Mobilio,override
+Honda,Honda Mobilio S i DTEC,2,Honda,Mobilio,override
+Honda,Honda Mobilio V i DTEC,2,Honda,Mobilio,override
+Tata,Tata Tiago 1.05 Revotorq XZ WO Alloy,2,Tata,Tiago,override
+Honda,Honda WR-V i-VTEC S,2,Honda,WR-V,override
+Hyundai,Hyundai Accent Executive CNG,2,Hyundai,Accent,override
+Tata,Tata Tiago 1.05 Revotorq XT,2,Tata,Tiago,override
+Hyundai,Hyundai Accent GLS,2,Hyundai,Accent,override
+Tata,Tata Tiago 1.05 Revotorq XE,2,Tata,Tiago,override
+Toyota,Toyota Etios V,2,Toyota,Etios,override
+Toyota,Toyota Etios VD,2,Toyota,Etios,override
+Toyota,Toyota Etios VXD,2,Toyota,Etios,override
+Volkswagen,Volkswagen Ameo 1.0 MPI Trendline,2,Volkswagen,Ameo,override
+Chevrolet,Chevrolet Sail LT ABS,2,Chevrolet,Sail,override
+Volkswagen,Volkswagen Jetta 2.0 TDI Comfortline,2,Volkswagen,Jetta,override
+Chevrolet,Chevrolet Spark 1.0 LT Option Pack w/ Airbag,2,Chevrolet,Spark,override
+Chevrolet,Chevrolet Tavera B1-10 seats BSII,2,Chevrolet,Tavera,override
+Volkswagen,Volkswagen CrossPolo 1.5 TDI,2,Volkswagen,Polo,override
+Chevrolet,Chevrolet Tavera Neo 3 9 Str BSIII,2,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera Neo 3 LS 9 Str BSIII,2,Chevrolet,Tavera,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Comfortline AT,2,Volkswagen,Ameo,override
+Daewoo,Daewoo Matiz SD,2,,,unmatched
+Toyota,Toyota Yaris V CVT BSIV,2,Toyota,Yaris,override
+Ford,Ford Figo Aspire 1.5 TDCi Ambiente,2,Ford,Aspire,override
+Toyota,Toyota Yaris V BSIV,2,Toyota,Yaris,override
+Toyota,Toyota Qualis GS G1,2,Toyota,Qualis,override
+Datsun,Datsun GO Plus A,2,Datsun,GO+,override
+Datsun,Datsun GO Plus T,2,Datsun,GO+,override
+Datsun,Datsun GO Plus T BSIV,2,Datsun,GO+,override
+Datsun,Datsun GO T Petrol,2,Datsun,GO,override
+Datsun,Datsun RediGO S,2,Datsun,redi-GO,override
+Toyota,Toyota Innova Crysta 2.8 GX AT 8S BSIV,2,Toyota,Innova Crysta,override
+Datsun,Datsun RediGO T,2,Datsun,redi-GO,override
+Chevrolet,Chevrolet Sail Hatchback Petrol LS ABS,2,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail Hatchback LT ABS,2,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail Hatchback LS ABS,2,Chevrolet,Sail,override
+Volkswagen,Volkswagen Jetta 2.0L TDI Highline,2,Volkswagen,Jetta,override
+Audi,Audi A3 35 TDI Premium Plus,2,Audi,A3,override
+Audi,Audi A4 2.0 TDI,2,Audi,A4,override
+Volvo,Volvo S60 D4 SUMMUM,2,Volvo,S60,override
+Volkswagen,Volkswagen Vento 1.5 TDI Highline AT,2,Volkswagen,Vento,override
+BMW,BMW 3 Series 320d Highline,2,BMW,3-Series,override
+Volkswagen,Volkswagen Vento 1.5 Highline Plus AT 16 Alloy,2,Volkswagen,Vento,override
+BMW,BMW 3 Series 320d Sedan,2,BMW,3-Series,override
+Volkswagen,Volkswagen Polo GT TSI BSIV,2,Volkswagen,Polo,override
+BMW,BMW 7 Series 730Ld,2,BMW,7 Series,override
+Volkswagen,Volkswagen Polo 2015-2019 1.0 MPI Trendline,2,Volkswagen,Polo,override
+Chevrolet,Chevrolet Aveo U-VA 1.2,2,Chevrolet,Aveo,override
+Volkswagen,Volkswagen Polo 2015-2019 1.0 MPI Comfortline,2,Volkswagen,Polo,override
+Chevrolet,Chevrolet Enjoy 1.3 TCDi LS 8,2,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Enjoy 1.3 TCDi LTZ 7,2,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Optra Magnum 1.6 LT Petrol,2,Chevrolet,Optra,override
+Chevrolet,Chevrolet Sail 1.2 LS,2,Chevrolet,Sail,override
+Volkswagen,Volkswagen Passat 1.8 TSI MT,2,Volkswagen,Passat,override
+Chevrolet,Chevrolet Sail 1.3 LS,2,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail Hatchback Diesel,2,Chevrolet,Sail,override
+Fiat,Fiat Grande Punto Active (Diesel),2,Fiat,Punto,override
+Fiat,Fiat Grande Punto EVO 1.3 Dynamic,2,Fiat,Punto,override
+Fiat,Fiat Grande Punto Sport 90BHP,2,Fiat,Punto,override
+Ford,Ford Endeavour 2.2 Titanium AT 4X2,2,Ford,Endeavour,override
+Ford,Ford Endeavour 3.0L 4X4 AT,2,Ford,Endeavour,override
+Toyota,Toyota Innova 2.5 E Diesel PS 7-Seater,2,Toyota,Innova,override
+Ford,Ford Fiesta 1.4 Duratorq ZXI,2,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 SXi TDCi,2,Ford,Fiesta,override
+Toyota,Toyota Innova 2.5 E Diesel MS 8-seater,2,Toyota,Innova,override
+Ford,Ford Fiesta 1.4 ZXi Duratec,2,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 ZXi TDCi ABS,2,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 ZXi TDCi LE,2,Ford,Fiesta,override
+Ford,Ford Fiesta 1.6 SXI ABS Duratec,2,Ford,Fiesta,override
+Ford,Ford Fiesta Classic 1.4 SXI Duratorq,2,Ford,Fiesta,override
+Toyota,Toyota Fortuner 4x4 AT,2,Toyota,Fortuner,override
+Toyota,Toyota Fortuner 4x2 Manual,2,Toyota,Fortuner,override
+Ford,Ford Fiesta Diesel Style,2,Ford,Fiesta,override
+Ford,Ford Figo 1.2P Ambiente MT,2,Ford,Figo,override
+Ford,Ford Figo 1.2P Titanium Opt MT,2,Ford,Figo,override
+Ford,Ford Figo 1.5D Base MT,2,Ford,Figo,override
+Toyota,Toyota Fortuner 2.8 2WD MT BSIV,2,Toyota,Fortuner,override
+Ford,Ford Figo 1.5P Titanium AT,2,Ford,Figo,override
+Toyota,Toyota Fortuner 2.8 2WD AT BSIV,2,Toyota,Fortuner,override
+Ford,Ford Endeavour 2.5L 4X2,2,Ford,Endeavour,override
+Toyota,Toyota Innova 2.5 G2,2,Toyota,Innova,override
+Fiat,Fiat Linea 1.3 Active,2,Fiat,Linea,override
+Ford,Ford Ecosport 1.5 DV5 MT Trend,2,Ford,EcoSport,override
+Fiat,Fiat Linea 1.3 Multijet Emotion,2,Fiat,Linea,override
+Toyota,Toyota Innova Crysta 2.4 VX MT,2,Toyota,Innova Crysta,override
+Fiat,Fiat Linea Emotion,2,Fiat,Linea,override
+Toyota,Toyota Innova Crysta 2.4 GX MT 8S BSIV,2,Toyota,Innova Crysta,override
+Fiat,Fiat Punto 1.2 Active,2,Fiat,Punto,override
+Toyota,Toyota Innova 2.5 ZX Diesel 7 Seater BSIII,2,Toyota,Innova,override
+Toyota,Toyota Innova 2.5 Z Diesel 7 Seater BS IV,2,Toyota,Innova,override
+Force,Force One SX ABS 7 Seating,2,Force Motors,One,override
+Ford,Ford Aspire Titanium Diesel BSIV,2,Ford,Aspire,override
+Toyota,Toyota Innova 2.5 VX 8 STR BSIV,2,Toyota,Innova,override
+Ford,Ford Aspire Trend Plus,2,Ford,Aspire,override
+Toyota,Toyota Innova 2.5 VX 8 STR,2,Toyota,Innova,override
+Ford,Ford Classic 1.6 Duratec Titanium,2,Ford,Classic,auto
+Ford,Ford EcoSport 1.5 Diesel Trend BSIV,2,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Petrol Ambiente BSIV,2,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Petrol Titanium BSIV,2,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Petrol Titanium Plus BSIV,2,Ford,EcoSport,override
+Ford,Ford Ecosport 1.0 Ecoboost Titanium Optional,2,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 DV5 MT Titanium Optional,2,Ford,EcoSport,override
+Tata,Tata Nexon 1.5 Revotorq XZA Plus DualTone,2,Tata,Nexon,override
+Honda,Honda City i DTEC E,2,Honda,City,override
+Tata,Tata Nexon 1.5 Revotorq XZ Plus Dual Tone,2,Tata,Nexon,override
+Hyundai,Hyundai Verna CRDi ABS,2,Hyundai,Verna,override
+Mercedes-Benz,Mercedes-Benz E-Class E 220 CDI Avantgarde,2,Mercedes-Benz,E-Class,override
+Hyundai,Hyundai i10 Sportz 1.2,2,Hyundai,i10,override
+Hyundai,Hyundai Xcent 1.2 VTVT SX,2,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 VTVT S AT,2,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 VTVT E Plus,2,Hyundai,Xcent,override
+Tata,Tata Manza Aura (ABS) Safire,2,Tata,Manza,auto
+Hyundai,Hyundai Xcent 1.2 Kappa Base,2,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa AT SX Option,2,Hyundai,Xcent,override
+Hyundai,Hyundai Verna VTVT 1.6 AT SX Option,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna Transform VGT CRDi,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna Transform SX VTVT,2,Hyundai,Verna,override
+Tata,Tata Manza Aura Quadrajet BS IV,2,Tata,Manza,auto
+Hyundai,Hyundai Verna SX Opt,2,Hyundai,Verna,override
+Tata,Tata Manza Club Class Quadrajet90 LX,2,Tata,Manza,auto
+Tata,Tata Manza Club Class Quadrajet90 VX,2,Tata,Manza,auto
+Hyundai,Hyundai i20 2015-2017 Magna 1.4 CRDi,2,Hyundai,i20,override
+Hyundai,Hyundai Verna CRDi 1.6 AT SX Option,2,Hyundai,Verna,override
+Tata,Tata Nano CX,2,Tata,Nano,override
+Hyundai,Hyundai Verna 1.6 VTVT SX,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 VTVT AT SX,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 VTVT,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 SX VTVT AT,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 SX VTVT (O),2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 SX CRDI (O) AT,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 CRDi S Option,2,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 CRDi EX AT,2,Hyundai,Verna,override
+Tata,Tata Nano Cx BSIII,2,Tata,Nano,override
+Tata,Tata Nano Twist XT,2,Tata,Nano,override
+Tata,Tata Nano XE,2,Tata,Nano,override
+Hyundai,Hyundai Santro Xing XL eRLX Euro II,2,Hyundai,Santro,override
+Hyundai,Hyundai i20 1.4 Magna AT,2,Hyundai,i20,override
+Hyundai,Hyundai i20 2015-2017 Sportz Option 1.4 CRDi,2,Hyundai,i20,override
+Hyundai,Hyundai Santro Xing GL Plus LPG,2,Hyundai,Santro,override
+Kia,Kia Seltos HTX Plus AT D,2,Kia,Seltos,override
+Tata,Tata Indica Vista Aqua TDI BSIII,2,Tata,Indica,override
+Tata,Tata Indica Vista Aura 1.2 Safire (ABS) 90hp BS IV,2,Tata,Indica,override
+Mahindra,Mahindra Bolero LX,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero GLX,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero DI DX 7 Seater,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero DI BSIII,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero B4,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 mHAWK D70 ZLX,2,Mahindra,Bolero,override
+Tata,Tata Indica Vista Aura 1.3 Quadrajet (ABS) BS IV,2,Tata,Indica,override
+Mahindra,Mahindra Bolero 2011-2019 Plus Non AC,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 EX AC,2,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 DI NON AC BS III SILVER,2,Mahindra,Bolero,override
+Tata,Tata Indica Vista Quadrajet 90 VX,2,Tata,Indica,override
+Tata,Tata Indica Vista Terra Quadrajet 1.3L,2,Tata,Indica,override
+Jaguar,Jaguar XF 3.0 Litre S Premium Luxury,2,Jaguar,XF,override
+Hyundai,Hyundai i20 Active 1.2,2,Hyundai,i20 Active,override
+Jaguar,Jaguar XF 2.2 Litre Luxury,2,Jaguar,XF,override
+Jaguar,Jaguar XE 2016-2019 2.0L Diesel Prestige,2,Jaguar,XE,override
+Tata,Tata Indigo CS eGLS BS IV,2,Tata,Indigo,override
+Hyundai,Hyundai i20 Petrol CVT Asta,2,Hyundai,i20,override
+Tata,Tata Indigo CS eVX,2,Tata,Indigo,override
+Tata,Tata Indigo GLX,2,Tata,Indigo,override
+Hyundai,Hyundai i20 Asta Optional with Sunroof 1.2,2,Hyundai,i20,override
+Hyundai,Hyundai i20 Asta (o),2,Hyundai,i20,override
+Hyundai,Hyundai i20 Asta,2,Hyundai,i20,override
+Hyundai,Hyundai i20 Active SX Petrol,2,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active SX Diesel,2,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active S Petrol,2,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active 1.4 SX Dual Tone,2,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active 1.4,2,Hyundai,i20 Active,override
+Hyundai,Hyundai Santro Xing XG AT eRLX Euro II,2,Hyundai,Santro,override
+Mercedes-Benz,Mercedes-Benz E-Class E 250 Elegance,2,Mercedes-Benz,E-Class,override
+Hyundai,Hyundai Santro Magna,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro LS zipPlus,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro LP zipPlus,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing Base,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing ABS,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing (Non-AC),2,Hyundai,Santro,override
+Hyundai,Hyundai Santro Magna BSIV,2,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing GL CNG,2,Hyundai,Santro,override
+Hyundai,Hyundai Grand i10 Nios Sportz,2,Hyundai,Grand i10 Nios,override
+Hyundai,Hyundai Santro LE,2,Hyundai,Santro,override
+Hyundai,Hyundai Grand i10 CRDi Asta Option,2,Hyundai,Grand i10,override
+Toyota,Toyota Land Cruiser Prado VX L,1,Toyota,Land Cruiser Prado,auto
+Volkswagen,Volkswagen Ameo 1.2 MPI Highline,1,Volkswagen,Ameo,override
+Tata,Tata Indigo CS LX DiCOR,1,Tata,Indigo,override
+Volkswagen,Volkswagen Ameo 1.2 MPI Highline Plus 16,1,Volkswagen,Ameo,override
+Tata,Tata Indica Vista Terra Quadrajet 1.3L BS IV,1,Tata,Indica,override
+Tata,Tata Sumo EX,1,Tata,Sumo,override
+Tata,Tata Indigo CS eLS BS IV,1,Tata,Indigo,override
+Tata,Tata New Safari Dicor VX 4X2,1,Tata,Safari,override
+Volkswagen,Volkswagen Ameo 1.2 MPI Comfortline Plus,1,Volkswagen,Ameo,override
+Toyota,Toyota Innova Crysta 2.7 GX AT 8 STR,1,Toyota,Innova Crysta,override
+Mitsubishi,Mitsubishi Pajero Sport 4X4 Dual Tone,1,Mitsubishi,Pajero Sport,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Highline Plus,1,Volkswagen,Ameo,override
+Mitsubishi,Mitsubishi Pajero Sport Anniversary Edition,1,Mitsubishi,Pajero Sport,override
+Tata,Tata Spacio Gold-10/6 Str BSII,1,Tata,,unmatched
+Nissan,Nissan Kicks XL BSIV,1,Nissan,Kicks,override
+Toyota,Toyota Innova Crysta 2.5 VX BS IV,1,Toyota,Innova Crysta,override
+Toyota,Toyota Innova Crysta 2.7 ZX AT BSIV,1,Toyota,Innova Crysta,override
+Mitsubishi,Mitsubishi Pajero 2.8 SFX BSIII Single Tone,1,Mitsubishi,Pajero Sport,override
+Tata,Tata Indigo CS GLS BSIII,1,Tata,Indigo,override
+Tata,Tata Indica V2 DL,1,Tata,Indica,override
+Tata,Tata Indica Vista Terra TDI BSIII,1,Tata,Indica,override
+Volkswagen,Volkswagen Ameo 1.0 MPI Comfortline,1,Volkswagen,Ameo,override
+Tata,Tata Indigo CS GLX BS III,1,Tata,Indigo,override
+Tata,Tata Indigo CS LS DiCOR,1,Tata,Indigo,override
+Tata,Tata Sumo CX 10 Str BSIV,1,Tata,Sumo,override
+Toyota,Toyota Qualis GS C1,1,Toyota,Qualis,override
+Toyota,Toyota Qualis Fleet A3,1,Toyota,Qualis,override
+Tata,Tata Indica V2 1.2 GLE BSIII,1,Tata,Indica,override
+Toyota,Toyota Qualis FS F7,1,Toyota,Qualis,override
+Toyota,Toyota Qualis FS B3,1,Toyota,Qualis,override
+Skoda,Skoda Laura Ambiente,1,Skoda,Laura,override
+Nissan,Nissan Kicks XV BSIV,1,Nissan,Kicks,override
+Toyota,Toyota Premio Base,1,Toyota,,unmatched
+Toyota,Toyota Platinum Etios 1.4 GD,1,Toyota,Etios,override
+Tata,Tata Sumo CX 9 Seater,1,Tata,Sumo,override
+Tata,Tata Tiago 1.2 Revotron XM Option,1,Tata,Tiago,override
+Nissan,Nissan Kicks XV D BSIV,1,Nissan,Kicks,override
+Tata,Tata Indigo eCS GLS,1,Tata,Indigo,override
+Tata,Tata Sumo GX 7 Str BSII,1,Tata,Sumo,override
+Tata,Tata Indigo V BSIII,1,Tata,Indigo,override
+Toyota,Toyota Innova 2.5 VX (Diesel) 8 Seater BS IV,1,Toyota,Innova,override
+Tata,Tata Sumo Gold CX BSIII,1,Tata,Sumo,override
+Tata,Tata Indigo VS,1,Tata,Indigo,override
+Nissan,Nissan Micra Fashion Edition XL CVT,1,Nissan,Micra,override
+Nissan,Nissan Micra XE,1,Nissan,Micra,override
+Tata,Tata Harrier XZ Plus,1,Tata,Harrier,override
+Tata,Tata Harrier XZ Dark Edition BSIV,1,Tata,Harrier,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Highline Plus 16 AT,1,Volkswagen,Ameo,override
+Toyota,Toyota Innova 2.5 VX (Diesel) 7 Seater BS IV,1,Toyota,Innova,override
+Toyota,Toyota Innova 2.5 GX (Diesel) 8 Seater BS IV,1,Toyota,Innova,override
+Skoda,Skoda Octavia RS 1.8 Turbo Petrol MT,1,Skoda,Octavia,override
+Skoda,Skoda Fabia 1.2 MPI Ambition Plus,1,Skoda,Fabia,override
+Nissan,Nissan Micra XL,1,Nissan,Micra,override
+Nissan,Nissan Micra XL Optional,1,Nissan,Micra,override
+Tata,Tata Harrier XZ BSIV,1,Tata,Harrier,override
+Tata,Tata Indigo eCS GLX,1,Tata,Indigo,override
+Tata,Tata New Safari Dicor GX 4X2 BS IV,1,Tata,Safari,override
+Nissan,Nissan Micra Diesel XL Optional,1,Nissan,Micra,override
+Nissan,Nissan Micra Diesel XL,1,Nissan,Micra,override
+Skoda,Skoda Octavia L and K 1.9 TDI MT,1,Skoda,Octavia,override
+Toyota,Toyota Innova Crysta 2.4 ZX MT,1,Toyota,Innova Crysta,override
+Nissan,Nissan Micra Active XV,1,Nissan,Micra,override
+Toyota,Toyota Innova Crysta 2.4 ZX AT,1,Toyota,Innova Crysta,override
+Skoda,Skoda Fabia 1.4 TDI Ambiente,1,Skoda,Fabia,override
+Tata,Tata Indica DLX,1,Tata,Indica,override
+Tata,Tata Indigo GLS,1,Tata,Indigo,override
+Tata,Tata New Safari Dicor LX 4X2 BS IV,1,Tata,Safari,override
+Tata,Tata Indigo Grand Dicor,1,Tata,Indigo,override
+Tata,Tata Indigo Grand Petrol,1,Tata,Indigo,override
+Nissan,Nissan Micra Active XV S,1,Nissan,Micra,override
+Skoda,Skoda Fabia 1.2L Diesel Ambiente,1,Skoda,Fabia,override
+Tata,Tata Indigo LS BSII,1,Tata,Indigo,override
+Toyota,Toyota Innova Crysta 2.4 G MT 8 STR,1,Toyota,Innova Crysta,override
+Skoda,Skoda Fabia 1.2 TDI Ambition Plus,1,Skoda,Fabia,override
+Tata,Tata Sumo EX BS IV,1,Tata,Sumo,override
+Toyota,Toyota Innova 2.5 Z Diesel 7 Seater,1,Toyota,Innova,override
+Tata,Tata Sumo EX TC,1,Tata,Sumo,override
+Skoda,Skoda Fabia Scout 1.2 TDI,1,Skoda,Fabia,override
+Tata,Tata Indica Vista Quadrajet ZX,1,Tata,Indica,override
+Volkswagen,Volkswagen Ameo 1.5 TDI Trendline,1,Volkswagen,Ameo,override
+Skoda,Skoda Octavia Ambiente 1.9 TDI,1,Skoda,Octavia,override
+Volkswagen,Volkswagen Vento 1.5 TDI Highline Plus AT,1,Volkswagen,Vento,override
+Volkswagen,Volkswagen Vento 1.5 TDI Highline BSIV,1,Volkswagen,Vento,override
+Mercedes-Benz,Mercedes-Benz GL-Class 350 CDI Blue Efficiency,1,Mercedes-Benz,GLS,override
+Mercedes-Benz,Mercedes-Benz GL-Class 350 CDI Luxury,1,Mercedes-Benz,GLS,override
+Mercedes-Benz,Mercedes-Benz GLA Class 200,1,Mercedes-Benz,GLA,override
+Mercedes-Benz,Mercedes-Benz GLA Class 200 CDI,1,Mercedes-Benz,GLA,override
+Tata,Tata Indica V2 eXeta GLS,1,Tata,Indica,override
+Tata,Tata Indica Vista Aura 1.2 Safire (ABS) BS IV,1,Tata,Indica,override
+Tata,Tata Nexon 1.5 Revotorq XE,1,Tata,Nexon,override
+Volkswagen,Volkswagen Polo Select 1.5 TDI Highline,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo Select 1.2 MPI Highline,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo Petrol Trendline 1.2L,1,Volkswagen,Polo,override
+Tata,Tata Nexon 1.2 Revotron XZA Plus,1,Tata,Nexon,override
+Tata,Tata Indica Vista Aura 1.2 Safire BSIV,1,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz GLA Class 200 D Sport Edition,1,Mercedes-Benz,GLA,override
+Volkswagen,Volkswagen Polo 2015-2019 GT 1.5 TDI,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo 2015-2019 1.2 MPI Highline Plus,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Vento 1.5 TDI Highline Plus AT BSIV,1,Volkswagen,Vento,override
+Volkswagen,Volkswagen Vento Diesel Breeze,1,Volkswagen,Vento,override
+Volkswagen,Volkswagen Vento IPL II Diesel Trendline,1,Volkswagen,Vento,override
+Mercedes-Benz,Mercedes-Benz E-Class E270 CDI,1,Mercedes-Benz,E-Class,override
+Volvo,Volvo XC60 Inscription D5 BSIV,1,Volvo,XC60,override
+Volvo,Volvo XC40 D4 R-Design,1,Volvo,XC40,override
+Mercedes-Benz,Mercedes-Benz E-Class E250 CDI Avantgrade,1,Mercedes-Benz,E-Class,override
+Mercedes-Benz,Mercedes-Benz E-Class E250 CDI Elegance,1,Mercedes-Benz,E-Class,override
+Volvo,Volvo XC40 D4 Inscription BSIV,1,Volvo,XC40,override
+Mercedes-Benz,Mercedes-Benz E-Class E250 Edition E,1,Mercedes-Benz,E-Class,override
+Volvo,Volvo V40 D3 R-Design,1,Volvo,V40,override
+Mercedes-Benz,Mercedes-Benz E-Class E350 Petrol,1,Mercedes-Benz,E-Class,override
+Volkswagen,Volkswagen Vento Konekt Diesel Highline,1,Volkswagen,Vento,override
+Volvo,Volvo V40 Cross Country D3,1,Volvo,V40,override
+Tata,Tata Nexon 1.5 Revotorq XT,1,Tata,Nexon,override
+Volvo,Volvo S90 D4 Inscription BSIV,1,Volvo,S90,auto
+Mercedes-Benz,Mercedes-Benz E-Class Exclusive E 200 BSIV,1,Mercedes-Benz,E-Class,override
+Skoda,Skoda Octavia Elegance 1.8 TSI AT,1,Skoda,Octavia,override
+Volkswagen,Volkswagen Vento Petrol Trendline,1,Volkswagen,Vento,override
+Volkswagen,Volkswagen Vento Petrol Highline AT,1,Volkswagen,Vento,override
+Mercedes-Benz,Mercedes-Benz GLC 220d 4MATIC,1,Mercedes-Benz,GLC,auto
+Mercedes-Benz,Mercedes-Benz M-Class ML 250 CDI,1,Mercedes-Benz,GLE,override
+Mitsubishi,Mitsubishi Lancer 2.0 L Diesel LX,1,Mitsubishi,Lancer,override
+Tata,Tata Indica Vista Aura 1.3 Quadrajet (ABS),1,Tata,Indica,override
+Volkswagen,Volkswagen Multivan TDI,1,Volkswagen,,unmatched
+Mercedes-Benz,Mercedes-Benz New C-Class C 220 CDI BE Avantgare,1,Mercedes-Benz,C-Class,override
+Tata,Tata Indica V2 DLX BSII,1,Tata,Indica,override
+Skoda,Skoda Laura Ambiente 2.0 TDI CR MT,1,Skoda,Laura,override
+Mercedes-Benz,Mercedes-Benz New C-Class C 220 CDI Elegance MT,1,Mercedes-Benz,C-Class,override
+Skoda,Skoda Laura Ambiente 1.9 PD,1,Skoda,Laura,override
+Tata,Tata Indica V2 DLS BSIII,1,Tata,Indica,override
+Volkswagen,Volkswagen Jetta 2.0L TDI Comfortline,1,Volkswagen,Jetta,override
+Tata,Tata Nexon 1.2 Revotron XE,1,Tata,Nexon,override
+Tata,Tata New Safari Dicor VX 4X2 BS IV,1,Tata,Safari,override
+Tata,Tata Indica Vista Quadrajet VX Tech,1,Tata,Indica,override
+Volkswagen,Volkswagen Jetta 1.6 Trendline,1,Volkswagen,Jetta,override
+Mercedes-Benz,Mercedes-Benz New C-Class C 250 CDI Elegance,1,Mercedes-Benz,C-Class,override
+Tata,Tata Indica V2 DLG TC,1,Tata,Indica,override
+Volkswagen,Volkswagen GTI 1.8 TSI,1,Volkswagen,GTI,auto
+Tata,Tata New Safari Dicor EX 4X2 BS IV,1,Tata,Safari,override
+Tata,Tata Indica Vista Safire GLX,1,Tata,Indica,override
+Tata,Tata Indica Vista Aura Safire Anniversary Edition,1,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz New C-Class C 200 Kompressor Elegance MT,1,Mercedes-Benz,C-Class,override
+Mercedes-Benz,Mercedes-Benz New C-Class C 200 Kompressor Elegance AT,1,Mercedes-Benz,C-Class,override
+Volkswagen,Volkswagen Polo 1.0 MPI Trendline BSIV,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Polo 2015-2019 1.0 MPI Highline Plus,1,Volkswagen,Polo,override
+Tata,Tata Nexon 1.2 Revotron XZ Plus Dual Tone,1,Tata,Nexon,override
+Tata,Tata Indica V2 Emax CNG GLX,1,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz M-Class ML 350 4Matic,1,Mercedes-Benz,GLE,override
+Volkswagen,Volkswagen Polo 1.2 MPI Highline,1,Volkswagen,Polo,override
+Tata,Tata Indica V2 DiCOR DLG BS-III,1,Tata,Indica,override
+Volkswagen,Volkswagen Polo 1.0 TSI Highline Plus,1,Volkswagen,Polo,override
+Volkswagen,Volkswagen Passat Highline DSG S (Spl. Edition),1,Volkswagen,Passat,override
+Mercedes-Benz,Mercedes-Benz New C-Class C 200 AVANTGARDE,1,Mercedes-Benz,C-Class,override
+Tata,Tata Safari Storme VX Varicor 400,1,Tata,Safari,override
+Volkswagen,Volkswagen Passat Highline DSG S,1,Volkswagen,Passat,override
+Volkswagen,Volkswagen Passat 2.0 TDI AT Highline,1,Volkswagen,Passat,override
+Tata,Tata Indica Vista Aura Plus 1.3 Quadrajet BS IV,1,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz New C-Class 200 K AT,1,Mercedes-Benz,C-Class,override
+Tata,Tata Indica V2 DLX BSIII,1,Tata,Indica,override
+Mercedes-Benz,Mercedes-Benz New C-Class 250 CDI Classic,1,Mercedes-Benz,C-Class,override
+Toyota,Toyota Innova 2.5 G1 Diesel 8-seater,1,Toyota,Innova,override
+Toyota,Toyota Innova 2.5 EV Diesel MS 7 Str BSIII,1,Toyota,Innova,override
+Tata,Tata Indigo eCS LE TDI BSIII,1,Tata,Indigo,override
+Tata,Tata Venture EX 7 Str Captain Seats,1,Tata,Venture,auto
+Renault,Renault Fluence 2.0,1,Renault,Fluence,auto
+Toyota,Toyota Camry W4 (AT),1,Toyota,Camry,override
+Toyota,Toyota Camry V4 (MT),1,Toyota,Camry,override
+Tata,Tata Tiago 1.05 Revotorq XM,1,Tata,Tiago,override
+Skoda,Skoda Rapid 1.6 MPI Ambition Plus,1,Skoda,Rapid,override
+Tata,Tata Tiago 1.05 Revotorq XT Option,1,Tata,Tiago,override
+Skoda,Skoda Rapid 1.6 MPI Ambition BSIV,1,Skoda,Rapid,override
+Tata,Tata Zest Quadrajet 1.3 Anniversary Edition,1,Tata,Zest,override
+Tata,Tata Zest Quadrajet 1.3 75PS XMS,1,Tata,Zest,override
+Renault,Renault KWID 1.0 RXT AMT Opt,1,Renault,Kwid,override
+Tata,Tata Xenon XT EX 4X4,1,Tata,Xenon XT,auto
+Tata,Tata Xenon XT EX 4X2,1,Tata,Xenon XT,auto
+Tata,Tata Winger Deluxe - Flat Roof (Non-AC),1,Tata,Winger,auto
+Skoda,Skoda Rapid 1.6 MPI Ambition,1,Skoda,Rapid,override
+Tata,Tata Venture LX 7 Str,1,Tata,Venture,auto
+Renault,Renault KWID AMT RXL,1,Renault,Kwid,override
+Tata,Tata Nano Cx BSIV,1,Tata,Nano,override
+Renault,Renault Fluence 1.5,1,Renault,Fluence,auto
+Renault,Renault Duster RXZ 110PS AMT BSIV,1,Renault,Duster,override
+Renault,Renault Duster RXL AWD,1,Renault,Duster,override
+Renault,Renault Duster 85PS Diesel RxZ,1,Renault,Duster,override
+Toyota,Toyota Corolla Altis 1.8 Sport,1,Toyota,Corolla Altis,override
+Skoda,Skoda Rapid 1.6 TDI Ambition Plus Alloy,1,Skoda,Rapid,override
+Renault,Renault Duster 85PS Diesel RxL Optional with Nav,1,Renault,Duster,override
+Tata,Tata Sumo SE Plus BSII,1,Tata,Sumo,override
+Renault,Renault Pulse RxZ Optional,1,Renault,Pulse,override
+Skoda,Skoda Rapid 1.6 TDI Ambition Plus,1,Skoda,Rapid,override
+Renault,Renault Duster 85PS Diesel RxS,1,Renault,Duster,override
+Renault,Renault Duster 85PS Diesel STD,1,Renault,Duster,override
+Renault,Renault Duster Petrol RXS CVT,1,Renault,Duster,override
+Toyota,Toyota Corolla Altis 1.8 G CVT,1,Toyota,Corolla Altis,override
+Skoda,Skoda Rapid 1.6 TDI Ambition,1,Skoda,Rapid,override
+Skoda,Skoda Rapid 1.5 TDI Active,1,Skoda,Rapid,override
+Skoda,Skoda Rapid 1.6 MPI Elegance,1,Skoda,Rapid,override
+Renault,Renault Duster Adventure Edition RXZ AWD,1,Renault,Duster,override
+Toyota,Toyota Corolla Altis 1.8 G,1,Toyota,Corolla Altis,override
+Toyota,Toyota Corolla Altis 1.4 DGL,1,Toyota,Corolla Altis,override
+Renault,Renault KWID Climber 1.0 AMT,1,Renault,Kwid,override
+Tata,Tata Nano LX,1,Tata,Nano,override
+Tata,Tata Harrier XZ,1,Tata,Harrier,override
+Renault,Renault KWID Climber 1.0 MT BSIV,1,Renault,Kwid,override
+Tata,Tata Tiago NRG Petrol AMT,1,Tata,Tiago,override
+Tata,Tata New Safari 4X4 EXI BSIII,1,Tata,Safari,override
+Renault,Renault Lodgy 85PS Std,1,Renault,Lodgy,override
+Tata,Tata Tiago 2019-2020 XZ Plus Dual Tone,1,Tata,Tiago,override
+Tata,Tata Tiago 2019-2020 XZ Plus Diesel,1,Tata,Tiago,override
+Renault,Renault Lodgy Stepway 110PS RXZ 7S,1,Renault,Lodgy,override
+Tata,Tata New Safari DICOR 2.2 EX 4x4,1,Tata,Safari,override
+Renault,Renault Lodgy Stepway 85PS RXZ 8S,1,Renault,Lodgy,override
+Renault,Renault Lodgy World Edition 110PS,1,Renault,Lodgy,override
+Tata,Tata Tiago 2019-2020 XZ,1,Tata,Tiago,override
+Skoda,Skoda Rapid 1.5 TDI Elegance,1,Skoda,Rapid,override
+Tata,Tata New Safari DICOR 2.2 EX 4x4 BS IV,1,Tata,Safari,override
+Tata,Tata New Safari DICOR 2.2 GX 4x2,1,Tata,Safari,override
+Skoda,Skoda Rapid 1.6 MPI AT Ambition BSIV,1,Skoda,Rapid,override
+Skoda,Skoda Rapid 1.5 TDI Style Plus Black Package,1,Skoda,Rapid,override
+Tata,Tata Tiago 1.2 Revotron XZ Plus Dual Tone,1,Tata,Tiago,override
+Tata,Tata Tiago 1.2 Revotron XTA,1,Tata,Tiago,override
+Tata,Tata Tiago Wizz 1.05 Revotorq,1,Tata,Tiago,override
+Renault,Renault Lodgy 85PS RxZ,1,Renault,Lodgy,override
+Skoda,Skoda Rapid 1.6 MPI AT Style Plus,1,Skoda,Rapid,override
+Tata,Tata Nano Twist XE,1,Tata,Nano,override
+Tata,Tata Nano LX SE,1,Tata,Nano,override
+Tata,Tata Tigor 2017-2020 XZ Plus Diesel,1,Tata,Tigor,override
+Renault,Renault KWID RXE,1,Renault,Kwid,override
+Tata,Tata Tigor 2017-2020 XZ,1,Tata,Tigor,override
+Skoda,Skoda Rapid 1.6 MPI Active BSIV,1,Skoda,Rapid,override
+Tata,Tata Nano Lx,1,Tata,Nano,override
+Tata,Tata Nano STD,1,Tata,Nano,override
+Tata,Tata Tigor 1.2 Revotron XE,1,Tata,Tigor,override
+Tata,Tata Tigor 1.05 Revotorq XM,1,Tata,Tigor,override
+Renault,Renault Koleos 2.0 Diesel,1,Renault,Koleos,auto
+Renault,Renault Lodgy 85PS RxE,1,Renault,Lodgy,override
+Tata,Tata Tigor 1.05 Revotorq XZ Option,1,Tata,Tigor,override
+Renault,Renault Lodgy 85PS RxL,1,Renault,Lodgy,override
+Tata,Tata New Safari DICOR 2.2 GX 4x2 BS IV,1,Tata,Safari,override
+Tata,Tata New Safari 4X2,1,Tata,Safari,override
+Skoda,Skoda Rapid 1.5 TDI Ambition Plus,1,Skoda,Rapid,override
+Toyota,Toyota Corolla Altis 1.8 VL CVT,1,Toyota,Corolla Altis,override
+Toyota,Toyota Corolla Altis D-4D G,1,Toyota,Corolla Altis,override
+Renault,Renault Scala Diesel RxE,1,Renault,Scala,override
+Toyota,Toyota Corolla Altis Diesel D4DJ,1,Toyota,Corolla Altis,override
+Tata,Tata Sumo Gold GX BSIII,1,Tata,Sumo,override
+Tata,Tata Aria Prestige 4x2,1,Tata,Aria,auto
+Skoda,Skoda Octavia Style Plus 2.0 TDI AT,1,Skoda,Octavia,override
+Toyota,Toyota Fortuner 4x2 AT TRD Sportivo,1,Toyota,Fortuner,override
+Tata,Tata Sumo MKII CX BS IV,1,Tata,Sumo,override
+Tata,Tata Sumo MKII GX BS IV,1,Tata,Sumo,override
+Toyota,Toyota Fortuner 4x2 4 Speed AT,1,Toyota,Fortuner,override
+Toyota,Toyota Fortuner 2.8 4WD MT BSIV,1,Toyota,Fortuner,override
+Tata,Tata Manza Aura (ABS) Safire BS IV,1,Tata,Manza,auto
+Renault,Renault Triber RXZ,1,Renault,Triber,override
+Tata,Tata Aria Pleasure 4x2,1,Tata,Aria,auto
+Toyota,Toyota Fortuner 2.8 2WD MT,1,Toyota,Fortuner,override
+Skoda,Skoda Rapid 1.5 TDI AT Ambition,1,Skoda,Rapid,override
+Skoda,Skoda Yeti Ambition 4WD,1,Skoda,Yeti,auto
+Toyota,Toyota Fortuner 2.5 4x2 MT TRD Sportivo,1,Toyota,Fortuner,override
+Tata,Tata Manza Aura Plus Quadrajet,1,Tata,Manza,auto
+Tata,Tata Nexon 1.5 Revotorq XZA Plus,1,Tata,Nexon,override
+Nissan,Nissan Sunny XL D,1,Nissan,Sunny,override
+Tata,Tata Manza Aqua Quadrajet,1,Tata,Manza,auto
+Toyota,Toyota Glanza G CVT,1,Toyota,Glanza,override
+Nissan,Nissan Sunny XE,1,Nissan,Sunny,override
+Toyota,Toyota Innova 2.5 EV PS 8 STR BSIV,1,Toyota,Innova,override
+Toyota,Toyota Innova 2.5 EV Diesel PS 7 Seater BSIII,1,Toyota,Innova,override
+Skoda,Skoda Rapid 1.5 TDI Elegance Black Package,1,Skoda,Rapid,override
+Toyota,Toyota Innova 2.5 EV (Diesel) PS 8 Seater BS IV,1,Toyota,Innova,override
+Tata,Tata Estate Std,1,Tata,Estate,auto
+Tata,Tata Bolt Revotron XM,1,Tata,Bolt,override
+Tata,Tata Indigo eCS LS TDI BSIII,1,Tata,Indigo,override
+Tata,Tata New Safari DICOR 2.2 VX 4x4,1,Tata,Safari,override
+Skoda,Skoda Octavia Rider 1.9 AT TDI,1,Skoda,Octavia,override
+Nissan,Nissan Sunny XL AT Special Edition,1,Nissan,Sunny,override
+Tata,Tata Indigo eCS LX TDI BSIII,1,Tata,Indigo,override
+Tata,Tata Bolt Quadrajet XM,1,Tata,Bolt,override
+Skoda,Skoda Fabia 1.2 MPI Ambition,1,Skoda,Fabia,override
+Toyota,Toyota Innova 2.5 E 7 STR,1,Toyota,Innova,override
+Toyota,Toyota Glanza V CVT,1,Toyota,Glanza,override
+Toyota,Toyota Glanza G Smart Hybrid,1,Toyota,Glanza,override
+Tata,Tata Manza Aura Plus Quadrajet BS IV,1,Tata,Manza,auto
+Nissan,Nissan Teana XL,1,Nissan,Teana,auto
+Tata,Tata Manza Aura Plus Safire,1,Tata,Manza,auto
+Tata,Tata Manza ELAN Quadrajet BS III,1,Tata,Manza,auto
+Renault,Renault Scala Diesel RxL,1,Renault,Scala,override
+Skoda,Skoda Rapid 1.5 TDI AT Style BSIV,1,Skoda,Rapid,override
+Renault,Renault Duster 110PS Diesel RxL AMT,1,Renault,Duster,override
+Toyota,Toyota Etios 1.5 V,1,Toyota,Etios,override
+Renault,Renault Duster 110PS Diesel RxL Explore,1,Renault,Duster,override
+Toyota,Toyota Etios 1.4 VXD,1,Toyota,Etios,override
+Renault,Renault Duster 110PS Diesel RxZ Plus,1,Renault,Duster,override
+Toyota,Toyota Corolla DX,1,Toyota,Corolla,auto
+Skoda,Skoda Superb 1.8 TSI,1,Skoda,Superb,override
+Renault,Renault Duster 85PS Diesel RxE Adventure,1,Renault,Duster,override
+Toyota,Toyota Corolla Altis JS MT,1,Toyota,Corolla Altis,override
+Toyota,Toyota Corolla Altis G,1,Toyota,Corolla Altis,override
+Skoda,Skoda Rapid Monte Carlo 1.5 TDI AT BSIV,1,Skoda,Rapid,override
+Tata,Tata Manza ELAN Quadrajet BS IV,1,Tata,Manza,auto
+Renault,Renault Duster 85PS Diesel RxL Explore,1,Renault,Duster,override
+Renault,Renault Duster 85PS Diesel RxL Option,1,Renault,Duster,override
+Renault,Renault Duster 110PS Diesel RXZ Optional with Nav,1,Renault,Duster,override
+Tata,Tata Manza Club Class Quadrajet90 LS,1,Tata,Manza,auto
+Nissan,Nissan Terrano XL,1,Nissan,Terrano,override
+Skoda,Skoda Superb Elegance 2.0 TDI CR AT,1,Skoda,Superb,override
+Skoda,Skoda Rapid 1.5 TDI AT Ambition Plus,1,Skoda,Rapid,override
+Skoda,Skoda Superb LK 1.8 TSI AT,1,Skoda,Superb,override
+Toyota,Toyota Etios Liva VXD,1,Toyota,Etios Liva,override
+Toyota,Toyota Etios Liva Diesel TRD Sportivo,1,Toyota,Etios Liva,override
+Tata,Tata Sumo SE,1,Tata,Sumo,override
+Toyota,Toyota Etios Liva Diesel,1,Toyota,Etios Liva,override
+Toyota,Toyota Etios Liva 1.4 VD,1,Toyota,Etios Liva,override
+Nissan,Nissan Terrano XV 110 PS,1,Nissan,Terrano,override
+Toyota,Toyota Etios G Safety,1,Toyota,Etios,override
+Nissan,Nissan Terrano XV D Premium AMT,1,Nissan,Terrano,override
+Renault,Renault Scala Diesel RxZ,1,Renault,Scala,override
+Opel,Opel Astra 1.6,1,,,unmatched
+Skoda,Skoda Superb Elegance 1.8 TSI AT,1,Skoda,Superb,override
+Tata,Tata Manza Aura Safire,1,Tata,Manza,auto
+Peugeot,Peugeot 309 GLD,1,,,unmatched
+Tata,Tata Manza Club Class Quadrajet90 EX,1,Tata,Manza,auto
+Nissan,Nissan Sunny XV Special Edition,1,Nissan,Sunny,override
+Ambassador,Ambassador CLASSIC 1500 DSL AC,1,,,unmatched
+Mercedes-Benz,Mercedes-Benz CLA 200 CGI Sport,1,Mercedes-Benz,CLA,override
+Honda,Honda City 1.5 V Elegance,1,Honda,City,override
+Honda,Honda City i DTEC VX Option,1,Honda,City,override
+Honda,Honda City ZXi AT,1,Honda,City,override
+Honda,Honda City VX CVT,1,Honda,City,override
+Honda,Honda City E,1,Honda,City,override
+Honda,Honda City 1.5 V MT Sunroof,1,Honda,City,override
+Honda,Honda City 1.5 V MT Exclusive,1,Honda,City,override
+Honda,Honda City 1.5 V Inspire,1,Honda,City,override
+Honda,Honda City 1.5 S Inspire,1,Honda,City,override
+Honda,Honda Jazz Select Edition Active,1,Honda,Jazz,override
+Honda,Honda City 1.5 GXI CVT,1,Honda,City,override
+Honda,Honda City 1.5 GXI,1,Honda,City,override
+Honda,Honda CR-V 2.4L 4WD MT,1,Honda,CR-V,override
+Honda,Honda CR-V 2.4L 4WD,1,Honda,CR-V,override
+Honda,Honda Brio E MT,1,Honda,Brio,override
+Honda,Honda Brio 1.2 E MT,1,Honda,Brio,override
+Honda,Honda BRV i-VTEC V MT,1,Honda,BR-V,override
+Honda,Honda City i DTec E,1,Honda,City,override
+Honda,Honda City i DTec S,1,Honda,City,override
+Honda,Honda City i DTec V,1,Honda,City,override
+Honda,Honda City i VTEC CVT SV,1,Honda,City,override
+Honda,Honda Jazz 1.5 E i DTEC,1,Honda,Jazz,override
+Honda,Honda Jazz 1.2 V AT i VTEC Privilege,1,Honda,Jazz,override
+Honda,Honda Jazz 1.2 SV i VTEC,1,Honda,Jazz,override
+Honda,Honda Jazz 1.2 S AT i VTEC,1,Honda,Jazz,override
+Honda,Honda Civic ZX Diesel BSIV,1,Honda,Civic,override
+Honda,Honda Civic ZX,1,Honda,Civic,override
+Honda,Honda Civic Hybrid,1,Honda,Civic,override
+Honda,Honda Civic 1.8 V MT Inspire,1,Honda,Civic,override
+Honda,Honda Civic 1.8 S AT,1,Honda,Civic,override
+Honda,Honda Civic 1.8 (E) MT,1,Honda,Civic,override
+Honda,Honda City i-VTEC S,1,Honda,City,override
+Honda,Honda City i-VTEC CVT V,1,Honda,City,override
+Honda,Honda City i-DTEC V,1,Honda,City,override
+Honda,Honda City i VTEC VX Option BL,1,Honda,City,override
+Honda,Honda City i VTEC E,1,Honda,City,override
+Honda,Honda BR-V i-VTEC VX MT,1,Honda,BR-V,override
+Honda,Honda BR-V i-VTEC S MT,1,Honda,BR-V,override
+Honda,Honda BR-V i-VTEC E MT,1,Honda,BR-V,override
+Honda,Honda Accord 2.4 M/T,1,Honda,Accord,override
+Honda,Honda Accord 2.4 A/T,1,Honda,Accord,override
+Ford,Ford Ikon 1.8 D,1,Ford,Ikon,override
+Ford,Ford Ikon 1.6 Really Sport,1,Ford,Ikon,override
+Ford,Ford Ikon 1.6 EXi NXt,1,Ford,Ikon,override
+Ford,Ford Ikon 1.3 CLXi,1,Ford,Ikon,override
+Ford,Ford Fusion Plus 1.4 TDCi Diesel,1,Ford,Fusion,auto
+Ford,Ford Freestyle Trend Petrol BSIV,1,Ford,Freestyle,override
+Ford,Ford Freestyle Trend Diesel BSIV,1,Ford,Freestyle,override
+Ford,Ford Freestyle Trend Diesel,1,Ford,Freestyle,override
+Ford,Ford Freestyle Titanium Plus Petrol BSIV,1,Ford,Freestyle,override
+Ford,Ford Freestyle Titanium Plus Diesel,1,Ford,Freestyle,override
+Ford,Ford Freestyle Titanium Diesel BSIV,1,Ford,Freestyle,override
+Ford,Ford Freestyle Titanium Diesel,1,Ford,Freestyle,override
+Ford,Ford Figo Titanium Diesel BSIV,1,Ford,Figo,override
+Ford,Ford Figo Titanium Diesel,1,Ford,Figo,override
+Honda,Honda Accord 2.4 AT,1,Honda,Accord,override
+Honda,Honda Accord 2.4 MT,1,Honda,Accord,override
+Honda,Honda BR-V i-DTEC VX MT,1,Honda,BR-V,override
+Honda,Honda Accord VTi-L MT,1,Honda,Accord,override
+Honda,Honda BR-V i-DTEC S MT,1,Honda,BR-V,override
+Honda,Honda Amaze VX i-VTEC,1,Honda,Amaze,override
+Honda,Honda Amaze VX Petrol BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze V CVT Petrol BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze S i-Vtech,1,Honda,Amaze,override
+Honda,Honda Amaze S Option i-DTEC,1,Honda,Amaze,override
+Honda,Honda Amaze S Diesel BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze S CVT i-VTEC,1,Honda,Amaze,override
+Honda,Honda Amaze S CVT Petrol BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze S CVT Diesel BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze EX i-Vtech,1,Honda,Amaze,override
+Honda,Honda Amaze E i-VTEC,1,Honda,Amaze,override
+Honda,Honda Amaze E Option i-DTEC,1,Honda,Amaze,override
+Honda,Honda Amaze E Diesel BSIV,1,Honda,Amaze,override
+Honda,Honda Amaze Anniversary Edition,1,Honda,Amaze,override
+Honda,Honda Jazz Basic,1,Honda,Jazz,override
+Honda,Honda Jazz V,1,Honda,Jazz,override
+Hyundai,Hyundai Verna 1.6 CRDI AT SX Option,1,Hyundai,Verna,override
+Hyundai,Hyundai Santa Fe 4x4 AT,1,Hyundai,Santa Fe,override
+Hyundai,Hyundai Santro LP - Euro II,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro GS zipPlus,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro GS zipDrive - Euro II,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro GS zipDrive - Euro I,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro DX,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro AT CNG,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro AT,1,Hyundai,Santro,override
+Hyundai,Hyundai Santa Fe 4X4,1,Hyundai,Santa Fe,override
+Honda,Honda Jazz V Diesel,1,Honda,Jazz,override
+Hyundai,Hyundai Santa Fe 4WD AT,1,Hyundai,Santa Fe,override
+Hyundai,Hyundai Santa Fe 2WD MT,1,Hyundai,Santa Fe,override
+Hyundai,Hyundai Santa Fe 2WD AT,1,Hyundai,Santa Fe,override
+Hyundai,Hyundai Grand i10 Sportz Celebration Edition,1,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 Nios AMT Sportz,1,Hyundai,Grand i10 Nios,override
+Hyundai,Hyundai Grand i10 Magna AT,1,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 CRDi SportZ Edition,1,Hyundai,Grand i10,override
+Hyundai,Hyundai Santro Magna AMT BSIV,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing GL LPG,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing GL PLUS CNG,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing GLS CNG,1,Hyundai,Santro,override
+Hyundai,Hyundai Venue SX Plus Turbo DCT BSIV,1,Hyundai,Venue,override
+Hyundai,Hyundai Venue SX Plus Dual Tone Turbo DCT,1,Hyundai,Venue,override
+Hyundai,Hyundai Tucson CRDi,1,Hyundai,Tucson,override
+Hyundai,Hyundai Tucson 2.0 e-VGT 2WD AT GLS,1,Hyundai,Tucson,override
+Hyundai,Hyundai Sonata CRDi M/T,1,Hyundai,Sonata,auto
+Hyundai,Hyundai Sonata 2.4L AT,1,Hyundai,Sonata,auto
+Hyundai,Hyundai Sonata 2.0L CRDi MT,1,Hyundai,Sonata,auto
+Hyundai,Hyundai Santro Xing XS eRLX Euro II,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XP,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XO eRLX Euro II,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XO,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XK eRLX EuroIII,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XK eRLX Euro II,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XG AT eRLX Euro III,1,Hyundai,Santro,override
+Hyundai,Hyundai Santro Xing XG AT,1,Hyundai,Santro,override
+Hyundai,Hyundai Grand i10 AT Sportz,1,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 1.2 Kappa Era,1,Hyundai,Grand i10,override
+Hyundai,Hyundai Grand i10 1.2 CRDi Magna,1,Hyundai,Grand i10,override
+Hyundai,Hyundai EON 1.0 Kappa Magna Plus Optional,1,Hyundai,Eon,override
+Hyundai,Hyundai Creta 1.6 SX Option Executive,1,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 SX Diesel,1,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 SX Automatic Diesel,1,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 Gamma SX Plus,1,Hyundai,Creta,override
+Hyundai,Hyundai Creta 1.6 CRDi AT S Plus,1,Hyundai,Creta,override
+Hyundai,Hyundai Accent Gvs,1,Hyundai,Accent,override
+Hyundai,Hyundai Accent GLX,1,Hyundai,Accent,override
+Hyundai,Hyundai Accent GLS 1.6,1,Hyundai,Accent,override
+Hyundai,Hyundai Accent GLE CNG,1,Hyundai,Accent,override
+Hyundai,Hyundai Accent Executive LPG,1,Hyundai,Accent,override
+Hyundai,Hyundai Accent DLS,1,Hyundai,Accent,override
+Honda,Honda Mobilio V i VTEC,1,Honda,Mobilio,override
+Honda,Honda Mobilio S i VTEC,1,Honda,Mobilio,override
+Honda,Honda Jazz VX Diesel,1,Honda,Jazz,override
+Honda,Honda Jazz VX,1,Honda,Jazz,override
+Hyundai,Hyundai Creta 1.6 VTVT S,1,Hyundai,Creta,override
+Hyundai,Hyundai EON 1.0 Magna Plus Option O,1,Hyundai,Eon,override
+Hyundai,Hyundai Getz 1.3 GVS,1,Hyundai,Getz,override
+Hyundai,Hyundai EON D Lite Plus Option,1,Hyundai,Eon,override
+Hyundai,Hyundai Getz 1.1 GVS,1,Hyundai,Getz,override
+Hyundai,Hyundai Getz 1.1 GLE,1,Hyundai,Getz,override
+Hyundai,Hyundai Elite i20 Sportz Plus Dual Tone BSIV,1,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Petrol Magna Exective,1,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Petrol CVT Magna Executive,1,Hyundai,i20,override
+Hyundai,Hyundai Elite i20 Asta Option BSIV,1,Hyundai,i20,override
+Hyundai,Hyundai Elantra SX AT,1,Hyundai,Elantra,override
+Hyundai,Hyundai Elantra S,1,Hyundai,Elantra,override
+Hyundai,Hyundai Elantra GT,1,Hyundai,Elantra,override
+Hyundai,Hyundai Elantra GLS,1,Hyundai,Elantra,override
+Hyundai,Hyundai Elantra CRDi SX Option AT,1,Hyundai,Elantra,override
+Hyundai,Hyundai Elantra CRDi,1,Hyundai,Elantra,override
+Hyundai,Hyundai EON Magna Plus Option,1,Hyundai,Eon,override
+Hyundai,Hyundai EON LPG Era Plus,1,Hyundai,Eon,override
+Hyundai,Hyundai EON Era Plus Sports Edition,1,Hyundai,Eon,override
+Ford,Ford Figo Titanium Blu,1,Ford,Figo,override
+Ford,Ford Figo Aspire Titanium Diesel,1,Ford,Aspire,override
+Ford,Ford Figo Aspire Titanium,1,Ford,Aspire,override
+Chevrolet,Chevrolet Enjoy Petrol LS 7 Seater,1,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Sail Hatchback Diesel Base,1,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail Hatchback 1.2 LS,1,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail Hatchback 1.2,1,Chevrolet,Sail,override
+Chevrolet,Chevrolet Sail 1.2 LT ABS,1,Chevrolet,Sail,override
+Chevrolet,Chevrolet Optra Magnum 2.0 LT BS3,1,Chevrolet,Optra,override
+Chevrolet,Chevrolet Optra Magnum 2.0 LS BSIII,1,Chevrolet,Optra,override
+Chevrolet,Chevrolet Optra 1.6 LT Royale,1,Chevrolet,Optra,override
+Chevrolet,Chevrolet Enjoy 1.4 LTZ 7,1,Chevrolet,Enjoy,override
+Ford,Ford Figo Aspire 1.5 Ti-VCT Titanium,1,Ford,Aspire,override
+Chevrolet,Chevrolet Enjoy 1.3 TCDi LTZ 8,1,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Enjoy 1.3 TCDi LT 8,1,Chevrolet,Enjoy,override
+Chevrolet,Chevrolet Cruze LT,1,Chevrolet,Cruze,override
+Chevrolet,Chevrolet Captiva 2.2 LTZ AWD,1,Chevrolet,Captiva,override
+Chevrolet,Chevrolet Captiva 2.2 LT,1,Chevrolet,Captiva,override
+Chevrolet,Chevrolet Aveo U-VA 1.2 LT,1,Chevrolet,Aveo,override
+Chevrolet,Chevrolet Aveo 1.4 LS,1,Chevrolet,Aveo,override
+Chevrolet,Chevrolet Sail Hatchback Petrol,1,Chevrolet,Sail,override
+Chevrolet,Chevrolet Spark 1.0 E,1,Chevrolet,Spark,override
+Chevrolet,Chevrolet Spark 1.0 LT LPG,1,Chevrolet,Spark,override
+Chevrolet,Chevrolet Spark 1.0 PS LPG,1,Chevrolet,Spark,override
+Datsun,Datsun GO Anniversary Edition,1,Datsun,GO,override
+Datsun,Datsun GO A Petrol,1,Datsun,GO,override
+Datsun,Datsun GO A Option Petrol,1,Datsun,GO,override
+Datsun,Datsun GO A EPS,1,Datsun,GO,override
+Datsun,Datsun GO A,1,Datsun,GO,override
+Daewoo,Daewoo Matiz SS,1,,,unmatched
+Chevrolet,Chevrolet Trailblazer LTZ 4X2 AT,1,Chevrolet,Trailblazer,auto
+Chevrolet,Chevrolet Tavera Neo LT-L - 9 seats BSII,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera Neo LS B3 - 7(C) seats BSIII,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera Neo LS B3 - 10 seats BSIII,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera Neo 3 LT 9 Seats BSIV,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera Neo 3 LS 10 Str,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera LS B3 10 Seats BSII,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera B3 LT L1 10 Seats BSIII,1,Chevrolet,Tavera,override
+Chevrolet,Chevrolet Tavera B2 8 Seats BSIII,1,Chevrolet,Tavera,override
+BMW,BMW X7 xDrive 30d DPE,1,BMW,X7,auto
+BMW,BMW X6 xDrive30d,1,BMW,X6,auto
+BMW,BMW X5 3.0d,1,BMW,X5,override
+Audi,Audi Q7 3.0 TDI Quattro Premium Plus,1,Audi,Q7,override
+Audi,Audi Q5 35TDI Premium Plus,1,Audi,Q5,override
+Audi,Audi Q5 3.0 TDI Quattro,1,Audi,Q5,override
+Audi,Audi Q5 2.0 TDI,1,Audi,Q5,override
+Audi,Audi Q3 35 TDI Quattro Technology,1,Audi,Q3,override
+Audi,Audi Q3 35 TDI Quattro Premium Plus,1,Audi,Q3,override
+Audi,Audi A6 2.0 TDI Technology,1,Audi,A6,override
+Audi,Audi A6 2.0 TDI Premium Plus,1,Audi,A6,override
+Audi,Audi A6 2.0 TDI  Design Edition,1,Audi,A6,override
+Audi,Audi A6 2.0 TDI,1,Audi,A6,override
+Audi,Audi A4 2.0 TDI 177 Bhp Premium Plus,1,Audi,A4,override
+Audi,Audi A4 1.8 TFSI,1,Audi,A4,override
+Audi,Audi A3 40 TFSI Premium,1,Audi,A3,override
+Ashok,Ashok Leyland Stile LE,1,,,unmatched
+Ambassador,Ambassador Grand 2000 DSZ PW CL,1,,,unmatched
+Ambassador,Ambassador Grand 1500 DSZ BSIII,1,,,unmatched
+Audi,Audi Q5 45 TDI quattro Technology,1,Audi,Q5,override
+Audi,Audi Q7 35 TDI Quattro Premium,1,Audi,Q7,override
+BMW,BMW X3 xDrive20d,1,BMW,X3,override
+BMW,BMW 3 Series 320d,1,BMW,3-Series,override
+BMW,BMW X1 sDrive20i xLine,1,BMW,X1,override
+BMW,BMW X1 sDrive20d,1,BMW,X1,override
+BMW,BMW X1 sDrive 20d Sportline,1,BMW,X1,override
+BMW,BMW X1 sDrive 20D xLine,1,BMW,X1,override
+BMW,BMW 5 Series 530d,1,BMW,5 Series,override
+BMW,BMW 5 Series 525d,1,BMW,5 Series,override
+BMW,BMW 5 Series 523i,1,BMW,5 Series,override
+BMW,BMW 5 Series 520d Sedan,1,BMW,5 Series,override
+BMW,BMW 5 Series 520d,1,BMW,5 Series,override
+BMW,BMW 3 Series GT Luxury Line,1,BMW,3-Series,override
+BMW,BMW 3 Series 320d Prestige,1,BMW,3-Series,override
+BMW,BMW 3 Series 320d Luxury Plus,1,BMW,3-Series,override
+BMW,BMW 3 Series 320d Luxury Line Plus,1,BMW,3-Series,override
+BMW,BMW 3 Series 320d GT Luxury Line,1,BMW,3-Series,override
+BMW,BMW 3 Series 320d Corporate Edition,1,BMW,3-Series,override
+Datsun,Datsun GO D,1,Datsun,GO,override
+Datsun,Datsun GO D Petrol,1,Datsun,GO,override
+Datsun,Datsun GO Plus A Option Petrol,1,Datsun,GO+,override
+Ford,Ford Fiesta 1.5 TDCi Ambiente,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 TDCi EXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 Duratorq EXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 Duratec ZXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 Duratec EXI Limited Edition,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 Duratec EXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.4 Durasport EXI,1,Ford,Fiesta,override
+Ford,Ford Endeavour Hurricane Limited Edition,1,Ford,Endeavour,override
+Ford,Ford Endeavour 4x2 XLT Limited Edition,1,Ford,Endeavour,override
+Ford,Ford Endeavour 3.0L 4X2 AT,1,Ford,Endeavour,override
+Ford,Ford Ecosport Sports Diesel,1,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 Ti VCT MT Titanium,1,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 Ti VCT AT Titanium,1,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 Petrol Titanium,1,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 Petrol Ambiente,1,Ford,EcoSport,override
+Ford,Ford Ecosport 1.5 Diesel Trend,1,Ford,EcoSport,override
+Ford,Ford Fiesta 1.4 ZXi TDCi Limited Edition,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.5 TDCi Trend,1,Ford,Fiesta,override
+Ford,Ford EcoSport 1.5 Ti VCT MT Trend BSIV,1,Ford,EcoSport,override
+Ford,Ford Fiesta 1.6 Duratec EXI,1,Ford,Fiesta,override
+Ford,Ford Figo Aspire 1.5 TDCi Titanium Opt,1,Ford,Aspire,override
+Ford,Ford Figo Aspire 1.5 TDCi Sports Edition,1,Ford,Aspire,override
+Ford,Ford Figo Aspire 1.2 Ti-VCT Titanium Plus,1,Ford,Aspire,override
+Ford,Ford Figo Aspire 1.2 Ti-VCT Sports Edition,1,Ford,Aspire,override
+Ford,Ford Figo 1.5D Titanium Opt MT,1,Ford,Figo,override
+Ford,Ford Figo 1.5D Ambiente MT,1,Ford,Figo,override
+Ford,Ford Figo 1.5 Sports Edition MT,1,Ford,Figo,override
+Ford,Ford Figo 1.2P Trend MT,1,Ford,Figo,override
+Ford,Ford Figo 1.2P Titanium Plus MT,1,Ford,Figo,override
+Ford,Ford Figo 1.2P Sports Edition MT,1,Ford,Figo,override
+Ford,Ford Fiesta Titanium 1.5 TDCi,1,Ford,Fiesta,override
+Ford,Ford Fiesta Classic 1.6 SXI Duratec,1,Ford,Fiesta,override
+Ford,Ford Fiesta Classic 1.6 Duratec LXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta Classic 1.6 Duratec CLXI,1,Ford,Fiesta,override
+Ford,Ford Fiesta 1.6 ZXi ABS,1,Ford,Fiesta,override
+Ford,Ford EcoSport S Diesel BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Ti VCT AT Titanium BSIV,1,Ford,EcoSport,override
+Datsun,Datsun GO Plus D,1,Datsun,GO+,override
+Fiat,Fiat Linea Classic Plus 1.3 Multijet,1,Fiat,Linea,override
+Fiat,Fiat Linea 1.3 Multijet Active,1,Fiat,Linea,override
+Fiat,Fiat Grande Punto EVO 1.3 Active,1,Fiat,Punto,override
+Fiat,Fiat Grande Punto EVO 1.2 Dynamic,1,Fiat,Punto,override
+Fiat,Fiat Grande Punto 1.4 Emotion,1,Fiat,Punto,override
+Fiat,Fiat Grande Punto 1.3 Emotion Pack 90HP (Diesel),1,Fiat,Punto,override
+Fiat,Fiat Avventura Power Up 1.3 Active,1,Fiat,Avventura,auto
+Fiat,Fiat Avventura MULTIJET Emotion,1,Fiat,Avventura,auto
+Datsun,Datsun RediGO Sport,1,Datsun,redi-GO,override
+Datsun,Datsun RediGO SV 1.0,1,Datsun,redi-GO,override
+Datsun,Datsun RediGO AMT 1.0 S,1,Datsun,redi-GO,override
+Datsun,Datsun RediGO A,1,Datsun,redi-GO,override
+Datsun,Datsun GO T Option,1,Datsun,GO,override
+Datsun,Datsun GO Plus T VDC,1,Datsun,GO+,override
+Datsun,Datsun GO Plus T Option BSIV,1,Datsun,GO+,override
+Datsun,Datsun GO Plus D1,1,Datsun,GO+,override
+Fiat,Fiat Linea Classic 1.3 Multijet,1,Fiat,Linea,override
+Fiat,Fiat Palio 1.2,1,Fiat,Palio,auto
+Ford,Ford EcoSport 1.5 Ti VCT AT Titanium BE BSIV,1,Ford,EcoSport,override
+Fiat,Fiat Palio 1.2 ELX,1,Fiat,Palio,auto
+Ford,Ford EcoSport 1.5 TDCi Titanium Plus BE BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 TDCi Titanium BE BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 TDCi Signature BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 TDCi Platinum Edition BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 TDCi Ambiente BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Petrol Trend BSIV,1,Ford,EcoSport,override
+Ford,Ford EcoSport 1.5 Diesel Ambiente BSIV,1,Ford,EcoSport,override
+Ford,Ford Classic 1.6 Duratec LXI,1,Ford,Classic,auto
+Ford,Ford Classic 1.6 Duratec CLXI,1,Ford,Classic,auto
+Ford,Ford Classic 1.4 Duratorq Titanium,1,Ford,Classic,auto
+Ford,Ford Aspire Trend Diesel BSIV,1,Ford,Aspire,override
+Force,Force One EX,1,Force Motors,One,override
+Force,Force Gurkha Hard Top BS3 4WD,1,Force Motors,Gurkha,override
+Fiat,Fiat Punto Pure 1.2L FIRE,1,Fiat,Punto,override
+Fiat,Fiat Punto EVO 1.3 Emotion,1,Fiat,Punto,override
+Hyundai,Hyundai Verna 1.4 CX,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna 1.6 CRDi EX MT,1,Hyundai,Verna,override
+Mercedes-Benz,Mercedes-Benz B Class B180 Sports,1,Mercedes-Benz,B-Class,override
+Maruti,Maruti Ciaz Delta BSIV,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Dzire LXI,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Ciaz Zeta Diesel,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz Zeta,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz ZXi Plus,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz VXi Plus,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz VDi Option SHVS,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz RS ZXi Plus,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz Delta Automatic BSIV,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Esteem Vxi - BSIII,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Ciaz AT ZXi,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz 1.4 Sigma,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz 1.3 Zeta,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Ciaz 1.3 Sigma,1,Maruti Suzuki,Ciaz,auto
+Maruti,Maruti Celerio ZXI Optional MT BSIV,1,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Celerio ZXI MT BSIV,1,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Celerio ZXI AMT BSIV,1,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Dzire VXI,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Dzire ZXI,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Eeco 5 STR With AC Plus HTR CNG,1,Maruti Suzuki,Eeco,auto
+Maruti,Maruti Eeco CNG 5 Seater AC,1,Maruti Suzuki,Eeco,auto
+Maruti,Maruti Esteem Lxi,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Esteem LX,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Esteem DI,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Esteem AX,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Ertiga ZXI Plus Petrol,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga VXI Petrol,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga VXI Limited Edition,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga VXI CNG Limited Edition,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga SHVS LDI Option,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga LDI Option,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga LDI,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga BSIV LXI,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga 1.5 ZDI,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Ertiga 1.5 VDI,1,Maruti Suzuki,Ertiga,auto
+Maruti,Maruti Eeco Smiles 7 Seater Standard,1,Maruti Suzuki,Eeco,auto
+Maruti,Maruti Celerio X ZXI Option BSIV,1,Maruti Suzuki,Celerio X,auto
+Maruti,Maruti Celerio X ZXI,1,Maruti Suzuki,Celerio X,auto
+Maruti,Maruti Celerio X VXI Option BSIV,1,Maruti Suzuki,Celerio X,auto
+Maruti,Maruti Alto 800 CNG LXI Optional,1,Maruti Suzuki,Alto 800,override
+Maruti,Maruti 800 Uniq,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 EX BSII,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 EX 5 Speed,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 EX,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 DX BSII,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 DX 5 Speed,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 AC Uniq,1,Maruti Suzuki,800,override
+Maruti,Maruti 800 AC LPG,1,Maruti Suzuki,800,override
+Mahindra,Mahindra Xylo E8 BS4,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo E8 ABS Airbag BSIV,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo E6,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo E4 ABS BS IV,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo E4 8S,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo D2 Maxx,1,Mahindra,Xylo,override
+Mahindra,Mahindra Xylo D2 BS III,1,Mahindra,Xylo,override
+Maruti,Maruti A-Star Zxi,1,Maruti Suzuki,A-Star,auto
+Maruti,Maruti Alto 800 LX Optional,1,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Celerio X VXI,1,Maruti Suzuki,Celerio X,auto
+Maruti,Maruti Alto 800 LXI BSIV,1,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Celerio VXi AMT,1,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Celerio VXI MT BSIV,1,Maruti Suzuki,Celerio,auto
+Maruti,Maruti Baleno Zeta Diesel,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Zeta,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Sigma,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno LXI,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Delta Diesel,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Alpha Diesel,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Baleno Alpha CVT,1,Maruti Suzuki,Baleno,auto
+Maruti,Maruti Alto K10 VXI Optional,1,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Alto K10 LXI CNG,1,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Alto K10 LX,1,Maruti Suzuki,Alto K10,override
+Maruti,Maruti Alto AX,1,Maruti Suzuki,Alto,override
+Maruti,Maruti Alto 800 VXI Plus,1,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Alto 800 LXI CNG,1,Maruti Suzuki,Alto 800,override
+Maruti,Maruti Esteem Lxi - BSIII,1,Maruti Suzuki,Esteem,auto
+Maruti,Maruti Gypsy King ST BSIII,1,Maruti Suzuki,Gypsy,override
+Hyundai,Hyundai Verna CRDi 1.4 EX,1,Hyundai,Verna,override
+Maruti,Maruti Vitara Brezza LDi,1,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Wagon R AX BSIV,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R AX BSIII,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R AX,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R AMT VXI Plus,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Vitara Brezza ZXI Plus AT Dual Tone,1,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Vitara Brezza ZDi Plus AMT Dual Tone,1,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Vitara Brezza ZDi Plus AMT,1,Maruti Suzuki,Vitara Brezza,override
+Maruti,Maruti Swift ZXI BSIV,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Gypsy King Soft Top,1,Maruti Suzuki,Gypsy,override
+Maruti,Maruti Swift ZXI BSIII,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift ZXI 2018,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift VXI BSIII W/ ABS,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift Lxi BSIII,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift LXi BSIV,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift LDI SP Limited Edition,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift LDI Optional,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Wagon R AX Minor,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R CNG LXI,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R LXI CNG Optional,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R LXI DUO BS IV,1,Maruti Suzuki,Wagon R,override
+Mercedes-Benz,Mercedes-Benz B Class B180,1,Mercedes-Benz,B-Class,override
+Maruti,Maruti Zen VXi - BS III,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Zen Std,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Zen LX BSII,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Zen LX - BS III,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Zen Estilo VXI BSIII,1,Maruti Suzuki,Estilo,override
+Maruti,Maruti Zen Estilo Sports,1,Maruti Suzuki,Estilo,override
+Maruti,Maruti Zen Classic,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Zen Base,1,Maruti Suzuki,Zen,auto
+Maruti,Maruti Wagon R VXi BSII,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R VXI Plus Optional,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R VXI AMT Opt 1.2,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R VXI AMT 1.2,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R Stingray VXI Optional,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Wagon R PRIMEA,1,Maruti Suzuki,Wagon R,override
+Maruti,Maruti Swift LDI BSIV,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift Glam,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift Dzire Zdi BSIV,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti SX4 Green Vxi (CNG),1,Maruti Suzuki,SX4,auto
+Maruti,Maruti S-Cross 2017-2020 Sigma DDiS 200 SH,1,Maruti Suzuki,S-Cross,override
+Maruti,Maruti Ritz Genus VDi,1,Maruti Suzuki,Ritz,auto
+Maruti,Maruti Omni MPI STD BSIII 8-STR W/ IMMOBILISER,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni MPI CARGO BSIV,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni Limited Edition,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni CNG,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni BSIII 8-STR W/ IMMOBILISER,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni 5 Str STD,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Omni 5 Seater BSIV,1,Maruti Suzuki,Omni,override
+Maruti,Maruti Ignis Zeta AMT,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Ignis Zeta,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Ignis 1.3 Alpha,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Ignis 1.3 AMT Zeta,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Ignis 1.2 Alpha BSIV,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti Ignis 1.2 AMT Delta BSIV,1,Maruti Suzuki,Ignis,auto
+Maruti,Maruti S-Presso VXI AT,1,Maruti Suzuki,S-Presso,override
+Maruti,Maruti SX4 ZXI AT Leather,1,Maruti Suzuki,SX4,auto
+Maruti,Maruti Swift Dzire ZXI Plus BS IV,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti SX4 ZXI MT BSIV,1,Maruti Suzuki,SX4,auto
+Maruti,Maruti Swift Dzire ZXI Plus,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire VXI Optional,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire Ldi BSIV,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire LXi,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire LXI 1.2 BS IV,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire LDIX Limited Edition,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire AMT ZXI Plus,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift Dzire AMT ZXI,1,Maruti Suzuki,Dzire,override
+Maruti,Maruti Swift DDiS VDI,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift DDiS LDI,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift AMT ZXI BSIV,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift AMT VVT VXI,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift AMT VDI,1,Maruti Suzuki,Swift,auto
+Maruti,Maruti Swift 1.2 DLX (Only Delhi),1,Maruti Suzuki,Swift,auto
+Maruti,Maruti SX4 ZXI MT BSIV Leather,1,Maruti Suzuki,SX4,auto
+Mahindra,Mahindra XUV500 W7,1,Mahindra,XUV500,override
+Ambassador,Ambassador Classic 2000 DSZ AC PS,1,,,unmatched
+Mahindra,Mahindra XUV500 W4 1.99 mHawk,1,Mahindra,XUV500,override
+Jeep,Jeep Compass 1.4 Limited Plus BSIV,1,Jeep,Compass,override
+Land,Land Rover Discovery Sport TD4 SE,1,Land Rover,Discovery Sport,override
+Kia,Kia Seltos HTE D,1,Kia,Seltos,override
+Jeep,Jeep Wrangler 2016-2019 3.6 4X4,1,Jeep,Wrangler,override
+Jeep,Jeep Compass 2.0 Longitude BSIV,1,Jeep,Compass,override
+Jeep,Jeep Compass 2.0 Limited Plus 4X4,1,Jeep,Compass,override
+Jeep,Jeep Compass 2.0 Limited Option 4X4,1,Jeep,Compass,override
+Jeep,Jeep Compass 1.4 Sport,1,Jeep,Compass,override
+Jeep,Jeep Compass 1.4 Limited,1,Jeep,Compass,override
+Mahindra,Mahindra XUV500 W11 Option AWD,1,Mahindra,XUV500,override
+Jaguar,Jaguar XF Diesel,1,Jaguar,XF,override
+Jaguar,Jaguar XF 2.0 Diesel Portfolio,1,Jaguar,XF,override
+Isuzu,Isuzu MUX 2WD,1,Isuzu,MU-X,override
+Isuzu,Isuzu MU 7 AT Premium,1,Isuzu,MU7,auto
+Isuzu,Isuzu D-Max V-Cross Z Prestige,1,Isuzu,D-Max,override
+Isuzu,Isuzu D-Max V-Cross 4X4,1,Isuzu,D-Max,override
+Hyundai,Hyundai i20 Sportz Diesel,1,Hyundai,i20,override
+Land,Land Rover Freelander 2 TD4 HSE,1,Land Rover,Freelander 2,override
+Land,Land Rover Range Rover Evoque 2.2L Pure,1,Land Rover,Range Rover Evoque,override
+Lexus,Lexus ES 300h,1,Lexus,ES,override
+MG,MG Hector Sharp AT BSIV,1,MG,Hector,override
+Mahindra,Mahindra Bolero Pik-Up CBC 1.7T,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero PLUS AC BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero PLUS AC,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero LX Non AC BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero DI Non AC BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero DI AC BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero B2,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 Special Edition,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 Plus-AC Plus PS BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 Plus Non AC BSIV PS,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 DI BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 DI 4WD NON AC,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero 2011-2019 Camper,1,Mahindra,Bolero,override
+MG,MG Hector Smart DCT,1,MG,Hector,override
+MG,MG Hector Sharp DCT Dualtone,1,MG,Hector,override
+Hyundai,Hyundai i20 Sportz AT 1.4,1,Hyundai,i20,override
+Hyundai,Hyundai i20 Magna Optional 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 Era Diesel,1,Hyundai,i20,override
+Hyundai,Hyundai i10 Era 1.1 iTech SE,1,Hyundai,i10,override
+Hyundai,Hyundai Xcent 1.2 VTVT SX Option,1,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa SX Option AT,1,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa SX,1,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 Kappa AT S Option,1,Hyundai,Xcent,override
+Hyundai,Hyundai Xcent 1.2 CRDi SX Option,1,Hyundai,Xcent,override
+Hyundai,Hyundai Verna XXi ABS (Petrol),1,Hyundai,Verna,override
+Hyundai,Hyundai Verna Transform VTVT,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna Transform SX VGT CRDi AT BS III,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna SX Diesel,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna SX CRDi AT,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna SX,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna S,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna CRDi 1.6 SX,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna CRDi 1.6 EX,1,Hyundai,Verna,override
+Hyundai,Hyundai Verna CRDi 1.6 AT SX Plus,1,Hyundai,Verna,override
+Hyundai,Hyundai i10 Asta Sunroof AT,1,Hyundai,i10,override
+Hyundai,Hyundai i10 LPG,1,Hyundai,i10,override
+Hyundai,Hyundai i20 Era 1.4 CRDi,1,Hyundai,i20,override
+Hyundai,Hyundai i10 Sportz 1.1L LPG,1,Hyundai,i10,override
+Hyundai,Hyundai i20 Era 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 Diesel Asta Option,1,Hyundai,i20,override
+Hyundai,Hyundai i20 Asta Optional With Sunroof 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 Asta (o) 1.4 CRDi (Diesel),1,Hyundai,i20,override
+Hyundai,Hyundai i20 Active S Diesel,1,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active Base Petrol,1,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active 1.4 S,1,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active 1.2 SX with AVN,1,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 Active 1.2 SX Dual Tone,1,Hyundai,i20 Active,override
+Hyundai,Hyundai i20 2015-2017 Sportz Option 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 2015-2017 Asta Option 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 2015-2017 Asta 1.2,1,Hyundai,i20,override
+Hyundai,Hyundai i20 1.4 Asta Dual Tone,1,Hyundai,i20,override
+Hyundai,Hyundai i20 1.4 Asta (AT),1,Hyundai,i20,override
+Hyundai,Hyundai i10 Sportz 1.2 AT,1,Hyundai,i10,override
+Mahindra,Mahindra Bolero Pik-Up FB 1.7T,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero Power Plus LX,1,Mahindra,Bolero,override
+Mahindra,Mahindra Bolero VLX CRDe,1,Mahindra,Bolero,override
+Mahindra,Mahindra TUV 300 T6,1,Mahindra,TUV300,override
+Mahindra,Mahindra Ssangyong Rexton RX5,1,Mahindra,,unmatched
+Mahindra,Mahindra Scorpio VLX 4WD AIRBAG BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio VLX 4WD AIRBAG AT BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio VLX 2WD AT BSIII,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio VLX 2WD AIRBAG SE BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio VLX 2WD AIRBAG AT BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio SLX 4WD LE,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio SLX 4WD,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio SLE BS IV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S5 BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S4 9 Seater,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S11 4WD BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio S10 4WD,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio Intelli Hybrid S10 4WD,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio Intelli Hybrid S10,1,Mahindra,Scorpio,override
+Mahindra,Mahindra TUV 300 T10,1,Mahindra,TUV300,override
+Mahindra,Mahindra TUV 300 T6 Plus AMT,1,Mahindra,TUV300,override
+Mahindra,Mahindra Scorpio Gateway 2WD,1,Mahindra,Scorpio,override
+Mahindra,Mahindra TUV 300 mHAWK100 T8 AMT,1,Mahindra,TUV300,override
+Mahindra,Mahindra XUV500 W11 BSIV,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV500 W11 AT BSIV,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV500 W10 AWD,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV500 AT W9 2WD,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV500 AT W8 FWD,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV500 AT W6 1.99 mHawk,1,Mahindra,XUV500,override
+Mahindra,Mahindra XUV300 W8 Option Dual Tone Diesel BSIV,1,Mahindra,XUV300,override
+Mahindra,Mahindra XUV300 W8,1,Mahindra,XUV300,override
+Mahindra,Mahindra XUV300 W6 Diesel BSIV,1,Mahindra,XUV300,override
+Mahindra,Mahindra Willys CJ 3B 4X4,1,Mahindra,,unmatched
+Mahindra,Mahindra Verito Vibe 1.5 dCi D6,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Verito 1.6 G6 Executive BSIII,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Verito 1.5 D6 BSIV,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Verito 1.5 D6 BSIII,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Verito 1.4 G4 BSIV,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Scorpio Getaway,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2009-2014 VLX 2WD 7S BSIV,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Bolero XL 10 Seater Non AC,1,Mahindra,Bolero,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K8 5str AW,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K4,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON D75 K4,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON D75 K2,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 G80 K8,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 G80 K6 Plus,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 G80 K4 Plus 5Str,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 G80 K4 Plus,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 D75 K8 Dual Tone,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 D75 K6 Plus 5Str,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 D75 K6 Plus,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 D75 K4 Plus,1,Mahindra,KUV100,override
+Mahindra,Mahindra Jeep MM 550 XDB,1,Mahindra,Jeep,auto
+Mahindra,Mahindra Jeep Classic,1,Mahindra,Jeep,auto
+Mahindra,Mahindra Ingenio CRDe,1,Mahindra,,unmatched
+Mahindra,Mahindra Bolero ZLX BSIII,1,Mahindra,Bolero,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K4 Plus 5str,1,Mahindra,KUV100,override
+Mahindra,Mahindra KUV 100 mFALCON G80 K8 Dual Tone,1,Mahindra,KUV100,override
+Mahindra,Mahindra Scorpio 2009-2014 EX 9S BSIII,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Logan Diesel 1.5 DLE,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Scorpio 2009-2014 EX 2WD 9S,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2009-2014 EX 2WD 7S,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2006-2009 VLX 2WD 7 Str BSIII,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2.6 SPORTZ CRDe,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 2.6 CRDe SLE,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 1.99 S8,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Scorpio 1.99 S4 Plus,1,Mahindra,Scorpio,override
+Mahindra,Mahindra Renault Logan 1.5 Diesel DLSX,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Renault Logan 1.5 DLX Diesel,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Renault Logan 1.4 GLX Petrol,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Quanto C2,1,Mahindra,Quanto,override
+Mahindra,Mahindra Marshal DI,1,Mahindra,Marshal,auto
+Mahindra,Mahindra Marazzo M6,1,Mahindra,Marazzo,override
+Mahindra,Mahindra Logan Petrol 1.4 GLE,1,Mahindra,Logan/Verito,override
+Mahindra,Mahindra Logan Diesel 1.5 DLS,1,Mahindra,Logan/Verito,override
+Volvo,Volvo XC90 T8 Excellence BSIV,1,Volvo,XC90,override

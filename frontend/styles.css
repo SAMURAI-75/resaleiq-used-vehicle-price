@@ -242,3 +242,14 @@ b { font-weight: 600; }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- engine badge ---------- */
+.engine-hint { font-size: 12px; color: var(--faint); min-height: 16px; }
+.engine-hint b { color: var(--muted); font-weight: 600; }
+.engine-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; padding: 5px 11px 5px 9px;
+  border-radius: 980px; margin-bottom: 14px; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); }
+.engine-badge.dep { background: color-mix(in srgb, var(--ev) 14%, transparent); color: var(--ev); }
+.engine-badge i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 0 currentColor; animation: pulse 1.6s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 60%, transparent); } 100% { box-shadow: 0 0 0 8px transparent; } }
+.engine-box { margin-top: 16px; padding: 14px 16px; border-radius: 14px; background: var(--bg-alt); font-size: 14px; color: var(--muted); }
+.engine-box b { color: var(--text); }

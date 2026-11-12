@@ -7,9 +7,15 @@ An Apple-style web app that predicts the fair listing price of a used **petrol t
 
 | Model (test set, 20% hold-out) | Two-wheelers R² | Two-wheelers MAE | Cars R² | Cars MAE |
 |---|---|---|---|---|
-| Linear Regression | 0.865 | ₹12,816 | 0.915 | ₹74,699 |
-| Random Forest | 0.894 | ₹11,767 | 0.917 | ₹76,701 |
-| **XGBoost** | **0.932** | **₹10,134** | **0.925** | **₹69,849** |
+| Linear Regression | 0.621 | ₹13,979 | 0.892 | ₹73,676 |
+| Random Forest | 0.952 | ₹10,011 | 0.896 | ₹69,827 |
+| **XGBoost** (served) | 0.946 | **₹9,632** | **0.917** | **₹64,620** |
+
+**Verified vehicle list:** 541 two-wheeler models (59 brands) and 345 car models (29 brands), official names and 2026 prices scraped from BikeWale / CarWale (`backend/scrape_catalog.py`, `backend/build_catalog.py`). Every Kaggle listing name is mapped to an official model name (98.4% of bike rows, 99.7% of car rows).
+
+**Two pricing engines, chosen per model and shown on every result:**
+- **XGBoost (live ML)** — models with ≥3 listings in the Kaggle training data. Runs on every request (~5–20 ms); the "Why" factors are exact Tree SHAP values from that same run.
+- **Depreciation model** — EVs, scooters and anything launched after 2021 (e.g. Pulsar NS400Z, Activa, Ola S1). Official 2026 new price × measured yearly loss (Module 6 for two-wheelers; a same-model fit on 2,720 CarDekho listings for cars, 11.4%/yr).
 
 ## Run it (2 commands)
 ```bash
@@ -18,9 +24,9 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 ```bash
 .venv/bin/uvicorn backend.app.main:app --port 8000
 ```
-Open http://localhost:8000. Models are already trained in `backend/models/`. To retrain (≈35 s; downloads Kaggle data with `kagglehub`):
+Open http://localhost:8000. Models are already trained in `backend/models/`. To rebuild everything (scrape ≈2 min, train ≈35 s):
 ```bash
-.venv/bin/python backend/train.py
+.venv/bin/python backend/scrape_catalog.py && .venv/bin/python backend/build_catalog.py && .venv/bin/python backend/train.py
 ```
 macOS note: XGBoost needs OpenMP — `brew install libomp`.
 

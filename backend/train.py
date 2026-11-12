@@ -30,6 +30,7 @@ from xgboost import XGBRegressor
 
 ROOT = Path(__file__).resolve().parent
 MODELS = ROOT / "models"
+CATALOG = ROOT / "data" / "catalog"
 FIGS = ROOT.parent / "docs" / "figures"
 MODELS.mkdir(exist_ok=True)
 FIGS.mkdir(parents=True, exist_ok=True)
@@ -108,11 +109,17 @@ def load_bikes():
     n_dup = n0 - len(df)
     df["state"] = df["city"].map(CITY_STATE).fillna("Other")
     df["owners"] = df["owner"].map(OWNER_MAP).fillna(1).astype(int)
-    df["family"] = [bike_family(n, b) for n, b in zip(df.bike_name, df.brand)]
-    # rare families -> brand-level "Other"
-    fc = df.family.value_counts()
-    df.loc[df.family.map(fc) < 3, "family"] = "Other"
-    df["model_key"] = df.brand + " | " + df.family
+    # official BikeWale model name (build_catalog.py); unmatched names keep a rough family (never shown in the UI)
+    df["bike_name"] = df.bike_name.str.replace("\u200e", "").str.replace(r"\s+", " ", regex=True).str.strip()
+    nm = pd.read_csv(CATALOG / "name_map_bike.csv").set_index(["kaggle_brand", "kaggle_name"])
+    keys = list(zip(df.brand, df.bike_name))
+    off_brand = [nm.brand.get(k) if k in nm.index else None for k in keys]
+    off_model = [nm.official_model.get(k) if k in nm.index else None for k in keys]
+    df["official"] = [m if isinstance(m, str) else None for m in off_model]
+    df["brand"] = [ob if isinstance(ob, str) and isinstance(om, str) else b
+                   for ob, om, b in zip(off_brand, df.official, df.brand)]
+    df["model_key"] = [f"{b} | {m}" if m else f"{b} | ~{bike_family(n, b)}"
+                       for b, m, n in zip(df.brand, df.official, df.bike_name)]
     df = df[(df.kms_driven >= 100) & (df.kms_driven <= 150_000)]
     n_km = len(df)
     df["age_grp"] = age_group(df.age)
@@ -136,8 +143,11 @@ def load_cars():
     df = df.drop_duplicates()
     n_dup = n0 - len(df)
     df = df[df.owner != "Test Drive Car"].copy()
-    df["brand"] = df.name.str.split().str[0]
-    df["model"] = df.name.str.split().str[1]
+    nm = pd.read_csv(CATALOG / "name_map_car.csv").set_index("kaggle_name")
+    kb = df.name.str.split().str[0]
+    df["brand"] = [nm.brand.get(n) if isinstance(nm.brand.get(n), str) else k for n, k in zip(df.name, kb)]
+    df["official"] = [nm.official_model.get(n) if isinstance(nm.official_model.get(n), str) else None for n in df.name]
+    df["model"] = [o if o else f"~{n.split()[1] if len(n.split()) > 1 else n}" for o, n in zip(df.official, df.name)]
     df["model_key"] = df.brand + " | " + df.model
     df["engine_cc"] = num(df.engine)
     df["power_bhp"] = num(df.max_power)
@@ -256,33 +266,45 @@ def mode(s):
     return s.mode().iat[0] if not s.mode().empty else None
 
 
+def car_value_curve(cars):
+    """Value kept vs CarWale 2026 ex-showroom, fitted on cars that are still on sale.
+
+    log(price_2026 / ex_showroom_2026) = a + b*age + c*log1p(km)   ->  start, yearly loss, km effect
+    Used only for car models that are not in the training data (e.g. launched after 2020).
+    """
+    cat = json.loads((CATALOG / "catalog.json").read_text())["car"]
+    newp = {(b, m["model"]): m["new_price"] for b, ms in cat.items() for m in ms if m.get("new_price")}
+    d = cars[[(b, m) in newp for b, m in zip(cars.brand, cars.official)]].copy()
+    d["ratio"] = d.price * GROWTH ** (2026 - CAR_REF_YEAR) / [newp[(b, m)] for b, m in zip(d.brand, d.official)]
+    d = d[(d.ratio > 0.05) & (d.ratio < 1.5)]
+    # within-model fit (model fixed effects): the base-variant "onwards" price cancels out,
+    # so only the slope (how fast the same model loses value) is identified.
+    d["lr"] = np.log(d.ratio); d["lkm"] = np.log1p(d.km_driven)
+    g = d.groupby("model_key")
+    Y = d.lr - g.lr.transform("mean")
+    X = np.c_[d.age - g.age.transform("mean"), d.lkm - g.lkm.transform("mean")]
+    coef, *_ = np.linalg.lstsq(X, Y, rcond=None)
+    typical_km = float(np.median(d.km_driven / d.age.clip(lower=1)))
+    return {"b_age": float(coef[0]), "c_logkm": float(coef[1]), "rows": int(len(d)), "models": int(g.ngroups),
+            "yearly_loss": float(1 - np.exp(coef[0])), "start": 0.90, "typical_km_per_year": typical_km}
+
+
 def build_meta(bikes, cars):
-    bike_brands = {}
-    for (brand, fam), g in bikes.groupby(["brand", "family"]):
-        bike_brands.setdefault(brand, []).append({
-            "model": fam, "key": f"{brand} | {fam}", "cc": float(g.power.median()), "n": int(len(g))})
-    for b in bike_brands:
-        bike_brands[b].sort(key=lambda r: -r["n"])
-    car_brands = {}
-    for (brand, model), g in cars.groupby(["brand", "model"]):
-        car_brands.setdefault(brand, []).append({
-            "model": model, "key": f"{brand} | {model}", "n": int(len(g)),
-            "cc": float(g.engine_cc.median()), "power": float(g.power_bhp.median()),
-            "seats": float(g.seats.median()), "mileage": float(g.mileage_kmpl.median()),
-            "fuel": mode(g.fuel), "transmission": mode(g.transmission)})
-    for b in car_brands:
-        car_brands[b].sort(key=lambda r: -r["n"])
-    # median price per model key x age (for "similar listings")
+    """Per trained model: typical specs (used to fill the form) + "similar listings" medians.
+    The dropdown itself comes from the verified catalog (data/catalog/catalog.json)."""
+    bike_tr = {k: {"cc": float(g.power.median()), "n": int(len(g))}
+               for k, g in bikes[bikes.official.notna()].groupby("model_key")}
+    car_tr = {k: {"cc": float(g.engine_cc.median()), "power": float(g.power_bhp.median()),
+                  "seats": float(g.seats.median()), "mileage": float(g.mileage_kmpl.median()),
+                  "fuel": mode(g.fuel), "transmission": mode(g.transmission), "n": int(len(g))}
+              for k, g in cars[cars.official.notna()].groupby("model_key")}
     bike_sim = bikes.groupby(["model_key", "age"]).price.agg(["median", "count"]).reset_index()
     car_sim = cars.groupby(["model_key", "age"]).price.agg(["median", "count"]).reset_index()
     return {
-        "bike": {"brands": dict(sorted(bike_brands.items(), key=lambda kv: -sum(r["n"] for r in kv[1]))),
-                 "states": sorted(s for s in bikes.state.unique() if s != "Other") + ["Other"],
+        "bike": {"trained": bike_tr, "states": sorted(s for s in bikes.state.unique() if s != "Other") + ["Other"],
                  "ref_year": BIKE_REF_YEAR, "rows": int(len(bikes)),
                  "similar": {f"{r.model_key}|{int(r.age)}": [float(r["median"]), int(r["count"])] for _, r in bike_sim.iterrows()}},
-        "car": {"brands": dict(sorted(car_brands.items(), key=lambda kv: -sum(r["n"] for r in kv[1]))),
-                "fuels": sorted(cars.fuel.unique()), "sellers": sorted(cars.seller_type.unique()),
-                "ref_year": CAR_REF_YEAR, "rows": int(len(cars)),
+        "car": {"trained": car_tr, "fuels": sorted(cars.fuel.unique()), "ref_year": CAR_REF_YEAR, "rows": int(len(cars)),
                 "similar": {f"{r.model_key}|{int(r.age)}": [float(r["median"]), int(r["count"])] for _, r in car_sim.iterrows()}},
         "growth": GROWTH,
     }
@@ -297,6 +319,10 @@ def main():
                "car": {"models": cm, "train": ctr, "test": cte, "cleaning": clog}}
     (MODELS / "metrics.json").write_text(json.dumps(metrics, indent=2))
     (MODELS / "meta.json").write_text(json.dumps(build_meta(bikes, cars)))
+    curve = car_value_curve(cars)
+    print("  car value curve:", {k: round(v, 4) for k, v in curve.items()})
+    meta = json.loads((MODELS / "meta.json").read_text()); meta["car_curve"] = curve
+    (MODELS / "meta.json").write_text(json.dumps(meta))
     print("Saved models, meta.json, metrics.json and figures.")
 
 

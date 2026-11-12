@@ -1,0 +1,9591 @@
+{
+ "bike": {
+  "Royal Enfield": [
+   {
+    "model": "Bear 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 648.0,
+    "bhp": 46.8,
+    "new_price": 378208,
+    "on_sale": true,
+    "launched": "11/05/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Bullet 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 20.2,
+    "new_price": 166981,
+    "on_sale": true,
+    "launched": "09/01/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 143
+   },
+   {
+    "model": "Bullet 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 647.95,
+    "bhp": 46.39,
+    "new_price": 364856,
+    "on_sale": true,
+    "launched": "05/28/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Classic 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 20.2,
+    "new_price": 188934,
+    "on_sale": true,
+    "launched": "07/16/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 400
+   },
+   {
+    "model": "Classic 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 647.95,
+    "bhp": 46.39,
+    "new_price": 367592,
+    "on_sale": true,
+    "launched": "03/27/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Continental GT 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 648.0,
+    "bhp": 47.0,
+    "new_price": 358427,
+    "on_sale": true,
+    "launched": "08/14/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Flying Flea C6",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 15.4,
+    "new_price": 279000,
+    "on_sale": true,
+    "launched": "04/09/2026",
+    "range_km": 154.0,
+    "kwh_est": 4.4,
+    "train_rows": 0
+   },
+   {
+    "model": "Goan Classic 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 20.2,
+    "new_price": 227114,
+    "on_sale": true,
+    "launched": "11/23/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Guerrilla 450",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 452.0,
+    "bhp": 39.47,
+    "new_price": 251063,
+    "on_sale": true,
+    "launched": "03/27/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Himalayan 440",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 443.0,
+    "bhp": 25.4,
+    "new_price": 229900,
+    "on_sale": true,
+    "launched": "09/04/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Himalayan 450",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 451.65,
+    "bhp": 39.47,
+    "new_price": 308029,
+    "on_sale": true,
+    "launched": "11/24/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hunter 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.34,
+    "bhp": 20.2,
+    "new_price": 137640,
+    "on_sale": true,
+    "launched": "04/26/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Interceptor 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 648.0,
+    "bhp": 47.0,
+    "new_price": 337909,
+    "on_sale": true,
+    "launched": "11/14/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 9
+   },
+   {
+    "model": "Meteor 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.34,
+    "bhp": 20.2,
+    "new_price": 201052,
+    "on_sale": true,
+    "launched": "09/15/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scram 440",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 443.0,
+    "bhp": 25.4,
+    "new_price": 224381,
+    "on_sale": true,
+    "launched": "01/22/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Shotgun 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 648.0,
+    "bhp": 46.39,
+    "new_price": 401002,
+    "on_sale": true,
+    "launched": "01/15/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Super Meteor 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 648.0,
+    "bhp": 46.3,
+    "new_price": 405988,
+    "on_sale": true,
+    "launched": "01/16/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Bullet 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 43
+   },
+   {
+    "model": "Classic 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 164
+   },
+   {
+    "model": "Continental GT",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 18
+   },
+   {
+    "model": "Electra",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 167
+   },
+   {
+    "model": "Himalayan",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 52
+   },
+   {
+    "model": "Thunderbird 350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 243
+   },
+   {
+    "model": "Thunderbird 350X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 19
+   },
+   {
+    "model": "Thunderbird 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 82
+   },
+   {
+    "model": "Thunderbird 500X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   }
+  ],
+  "TVS": [
+   {
+    "model": "Apache RR 310",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 312.2,
+    "bhp": 37.54,
+    "new_price": 266179,
+    "on_sale": true,
+    "launched": "09/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 24
+   },
+   {
+    "model": "Apache RTR 160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 159.7,
+    "bhp": 15.82,
+    "new_price": 110528,
+    "on_sale": true,
+    "launched": "06/01/2007",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 113
+   },
+   {
+    "model": "Apache RTR 160 4V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 159.7,
+    "bhp": 17.31,
+    "new_price": 116488,
+    "on_sale": true,
+    "launched": "03/14/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 36
+   },
+   {
+    "model": "Apache RTR 180",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 177.4,
+    "bhp": 16.78,
+    "new_price": 128078,
+    "on_sale": true,
+    "launched": "03/01/2011",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 69
+   },
+   {
+    "model": "Apache RTR 200 4V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 197.75,
+    "bhp": 20.54,
+    "new_price": 138404,
+    "on_sale": true,
+    "launched": "01/20/2016",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 93
+   },
+   {
+    "model": "Apache RTR 310",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 312.12,
+    "bhp": 35.08,
+    "new_price": 229990,
+    "on_sale": true,
+    "launched": "07/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Apache RTX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 299.0,
+    "bhp": 35.5,
+    "new_price": 199496,
+    "on_sale": true,
+    "launched": "10/15/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Jupiter",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 113.3,
+    "bhp": 7.91,
+    "new_price": 77349,
+    "on_sale": true,
+    "launched": "08/22/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Jupiter 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.8,
+    "bhp": 8.04,
+    "new_price": 87854,
+    "on_sale": true,
+    "launched": "10/07/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ntorq 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.8,
+    "bhp": 9.25,
+    "new_price": 91060,
+    "on_sale": true,
+    "launched": "02/05/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ntorq 150",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 149.7,
+    "bhp": 13.0,
+    "new_price": 112931,
+    "on_sale": true,
+    "launched": "09/04/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Orbiter",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 2.5,
+    "new_price": 102461,
+    "on_sale": true,
+    "launched": "08/28/2025",
+    "range_km": 86.0,
+    "kwh_est": 2.5,
+    "train_rows": 0
+   },
+   {
+    "model": "Radeon",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 109.7,
+    "bhp": 8.08,
+    "new_price": 73709,
+    "on_sale": true,
+    "launched": "08/23/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 3
+   },
+   {
+    "model": "Raider 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.8,
+    "bhp": 11.2,
+    "new_price": 86939,
+    "on_sale": true,
+    "launched": "09/16/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ronin",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 225.9,
+    "bhp": 20.1,
+    "new_price": 130809,
+    "on_sale": true,
+    "launched": "07/06/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Sport",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 109.7,
+    "bhp": 8.08,
+    "new_price": 65707,
+    "on_sale": true,
+    "launched": "03/01/2010",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 55
+   },
+   {
+    "model": "Star City Plus",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 109.7,
+    "bhp": 8.08,
+    "new_price": 72016,
+    "on_sale": true,
+    "launched": "05/06/2014",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 54
+   },
+   {
+    "model": "X",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 11.0,
+    "new_price": 264842,
+    "on_sale": true,
+    "launched": "08/23/2023",
+    "range_km": 140.0,
+    "kwh_est": 4.0,
+    "train_rows": 0
+   },
+   {
+    "model": "XL 100 Comfort",
+    "type": "moped",
+    "fuel": "petrol",
+    "cc": 99.7,
+    "bhp": 4.29,
+    "new_price": 60348,
+    "on_sale": true,
+    "launched": "01/25/2016",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "XL 100 Heavy Duty",
+    "type": "moped",
+    "fuel": "petrol",
+    "cc": 99.7,
+    "bhp": 4.3,
+    "new_price": 47932,
+    "on_sale": true,
+    "launched": "04/30/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Zest 110",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 109.7,
+    "bhp": 7.71,
+    "new_price": 70570,
+    "on_sale": true,
+    "launched": "08/20/2014",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "iQube",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 3.68,
+    "new_price": 119547,
+    "on_sale": true,
+    "launched": "01/25/2020",
+    "range_km": 114.0,
+    "kwh_est": 3.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Apache",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 10
+   },
+   {
+    "model": "Flame",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Jive",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Phoenix",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Victor",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 11
+   }
+  ],
+  "Honda": [
+   {
+    "model": "ADV 160",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 156.9,
+    "bhp": 16.0,
+    "new_price": 170000,
+    "on_sale": true,
+    "launched": "08/25/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Activa",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 109.51,
+    "bhp": 7.88,
+    "new_price": 78947,
+    "on_sale": true,
+    "launched": "01/15/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Activa 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 123.92,
+    "bhp": 8.3,
+    "new_price": 92794,
+    "on_sale": true,
+    "launched": "07/03/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Activa e",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 6.0,
+    "new_price": 120133,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": 102.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   },
+   {
+    "model": "CB 125 Hornet",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 123.94,
+    "bhp": 10.99,
+    "new_price": 115324,
+    "on_sale": true,
+    "launched": "08/01/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB1000 Hornet",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 155.0,
+    "new_price": 1329390,
+    "on_sale": true,
+    "launched": "05/23/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.36,
+    "bhp": 20.78,
+    "new_price": 195608,
+    "on_sale": true,
+    "launched": "03/10/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB350C",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.36,
+    "bhp": 20.7,
+    "new_price": 200300,
+    "on_sale": true,
+    "launched": "09/26/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB350RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.36,
+    "bhp": 20.78,
+    "new_price": 199900,
+    "on_sale": true,
+    "launched": "03/10/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 501.0,
+    "bhp": 26.6,
+    "new_price": 275000,
+    "on_sale": true,
+    "launched": "09/21/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB750 Hornet",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 755.0,
+    "bhp": 90.5,
+    "new_price": 1049000,
+    "on_sale": true,
+    "launched": "06/12/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CBR1000RR-R Fireblade",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1000.0,
+    "bhp": 214.56,
+    "new_price": 3350000,
+    "on_sale": true,
+    "launched": "06/12/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Dio",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 109.51,
+    "bhp": 7.75,
+    "new_price": 75080,
+    "on_sale": true,
+    "launched": "01/01/2012",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Dio 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 123.92,
+    "bhp": 8.19,
+    "new_price": 94277,
+    "on_sale": true,
+    "launched": "07/13/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Goldwing",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1833.0,
+    "bhp": 124.7,
+    "new_price": 4430000,
+    "on_sale": true,
+    "launched": "06/12/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hornet 2.0",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 184.4,
+    "bhp": 17.03,
+    "new_price": 150312,
+    "on_sale": true,
+    "launched": "08/27/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Livo",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 109.51,
+    "bhp": 8.67,
+    "new_price": 81028,
+    "on_sale": true,
+    "launched": "07/10/2015",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 36
+   },
+   {
+    "model": "NX200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 184.4,
+    "bhp": 16.76,
+    "new_price": 161301,
+    "on_sale": true,
+    "launched": "02/13/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "NX500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 471.0,
+    "bhp": 46.9,
+    "new_price": 743900,
+    "on_sale": true,
+    "launched": "05/12/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "QC1",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 90708,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": 80.0,
+    "kwh_est": 2.3,
+    "train_rows": 0
+   },
+   {
+    "model": "QC3",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 135000,
+    "on_sale": true,
+    "launched": "09/22/2026",
+    "range_km": 145.0,
+    "kwh_est": 4.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Rebel 300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 286.0,
+    "bhp": 30.0,
+    "new_price": 222000,
+    "on_sale": true,
+    "launched": "08/25/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SP 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 123.94,
+    "bhp": 10.72,
+    "new_price": 91374,
+    "on_sale": true,
+    "launched": "11/14/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 15
+   },
+   {
+    "model": "SP160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 162.71,
+    "bhp": 13.27,
+    "new_price": 118563,
+    "on_sale": true,
+    "launched": "08/08/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Shine",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 123.94,
+    "bhp": 10.63,
+    "new_price": 84366,
+    "on_sale": true,
+    "launched": "07/01/2012",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 147
+   },
+   {
+    "model": "Shine 100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 98.98,
+    "bhp": 7.28,
+    "new_price": 65970,
+    "on_sale": true,
+    "launched": "03/15/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Transalp XL750",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 755.0,
+    "bhp": 90.5,
+    "new_price": 1320000,
+    "on_sale": true,
+    "launched": "06/12/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Unicorn",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 162.71,
+    "bhp": 13.0,
+    "new_price": 115835,
+    "on_sale": true,
+    "launched": "02/27/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "XR300 Rally",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 293.5,
+    "bhp": null,
+    "new_price": 199900,
+    "on_sale": true,
+    "launched": "10/05/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "XR300L",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 293.5,
+    "bhp": null,
+    "new_price": 183000,
+    "on_sale": true,
+    "launched": "10/05/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CB Hornet 160R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 65
+   },
+   {
+    "model": "CB Trigger",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 49
+   },
+   {
+    "model": "CB Twister",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 30
+   },
+   {
+    "model": "CB Unicorn 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 63
+   },
+   {
+    "model": "CB Unicorn 160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 31
+   },
+   {
+    "model": "CBF Stunner",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 58
+   },
+   {
+    "model": "CBR150 R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 53
+   },
+   {
+    "model": "CBR250R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 57
+   },
+   {
+    "model": "CD 110 Dream",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 13
+   },
+   {
+    "model": "Dream Neo",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   },
+   {
+    "model": "Dream Yuga",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 40
+   },
+   {
+    "model": "X-Blade",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   }
+  ],
+  "Bajaj": [
+   {
+    "model": "Avenger Cruise 220",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 220.0,
+    "bhp": 18.76,
+    "new_price": 135145,
+    "on_sale": true,
+    "launched": "10/27/2015",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 62
+   },
+   {
+    "model": "Avenger Street 220",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 220.0,
+    "bhp": 18.76,
+    "new_price": 135085,
+    "on_sale": true,
+    "launched": "06/01/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 69
+   },
+   {
+    "model": "CT 110",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 115.45,
+    "bhp": 8.48,
+    "new_price": 74859,
+    "on_sale": true,
+    "launched": "07/09/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Chetak",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 3.1,
+    "new_price": 120237,
+    "on_sale": true,
+    "launched": "12/20/2024",
+    "range_km": 131.0,
+    "kwh_est": 3.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Chetak C25",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 104600,
+    "on_sale": true,
+    "launched": "01/14/2026",
+    "range_km": 113.0,
+    "kwh_est": 3.2,
+    "train_rows": 0
+   },
+   {
+    "model": "Dominar 250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 248.8,
+    "bhp": 26.63,
+    "new_price": 186839,
+    "on_sale": true,
+    "launched": "03/11/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Dominar 400",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.13,
+    "bhp": 40.04,
+    "new_price": 209531,
+    "on_sale": true,
+    "launched": "04/13/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 90
+   },
+   {
+    "model": "Freedom",
+    "type": "motorcycle",
+    "fuel": "cng",
+    "cc": 125.0,
+    "bhp": 9.3,
+    "new_price": 104243,
+    "on_sale": true,
+    "launched": "07/05/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Platina 100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 99.59,
+    "bhp": 7.79,
+    "new_price": 71033,
+    "on_sale": true,
+    "launched": "04/01/2006",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 105
+   },
+   {
+    "model": "Platina 110",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 115.45,
+    "bhp": 8.48,
+    "new_price": 75770,
+    "on_sale": true,
+    "launched": "06/04/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.58,
+    "bhp": 11.8,
+    "new_price": 94490,
+    "on_sale": true,
+    "launched": "08/24/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Pulsar 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.5,
+    "bhp": 14.0,
+    "new_price": 116355,
+    "on_sale": true,
+    "launched": "08/24/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 270
+   },
+   {
+    "model": "Pulsar 180",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 178.61,
+    "bhp": 16.76,
+    "new_price": 122911,
+    "on_sale": true,
+    "launched": "04/09/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 100
+   },
+   {
+    "model": "Pulsar 220F",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 220.0,
+    "bhp": 20.11,
+    "new_price": 140602,
+    "on_sale": true,
+    "launched": "06/18/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 130
+   },
+   {
+    "model": "Pulsar N125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.58,
+    "bhp": 11.83,
+    "new_price": 93694,
+    "on_sale": true,
+    "launched": "10/21/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar N160 2V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 164.82,
+    "bhp": 15.68,
+    "new_price": 123007,
+    "on_sale": true,
+    "launched": "06/22/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar N160 4V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 164.5,
+    "bhp": 18.24,
+    "new_price": 135483,
+    "on_sale": true,
+    "launched": "08/07/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar N250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 24.1,
+    "new_price": 145485,
+    "on_sale": true,
+    "launched": "10/28/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar N250 SS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 24.66,
+    "new_price": 159406,
+    "on_sale": true,
+    "launched": "10/21/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar NS125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 11.8,
+    "new_price": 94043,
+    "on_sale": true,
+    "launched": "04/20/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar NS160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 160.3,
+    "bhp": 17.03,
+    "new_price": 126804,
+    "on_sale": true,
+    "launched": "06/27/2017",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 23
+   },
+   {
+    "model": "Pulsar NS200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 199.5,
+    "bhp": 24.13,
+    "new_price": 139314,
+    "on_sale": true,
+    "launched": "01/01/2012",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 112
+   },
+   {
+    "model": "Pulsar NS400Z",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.13,
+    "bhp": 40.04,
+    "new_price": 191358,
+    "on_sale": true,
+    "launched": "04/21/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pulsar RS 200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 199.5,
+    "bhp": 24.1,
+    "new_price": 181960,
+    "on_sale": true,
+    "launched": "03/26/2015",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 158
+   },
+   {
+    "model": "Avenger",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 175
+   },
+   {
+    "model": "Avenger Street 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 109
+   },
+   {
+    "model": "Avenger Street 160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Avenger Street 180",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   },
+   {
+    "model": "Boxer",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "CT 100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 86
+   },
+   {
+    "model": "Discover 100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 93
+   },
+   {
+    "model": "Discover 110",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Discover 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 125
+   },
+   {
+    "model": "Discover 135",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 37
+   },
+   {
+    "model": "Discover 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 39
+   },
+   {
+    "model": "Pulsar 135 LS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 62
+   },
+   {
+    "model": "Pulsar 200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Pulsar AS150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 31
+   },
+   {
+    "model": "Pulsar AS200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 21
+   },
+   {
+    "model": "V12",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 13
+   },
+   {
+    "model": "V15",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 130
+   },
+   {
+    "model": "Xcd",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 6
+   }
+  ],
+  "Hero": [
+   {
+    "model": "Destini 110",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 110.9,
+    "bhp": 8.07,
+    "new_price": 76400,
+    "on_sale": true,
+    "launched": "09/23/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Destini 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.6,
+    "bhp": 9.0,
+    "new_price": 82424,
+    "on_sale": true,
+    "launched": "01/14/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Destini Prime",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.6,
+    "bhp": 9.0,
+    "new_price": 78323,
+    "on_sale": true,
+    "launched": "08/18/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Glamour",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.7,
+    "bhp": 10.39,
+    "new_price": 85628,
+    "on_sale": true,
+    "launched": "04/14/2017",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 43
+   },
+   {
+    "model": "Glamour X 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.7,
+    "bhp": 11.4,
+    "new_price": 90401,
+    "on_sale": true,
+    "launched": "08/19/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "HF Deluxe",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 7.91,
+    "new_price": 58671,
+    "on_sale": true,
+    "launched": "10/01/2013",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 112
+   },
+   {
+    "model": "HF Deluxe Flex Fuel",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 8.44,
+    "new_price": 69907,
+    "on_sale": true,
+    "launched": "06/03/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Karizma XMR",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 210.0,
+    "bhp": 25.15,
+    "new_price": 186771,
+    "on_sale": true,
+    "launched": "08/29/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Passion Plus",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 7.91,
+    "new_price": 81048,
+    "on_sale": true,
+    "launched": "06/12/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 68
+   },
+   {
+    "model": "Pleasure Plus",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 110.9,
+    "bhp": 8.0,
+    "new_price": 70920,
+    "on_sale": true,
+    "launched": "05/13/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Pleasure Plus Xtec",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 110.9,
+    "bhp": 8.0,
+    "new_price": 78504,
+    "on_sale": true,
+    "launched": "10/11/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Splendor Plus",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 7.91,
+    "new_price": 77813,
+    "on_sale": true,
+    "launched": "10/01/2013",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 224
+   },
+   {
+    "model": "Splendor Plus Flex Fuel",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 8.44,
+    "new_price": 81984,
+    "on_sale": true,
+    "launched": "06/03/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Splendor Plus Xtec",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 97.2,
+    "bhp": 7.9,
+    "new_price": 82582,
+    "on_sale": true,
+    "launched": "06/07/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Super Splendor Xtec",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.7,
+    "bhp": 10.72,
+    "new_price": 84510,
+    "on_sale": true,
+    "launched": "03/06/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Super Splendor Xtec 2.0",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.7,
+    "bhp": 10.7,
+    "new_price": 86507,
+    "on_sale": true,
+    "launched": "05/27/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xoom 110",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 110.9,
+    "bhp": 8.05,
+    "new_price": 78922,
+    "on_sale": true,
+    "launched": "01/30/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xoom 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.6,
+    "bhp": 9.8,
+    "new_price": 86870,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xoom 160",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 156.0,
+    "bhp": 14.6,
+    "new_price": 144430,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xpulse 200 4V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 199.6,
+    "bhp": 18.9,
+    "new_price": 149482,
+    "on_sale": true,
+    "launched": "10/07/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xpulse 210",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 210.0,
+    "bhp": 24.2,
+    "new_price": 168227,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xtreme 125R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 124.7,
+    "bhp": 11.4,
+    "new_price": 92865,
+    "on_sale": true,
+    "launched": "01/23/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xtreme 160R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 163.2,
+    "bhp": 14.79,
+    "new_price": 113653,
+    "on_sale": true,
+    "launched": "06/30/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xtreme 160R 4V",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 163.0,
+    "bhp": 16.87,
+    "new_price": 127000,
+    "on_sale": true,
+    "launched": "10/16/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Xtreme 250R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.03,
+    "bhp": 29.5,
+    "new_price": 184000,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Achiever 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   },
+   {
+    "model": "CBZ",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 11
+   },
+   {
+    "model": "CD Dawn",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   },
+   {
+    "model": "CD Deluxe",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 58
+   },
+   {
+    "model": "Hunk",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 32
+   },
+   {
+    "model": "Ignitor",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 30
+   },
+   {
+    "model": "Karizma",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 50
+   },
+   {
+    "model": "Karizma ZMR",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 31
+   },
+   {
+    "model": "Passion Pro",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 193
+   },
+   {
+    "model": "Passion XPro",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 39
+   },
+   {
+    "model": "Splendor NXG",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 7
+   },
+   {
+    "model": "Splendor PRO",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 51
+   },
+   {
+    "model": "Splendor iSmart",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 56
+   },
+   {
+    "model": "Super Splendor",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 35
+   },
+   {
+    "model": "Xtreme",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 60
+   },
+   {
+    "model": "Xtreme 200R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Xtreme Sports",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   }
+  ],
+  "Yamaha": [
+   {
+    "model": "Aerox 155",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 14.75,
+    "new_price": 146265,
+    "on_sale": true,
+    "launched": "09/21/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Aerox E",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 281648,
+    "on_sale": true,
+    "launched": "07/08/2026",
+    "range_km": 117.0,
+    "kwh_est": 3.3,
+    "train_rows": 0
+   },
+   {
+    "model": "EC 06",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 173062,
+    "on_sale": true,
+    "launched": "02/02/2026",
+    "range_km": 169.0,
+    "kwh_est": 4.8,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ Blue Flex",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 11.53,
+    "new_price": 126102,
+    "on_sale": true,
+    "launched": "07/10/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ FI",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 116361,
+    "on_sale": true,
+    "launched": "01/21/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 3
+   },
+   {
+    "model": "FZ Rave",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 125643,
+    "on_sale": true,
+    "launched": "11/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ S Hybrid",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 141761,
+    "on_sale": true,
+    "launched": "03/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 126538,
+    "on_sale": true,
+    "launched": "06/18/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ X Hybrid",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 145967,
+    "on_sale": true,
+    "launched": "07/14/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZS FI V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 149.0,
+    "bhp": 12.2,
+    "new_price": 120404,
+    "on_sale": true,
+    "launched": "02/13/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Fascino 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 125.0,
+    "bhp": 8.04,
+    "new_price": 81255,
+    "on_sale": true,
+    "launched": "04/16/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "MT 15 V2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 18.1,
+    "new_price": 166582,
+    "on_sale": true,
+    "launched": "04/11/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R15 V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 18.1,
+    "new_price": 175691,
+    "on_sale": true,
+    "launched": "09/21/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R15S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 18.1,
+    "new_price": 160025,
+    "on_sale": true,
+    "launched": "11/17/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 204.0,
+    "bhp": 26.5,
+    "new_price": 231496,
+    "on_sale": true,
+    "launched": "08/27/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ray ZR 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 125.0,
+    "bhp": 8.04,
+    "new_price": 82683,
+    "on_sale": true,
+    "launched": "08/18/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "XSR 155",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 18.1,
+    "new_price": 150957,
+    "on_sale": true,
+    "launched": "11/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "FZ S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 157
+   },
+   {
+    "model": "FZ V 2.0",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 20
+   },
+   {
+    "model": "FZ16",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 72
+   },
+   {
+    "model": "FZ25",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 35
+   },
+   {
+    "model": "Fazer",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 53
+   },
+   {
+    "model": "Fazer 25",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 9
+   },
+   {
+    "model": "Gladiator",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   },
+   {
+    "model": "MT 15",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "SS 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   },
+   {
+    "model": "SZ-RR",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 40
+   },
+   {
+    "model": "Saluto",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 10
+   },
+   {
+    "model": "YZF R1",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   },
+   {
+    "model": "YZF R15",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 183
+   },
+   {
+    "model": "YZF R15 V3",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 29
+   },
+   {
+    "model": "YZF R3",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   }
+  ],
+  "KTM": [
+   {
+    "model": "1290 Super Adventure S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1301.0,
+    "bhp": 158.0,
+    "new_price": 2273900,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "1390 Super Duke R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1350.0,
+    "bhp": 187.7,
+    "new_price": 2295800,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "160 Duke",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 164.2,
+    "bhp": 18.73,
+    "new_price": 183581,
+    "on_sale": true,
+    "launched": "08/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "200 Duke",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 199.5,
+    "bhp": 24.67,
+    "new_price": 206518,
+    "on_sale": true,
+    "launched": "09/01/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 72
+   },
+   {
+    "model": "250 Adventure",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 248.76,
+    "bhp": 30.5,
+    "new_price": 253621,
+    "on_sale": true,
+    "launched": "02/05/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "250 Duke",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.07,
+    "bhp": 30.57,
+    "new_price": 227635,
+    "on_sale": true,
+    "launched": "09/11/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 24
+   },
+   {
+    "model": "250 SX-F",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.9,
+    "bhp": 46.1,
+    "new_price": 958000,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "350 EXC-F",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.7,
+    "bhp": 44.3,
+    "new_price": 1295800,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Adventure",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.32,
+    "bhp": 40.93,
+    "new_price": 289222,
+    "on_sale": true,
+    "launched": "04/20/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Adventure R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.7,
+    "bhp": 44.2,
+    "new_price": 387868,
+    "on_sale": true,
+    "launched": "01/28/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Adventure S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.63,
+    "bhp": 45.3,
+    "new_price": 406746,
+    "on_sale": true,
+    "launched": "02/05/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Adventure X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.63,
+    "bhp": 45.3,
+    "new_price": 351195,
+    "on_sale": true,
+    "launched": "02/05/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Duke",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.32,
+    "bhp": 40.9,
+    "new_price": 286987,
+    "on_sale": true,
+    "launched": "04/20/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 99
+   },
+   {
+    "model": "390 Duke R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.63,
+    "bhp": 45.3,
+    "new_price": 348626,
+    "on_sale": true,
+    "launched": "09/11/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "390 Enduro R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.63,
+    "bhp": 45.37,
+    "new_price": 339259,
+    "on_sale": true,
+    "launched": "04/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "450 SX-F",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.9,
+    "bhp": 62.1,
+    "new_price": 1025100,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "50 SX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 49.9,
+    "bhp": 5.3,
+    "new_price": 475000,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "65 SX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 64.9,
+    "bhp": 11.2,
+    "new_price": 546500,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "85 SX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 84.9,
+    "bhp": 15.5,
+    "new_price": 669000,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "890 Adventure R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 889.0,
+    "bhp": 103.0,
+    "new_price": 1580000,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "890 Duke R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 889.0,
+    "bhp": 119.0,
+    "new_price": 1450000,
+    "on_sale": true,
+    "launched": "11/14/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "RC 160",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 164.2,
+    "bhp": 18.73,
+    "new_price": 201014,
+    "on_sale": true,
+    "launched": "01/08/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "RC 200",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 199.5,
+    "bhp": 24.6,
+    "new_price": 232714,
+    "on_sale": true,
+    "launched": "10/13/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 88
+   },
+   {
+    "model": "RC 390",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 373.27,
+    "bhp": 42.9,
+    "new_price": 333532,
+    "on_sale": true,
+    "launched": "05/23/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 82
+   },
+   {
+    "model": "125 Duke",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 6
+   },
+   {
+    "model": "RC 125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   }
+  ],
+  "Triumph": [
+   {
+    "model": "Bonneville Bobber",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 76.9,
+    "new_price": 1351600,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Bonneville Speedmaster",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 76.9,
+    "new_price": 1351600,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Bonneville T100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 900.0,
+    "bhp": 64.1,
+    "new_price": 1085400,
+    "on_sale": true,
+    "launched": "06/04/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 3
+   },
+   {
+    "model": "Bonneville T120",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 78.9,
+    "new_price": 1217000,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Bonneville T40",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 28.6,
+    "new_price": 255167,
+    "on_sale": true,
+    "launched": "10/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Daytona 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 660.0,
+    "bhp": 93.87,
+    "new_price": 988400,
+    "on_sale": true,
+    "launched": "08/29/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Rocket 3",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 2458.0,
+    "bhp": 165.0,
+    "new_price": 2403100,
+    "on_sale": true,
+    "launched": "12/05/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 89.0,
+    "new_price": 1264100,
+    "on_sale": true,
+    "launched": "02/12/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler 400 X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 36.49,
+    "new_price": 266312,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler 400 XC",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 36.49,
+    "new_price": 300800,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler 900",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 900.0,
+    "bhp": 64.1,
+    "new_price": 1074700,
+    "on_sale": true,
+    "launched": "07/28/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed 400",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 36.49,
+    "new_price": 235484,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed T4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 28.6,
+    "new_price": 210278,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed Triple 1200 RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1160.0,
+    "bhp": 180.5,
+    "new_price": 2175900,
+    "on_sale": true,
+    "launched": "07/08/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed Twin",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 103.5,
+    "new_price": 1383800,
+    "on_sale": true,
+    "launched": "01/27/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed Twin 1200 Cafe Racer Edition",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 103.5,
+    "new_price": 1799000,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed Twin 1200 TFC",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1200.0,
+    "bhp": 103.5,
+    "new_price": 2099000,
+    "on_sale": true,
+    "launched": "07/15/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Speed Twin 900",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 900.0,
+    "bhp": 64.0,
+    "new_price": 971300,
+    "on_sale": true,
+    "launched": "12/23/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Triple R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 765.0,
+    "bhp": 118.4,
+    "new_price": 1116300,
+    "on_sale": true,
+    "launched": "06/16/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Triple RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 765.0,
+    "bhp": 128.2,
+    "new_price": 1322800,
+    "on_sale": true,
+    "launched": "06/16/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Triple RX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 765.0,
+    "bhp": 128.2,
+    "new_price": 1390600,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Thruxton 400",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 39.45,
+    "new_price": 276655,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tiger",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1160.0,
+    "bhp": 148.0,
+    "new_price": 1939000,
+    "on_sale": true,
+    "launched": "05/24/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tiger 900",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 888.0,
+    "bhp": 106.5,
+    "new_price": 1440000,
+    "on_sale": true,
+    "launched": "04/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tiger 900 Alpine Edition",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 888.0,
+    "bhp": 106.5,
+    "new_price": 1535000,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tiger 900 Desert Edition",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 888.0,
+    "bhp": 106.5,
+    "new_price": 1605000,
+    "on_sale": true,
+    "launched": "05/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tiger Sport 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 660.0,
+    "bhp": 80.0,
+    "new_price": 945000,
+    "on_sale": true,
+    "launched": "03/29/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tracker 400",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 349.0,
+    "bhp": 39.45,
+    "new_price": 243248,
+    "on_sale": true,
+    "launched": "04/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Trident 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 660.0,
+    "bhp": 80.0,
+    "new_price": 899000,
+    "on_sale": true,
+    "launched": "07/07/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Triple 765",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   }
+  ],
+  "Ampere": [
+   {
+    "model": "Magnus G Max",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 102999,
+    "on_sale": true,
+    "launched": "01/19/2026",
+    "range_km": 142.0,
+    "kwh_est": 4.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Magnus Neo",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 90999,
+    "on_sale": true,
+    "launched": "04/24/2026",
+    "range_km": 125.0,
+    "kwh_est": 3.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Nexus",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 129999,
+    "on_sale": true,
+    "launched": "04/30/2024",
+    "range_km": 136.0,
+    "kwh_est": 3.9,
+    "train_rows": 0
+   },
+   {
+    "model": "Reo",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 71999,
+    "on_sale": true,
+    "launched": "11/29/2023",
+    "range_km": 80.0,
+    "kwh_est": 2.3,
+    "train_rows": 0
+   }
+  ],
+  "Aprilia": [
+   {
+    "model": "RS 457",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 457.0,
+    "bhp": 46.9,
+    "new_price": 433410,
+    "on_sale": true,
+    "launched": "02/10/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "RS 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 659.0,
+    "bhp": 98.56,
+    "new_price": 1895878,
+    "on_sale": true,
+    "launched": "04/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "RSV4 1100 Factory",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1099.0,
+    "bhp": 213.89,
+    "new_price": 3340763,
+    "on_sale": true,
+    "launched": "04/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SR 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.97,
+    "new_price": 113315,
+    "on_sale": true,
+    "launched": "02/07/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SR 160",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 160.03,
+    "bhp": 11.11,
+    "new_price": 121428,
+    "on_sale": true,
+    "launched": "03/09/2020",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SR 175",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 174.7,
+    "bhp": 13.08,
+    "new_price": 125797,
+    "on_sale": true,
+    "launched": "07/15/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SXR GT 125 hp-e",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 10.6,
+    "new_price": 110000,
+    "on_sale": true,
+    "launched": "10/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SXR GT 175 hp-e",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 174.7,
+    "bhp": 13.09,
+    "new_price": 130000,
+    "on_sale": true,
+    "launched": "10/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Storm 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.97,
+    "new_price": 118925,
+    "on_sale": true,
+    "launched": "05/30/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tuareg 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 659.0,
+    "bhp": 79.12,
+    "new_price": 2014504,
+    "on_sale": true,
+    "launched": "04/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tuono 457",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 457.0,
+    "bhp": 46.9,
+    "new_price": 406169,
+    "on_sale": true,
+    "launched": "02/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Tuono 660",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 659.0,
+    "bhp": 93.87,
+    "new_price": 1863817,
+    "on_sale": true,
+    "launched": "04/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Ather": [
+   {
+    "model": "450 Apex",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 196278,
+    "on_sale": true,
+    "launched": "01/06/2024",
+    "range_km": 165.0,
+    "kwh_est": 4.7,
+    "train_rows": 0
+   },
+   {
+    "model": "450S",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 130307,
+    "on_sale": true,
+    "launched": "08/11/2023",
+    "range_km": 115.0,
+    "kwh_est": 3.3,
+    "train_rows": 0
+   },
+   {
+    "model": "450X",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 150512,
+    "on_sale": true,
+    "launched": "07/19/2022",
+    "range_km": 126.0,
+    "kwh_est": 3.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Konarc",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 4.0,
+    "new_price": 101217,
+    "on_sale": true,
+    "launched": "08/29/2026",
+    "range_km": 100.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   },
+   {
+    "model": "Rizta",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 121147,
+    "on_sale": true,
+    "launched": "04/06/2024",
+    "range_km": 123.0,
+    "kwh_est": 3.5,
+    "train_rows": 0
+   }
+  ],
+  "Avore": [
+   {
+    "model": "EX1",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 124999,
+    "on_sale": true,
+    "launched": "07/28/2026",
+    "range_km": 160.0,
+    "kwh_est": 4.6,
+    "train_rows": 0
+   },
+   {
+    "model": "EX2",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 149999,
+    "on_sale": true,
+    "launched": "07/28/2026",
+    "range_km": 255.0,
+    "kwh_est": 7.3,
+    "train_rows": 0
+   },
+   {
+    "model": "EX2S",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 169999,
+    "on_sale": true,
+    "launched": "07/28/2026",
+    "range_km": 260.0,
+    "kwh_est": 7.4,
+    "train_rows": 0
+   }
+  ],
+  "Benelli": [
+   {
+    "model": "502C",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 500.0,
+    "bhp": 46.8,
+    "new_price": 580000,
+    "on_sale": true,
+    "launched": "07/29/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Leoncino 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 500.0,
+    "bhp": 46.8,
+    "new_price": 560000,
+    "on_sale": true,
+    "launched": "02/18/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "TRK 552",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 554.0,
+    "bhp": 52.0,
+    "new_price": 722485,
+    "on_sale": true,
+    "launched": "10/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "TRK 552X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 554.0,
+    "bhp": 52.0,
+    "new_price": 774485,
+    "on_sale": true,
+    "launched": "10/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "TNT 300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 34
+   },
+   {
+    "model": "TNT600i",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 8
+   }
+  ],
+  "BGauss": [
+   {
+    "model": "BG RUV 350",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 146990,
+    "on_sale": true,
+    "launched": "06/25/2024",
+    "range_km": 145.0,
+    "kwh_est": 4.1,
+    "train_rows": 0
+   },
+   {
+    "model": "C12",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 109990,
+    "on_sale": true,
+    "launched": "06/13/2023",
+    "range_km": 85.0,
+    "kwh_est": 2.4,
+    "train_rows": 0
+   },
+   {
+    "model": "C12 MaxR",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 159990,
+    "on_sale": true,
+    "launched": "09/09/2026",
+    "range_km": 178.0,
+    "kwh_est": 5.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Oowah",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 96990,
+    "on_sale": true,
+    "launched": "09/10/2025",
+    "range_km": 105.0,
+    "kwh_est": 3.0,
+    "train_rows": 0
+   }
+  ],
+  "BMW": [
+   {
+    "model": "C 400 GT",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 350.0,
+    "bhp": 33.5,
+    "new_price": 1150000,
+    "on_sale": true,
+    "launched": "03/07/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "CE 02",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 449900,
+    "on_sale": true,
+    "launched": "10/01/2024",
+    "range_km": 108.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   },
+   {
+    "model": "CE 04",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 1525000,
+    "on_sale": true,
+    "launched": "07/24/2024",
+    "range_km": 130.0,
+    "kwh_est": 3.7,
+    "train_rows": 0
+   },
+   {
+    "model": "F 450 GS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 420.0,
+    "bhp": 48.67,
+    "new_price": 535000,
+    "on_sale": true,
+    "launched": "04/23/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "F 900 GS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 895.0,
+    "bhp": 103.25,
+    "new_price": 1600000,
+    "on_sale": true,
+    "launched": "09/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "F 900 GS Adventure",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 895.0,
+    "bhp": 103.25,
+    "new_price": 1750000,
+    "on_sale": true,
+    "launched": "09/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "G310 RR",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 312.12,
+    "bhp": 33.5,
+    "new_price": 290000,
+    "on_sale": true,
+    "launched": "07/15/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "K",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1649.0,
+    "bhp": 158.0,
+    "new_price": 3800000,
+    "on_sale": true,
+    "launched": "08/17/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "M 1000 R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 206.5,
+    "new_price": 3350000,
+    "on_sale": true,
+    "launched": "03/16/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R 12",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1170.0,
+    "bhp": 93.7,
+    "new_price": 2250000,
+    "on_sale": true,
+    "launched": "07/05/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R 12 nine T",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1170.0,
+    "bhp": 107.5,
+    "new_price": 2350000,
+    "on_sale": true,
+    "launched": "07/05/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R 1300 GS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1300.0,
+    "bhp": 145.0,
+    "new_price": 2350000,
+    "on_sale": true,
+    "launched": "06/13/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "R 1300 GS Adventure",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1300.0,
+    "bhp": 143.4,
+    "new_price": 2650000,
+    "on_sale": true,
+    "launched": "01/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "S 1000 R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 167.6,
+    "new_price": 2225000,
+    "on_sale": true,
+    "launched": "09/15/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "S1000RR",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 206.51,
+    "new_price": 2375000,
+    "on_sale": true,
+    "launched": "01/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "G 310 R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   }
+  ],
+  "Bounce": [
+   {
+    "model": "Infinity E1",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 115605,
+    "on_sale": true,
+    "launched": "12/02/2021",
+    "range_km": 70.0,
+    "kwh_est": 2.0,
+    "train_rows": 0
+   }
+  ],
+  "Brixton Motorcycles": [
+   {
+    "model": "Cromwell",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1222.0,
+    "bhp": 83.0,
+    "new_price": 823778,
+    "on_sale": true,
+    "launched": "11/18/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Cromwell 1200 X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1222.0,
+    "bhp": 83.0,
+    "new_price": 973819,
+    "on_sale": true,
+    "launched": "11/18/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Crossfire 500 X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 486.0,
+    "bhp": 47.6,
+    "new_price": 497277,
+    "on_sale": true,
+    "launched": "11/18/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Crossfire 500 XC",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 486.0,
+    "bhp": 47.6,
+    "new_price": 399999,
+    "on_sale": true,
+    "launched": "11/18/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "BSA": [
+   {
+    "model": "Gold Star 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 652.0,
+    "bhp": 45.6,
+    "new_price": 344242,
+    "on_sale": true,
+    "launched": "08/15/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 652.0,
+    "bhp": 45.62,
+    "new_price": 327244,
+    "on_sale": true,
+    "launched": "04/23/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Ducati": [
+   {
+    "model": "DesertX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 937.0,
+    "bhp": 108.6,
+    "new_price": 1959200,
+    "on_sale": true,
+    "launched": "12/12/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Desmo450 EDX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.6,
+    "bhp": 64.38,
+    "new_price": 1855000,
+    "on_sale": true,
+    "launched": "11/05/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Desmo450 MX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.6,
+    "bhp": 62.62,
+    "new_price": 1723600,
+    "on_sale": true,
+    "launched": "03/16/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Desmo450 MX Factory",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.6,
+    "bhp": 64.38,
+    "new_price": 2126000,
+    "on_sale": true,
+    "launched": "11/05/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Diavel V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1158.0,
+    "bhp": 166.28,
+    "new_price": 2966000,
+    "on_sale": true,
+    "launched": "08/08/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Formula 73",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 803.0,
+    "bhp": 74.01,
+    "new_price": 2000000,
+    "on_sale": true,
+    "launched": "10/23/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hypermotard 698 Mono",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 659.0,
+    "bhp": 76.43,
+    "new_price": 1799000,
+    "on_sale": true,
+    "launched": "07/08/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hypermotard 950",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 937.0,
+    "bhp": 112.6,
+    "new_price": 1710500,
+    "on_sale": true,
+    "launched": "11/10/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hypermotard V2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 890.0,
+    "bhp": 120.0,
+    "new_price": 1653000,
+    "on_sale": true,
+    "launched": "10/22/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Monster",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 890.0,
+    "bhp": 110.7,
+    "new_price": 1399000,
+    "on_sale": true,
+    "launched": "08/10/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Multistrada V2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 890.0,
+    "bhp": 113.98,
+    "new_price": 1926000,
+    "on_sale": true,
+    "launched": "10/27/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Multistrada V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1158.0,
+    "bhp": 170.0,
+    "new_price": 2506000,
+    "on_sale": true,
+    "launched": "09/08/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Multistrada V4 RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1103.0,
+    "bhp": 180.0,
+    "new_price": 4346700,
+    "on_sale": true,
+    "launched": "08/29/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Multistrada V4 Rally",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1158.0,
+    "bhp": 167.62,
+    "new_price": 3240000,
+    "on_sale": true,
+    "launched": "06/30/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Panigale V2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 890.0,
+    "bhp": 118.0,
+    "new_price": 1951000,
+    "on_sale": true,
+    "launched": "10/29/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Panigale V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1103.0,
+    "bhp": 219.0,
+    "new_price": 3270000,
+    "on_sale": true,
+    "launched": "03/05/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Panigale V4 Lamborghini",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1103.0,
+    "bhp": 216.0,
+    "new_price": 10000000,
+    "on_sale": true,
+    "launched": "05/11/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Panigale V4 R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 998.0,
+    "bhp": 221.0,
+    "new_price": 8499000,
+    "on_sale": true,
+    "launched": "01/02/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler Full Throttle",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 803.0,
+    "bhp": 71.87,
+    "new_price": 1374000,
+    "on_sale": true,
+    "launched": "04/21/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler Icon",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 803.0,
+    "bhp": 71.87,
+    "new_price": 1087000,
+    "on_sale": true,
+    "launched": "03/19/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler Nightshift",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 803.0,
+    "bhp": 71.87,
+    "new_price": 1346600,
+    "on_sale": true,
+    "launched": "09/20/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Streetfighter V2",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 890.0,
+    "bhp": 118.0,
+    "new_price": 1786000,
+    "on_sale": true,
+    "launched": "11/27/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Streetfighter V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1103.0,
+    "bhp": 205.0,
+    "new_price": 2926000,
+    "on_sale": true,
+    "launched": "10/31/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SuperSport",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 937.0,
+    "bhp": 108.62,
+    "new_price": 1716100,
+    "on_sale": true,
+    "launched": "09/09/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "XDiavel V4",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1158.0,
+    "bhp": 166.28,
+    "new_price": 3151000,
+    "on_sale": true,
+    "launched": "12/29/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "959 Panigale",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Monster 797",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   }
+  ],
+  "E3 Electric": [
+   {
+    "model": "E3 Trion",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 99999,
+    "on_sale": true,
+    "launched": "08/06/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Evolet": [
+   {
+    "model": "Derby",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 78999,
+    "on_sale": true,
+    "launched": "09/04/2019",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Pony",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 59999,
+    "on_sale": true,
+    "launched": "09/04/2019",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   }
+  ],
+  "Ferrato": [
+   {
+    "model": "FEV 650",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 174339,
+    "on_sale": true,
+    "launched": "11/18/2025",
+    "range_km": 198.0,
+    "kwh_est": 5.7,
+    "train_rows": 0
+   }
+  ],
+  "Gemopai": [
+   {
+    "model": "Astrid Lite",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 111195,
+    "on_sale": true,
+    "launched": "11/11/2019",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Ryder",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 70850,
+    "on_sale": true,
+    "launched": "11/11/2019",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Ryder SuperMax",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 79999,
+    "on_sale": true,
+    "launched": "03/01/2023",
+    "range_km": 100.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   }
+  ],
+  "Harley-Davidson": [
+   {
+    "model": "Breakout",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1923.0,
+    "bhp": 101.9,
+    "new_price": 3436000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Fat Bob",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1868.0,
+    "bhp": 92.5,
+    "new_price": 2296641,
+    "on_sale": true,
+    "launched": "04/10/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Fat Boy",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1868.0,
+    "bhp": 93.87,
+    "new_price": 2803000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Heritage Classic",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1868.0,
+    "bhp": 93.87,
+    "new_price": 2571000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Nightster",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 975.0,
+    "bhp": 88.5,
+    "new_price": 1454000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Nightster Special",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 975.0,
+    "bhp": 88.5,
+    "new_price": 1538000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "PAN America 1250 Special",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1252.0,
+    "bhp": 150.19,
+    "new_price": 2716000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Road Glide",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1923.0,
+    "bhp": 107.2,
+    "new_price": 4575000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Sportster S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1252.0,
+    "bhp": 120.69,
+    "new_price": 1805000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Bob",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1923.0,
+    "bhp": 91.18,
+    "new_price": 2023000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Street Glide",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1923.0,
+    "bhp": 107.2,
+    "new_price": 4250000,
+    "on_sale": true,
+    "launched": "08/18/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "X440",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 440.0,
+    "bhp": 27.0,
+    "new_price": 235000,
+    "on_sale": true,
+    "launched": "07/03/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "X440 T",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 440.0,
+    "bhp": 27.37,
+    "new_price": 286000,
+    "on_sale": true,
+    "launched": "12/06/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "1200 Custom",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Iron 883",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 23
+   },
+   {
+    "model": "Street 750",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 58
+   }
+  ],
+  "Hop Electric": [
+   {
+    "model": "LEO",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 84360,
+    "on_sale": true,
+    "launched": "06/16/2021",
+    "range_km": 95.0,
+    "kwh_est": 2.7,
+    "train_rows": 0
+   },
+   {
+    "model": "OXO",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 133999,
+    "on_sale": true,
+    "launched": "09/05/2022",
+    "range_km": 140.0,
+    "kwh_est": 4.0,
+    "train_rows": 0
+   }
+  ],
+  "Husqvarna": [
+   {
+    "model": "Svartpilen 401",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 398.63,
+    "bhp": 45.3,
+    "new_price": 300369,
+    "on_sale": true,
+    "launched": "01/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Vitpilen 250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 30.57,
+    "new_price": 227769,
+    "on_sale": true,
+    "launched": "01/16/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Indian": [
+   {
+    "model": "101 Scout",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1250.0,
+    "bhp": 112.54,
+    "new_price": 1708855,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Chief Bobber Dark Horse",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1890.0,
+    "bhp": null,
+    "new_price": 2286943,
+    "on_sale": true,
+    "launched": "08/27/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Chief Dark Horse",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1890.0,
+    "bhp": null,
+    "new_price": 2158779,
+    "on_sale": true,
+    "launched": "08/27/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scout Bobber",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1250.0,
+    "bhp": 106.46,
+    "new_price": 1495115,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 2
+   },
+   {
+    "model": "Scout Classic",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1250.0,
+    "bhp": 106.46,
+    "new_price": 1498321,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scout Sixty Bobber",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 86.18,
+    "new_price": 1388244,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scout Sixty Classic",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 86.18,
+    "new_price": 1434198,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Sport Scout",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1250.0,
+    "bhp": 106.46,
+    "new_price": 1505802,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Sport Scout Sixty",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 999.0,
+    "bhp": 86.18,
+    "new_price": 1419237,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Super Chief Limited",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1890.0,
+    "bhp": null,
+    "new_price": 2438944,
+    "on_sale": true,
+    "launched": "08/27/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Super Scout",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1250.0,
+    "bhp": 106.46,
+    "new_price": 1725954,
+    "on_sale": true,
+    "launched": "08/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "iVOOMi": [
+   {
+    "model": "Jeet X",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 84999,
+    "on_sale": true,
+    "launched": "08/22/2022",
+    "range_km": 120.0,
+    "kwh_est": 3.4,
+    "train_rows": 0
+   },
+   {
+    "model": "S1",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 79999,
+    "on_sale": true,
+    "launched": "03/22/2022",
+    "range_km": 110.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   }
+  ],
+  "Jawa": [
+   {
+    "model": "350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 22.26,
+    "new_price": 184465,
+    "on_sale": true,
+    "launched": "01/15/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "All Stars 42",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 294.72,
+    "bhp": 26.94,
+    "new_price": 186925,
+    "on_sale": true,
+    "launched": "09/09/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "All Stars 42 Bobber",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 29.51,
+    "new_price": 210985,
+    "on_sale": true,
+    "launched": "09/07/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "All Stars 42 FJ",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 28.77,
+    "new_price": 203531,
+    "on_sale": true,
+    "launched": "08/27/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Perak",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 30.2,
+    "new_price": 221819,
+    "on_sale": true,
+    "launched": "11/15/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "42",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 5
+   }
+  ],
+  "Joy e-bike": [
+   {
+    "model": "Gen Nxt",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 60825,
+    "on_sale": true,
+    "launched": "02/11/2020",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Glob",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 70000,
+    "on_sale": true,
+    "launched": "02/09/2020",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Mihos",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 113000,
+    "on_sale": true,
+    "launched": "01/13/2023",
+    "range_km": 130.0,
+    "kwh_est": 3.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Wolf",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 61875,
+    "on_sale": true,
+    "launched": "02/10/2020",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   }
+  ],
+  "Kawasaki": [
+   {
+    "model": "Eliminator",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 451.0,
+    "bhp": 44.7,
+    "new_price": 616000,
+    "on_sale": true,
+    "launched": "01/03/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX 140R F",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 144.0,
+    "bhp": 11.1,
+    "new_price": 379000,
+    "on_sale": true,
+    "launched": "11/01/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX110R L",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 112.0,
+    "bhp": null,
+    "new_price": 288000,
+    "on_sale": true,
+    "launched": "11/01/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX230",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 233.0,
+    "bhp": 18.37,
+    "new_price": 184000,
+    "on_sale": true,
+    "launched": "08/13/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX230 S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 233.0,
+    "bhp": 18.37,
+    "new_price": 219000,
+    "on_sale": true,
+    "launched": "06/24/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX230R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 233.0,
+    "bhp": 18.74,
+    "new_price": 179000,
+    "on_sale": true,
+    "launched": "08/12/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX230R S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 233.0,
+    "bhp": 18.74,
+    "new_price": 189000,
+    "on_sale": true,
+    "launched": "06/24/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX230RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 233.0,
+    "bhp": 19.57,
+    "new_price": 481000,
+    "on_sale": true,
+    "launched": "07/11/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KLX450R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.0,
+    "bhp": null,
+    "new_price": 961000,
+    "on_sale": true,
+    "launched": "12/17/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KX 85",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 84.0,
+    "bhp": null,
+    "new_price": 388000,
+    "on_sale": true,
+    "launched": "11/18/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KX112",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 112.0,
+    "bhp": null,
+    "new_price": 450000,
+    "on_sale": true,
+    "launched": "07/13/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "KX450",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 449.0,
+    "bhp": null,
+    "new_price": 992000,
+    "on_sale": true,
+    "launched": "09/04/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ninja 1100SX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1099.0,
+    "bhp": 134.1,
+    "new_price": 1442000,
+    "on_sale": true,
+    "launched": "12/18/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ninja 300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 296.0,
+    "bhp": 38.88,
+    "new_price": 317000,
+    "on_sale": true,
+    "launched": "01/21/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 13
+   },
+   {
+    "model": "Ninja 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 451.0,
+    "bhp": 44.7,
+    "new_price": 566000,
+    "on_sale": true,
+    "launched": "04/21/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ninja 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 67.3,
+    "new_price": 777000,
+    "on_sale": true,
+    "launched": "04/21/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 18
+   },
+   {
+    "model": "Ninja H2 SX SE",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 998.0,
+    "bhp": 197.2,
+    "new_price": 3628000,
+    "on_sale": true,
+    "launched": "08/14/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ninja ZX-10R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 998.0,
+    "bhp": 193.0,
+    "new_price": 2079000,
+    "on_sale": true,
+    "launched": "09/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Ninja ZX-6R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 636.0,
+    "bhp": 122.03,
+    "new_price": 1249000,
+    "on_sale": true,
+    "launched": "09/01/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Versys",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1099.0,
+    "bhp": 132.76,
+    "new_price": 1379000,
+    "on_sale": true,
+    "launched": "02/13/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Versys 650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 65.7,
+    "new_price": 863000,
+    "on_sale": true,
+    "launched": "08/28/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 3
+   },
+   {
+    "model": "Versys-X 300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 296.0,
+    "bhp": 38.8,
+    "new_price": 349000,
+    "on_sale": true,
+    "launched": "05/21/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Vulcan S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 59.94,
+    "new_price": 823000,
+    "on_sale": true,
+    "launched": "09/15/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "W175",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 177.0,
+    "bhp": 12.8,
+    "new_price": 115000,
+    "on_sale": true,
+    "launched": "09/26/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Z1100",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1099.0,
+    "bhp": 134.1,
+    "new_price": 1279000,
+    "on_sale": true,
+    "launched": "11/13/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Z300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 296.0,
+    "bhp": 40.0,
+    "new_price": 324000,
+    "on_sale": true,
+    "launched": "10/21/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Z650",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 67.31,
+    "new_price": 726000,
+    "on_sale": true,
+    "launched": "08/12/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 5
+   },
+   {
+    "model": "Z650RS",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 67.31,
+    "new_price": 769000,
+    "on_sale": true,
+    "launched": "02/19/2024",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Z650S",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 67.32,
+    "new_price": 759000,
+    "on_sale": true,
+    "launched": "11/05/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Z900",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 948.0,
+    "bhp": 123.6,
+    "new_price": 999000,
+    "on_sale": true,
+    "launched": "10/20/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 4
+   },
+   {
+    "model": "ER-6n",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   },
+   {
+    "model": "Ninja 250R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Z250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Z800",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   }
+  ],
+  "Keeway": [
+   {
+    "model": "Hypevolt-R",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 12.0,
+    "new_price": 199000,
+    "on_sale": true,
+    "launched": "07/03/2026",
+    "range_km": 180.0,
+    "kwh_est": 5.1,
+    "train_rows": 0
+   },
+   {
+    "model": "SR125",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 125.0,
+    "bhp": 9.56,
+    "new_price": 129000,
+    "on_sale": true,
+    "launched": "10/13/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SR250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 223.0,
+    "bhp": 15.78,
+    "new_price": 159000,
+    "on_sale": true,
+    "launched": "01/11/2023",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "V302C",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 298.0,
+    "bhp": 29.09,
+    "new_price": 449000,
+    "on_sale": true,
+    "launched": "08/30/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Kinetic": [
+   {
+    "model": "DX",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 111570,
+    "on_sale": true,
+    "launched": "07/28/2025",
+    "range_km": 102.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   }
+  ],
+  "Kinetic Green": [
+   {
+    "model": "E Luna",
+    "type": "moped",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 69990,
+    "on_sale": true,
+    "launched": "02/08/2024",
+    "range_km": 110.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Zing",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 71990,
+    "on_sale": true,
+    "launched": "11/30/2022",
+    "range_km": 70.0,
+    "kwh_est": 2.0,
+    "train_rows": 0
+   },
+   {
+    "model": "Zulu",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 84990,
+    "on_sale": true,
+    "launched": "12/11/2023",
+    "range_km": 104.0,
+    "kwh_est": 3.0,
+    "train_rows": 0
+   }
+  ],
+  "Lectrix": [
+   {
+    "model": "LXS 2.0",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 84990,
+    "on_sale": true,
+    "launched": "02/09/2024",
+    "range_km": 98.0,
+    "kwh_est": 2.8,
+    "train_rows": 0
+   },
+   {
+    "model": "LXS 3.0",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 91990,
+    "on_sale": true,
+    "launched": "08/05/2024",
+    "range_km": 120.0,
+    "kwh_est": 3.4,
+    "train_rows": 0
+   },
+   {
+    "model": "Nduro",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 94753,
+    "on_sale": true,
+    "launched": "12/26/2024",
+    "range_km": 99.0,
+    "kwh_est": 2.8,
+    "train_rows": 0
+   },
+   {
+    "model": "SX25",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 54999,
+    "on_sale": true,
+    "launched": "02/20/2023",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Zyro",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 51741,
+    "on_sale": true,
+    "launched": "11/05/2026",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   }
+  ],
+  "Matter": [
+   {
+    "model": "AERA",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 182567,
+    "on_sale": true,
+    "launched": "03/01/2023",
+    "range_km": 172.0,
+    "kwh_est": 4.9,
+    "train_rows": 0
+   }
+  ],
+  "Moto Guzzi": [
+   {
+    "model": "V85 TT",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 853.0,
+    "bhp": 75.09,
+    "new_price": 1645802,
+    "on_sale": true,
+    "launched": "09/02/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Moto Morini": [
+   {
+    "model": "Seiemmezzo",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 54.24,
+    "new_price": 439000,
+    "on_sale": true,
+    "launched": "10/11/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "X-Cape",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 649.0,
+    "bhp": 59.17,
+    "new_price": 640000,
+    "on_sale": true,
+    "launched": "10/11/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Numeros": [
+   {
+    "model": "Diplos",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 134999,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": 156.0,
+    "kwh_est": 4.5,
+    "train_rows": 0
+   },
+   {
+    "model": "n-First",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 114999,
+    "on_sale": true,
+    "launched": "11/06/2025",
+    "range_km": 109.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   }
+  ],
+  "Oben": [
+   {
+    "model": "Rorr EVO",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 139999,
+    "on_sale": true,
+    "launched": "04/30/2026",
+    "range_km": 180.0,
+    "kwh_est": 5.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Rorr EZ Sigma",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 109999,
+    "on_sale": true,
+    "launched": "08/05/2025",
+    "range_km": 140.0,
+    "kwh_est": 4.0,
+    "train_rows": 0
+   }
+  ],
+  "Odysse": [
+   {
+    "model": "E2Go",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 71100,
+    "on_sale": true,
+    "launched": "01/12/2021",
+    "range_km": 70.0,
+    "kwh_est": 2.0,
+    "train_rows": 0
+   },
+   {
+    "model": "Evoqis",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 118000,
+    "on_sale": true,
+    "launched": "04/10/2020",
+    "range_km": 90.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Hawk",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 99400,
+    "on_sale": true,
+    "launched": "04/12/2020",
+    "range_km": 85.0,
+    "kwh_est": 2.4,
+    "train_rows": 0
+   },
+   {
+    "model": "Racer",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 100450,
+    "on_sale": true,
+    "launched": "04/11/2020",
+    "range_km": 75.0,
+    "kwh_est": 2.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Trot",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 99999,
+    "on_sale": true,
+    "launched": "02/07/2023",
+    "range_km": 75.0,
+    "kwh_est": 2.1,
+    "train_rows": 0
+   },
+   {
+    "model": "Vader",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 161574,
+    "on_sale": true,
+    "launched": "03/31/2023",
+    "range_km": 125.0,
+    "kwh_est": 3.6,
+    "train_rows": 0
+   }
+  ],
+  "Okinawa": [
+   {
+    "model": "Dual 100",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 3.0,
+    "new_price": 119085,
+    "on_sale": true,
+    "launched": "11/29/2022",
+    "range_km": 149.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Lite",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 0.25,
+    "new_price": 69093,
+    "on_sale": true,
+    "launched": "11/07/2019",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   },
+   {
+    "model": "OKHI-90",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 3.8,
+    "new_price": 149991,
+    "on_sale": true,
+    "launched": "03/25/2022",
+    "range_km": 160.0,
+    "kwh_est": 4.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Praise",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 2.5,
+    "new_price": 85215,
+    "on_sale": true,
+    "launched": "12/19/2017",
+    "range_km": 88.0,
+    "kwh_est": 2.5,
+    "train_rows": 0
+   },
+   {
+    "model": "R30",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 0.25,
+    "new_price": 61998,
+    "on_sale": true,
+    "launched": "08/21/2020",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Ridge 100",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 1.6,
+    "new_price": 115311,
+    "on_sale": true,
+    "launched": "10/22/2022",
+    "range_km": 149.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Ridge Plus",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 1.7,
+    "new_price": 90606,
+    "on_sale": true,
+    "launched": "10/11/2018",
+    "range_km": 84.0,
+    "kwh_est": 2.4,
+    "train_rows": 0
+   },
+   {
+    "model": "i-Praise",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 2.5,
+    "new_price": 123190,
+    "on_sale": true,
+    "launched": "01/24/2019",
+    "range_km": 139.0,
+    "kwh_est": 4.0,
+    "train_rows": 0
+   }
+  ],
+  "OLA": [
+   {
+    "model": "Roadster",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 13.0,
+    "new_price": 104999,
+    "on_sale": true,
+    "launched": "08/15/2024",
+    "range_km": 151.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Roadster Pro",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 52.0,
+    "new_price": 199999,
+    "on_sale": true,
+    "launched": "08/15/2024",
+    "range_km": 316.0,
+    "kwh_est": 9.0,
+    "train_rows": 0
+   },
+   {
+    "model": "Roadster X",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 100400,
+    "on_sale": true,
+    "launched": "08/15/2024",
+    "range_km": 140.0,
+    "kwh_est": 4.0,
+    "train_rows": 0
+   },
+   {
+    "model": "Roadster X Plus",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 129152,
+    "on_sale": true,
+    "launched": "02/05/2025",
+    "range_km": 252.0,
+    "kwh_est": 7.2,
+    "train_rows": 0
+   },
+   {
+    "model": "S1 Pro",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 135846,
+    "on_sale": true,
+    "launched": "01/31/2025",
+    "range_km": 176.0,
+    "kwh_est": 5.0,
+    "train_rows": 0
+   },
+   {
+    "model": "S1 X",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 89999,
+    "on_sale": true,
+    "launched": "01/31/2025",
+    "range_km": 108.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   },
+   {
+    "model": "S1 Z",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 4.0,
+    "new_price": 79999,
+    "on_sale": true,
+    "launched": "08/28/2026",
+    "range_km": 179.0,
+    "kwh_est": 5.1,
+    "train_rows": 0
+   }
+  ],
+  "OPG Mobility": [
+   {
+    "model": "Faast F2B",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 2.0,
+    "new_price": 100309,
+    "on_sale": true,
+    "launched": "10/06/2022",
+    "range_km": 80.0,
+    "kwh_est": 2.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Faast F2F",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 1.2,
+    "new_price": 81999,
+    "on_sale": true,
+    "launched": "02/21/2023",
+    "range_km": 80.0,
+    "kwh_est": 2.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Faast F4",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 2.5,
+    "new_price": 127482,
+    "on_sale": true,
+    "launched": "12/29/2021",
+    "range_km": 160.0,
+    "kwh_est": 4.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Freedum",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 0.25,
+    "new_price": 74676,
+    "on_sale": true,
+    "launched": "09/17/2021",
+    "range_km": 75.0,
+    "kwh_est": 2.1,
+    "train_rows": 0
+   }
+  ],
+  "PURE EV": [
+   {
+    "model": "EPluto 7G",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 86089,
+    "on_sale": true,
+    "launched": "02/10/2020",
+    "range_km": 101.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   },
+   {
+    "model": "ETrance Neo",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 84836,
+    "on_sale": true,
+    "launched": "12/01/2020",
+    "range_km": 101.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   },
+   {
+    "model": "EcoDryft",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 118699,
+    "on_sale": true,
+    "launched": "03/20/2023",
+    "range_km": 151.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "Etryst 350",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 149999,
+    "on_sale": true,
+    "launched": "06/24/2022",
+    "range_km": 171.0,
+    "kwh_est": 4.9,
+    "train_rows": 0
+   }
+  ],
+  "QJ Motor": [
+   {
+    "model": "SRC 250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 17.16,
+    "new_price": 137000,
+    "on_sale": true,
+    "launched": "11/17/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SRC 500",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 480.0,
+    "bhp": 25.15,
+    "new_price": 210000,
+    "on_sale": true,
+    "launched": "11/17/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SRK 400",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 400.0,
+    "bhp": 40.34,
+    "new_price": 399000,
+    "on_sale": true,
+    "launched": "11/18/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "SRV 300",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 296.0,
+    "bhp": 30.72,
+    "new_price": 329000,
+    "on_sale": true,
+    "launched": "05/04/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Quantum Energy": [
+   {
+    "model": "Bziness",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 95000,
+    "on_sale": true,
+    "launched": "10/18/2022",
+    "range_km": 105.0,
+    "kwh_est": 3.0,
+    "train_rows": 0
+   },
+   {
+    "model": "Plasma",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 89999,
+    "on_sale": true,
+    "launched": "10/18/2022",
+    "range_km": 100.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   }
+  ],
+  "Raptee HV": [
+   {
+    "model": "T30",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 22.0,
+    "new_price": 239000,
+    "on_sale": true,
+    "launched": "02/27/2026",
+    "range_km": 200.0,
+    "kwh_est": 5.7,
+    "train_rows": 0
+   }
+  ],
+  "Revolt": [
+   {
+    "model": "RV BlazeX",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 4.1,
+    "new_price": 134990,
+    "on_sale": true,
+    "launched": "02/26/2025",
+    "range_km": 150.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "RV1",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 99999,
+    "on_sale": true,
+    "launched": "09/17/2024",
+    "range_km": 100.0,
+    "kwh_est": 2.9,
+    "train_rows": 0
+   },
+   {
+    "model": "RV400",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 129950,
+    "on_sale": true,
+    "launched": "08/28/2019",
+    "range_km": 150.0,
+    "kwh_est": 4.3,
+    "train_rows": 0
+   },
+   {
+    "model": "RVX",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 129996,
+    "on_sale": true,
+    "launched": "07/02/2026",
+    "range_km": 160.0,
+    "kwh_est": 4.6,
+    "train_rows": 0
+   }
+  ],
+  "River": [
+   {
+    "model": "Indie",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 158576,
+    "on_sale": true,
+    "launched": "02/23/2023",
+    "range_km": 160.0,
+    "kwh_est": 4.6,
+    "train_rows": 0
+   }
+  ],
+  "Simple": [
+   {
+    "model": "One",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 8.8,
+    "new_price": 204999,
+    "on_sale": true,
+    "launched": "01/05/2026",
+    "range_km": 265.0,
+    "kwh_est": 7.6,
+    "train_rows": 0
+   },
+   {
+    "model": "Ultra",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 8.8,
+    "new_price": 244999,
+    "on_sale": true,
+    "launched": "04/17/2026",
+    "range_km": 400.0,
+    "kwh_est": 11.4,
+    "train_rows": 0
+   },
+   {
+    "model": "Wave",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 4.4,
+    "new_price": 109999,
+    "on_sale": true,
+    "launched": "09/02/2026",
+    "range_km": 110.0,
+    "kwh_est": 3.1,
+    "train_rows": 0
+   }
+  ],
+  "Suzuki": [
+   {
+    "model": "Access 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.0,
+    "bhp": 8.3,
+    "new_price": 85577,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Avenis 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.3,
+    "bhp": 8.58,
+    "new_price": 94353,
+    "on_sale": true,
+    "launched": "11/18/2021",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Burgman Street 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.0,
+    "bhp": 8.31,
+    "new_price": 107423,
+    "on_sale": true,
+    "launched": "04/02/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Burgman Street EX",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.0,
+    "bhp": 8.48,
+    "new_price": 116619,
+    "on_sale": true,
+    "launched": "07/19/2018",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "E Access",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 178194,
+    "on_sale": true,
+    "launched": "01/09/2026",
+    "range_km": 95.0,
+    "kwh_est": 2.7,
+    "train_rows": 0
+   },
+   {
+    "model": "GSX-8R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 776.0,
+    "bhp": 81.8,
+    "new_price": 991228,
+    "on_sale": true,
+    "launched": "06/09/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Gixxer",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 13.41,
+    "new_price": 129434,
+    "on_sale": true,
+    "launched": "07/12/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 74
+   },
+   {
+    "model": "Gixxer 250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 26.13,
+    "new_price": 184521,
+    "on_sale": true,
+    "launched": "08/09/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Gixxer SF",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 155.0,
+    "bhp": 13.4,
+    "new_price": 143257,
+    "on_sale": true,
+    "launched": "05/20/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 68
+   },
+   {
+    "model": "Gixxer SF 250",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 26.13,
+    "new_price": 195312,
+    "on_sale": true,
+    "launched": "05/20/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 1
+   },
+   {
+    "model": "Gixxer SF 250 Flex Fuel",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 26.13,
+    "new_price": 200846,
+    "on_sale": true,
+    "launched": "01/17/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Hayabusa",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 1340.0,
+    "bhp": 190.0,
+    "new_price": 1899000,
+    "on_sale": true,
+    "launched": "04/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 7
+   },
+   {
+    "model": "V-Strom 800 DE",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 776.0,
+    "bhp": 83.0,
+    "new_price": 1103440,
+    "on_sale": true,
+    "launched": "06/05/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "V-Strom SX",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 249.0,
+    "bhp": 26.1,
+    "new_price": 204619,
+    "on_sale": true,
+    "launched": "04/07/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "GS150R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 7
+   },
+   {
+    "model": "Hayate",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 4
+   },
+   {
+    "model": "Intruder 150",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 31
+   },
+   {
+    "model": "SlingShot",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": null,
+    "bhp": null,
+    "new_price": null,
+    "on_sale": false,
+    "train_rows": 6
+   }
+  ],
+  "Ultraviolette": [
+   {
+    "model": "F77 Mach 2",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 27.0,
+    "new_price": 309000,
+    "on_sale": true,
+    "launched": "04/24/2024",
+    "range_km": 211.0,
+    "kwh_est": 6.0,
+    "train_rows": 0
+   },
+   {
+    "model": "F77 SuperStreet",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 27.0,
+    "new_price": 309000,
+    "on_sale": true,
+    "launched": "01/31/2025",
+    "range_km": 211.0,
+    "kwh_est": 6.0,
+    "train_rows": 0
+   },
+   {
+    "model": "X-47 Venom",
+    "type": "motorcycle",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 4030.0,
+    "new_price": 265000,
+    "on_sale": true,
+    "launched": "10/22/2026",
+    "range_km": 227.0,
+    "kwh_est": 6.5,
+    "train_rows": 0
+   }
+  ],
+  "Vespa": [
+   {
+    "model": "125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.3,
+    "new_price": 132671,
+    "on_sale": true,
+    "launched": "02/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "150",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 149.5,
+    "bhp": 11.2,
+    "new_price": 146707,
+    "on_sale": true,
+    "launched": "02/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Officina 8",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.3,
+    "new_price": 140492,
+    "on_sale": true,
+    "launched": "02/13/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "S 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.3,
+    "new_price": 136955,
+    "on_sale": true,
+    "launched": "02/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "S 150",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 149.5,
+    "bhp": 11.2,
+    "new_price": 149774,
+    "on_sale": true,
+    "launched": "02/11/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "ZX 125",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.45,
+    "bhp": 9.65,
+    "new_price": 118706,
+    "on_sale": true,
+    "launched": "04/01/2019",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "VIDA": [
+   {
+    "model": "V2",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 6.0,
+    "new_price": 150245,
+    "on_sale": true,
+    "launched": "12/04/2024",
+    "range_km": 143.0,
+    "kwh_est": 4.1,
+    "train_rows": 0
+   },
+   {
+    "model": "VX2",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": 6.0,
+    "new_price": 109936,
+    "on_sale": true,
+    "launched": "07/01/2025",
+    "range_km": 92.0,
+    "kwh_est": 2.6,
+    "train_rows": 0
+   }
+  ],
+  "VLF": [
+   {
+    "model": "Mobster",
+    "type": "scooter",
+    "fuel": "petrol",
+    "cc": 124.6,
+    "bhp": 12.0,
+    "new_price": 136999,
+    "on_sale": true,
+    "launched": "09/25/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Strada",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 119999,
+    "on_sale": true,
+    "launched": "10/12/2026",
+    "range_km": 130.0,
+    "kwh_est": 3.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Tennis",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 120225,
+    "on_sale": true,
+    "launched": "07/23/2025",
+    "range_km": 130.0,
+    "kwh_est": 3.7,
+    "train_rows": 0
+   }
+  ],
+  "Yezdi": [
+   {
+    "model": "Adventure",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 29.16,
+    "new_price": 208102,
+    "on_sale": true,
+    "launched": "06/04/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Roadster",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 28.7,
+    "new_price": 201928,
+    "on_sale": true,
+    "launched": "08/12/2025",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "Scrambler",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 334.0,
+    "bhp": 29.56,
+    "new_price": 201965,
+    "on_sale": true,
+    "launched": "04/23/2026",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ],
+  "Yo": [
+   {
+    "model": "Drift",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 71300,
+    "on_sale": true,
+    "launched": "09/12/2019",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   },
+   {
+    "model": "Edge",
+    "type": "scooter",
+    "fuel": "electric",
+    "cc": null,
+    "bhp": null,
+    "new_price": 67500,
+    "on_sale": true,
+    "launched": "09/12/2019",
+    "range_km": 60.0,
+    "kwh_est": 1.7,
+    "train_rows": 0
+   }
+  ],
+  "Zontes": [
+   {
+    "model": "350R",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.0,
+    "bhp": 38.2,
+    "new_price": 257000,
+    "on_sale": true,
+    "launched": "10/04/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "350T",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.0,
+    "bhp": 38.2,
+    "new_price": 275000,
+    "on_sale": true,
+    "launched": "10/04/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "350X",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.0,
+    "bhp": 38.2,
+    "new_price": 237000,
+    "on_sale": true,
+    "launched": "10/04/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   },
+   {
+    "model": "GK350",
+    "type": "motorcycle",
+    "fuel": "petrol",
+    "cc": 348.0,
+    "bhp": 38.2,
+    "new_price": 322000,
+    "on_sale": true,
+    "launched": "10/04/2022",
+    "range_km": null,
+    "kwh_est": null,
+    "train_rows": 0
+   }
+  ]
+ },
+ "car": {
+  "Maruti Suzuki": [
+   {
+    "model": "Alto K10",
+    "new_price": 369902,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/18/2022",
+    "train_rows": 102
+   },
+   {
+    "model": "Baleno",
+    "new_price": 609893,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/05/2026",
+    "train_rows": 79
+   },
+   {
+    "model": "Brezza",
+    "new_price": 749900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/24/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Celerio",
+    "new_price": 469900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/10/2021",
+    "train_rows": 52
+   },
+   {
+    "model": "Dzire",
+    "new_price": 630600,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/11/2024",
+    "train_rows": 350
+   },
+   {
+    "model": "Eeco",
+    "new_price": 528400,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/22/2022",
+    "train_rows": 53
+   },
+   {
+    "model": "Ertiga",
+    "new_price": 890000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/15/2022",
+    "train_rows": 136
+   },
+   {
+    "model": "Fronx",
+    "new_price": 689900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/24/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Grand Vitara",
+    "new_price": 1076500,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/26/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Invicto",
+    "new_price": 2502400,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/05/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Jimny",
+    "new_price": 1259000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/07/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "S-Presso",
+    "new_price": 349900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/18/2022",
+    "train_rows": 1
+   },
+   {
+    "model": "Swift",
+    "new_price": 583900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/09/2024",
+    "train_rows": 323
+   },
+   {
+    "model": "Victoris",
+    "new_price": 1049852,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/15/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Wagon R",
+    "new_price": 498900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/25/2022",
+    "train_rows": 245
+   },
+   {
+    "model": "XL6",
+    "new_price": 1162300,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/21/2022",
+    "train_rows": 2
+   },
+   {
+    "model": "e Vitara",
+    "new_price": 1361142,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/17/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "800",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 89
+   },
+   {
+    "model": "A-Star",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 17
+   },
+   {
+    "model": "Alto",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 160
+   },
+   {
+    "model": "Alto 800",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 133
+   },
+   {
+    "model": "Celerio X",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 7
+   },
+   {
+    "model": "Ciaz",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 57
+   },
+   {
+    "model": "Esteem",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Estilo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 37
+   },
+   {
+    "model": "Gypsy",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Ignis",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 19
+   },
+   {
+    "model": "Omni",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 49
+   },
+   {
+    "model": "Ritz",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 77
+   },
+   {
+    "model": "S-Cross",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 27
+   },
+   {
+    "model": "SX4",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 31
+   },
+   {
+    "model": "Vitara Brezza",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 74
+   },
+   {
+    "model": "Zen",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 29
+   }
+  ],
+  "Hyundai": [
+   {
+    "model": "Alcazar",
+    "new_price": 1450700,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/09/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Aura",
+    "new_price": 599977,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/23/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Bayon",
+    "new_price": 999900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/26/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Creta",
+    "new_price": 1090700,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/16/2024",
+    "train_rows": 74
+   },
+   {
+    "model": "Creta Electric",
+    "new_price": 1457159,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/17/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Creta N Line",
+    "new_price": 1903300,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/11/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Exter",
+    "new_price": 580600,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/20/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Grand i10 Nios",
+    "new_price": 559700,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/20/2023",
+    "train_rows": 3
+   },
+   {
+    "model": "Ioniq 5",
+    "new_price": 5570600,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/28/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Venue",
+    "new_price": 799900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/04/2025",
+    "train_rows": 2
+   },
+   {
+    "model": "Venue N Line",
+    "new_price": 1066100,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/04/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Verna",
+    "new_price": 1099200,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/09/2026",
+    "train_rows": 180
+   },
+   {
+    "model": "i20",
+    "new_price": 599700,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/08/2023",
+    "train_rows": 297
+   },
+   {
+    "model": "i20 N Line",
+    "new_price": 932200,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/22/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Accent",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 32
+   },
+   {
+    "model": "Elantra",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 13
+   },
+   {
+    "model": "Eon",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 123
+   },
+   {
+    "model": "Getz",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 13
+   },
+   {
+    "model": "Grand i10",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 148
+   },
+   {
+    "model": "Santa Fe",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Santro",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 125
+   },
+   {
+    "model": "Sonata",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 6
+   },
+   {
+    "model": "Xcent",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 75
+   },
+   {
+    "model": "i10",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 132
+   },
+   {
+    "model": "i20 Active",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 37
+   }
+  ],
+  "Mahindra": [
+   {
+    "model": "BE 6 Sporteq",
+    "new_price": 1545392,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/15/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Bolero",
+    "new_price": 849000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/06/2025",
+    "train_rows": 187
+   },
+   {
+    "model": "Bolero Neo",
+    "new_price": 906000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/06/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Bolero Neo Plus",
+    "new_price": 1146000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/16/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Scorpio",
+    "new_price": 1343200,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/19/2022",
+    "train_rows": 160
+   },
+   {
+    "model": "Scorpio N",
+    "new_price": 1369000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/27/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Thar OG",
+    "new_price": 1032000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/22/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Thar Roxx",
+    "new_price": 1252000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/14/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "XEV 9S",
+    "new_price": 1664083,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/27/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "XEV 9e",
+    "new_price": 1791174,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/26/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "XUV 3XO",
+    "new_price": 779000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/29/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "XUV 3XO EV",
+    "new_price": 1389000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/06/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "XUV 7XO",
+    "new_price": 1399000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/05/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "XUV400",
+    "new_price": 1549000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/16/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Jeep",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 6
+   },
+   {
+    "model": "KUV100",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 44
+   },
+   {
+    "model": "Logan/Verito",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 32
+   },
+   {
+    "model": "Marazzo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 10
+   },
+   {
+    "model": "NuvoSport",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   },
+   {
+    "model": "Quanto",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "TUV300",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 52
+   },
+   {
+    "model": "Thar",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 22
+   },
+   {
+    "model": "XUV300",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "XUV500",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 131
+   },
+   {
+    "model": "Xylo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 50
+   }
+  ],
+  "Tata": [
+   {
+    "model": "Aeris",
+    "new_price": 529990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/25/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Altroz",
+    "new_price": 599990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/22/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Curvv",
+    "new_price": 999990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/02/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Curvv EV",
+    "new_price": 1409000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/07/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Harrier",
+    "new_price": 1299990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/17/2023",
+    "train_rows": 4
+   },
+   {
+    "model": "Harrier EV",
+    "new_price": 1814000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/03/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Nexon",
+    "new_price": 739990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/14/2023",
+    "train_rows": 32
+   },
+   {
+    "model": "Nexon EV",
+    "new_price": 1166500,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/14/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Punch",
+    "new_price": 574990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/13/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Punch EV",
+    "new_price": 819000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/20/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Safari",
+    "new_price": 1339990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/17/2023",
+    "train_rows": 72
+   },
+   {
+    "model": "Sierra",
+    "new_price": 1149000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/25/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Sierra EV",
+    "new_price": 1536483,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/30/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Tiago",
+    "new_price": 476990,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/28/2026",
+    "train_rows": 66
+   },
+   {
+    "model": "Tiago EV",
+    "new_price": 583519,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/28/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Tigor EV",
+    "new_price": 1249000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/23/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Aria",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 7
+   },
+   {
+    "model": "Bolt",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "Hexa",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 18
+   },
+   {
+    "model": "Indica",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 150
+   },
+   {
+    "model": "Indigo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 116
+   },
+   {
+    "model": "Manza",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 44
+   },
+   {
+    "model": "Nano",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 25
+   },
+   {
+    "model": "Sumo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 28
+   },
+   {
+    "model": "Tigor",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 26
+   },
+   {
+    "model": "Venture",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   },
+   {
+    "model": "Zest",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 42
+   }
+  ],
+  "Toyota": [
+   {
+    "model": "Camry",
+    "new_price": 4869000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/11/2024",
+    "train_rows": 4
+   },
+   {
+    "model": "Fortuner",
+    "new_price": 3511000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/06/2021",
+    "train_rows": 38
+   },
+   {
+    "model": "Fortuner Legender",
+    "new_price": 4335000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/06/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "Glanza",
+    "new_price": 699000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/14/2026",
+    "train_rows": 3
+   },
+   {
+    "model": "Hilux",
+    "new_price": 3199000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/28/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Innova Crysta",
+    "new_price": 1995000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/04/2026",
+    "train_rows": 41
+   },
+   {
+    "model": "Innova Hycross",
+    "new_price": 1953000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/28/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Land Cruiser",
+    "new_price": 21775000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/22/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Rumion",
+    "new_price": 979000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/28/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Urban Cruiser Ebella",
+    "new_price": 2360000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/29/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Urban Cruiser Hyryder",
+    "new_price": 1131000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/09/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Urban Cruiser Taisor",
+    "new_price": 743000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/03/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Vellfire",
+    "new_price": 11999000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/03/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Corolla",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 7
+   },
+   {
+    "model": "Corolla Altis",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 23
+   },
+   {
+    "model": "Etios",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 50
+   },
+   {
+    "model": "Etios Liva",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 32
+   },
+   {
+    "model": "Innova",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 147
+   },
+   {
+    "model": "Qualis",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 6
+   },
+   {
+    "model": "Yaris",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   }
+  ],
+  "Honda": [
+   {
+    "model": "Amaze",
+    "new_price": 769093,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/04/2024",
+    "train_rows": 62
+   },
+   {
+    "model": "Amaze 2nd Gen",
+    "new_price": 698194,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/18/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "City",
+    "new_price": 1203952,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/22/2026",
+    "train_rows": 168
+   },
+   {
+    "model": "Elevate",
+    "new_price": 1184050,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/06/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "ZR-V",
+    "new_price": 4799000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/25/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Accord",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 7
+   },
+   {
+    "model": "BR-V",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 12
+   },
+   {
+    "model": "Brio",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 21
+   },
+   {
+    "model": "CR-V",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Civic",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 15
+   },
+   {
+    "model": "Jazz",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 34
+   },
+   {
+    "model": "Mobilio",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 11
+   },
+   {
+    "model": "WR-V",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 21
+   }
+  ],
+  "Ford": [
+   {
+    "model": "Aspire",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 40
+   },
+   {
+    "model": "Classic",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "EcoSport",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 93
+   },
+   {
+    "model": "Endeavour",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 18
+   },
+   {
+    "model": "Fiesta",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 56
+   },
+   {
+    "model": "Figo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 120
+   },
+   {
+    "model": "Freestyle",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 13
+   },
+   {
+    "model": "Fusion",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Ikon",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 10
+   }
+  ],
+  "Chevrolet": [
+   {
+    "model": "Aveo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "Beat",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 61
+   },
+   {
+    "model": "Captiva",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Cruze",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 14
+   },
+   {
+    "model": "Enjoy",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 23
+   },
+   {
+    "model": "Optra",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 12
+   },
+   {
+    "model": "Sail",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 26
+   },
+   {
+    "model": "Spark",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 42
+   },
+   {
+    "model": "Tavera",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 24
+   }
+  ],
+  "Renault": [
+   {
+    "model": "Duster",
+    "new_price": 1049000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/17/2026",
+    "train_rows": 71
+   },
+   {
+    "model": "Kiger",
+    "new_price": 581000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/24/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Kwid",
+    "new_price": 452900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/03/2026",
+    "train_rows": 99
+   },
+   {
+    "model": "Triber",
+    "new_price": 580875,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/23/2025",
+    "train_rows": 6
+   },
+   {
+    "model": "Fluence",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Lodgy",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Pulse",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 8
+   },
+   {
+    "model": "Scala",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   }
+  ],
+  "Volkswagen": [
+   {
+    "model": "Golf GTI",
+    "new_price": 5090900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/26/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Taigun",
+    "new_price": 1099900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/14/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Tayron",
+    "new_price": 4199000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/19/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Virtus",
+    "new_price": 1070900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/22/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Ameo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 25
+   },
+   {
+    "model": "Jetta",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 9
+   },
+   {
+    "model": "Passat",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Polo",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 75
+   },
+   {
+    "model": "Vento",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 58
+   }
+  ],
+  "Skoda": [
+   {
+    "model": "Kodiaq",
+    "new_price": 3699000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/17/2025",
+    "train_rows": 2
+   },
+   {
+    "model": "Kodiaq RS",
+    "new_price": 6699000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/02/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Kushaq",
+    "new_price": 1069000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/21/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Kylaq",
+    "new_price": 759000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/06/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Octavia RS",
+    "new_price": 5669000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/17/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Slavia",
+    "new_price": 999900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/06/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Fabia",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 11
+   },
+   {
+    "model": "Laura",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Octavia",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 15
+   },
+   {
+    "model": "Rapid",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 34
+   },
+   {
+    "model": "Superb",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   }
+  ],
+  "Nissan": [
+   {
+    "model": "Gravite",
+    "new_price": 573400,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/17/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Magnite",
+    "new_price": 569400,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/04/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Tekton",
+    "new_price": 1049000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/09/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "X-Trail",
+    "new_price": 4819862,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/01/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Kicks",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   },
+   {
+    "model": "Micra",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 24
+   },
+   {
+    "model": "Sunny",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 23
+   },
+   {
+    "model": "Terrano",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 22
+   }
+  ],
+  "BMW": [
+   {
+    "model": "2 Series Gran Coupe",
+    "new_price": 4580000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/17/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "3 Series LWB",
+    "new_price": 6270000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/28/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "5-Series LWB",
+    "new_price": 7660000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/24/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "7 Series",
+    "new_price": 19500000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/11/2026",
+    "train_rows": 2
+   },
+   {
+    "model": "M2",
+    "new_price": 10650000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/08/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "M340i",
+    "new_price": 7710000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/10/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "M4",
+    "new_price": 16050000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/02/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "M440i",
+    "new_price": 10900000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/03/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "M5",
+    "new_price": 21150000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/21/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "X1",
+    "new_price": 5090000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/28/2023",
+    "train_rows": 7
+   },
+   {
+    "model": "X1 LWB",
+    "new_price": 4990000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/21/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "X3",
+    "new_price": 6990000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/17/2025",
+    "train_rows": 1
+   },
+   {
+    "model": "X5",
+    "new_price": 9690000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/14/2023",
+    "train_rows": 1
+   },
+   {
+    "model": "X6",
+    "new_price": 17790000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/26/2026",
+    "train_rows": 1
+   },
+   {
+    "model": "X7",
+    "new_price": 13070000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/17/2023",
+    "train_rows": 1
+   },
+   {
+    "model": "XM",
+    "new_price": 25455000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/10/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "i5",
+    "new_price": 11950000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/25/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "i5 LWB",
+    "new_price": 7960000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/07/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "i7",
+    "new_price": 19500000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/11/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "iX",
+    "new_price": 13950000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/13/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "iX1 LWB",
+    "new_price": 5270000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/17/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "3-Series",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 14
+   },
+   {
+    "model": "5 Series",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 12
+   },
+   {
+    "model": "6 Series GT",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   },
+   {
+    "model": "X4",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   }
+  ],
+  "Mercedes-Benz": [
+   {
+    "model": "AMG A45 S",
+    "new_price": 8700000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/24/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG C 43",
+    "new_price": 9405000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/02/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG C 63 S E Performance",
+    "new_price": 19090909,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/12/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG CLE",
+    "new_price": 13250000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/12/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG E53 Cabriolet",
+    "new_price": 12320946,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/06/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG E53 PHEV",
+    "new_price": 14500000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/23/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG EQS",
+    "new_price": 24500000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/24/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG G-Class",
+    "new_price": 37400000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/22/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GLA35",
+    "new_price": 6006757,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/25/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GLC43 Coupe",
+    "new_price": 9985000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/08/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GLE Coupe",
+    "new_price": 15200000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/31/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GT 63",
+    "new_price": 30000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/27/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GT 63 S 4Matic Plus",
+    "new_price": 25540541,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/05/2020",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG GT 63 S E Performance",
+    "new_price": 32699301,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/11/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG S 63 E Performance",
+    "new_price": 33360000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/22/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "AMG SL55 Roadster",
+    "new_price": 23383784,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/22/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "C-Class",
+    "new_price": 6120000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/03/2024",
+    "train_rows": 13
+   },
+   {
+    "model": "CLA EV",
+    "new_price": 5650000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/24/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "CLE Cabriolet",
+    "new_price": 11500000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/08/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "E-Class",
+    "new_price": 8150000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/09/2024",
+    "train_rows": 12
+   },
+   {
+    "model": "EQE SUV",
+    "new_price": 14140000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/15/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "EQS",
+    "new_price": 13000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/30/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "EQS SUV",
+    "new_price": 13350000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/16/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "G-Class",
+    "new_price": 29000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/08/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "G-Class Electric",
+    "new_price": 31000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/09/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "GLA",
+    "new_price": 5180000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/31/2024",
+    "train_rows": 5
+   },
+   {
+    "model": "GLC",
+    "new_price": 7700000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/03/2024",
+    "train_rows": 1
+   },
+   {
+    "model": "GLC Electric",
+    "new_price": 7850000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/04/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "GLE",
+    "new_price": 10000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/02/2023",
+    "train_rows": 4
+   },
+   {
+    "model": "GLS",
+    "new_price": 13750000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/08/2024",
+    "train_rows": 4
+   },
+   {
+    "model": "Maybach EQS SUV",
+    "new_price": 24000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/05/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Maybach GLS",
+    "new_price": 27502405,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/22/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Maybach S-Class",
+    "new_price": 32000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/05/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Maybach SL 680",
+    "new_price": 43000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/18/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "S-Class",
+    "new_price": 22000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/15/2026",
+    "train_rows": 2
+   },
+   {
+    "model": "V-Class",
+    "new_price": 14000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/02/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "B-Class",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 4
+   }
+  ],
+  "Audi": [
+   {
+    "model": "A4",
+    "new_price": 4688000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/05/2021",
+    "train_rows": 8
+   },
+   {
+    "model": "A6",
+    "new_price": 6481000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/24/2019",
+    "train_rows": 7
+   },
+   {
+    "model": "A8 L",
+    "new_price": 12687973,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/12/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Q3",
+    "new_price": 5199000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/16/2026",
+    "train_rows": 5
+   },
+   {
+    "model": "Q3 Sportback",
+    "new_price": 5355000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/13/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Q5",
+    "new_price": 6555000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/23/2021",
+    "train_rows": 4
+   },
+   {
+    "model": "Q7",
+    "new_price": 8762000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/28/2024",
+    "train_rows": 6
+   },
+   {
+    "model": "Q8",
+    "new_price": 11482000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/22/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Q8 Sportback e-tron",
+    "new_price": 11923000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/18/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Q8 e-tron",
+    "new_price": 11473000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/18/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "RS Q8 Performance",
+    "new_price": 23816000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/17/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "RS5",
+    "new_price": 10668378,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/09/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "S5 Sportback",
+    "new_price": 7357000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/22/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "SQ8",
+    "new_price": 17772000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/17/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "e-tron",
+    "new_price": 10216000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/22/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "e-tron GT",
+    "new_price": 17157000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/22/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "e-tron Sportback",
+    "new_price": 12024000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/22/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "A3",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   }
+  ],
+  "Datsun": [
+   {
+    "model": "GO",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 20
+   },
+   {
+    "model": "GO+",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 14
+   },
+   {
+    "model": "redi-GO",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 23
+   }
+  ],
+  "Fiat": [
+   {
+    "model": "Avventura",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Linea",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 13
+   },
+   {
+    "model": "Punto",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 24
+   }
+  ],
+  "Jeep": [
+   {
+    "model": "Compass",
+    "new_price": 1829000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/27/2021",
+    "train_rows": 21
+   },
+   {
+    "model": "Grand Cherokee",
+    "new_price": 6300000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "11/17/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Meridian",
+    "new_price": 2333000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/19/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Wrangler",
+    "new_price": 6770000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/25/2024",
+    "train_rows": 1
+   }
+  ],
+  "Kia": [
+   {
+    "model": "Carens",
+    "new_price": 1111900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/03/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Carens Clavis",
+    "new_price": 1138884,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/23/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Carens Clavis EV",
+    "new_price": 1803900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/15/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Carnival",
+    "new_price": 5964885,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/03/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "EV6",
+    "new_price": 6597937,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/26/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "EV9",
+    "new_price": 12991312,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/03/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Seltos",
+    "new_price": 1124900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/02/2026",
+    "train_rows": 3
+   },
+   {
+    "model": "Sonet",
+    "new_price": 744900,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/03/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Sorento",
+    "new_price": 2799000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/04/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Syros",
+    "new_price": 841899,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/20/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Syros EV",
+    "new_price": 1075719,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/23/2026",
+    "train_rows": 0
+   }
+  ],
+  "MG": [
+   {
+    "model": "Astor",
+    "new_price": 979100,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/11/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "Comet EV",
+    "new_price": 647865,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/26/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "Cyberster",
+    "new_price": 7754899,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/25/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Hector",
+    "new_price": 1214000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/15/2025",
+    "train_rows": 3
+   },
+   {
+    "model": "Hector Plus",
+    "new_price": 1814800,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/15/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Hector Tomahawk EV",
+    "new_price": 1715738,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/26/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Hector Tomahawk PHEV",
+    "new_price": 2376797,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/26/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "M9",
+    "new_price": 7502371,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/21/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Majestor",
+    "new_price": 4349000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/27/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Windsor EV",
+    "new_price": 1246880,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/11/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "ZS EV",
+    "new_price": 1550082,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/07/2022",
+    "train_rows": 0
+   }
+  ],
+  "Land Rover": [
+   {
+    "model": "Defender",
+    "new_price": 9900000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/12/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "Discovery",
+    "new_price": 12600000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/09/2017",
+    "train_rows": 0
+   },
+   {
+    "model": "Discovery Sport",
+    "new_price": 6337000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/29/2022",
+    "train_rows": 1
+   },
+   {
+    "model": "Range Rover",
+    "new_price": 24000000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/11/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Range Rover Evoque",
+    "new_price": 6486000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "01/30/2020",
+    "train_rows": 1
+   },
+   {
+    "model": "Range Rover Sport",
+    "new_price": 14300000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/19/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "Range Rover Velar",
+    "new_price": 8750000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/24/2023",
+    "train_rows": 0
+   }
+  ],
+  "Volvo": [
+   {
+    "model": "EC40",
+    "new_price": 5900000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/04/2023",
+    "train_rows": 0
+   },
+   {
+    "model": "EX30",
+    "new_price": 4100000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/23/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "EX90",
+    "new_price": 12600000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/12/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "XC60",
+    "new_price": 6960000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "08/01/2025",
+    "train_rows": 1
+   },
+   {
+    "model": "XC90",
+    "new_price": 9880000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/04/2025",
+    "train_rows": 1
+   }
+  ],
+  "Jaguar": [
+   {
+    "model": "F-Pace",
+    "new_price": 6895946,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/10/2021",
+    "train_rows": 0
+   },
+   {
+    "model": "XF",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 6
+   }
+  ],
+  "Mitsubishi": [
+   {
+    "model": "Lancer",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 5
+   },
+   {
+    "model": "Pajero Sport",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 6
+   }
+  ],
+  "Lexus": [
+   {
+    "model": "ES 350h",
+    "new_price": 6610000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/15/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "ES 500e",
+    "new_price": 8999000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/20/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "LM",
+    "new_price": 21969000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/15/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "LX",
+    "new_price": 26357333,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/23/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "NX",
+    "new_price": 6759000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "03/09/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "RX",
+    "new_price": 8999000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "04/19/2023",
+    "train_rows": 0
+   }
+  ],
+  "Isuzu": [
+   {
+    "model": "Hi-Lander",
+    "new_price": 2104580,
+    "on_sale": true,
+    "electric": false,
+    "launched": "02/24/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "MU-X",
+    "new_price": 3453240,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/10/2021",
+    "train_rows": 1
+   },
+   {
+    "model": "V-Cross",
+    "new_price": 2550260,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/02/2024",
+    "train_rows": 0
+   }
+  ],
+  "Force Motors": [
+   {
+    "model": "Gurkha",
+    "new_price": 1630910,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/02/2024",
+    "train_rows": 1
+   },
+   {
+    "model": "Trax Cruiser",
+    "new_price": 1262255,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/10/2020",
+    "train_rows": 0
+   },
+   {
+    "model": "One",
+    "new_price": null,
+    "on_sale": false,
+    "electric": false,
+    "train_rows": 3
+   }
+  ],
+  "Citroen": [
+   {
+    "model": "Aircross X",
+    "new_price": 889000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "10/03/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Basalt X",
+    "new_price": 855000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/05/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "C3 X",
+    "new_price": 499000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/20/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "C5 Aircross",
+    "new_price": 3732400,
+    "on_sale": true,
+    "electric": false,
+    "launched": "09/08/2022",
+    "train_rows": 0
+   },
+   {
+    "model": "eC3 X",
+    "new_price": 957128,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/17/2026",
+    "train_rows": 0
+   }
+  ],
+  "Mini": [
+   {
+    "model": "Cooper",
+    "new_price": 4445000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/24/2024",
+    "train_rows": 0
+   },
+   {
+    "model": "Cooper S Convertible",
+    "new_price": 5900000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "12/12/2025",
+    "train_rows": 0
+   },
+   {
+    "model": "Countryman",
+    "new_price": 6615000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "05/03/2018",
+    "train_rows": 0
+   },
+   {
+    "model": "Countryman C",
+    "new_price": 4750000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "06/17/2026",
+    "train_rows": 0
+   },
+   {
+    "model": "Countryman Electric",
+    "new_price": 5565000,
+    "on_sale": true,
+    "electric": false,
+    "launched": "07/24/2024",
+    "train_rows": 0
+   }
+  ]
+ },
+ "sources": {
+  "bike": "BikeWale brand pages, scraped 2026-11-12",
+  "car": "CarWale brand pages, scraped 2026-11-12"
+ }
+}
