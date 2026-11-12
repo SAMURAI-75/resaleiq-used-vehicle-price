@@ -121,21 +121,36 @@ const TAX = [["Tamil Nadu", 8, 115000], ["Delhi", 8, 118000], ["Haryana", 6, 120
 })();
 
 /* ---------------- metrics table ---------------- */
+const SEG_NAMES = { overall: "All test ads", baseline_rule: "Simple rule: new price × typical % kept", site_valuation: "The listing site's own valuation",
+  ours_same_ads: "Ours, on the same ads", "Petrol motorcycle": "Petrol motorcycles", "Petrol scooter": "Petrol scooters",
+  "Electric scooter": "Electric scooters", "Electric motorcycle": "Electric motorcycles", "CNG motorcycle": "CNG motorcycles" };
 function renderMetrics(kind) {
-  if (!METRICS) return;
-  const m = METRICS[kind].models;
-  const best = Object.entries(m).sort((a, b) => a[1].MAE - b[1].MAE)[0][0]; // best = fewest rupees off
-  $("#metricTable tbody").innerHTML = Object.entries(m).map(([n, v]) => `<tr class="${n === best ? "best" : ""}">
-    <td>${n}</td><td>${inr(v.MAE)}</td><td>${inr(v.RMSE)}</td><td>${v.R2.toFixed(3)}</td>
-    <td><div class="r2bar"><i data-w="${(v.R2 * 100).toFixed(1)}"></i></div></td></tr>`).join("");
+  if (!METRICS || !METRICS[kind]) return;
+  const pct = (x) => (x * 100).toFixed(1) + "%";
+  if (kind.endsWith("_market")) {
+    const segs = METRICS[kind].segments;
+    $("#metricHead").innerHTML = "<tr><th>Ads tested</th><th>n</th><th>Typical miss</th><th>Within 20%</th><th class='barcol'></th></tr>";
+    $("#metricTable tbody").innerHTML = Object.entries(segs).map(([k, v]) => "<tr class='" + (k === "overall" ? "best" : "") + "'><td>" +
+      esc(SEG_NAMES[k] || k) + "</td><td>" + v.n.toLocaleString("en-IN") + "</td><td>" + pct(v.median_abs_pct_err) + "</td><td>" +
+      pct(v.within_20pct) + "</td><td><div class='r2bar'><i data-w='" + (v.within_20pct * 100).toFixed(1) + "'></i></div></td></tr>").join("");
+  } else {
+    const m = METRICS[kind].models;
+    const best = Object.entries(m).sort((a, b) => a[1].MAE - b[1].MAE)[0][0];
+    $("#metricHead").innerHTML = "<tr><th>Model</th><th>MAE</th><th>RMSE</th><th>R²</th><th class='barcol'></th></tr>";
+    $("#metricTable tbody").innerHTML = Object.entries(m).map(([n, v]) => "<tr class='" + (n === best ? "best" : "") + "'><td>" + n +
+      "</td><td>" + inr(v.MAE) + "</td><td>" + inr(v.RMSE) + "</td><td>" + v.R2.toFixed(3) +
+      "</td><td><div class='r2bar'><i data-w='" + (Math.max(0, v.R2) * 100).toFixed(1) + "'></i></div></td></tr>").join("");
+  }
   requestAnimationFrame(() => $$("#metricTable .r2bar i").forEach((i) => (i.style.width = i.dataset.w + "%")));
 }
 seg($("#metricSeg"), renderMetrics);
 
 /* ---------------- form ---------------- */
-const F = { brand: $("#brand"), model: $("#model"), year: $("#year"), km: $("#km"), owner: $("#owner"), state: $("#state"),
-  trans: $("#trans"), fuel: $("#fuel"), cc: $("#cc"), power: $("#power"), seats: $("#seats"), exs: $("#exs"), kwh: $("#kwh") };
+const F = { brand: $("#brand"), model: $("#model"), variant: $("#variant"), year: $("#year"), km: $("#km"), owner: $("#owner"),
+  seller: $("#seller"), state: $("#state"), city: $("#city"), trans: $("#trans"), fuel: $("#fuel"), cc: $("#cc"),
+  power: $("#power"), seats: $("#seats"), exs: $("#exs"), kwh: $("#kwh") };
 let KIND = "2w", FUELF = "petrol"; // 2w | car ; petrol | electric
+let VARIANTS = [];
 const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 function modelsFor(brand) {
@@ -145,6 +160,7 @@ function modelsFor(brand) {
 }
 function brandsFor() { return Object.keys(META[KIND].brands).filter((b) => modelsFor(b).length); }
 function current() { return modelsFor(F.brand.value).find((m) => m.model === F.model.value); }
+function currentVariant() { return VARIANTS.find((v) => v.id === F.variant.value); }
 
 function fillBrands(keep) {
   const bs = brandsFor(), prev = keep ?? F.brand.value;
@@ -157,90 +173,138 @@ function fillModels(keep) {
   const list = modelsFor(F.brand.value), prev = keep ?? F.model.value;
   const groups = new Map();
   for (const m of list) {
-    const g = !m.on_sale ? "Discontinued (priced from 2020-21 listings)"
+    const g = !m.on_sale ? "No longer sold new"
       : KIND === "car" ? "On sale" : `${TYPE_LABEL[m.type] || "Two-wheelers"} on sale`;
     if (!groups.has(g)) groups.set(g, []);
     groups.get(g).push(m);
   }
-  const order = [...groups.keys()].sort((a, b) => a.startsWith("Disc") - b.startsWith("Disc"));
+  const order = [...groups.keys()].sort((a, b) => a.startsWith("No longer") - b.startsWith("No longer"));
   F.model.innerHTML = order.map((g) => `<optgroup label="${esc(g)}">${groups.get(g).map((m) =>
     `<option value="${esc(m.model)}">${esc(m.model)}${m.fuel === "cng" ? " (CNG)" : ""}</option>`).join("")}</optgroup>`).join("");
   if (list.some((m) => m.model === prev)) F.model.value = prev;
-  fillSpecs();
+  onModel();
 }
-function fillSpecs() {
+let variantReq = 0;
+async function onModel() {
   const m = current();
   if (!m) return;
+  setYears(m);
   if (m.cc) F.cc.value = Math.round(m.cc);
-  if (m.new_price) F.exs.value = m.new_price;
+  if (m.new_price) F.exs.value = Math.round(m.new_price);
   F.kwh.value = m.kwh_est || "";
   if (KIND === "car" && m.engine === "ml") {
-    F.power.value = Math.round(m.power); F.seats.value = m.seats;
-    if (m.fuel) F.fuel.value = m.fuel;
+    if (m.power) F.power.value = Math.round(m.power);
+    if (m.seats) F.seats.value = m.seats;
+    if (m.kaggle_fuel) F.fuel.value = m.kaggle_fuel;
     if (m.transmission) F.trans.value = m.transmission;
   }
+  if (KIND === "car" && m.engine === "market") {
+    const f = { petrol: "Petrol", diesel: "Diesel", cng: "CNG", electric: "Electric", hybrid: "Hybrid" }[m.fuel];
+    if (f) F.fuel.value = f;
+    if (m.transmission_mode && m.transmission_mode !== "NA") F.trans.value = m.transmission_mode;
+  }
+  VARIANTS = [];
+  F.variant.innerHTML = `<option value="">Not sure</option>`;
+  updateFields();
+  if (m.engine !== "market") return;
+  const my = ++variantReq;
+  const q = new URLSearchParams({ type: KIND, brand: F.brand.value, model: F.model.value });
+  try {
+    const vs = await fetch("/api/variants?" + q).then((r) => r.json());
+    if (my !== variantReq) return;
+    VARIANTS = vs;
+    F.variant.innerHTML = `<option value="">Not sure</option>` + vs.map((v) =>
+      `<option value="${esc(v.id)}">${esc(v.name)} (${v.years[0] === v.years[1] ? v.years[0] : v.years[0] + "–" + v.years[1]})${v.new_price ? " · " + inr(v.new_price) + " new" : ""}</option>`).join("");
+  } catch { /* variants are optional */ }
   updateFields();
 }
 function updateFields() {
   const m = current() || {};
+  const v = currentVariant();
   const flags = new Set([KIND, m.engine, m.fuel === "electric" ? "ev" : "ice"]);
+  if (KIND === "car" && (m.engine !== "market" || !v)) flags.add("carfree");
   $$("[data-for]").forEach((f) => f.classList.toggle("hide", !f.dataset.for.split(" ").every((t) => flags.has(t))));
-  $("#engineHint").innerHTML = !m.engine ? "" : (m.engine === "ml" || m.engine === "ml26")
-    ? `Priced live by <b>XGBoost</b> · learned from ${m.train_rows} real ads of this model`
-    : `Priced by the <b>depreciation model</b> · official ${KIND === "car" ? "CarWale" : "BikeWale"} price ${inr(m.new_price)}`;
+  $("#advEmpty").hidden = $$("#adv .field").some((f) => !f.classList.contains("hide"));
+  const yrs = m.years ? ` · ads from ${m.years[0]}–${m.years[1]}` : "";
+  $("#engineHint").innerHTML = !m.engine ? "" : m.engine === "market"
+    ? `Priced live by <b>XGBoost</b> · learned from ${m.n.toLocaleString("en-IN")} real 2026 ads of this model${yrs}`
+    : m.engine === "ml" ? `Priced by <b>XGBoost</b> on older 2020-21 listings · no 2026 ads of this model`
+    : `Few ads exist · <b>estimated</b> from the official price ${inr(m.new_price)}`;
 }
 
-function setYears() {
-  const now = META.now, span = KIND === "car" ? 20 : 18, cur = +F.year.value || now - 4;
-  F.year.innerHTML = Array.from({ length: span + 1 }, (_, i) => `<option>${now - i}</option>`).join("");
-  F.year.value = String(Math.max(now - span, Math.min(now, cur)));
+function setYears(m) {
+  const now = META.now, cur = +F.year.value || now - 4;
+  let [y0, y1] = (m && m.years) || [now - 15, now];
+  y0 = Math.max(1995, Math.min(y0, now)); y1 = Math.min(now, Math.max(y1, y0));
+  F.year.innerHTML = Array.from({ length: y1 - y0 + 1 }, (_, i) => `<option>${y1 - i}</option>`).join("");
+  F.year.value = String(Math.max(y0, Math.min(y1, cur)));
+}
+function fillCities() {
+  const cs = META.cities[F.state.value] || [], prev = F.city.value;
+  const sorted = [...cs].sort((a, b) => a.localeCompare(b));
+  F.city.innerHTML = sorted.map((c) => `<option>${esc(c)}</option>`).join("") + `<option value="">Other town</option>`;
+  F.city.value = cs.includes(prev) ? prev : (cs[0] || "");
 }
 
 seg($("#typeSeg"), (v) => {
   KIND = v === "2w" ? "2w" : "car";
   $("#fuelSeg").style.display = KIND === "2w" ? "" : "none";
   if (KIND === "car" && +F.km.value < 20000) F.km.value = 40000;
-  setYears(); fillBrands(KIND === "car" ? "Maruti Suzuki" : undefined);
+  if (KIND === "2w" && +F.km.value > 60000) F.km.value = 15000;
+  fillBrands(KIND === "car" ? "Maruti Suzuki" : undefined);
   if (lastResult) schedule();
 });
 seg($("#fuelSeg"), (v) => { FUELF = v; fillBrands(v === "electric" ? "Ather" : undefined); if (lastResult) schedule(); });
 
 F.brand.addEventListener("change", () => { fillModels(); if (lastResult) schedule(); });
-F.model.addEventListener("change", () => { fillSpecs(); if (lastResult) schedule(); });
-["year", "km", "owner", "state", "trans", "fuel", "cc", "power", "seats", "exs", "kwh"].forEach((k) =>
+F.model.addEventListener("change", () => { onModel(); if (lastResult) schedule(); });
+F.variant.addEventListener("change", () => { updateFields(); if (lastResult) schedule(); });
+F.state.addEventListener("change", () => { fillCities(); if (lastResult) schedule(); });
+["year", "km", "owner", "seller", "city", "trans", "fuel", "cc", "power", "seats", "exs", "kwh"].forEach((k) =>
   F[k].addEventListener("input", () => lastResult && schedule()));
 
 let timer = null;
 function schedule() { clearTimeout(timer); timer = setTimeout(() => run(false), 220); }
 $("#form").addEventListener("submit", (e) => { e.preventDefault(); run(true); });
 
+function readKm() {
+  const k = Math.round(+F.km.value);
+  if (!Number.isFinite(k) || k < 0) return 0;
+  return Math.min(k, 999999);
+}
+
 let inflight = null, lastRtt = 0;
 async function run(scrollTo) {
   const m = current();
   if (!m) return;
-  const body = { type: KIND, brand: F.brand.value, model: F.model.value, year: +F.year.value,
-    km: Math.max(0, +F.km.value || 0), owners: +F.owner.value };
-  if (KIND === "2w") body.state = F.state.value;
+  const v = currentVariant();
+  const body = { type: KIND, brand: F.brand.value, model: F.model.value, year: +F.year.value, km: readKm(),
+    owners: +F.owner.value, seller: F.seller.value, state: F.state.value, city: F.city.value || null };
+  if (v) body.variant = v.id;
+  if (KIND === "car" && (m.engine !== "market" || !v)) Object.assign(body, { fuel: F.fuel.value, transmission: F.trans.value });
   if (m.engine === "ml") body.cc = +F.cc.value || null;
-  if (KIND === "car" && m.engine === "ml") Object.assign(body, { fuel: F.fuel.value, transmission: F.trans.value, power: +F.power.value || null, seats: +F.seats.value || null });
-  if (m.engine === "dep") body.new_price = +F.exs.value || null;
-  if (m.fuel === "electric") body.kwh = +F.kwh.value || null;
+  if (KIND === "car" && m.engine === "ml") Object.assign(body, { power: +F.power.value || null, seats: +F.seats.value || null });
+  if (m.engine === "dep" && +F.exs.value >= 10000) body.new_price = +F.exs.value;
+  if (m.fuel === "electric" && +F.kwh.value > 0) body.kwh = Math.min(50, +F.kwh.value);
 
   const btn = $("#go"); btn.classList.add("loading");
   inflight?.abort(); inflight = new AbortController();
   const t0 = performance.now();
   try {
     const r = await fetch("/api/predict", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body), signal: inflight.signal });
-    if (!r.ok) throw new Error((await r.json()).detail || r.statusText);
+    if (!r.ok) {
+      const e = await r.json().catch(() => ({}));
+      throw new Error(typeof e.detail === "string" ? e.detail : "please check the details");
+    }
     const data = await r.json();
     lastRtt = performance.now() - t0;
     show(data, !lastResult, m);
     lastResult = data;
-    $("#formNote").textContent = "Prices in 2026 rupees. Listing prices, not final sale prices.";
-    if (scrollTo && innerWidth < 920) $("#result").scrollIntoView({ behavior: "smooth", block: "start" });
+    $("#formNote").textContent = "Prices in 2026 rupees. Asking prices on listing sites, not final sale prices.";
   } catch (err) {
     if (err.name !== "AbortError") $("#formNote").textContent = "Couldn't get a price: " + err.message;
   } finally { btn.classList.remove("loading"); }
+  if (scrollTo && innerWidth < 920) $("#result").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 /* ---------------- result ---------------- */
@@ -252,9 +316,10 @@ function show(d, first, m) {
   const evMl = isMl && isEv;
   const badge = $("#engineBadge");
   badge.className = "engine-badge" + (isMl ? "" : " dep");
-  badge.innerHTML = `<i></i>${isMl ? `Predicted live by XGBoost · ${d.engine.ms} ms` : `Depreciation model · ${d.engine.ms} ms`}`;
+  badge.innerHTML = `<i></i>${isMl ? `Predicted live by ${esc(d.engine.name)}` : `Estimate from official price`}`;
   badge.title = `Server compute ${d.engine.ms} ms · round trip ${Math.round(lastRtt)} ms`;
   $("#resTitle").textContent = d.title;
+  $("#warn").hidden = !d.warning; $("#warn").textContent = d.warning || "";
   const pe = $("#price"), from = shownPrice, to = d.price, t0 = performance.now();
   const step = (t) => { const p = Math.min(1, (t - t0) / 900), e = 1 - Math.pow(1 - p, 4); pe.textContent = inr(from + (to - from) * e); if (p < 1) requestAnimationFrame(step); };
   requestAnimationFrame(step); shownPrice = to;
@@ -263,9 +328,9 @@ function show(d, first, m) {
   const minis = [];
   if (isMl) {
     minis.push(["Age", d.age + " yr"]);
-    minis.push(d.similar ? [`${d.similar.year === 2026 ? "All-India 2026 ads" : "Similar ads"} (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
+    minis.push(d.similar ? [`${d.similar.scope === "variant" ? "Same variant" : "All variants"}, all-India 2026 ads (${d.similar.count})`, inr(d.similar.median)] : ["Typical listing", inr(d.base_price)]);
     minis.push(evMl && d.battery_health ? ["Battery health", "~" + Math.round(d.battery_health) + "%"]
-      : d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
+      : d.value_kept ? ["Value kept", d.value_kept + "%"] : d.new_price ? ["New today", inr(d.new_price)] : ["Typical listing", inr(d.base_price)]);
   } else {
     minis.push(["Value kept", d.value_kept + "%"]);
     minis.push(d.similar ? [`All-India 2026 ads (${d.similar.count})`, inr(d.similar.median)]
@@ -337,11 +402,11 @@ function show(d, first, m) {
 (async function boot() {
   const [m, x] = await Promise.all([fetch("/api/meta").then((r) => r.json()), fetch("/api/metrics").then((r) => r.json())]);
   META = m; METRICS = x;
-  F.state.innerHTML = META["2w"].states.map((s) => `<option>${esc(s)}</option>`).join("");
-  F.state.value = "Karnataka";
+  F.state.innerHTML = META.states.map((s) => `<option>${esc(s)}</option>`).join("");
+  F.state.value = "Karnataka"; fillCities();
   const sm = $("#statModels"); sm.dataset.count = META.counts["2w"] + META.counts.car;
   if (sm.classList.contains("in")) countUp(sm);
-  renderMetrics("bike2026");
-  setYears(); F.year.value = String(META.now - 4);
-  fillBrands("Royal Enfield"); F.model.value = "Classic 350"; fillSpecs();
+  renderMetrics(METRICS.bike_market ? "bike_market" : "bike");
+  F.year.value = String(META.now - 4);
+  fillBrands("Royal Enfield"); F.model.value = "Classic 350"; onModel();
 })();

@@ -1,0 +1,100 @@
+{
+ "summary": {
+  "models_checked": 1104,
+  "models_with_issues": 0,
+  "edge_cases_failed": 0,
+  "similar_ad_comparisons": 484,
+  "median_abs_gap_to_similar_ads": 0.05368029739776947,
+  "gaps_over_40pct": 1
+ },
+ "issues": [],
+ "edges": [
+  {
+   "case": "km 0",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "km 999,999",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "4th owner",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "no city",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "state Other",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "unknown state",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "unknown model",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "unknown variant",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "year 1989",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "year 2027",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "negative km",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "dealer",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "case": "bad seller",
+   "status": 422,
+   "ok": true
+  },
+  {
+   "case": "more km never raises the price",
+   "ok": true
+  },
+  {
+   "case": "more owners never raises the price",
+   "ok": true
+  }
+ ],
+ "big_gaps": [
+  [
+   "car",
+   "Tata",
+   "Indigo eCS",
+   {
+    "year": 2014,
+    "price": 176800.0,
+    "similar": 120000.0,
+    "n": 17,
+    "gap": 0.4733333333333334
+   }
+  ]
+ ]
+}

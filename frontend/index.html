@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
   <!-- NAV -->
@@ -30,7 +30,7 @@
     <div class="hero-glow"></div>
     <p class="eyebrow reveal">Used vehicle pricing for India</p>
     <h1 class="hero-title reveal">Know what it's<br><span class="grad">really worth.</span></h1>
-    <p class="hero-sub reveal">Petrol bikes, electric scooters and cars. A machine-learning price in under a second, and a plain-English reason for every rupee.</p>
+    <p class="hero-sub reveal">Bikes, scooters and cars, petrol or electric. A price learned from 1.2 lakh live listings, and a plain-English reason for every rupee.</p>
     <div class="hero-ctas reveal">
       <a href="#predict" class="btn btn-primary">Predict a price</a>
       <a href="#how" class="btn btn-link">See how it works <span aria-hidden="true">›</span></a>
@@ -46,9 +46,9 @@
       <p class="eyebrow reveal">Overview</p>
       <h2 class="section-title reveal">Built on real listings.<br><span class="muted">Not guesswork.</span></h2>
       <div class="stats">
-        <div class="stat reveal"><div class="stat-num" data-count="32648">0</div><div class="stat-label">bike listings loaded (Kaggle)</div></div>
-        <div class="stat reveal"><div class="stat-num" data-count="30527">0</div><div class="stat-label">live 2026 BikeWale ads, 1,151 cities</div></div>
-        <div class="stat reveal"><div class="stat-num" data-count="956">0</div><div class="stat-label">used EV ads across India</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="2690">0</div><div class="stat-label">used EVs (two-wheelers and cars)</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="30306">0</div><div class="stat-label">live two-wheeler ads (BikeWale, Nov 2026)</div></div>
+        <div class="stat reveal"><div class="stat-num" data-count="91748">0</div><div class="stat-label">live car ads (CarWale, Nov 2026)</div></div>
         <div class="stat reveal"><div class="stat-num" id="statModels" data-count="0">0</div><div class="stat-label">verified models you can price (BikeWale + CarWale)</div></div>
       </div>
       <div class="overview-grid">
@@ -119,12 +119,12 @@
       <h2 class="section-title reveal">Measured on ads it never saw.</h2>
       <p class="lead reveal">20% of listings were hidden during training, then predicted. MAE is the average rupees off (lowest wins); R² is the share of price variation explained.</p>
       <div class="seg reveal" id="metricSeg" role="tablist">
-        <button class="seg-btn active" data-v="bike2026" role="tab">Two-wheelers · 2026 ads</button>
-        <button class="seg-btn" data-v="bike" role="tab">Two-wheelers · Kaggle</button>
-        <button class="seg-btn" data-v="car" role="tab">Cars</button>
+        <button class="seg-btn active" data-v="bike_market" role="tab">Two-wheelers</button>
+        <button class="seg-btn" data-v="car_market" role="tab">Cars</button>
+        <button class="seg-btn" data-v="bike" role="tab">Course baseline (Kaggle)</button>
         <span class="seg-pill"></span>
       </div>
-      <div class="table-wrap reveal"><table class="mtable" id="metricTable"><thead><tr><th>Model</th><th>MAE</th><th>RMSE</th><th>R²</th><th class="barcol"></th></tr></thead><tbody></tbody></table></div>
+      <div class="table-wrap reveal"><table class="mtable" id="metricTable"><thead id="metricHead"></thead><tbody></tbody></table></div>
     </div>
   </section>
 
@@ -150,27 +150,35 @@
 
           <div class="field"><label for="brand">Brand</label><select id="brand"></select></div>
           <div class="field"><label for="model">Model</label><select id="model"></select><div class="engine-hint" id="engineHint"></div></div>
+          <div class="field" data-for="market"><label for="variant">Variant <span class="opt">optional, but sharpens the price</span></label><select id="variant"></select></div>
 
           <div class="row2">
             <div class="field"><label for="year">Year bought</label><select id="year"></select></div>
-            <div class="field"><label for="km">Kilometres</label><input id="km" type="number" min="0" step="500" value="15000" inputmode="numeric"></div>
+            <div class="field"><label for="km">Kilometres</label><input id="km" type="number" min="0" max="999999" step="500" value="15000" inputmode="numeric"></div>
           </div>
           <div class="row2">
             <div class="field"><label for="owner">Owner</label>
               <select id="owner"><option value="1">First</option><option value="2">Second</option><option value="3">Third</option><option value="4">Fourth +</option></select></div>
-            <div class="field" data-for="2w"><label for="state">State</label><select id="state"></select></div>
-            <div class="field" data-for="car ml"><label for="trans">Transmission</label><select id="trans"><option>Manual</option><option>Automatic</option></select></div>
+            <div class="field"><label for="seller">Selling through</label>
+              <select id="seller"><option value="individual">Private sale</option><option value="dealer">Dealer</option></select></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="state">State</label><select id="state"></select></div>
+            <div class="field"><label for="city">City</label><select id="city"></select></div>
+          </div>
+          <div class="row2" data-for="carfree">
+            <div class="field"><label for="fuel">Fuel</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>Electric</option><option>Hybrid</option></select></div>
+            <div class="field"><label for="trans">Gearbox</label><select id="trans"><option>Manual</option><option>Automatic</option></select></div>
           </div>
 
-          <div class="field" data-for="car ml"><label for="fuel">Fuel</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>LPG</option></select></div>
-
-          <details class="adv">
+          <details class="adv" id="adv">
             <summary>Advanced</summary>
             <div class="field" data-for="ml"><label for="cc">Engine (cc)</label><input id="cc" type="number" min="50" step="1"></div>
             <div class="field" data-for="car ml"><label for="power">Power (bhp)</label><input id="power" type="number" min="20" step="1"></div>
             <div class="field" data-for="car ml"><label for="seats">Seats</label><input id="seats" type="number" min="2" max="10" step="1"></div>
-            <div class="field" data-for="dep"><label for="exs">New ex-showroom price (₹, official 2026)</label><input id="exs" type="number" min="20000" step="1000"></div>
-            <div class="field" data-for="ev"><label for="kwh">Battery (kWh, estimated from range)</label><input id="kwh" type="number" min="0.5" step="0.1"></div>
+            <div class="field" data-for="dep"><label for="exs">New price (₹, official 2026)</label><input id="exs" type="number" min="20000" step="1000"></div>
+            <div class="field" data-for="ev"><label for="kwh">Battery (kWh, estimated from range)</label><input id="kwh" type="number" min="0.5" max="50" step="0.1"></div>
+            <p class="fine" id="advEmpty">Nothing else needed for this model.</p>
           </details>
 
           <button class="btn btn-primary wide" id="go" type="submit"><span class="go-label">Estimate price</span><span class="spinner" aria-hidden="true"></span></button>
@@ -193,6 +201,7 @@
             <div class="pane active" data-p="price">
               <div class="engine-badge" id="engineBadge"></div>
               <p class="res-title" id="resTitle"></p>
+              <p class="warn" id="warn" hidden></p>
               <div class="price" id="price">₹0</div>
               <p class="range" id="range"></p>
               <div class="mini-stats" id="miniStats"></div>
@@ -225,6 +234,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=10" defer></script>
+  <script src="app.js?v=13" defer></script>
 </body>
 </html>

@@ -5,19 +5,22 @@ AIML (CS52) course project, M.S. Ramaiah Institute of Technology.
 
 An Apple-style web app that predicts the fair listing price of a used **petrol two-wheeler, electric scooter or car** in India and explains the price feature by feature (Tree SHAP), with an EV vs petrol depreciation view.
 
-| Model (test set, 20% hold-out) | Two-wheelers R² | Two-wheelers MAE | Cars R² | Cars MAE |
+## Accuracy (20% of ads hidden during training, then priced)
+
+| Main models (live 2026 listings) | Ads | Typical miss | Within ±20% | Noise floor* |
 |---|---|---|---|---|
-| Linear Regression | 0.621 | ₹13,979 | 0.892 | ₹73,676 |
-| Random Forest | 0.952 | ₹10,011 | 0.896 | ₹69,827 |
-| **XGBoost** (served) | 0.946 | **₹9,632** | **0.917** | **₹64,620** |
+| **Cars** — XGBoost, 3 averaged models (CarWale, 88,800 ads) | 17,760 test | **8.3%** | **83.0%** | 8.7% |
+| CarWale's own valuation, same test ads | 16,650 | 11.3% | 73.2% | |
+| **Two-wheelers** — XGBoost, 5 averaged models (BikeWale, 28,062 ads) | 5,613 test | **12.4%** | **69.3%** | 11.1% |
+| Simple rule (new price × typical % kept), two-wheelers | 4,014 | 14.0% | 65.9% | |
 
-**Verified vehicle list:** 541 two-wheeler models (59 brands) and 345 car models (29 brands), official names and 2026 prices scraped from BikeWale / CarWale (`backend/scrape_catalog.py`, `backend/build_catalog.py`). Every Kaggle listing name is mapped to an official model name (98.4% of bike rows, 99.7% of car rows).
+\*How far apart asking prices are for the very same variant, year and seller — roughly the best any model can do.
+By segment: electric cars 7.3% / 88.9% · petrol cars 8.3% · diesel 8.6% · petrol motorcycles 12.0% · petrol scooters 13.6% · electric scooters 14.1% / 61.6%.
 
-**Main two-wheeler model (2026):** XGBoost trained on 28,912 live BikeWale ads (Nov 2026, incl. 920 EVs and all scooters): R² (log) 0.871, MAE ₹15,140, 68.7% within ±20% (`backend/train_2026.py`).
+Course baseline (Kaggle 2020-21 bikes, `train.py`): XGBoost R² 0.946, MAE ₹9,632; the base paper's Decision Tree R² 0.864 on the same split (Colab).
 
-**Pricing engines, chosen per model and shown on every result:**
-- **XGBoost (live ML)** — models with ≥3 listings in the Kaggle training data. Runs on every request (~5–20 ms); the "Why" factors are exact Tree SHAP values from that same run.
-- **Depreciation model** — EVs, scooters and anything launched after 2021 (e.g. Pulsar NS400Z, Activa, Ola S1). Official 2026 new price × measured yearly loss (Module 6 for two-wheelers; a same-model fit on 2,720 CarDekho listings for cars, 11.4%/yr).
+**Features of the main models:** brand, model, exact variant, the variant's new price, fuel, body type, gearbox, state, city, seller type (dealer / private), age, km, owners. Monotone rules: the price never rises with age, km or owners, never falls as the new price rises.
+**Checked end to end:** `backend/tests/sweep_test.py` prices every one of the 1,104 models in the dropdowns at three years plus 15 edge cases — 0 failures; median gap to real ads of the same model and age 5.4%.
 
 ## Run it (2 commands)
 ```bash
@@ -28,8 +31,15 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 ```
 Open http://localhost:8000. Models are already trained in `backend/models/`. To rebuild everything (scrape ≈2 min, train ≈35 s):
 ```bash
-.venv/bin/python backend/scrape_catalog.py && .venv/bin/python backend/build_catalog.py && .venv/bin/python backend/train.py
+.venv/bin/python backend/scrape_catalog.py && .venv/bin/python backend/build_catalog.py && .venv/bin/python backend/scrape_variants.py
 ```
+```bash
+.venv/bin/python backend/scrape_used_2026.py bikewale && .venv/bin/python backend/scrape_used_2026.py carwale
+```
+```bash
+cd backend && ../.venv/bin/python train.py && ../.venv/bin/python train_market.py bike && ../.venv/bin/python train_market.py car && ../.venv/bin/python calibrate_2026.py
+```
+Test everything (server running): `.venv/bin/python backend/tests/sweep_test.py`
 macOS note: XGBoost needs OpenMP — `brew install libomp`.
 
 ## How it works

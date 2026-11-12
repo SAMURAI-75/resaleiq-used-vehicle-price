@@ -253,3 +253,6 @@ b { font-weight: 600; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 60%, transparent); } 100% { box-shadow: 0 0 0 8px transparent; } }
 .engine-box { margin-top: 16px; padding: 14px 16px; border-radius: 14px; background: var(--bg-alt); font-size: 14px; color: var(--muted); }
 .engine-box b { color: var(--text); }
+
+.opt { font-weight: 400; color: var(--faint); }
+.warn { margin: 6px 0 2px; font-size: 13px; color: var(--ola); }
