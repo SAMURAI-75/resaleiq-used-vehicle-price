@@ -1,6 +1,6 @@
 # %% [markdown]
 # # ResaleIQ — Used Two-Wheeler Resale Price Prediction with EV Depreciation Analysis
-# AIML (CS52) project, MSRIT. **Runtime → Run all.** The first cell asks for `resaleiq_colab_data.zip` (in the repo's `colab/` folder).
+# AIML (CS52) project, MSRIT. **Runtime → Run all.** The first cell asks for `resaleiq_colab_data.zip` (in the repo's `colab/` folder). Total run time about 12 minutes.
 #
 # | Module | What it does |
 # |---|---|
@@ -12,7 +12,8 @@
 # | 6 | 2026 test: does a model trained on 2020-21 ads still work on 30k live BikeWale ads? |
 # | 7 | EV vs petrol depreciation on 2026 ads (same model, same variant) |
 # | 8 | SHAP explanations |
-# | 9 | Save every figure and table for the report |
+# | 9 | Main models on 30k bike + 92k car ads from 2026, benchmarked against CarWale's own valuation |
+# | 10 | Save every figure and table for the report |
 
 # %%
 # ---------- Setup: libraries + data ----------
@@ -305,11 +306,150 @@ shap.summary_plot(sv[:, num_idx], Z[:, num_idx], feature_names=[names[i].replace
 plt.tight_layout(); plt.savefig("figures/m8_shap_beeswarm.png", dpi=150); plt.show()
 
 # %% [markdown]
-# ## Module 9 — Save tables for the report
+# ## Module 9 — Main models: trained on live 2026 listings (cars and two-wheelers)
+# The models the website uses. Trained on 30,306 BikeWale two-wheeler ads and 91,748 CarWale car ads (Nov 2026).
+# * **Features:** brand, model, exact variant, the variant's new price, fuel, body type, gearbox, state, city, seller type, age, km, owners
+# * **Monotone rules:** the price never rises with age, km or owners, and never falls as the new price rises
+# * **Model:** XGBoost with native categories; several boosted models with different random seeds, averaged
+# * **Benchmarks:** a simple rule (new price × typical share kept at that age) and, for cars, **CarWale's own valuation** on the same ads
+# * **Noise floor:** how far asking prices sit apart for the same variant, year and seller — roughly the best any model can do
+#
+# Takes about 10 minutes on Colab (the car data is large).
+
+# %%
+import xgboost as xgb
+NOW = 2026
+MCATS = ["brand", "model_key", "variant", "fuel", "body", "transmission", "state", "city", "seller"]
+MNUMS = ["age", "log_km", "owners", "log_new", "log_new_model"]
+MONO = {"age": -1, "log_km": -1, "owners": -1, "log_new": 1, "log_new_model": 1}
+SIZE = {"bike": (5, 10), "car": (3, 8)}        # (models averaged, tree depth) -- same as the website
+city_state_full = pd.read_csv(f"{DATA}/city_state_full.csv").drop_duplicates("city")
+CITY2STATE = dict(zip(city_state_full.city, city_state_full.state))
+
+def clean_model(s):
+    return (s.astype(str).str.replace(r"\[.*?\]", "", regex=True)
+            .str.replace(r"^(Old Generation|New|Old)\s+", "", regex=True).str.replace(r"\s+", " ", regex=True).str.strip())
+
+def fuel_of(s):
+    s = s.fillna("Petrol").astype(str).str.lower()   # hybrids first: "Hybrid (Electric + Petrol)" is not electric
+    return np.select([s.str.contains("hybrid"), s.str.contains("electric"), s.str.contains("diesel"), s.str.contains("cng"),
+                      s.str.contains("lpg")], ["Hybrid", "Electric", "Diesel", "CNG", "LPG"], "Petrol")
+
+def load_market(kind):
+    u = pd.read_csv(f"{DATA}/market_{kind}_ads.csv", low_memory=False)
+    n0 = len(u)
+    u = u.drop_duplicates("stockId").rename(columns={"makeName": "brand", "priceNumeric": "price", "kmNumeric": "km",
+                                                     "ownersId": "owners", "cityName": "city"})
+    u["model_key"] = u.brand + " | " + clean_model(u.modelName)
+    u["variant"] = u.versionId.astype("Int64").astype(str)
+    u["age"] = (NOW - u.makeYear).clip(lower=0)
+    u["fuel"] = fuel_of(u.fuel)
+    t = u.transmission.fillna("").astype(str).str.lower()
+    u["transmission"] = np.where(t.str.contains("auto|amt|cvt|dct"), "Automatic", np.where(t == "", "NA", "Manual")) if kind == "car" else "NA"
+    u["body"] = u.bodyStyleId.astype(str)
+    if kind == "bike":
+        u["body"] = np.where(u.body == "5", "scooter", "motorcycle")
+    u["state"] = u.city.map(CITY2STATE).fillna("Other")
+    u["seller"] = u.sellerType.map({1: "dealer", 2: "individual"}).fillna("unknown")
+    u["owners"] = u.owners.fillna(1).clip(1, 4)
+    if kind == "car":
+        u["new_price"] = pd.to_numeric(u.onRoadPrice, errors="coerce").where(lambda x: x > 50_000)   # variant's new on-road price
+        catm = pd.read_csv(f"{DATA}/car_catalog.csv")
+    else:
+        v = pd.read_csv(f"{DATA}/bike_variants.csv")
+        u["new_price"] = u.versionId.map(dict(zip(v.versionId, v.ex_showroom)))                      # variant's ex-showroom price
+        catm = pd.read_csv(f"{DATA}/bike_catalog.csv")
+    u["new_price_model"] = u.model_key.map(dict(zip(catm.brand + " | " + catm.model, catm.new_price)))
+    u["new_price"] = u.new_price.fillna(u.groupby("model_key").new_price.transform("median")).fillna(u.new_price_model)
+    u = u[(u.price >= (40_000 if kind == "car" else 5_000)) & u.km.between(0, 300_000 if kind == "car" else 150_000) & (u.age <= 25)]
+    r = u.price / u.new_price
+    u = u[~((r > 1.6) | (r < 0.03))]                                                   # typos vs the new price
+    u = u.drop_duplicates(["model_key", "variant", "makeYear", "km", "price", "city"])  # re-posted ads
+    u["lp"] = np.log(u.price)
+    u["ag"] = pd.cut(u.age, [-1, 1, 3, 5, 8, 12, 30])
+    g = u.groupby(["model_key", "ag"], observed=True).lp
+    q1, q3, n = g.transform(lambda s: s.quantile(.25)), g.transform(lambda s: s.quantile(.75)), g.transform("size")
+    u = u[(n < 10) | u.lp.between(q1 - 1.5 * (q3 - q1), q3 + 1.5 * (q3 - q1))]       # outliers per model + age group
+    u["log_km"] = np.log1p(u.km); u["log_new"] = np.log(u.new_price); u["log_new_model"] = np.log(u.new_price_model)
+    for col, k in [("variant", 3), ("city", 25), ("model_key", 3)]:                   # rare categories -> missing
+        vc = u[col].value_counts(); u.loc[u[col].map(vc) < k, col] = np.nan
+    print(f"{kind}: {n0:,} ads loaded -> {len(u):,} after cleaning, {u.model_key.nunique()} models, {int((u.fuel == 'Electric').sum()):,} electric")
+    return u.reset_index(drop=True)
+
+def mframe(df, cats):
+    X = df[MCATS + MNUMS].copy()
+    for c in MCATS:
+        X[c] = pd.Categorical(X[c], categories=cats[c])
+    return X
+
+def mmetrics(y, p):
+    y, p = np.asarray(y, float), np.asarray(p, float); e = np.abs(p / y - 1)
+    return {"Ads": len(y), "Typical miss": np.median(e), "Within ±10%": np.mean(e <= .1), "Within ±20%": np.mean(e <= .2),
+            "R2 (log)": 1 - np.sum((np.log(y) - np.log(p)) ** 2) / np.sum((np.log(y) - np.log(y).mean()) ** 2)}
+
+def train_market(kind):
+    u = load_market(kind)
+    cats = {c: sorted(u[c].dropna().astype(str).unique().tolist()) for c in MCATS}
+    tr, te = train_test_split(u, test_size=0.2, random_state=42)
+    tr2, va = train_test_split(tr, test_size=0.15, random_state=7)
+    seeds, depth = SIZE[kind]
+    params = {"objective": "reg:squarederror", "tree_method": "hist", "max_cat_to_onehot": 1, "max_cat_threshold": 16,
+              "eta": 0.03, "max_depth": depth, "min_child_weight": 5, "subsample": 0.8, "colsample_bytree": 0.7, "lambda": 3.0,
+              "monotone_constraints": "(" + ",".join(str(MONO.get(f, 0)) for f in MCATS + MNUMS) + ")"}
+    dtr2 = xgb.DMatrix(mframe(tr2, cats), tr2.lp, enable_categorical=True)
+    dva = xgb.DMatrix(mframe(va, cats), va.lp, enable_categorical=True)
+    rounds = [xgb.train({**params, "seed": s}, dtr2, 6000, evals=[(dva, "va")], early_stopping_rounds=200,
+                        verbose_eval=False).best_iteration + 1 for s in range(seeds)]
+    dtr = xgb.DMatrix(mframe(tr, cats), tr.lp, enable_categorical=True)
+    boosters = [xgb.train({**params, "seed": s}, dtr, num_boost_round=r) for s, r in zip(range(seeds), rounds)]
+    dte = xgb.DMatrix(mframe(te, cats), enable_categorical=True)
+    pt = np.exp(np.mean([b.predict(dte) for b in boosters], axis=0))
+    rows = {"All test ads": mmetrics(te.price, pt)}
+    seg = te.fuel if kind == "car" else te.fuel + " " + te.body
+    for s_ in sorted(seg.unique()):
+        m = (seg == s_).values
+        if m.sum() >= 30:
+            rows[f"  {s_}"] = mmetrics(te.price[m], pt[m])
+    kept = (tr.price / tr.new_price).groupby(tr.age).median()
+    base = te.new_price * te.age.map(kept).fillna(kept.median()); ok = base.notna().values
+    rows["Simple rule: new price × typical share kept"] = mmetrics(te.price[ok], base[ok])
+    if kind == "car":
+        vm = (te.valuationPrice > 0).values
+        rows["CarWale's own valuation (same ads)"] = mmetrics(te.price[vm], te.valuationPrice[vm])
+        rows["Our model on those same ads"] = mmetrics(te.price[vm], pt[vm])
+    d = u.dropna(subset=["variant"]); g = d.groupby(["variant", "makeYear", "seller"]).price
+    cell, n = g.transform("median"), g.transform("size")
+    floor = float(np.median(np.abs(d.price[n >= 5] / cell[n >= 5] - 1)))
+    out = pd.DataFrame(rows).T
+    print(f"noise floor ({kind}): asking prices for the same variant, year and seller sit {floor:.1%} apart (median)")
+    return out, floor, boosters, cats, te
+
+market_results, floors = {}, {}
+for kind in ("car", "bike"):
+    market_results[kind], floors[kind], *_ = train_market(kind)
+    display(market_results[kind].style.format({"Ads": "{:,.0f}", "Typical miss": "{:.1%}", "Within ±10%": "{:.1%}",
+                                               "Within ±20%": "{:.1%}", "R2 (log)": "{:.3f}"}))
+
+# %%
+fig, ax = plt.subplots(1, 2, figsize=(13, 4.4), gridspec_kw={"wspace": 0.9})
+for a, kind in zip(ax, ("car", "bike")):
+    r = market_results[kind]["Typical miss"].iloc[::-1] * 100
+    colors = ["#0071e3" if i.startswith("All") or i.startswith("Our") else "#86868b" for i in r.index]
+    r.plot.barh(ax=a, color=colors)
+    a.axvline(floors[kind] * 100, color="#30b07a", ls="--", lw=1.2)
+    a.text(floors[kind] * 100, -0.7, " noise floor", color="#30b07a", fontsize=9)
+    a.set_title(("Cars" if kind == "car" else "Two-wheelers") + ": typical miss (lower is better)", fontsize=11)
+    a.set_xlabel("% gap to the real asking price (median)")
+plt.savefig("figures/m9_market_models.png", dpi=150, bbox_inches="tight"); plt.show()
+
+# %% [markdown]
+# ## Module 10 — Save tables for the report
 
 # %%
 results.round(4).to_csv("figures/m4_results.csv"); tax_tbl.round(4).to_csv("figures/m5_road_tax.csv")
 loso.round(0).to_csv("figures/m5_loso.csv"); ev_tbl.to_csv("figures/m7_ev_vs_petrol.csv")
+for kind in market_results:
+    market_results[kind].round(4).to_csv(f"figures/m9_market_{kind}.csv")
 print("Saved:", sorted(os.listdir("figures")))
 if IN_COLAB:
     import shutil; shutil.make_archive("resaleiq_figures", "zip", "figures")

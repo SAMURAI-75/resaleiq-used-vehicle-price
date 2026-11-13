@@ -1,0 +1,348 @@
+brand,model,new_price
+Maruti Suzuki,Alto K10,369902.0
+Maruti Suzuki,Baleno,609893.0
+Maruti Suzuki,Brezza,749900.0
+Maruti Suzuki,Celerio,469900.0
+Maruti Suzuki,Dzire,630600.0
+Maruti Suzuki,Eeco,528400.0
+Maruti Suzuki,Ertiga,890000.0
+Maruti Suzuki,Fronx,689900.0
+Maruti Suzuki,Grand Vitara,1076500.0
+Maruti Suzuki,Invicto,2502400.0
+Maruti Suzuki,Jimny,1259000.0
+Maruti Suzuki,S-Presso,349900.0
+Maruti Suzuki,Swift,583900.0
+Maruti Suzuki,Victoris,1049852.0
+Maruti Suzuki,Wagon R,498900.0
+Maruti Suzuki,XL6,1162300.0
+Maruti Suzuki,e Vitara,1361142.0
+Maruti Suzuki,800,
+Maruti Suzuki,A-Star,
+Maruti Suzuki,Alto,
+Maruti Suzuki,Alto 800,
+Maruti Suzuki,Celerio X,
+Maruti Suzuki,Ciaz,
+Maruti Suzuki,Esteem,
+Maruti Suzuki,Estilo,
+Maruti Suzuki,Gypsy,
+Maruti Suzuki,Ignis,
+Maruti Suzuki,Omni,
+Maruti Suzuki,Ritz,
+Maruti Suzuki,S-Cross,
+Maruti Suzuki,SX4,
+Maruti Suzuki,Vitara Brezza,
+Maruti Suzuki,Zen,
+Hyundai,Alcazar,1450700.0
+Hyundai,Aura,599977.0
+Hyundai,Bayon,999900.0
+Hyundai,Creta,1090700.0
+Hyundai,Creta Electric,1457159.0
+Hyundai,Creta N Line,1903300.0
+Hyundai,Exter,580600.0
+Hyundai,Grand i10 Nios,559700.0
+Hyundai,Ioniq 5,5570600.0
+Hyundai,Venue,799900.0
+Hyundai,Venue N Line,1066100.0
+Hyundai,Verna,1099200.0
+Hyundai,i20,599700.0
+Hyundai,i20 N Line,932200.0
+Hyundai,Accent,
+Hyundai,Elantra,
+Hyundai,Eon,
+Hyundai,Getz,
+Hyundai,Grand i10,
+Hyundai,Santa Fe,
+Hyundai,Santro,
+Hyundai,Sonata,
+Hyundai,Xcent,
+Hyundai,i10,
+Hyundai,i20 Active,
+Mahindra,BE 6 Sporteq,1545392.0
+Mahindra,Bolero,849000.0
+Mahindra,Bolero Neo,906000.0
+Mahindra,Bolero Neo Plus,1146000.0
+Mahindra,Scorpio,1343200.0
+Mahindra,Scorpio N,1369000.0
+Mahindra,Thar OG,1032000.0
+Mahindra,Thar Roxx,1252000.0
+Mahindra,XEV 9S,1664083.0
+Mahindra,XEV 9e,1791174.0
+Mahindra,XUV 3XO,779000.0
+Mahindra,XUV 3XO EV,1389000.0
+Mahindra,XUV 7XO,1399000.0
+Mahindra,XUV400,1549000.0
+Mahindra,Jeep,
+Mahindra,KUV100,
+Mahindra,Logan/Verito,
+Mahindra,Marazzo,
+Mahindra,NuvoSport,
+Mahindra,Quanto,
+Mahindra,TUV300,
+Mahindra,Thar,
+Mahindra,XUV300,
+Mahindra,XUV500,
+Mahindra,Xylo,
+Tata,Aeris,529990.0
+Tata,Altroz,599990.0
+Tata,Curvv,999990.0
+Tata,Curvv EV,1409000.0
+Tata,Harrier,1299990.0
+Tata,Harrier EV,1814000.0
+Tata,Nexon,739990.0
+Tata,Nexon EV,1166500.0
+Tata,Punch,574990.0
+Tata,Punch EV,819000.0
+Tata,Safari,1339990.0
+Tata,Sierra,1149000.0
+Tata,Sierra EV,1536483.0
+Tata,Tiago,476990.0
+Tata,Tiago EV,583519.0
+Tata,Tigor EV,1249000.0
+Tata,Aria,
+Tata,Bolt,
+Tata,Hexa,
+Tata,Indica,
+Tata,Indigo,
+Tata,Manza,
+Tata,Nano,
+Tata,Sumo,
+Tata,Tigor,
+Tata,Venture,
+Tata,Zest,
+Toyota,Camry,4869000.0
+Toyota,Fortuner,3511000.0
+Toyota,Fortuner Legender,4335000.0
+Toyota,Glanza,699000.0
+Toyota,Hilux,3199000.0
+Toyota,Innova Crysta,1995000.0
+Toyota,Innova Hycross,1953000.0
+Toyota,Land Cruiser,21775000.0
+Toyota,Rumion,979000.0
+Toyota,Urban Cruiser Ebella,2360000.0
+Toyota,Urban Cruiser Hyryder,1131000.0
+Toyota,Urban Cruiser Taisor,743000.0
+Toyota,Vellfire,11999000.0
+Toyota,Corolla,
+Toyota,Corolla Altis,
+Toyota,Etios,
+Toyota,Etios Liva,
+Toyota,Innova,
+Toyota,Qualis,
+Toyota,Yaris,
+Honda,Amaze,769093.0
+Honda,Amaze 2nd Gen,698194.0
+Honda,City,1203952.0
+Honda,Elevate,1184050.0
+Honda,ZR-V,4799000.0
+Honda,Accord,
+Honda,BR-V,
+Honda,Brio,
+Honda,CR-V,
+Honda,Civic,
+Honda,Jazz,
+Honda,Mobilio,
+Honda,WR-V,
+Ford,Aspire,
+Ford,Classic,
+Ford,EcoSport,
+Ford,Endeavour,
+Ford,Fiesta,
+Ford,Figo,
+Ford,Freestyle,
+Ford,Fusion,
+Ford,Ikon,
+Chevrolet,Aveo,
+Chevrolet,Beat,
+Chevrolet,Captiva,
+Chevrolet,Cruze,
+Chevrolet,Enjoy,
+Chevrolet,Optra,
+Chevrolet,Sail,
+Chevrolet,Spark,
+Chevrolet,Tavera,
+Renault,Duster,1049000.0
+Renault,Kiger,581000.0
+Renault,Kwid,452900.0
+Renault,Triber,580875.0
+Renault,Fluence,
+Renault,Lodgy,
+Renault,Pulse,
+Renault,Scala,
+Volkswagen,Golf GTI,5090900.0
+Volkswagen,Taigun,1099900.0
+Volkswagen,Tayron,4199000.0
+Volkswagen,Virtus,1070900.0
+Volkswagen,Ameo,
+Volkswagen,Jetta,
+Volkswagen,Passat,
+Volkswagen,Polo,
+Volkswagen,Vento,
+Skoda,Kodiaq,3699000.0
+Skoda,Kodiaq RS,6699000.0
+Skoda,Kushaq,1069000.0
+Skoda,Kylaq,759000.0
+Skoda,Octavia RS,5669000.0
+Skoda,Slavia,999900.0
+Skoda,Fabia,
+Skoda,Laura,
+Skoda,Octavia,
+Skoda,Rapid,
+Skoda,Superb,
+Nissan,Gravite,573400.0
+Nissan,Magnite,569400.0
+Nissan,Tekton,1049000.0
+Nissan,X-Trail,4819862.0
+Nissan,Kicks,
+Nissan,Micra,
+Nissan,Sunny,
+Nissan,Terrano,
+BMW,2 Series Gran Coupe,4580000.0
+BMW,3 Series LWB,6270000.0
+BMW,5-Series LWB,7660000.0
+BMW,7 Series,19500000.0
+BMW,M2,10650000.0
+BMW,M340i,7710000.0
+BMW,M4,16050000.0
+BMW,M440i,10900000.0
+BMW,M5,21150000.0
+BMW,X1,5090000.0
+BMW,X1 LWB,4990000.0
+BMW,X3,6990000.0
+BMW,X5,9690000.0
+BMW,X6,17790000.0
+BMW,X7,13070000.0
+BMW,XM,25455000.0
+BMW,i5,11950000.0
+BMW,i5 LWB,7960000.0
+BMW,i7,19500000.0
+BMW,iX,13950000.0
+BMW,iX1 LWB,5270000.0
+BMW,3-Series,
+BMW,5 Series,
+BMW,6 Series GT,
+BMW,X4,
+Mercedes-Benz,AMG A45 S,8700000.0
+Mercedes-Benz,AMG C 43,9405000.0
+Mercedes-Benz,AMG C 63 S E Performance,19090909.0
+Mercedes-Benz,AMG CLE,13250000.0
+Mercedes-Benz,AMG E53 Cabriolet,12320946.0
+Mercedes-Benz,AMG E53 PHEV,14500000.0
+Mercedes-Benz,AMG EQS,24500000.0
+Mercedes-Benz,AMG G-Class,37400000.0
+Mercedes-Benz,AMG GLA35,6006757.0
+Mercedes-Benz,AMG GLC43 Coupe,9985000.0
+Mercedes-Benz,AMG GLE Coupe,15200000.0
+Mercedes-Benz,AMG GT 63,30000000.0
+Mercedes-Benz,AMG GT 63 S 4Matic Plus,25540541.0
+Mercedes-Benz,AMG GT 63 S E Performance,32699301.0
+Mercedes-Benz,AMG S 63 E Performance,33360000.0
+Mercedes-Benz,AMG SL55 Roadster,23383784.0
+Mercedes-Benz,C-Class,6120000.0
+Mercedes-Benz,CLA EV,5650000.0
+Mercedes-Benz,CLE Cabriolet,11500000.0
+Mercedes-Benz,E-Class,8150000.0
+Mercedes-Benz,EQE SUV,14140000.0
+Mercedes-Benz,EQS,13000000.0
+Mercedes-Benz,EQS SUV,13350000.0
+Mercedes-Benz,G-Class,29000000.0
+Mercedes-Benz,G-Class Electric,31000000.0
+Mercedes-Benz,GLA,5180000.0
+Mercedes-Benz,GLC,7700000.0
+Mercedes-Benz,GLC Electric,7850000.0
+Mercedes-Benz,GLE,10000000.0
+Mercedes-Benz,GLS,13750000.0
+Mercedes-Benz,Maybach EQS SUV,24000000.0
+Mercedes-Benz,Maybach GLS,27502405.0
+Mercedes-Benz,Maybach S-Class,32000000.0
+Mercedes-Benz,Maybach SL 680,43000000.0
+Mercedes-Benz,S-Class,22000000.0
+Mercedes-Benz,V-Class,14000000.0
+Mercedes-Benz,B-Class,
+Audi,A4,4688000.0
+Audi,A6,6481000.0
+Audi,A8 L,12687973.0
+Audi,Q3,5199000.0
+Audi,Q3 Sportback,5355000.0
+Audi,Q5,6555000.0
+Audi,Q7,8762000.0
+Audi,Q8,11482000.0
+Audi,Q8 Sportback e-tron,11923000.0
+Audi,Q8 e-tron,11473000.0
+Audi,RS Q8 Performance,23816000.0
+Audi,RS5,10668378.0
+Audi,S5 Sportback,7357000.0
+Audi,SQ8,17772000.0
+Audi,e-tron,10216000.0
+Audi,e-tron GT,17157000.0
+Audi,e-tron Sportback,12024000.0
+Audi,A3,
+Datsun,GO,
+Datsun,GO+,
+Datsun,redi-GO,
+Fiat,Avventura,
+Fiat,Linea,
+Fiat,Punto,
+Jeep,Compass,1829000.0
+Jeep,Grand Cherokee,6300000.0
+Jeep,Meridian,2333000.0
+Jeep,Wrangler,6770000.0
+Kia,Carens,1111900.0
+Kia,Carens Clavis,1138884.0
+Kia,Carens Clavis EV,1803900.0
+Kia,Carnival,5964885.0
+Kia,EV6,6597937.0
+Kia,EV9,12991312.0
+Kia,Seltos,1124900.0
+Kia,Sonet,744900.0
+Kia,Sorento,2799000.0
+Kia,Syros,841899.0
+Kia,Syros EV,1075719.0
+MG,Astor,979100.0
+MG,Comet EV,647865.0
+MG,Cyberster,7754899.0
+MG,Hector,1214000.0
+MG,Hector Plus,1814800.0
+MG,Hector Tomahawk EV,1715738.0
+MG,Hector Tomahawk PHEV,2376797.0
+MG,M9,7502371.0
+MG,Majestor,4349000.0
+MG,Windsor EV,1246880.0
+MG,ZS EV,1550082.0
+Land Rover,Defender,9900000.0
+Land Rover,Discovery,12600000.0
+Land Rover,Discovery Sport,6337000.0
+Land Rover,Range Rover,24000000.0
+Land Rover,Range Rover Evoque,6486000.0
+Land Rover,Range Rover Sport,14300000.0
+Land Rover,Range Rover Velar,8750000.0
+Volvo,EC40,5900000.0
+Volvo,EX30,4100000.0
+Volvo,EX90,12600000.0
+Volvo,XC60,6960000.0
+Volvo,XC90,9880000.0
+Jaguar,F-Pace,6895946.0
+Jaguar,XF,
+Mitsubishi,Lancer,
+Mitsubishi,Pajero Sport,
+Lexus,ES 350h,6610000.0
+Lexus,ES 500e,8999000.0
+Lexus,LM,21969000.0
+Lexus,LX,26357333.0
+Lexus,NX,6759000.0
+Lexus,RX,8999000.0
+Isuzu,Hi-Lander,2104580.0
+Isuzu,MU-X,3453240.0
+Isuzu,V-Cross,2550260.0
+Force Motors,Gurkha,1630910.0
+Force Motors,Trax Cruiser,1262255.0
+Force Motors,One,
+Citroen,Aircross X,889000.0
+Citroen,Basalt X,855000.0
+Citroen,C3 X,499000.0
+Citroen,C5 Aircross,3732400.0
+Citroen,eC3 X,957128.0
+Mini,Cooper,4445000.0
+Mini,Cooper S Convertible,5900000.0
+Mini,Countryman,6615000.0
+Mini,Countryman C,4750000.0
+Mini,Countryman Electric,5565000.0

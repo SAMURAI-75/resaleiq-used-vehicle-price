@@ -1,0 +1,7 @@
+,Ads,Typical miss,Within ±10%,Within ±20%,R2 (log)
+All test ads,5613.0,0.1241,0.4226,0.693,0.8704
+  Electric motorcycle,31.0,0.0519,0.6452,0.8387,0.9158
+  Electric scooter,138.0,0.1407,0.3841,0.6159,0.6059
+  Petrol motorcycle,4532.0,0.1205,0.4296,0.6977,0.8682
+  Petrol scooter,912.0,0.1363,0.386,0.6765,0.804
+Simple rule: new price × typical share kept,4014.0,0.1402,0.3697,0.6587,0.8615

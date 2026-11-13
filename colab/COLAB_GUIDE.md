@@ -1,15 +1,15 @@
-# Colab — what to do (15 minutes)
+# Colab — what to do (about 20 minutes)
 
 ## Why Colab at all?
 The website already uses trained models, but the teacher grades the **ML work**: data cleaning, model comparison, accuracy numbers, SHAP and charts. The Colab notebook is that evidence: one place where every step runs top to bottom with its outputs visible. The report's tables and figures come out of it.
 
-You do **not** need your old notebook any more. `ResaleIQ_pipeline.ipynb` does all modules (1–9) in one go. Keep the old one only as a backup.
+You do **not** need your old notebook any more. `ResaleIQ_pipeline.ipynb` does all modules (1–10) in one go, including the main 2026 models the website uses. Keep the old one only as a backup.
 
 ## Steps
 1. Open https://colab.research.google.com → **File → Upload notebook** → pick `colab/ResaleIQ_pipeline.ipynb` from this project folder.
 2. **Runtime → Run all.**
 3. The first cell shows a **Choose files** button → pick `colab/resaleiq_colab_data.zip` (same folder).
-4. Wait about 5–8 minutes. The heavy cells are SVR and Random Forest in Module 4.
+4. Wait about 10–15 minutes. The heavy cells are Module 4 (SVR, Random Forest) and Module 9 (91,748 car ads).
 5. At the end, Colab downloads `resaleiq_figures.zip`. Unzip it into `docs/figures/colab/` in this project. I'll use those for the report.
 6. **File → Save a copy in Drive.** That's the notebook you show the teacher.
 
@@ -26,6 +26,7 @@ If Colab asks to sign in to Kaggle, it's because `kagglehub` hit a rate limit. R
 | 6 2026 test | calibration factor | The 2020-21 model priced against live 2026 ads |
 | 7 EV vs petrol | regression table + chart | Same-variant depreciation; Ola drives the gap |
 | 8 SHAP | 2 charts | Which features push the price up or down |
-| 9 Save | figures zip | Everything for the report |
+| 9 Main 2026 models | 2 tables + chart | Cars 8.3% typical miss vs CarWale's own valuation 11.3%; two-wheelers 12.4%; both near the noise floor |
+| 10 Save | figures zip | Everything for the report |
 
 A copy that I already ran on this Mac (outputs included) is `colab/ResaleIQ_pipeline_executed.ipynb`. Open it if Colab gives trouble during the demo.
