@@ -24,7 +24,7 @@ If Colab asks to sign in to Kaggle, it's because `kagglehub` hit a rate limit. R
 | 4 Models | table + 2 charts | Base paper's 4 models vs LR / RF / XGBoost on the same split |
 | 5 Road tax | 2 small tables | Does state/tax improve prices? Mostly no → side note |
 | 6 2026 test | calibration factor | The 2020-21 model priced against live 2026 ads |
-| 7 EV vs petrol | regression table + chart | Same-variant depreciation; Ola drives the gap |
+| 7 EV vs petrol | regression table + chart | Same variant: EVs lose ~12% a year vs ~6% for petrol; no stable brand effect |
 | 8 SHAP | 2 charts | Which features push the price up or down |
 | 9 Main 2026 models | 2 tables + chart | Cars 8.3% typical miss vs CarWale's own valuation 11.3%; two-wheelers 12.4%; both near the noise floor |
 | 10 Save | figures zip | Everything for the report |
