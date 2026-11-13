@@ -283,7 +283,8 @@ def predict_market(kind, p: PredictIn, info):
         if abs(c) < 0.002:
             continue
         factors.append({"feature": LABELS[f][0], "value": vals[f], "effect": round((math.exp(c) - 1) * 100, 1), "note": LABELS[f][1]})
-    lo, hi = M["band"]
+    seg_name = fuel if kind == "car" else f"{fuel} {mi['body']}"
+    lo, hi = M.get("bands", {}).get(seg_name) or M["band"]     # range sized for this kind of vehicle
     sim = (M["similar_variant"].get(f"{(var or {}).get('id')}|{age}") if var else None) or M["similar"].get(f"{key}|{age}")
     seg = M["segment_metrics"]["overall"]
     site = "BikeWale" if kind == "2w" else "CarWale"
@@ -305,7 +306,7 @@ def predict_market(kind, p: PredictIn, info):
                               f"On ads it had never seen, half its prices were within {seg['median_abs_pct_err']:.0%} of the asking price, "
                               f"and {seg['within_20pct']:.0%} within 20%.")},
         "method": "Each bar is how much that detail moves the price, compared with a typical ad (Tree SHAP, from the same calculation).",
-        "range_note": "The range covers the middle 60% of the model's misses on ads it had not seen.",
+        "range_note": f"The range covers the middle 60% of the model's misses on {seg_name.lower()} ads it had not seen.",
     }
     if newp:
         on_road = newp if kind == "car" else dep.on_road_2w(newp, info.get("cc"), p.state, fuel == "Electric")[0]

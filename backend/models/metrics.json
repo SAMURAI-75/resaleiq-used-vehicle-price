@@ -140,7 +140,8 @@
       "ads": 17363,
       "median_abs_pct_from_cell_median": 0.11111111111111116
     },
-    "seeds": 5
+    "seeds": 5,
+    "depth": 10
   },
   "car_market": {
     "segments": {
@@ -250,7 +251,7 @@
       "max_cat_to_onehot": 1,
       "max_cat_threshold": 16,
       "eta": 0.03,
-      "max_depth": 8,
+      "max_depth": 10,
       "min_child_weight": 5,
       "subsample": 0.8,
       "colsample_bytree": 0.7,
@@ -260,7 +261,8 @@
       "ads": 56377,
       "median_abs_pct_from_cell_median": 0.08651911468812878
     },
-    "seeds": 3
+    "seeds": 3,
+    "depth": 8
   },
   "bike2026": {
     "models": {

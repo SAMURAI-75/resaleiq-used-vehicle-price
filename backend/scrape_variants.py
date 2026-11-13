@@ -17,6 +17,14 @@ ROOT = Path(__file__).resolve().parent
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
 
 
+def num(x):
+    import re
+    try:
+        return float(re.sub(r"[^\d.]", "", str(x))) if x not in (None, "") else None
+    except ValueError:
+        return None
+
+
 def versions(url):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -41,15 +49,22 @@ def main():
                     po = v.get("priceOverview") or {}
                     p = po.get("averageExShowRoomPrice") or po.get("price") or po.get("exShowRoomPrice")
                     if p:
+                        sp = {}
+                        for x in (v.get("specsSummary") or []) + (v.get("basicSpecs") or []) + (v.get("differentSpecs") or []):
+                            if x.get("itemName"):
+                                sp[x["itemName"]] = x.get("value")
                         rows.append({"versionId": v["versionId"], "brand": brand, "model": m["model"],
-                                     "versionName": v.get("versionName"), "ex_showroom": p})
+                                     "versionName": v.get("versionName"), "ex_showroom": p,
+                                     "battery_kwh": num(sp.get("Battery Capacity")), "cc": num(sp.get("Displacement")),
+                                     "bhp": num(sp.get("Max Power(bhp)") or sp.get("Max Power")),
+                                     "kerb_kg": num(sp.get("Kerb Weight"))})
             except Exception as ex:  # noqa: BLE001
                 print("  skip", brand, m["model"], ex)
             time.sleep(0.5)
         print(f"  {brand}: {len(rows)} variants so far")
     out = ROOT / "data" / "catalog" / "bike_variants.csv"
     with open(out, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["versionId", "brand", "model", "versionName", "ex_showroom"])
+        w = csv.DictWriter(f, fieldnames=["versionId", "brand", "model", "versionName", "ex_showroom", "battery_kwh", "cc", "bhp", "kerb_kg"])
         w.writeheader(); w.writerows(rows)
     print(f"saved {len(rows)} variants -> {out}")
 

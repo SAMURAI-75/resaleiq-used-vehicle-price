@@ -26,7 +26,13 @@ from sklearn.model_selection import train_test_split
 ROOT = Path(__file__).resolve().parent
 NOW = 2026
 CATS = ["brand", "model_key", "variant", "fuel", "body", "transmission", "state", "city", "seller"]
-NUMS = ["age", "log_km", "owners", "log_new", "log_new_model"]
+BASE_NUMS = ["age", "log_km", "owners", "log_new", "log_new_model"]
+# two-wheelers also get specs: battery size (EVs; the variant's, else from its name, else the model's median),
+# engine cc and power (the model's, from the BikeWale catalogue). Cars need none: their variant's new price says it.
+# Tested 13 Nov: all two-wheelers 12.4% -> 12.3% typical miss, electric scooters 61.6% -> 63.0% within 20% but
+# 14.1% -> 14.4% typical miss -- all within noise (138 EV scooters in the test set), so they stay switched off.
+EXTRA_NUMS = {"bike": [], "car": []}            # to try again: {"bike": ["battery_kwh", "cc", "bhp"], ...}
+NUMS = list(BASE_NUMS)
 MONO = {"age": -1, "log_km": -1, "owners": -1, "log_new": 1, "log_new_model": 1}
 CFG = {
     "bike": {"csv": "bikewale_used_2026.csv", "min_price": 5_000, "max_km": 150_000},
@@ -81,6 +87,15 @@ def load(kind):
         cat = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())["bike"]
     model_price = {f"{b} | {m['model']}": m["new_price"] for b, ms in cat.items() for m in ms if m.get("new_price")}
     u["new_price_model"] = u.model_key.map(model_price)
+    if kind == "bike":
+        specs = {f"{b} | {m['model']}": m for b, ms in cat.items() for m in ms}
+        u["cc"] = u.model_key.map(lambda k: (specs.get(k) or {}).get("cc"))
+        u["bhp"] = u.model_key.map(lambda k: (specs.get(k) or {}).get("bhp"))
+        kwh_v = dict(zip(v.versionId, v.battery_kwh))
+        name_kwh = pd.to_numeric(u.versionName.astype(str).str.extract(r"(\d+(?:\.\d+)?)\s*kWh", expand=False), errors="coerce")
+        u["battery_kwh"] = u.versionId.map(kwh_v).fillna(name_kwh)
+        u["battery_kwh"] = u.battery_kwh.fillna(u.groupby("model_key").battery_kwh.transform("median"))
+        u.loc[u.fuel != "Electric", "battery_kwh"] = np.nan
     # model-level fallback for the variant price: median variant price seen for that model
     u["new_price"] = u.new_price.fillna(u.groupby("model_key").new_price.transform("median")).fillna(u.new_price_model)
 
@@ -158,6 +173,8 @@ def noise_floor(u):
 
 
 def main(kind):
+    global NUMS
+    NUMS = BASE_NUMS + EXTRA_NUMS[kind]
     u, log = load(kind)
     print(kind, log, flush=True)
     cats = {c: sorted(u[c].dropna().astype(str).unique().tolist()) for c in CATS}
@@ -168,10 +185,20 @@ def main(kind):
     params = {**PARAMS, "max_depth": depth, "monotone_constraints": mono}
     dtr2 = xgb.DMatrix(to_frame(tr2, cats), tr2.lp, enable_categorical=True)
     dva = xgb.DMatrix(to_frame(va, cats), va.lp, enable_categorical=True)
-    rounds = []
+    rounds, pva = [], []
     for seed in range(N_SEEDS):
         b = xgb.train({**params, "seed": seed}, dtr2, 6000, evals=[(dva, "va")], early_stopping_rounds=200, verbose_eval=False)
         rounds.append(b.best_iteration + 1)
+        pva.append(b.predict(dva, iteration_range=(0, b.best_iteration + 1)))
+    # price range per segment: the middle 60% of the misses on validation ads (never seen in that training)
+    ratio_va = va.price.values / np.exp(np.mean(pva, axis=0))
+    seg_va = (va.fuel if kind == "car" else va.fuel + " " + va.body).values
+    bands = {"_all": [float(np.quantile(ratio_va, .2)), float(np.quantile(ratio_va, .8))]}
+    for s_ in np.unique(seg_va):
+        m = seg_va == s_
+        if m.sum() >= 40:
+            bands[s_] = [float(np.quantile(ratio_va[m], .2)), float(np.quantile(ratio_va[m], .8))]
+    print("  price range by segment:", {k: [round(x, 3) for x in v] for k, v in bands.items()}, flush=True)
     print("  rounds per seed:", rounds, flush=True)
     dtr = xgb.DMatrix(to_frame(tr, cats), tr.lp, enable_categorical=True)
     boosters = [xgb.train({**params, "seed": s}, dtr, num_boost_round=r) for s, r in zip(range(N_SEEDS), rounds)]
@@ -227,11 +254,18 @@ def main(kind):
     for c in counts.index:                           # biggest city first: it is the default in the form
         st = u.loc[u.city == c, "state"].mode()
         cities.setdefault(st.iat[0] if len(st) else "Other", []).append(c)
+    spec_maps = {}
+    if kind == "bike":
+        spec_maps = {"variant_kwh": {str(k): float(x) for k, x in u.dropna(subset=["battery_kwh"]).groupby("variant").battery_kwh.median().items()},
+                     "model_kwh": {k: float(x) for k, x in u.dropna(subset=["battery_kwh"]).groupby("model_key").battery_kwh.median().items()},
+                     "model_cc": {k: float(x) for k, x in u.dropna(subset=["cc"]).groupby("model_key").cc.median().items()},
+                     "model_bhp": {k: float(x) for k, x in u.dropna(subset=["bhp"]).groupby("model_key").bhp.median().items()}}
     joblib.dump({"boosters": boosters, "cats": cats, "features": CATS + NUMS, "params": params, "rounds": rounds,
+                 "specs": spec_maps,
                  "noise_floor": floor,
                  "similar": similar, "similar_variant": similar_v, "cities": cities,
                  "segment_metrics": res,
-                 "band": [float(np.quantile(ratio, .2)), float(np.quantile(ratio, .8))], "years": years,
+                 "band": bands["_all"], "bands": bands, "years": years,
                  "variants": var_map, "models": model_info}, ROOT / "models" / f"{kind}_market.joblib", compress=3)
     mp = ROOT / "models" / "metrics.json"
     allm = json.loads(mp.read_text())
