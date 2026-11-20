@@ -116,6 +116,9 @@ def band_factor(table, bands, age):
 
 
 # ------------------------------------------------------------------ the model list
+EV_NAME = re.compile(r"\b(EV\d*|E[XC]\d0|e-?tron|Electric|EQ[ABCEGSV]\w*|BE \d|XEV \w+|eC3\w*|iX\d?|i[457]|Ioniq \d|Atto \d|Seal|Sealion \d|eMax \d|Taycan|e6|Comet|Windsor)\b", re.I)
+
+
 def _build_index():
     idx = {"2w": {}, "car": {}}
     for kind, mk in (("2w", "bike"), ("car", "car")):
@@ -133,8 +136,8 @@ def _build_index():
             mi = mkt.get(key)
             kag = META[mk]["trained"].get(key)
             fuel = (e.get("fuel") or (mi or {}).get("fuel") or "petrol").lower()
-            if e.get("electric"):
-                fuel = "electric"
+            if e.get("electric") or (kind == "car" and EV_NAME.search(e["model"])):
+                fuel = "electric"           # new EVs with few ads have no fuel in the catalogue: the name says it
             if mi and mi["n"] >= MIN_TRAIN:
                 engine = "market"
             elif kag and kag["n"] >= MIN_TRAIN and fuel != "electric":
@@ -170,7 +173,8 @@ def _build_index():
                 if kag and kag.get("fuel"):
                     fu.add(str(kag["fuel"]).title())
                 fu.add({"cng": "CNG", "lpg": "LPG"}.get(fuel, fuel.title()))
-                entry["fuels"] = sorted(f for f in fu if f in {"Petrol", "Diesel", "CNG", "Electric", "Hybrid", "LPG"})
+                entry["fuels"] = ["Electric"] if fuel == "electric" else sorted(
+                    f for f in fu if f in {"Petrol", "Diesel", "CNG", "Electric", "Hybrid", "LPG"} and f != "Electric")
                 tr = {v.get("transmission") for v in vs if v.get("transmission") in ("Manual", "Automatic")}
                 if (mi or {}).get("transmission") in ("Manual", "Automatic"):
                     tr.add(mi["transmission"])

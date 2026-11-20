@@ -235,7 +235,11 @@ function updateFields() {
     };
     fill(F.fuel, m.fuels && m.fuels.length ? m.fuels : ["Petrol", "Diesel", "CNG", "Electric", "Hybrid"]);
     fill(F.trans, m.gearboxes && m.gearboxes.length ? m.gearboxes : ["Manual", "Automatic"]);
-    F.trans.closest(".field").classList.toggle("hide", !flags.has("carfree") || F.fuel.value === "Electric");
+    // an EV has one fuel and no gearbox: hide both boxes
+    const ev = m.fuel === "electric";
+    if (ev) F.fuel.value = "Electric";
+    F.fuel.closest(".field").classList.toggle("hide", !flags.has("carfree") || ev || F.fuel.options.length < 2);
+    F.trans.closest(".field").classList.toggle("hide", !flags.has("carfree") || ev || F.fuel.value === "Electric");
   }
   $("#advEmpty").hidden = $$("#adv .field").some((f) => !f.classList.contains("hide"));
   const yrs = m.years ? ` · ads from ${m.years[0]}–${m.years[1]}` : "";
