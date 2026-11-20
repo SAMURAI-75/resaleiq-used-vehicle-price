@@ -266,3 +266,6 @@ b { font-weight: 600; }
   .nav-inner { gap: 12px; }
   .mtable th, .mtable td { padding: 12px 12px; font-size: 14px; }
 }
+
+/* a result that no longer matches the form (the update failed) */
+.res.stale .price, .res.stale .range, .res.stale .mini-stats, .res.stale .res-summary, .res.stale .pane:not([data-p="price"]) { opacity: .35; filter: grayscale(.7); }

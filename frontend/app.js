@@ -308,11 +308,21 @@ async function run(scrollTo) {
     }
     const data = await r.json();
     lastRtt = performance.now() - t0;
+    $("#res").classList.remove("stale");
     show(data, !lastResult, m);
     lastResult = data;
     $("#formNote").textContent = "Prices in 2026 rupees. Asking prices on listing sites, not final sale prices.";
   } catch (err) {
-    if (err.name !== "AbortError") $("#formNote").textContent = "Couldn't get a price: " + err.message;
+    if (err.name !== "AbortError") {
+      const msg = err instanceof TypeError ? "the server isn't running (start it, then try again)" : err.message;
+      $("#formNote").textContent = "Couldn't get a price: " + msg;
+      // never leave an older vehicle's price looking current
+      if (lastResult) {
+        $("#res").classList.add("stale");
+        $("#warn").hidden = false;
+        $("#warn").textContent = `Out of date: this is the earlier result for ${lastResult.title}. ${msg[0].toUpperCase() + msg.slice(1)}.`;
+      }
+    }
   } finally { btn.classList.remove("loading"); }
   if (scrollTo && innerWidth < 920) $("#result").scrollIntoView({ behavior: "smooth", block: "start" });
 }
