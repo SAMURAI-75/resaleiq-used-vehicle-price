@@ -114,3 +114,4 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
   - **Per-segment price ranges:** middle 60% of validation misses per vehicle type (electric scooters −25%/+22%, CNG cars −8%/+7%). Test coverage: 59-67% per type vs 56-79% with one shared range. Model scores unchanged (cars 8.3%, bikes 12.4%), so report and Colab still match.
   - Bug caught by the sweep: a variable-name clash broke every market prediction after the change; fixed. Sweep 0/1,104, year test unchanged.
 - **2026-11-13 — Report exported** to `docs/report/ResaleIQ_Report.pdf` (15 pages, A4, charts on pp. 6, 8, 9, 10, 12). Re-export after final edits (author name in byline, survey author lists).
+- **2026-11-20 — Repo made public** at the user's request (checked first: no keys/passwords in tracked files; student name, college and the commit email are visible).
