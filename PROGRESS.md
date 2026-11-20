@@ -133,3 +133,9 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
 - **UI fixes:** car Fuel only lists the fuels that model came in (Atto 3 → Electric only), and Gearbox is hidden for electric cars (single-speed, sent as Automatic).
 - **Tests:** sweep 1,104 models → 0 issues, 0 edge failures, median gap to similar ads 5.3%; year check 99.9% of car ads have a selectable year, 26/27 spot checks pass.
 - **EV fix (20 Nov, later):** 14 new EVs with few ads (Sierra EV, Syros EV, XUV 3XO EV, BE 6 Sporteq, eC3 X, Volvo EX30/EX90, Mercedes EQS/GLC Electric...) had no fuel in the catalogue and showed as Petrol. The model name now marks them electric (56 → 58 electric car models), and for any EV the Fuel and Gearbox boxes are hidden. Single-fuel cars also hide the Fuel box. Sweep test: 0 issues.
+
+### 20 Nov 2026: IEEE paper for the AIML 20-mark submission (due 25 Nov)
+- Form asks for: names/USNs/emails/phones, the report, the IEEE paper as Word + PDF, a library plagiarism + AI-content report, and an Overleaf link (optional → NA).
+- `docs/paper/ResaleIQ_IEEE_Paper.docx` + `.pdf` (4 pages, IEEE conference format, US Letter, two columns, Times 10 pt), made by `docs/paper/make_paper.js` (docx npm). The PDF is exported from Microsoft Word.
+- Contents: RQ1 replication (XGBoost R² 0.921 vs DT 0.864), RQ2 temporal test (8% under-pricing), 2026 models (2W 12.4%, cars 8.4%, CarWale 11.3%), RQ3 EV vs petrol (−12.0 vs −6.3 %/yr, p = 0.001), the 1990–2026 tax history and its ablation (no gain), and deployment. 28 references.
+- Author emails are guessed as usn@msrit.edu: to be confirmed by the team.
