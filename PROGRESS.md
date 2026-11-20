@@ -117,3 +117,18 @@ docs/               ROADMAP.md, DATASETS.md, LITERATURE_SURVEY.md
 - **2026-11-20 — Repo made public** at the user's request (checked first: no keys/passwords in tracked files; student name, college and the commit email are visible).
 - **2026-11-20 — Stale result bug.** When the server was down, changing the form left the previous vehicle's price on screen with no warning (user saw a Classic 650 price under a Pulsar NS400Z form). Now a failed update fades the old result and says it is out of date and why. Also explained a 1-yr-old Classic 650 pricing above ex-showroom: value kept is vs the on-road price (Karnataka ~20% road tax), new prices rose with 40% GST (Sep 2025), and real ads ask even more.
 - **2026-11-20 — Before/after-tax breakdown** on the Price tab, updating with the state: price before tax, + GST (by engine size), = ex-showroom, + road tax (state rate incl. cess), + insurance and registration, = on-road new, vs the predicted used price (no GST/road tax on a private resale). Cars show CarWale's variant on-road price. Sweep 0/1,104.
+
+### 20 Nov 2026: India tax history (1990-2026) → v2 models, v1 kept as fallback
+- **Tax file:** `backend/tax_history.py` → `data/tax_history.json` (rules, sources, confidence) + `data/variant_tax_history.csv` (43,978 variant-years).
+  - Two-wheeler excise from official notifications: 16% → 12% (Mar 2008) → 10% → 8% (2009) → 10% (2010) → 12% (2012) → 8% (2014 interim) → 12% (2015). VAT 12.5% / 14.5%.
+  - Car excise from the Business Today chronology (35% in 1990, 60% in 1991-96, 40%, 32%, 24%, small-car 12% / 8%), then the 2012-17 small/mid/large/SUV rates and the 2016 infra cess.
+  - GST from 1 Jul 2017 with cess (raised Sep 2017). EVs 12% → 5% (Aug 2019). GST 2.0 from 22 Sep 2025.
+  - Pre-2001 and the 2006-08 small-car rates are low confidence. Car class comes from the engine size in the variant name plus the body type.
+- **API:** `tax.then` in every price (tax then vs now, the road tax then, and today's bike at that year's tax). The price card has a "When it was bought" section.
+- **Retrain (v2):** `train_market.py` adds `tax_then` and `tax_shift`.
+  - Bikes 12.41% → 12.37% typical miss; cars 8.28% → 8.32%. Within noise: the year already carries the tax signal.
+  - Because tax jumps year to year, 489 models had an older year priced above a newer one. Added an age guard (running minimum, shown as a SHAP-style factor) → sweep test back to 0 issues.
+- **Fallback:** `backend/models_v1_pre_tax/`, `frontend_v1/`, git tag `v1-pre-tax`; `RESALEIQ_VERSION=v1` serves it (checked on port 8001: same ₹1,19,600 Classic 350 price as before).
+- **Colab:** Module 9 uses the tax inputs; new Module 9b (tax chart 1990-2026 + bike with/without table). The zip now carries `tax_history.py` and `.json`. Executed locally with no errors (`colab/ResaleIQ_pipeline_executed.ipynb`).
+- **UI fixes:** car Fuel only lists the fuels that model came in (Atto 3 → Electric only), and Gearbox is hidden for electric cars (single-speed, sent as Automatic).
+- **Tests:** sweep 1,104 models → 0 issues, 0 edge failures, median gap to similar ads 5.3%; year check 99.9% of car ads have a selectable year, 26/27 spot checks pass.

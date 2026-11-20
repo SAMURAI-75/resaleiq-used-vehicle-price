@@ -37,4 +37,6 @@ pd.DataFrame([{"brand": b, "model": x["model"], "new_price": x.get("new_price")}
 with zipfile.ZipFile(ROOT / "colab" / "resaleiq_colab_data.zip", "w", zipfile.ZIP_DEFLATED) as z:
     for f in sorted(OUT.glob("*.csv")):
         z.write(f, f.name)
+    z.write(ROOT / "backend" / "tax_history.py", "tax_history.py")          # Module 9 / 9b: India tax history rules
+    z.write(ROOT / "backend" / "data" / "tax_history.json", "tax_history.json")
 print("wrote", ROOT / "colab" / "resaleiq_colab_data.zip", [f.name for f in OUT.glob("*.csv")])

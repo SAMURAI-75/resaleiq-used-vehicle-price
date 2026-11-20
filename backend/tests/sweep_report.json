@@ -4,7 +4,7 @@
   "models_with_issues": 0,
   "edge_cases_failed": 0,
   "similar_ad_comparisons": 405,
-  "median_abs_gap_to_similar_ads": 0.05366666666666664,
+  "median_abs_gap_to_similar_ads": 0.05318367346938779,
   "gaps_over_40pct": 1
  },
  "issues": [],
@@ -90,10 +90,10 @@
    "Corolla Altis",
    {
     "year": 2013,
-    "price": 445700.0,
+    "price": 433200.0,
     "similar": 297000.0,
     "n": 12,
-    "gap": 0.5006734006734006
+    "gap": 0.45858585858585865
    }
   ]
  ]

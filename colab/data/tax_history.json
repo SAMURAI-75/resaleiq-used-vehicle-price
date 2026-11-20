@@ -1,0 +1,624 @@
+{
+ "about": "Indian taxes on a NEW two-wheeler or car, 1990-2026 -- the history behind every used vehicle's original price.\n\n  python backend/tax_history.py      -> data/tax_history.json            (the rules, with sources and confidence)\n                                        data/variant_tax_history.csv     (every variant x every year it was sold)\n\nTwo layers:\n1. National tax inside the ex-showroom price, as an effective rate on the price before tax\n   - before 1 Jul 2017: central excise (+ the 2016 infrastructure cess) and state VAT / sales tax on top\n   - 1 Jul 2017 - 21 Sep 2025: GST + compensation cess\n   - from 22 Sep 2025: GST 2.0 (cess folded in)\n2. State road tax, paid on top of the ex-showroom price (two-wheelers; 11 states)\n\nConfidence: \"high\" = official notification or several consistent reports; \"medium\" = one good report, or a rule\napplied to a class we infer; \"low\" = not documented, assumed (mostly 1990-2007). Flat specific duties (e.g. Rs 15,000\non 1500-1999cc cars in 2008) and state-by-state VAT differences are left out; a typical VAT rate is used.\n",
+ "generated": "2026-11-20",
+ "sources": {
+  "budget_2008": "Union Budget 2008-09 excise note (indiabudget.gov.in) - two-wheelers 16% -> 12%",
+  "notif_2008_2010": "Central Excise notification 02/2008 and amendments (taxtmi): 14->10% 7 Dec 2008, 10->8% 24 Feb 2009, 8->10% 27 Feb 2010",
+  "budget_2012": "Union Budget 2012: basic excise 10% -> 12% (bikeadvice.in; tariff 17 Mar 2012)",
+  "interim_2014": "Interim Budget Feb 2014: cars/two-wheelers excise cut till Jun 2014, extended; reversed Jan 2015 (moneylife.in, business-standard.com)",
+  "bt_chronology": "Business Today, 'A taxing drive' (Aug 2009): car excise 35% (1989-90), 60% (1991-92), 40% (1996-97), 32% (2001-02), 24% (2003-04), small cars 12% (2008-09)",
+  "gst_2017": "GST Council 2017: motor vehicles 28% + compensation cess (small petrol 1%, small diesel 3%, others 15%; two-wheelers >350cc 3%)",
+  "cess_sep2017": "GST cess hike Sep 2017 (Notification 5/2017; Tribune): mid-size +2, large +5, SUV +7 points",
+  "gst_ev_2019": "36th GST Council (PIB, 27 Jul 2019): electric vehicles 12% -> 5% from 1 Aug 2019",
+  "gst_2025": "56th GST Council (Autocar Pro, Sep 2025): from 22 Sep 2025 two-wheelers <=350cc 18%, >350cc 40%; small cars 18%, others 40%; EVs 5%",
+  "budget_2016": "Union Budget 2016: infrastructure cess on cars 1% (small petrol), 2.5% (small diesel), 4% (others)",
+  "vat": "State VAT from Apr 2005 (12.5% typical, 14.5% in many states from 2015); sales tax before -- typical rates, not state-specific",
+  "road_tax_table": "Module 3 road-tax table (official transport sites, DriveSpark, Tribune, DT Next, Digit, Deccan Chronicle) -- see PROGRESS.md"
+ },
+ "excise_two_wheeler": [
+  {
+   "from": "1990-01-01",
+   "to": "2001-03-01",
+   "rate": 0.24,
+   "confidence": "low",
+   "source": "assumed; no reliable record found for 1990-2000"
+  },
+  {
+   "from": "2001-03-01",
+   "to": "2008-03-01",
+   "rate": 0.16,
+   "confidence": "medium",
+   "source": "general CENVAT rate 16% (2001-2008); budget 2008 cut two-wheelers from 16%"
+  },
+  {
+   "from": "2008-03-01",
+   "to": "2008-12-07",
+   "rate": 0.12,
+   "confidence": "high",
+   "source": "budget_2008"
+  },
+  {
+   "from": "2008-12-07",
+   "to": "2009-02-24",
+   "rate": 0.1,
+   "confidence": "high",
+   "source": "notif_2008_2010"
+  },
+  {
+   "from": "2009-02-24",
+   "to": "2010-02-27",
+   "rate": 0.08,
+   "confidence": "high",
+   "source": "notif_2008_2010"
+  },
+  {
+   "from": "2010-02-27",
+   "to": "2012-03-17",
+   "rate": 0.1,
+   "confidence": "high",
+   "source": "notif_2008_2010"
+  },
+  {
+   "from": "2012-03-17",
+   "to": "2014-02-17",
+   "rate": 0.12,
+   "confidence": "high",
+   "source": "budget_2012"
+  },
+  {
+   "from": "2014-02-17",
+   "to": "2015-01-01",
+   "rate": 0.08,
+   "confidence": "medium",
+   "source": "interim_2014"
+  },
+  {
+   "from": "2015-01-01",
+   "to": "2017-07-01",
+   "rate": 0.12,
+   "confidence": "medium",
+   "source": "interim_2014"
+  }
+ ],
+ "excise_car": [
+  {
+   "from": "1990-01-01",
+   "to": "1991-07-24",
+   "rates": {
+    "all": 0.35
+   },
+   "confidence": "medium",
+   "source": "bt_chronology"
+  },
+  {
+   "from": "1991-07-24",
+   "to": "1996-07-22",
+   "rates": {
+    "all": 0.6
+   },
+   "confidence": "medium",
+   "source": "bt_chronology (includes special excise)"
+  },
+  {
+   "from": "1996-07-22",
+   "to": "2001-03-01",
+   "rates": {
+    "all": 0.4
+   },
+   "confidence": "medium",
+   "source": "bt_chronology"
+  },
+  {
+   "from": "2001-03-01",
+   "to": "2003-03-01",
+   "rates": {
+    "all": 0.32
+   },
+   "confidence": "medium",
+   "source": "bt_chronology"
+  },
+  {
+   "from": "2003-03-01",
+   "to": "2006-03-01",
+   "rates": {
+    "all": 0.24
+   },
+   "confidence": "medium",
+   "source": "bt_chronology"
+  },
+  {
+   "from": "2006-03-01",
+   "to": "2008-03-01",
+   "rates": {
+    "small": 0.16,
+    "mid": 0.24,
+    "large": 0.24,
+    "suv": 0.24
+   },
+   "confidence": "low",
+   "source": "small-car concession from 2006 (rate assumed at the general 16%)"
+  },
+  {
+   "from": "2008-03-01",
+   "to": "2008-12-07",
+   "rates": {
+    "small": 0.12,
+    "mid": 0.24,
+    "large": 0.24,
+    "suv": 0.24
+   },
+   "confidence": "high",
+   "source": "bt_chronology"
+  },
+  {
+   "from": "2008-12-07",
+   "to": "2010-02-27",
+   "rates": {
+    "small": 0.08,
+    "mid": 0.2,
+    "large": 0.2,
+    "suv": 0.2
+   },
+   "confidence": "medium",
+   "source": "bt_chronology ('8, 10 and 20 per cent')"
+  },
+  {
+   "from": "2010-02-27",
+   "to": "2012-03-17",
+   "rates": {
+    "small": 0.1,
+    "mid": 0.22,
+    "large": 0.22,
+    "suv": 0.22
+   },
+   "confidence": "medium",
+   "source": "notif_2008_2010 (+2 points across)"
+  },
+  {
+   "from": "2012-03-17",
+   "to": "2013-03-01",
+   "rates": {
+    "small": 0.12,
+    "mid": 0.24,
+    "large": 0.27,
+    "suv": 0.27
+   },
+   "confidence": "medium",
+   "source": "budget_2012"
+  },
+  {
+   "from": "2013-03-01",
+   "to": "2014-02-17",
+   "rates": {
+    "small": 0.12,
+    "mid": 0.24,
+    "large": 0.27,
+    "suv": 0.3
+   },
+   "confidence": "medium",
+   "source": "interim_2014 (SUV 30% before the cut)"
+  },
+  {
+   "from": "2014-02-17",
+   "to": "2015-01-01",
+   "rates": {
+    "small": 0.08,
+    "mid": 0.2,
+    "large": 0.24,
+    "suv": 0.24
+   },
+   "confidence": "high",
+   "source": "interim_2014"
+  },
+  {
+   "from": "2015-01-01",
+   "to": "2017-07-01",
+   "rates": {
+    "small": 0.125,
+    "mid": 0.24,
+    "large": 0.27,
+    "suv": 0.3
+   },
+   "confidence": "high",
+   "source": "interim_2014 (reversal), companiesinn table"
+  }
+ ],
+ "infra_cess_2016": {
+  "from": "2016-03-01",
+  "to": "2017-07-01",
+  "rates": {
+   "small_petrol": 0.01,
+   "small_diesel": 0.025,
+   "other": 0.04
+  }
+ },
+ "gst": {
+  "2017-07-01": "two-wheelers 28% (+3% cess >350cc); cars 28% + cess (small petrol 1%, small diesel 3%, others 15%; from 2017-09-11 mid 17%, large 20%, SUV 22%; hybrids 15%); EVs 12%",
+  "2019-08-01": "EVs 5%",
+  "2025-09-22": "two-wheelers <=350cc 18%, >350cc 40%; small cars 18%, other cars 40%; EVs 5%"
+ },
+ "road_tax_two_wheeler": [
+  {
+   "state": "Delhi",
+   "from": "1990-01-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     25000,
+     0.02
+    ],
+    [
+     40000,
+     0.04
+    ],
+    [
+     60000,
+     0.06
+    ],
+    [
+     null,
+     0.08
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Karnataka",
+   "from": "1990-01-01",
+   "to": "2010-04-01",
+   "basis": "price",
+   "slabs": [
+    [
+     50000,
+     0.08
+    ],
+    [
+     null,
+     0.1
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Karnataka",
+   "from": "2010-04-01",
+   "to": "2017-04-01",
+   "basis": "price",
+   "slabs": [
+    [
+     50000,
+     0.1
+    ],
+    [
+     null,
+     0.12
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Karnataka",
+   "from": "2017-04-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     50000,
+     0.1
+    ],
+    [
+     100000,
+     0.12
+    ],
+    [
+     null,
+     0.18
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Haryana",
+   "from": "1990-01-01",
+   "to": "2017-04-01",
+   "basis": "price",
+   "slabs": [
+    [
+     20000,
+     0.02
+    ],
+    [
+     60000,
+     0.04
+    ],
+    [
+     200000,
+     0.06
+    ],
+    [
+     null,
+     0.08
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Haryana",
+   "from": "2017-04-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     75000,
+     0.04
+    ],
+    [
+     200000,
+     0.06
+    ],
+    [
+     null,
+     0.08
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Maharashtra",
+   "from": "1990-01-01",
+   "to": "2017-07-01",
+   "basis": "cc",
+   "slabs": [
+    [
+     100,
+     0.08
+    ],
+    [
+     299,
+     0.09
+    ],
+    [
+     null,
+     0.1
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Maharashtra",
+   "from": "2017-07-01",
+   "to": "2100-01-01",
+   "basis": "cc",
+   "slabs": [
+    [
+     99,
+     0.1
+    ],
+    [
+     299,
+     0.11
+    ],
+    [
+     null,
+     0.12
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Uttar Pradesh",
+   "from": "1990-01-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     40000,
+     0.07
+    ],
+    [
+     null,
+     0.1
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Gujarat",
+   "from": "1990-01-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     null,
+     0.06
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Tamil Nadu",
+   "from": "1990-01-01",
+   "to": "2023-11-09",
+   "basis": "price",
+   "slabs": [
+    [
+     null,
+     0.08
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Tamil Nadu",
+   "from": "2023-11-09",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     100000,
+     0.1
+    ],
+    [
+     null,
+     0.12
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Rajasthan",
+   "from": "1990-01-01",
+   "to": "2019-07-01",
+   "basis": "cc",
+   "slabs": [
+    [
+     125,
+     0.04
+    ],
+    [
+     200,
+     0.06
+    ],
+    [
+     500,
+     0.08
+    ],
+    [
+     null,
+     0.1
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Rajasthan",
+   "from": "2019-07-01",
+   "to": "2100-01-01",
+   "basis": "cc",
+   "slabs": [
+    [
+     200,
+     0.08
+    ],
+    [
+     500,
+     0.13
+    ],
+    [
+     null,
+     0.15
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Telangana",
+   "from": "1990-01-01",
+   "to": "2025-08-14",
+   "basis": "price",
+   "slabs": [
+    [
+     50000,
+     0.09
+    ],
+    [
+     null,
+     0.12
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Telangana",
+   "from": "2025-08-14",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     50000,
+     0.09
+    ],
+    [
+     100000,
+     0.12
+    ],
+    [
+     200000,
+     0.15
+    ],
+    [
+     null,
+     0.18
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "Punjab",
+   "from": "1990-01-01",
+   "to": "2024-08-22",
+   "basis": "price",
+   "slabs": [
+    [
+     100000,
+     0.07
+    ],
+    [
+     null,
+     0.09
+    ]
+   ],
+   "confidence": "medium"
+  },
+  {
+   "state": "Punjab",
+   "from": "2024-08-22",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     100000,
+     0.075
+    ],
+    [
+     200000,
+     0.1
+    ],
+    [
+     null,
+     0.11
+    ]
+   ],
+   "confidence": "high"
+  },
+  {
+   "state": "West Bengal",
+   "from": "1990-01-01",
+   "to": "2100-01-01",
+   "basis": "price",
+   "slabs": [
+    [
+     20000,
+     0.08
+    ],
+    [
+     60000,
+     0.09
+    ],
+    [
+     200000,
+     0.1
+    ],
+    [
+     null,
+     0.12
+    ]
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "road_tax_cess": {
+  "Karnataka": 0.11
+ }
+}

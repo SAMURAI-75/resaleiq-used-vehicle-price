@@ -15,6 +15,8 @@ Pricing engines, chosen per model (best first):
   "dep"     Official new price x measured yearly value loss (models with too few ads anywhere).
 """
 import json
+import os
+import re
 import math
 import time
 from pathlib import Path
@@ -31,30 +33,44 @@ from pydantic import BaseModel, Field
 
 from . import depreciation as dep
 from .road_tax import CESS, SOURCES, base_road_tax_rate, cheapest_state, gst_two_wheeler, road_tax_rate
+from ..tax_history import national_tax, road_tax_2w
+from datetime import date as _date
+import csv as _csv
+
+# taxes a NEW one paid in each year it was sold, per variant (data/variant_tax_history.csv, built by tax_history.py)
+TAX_HISTORY = {}
+_th = Path(__file__).resolve().parents[1] / "data" / "variant_tax_history.csv"
+if _th.exists():
+    with open(_th) as _f:
+        for _r in _csv.DictReader(_f):
+            TAX_HISTORY[("bike" if _r["kind"] == "two-wheeler" else "car", f"{_r['brand']} | {_r['model']}", _r["variant_id"], int(_r["year"]))] = _r
 
 ROOT = Path(__file__).resolve().parents[1]
-FRONT = ROOT.parent / "frontend"
+# RESALEIQ_VERSION=v1 runs the fallback build: the models and website from before the tax-history retrain
+VERSION = os.environ.get("RESALEIQ_VERSION", "v2")
+MODELS = ROOT / ("models_v1_pre_tax" if VERSION == "v1" else "models")
+FRONT = ROOT.parent / ("frontend_v1" if VERSION == "v1" else "frontend")
 NOW = 2026
 MIN_TRAIN = 3
 
-META = json.loads((ROOT / "models" / "meta.json").read_text())
-METRICS = json.loads((ROOT / "models" / "metrics.json").read_text())
+META = json.loads((MODELS / "meta.json").read_text())
+METRICS = json.loads((MODELS / "metrics.json").read_text())
 CATALOG = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text())
-KAGGLE = {k: joblib.load(ROOT / "models" / f"{k}_xgb.joblib") for k in ("bike", "car")}
+KAGGLE = {k: joblib.load(MODELS / f"{k}_xgb.joblib") for k in ("bike", "car")}
 KAGGLE_BOOST = {k: v["pipe"].named_steps["m"].get_booster() for k, v in KAGGLE.items()}
-MARKET = {k: joblib.load(ROOT / "models" / f"{k}_market.joblib") for k in ("bike", "car")
-          if (ROOT / "models" / f"{k}_market.joblib").exists()}
+MARKET = {k: joblib.load(MODELS / f"{k}_market.joblib") for k in ("bike", "car")
+          if (MODELS / f"{k}_market.joblib").exists()}
 GROWTH = META["growth"]
 # full variant lists (official + every variant seen in an ad), built by build_variants.py
-VARIANTS = {k: json.loads((ROOT / "models" / f"variants_{k}.json").read_text()) for k in ("bike", "car")
-            if (ROOT / "models" / f"variants_{k}.json").exists()}
+VARIANTS = {k: json.loads((MODELS / f"variants_{k}.json").read_text()) for k in ("bike", "car")
+            if (MODELS / f"variants_{k}.json").exists()}
 # verified years per model (build_variants.py + years.py): official ranges where stated, else typo-trimmed ad years
-MODEL_YEARS = {k: json.loads((ROOT / "models" / f"model_years_{k}.json").read_text()) for k in ("bike", "car")
-               if (ROOT / "models" / f"model_years_{k}.json").exists()}
+MODEL_YEARS = {k: json.loads((MODELS / f"model_years_{k}.json").read_text()) for k in ("bike", "car")
+               if (MODELS / f"model_years_{k}.json").exists()}
 
 
 def _json(name):
-    p = ROOT / "models" / name
+    p = MODELS / name
     return json.loads(p.read_text()) if p.exists() else None
 
 
@@ -146,6 +162,19 @@ def _build_index():
                 entry["kaggle_fuel"] = kag.get("fuel")
             if kind == "car" and mi:
                 entry["transmission_mode"] = mi.get("transmission")
+            if kind == "car":
+                # fuels and gearboxes this model really came in (its variants, its ads by year, the Kaggle data)
+                vs = VARIANTS.get(mk, {}).get(key, [])
+                fu = {str(v.get("fuel")).title() for v in vs if v.get("fuel")}
+                fu |= {str(f).title() for f in ((mi or {}).get("fuel_by_year") or {}).values() if f}
+                if kag and kag.get("fuel"):
+                    fu.add(str(kag["fuel"]).title())
+                fu.add({"cng": "CNG", "lpg": "LPG"}.get(fuel, fuel.title()))
+                entry["fuels"] = sorted(f for f in fu if f in {"Petrol", "Diesel", "CNG", "Electric", "Hybrid", "LPG"})
+                tr = {v.get("transmission") for v in vs if v.get("transmission") in ("Manual", "Automatic")}
+                if (mi or {}).get("transmission") in ("Manual", "Automatic"):
+                    tr.add(mi["transmission"])
+                entry["gearboxes"] = sorted(tr) if tr else ["Manual", "Automatic"]
             # NaN (unknown) -> None, so the JSON is valid
             entry = {k: (None if isinstance(v, float) and v != v else v) for k, v in entry.items()}
             idx[kind].setdefault(brand, {})[e["model"]] = entry
@@ -208,6 +237,8 @@ LABELS = {
     "log_new": ("Price new", "What this exact variant costs new; used prices track it closely."),
     "log_new_model": ("Model's price today", "The model's current starting price."),
     "power": ("Engine", "Bigger engines usually cost more new and used."),
+    "tax_then": ("Tax when new", "The Indian tax a new one paid the year it was bought (excise + VAT before July 2017, GST after)."),
+    "tax_shift": ("Tax then vs now", "Bought when tax was higher than today? It cost more new, and buyers weigh that against today's new price."),
     "engine_cc": ("Engine", "Bigger engines usually cost more new and used."),
     "power_bhp": ("Power", "More power signals a higher variant."),
     "mileage_kmpl": ("Mileage", "Fuel efficiency of the variant."),
@@ -217,6 +248,24 @@ LABELS = {
 
 
 # ------------------------------------------------------------------ market engine (2026 listings)
+from functools import lru_cache
+
+
+@lru_cache(maxsize=20_000)
+def _tax_feats(mk, year, eng, fuel, body):
+    """tax_then, tax_shift for a vehicle bought new in `year` -- same rules the v2 models were trained on."""
+    t = national_tax(mk, _date(int(year), 7, 1), eng, fuel, body)["rate"]
+    n = national_tax(mk, _date(NOW, 7, 1), eng, fuel, body)["rate"]
+    return t, math.log1p(t) - math.log1p(n)
+
+
+def _engine(mk, info, var):
+    if mk == "bike":
+        return info.get("cc")
+    m = re.search(r"(?<![\d.])([0-4]\.\d)(?![\d])", (var or {}).get("name") or "")
+    return float(m.group(1)) if m else None
+
+
 def _variant(mk, key, vid):
     if not vid:
         return None
@@ -256,7 +305,12 @@ def predict_market(kind, p: PredictIn, info):
            "log_new": math.log(newp) if newp else np.nan,
            "log_new_model": math.log(cat_price) if cat_price else np.nan}
     ages = list(range(0, 16))
-    df = pd.DataFrame([{**row, "age": a} for a in ages])[M["features"]]
+    taxed = "tax_then" in M["features"]          # v2 models; the v1 fallback has no tax inputs
+    if taxed:
+        eng = _engine(mk, info, var)
+        tbody = "" if mk == "bike" else str(mi["body"])
+        tx = lambda y: dict(zip(("tax_then", "tax_shift"), _tax_feats(mk, int(y), eng, fuel, tbody)))
+    df = pd.DataFrame([{**row, "age": a, **(tx(NOW - a) if taxed else {})} for a in ages])[M["features"]]
     for c in M["cats"]:
         df[c] = pd.Categorical(df[c], categories=M["cats"][c])
     d = xgb.DMatrix(df, enable_categorical=True)
@@ -264,10 +318,20 @@ def predict_market(kind, p: PredictIn, info):
     curve = np.exp(np.mean([b.predict(d) for b in boosters], axis=0))
     one = df.iloc[[min(age, 15)]].copy()
     one["age"] = age                    # score the real age (also beyond the 0-15 curve)
+    if taxed:
+        one["tax_then"], one["tax_shift"] = _tax_feats(mk, p.year, eng, fuel, tbody)
     d1 = xgb.DMatrix(one, enable_categorical=True)
     # SHAP values are additive, so the ensemble's contributions are the mean of each model's
     contrib = np.mean([b.predict(d1, pred_contribs=True)[0] for b in boosters], axis=0)
     price = float(math.exp(contrib.sum()))
+    guard = 0.0
+    if taxed:
+        # tax rates jump year to year, so the tax inputs can make an older one score above a newer one;
+        # a used vehicle never gains value with age, so hold the curve (and the price) at the newer year's level
+        curve = np.minimum.accumulate(curve)
+        cap = float(curve[min(age, 15)])
+        if price > cap:
+            guard, price = math.log(cap / price), cap
     ms = (time.perf_counter() - t0) * 1000
 
     vals = {"brand": p.brand, "model_key": p.model, "variant": (var or {}).get("name") or "not specified",
@@ -276,6 +340,10 @@ def predict_market(kind, p: PredictIn, info):
             "seller": p.seller or "individual", "age": f"{age} yr", "log_km": f"{p.km:,.0f} km",
             "owners": OWNER_WORD[p.owners], "log_new": f"₹{inr(newp)}" if newp else "unknown",
             "log_new_model": f"₹{inr(cat_price)}" if cat_price else "not sold now"}
+    if taxed:
+        tt, ts = _tax_feats(mk, p.year, eng, fuel, tbody)
+        vals["tax_then"] = f"{tt:.1%} in {p.year}"
+        vals["tax_shift"] = f"{(math.exp(ts) - 1) * 100:+.0f}% vs today"
     factors = []
     for f, c in sorted(zip(M["features"], contrib[:-1]), key=lambda t: -abs(t[1])):
         if kind == "2w" and f == "transmission":
@@ -283,6 +351,9 @@ def predict_market(kind, p: PredictIn, info):
         if abs(c) < 0.002:
             continue
         factors.append({"feature": LABELS[f][0], "value": vals[f], "effect": round((math.exp(c) - 1) * 100, 1), "note": LABELS[f][1]})
+    if guard < -0.002:
+        factors.append({"feature": "Age guard", "value": "held at newer year's price", "effect": round((math.exp(guard) - 1) * 100, 1),
+                        "note": "A used one never costs more than a newer one of the same variant; the price is held at that level."})
     seg_name = fuel if kind == "car" else f"{fuel} {mi['body']}"
     lo, hi = M.get("bands", {}).get(seg_name) or M["band"]     # range sized for this kind of vehicle
     sim = (M["similar_variant"].get(f"{(var or {}).get('id')}|{age}") if var else None) or M["similar"].get(f"{key}|{age}")
@@ -365,7 +436,39 @@ def tax_note(kind, p, info, newp, fuel):
     elif newp:
         # CarWale gives each car variant's new on-road price (GST, road tax and insurance already inside)
         t["breakdown"] = {"car_on_road": round(newp, -2)}
+    then = taxes_when_bought(kind, p, info, newp, fuel)
+    if then:
+        t["then"] = then
     return t if len(t) > 1 else None
+
+
+def taxes_when_bought(kind, p, info, newp, fuel):
+    """The tax a new one paid in the year this one was bought vs today, from the variant tax history file
+    (falls back to the same rules when the variant isn't in the file)."""
+    mk = "bike" if kind == "2w" else "car"
+    key = f"{p.brand} | {p.model}"
+    body = (MARKET.get(mk, {}).get("models", {}).get(key) or {}).get("body") if MARKET.get(mk) else None
+    cc = info.get("cc") if kind == "2w" else None
+    row = TAX_HISTORY.get((mk, key, str(p.variant), p.year)) if p.variant else None
+    if row:
+        if row["engine"]:
+            cc = float(row["engine"])
+        then = {"rate": float(row["national_tax_rate"]), "regime": row["regime"], "parts": row["breakdown"],
+                "confidence": row["confidence"], "from_file": True}
+    else:
+        then = national_tax(mk, _date(p.year, 7, 1), cc, fuel or "Petrol", body)
+        then = {k: then[k] for k in ("rate", "regime", "parts", "confidence")} | {"from_file": False}
+    now = national_tax(mk, _date(NOW, 7, 1), cc, fuel or "Petrol", body)
+    out = {"year": p.year, "national": then, "national_now": {"rate": now["rate"], "parts": now["parts"]}}
+    if newp and kind == "2w":
+        # what today's price before tax would have cost after that year's tax (same product, tax effect only)
+        before = newp / (1 + now["rate"])
+        out["ex_showroom_at_then_tax"] = round(before * (1 + then["rate"]), -2)
+    if kind == "2w" and p.state and p.state != "Other" and newp:
+        rt = road_tax_2w(p.state, _date(p.year, 7, 1), newp, cc, fuel == "Electric")
+        if rt:
+            out["road_then"] = rt
+    return out
 
 
 # ------------------------------------------------------------------ Kaggle engine (older models, no 2026 ads)

@@ -1,0 +1,9540 @@
+{
+ "factor_by_age": {
+  "0-1": 0.9636821198706941,
+  "13-30": 1.1449307965364055,
+  "2-3": 1.0261255849450275,
+  "4-5": 1.080028190423314,
+  "6-8": 1.141362698198603,
+  "9-12": 1.144446126345969
+ },
+ "bands": [
+  [
+   -1,
+   1
+  ],
+  [
+   1,
+   3
+  ],
+  [
+   3,
+   5
+  ],
+  [
+   5,
+   8
+  ],
+  [
+   8,
+   12
+  ],
+  [
+   12,
+   30
+  ]
+ ],
+ "similar": {
+  "Ampere | Magnus|0": [
+   70000.0,
+   2
+  ],
+  "Ampere | Magnus|3": [
+   55000.0,
+   11
+  ],
+  "Ampere | Magnus|4": [
+   45000.0,
+   6
+  ],
+  "Ampere | Magnus Neo|1": [
+   70000.0,
+   6
+  ],
+  "Ampere | Nexus|0": [
+   120000.0,
+   2
+  ],
+  "Ampere | Reo|0": [
+   65000.0,
+   3
+  ],
+  "Aprilia | RS 457|0": [
+   450000.0,
+   9
+  ],
+  "Aprilia | RS 457|1": [
+   410000.0,
+   7
+  ],
+  "Aprilia | RS 457|2": [
+   415000.0,
+   8
+  ],
+  "Aprilia | SR 125|1": [
+   90000.0,
+   6
+  ],
+  "Aprilia | SR 125|3": [
+   80000.0,
+   7
+  ],
+  "Aprilia | SR 125|4": [
+   95000.0,
+   3
+  ],
+  "Aprilia | SR 125|8": [
+   37500.0,
+   2
+  ],
+  "Aprilia | SR 150|6": [
+   75000.0,
+   3
+  ],
+  "Aprilia | SR 150|7": [
+   50000.0,
+   5
+  ],
+  "Aprilia | SR 150|8": [
+   35000.0,
+   7
+  ],
+  "Aprilia | SR 150|9": [
+   42500.0,
+   6
+  ],
+  "Aprilia | SR 150|10": [
+   50000.0,
+   5
+  ],
+  "Aprilia | SR 160|1": [
+   100000.0,
+   3
+  ],
+  "Aprilia | SR 160|2": [
+   90000.0,
+   3
+  ],
+  "Aprilia | SR 160|3": [
+   90000.0,
+   4
+  ],
+  "Aprilia | SR 160|4": [
+   85000.0,
+   3
+  ],
+  "Aprilia | SR 160|5": [
+   62500.0,
+   4
+  ],
+  "Aprilia | SR 175|0": [
+   150000.0,
+   5
+  ],
+  "Aprilia | SR 175|1": [
+   135000.0,
+   7
+  ],
+  "Aprilia | SR150|8": [
+   42499.5,
+   2
+  ],
+  "Aprilia | SXR 125|4": [
+   70000.0,
+   2
+  ],
+  "Aprilia | SXR 160|3": [
+   112500.0,
+   2
+  ],
+  "Aprilia | SXR 160|4": [
+   74500.0,
+   2
+  ],
+  "Aprilia | SXR 160|5": [
+   75000.0,
+   5
+  ],
+  "Aprilia | SXR 160|6": [
+   47500.0,
+   2
+  ],
+  "Aprilia | Storm 125|1": [
+   95000.0,
+   2
+  ],
+  "Aprilia | Storm 125|4": [
+   75000.0,
+   3
+  ],
+  "Aprilia | Storm 125|5": [
+   70000.0,
+   3
+  ],
+  "Aprilia | Storm 125|6": [
+   55000.0,
+   3
+  ],
+  "Aprilia | Storm 125|7": [
+   47500.0,
+   2
+  ],
+  "Aprilia | Tuono 457|1": [
+   325000.0,
+   3
+  ],
+  "Ather | 450 Apex|2": [
+   115000.0,
+   2
+  ],
+  "Ather | 450S|1": [
+   120000.0,
+   2
+  ],
+  "Ather | 450S|2": [
+   115000.0,
+   3
+  ],
+  "Ather | 450X|0": [
+   157500.0,
+   4
+  ],
+  "Ather | 450X|1": [
+   155000.0,
+   4
+  ],
+  "Ather | 450X|2": [
+   110000.0,
+   6
+  ],
+  "Ather | 450X|3": [
+   105000.0,
+   6
+  ],
+  "Ather | 450X|4": [
+   85000.0,
+   4
+  ],
+  "Ather | 450X|5": [
+   67500.0,
+   4
+  ],
+  "Ather | 450X Gen 2|3": [
+   87500.0,
+   2
+  ],
+  "Ather | Konarc|0": [
+   110000.0,
+   3
+  ],
+  "Ather | Rizta|0": [
+   140000.0,
+   5
+  ],
+  "Ather | Rizta|1": [
+   120000.0,
+   13
+  ],
+  "Ather | Rizta|2": [
+   99000.0,
+   7
+  ],
+  "BGauss | C12|2": [
+   80000.0,
+   2
+  ],
+  "BMW | G 310 GS|2": [
+   290000.0,
+   4
+  ],
+  "BMW | G 310 GS|3": [
+   310000.0,
+   10
+  ],
+  "BMW | G 310 GS|4": [
+   225000.0,
+   7
+  ],
+  "BMW | G 310 GS|5": [
+   235000.0,
+   4
+  ],
+  "BMW | G 310 GS|7": [
+   215000.0,
+   2
+  ],
+  "BMW | G 310 GS|8": [
+   210000.0,
+   2
+  ],
+  "BMW | G 310 R|2": [
+   252500.0,
+   12
+  ],
+  "BMW | G 310 R|3": [
+   295000.0,
+   6
+  ],
+  "BMW | G 310 R|4": [
+   210500.0,
+   8
+  ],
+  "BMW | G 310 R|5": [
+   210000.0,
+   11
+  ],
+  "BMW | G 310 R|7": [
+   110000.0,
+   2
+  ],
+  "BMW | G 310 R|8": [
+   150000.0,
+   3
+  ],
+  "BMW | G310 RR|0": [
+   300000.0,
+   17
+  ],
+  "BMW | G310 RR|1": [
+   300000.0,
+   23
+  ],
+  "BMW | G310 RR|2": [
+   280000.0,
+   15
+  ],
+  "BMW | G310 RR|3": [
+   267500.0,
+   16
+  ],
+  "BMW | G310 RR|4": [
+   270000.0,
+   7
+  ],
+  "BSA | Gold Star 650|2": [
+   295000.0,
+   6
+  ],
+  "Bajaj | Avenger|10": [
+   45000.0,
+   2
+  ],
+  "Bajaj | Avenger|11": [
+   45000.0,
+   13
+  ],
+  "Bajaj | Avenger|12": [
+   40000.0,
+   9
+  ],
+  "Bajaj | Avenger|13": [
+   31000.0,
+   3
+  ],
+  "Bajaj | Avenger Cruise 220|0": [
+   135000.0,
+   4
+  ],
+  "Bajaj | Avenger Cruise 220|1": [
+   140000.0,
+   3
+  ],
+  "Bajaj | Avenger Cruise 220|2": [
+   105000.0,
+   4
+  ],
+  "Bajaj | Avenger Cruise 220|3": [
+   100000.0,
+   3
+  ],
+  "Bajaj | Avenger Cruise 220|4": [
+   98000.0,
+   9
+  ],
+  "Bajaj | Avenger Cruise 220|5": [
+   90000.0,
+   14
+  ],
+  "Bajaj | Avenger Cruise 220|6": [
+   80000.0,
+   11
+  ],
+  "Bajaj | Avenger Cruise 220|7": [
+   80000.0,
+   23
+  ],
+  "Bajaj | Avenger Cruise 220|8": [
+   60000.0,
+   27
+  ],
+  "Bajaj | Avenger Cruise 220|9": [
+   50000.0,
+   32
+  ],
+  "Bajaj | Avenger Cruise 220|10": [
+   52999.5,
+   44
+  ],
+  "Bajaj | Avenger Cruise 220|11": [
+   32500.0,
+   14
+  ],
+  "Bajaj | Avenger Cruise 220|12": [
+   45000.0,
+   12
+  ],
+  "Bajaj | Avenger Cruise 220|13": [
+   30000.0,
+   8
+  ],
+  "Bajaj | Avenger Cruise 220|14": [
+   35000.0,
+   5
+  ],
+  "Bajaj | Avenger Street 150|8": [
+   46000.0,
+   10
+  ],
+  "Bajaj | Avenger Street 150|9": [
+   45000.0,
+   33
+  ],
+  "Bajaj | Avenger Street 150|10": [
+   39000.0,
+   56
+  ],
+  "Bajaj | Avenger Street 150|11": [
+   30000.0,
+   3
+  ],
+  "Bajaj | Avenger Street 160|0": [
+   120000.0,
+   6
+  ],
+  "Bajaj | Avenger Street 160|1": [
+   120000.0,
+   11
+  ],
+  "Bajaj | Avenger Street 160|2": [
+   100000.0,
+   18
+  ],
+  "Bajaj | Avenger Street 160|3": [
+   80000.0,
+   26
+  ],
+  "Bajaj | Avenger Street 160|4": [
+   75000.0,
+   17
+  ],
+  "Bajaj | Avenger Street 160|5": [
+   73500.0,
+   24
+  ],
+  "Bajaj | Avenger Street 160|6": [
+   64999.0,
+   25
+  ],
+  "Bajaj | Avenger Street 160|7": [
+   58000.0,
+   27
+  ],
+  "Bajaj | Avenger Street 160|8": [
+   42500.0,
+   6
+  ],
+  "Bajaj | Avenger Street 160|9": [
+   50000.0,
+   8
+  ],
+  "Bajaj | Avenger Street 160|10": [
+   35000.0,
+   13
+  ],
+  "Bajaj | Avenger Street 180|7": [
+   52000.0,
+   3
+  ],
+  "Bajaj | Avenger Street 180|8": [
+   56000.0,
+   13
+  ],
+  "Bajaj | Avenger Street 220|0": [
+   131000.0,
+   5
+  ],
+  "Bajaj | Avenger Street 220|3": [
+   135000.0,
+   2
+  ],
+  "Bajaj | Avenger Street 220|5": [
+   100000.0,
+   3
+  ],
+  "Bajaj | Avenger Street 220|7": [
+   60000.0,
+   5
+  ],
+  "Bajaj | Avenger Street 220|8": [
+   55000.0,
+   21
+  ],
+  "Bajaj | Avenger Street 220|9": [
+   61999.5,
+   20
+  ],
+  "Bajaj | Avenger Street 220|10": [
+   45000.0,
+   40
+  ],
+  "Bajaj | Avenger Street 220|11": [
+   35000.0,
+   13
+  ],
+  "Bajaj | Avenger Street 220|12": [
+   35000.0,
+   11
+  ],
+  "Bajaj | Avenger Street 220|13": [
+   50000.0,
+   3
+  ],
+  "Bajaj | Avenger Street 220|15": [
+   20000.0,
+   3
+  ],
+  "Bajaj | CT 100|5": [
+   45000.0,
+   3
+  ],
+  "Bajaj | CT 100|6": [
+   35000.0,
+   7
+  ],
+  "Bajaj | CT 100|7": [
+   30000.0,
+   9
+  ],
+  "Bajaj | CT 100|8": [
+   26500.0,
+   8
+  ],
+  "Bajaj | CT 100|9": [
+   26500.0,
+   10
+  ],
+  "Bajaj | CT 100|10": [
+   22500.0,
+   6
+  ],
+  "Bajaj | CT 100|11": [
+   25000.0,
+   4
+  ],
+  "Bajaj | CT 100|21": [
+   25000.0,
+   2
+  ],
+  "Bajaj | CT 110|0": [
+   62000.0,
+   4
+  ],
+  "Bajaj | CT 110|1": [
+   60000.0,
+   13
+  ],
+  "Bajaj | CT 110|2": [
+   60000.0,
+   9
+  ],
+  "Bajaj | CT 110|3": [
+   50000.0,
+   8
+  ],
+  "Bajaj | CT 110|4": [
+   50000.0,
+   15
+  ],
+  "Bajaj | CT 110|5": [
+   45000.0,
+   21
+  ],
+  "Bajaj | CT 110|6": [
+   39500.0,
+   10
+  ],
+  "Bajaj | CT 110|7": [
+   35000.0,
+   3
+  ],
+  "Bajaj | CT 125X|2": [
+   65000.0,
+   2
+  ],
+  "Bajaj | CT 125X|3": [
+   57500.0,
+   12
+  ],
+  "Bajaj | CT 125X|4": [
+   50000.0,
+   11
+  ],
+  "Bajaj | Chetak|0": [
+   120000.0,
+   13
+  ],
+  "Bajaj | Chetak|1": [
+   110000.0,
+   19
+  ],
+  "Bajaj | Chetak|2": [
+   80000.0,
+   13
+  ],
+  "Bajaj | Chetak|3": [
+   67500.0,
+   4
+  ],
+  "Bajaj | Chetak|4": [
+   77500.0,
+   2
+  ],
+  "Bajaj | Chetak C25|0": [
+   104000.0,
+   2
+  ],
+  "Bajaj | Discover 100|11": [
+   20000.0,
+   3
+  ],
+  "Bajaj | Discover 100|12": [
+   22500.0,
+   12
+  ],
+  "Bajaj | Discover 100|13": [
+   25000.0,
+   19
+  ],
+  "Bajaj | Discover 100|14": [
+   20000.0,
+   18
+  ],
+  "Bajaj | Discover 100|15": [
+   25000.0,
+   7
+  ],
+  "Bajaj | Discover 100|16": [
+   17500.0,
+   6
+  ],
+  "Bajaj | Discover 100|17": [
+   18000.0,
+   7
+  ],
+  "Bajaj | Discover 100 M|12": [
+   25000.0,
+   11
+  ],
+  "Bajaj | Discover 100 M|14": [
+   22500.0,
+   2
+  ],
+  "Bajaj | Discover 100 T|11": [
+   25000.0,
+   3
+  ],
+  "Bajaj | Discover 100 T|12": [
+   25000.0,
+   4
+  ],
+  "Bajaj | Discover 100 T|13": [
+   20000.0,
+   9
+  ],
+  "Bajaj | Discover 100 T|16": [
+   17500.0,
+   2
+  ],
+  "Bajaj | Discover 110|7": [
+   35000.0,
+   3
+  ],
+  "Bajaj | Discover 110|8": [
+   29000.0,
+   2
+  ],
+  "Bajaj | Discover 125|8": [
+   40000.0,
+   3
+  ],
+  "Bajaj | Discover 125|9": [
+   20000.0,
+   5
+  ],
+  "Bajaj | Discover 125|11": [
+   22000.0,
+   3
+  ],
+  "Bajaj | Discover 125|12": [
+   25000.0,
+   11
+  ],
+  "Bajaj | Discover 125|13": [
+   20000.0,
+   9
+  ],
+  "Bajaj | Discover 125|14": [
+   20000.0,
+   18
+  ],
+  "Bajaj | Discover 125|15": [
+   15000.0,
+   5
+  ],
+  "Bajaj | Discover 125|16": [
+   105000.5,
+   2
+  ],
+  "Bajaj | Discover 125|19": [
+   15000.0,
+   2
+  ],
+  "Bajaj | Discover 125 M|11": [
+   37500.0,
+   4
+  ],
+  "Bajaj | Discover 125 M|12": [
+   32500.0,
+   2
+  ],
+  "Bajaj | Discover 125 ST|13": [
+   25000.0,
+   11
+  ],
+  "Bajaj | Discover 125 ST|14": [
+   21000.0,
+   10
+  ],
+  "Bajaj | Discover 135|11": [
+   25000.0,
+   3
+  ],
+  "Bajaj | Discover 135|15": [
+   30000.0,
+   2
+  ],
+  "Bajaj | Discover 135|17": [
+   20000.0,
+   3
+  ],
+  "Bajaj | Discover 150|11": [
+   27000.0,
+   7
+  ],
+  "Bajaj | Discover 150|12": [
+   29000.0,
+   6
+  ],
+  "Bajaj | Discover 150|13": [
+   20000.0,
+   5
+  ],
+  "Bajaj | Discover 150|14": [
+   18500.0,
+   2
+  ],
+  "Bajaj | Discover 150|15": [
+   17500.0,
+   8
+  ],
+  "Bajaj | Discover 150|16": [
+   21000.0,
+   4
+  ],
+  "Bajaj | Discover 150F|11": [
+   40000.0,
+   4
+  ],
+  "Bajaj | Discover 150F|12": [
+   25000.0,
+   7
+  ],
+  "Bajaj | Discover 150S|12": [
+   17500.0,
+   2
+  ],
+  "Bajaj | Discover125|9": [
+   35000.0,
+   4
+  ],
+  "Bajaj | Discover125|11": [
+   118004.0,
+   2
+  ],
+  "Bajaj | Discover125|12": [
+   20000.0,
+   5
+  ],
+  "Bajaj | Discover125|13": [
+   21500.0,
+   8
+  ],
+  "Bajaj | Discover125|14": [
+   22000.0,
+   11
+  ],
+  "Bajaj | Discover125|15": [
+   15250.0,
+   2
+  ],
+  "Bajaj | Discover125|19": [
+   25500.0,
+   2
+  ],
+  "Bajaj | Dominar 250|0": [
+   130000.0,
+   3
+  ],
+  "Bajaj | Dominar 250|1": [
+   200000.0,
+   3
+  ],
+  "Bajaj | Dominar 250|2": [
+   150000.0,
+   14
+  ],
+  "Bajaj | Dominar 250|3": [
+   150000.0,
+   12
+  ],
+  "Bajaj | Dominar 250|4": [
+   130000.0,
+   19
+  ],
+  "Bajaj | Dominar 250|5": [
+   125000.0,
+   15
+  ],
+  "Bajaj | Dominar 250|6": [
+   110000.0,
+   12
+  ],
+  "Bajaj | Dominar 400|0": [
+   230000.0,
+   9
+  ],
+  "Bajaj | Dominar 400|1": [
+   227500.0,
+   8
+  ],
+  "Bajaj | Dominar 400|2": [
+   210000.0,
+   11
+  ],
+  "Bajaj | Dominar 400|3": [
+   175000.0,
+   25
+  ],
+  "Bajaj | Dominar 400|4": [
+   180000.0,
+   16
+  ],
+  "Bajaj | Dominar 400|5": [
+   155000.0,
+   25
+  ],
+  "Bajaj | Dominar 400|6": [
+   135000.0,
+   11
+  ],
+  "Bajaj | Dominar 400|7": [
+   130000.0,
+   27
+  ],
+  "Bajaj | Dominar 400|8": [
+   100000.0,
+   44
+  ],
+  "Bajaj | Dominar 400|9": [
+   90000.0,
+   39
+  ],
+  "Bajaj | Freedom|0": [
+   99500.0,
+   10
+  ],
+  "Bajaj | Freedom|1": [
+   86000.0,
+   34
+  ],
+  "Bajaj | Freedom|2": [
+   80000.0,
+   34
+  ],
+  "Bajaj | Platina 100|0": [
+   47500.0,
+   6
+  ],
+  "Bajaj | Platina 100|1": [
+   65000.0,
+   9
+  ],
+  "Bajaj | Platina 100|2": [
+   60000.0,
+   17
+  ],
+  "Bajaj | Platina 100|3": [
+   48000.0,
+   11
+  ],
+  "Bajaj | Platina 100|4": [
+   45000.0,
+   29
+  ],
+  "Bajaj | Platina 100|5": [
+   42500.0,
+   22
+  ],
+  "Bajaj | Platina 100|6": [
+   50000.0,
+   7
+  ],
+  "Bajaj | Platina 100|7": [
+   45000.0,
+   3
+  ],
+  "Bajaj | Platina 100|8": [
+   37000.0,
+   20
+  ],
+  "Bajaj | Platina 100|9": [
+   27500.0,
+   10
+  ],
+  "Bajaj | Platina 100|10": [
+   29000.0,
+   10
+  ],
+  "Bajaj | Platina 100|11": [
+   33000.0,
+   2
+  ],
+  "Bajaj | Platina 100|12": [
+   25000.0,
+   8
+  ],
+  "Bajaj | Platina 100|13": [
+   22500.0,
+   6
+  ],
+  "Bajaj | Platina 100|14": [
+   20000.0,
+   14
+  ],
+  "Bajaj | Platina 100|15": [
+   11000.0,
+   6
+  ],
+  "Bajaj | Platina 100|17": [
+   15000.0,
+   3
+  ],
+  "Bajaj | Platina 100|18": [
+   18000.0,
+   3
+  ],
+  "Bajaj | Platina 100|19": [
+   12499.5,
+   6
+  ],
+  "Bajaj | Platina 110|0": [
+   72499.5,
+   8
+  ],
+  "Bajaj | Platina 110|1": [
+   68500.0,
+   12
+  ],
+  "Bajaj | Platina 110|2": [
+   55000.0,
+   21
+  ],
+  "Bajaj | Platina 110|3": [
+   55000.0,
+   25
+  ],
+  "Bajaj | Platina 110|4": [
+   48000.0,
+   11
+  ],
+  "Bajaj | Platina 110|5": [
+   50000.0,
+   18
+  ],
+  "Bajaj | Platina 110|6": [
+   60000.0,
+   9
+  ],
+  "Bajaj | Platina 110|7": [
+   40000.0,
+   9
+  ],
+  "Bajaj | Platina 110|8": [
+   20000.0,
+   2
+  ],
+  "Bajaj | Platina 110|16": [
+   22500.0,
+   2
+  ],
+  "Bajaj | Platina 110|17": [
+   25000.0,
+   2
+  ],
+  "Bajaj | Pulsar 125|0": [
+   90000.0,
+   25
+  ],
+  "Bajaj | Pulsar 125|1": [
+   83000.0,
+   82
+  ],
+  "Bajaj | Pulsar 125|2": [
+   75000.0,
+   98
+  ],
+  "Bajaj | Pulsar 125|3": [
+   65000.0,
+   119
+  ],
+  "Bajaj | Pulsar 125|4": [
+   63500.0,
+   72
+  ],
+  "Bajaj | Pulsar 125|5": [
+   60000.0,
+   72
+  ],
+  "Bajaj | Pulsar 125|6": [
+   50000.0,
+   56
+  ],
+  "Bajaj | Pulsar 125|7": [
+   50000.0,
+   16
+  ],
+  "Bajaj | Pulsar 135 LS|9": [
+   36500.0,
+   11
+  ],
+  "Bajaj | Pulsar 135 LS|10": [
+   30000.0,
+   8
+  ],
+  "Bajaj | Pulsar 135 LS|11": [
+   32000.0,
+   3
+  ],
+  "Bajaj | Pulsar 135 LS|12": [
+   30000.0,
+   5
+  ],
+  "Bajaj | Pulsar 135 LS|13": [
+   29000.0,
+   10
+  ],
+  "Bajaj | Pulsar 135 LS|14": [
+   27000.0,
+   7
+  ],
+  "Bajaj | Pulsar 135 LS|15": [
+   20000.0,
+   9
+  ],
+  "Bajaj | Pulsar 135 LS|16": [
+   25000.0,
+   4
+  ],
+  "Bajaj | Pulsar 150|0": [
+   102500.0,
+   16
+  ],
+  "Bajaj | Pulsar 150|1": [
+   110000.0,
+   23
+  ],
+  "Bajaj | Pulsar 150|2": [
+   100000.0,
+   25
+  ],
+  "Bajaj | Pulsar 150|3": [
+   85000.0,
+   21
+  ],
+  "Bajaj | Pulsar 150|4": [
+   70000.0,
+   39
+  ],
+  "Bajaj | Pulsar 150|5": [
+   60000.0,
+   37
+  ],
+  "Bajaj | Pulsar 150|6": [
+   60000.0,
+   53
+  ],
+  "Bajaj | Pulsar 150|7": [
+   50000.0,
+   86
+  ],
+  "Bajaj | Pulsar 150|8": [
+   45000.0,
+   60
+  ],
+  "Bajaj | Pulsar 150|9": [
+   43000.0,
+   36
+  ],
+  "Bajaj | Pulsar 150|10": [
+   40000.0,
+   47
+  ],
+  "Bajaj | Pulsar 150|11": [
+   36250.0,
+   50
+  ],
+  "Bajaj | Pulsar 150|12": [
+   29000.0,
+   62
+  ],
+  "Bajaj | Pulsar 150|13": [
+   35000.0,
+   39
+  ],
+  "Bajaj | Pulsar 150|14": [
+   25000.0,
+   34
+  ],
+  "Bajaj | Pulsar 150|15": [
+   25000.0,
+   29
+  ],
+  "Bajaj | Pulsar 150|16": [
+   30000.0,
+   13
+  ],
+  "Bajaj | Pulsar 150|17": [
+   25000.0,
+   9
+  ],
+  "Bajaj | Pulsar 150|18": [
+   21500.0,
+   4
+  ],
+  "Bajaj | Pulsar 150|20": [
+   10000.0,
+   3
+  ],
+  "Bajaj | Pulsar 150|21": [
+   20000.0,
+   3
+  ],
+  "Bajaj | Pulsar 150|22": [
+   17500.0,
+   2
+  ],
+  "Bajaj | Pulsar 180|0": [
+   80000.0,
+   2
+  ],
+  "Bajaj | Pulsar 180|5": [
+   57500.0,
+   2
+  ],
+  "Bajaj | Pulsar 180|6": [
+   72500.0,
+   2
+  ],
+  "Bajaj | Pulsar 180|7": [
+   45000.0,
+   7
+  ],
+  "Bajaj | Pulsar 180|8": [
+   62000.0,
+   7
+  ],
+  "Bajaj | Pulsar 180|9": [
+   44450.0,
+   10
+  ],
+  "Bajaj | Pulsar 180|10": [
+   40000.0,
+   6
+  ],
+  "Bajaj | Pulsar 180|11": [
+   40000.0,
+   13
+  ],
+  "Bajaj | Pulsar 180|12": [
+   33000.0,
+   13
+  ],
+  "Bajaj | Pulsar 180|13": [
+   32500.0,
+   16
+  ],
+  "Bajaj | Pulsar 180|14": [
+   25000.0,
+   14
+  ],
+  "Bajaj | Pulsar 180|15": [
+   32500.0,
+   8
+  ],
+  "Bajaj | Pulsar 180|16": [
+   30000.0,
+   6
+  ],
+  "Bajaj | Pulsar 180|17": [
+   30000.0,
+   7
+  ],
+  "Bajaj | Pulsar 180|18": [
+   25000.0,
+   2
+  ],
+  "Bajaj | Pulsar 180|19": [
+   12500.0,
+   2
+  ],
+  "Bajaj | Pulsar 180F|5": [
+   65000.0,
+   2
+  ],
+  "Bajaj | Pulsar 180F|6": [
+   72500.0,
+   6
+  ],
+  "Bajaj | Pulsar 180F|7": [
+   55000.0,
+   7
+  ],
+  "Bajaj | Pulsar 200|3": [
+   110000.0,
+   3
+  ],
+  "Bajaj | Pulsar 200|4": [
+   132500.0,
+   2
+  ],
+  "Bajaj | Pulsar 200|10": [
+   60000.0,
+   3
+  ],
+  "Bajaj | Pulsar 200|11": [
+   50000.0,
+   3
+  ],
+  "Bajaj | Pulsar 200|17": [
+   33500.0,
+   2
+  ],
+  "Bajaj | Pulsar 220 DTS-i|7": [
+   50000.0,
+   3
+  ],
+  "Bajaj | Pulsar 220 DTS-i|8": [
+   47000.0,
+   4
+  ],
+  "Bajaj | Pulsar 220 DTS-i|9": [
+   45000.0,
+   2
+  ],
+  "Bajaj | Pulsar 220 DTS-i|14": [
+   30000.0,
+   3
+  ],
+  "Bajaj | Pulsar 220 F|6": [
+   74500.0,
+   2
+  ],
+  "Bajaj | Pulsar 220 F|9": [
+   55000.0,
+   3
+  ],
+  "Bajaj | Pulsar 220 Fi|7": [
+   75000.0,
+   2
+  ],
+  "Bajaj | Pulsar 220 Fi|9": [
+   55000.0,
+   2
+  ],
+  "Bajaj | Pulsar 220 Fi|13": [
+   35000.0,
+   2
+  ],
+  "Bajaj | Pulsar 220F|0": [
+   95000.0,
+   8
+  ],
+  "Bajaj | Pulsar 220F|1": [
+   125000.0,
+   7
+  ],
+  "Bajaj | Pulsar 220F|2": [
+   120000.0,
+   11
+  ],
+  "Bajaj | Pulsar 220F|3": [
+   115000.0,
+   18
+  ],
+  "Bajaj | Pulsar 220F|4": [
+   90000.0,
+   2
+  ],
+  "Bajaj | Pulsar 220F|5": [
+   82500.0,
+   10
+  ],
+  "Bajaj | Pulsar 220F|6": [
+   80000.0,
+   14
+  ],
+  "Bajaj | Pulsar 220F|7": [
+   60000.0,
+   28
+  ],
+  "Bajaj | Pulsar 220F|8": [
+   60000.0,
+   20
+  ],
+  "Bajaj | Pulsar 220F|9": [
+   52500.0,
+   28
+  ],
+  "Bajaj | Pulsar 220F|10": [
+   46000.0,
+   15
+  ],
+  "Bajaj | Pulsar 220F|11": [
+   40000.0,
+   19
+  ],
+  "Bajaj | Pulsar 220F|12": [
+   33500.0,
+   18
+  ],
+  "Bajaj | Pulsar 220F|13": [
+   30000.0,
+   7
+  ],
+  "Bajaj | Pulsar 220F|14": [
+   23000.0,
+   7
+  ],
+  "Bajaj | Pulsar 220F|15": [
+   40000.0,
+   5
+  ],
+  "Bajaj | Pulsar 220F|16": [
+   60000.0,
+   2
+  ],
+  "Bajaj | Pulsar AS150|0": [
+   72500.0,
+   2
+  ],
+  "Bajaj | Pulsar AS150|9": [
+   48000.0,
+   2
+  ],
+  "Bajaj | Pulsar AS150|10": [
+   40000.0,
+   5
+  ],
+  "Bajaj | Pulsar AS150|11": [
+   40000.0,
+   19
+  ],
+  "Bajaj | Pulsar AS200|10": [
+   55000.0,
+   7
+  ],
+  "Bajaj | Pulsar AS200|11": [
+   40000.0,
+   3
+  ],
+  "Bajaj | Pulsar F250|4": [
+   105000.0,
+   7
+  ],
+  "Bajaj | Pulsar N125|1": [
+   90000.0,
+   14
+  ],
+  "Bajaj | Pulsar N125|2": [
+   77500.0,
+   6
+  ],
+  "Bajaj | Pulsar N125|4": [
+   72500.0,
+   2
+  ],
+  "Bajaj | Pulsar N125|6": [
+   42500.0,
+   2
+  ],
+  "Bajaj | Pulsar N150|1": [
+   115000.0,
+   5
+  ],
+  "Bajaj | Pulsar N150|2": [
+   96000.0,
+   46
+  ],
+  "Bajaj | Pulsar N150|3": [
+   92500.0,
+   16
+  ],
+  "Bajaj | Pulsar N150|7": [
+   52000.0,
+   3
+  ],
+  "Bajaj | Pulsar N150|8": [
+   52500.0,
+   2
+  ],
+  "Bajaj | Pulsar N150|9": [
+   35000.0,
+   3
+  ],
+  "Bajaj | Pulsar N150|10": [
+   32500.0,
+   2
+  ],
+  "Bajaj | Pulsar N150|12": [
+   40000.0,
+   2
+  ],
+  "Bajaj | Pulsar N150|16": [
+   25000.0,
+   2
+  ],
+  "Bajaj | Pulsar N160 2V|0": [
+   135000.0,
+   35
+  ],
+  "Bajaj | Pulsar N160 2V|1": [
+   122500.0,
+   48
+  ],
+  "Bajaj | Pulsar N160 2V|2": [
+   115000.0,
+   30
+  ],
+  "Bajaj | Pulsar N160 2V|3": [
+   95000.0,
+   60
+  ],
+  "Bajaj | Pulsar N160 2V|4": [
+   90000.0,
+   39
+  ],
+  "Bajaj | Pulsar N160 2V|5": [
+   100000.0,
+   2
+  ],
+  "Bajaj | Pulsar N160 2V|7": [
+   56500.0,
+   2
+  ],
+  "Bajaj | Pulsar N160 4V|0": [
+   130000.0,
+   19
+  ],
+  "Bajaj | Pulsar N160 4V|1": [
+   120000.0,
+   23
+  ],
+  "Bajaj | Pulsar N160 4V|2": [
+   110000.0,
+   21
+  ],
+  "Bajaj | Pulsar N160 4V|3": [
+   95000.0,
+   21
+  ],
+  "Bajaj | Pulsar N160 4V|4": [
+   80000.0,
+   8
+  ],
+  "Bajaj | Pulsar N160 4V|9": [
+   35000.0,
+   2
+  ],
+  "Bajaj | Pulsar N250|0": [
+   150000.0,
+   27
+  ],
+  "Bajaj | Pulsar N250|1": [
+   135000.0,
+   27
+  ],
+  "Bajaj | Pulsar N250|2": [
+   120000.0,
+   21
+  ],
+  "Bajaj | Pulsar N250|3": [
+   112500.0,
+   6
+  ],
+  "Bajaj | Pulsar N250|4": [
+   110000.0,
+   13
+  ],
+  "Bajaj | Pulsar NS125|0": [
+   100000.0,
+   29
+  ],
+  "Bajaj | Pulsar NS125|1": [
+   90000.0,
+   52
+  ],
+  "Bajaj | Pulsar NS125|2": [
+   80000.0,
+   46
+  ],
+  "Bajaj | Pulsar NS125|3": [
+   70000.0,
+   76
+  ],
+  "Bajaj | Pulsar NS125|4": [
+   65000.0,
+   41
+  ],
+  "Bajaj | Pulsar NS125|5": [
+   60000.0,
+   29
+  ],
+  "Bajaj | Pulsar NS160|0": [
+   115000.0,
+   8
+  ],
+  "Bajaj | Pulsar NS160|1": [
+   120000.0,
+   17
+  ],
+  "Bajaj | Pulsar NS160|2": [
+   120000.0,
+   30
+  ],
+  "Bajaj | Pulsar NS160|3": [
+   100000.0,
+   33
+  ],
+  "Bajaj | Pulsar NS160|4": [
+   82500.0,
+   14
+  ],
+  "Bajaj | Pulsar NS160|5": [
+   80000.0,
+   20
+  ],
+  "Bajaj | Pulsar NS160|6": [
+   70000.0,
+   22
+  ],
+  "Bajaj | Pulsar NS160|7": [
+   60000.0,
+   21
+  ],
+  "Bajaj | Pulsar NS160|8": [
+   50000.0,
+   49
+  ],
+  "Bajaj | Pulsar NS160|9": [
+   48000.0,
+   29
+  ],
+  "Bajaj | Pulsar NS200|0": [
+   160000.0,
+   11
+  ],
+  "Bajaj | Pulsar NS200|1": [
+   145000.0,
+   21
+  ],
+  "Bajaj | Pulsar NS200|2": [
+   130000.0,
+   22
+  ],
+  "Bajaj | Pulsar NS200|3": [
+   120000.0,
+   35
+  ],
+  "Bajaj | Pulsar NS200|4": [
+   95000.0,
+   25
+  ],
+  "Bajaj | Pulsar NS200|5": [
+   92000.0,
+   13
+  ],
+  "Bajaj | Pulsar NS200|6": [
+   80000.0,
+   24
+  ],
+  "Bajaj | Pulsar NS200|7": [
+   75000.0,
+   39
+  ],
+  "Bajaj | Pulsar NS200|8": [
+   69500.0,
+   30
+  ],
+  "Bajaj | Pulsar NS200|9": [
+   60000.0,
+   40
+  ],
+  "Bajaj | Pulsar NS200|11": [
+   40000.0,
+   11
+  ],
+  "Bajaj | Pulsar NS200|12": [
+   50000.0,
+   23
+  ],
+  "Bajaj | Pulsar NS200|13": [
+   36500.0,
+   14
+  ],
+  "Bajaj | Pulsar NS200|14": [
+   37500.0,
+   6
+  ],
+  "Bajaj | Pulsar NS400Z|0": [
+   185000.0,
+   13
+  ],
+  "Bajaj | Pulsar NS400Z|1": [
+   180000.0,
+   31
+  ],
+  "Bajaj | Pulsar NS400Z|2": [
+   180000.0,
+   27
+  ],
+  "Bajaj | Pulsar P150|2": [
+   100000.0,
+   3
+  ],
+  "Bajaj | Pulsar P150|3": [
+   80000.0,
+   5
+  ],
+  "Bajaj | Pulsar P150|4": [
+   90000.0,
+   3
+  ],
+  "Bajaj | Pulsar P150|6": [
+   92500.0,
+   2
+  ],
+  "Bajaj | Pulsar P150|7": [
+   49000.0,
+   2
+  ],
+  "Bajaj | Pulsar P150|8": [
+   80000.0,
+   5
+  ],
+  "Bajaj | Pulsar P150|11": [
+   40000.0,
+   3
+  ],
+  "Bajaj | Pulsar P150|13": [
+   30000.0,
+   4
+  ],
+  "Bajaj | Pulsar P150|16": [
+   150000.0,
+   2
+  ],
+  "Bajaj | Pulsar RS 200|0": [
+   190000.0,
+   9
+  ],
+  "Bajaj | Pulsar RS 200|1": [
+   152500.0,
+   8
+  ],
+  "Bajaj | Pulsar RS 200|2": [
+   150000.0,
+   19
+  ],
+  "Bajaj | Pulsar RS 200|3": [
+   140000.0,
+   21
+  ],
+  "Bajaj | Pulsar RS 200|4": [
+   117500.0,
+   8
+  ],
+  "Bajaj | Pulsar RS 200|5": [
+   130000.0,
+   5
+  ],
+  "Bajaj | Pulsar RS 200|6": [
+   110000.0,
+   5
+  ],
+  "Bajaj | Pulsar RS 200|7": [
+   90000.0,
+   11
+  ],
+  "Bajaj | Pulsar RS 200|8": [
+   77500.0,
+   16
+  ],
+  "Bajaj | Pulsar RS 200|9": [
+   60000.0,
+   14
+  ],
+  "Bajaj | Pulsar RS 200|10": [
+   69000.0,
+   31
+  ],
+  "Bajaj | Pulsar RS 200|11": [
+   57500.0,
+   20
+  ],
+  "Bajaj | V12|8": [
+   28000.0,
+   3
+  ],
+  "Bajaj | V12|9": [
+   25000.0,
+   9
+  ],
+  "Bajaj | V12|10": [
+   27500.0,
+   2
+  ],
+  "Bajaj | V15|0": [
+   25000.0,
+   3
+  ],
+  "Bajaj | V15|8": [
+   30000.0,
+   15
+  ],
+  "Bajaj | V15|9": [
+   35000.0,
+   37
+  ],
+  "Bajaj | V15|10": [
+   30000.0,
+   37
+  ],
+  "Bajaj | Xcd|17": [
+   20000.0,
+   5
+  ],
+  "Benelli | Imperiale 400|4": [
+   170000.0,
+   3
+  ],
+  "Benelli | Imperiale 400|5": [
+   125000.0,
+   6
+  ],
+  "Benelli | Imperiale 400|6": [
+   122500.0,
+   4
+  ],
+  "Benelli | TNT 25|10": [
+   90000.0,
+   7
+  ],
+  "Benelli | TNT600i|10": [
+   475000.0,
+   2
+  ],
+  "Benelli | TRK 502|4": [
+   492500.0,
+   4
+  ],
+  "Benling | Falcon|5": [
+   22500.0,
+   2
+  ],
+  "Harley-Davidson | Street 750|7": [
+   375000.0,
+   4
+  ],
+  "Harley-Davidson | Street 750|8": [
+   325000.0,
+   5
+  ],
+  "Harley-Davidson | Street 750|9": [
+   300000.0,
+   5
+  ],
+  "Harley-Davidson | Street 750|10": [
+   265000.0,
+   3
+  ],
+  "Harley-Davidson | Street 750|11": [
+   245000.0,
+   2
+  ],
+  "Harley-Davidson | Street 750|12": [
+   250000.0,
+   3
+  ],
+  "Harley-Davidson | Street Rod|6": [
+   447500.0,
+   2
+  ],
+  "Harley-Davidson | X440|0": [
+   282500.0,
+   4
+  ],
+  "Harley-Davidson | X440|1": [
+   265000.0,
+   29
+  ],
+  "Harley-Davidson | X440|2": [
+   250000.0,
+   34
+  ],
+  "Harley-Davidson | X440|3": [
+   242500.0,
+   14
+  ],
+  "Harley-Davidson | X440 T|0": [
+   312500.0,
+   8
+  ],
+  "Hero Electric | Atria|5": [
+   35000.0,
+   3
+  ],
+  "Hero Electric | Optima|4": [
+   32500.0,
+   8
+  ],
+  "Hero Electric | Optima|5": [
+   22500.0,
+   3
+  ],
+  "Hero Electric | Optima CX|3": [
+   54500.0,
+   3
+  ],
+  "Hero Honda | CBZ|15": [
+   25000.0,
+   2
+  ],
+  "Hero Honda | CBZ extreme|14": [
+   22000.0,
+   14
+  ],
+  "Hero Honda | CBZ extreme|15": [
+   32500.0,
+   10
+  ],
+  "Hero Honda | CBZ extreme|16": [
+   22500.0,
+   6
+  ],
+  "Hero Honda | CBZ extreme|17": [
+   25000.0,
+   3
+  ],
+  "Hero Honda | CBZ extreme|18": [
+   34000.0,
+   2
+  ],
+  "Hero Honda | CBZ extreme|19": [
+   57500.0,
+   2
+  ],
+  "Hero Honda | CD Dawn|22": [
+   17500.0,
+   2
+  ],
+  "Hero Honda | CD Deluxe|14": [
+   32500.0,
+   2
+  ],
+  "Hero Honda | CD Deluxe|15": [
+   25000.0,
+   6
+  ],
+  "Hero Honda | CD Deluxe|17": [
+   25000.0,
+   4
+  ],
+  "Hero Honda | CD Deluxe|18": [
+   16000.0,
+   2
+  ],
+  "Hero Honda | CD Deluxe|19": [
+   14500.0,
+   2
+  ],
+  "Hero Honda | Glamour|14": [
+   20000.0,
+   3
+  ],
+  "Hero Honda | Glamour|15": [
+   25000.0,
+   5
+  ],
+  "Hero Honda | Glamour|16": [
+   30000.0,
+   4
+  ],
+  "Hero Honda | Glamour|17": [
+   20000.0,
+   4
+  ],
+  "Hero Honda | Glamour|18": [
+   20000.0,
+   3
+  ],
+  "Hero Honda | Glamour|21": [
+   15000.0,
+   2
+  ],
+  "Hero Honda | Glamour FI|14": [
+   35000.0,
+   2
+  ],
+  "Hero Honda | Glamour FI|17": [
+   20000.0,
+   3
+  ],
+  "Hero Honda | HF Deluxe|0": [
+   55000.0,
+   2
+  ],
+  "Hero Honda | HF Deluxe|12": [
+   40000.0,
+   4
+  ],
+  "Hero Honda | Hunk|14": [
+   25000.0,
+   3
+  ],
+  "Hero Honda | Hunk|17": [
+   30000.0,
+   5
+  ],
+  "Hero Honda | Karizma|9": [
+   35000.0,
+   2
+  ],
+  "Hero Honda | Karizma|14": [
+   20000.0,
+   3
+  ],
+  "Hero Honda | Karizma|15": [
+   45000.0,
+   2
+  ],
+  "Hero Honda | Karizma|18": [
+   32500.0,
+   2
+  ],
+  "Hero Honda | Karizma ZMR|0": [
+   30000.0,
+   2
+  ],
+  "Hero Honda | Karizma ZMR|13": [
+   60000.0,
+   2
+  ],
+  "Hero Honda | Karizma ZMR|15": [
+   30000.0,
+   3
+  ],
+  "Hero Honda | Passion|13": [
+   67500.0,
+   2
+  ],
+  "Hero Honda | Passion|14": [
+   20000.0,
+   2
+  ],
+  "Hero Honda | Passion|15": [
+   25000.0,
+   3
+  ],
+  "Hero Honda | Passion|17": [
+   17500.0,
+   2
+  ],
+  "Hero Honda | Passion|21": [
+   62500.0,
+   2
+  ],
+  "Hero Honda | Passion PRO|12": [
+   35000.0,
+   2
+  ],
+  "Hero Honda | Passion PRO|13": [
+   25000.0,
+   2
+  ],
+  "Hero Honda | Passion PRO|14": [
+   30000.0,
+   19
+  ],
+  "Hero Honda | Passion PRO|15": [
+   25000.0,
+   16
+  ],
+  "Hero Honda | Passion PRO|16": [
+   25000.0,
+   6
+  ],
+  "Hero Honda | Passion PRO|17": [
+   22000.0,
+   5
+  ],
+  "Hero Honda | Passion Plus|7": [
+   45000.0,
+   2
+  ],
+  "Hero Honda | Passion Plus|8": [
+   35000.0,
+   4
+  ],
+  "Hero Honda | Passion Plus|15": [
+   35000.0,
+   8
+  ],
+  "Hero Honda | Passion Plus|16": [
+   19000.0,
+   2
+  ],
+  "Hero Honda | Passion Plus|17": [
+   24000.0,
+   8
+  ],
+  "Hero Honda | Passion Plus|18": [
+   25000.0,
+   5
+  ],
+  "Hero Honda | Passion Plus|19": [
+   20000.0,
+   2
+  ],
+  "Hero Honda | Passion Plus|21": [
+   9000.0,
+   2
+  ],
+  "Hero Honda | Passion Plus|22": [
+   20000.0,
+   3
+  ],
+  "Hero Honda | Passion Plus|23": [
+   12000.0,
+   2
+  ],
+  "Hero Honda | Passion X Pro|8": [
+   52500.0,
+   2
+  ],
+  "Hero Honda | Pleasure|12": [
+   33500.0,
+   2
+  ],
+  "Hero Honda | Pleasure|14": [
+   18000.0,
+   2
+  ],
+  "Hero Honda | Pleasure|15": [
+   20000.0,
+   5
+  ],
+  "Hero Honda | Pleasure|16": [
+   25000.0,
+   4
+  ],
+  "Hero Honda | Splendor|0": [
+   37500.0,
+   2
+  ],
+  "Hero Honda | Splendor|3": [
+   52500.0,
+   4
+  ],
+  "Hero Honda | Splendor|5": [
+   46000.0,
+   2
+  ],
+  "Hero Honda | Splendor|6": [
+   40000.0,
+   3
+  ],
+  "Hero Honda | Splendor|8": [
+   45000.0,
+   2
+  ],
+  "Hero Honda | Splendor|9": [
+   42500.0,
+   2
+  ],
+  "Hero Honda | Splendor|14": [
+   35000.0,
+   5
+  ],
+  "Hero Honda | Splendor|15": [
+   30000.0,
+   4
+  ],
+  "Hero Honda | Splendor|16": [
+   23000.0,
+   8
+  ],
+  "Hero Honda | Splendor|17": [
+   22500.0,
+   4
+  ],
+  "Hero Honda | Splendor|18": [
+   15000.0,
+   3
+  ],
+  "Hero Honda | Splendor|20": [
+   12500.0,
+   2
+  ],
+  "Hero Honda | Splendor|21": [
+   11000.0,
+   4
+  ],
+  "Hero Honda | Splendor|22": [
+   19000.0,
+   6
+  ],
+  "Hero Honda | Splendor|24": [
+   20000.0,
+   2
+  ],
+  "Hero Honda | Splendor|25": [
+   30000.0,
+   3
+  ],
+  "Hero Honda | Splendor NXG|14": [
+   21000.0,
+   2
+  ],
+  "Hero Honda | Splendor NXG|16": [
+   15000.0,
+   2
+  ],
+  "Hero Honda | Splendor PRO|3": [
+   68000.0,
+   2
+  ],
+  "Hero Honda | Splendor PRO|12": [
+   38000.0,
+   3
+  ],
+  "Hero Honda | Splendor PRO|14": [
+   26000.0,
+   4
+  ],
+  "Hero Honda | Splendor PRO|15": [
+   25000.0,
+   7
+  ],
+  "Hero Honda | Splendor Plus|2": [
+   78000.0,
+   2
+  ],
+  "Hero Honda | Splendor Plus|3": [
+   75000.0,
+   3
+  ],
+  "Hero Honda | Splendor Plus|4": [
+   44000.0,
+   3
+  ],
+  "Hero Honda | Splendor Plus|5": [
+   40000.0,
+   3
+  ],
+  "Hero Honda | Splendor Plus|6": [
+   50000.0,
+   2
+  ],
+  "Hero Honda | Splendor Plus|12": [
+   40000.0,
+   2
+  ],
+  "Hero Honda | Splendor Plus|14": [
+   24999.5,
+   4
+  ],
+  "Hero Honda | Splendor Plus|15": [
+   25750.0,
+   10
+  ],
+  "Hero Honda | Splendor Plus|16": [
+   25000.0,
+   8
+  ],
+  "Hero Honda | Splendor Plus|17": [
+   25000.0,
+   4
+  ],
+  "Hero Honda | Splendor Plus|18": [
+   21000.0,
+   3
+  ],
+  "Hero Honda | Splendor Plus|19": [
+   15000.0,
+   5
+  ],
+  "Hero Honda | Splendor Plus|20": [
+   16200.0,
+   5
+  ],
+  "Hero Honda | Splendor Plus|21": [
+   28000.0,
+   2
+  ],
+  "Hero Honda | Splendor Plus|22": [
+   15000.0,
+   2
+  ],
+  "Hero Honda | Street Smart|4": [
+   20500.0,
+   2
+  ],
+  "Hero Honda | Super Splendor|14": [
+   22500.0,
+   2
+  ],
+  "Hero Honda | Super Splendor|15": [
+   25000.0,
+   4
+  ],
+  "Hero Honda | Super Splendor|17": [
+   15500.0,
+   3
+  ],
+  "Hero Honda | Super Splendor|19": [
+   21500.0,
+   4
+  ],
+  "Hero Honda | Super Splendor|20": [
+   22500.0,
+   2
+  ],
+  "Hero | 2014 Karizma|11": [
+   25000.0,
+   2
+  ],
+  "Hero | 2014 Karizma|12": [
+   40000.0,
+   3
+  ],
+  "Hero | 2014 Karizma|13": [
+   30000.0,
+   3
+  ],
+  "Hero | 2016 Karizma ZMR|10": [
+   26500.0,
+   2
+  ],
+  "Hero | Achiever 150|6": [
+   45000.0,
+   2
+  ],
+  "Hero | Achiever 150|7": [
+   40000.0,
+   2
+  ],
+  "Hero | Achiever 150|8": [
+   45000.0,
+   3
+  ],
+  "Hero | Achiever 150|9": [
+   27500.0,
+   6
+  ],
+  "Hero | Achiever 150|10": [
+   42999.5,
+   2
+  ],
+  "Hero | Achiever 150|15": [
+   56500.0,
+   2
+  ],
+  "Hero | CBZ|13": [
+   30000.0,
+   3
+  ],
+  "Hero | CBZ|14": [
+   25000.0,
+   2
+  ],
+  "Hero | CBZ|15": [
+   20000.0,
+   3
+  ],
+  "Hero | CD Dawn|14": [
+   15000.0,
+   2
+  ],
+  "Hero | CD Deluxe|14": [
+   25000.0,
+   3
+  ],
+  "Hero | CD Deluxe|15": [
+   25000.0,
+   3
+  ],
+  "Hero | Destini 110|0": [
+   76000.0,
+   2
+  ],
+  "Hero | Destini 125|0": [
+   84000.0,
+   2
+  ],
+  "Hero | Destini 125|1": [
+   87000.0,
+   7
+  ],
+  "Hero | Destini 125|3": [
+   52500.0,
+   2
+  ],
+  "Hero | Destini 125|4": [
+   45000.0,
+   3
+  ],
+  "Hero | Destini 125|5": [
+   50000.0,
+   9
+  ],
+  "Hero | Destini 125|6": [
+   37500.0,
+   4
+  ],
+  "Hero | Destini 125|7": [
+   35000.0,
+   30
+  ],
+  "Hero | Destini 125|8": [
+   29000.0,
+   3
+  ],
+  "Hero | Destini 125 Xtec|1": [
+   82500.0,
+   2
+  ],
+  "Hero | Destini 125 Xtec|4": [
+   65000.0,
+   3
+  ],
+  "Hero | Destini Prime|1": [
+   70000.0,
+   3
+  ],
+  "Hero | Destini Prime|2": [
+   60000.0,
+   9
+  ],
+  "Hero | Duet|6": [
+   26000.0,
+   2
+  ],
+  "Hero | Duet|7": [
+   36500.0,
+   16
+  ],
+  "Hero | Duet|8": [
+   30000.0,
+   12
+  ],
+  "Hero | Duet|9": [
+   31500.0,
+   12
+  ],
+  "Hero | Duet|10": [
+   27500.0,
+   16
+  ],
+  "Hero | Glamour|0": [
+   61500.0,
+   4
+  ],
+  "Hero | Glamour|2": [
+   62500.0,
+   6
+  ],
+  "Hero | Glamour|3": [
+   65000.0,
+   4
+  ],
+  "Hero | Glamour|4": [
+   50000.0,
+   3
+  ],
+  "Hero | Glamour|5": [
+   50000.0,
+   8
+  ],
+  "Hero | Glamour|6": [
+   41500.0,
+   16
+  ],
+  "Hero | Glamour|7": [
+   50000.0,
+   11
+  ],
+  "Hero | Glamour|8": [
+   40000.0,
+   13
+  ],
+  "Hero | Glamour|9": [
+   45000.0,
+   17
+  ],
+  "Hero | Glamour|10": [
+   30000.0,
+   13
+  ],
+  "Hero | Glamour|11": [
+   40000.0,
+   9
+  ],
+  "Hero | Glamour|12": [
+   45000.0,
+   10
+  ],
+  "Hero | Glamour|20": [
+   6500.0,
+   2
+  ],
+  "Hero | Glamour 125|1": [
+   78000.0,
+   5
+  ],
+  "Hero | Glamour 125|2": [
+   72500.0,
+   2
+  ],
+  "Hero | Glamour 125|3": [
+   59500.0,
+   2
+  ],
+  "Hero | Glamour 125|4": [
+   55000.0,
+   3
+  ],
+  "Hero | Glamour 125|5": [
+   44000.0,
+   3
+  ],
+  "Hero | Glamour 125|6": [
+   48000.0,
+   15
+  ],
+  "Hero | Glamour 125|7": [
+   50000.0,
+   7
+  ],
+  "Hero | Glamour 125|8": [
+   44000.0,
+   9
+  ],
+  "Hero | Glamour 125|9": [
+   41000.0,
+   12
+  ],
+  "Hero | Glamour 125|10": [
+   40000.0,
+   5
+  ],
+  "Hero | Glamour 125|11": [
+   45000.0,
+   3
+  ],
+  "Hero | Glamour 125|12": [
+   35000.0,
+   2
+  ],
+  "Hero | Glamour 125|13": [
+   35000.0,
+   4
+  ],
+  "Hero | Glamour FI|5": [
+   50000.0,
+   4
+  ],
+  "Hero | Glamour FI|6": [
+   46000.0,
+   10
+  ],
+  "Hero | Glamour FI|7": [
+   45000.0,
+   6
+  ],
+  "Hero | Glamour FI|8": [
+   40000.0,
+   4
+  ],
+  "Hero | Glamour FI|9": [
+   35000.0,
+   4
+  ],
+  "Hero | Glamour FI|10": [
+   32500.0,
+   2
+  ],
+  "Hero | Glamour FI|11": [
+   32500.0,
+   2
+  ],
+  "Hero | Glamour FI|12": [
+   36500.0,
+   2
+  ],
+  "Hero | Glamour X 125|0": [
+   93500.0,
+   14
+  ],
+  "Hero | Glamour X 125|1": [
+   85000.0,
+   11
+  ],
+  "Hero | Glamour X 125|2": [
+   70000.0,
+   3
+  ],
+  "Hero | Glamour X 125|3": [
+   60000.0,
+   6
+  ],
+  "Hero | Glamour X 125|4": [
+   60000.0,
+   9
+  ],
+  "Hero | Glamour X 125|5": [
+   57500.0,
+   6
+  ],
+  "Hero | Glamour X 125|6": [
+   40000.0,
+   11
+  ],
+  "Hero | Glamour X 125|7": [
+   52500.0,
+   2
+  ],
+  "Hero | Glamour X 125|8": [
+   50000.0,
+   10
+  ],
+  "Hero | Glamour X 125|9": [
+   50000.0,
+   4
+  ],
+  "Hero | Glamour X 125|10": [
+   40000.0,
+   5
+  ],
+  "Hero | Glamour X 125|11": [
+   42500.0,
+   4
+  ],
+  "Hero | Glamour X 125|13": [
+   42500.0,
+   2
+  ],
+  "Hero | Glamour Xtec|2": [
+   70000.0,
+   18
+  ],
+  "Hero | Glamour Xtec|3": [
+   67500.0,
+   22
+  ],
+  "Hero | Glamour Xtec|4": [
+   65000.0,
+   21
+  ],
+  "Hero | Glamour Xtec|5": [
+   50000.0,
+   14
+  ],
+  "Hero | HF Dawn|3": [
+   47500.0,
+   2
+  ],
+  "Hero | HF Deluxe|0": [
+   67500.0,
+   18
+  ],
+  "Hero | HF Deluxe|1": [
+   60000.0,
+   43
+  ],
+  "Hero | HF Deluxe|2": [
+   57500.0,
+   40
+  ],
+  "Hero | HF Deluxe|3": [
+   50000.0,
+   58
+  ],
+  "Hero | HF Deluxe|4": [
+   49999.0,
+   33
+  ],
+  "Hero | HF Deluxe|5": [
+   40000.0,
+   41
+  ],
+  "Hero | HF Deluxe|6": [
+   41000.0,
+   20
+  ],
+  "Hero | HF Deluxe|7": [
+   40000.0,
+   25
+  ],
+  "Hero | HF Deluxe|8": [
+   38000.0,
+   25
+  ],
+  "Hero | HF Deluxe|9": [
+   40000.0,
+   16
+  ],
+  "Hero | HF Deluxe|10": [
+   35000.0,
+   10
+  ],
+  "Hero | HF Deluxe|11": [
+   35000.0,
+   9
+  ],
+  "Hero | HF Deluxe|12": [
+   25000.0,
+   11
+  ],
+  "Hero | HF Deluxe|13": [
+   30000.0,
+   6
+  ],
+  "Hero | HF Deluxe|16": [
+   26500.0,
+   2
+  ],
+  "Hero | HF Deluxe Eco|11": [
+   30000.0,
+   2
+  ],
+  "Hero | HF Deluxe Flex Fuel|0": [
+   85000.0,
+   3
+  ],
+  "Hero | HF Deluxe Flex Fuel|1": [
+   60000.0,
+   2
+  ],
+  "Hero | HF Deluxe Flex Fuel|2": [
+   52500.0,
+   4
+  ],
+  "Hero | HF Deluxe Flex Fuel|3": [
+   42500.0,
+   4
+  ],
+  "Hero | HF Deluxe Flex Fuel|4": [
+   47000.0,
+   5
+  ],
+  "Hero | HF Deluxe Flex Fuel|5": [
+   52500.0,
+   6
+  ],
+  "Hero | HF Deluxe Flex Fuel|6": [
+   60000.0,
+   3
+  ],
+  "Hero | HF Deluxe Flex Fuel|7": [
+   47000.0,
+   3
+  ],
+  "Hero | HF Deluxe Flex Fuel|8": [
+   43000.0,
+   4
+  ],
+  "Hero | HF Deluxe Flex Fuel|9": [
+   71000.0,
+   2
+  ],
+  "Hero | HF Deluxe Flex Fuel|13": [
+   22500.0,
+   2
+  ],
+  "Hero | Hunk|9": [
+   45000.0,
+   3
+  ],
+  "Hero | Hunk|10": [
+   45000.0,
+   4
+  ],
+  "Hero | Hunk|11": [
+   42500.0,
+   2
+  ],
+  "Hero | Hunk|12": [
+   37500.0,
+   2
+  ],
+  "Hero | Hunk|14": [
+   25000.0,
+   7
+  ],
+  "Hero | Hunk|17": [
+   23000.0,
+   2
+  ],
+  "Hero | Ignitor|10": [
+   25000.0,
+   3
+  ],
+  "Hero | Ignitor|11": [
+   30000.0,
+   7
+  ],
+  "Hero | Ignitor|12": [
+   15000.0,
+   3
+  ],
+  "Hero | Ignitor|13": [
+   25000.0,
+   15
+  ],
+  "Hero | Ignitor|14": [
+   25000.0,
+   9
+  ],
+  "Hero | Karizma|11": [
+   34500.0,
+   2
+  ],
+  "Hero | Karizma|14": [
+   35000.0,
+   2
+  ],
+  "Hero | Karizma XMR|1": [
+   150000.0,
+   9
+  ],
+  "Hero | Karizma XMR|2": [
+   150000.0,
+   29
+  ],
+  "Hero | Karizma XMR|3": [
+   150000.0,
+   3
+  ],
+  "Hero | Karizma ZMR|11": [
+   40000.0,
+   2
+  ],
+  "Hero | Karizma ZMR|12": [
+   31500.0,
+   2
+  ],
+  "Hero | Maestro|5": [
+   50000.0,
+   6
+  ],
+  "Hero | Maestro|6": [
+   52500.0,
+   2
+  ],
+  "Hero | Maestro|7": [
+   36000.0,
+   6
+  ],
+  "Hero | Maestro|8": [
+   30000.0,
+   11
+  ],
+  "Hero | Maestro|9": [
+   27500.0,
+   6
+  ],
+  "Hero | Maestro|10": [
+   27500.0,
+   10
+  ],
+  "Hero | Maestro|11": [
+   25000.0,
+   16
+  ],
+  "Hero | Maestro|12": [
+   25000.0,
+   17
+  ],
+  "Hero | Maestro|13": [
+   20000.0,
+   13
+  ],
+  "Hero | Maestro|14": [
+   22500.0,
+   2
+  ],
+  "Hero | Maestro Edge 110|6": [
+   42500.0,
+   2
+  ],
+  "Hero | Maestro Edge 110|7": [
+   38000.0,
+   11
+  ],
+  "Hero | Maestro Edge 110|8": [
+   30000.0,
+   10
+  ],
+  "Hero | Maestro Edge 110|9": [
+   30000.0,
+   23
+  ],
+  "Hero | Maestro Edge 110|10": [
+   25000.0,
+   17
+  ],
+  "Hero | Maestro Edge 110|11": [
+   25000.0,
+   5
+  ],
+  "Hero | Maestro Edge 110|12": [
+   32500.0,
+   2
+  ],
+  "Hero | Maestro Edge 125|4": [
+   40000.0,
+   5
+  ],
+  "Hero | Maestro Edge 125|5": [
+   56000.0,
+   2
+  ],
+  "Hero | Maestro Edge 125|6": [
+   37500.0,
+   6
+  ],
+  "Hero | Maestro Edge 125|7": [
+   35000.0,
+   12
+  ],
+  "Hero | Maestro Edge 125|8": [
+   36500.0,
+   4
+  ],
+  "Hero | Maestro Edge 125|9": [
+   35000.0,
+   9
+  ],
+  "Hero | Maestro Edge 125|10": [
+   35000.0,
+   5
+  ],
+  "Hero | Maestro Edge 125|11": [
+   28000.0,
+   4
+  ],
+  "Hero | Mavrick 440|0": [
+   215000.0,
+   2
+  ],
+  "Hero | Mavrick 440|1": [
+   195000.0,
+   2
+  ],
+  "Hero | Mavrick 440|2": [
+   210000.0,
+   7
+  ],
+  "Hero | Passion PRO TR|5": [
+   35000.0,
+   3
+  ],
+  "Hero | Passion PRO TR|6": [
+   45000.0,
+   3
+  ],
+  "Hero | Passion PRO TR|8": [
+   45000.0,
+   3
+  ],
+  "Hero | Passion PRO TR|10": [
+   45000.0,
+   3
+  ],
+  "Hero | Passion PRO TR|11": [
+   30000.0,
+   5
+  ],
+  "Hero | Passion PRO TR|12": [
+   29000.0,
+   10
+  ],
+  "Hero | Passion PRO TR|13": [
+   30000.0,
+   9
+  ],
+  "Hero | Passion PRO TR|14": [
+   21000.0,
+   10
+  ],
+  "Hero | Passion PRO TR|15": [
+   35000.0,
+   5
+  ],
+  "Hero | Passion PRO TR|16": [
+   26000.0,
+   2
+  ],
+  "Hero | Passion PRO TR|17": [
+   25000.0,
+   3
+  ],
+  "Hero | Passion PRO i3s|0": [
+   35000.0,
+   3
+  ],
+  "Hero | Passion PRO i3s|2": [
+   56500.0,
+   2
+  ],
+  "Hero | Passion PRO i3s|3": [
+   50000.0,
+   5
+  ],
+  "Hero | Passion PRO i3s|4": [
+   50000.0,
+   14
+  ],
+  "Hero | Passion PRO i3s|5": [
+   45000.0,
+   36
+  ],
+  "Hero | Passion PRO i3s|6": [
+   45000.0,
+   38
+  ],
+  "Hero | Passion PRO i3s|7": [
+   40000.0,
+   18
+  ],
+  "Hero | Passion PRO i3s|8": [
+   40000.0,
+   31
+  ],
+  "Hero | Passion PRO i3s|9": [
+   35000.0,
+   29
+  ],
+  "Hero | Passion PRO i3s|10": [
+   32500.0,
+   8
+  ],
+  "Hero | Passion PRO i3s|11": [
+   33500.0,
+   4
+  ],
+  "Hero | Passion PRO i3s|12": [
+   35000.0,
+   5
+  ],
+  "Hero | Passion PRO i3s|13": [
+   27500.0,
+   2
+  ],
+  "Hero | Passion PRO i3s|16": [
+   240000.0,
+   2
+  ],
+  "Hero | Passion Plus|0": [
+   80000.0,
+   7
+  ],
+  "Hero | Passion Plus|1": [
+   88000.0,
+   5
+  ],
+  "Hero | Passion Plus|2": [
+   76500.0,
+   8
+  ],
+  "Hero | Passion Plus|3": [
+   60000.0,
+   11
+  ],
+  "Hero | Passion Plus|8": [
+   53500.0,
+   4
+  ],
+  "Hero | Passion Plus|10": [
+   30000.0,
+   3
+  ],
+  "Hero | Passion Plus|11": [
+   22500.0,
+   2
+  ],
+  "Hero | Passion Plus|14": [
+   40000.0,
+   3
+  ],
+  "Hero | Passion Plus|20": [
+   21500.0,
+   2
+  ],
+  "Hero | Passion Pro 2018|8": [
+   38000.0,
+   5
+  ],
+  "Hero | Passion Pro 2018|12": [
+   37500.0,
+   2
+  ],
+  "Hero | Passion Pro 2018|14": [
+   25000.0,
+   7
+  ],
+  "Hero | Passion Pro 2018|15": [
+   15000.0,
+   3
+  ],
+  "Hero | Passion X Pro|0": [
+   30000.0,
+   2
+  ],
+  "Hero | Passion X Pro|7": [
+   22500.0,
+   2
+  ],
+  "Hero | Passion X Pro|8": [
+   32500.0,
+   4
+  ],
+  "Hero | Passion X Pro|9": [
+   47000.0,
+   3
+  ],
+  "Hero | Passion X Pro|10": [
+   35000.0,
+   9
+  ],
+  "Hero | Passion X Pro|12": [
+   35000.0,
+   4
+  ],
+  "Hero | Passion X Pro|13": [
+   25250.0,
+   2
+  ],
+  "Hero | Passion X Pro|14": [
+   25000.0,
+   2
+  ],
+  "Hero | Passion XPro|4": [
+   42500.0,
+   4
+  ],
+  "Hero | Passion XPro|5": [
+   50000.0,
+   3
+  ],
+  "Hero | Passion XPro|6": [
+   50000.0,
+   4
+  ],
+  "Hero | Passion XPro|7": [
+   35000.0,
+   9
+  ],
+  "Hero | Passion XPro|8": [
+   35000.0,
+   10
+  ],
+  "Hero | Passion XPro|10": [
+   30000.0,
+   7
+  ],
+  "Hero | Passion XPro|11": [
+   30000.0,
+   12
+  ],
+  "Hero | Passion XPro|12": [
+   30000.0,
+   22
+  ],
+  "Hero | Passion XPro|13": [
+   26750.0,
+   8
+  ],
+  "Hero | Passion XPro|14": [
+   26000.0,
+   5
+  ],
+  "Hero | Passion Xtec|0": [
+   57500.0,
+   2
+  ],
+  "Hero | Passion Xtec|2": [
+   65000.0,
+   11
+  ],
+  "Hero | Passion Xtec|3": [
+   60000.0,
+   15
+  ],
+  "Hero | Passion Xtec|4": [
+   55000.0,
+   17
+  ],
+  "Hero | Passion Xtec|5": [
+   50000.0,
+   2
+  ],
+  "Hero | Pleasure|0": [
+   50000.0,
+   2
+  ],
+  "Hero | Pleasure|4": [
+   55000.0,
+   3
+  ],
+  "Hero | Pleasure|6": [
+   25000.0,
+   5
+  ],
+  "Hero | Pleasure|7": [
+   32500.0,
+   6
+  ],
+  "Hero | Pleasure|8": [
+   30000.0,
+   5
+  ],
+  "Hero | Pleasure|9": [
+   36000.0,
+   7
+  ],
+  "Hero | Pleasure|10": [
+   30000.0,
+   4
+  ],
+  "Hero | Pleasure|11": [
+   26500.0,
+   10
+  ],
+  "Hero | Pleasure|12": [
+   22500.0,
+   8
+  ],
+  "Hero | Pleasure|13": [
+   23500.0,
+   4
+  ],
+  "Hero | Pleasure|14": [
+   16000.0,
+   7
+  ],
+  "Hero | Pleasure|15": [
+   15000.0,
+   7
+  ],
+  "Hero | Pleasure Plus|1": [
+   60000.0,
+   3
+  ],
+  "Hero | Pleasure Plus|3": [
+   53000.0,
+   6
+  ],
+  "Hero | Pleasure Plus|4": [
+   45000.0,
+   6
+  ],
+  "Hero | Pleasure Plus|5": [
+   47500.0,
+   4
+  ],
+  "Hero | Pleasure Plus|6": [
+   30000.0,
+   5
+  ],
+  "Hero | Pleasure Plus|7": [
+   40000.0,
+   5
+  ],
+  "Hero | Pleasure Plus Xtec|0": [
+   34000.0,
+   2
+  ],
+  "Hero | Pleasure Plus Xtec|2": [
+   65000.0,
+   3
+  ],
+  "Hero | Splendor NXG|17": [
+   20500.0,
+   2
+  ],
+  "Hero | Splendor PRO|1": [
+   85000.0,
+   3
+  ],
+  "Hero | Splendor PRO|2": [
+   45000.0,
+   3
+  ],
+  "Hero | Splendor PRO|10": [
+   36000.0,
+   6
+  ],
+  "Hero | Splendor PRO|11": [
+   30000.0,
+   12
+  ],
+  "Hero | Splendor PRO|12": [
+   30000.0,
+   14
+  ],
+  "Hero | Splendor PRO|13": [
+   21000.0,
+   6
+  ],
+  "Hero | Splendor PRO|14": [
+   25000.0,
+   3
+  ],
+  "Hero | Splendor PRO|15": [
+   22750.0,
+   2
+  ],
+  "Hero | Splendor Plus|0": [
+   80000.0,
+   18
+  ],
+  "Hero | Splendor Plus|1": [
+   71000.0,
+   56
+  ],
+  "Hero | Splendor Plus|2": [
+   67500.0,
+   68
+  ],
+  "Hero | Splendor Plus|3": [
+   65000.0,
+   82
+  ],
+  "Hero | Splendor Plus|4": [
+   52000.0,
+   59
+  ],
+  "Hero | Splendor Plus|5": [
+   55000.0,
+   71
+  ],
+  "Hero | Splendor Plus|6": [
+   50000.0,
+   42
+  ],
+  "Hero | Splendor Plus|7": [
+   40000.0,
+   36
+  ],
+  "Hero | Splendor Plus|8": [
+   40000.0,
+   24
+  ],
+  "Hero | Splendor Plus|9": [
+   39999.5,
+   34
+  ],
+  "Hero | Splendor Plus|10": [
+   35000.0,
+   22
+  ],
+  "Hero | Splendor Plus|11": [
+   30000.0,
+   8
+  ],
+  "Hero | Splendor Plus|12": [
+   25750.0,
+   16
+  ],
+  "Hero | Splendor Plus|13": [
+   25000.0,
+   17
+  ],
+  "Hero | Splendor Plus|14": [
+   35000.0,
+   10
+  ],
+  "Hero | Splendor Plus|15": [
+   25000.0,
+   9
+  ],
+  "Hero | Splendor Plus|16": [
+   22500.0,
+   4
+  ],
+  "Hero | Splendor Plus|17": [
+   18500.0,
+   2
+  ],
+  "Hero | Splendor Plus|18": [
+   32500.0,
+   2
+  ],
+  "Hero | Splendor Plus|19": [
+   25000.0,
+   2
+  ],
+  "Hero | Splendor Plus|21": [
+   17000.0,
+   2
+  ],
+  "Hero | Splendor Plus Flex Fuel|1": [
+   74000.0,
+   3
+  ],
+  "Hero | Splendor Plus Flex Fuel|2": [
+   85000.0,
+   4
+  ],
+  "Hero | Splendor Plus Flex Fuel|4": [
+   60000.0,
+   4
+  ],
+  "Hero | Splendor Plus Xtec|0": [
+   85000.0,
+   13
+  ],
+  "Hero | Splendor Plus Xtec|1": [
+   75000.0,
+   18
+  ],
+  "Hero | Splendor Plus Xtec|2": [
+   69000.0,
+   26
+  ],
+  "Hero | Splendor Plus Xtec|3": [
+   65000.0,
+   31
+  ],
+  "Hero | Splendor Plus Xtec|4": [
+   60000.0,
+   11
+  ],
+  "Hero | Splendor Plus Xtec|5": [
+   50000.0,
+   2
+  ],
+  "Hero | Splendor Plus i3s|0": [
+   80000.0,
+   11
+  ],
+  "Hero | Splendor Plus i3s|1": [
+   76000.0,
+   8
+  ],
+  "Hero | Splendor Plus i3s|2": [
+   66000.0,
+   17
+  ],
+  "Hero | Splendor Plus i3s|3": [
+   57500.0,
+   14
+  ],
+  "Hero | Splendor Plus i3s|4": [
+   60000.0,
+   17
+  ],
+  "Hero | Splendor Plus i3s|5": [
+   58000.0,
+   14
+  ],
+  "Hero | Splendor Plus i3s|6": [
+   55000.0,
+   11
+  ],
+  "Hero | Splendor Plus i3s|7": [
+   48000.0,
+   5
+  ],
+  "Hero | Splendor Plus i3s|8": [
+   48000.0,
+   7
+  ],
+  "Hero | Splendor Plus i3s|9": [
+   42500.0,
+   6
+  ],
+  "Hero | Splendor Pro Classic|3": [
+   77500.0,
+   2
+  ],
+  "Hero | Splendor Pro Classic|9": [
+   45000.0,
+   3
+  ],
+  "Hero | Splendor Pro Classic|10": [
+   32500.0,
+   2
+  ],
+  "Hero | Splendor Pro Classic|11": [
+   31000.0,
+   2
+  ],
+  "Hero | Splendor Pro Classic|12": [
+   40000.0,
+   5
+  ],
+  "Hero | Splendor iSmart|0": [
+   77500.0,
+   4
+  ],
+  "Hero | Splendor iSmart|2": [
+   67500.0,
+   2
+  ],
+  "Hero | Splendor iSmart|3": [
+   67000.0,
+   3
+  ],
+  "Hero | Splendor iSmart|4": [
+   46000.0,
+   4
+  ],
+  "Hero | Splendor iSmart|5": [
+   75000.0,
+   3
+  ],
+  "Hero | Splendor iSmart|6": [
+   55500.0,
+   2
+  ],
+  "Hero | Splendor iSmart|7": [
+   35000.0,
+   5
+  ],
+  "Hero | Splendor iSmart|8": [
+   30000.0,
+   3
+  ],
+  "Hero | Splendor iSmart|9": [
+   28000.0,
+   3
+  ],
+  "Hero | Splendor iSmart|10": [
+   35000.0,
+   12
+  ],
+  "Hero | Splendor iSmart|11": [
+   30000.0,
+   16
+  ],
+  "Hero | Splendor iSmart|12": [
+   29000.0,
+   4
+  ],
+  "Hero | Splendor iSmart 110|6": [
+   40000.0,
+   5
+  ],
+  "Hero | Splendor iSmart 110|8": [
+   45000.0,
+   2
+  ],
+  "Hero | Splendor iSmart 110|9": [
+   26000.0,
+   10
+  ],
+  "Hero | Splendor iSmart 110|10": [
+   25000.0,
+   10
+  ],
+  "Hero | Splendor iSmart 110|11": [
+   25000.0,
+   3
+  ],
+  "Hero | Splendor iSmart 110|12": [
+   30000.0,
+   3
+  ],
+  "Hero | Super Splendor|2": [
+   68000.0,
+   11
+  ],
+  "Hero | Super Splendor|3": [
+   65000.0,
+   9
+  ],
+  "Hero | Super Splendor|4": [
+   57500.0,
+   12
+  ],
+  "Hero | Super Splendor|5": [
+   60000.0,
+   12
+  ],
+  "Hero | Super Splendor|6": [
+   49000.0,
+   19
+  ],
+  "Hero | Super Splendor|7": [
+   49000.0,
+   6
+  ],
+  "Hero | Super Splendor|8": [
+   50000.0,
+   7
+  ],
+  "Hero | Super Splendor|9": [
+   38000.0,
+   7
+  ],
+  "Hero | Super Splendor|10": [
+   32500.0,
+   2
+  ],
+  "Hero | Super Splendor|11": [
+   40850.0,
+   2
+  ],
+  "Hero | Super Splendor|12": [
+   39000.0,
+   4
+  ],
+  "Hero | Super Splendor|13": [
+   40000.0,
+   5
+  ],
+  "Hero | Super Splendor|14": [
+   24000.0,
+   2
+  ],
+  "Hero | Super Splendor|15": [
+   30000.0,
+   2
+  ],
+  "Hero | Super Splendor 2018|5": [
+   40000.0,
+   3
+  ],
+  "Hero | Super Splendor 2018|6": [
+   77500.0,
+   2
+  ],
+  "Hero | Super Splendor 2018|7": [
+   45000.0,
+   9
+  ],
+  "Hero | Super Splendor 2018|8": [
+   40000.0,
+   13
+  ],
+  "Hero | Super Splendor 2018|9": [
+   35000.0,
+   3
+  ],
+  "Hero | Super Splendor 2018|10": [
+   30000.0,
+   3
+  ],
+  "Hero | Super Splendor 2018|12": [
+   27500.0,
+   2
+  ],
+  "Hero | Super Splendor Xtec|0": [
+   82000.0,
+   2
+  ],
+  "Hero | Super Splendor Xtec|1": [
+   80000.0,
+   10
+  ],
+  "Hero | Super Splendor Xtec|2": [
+   70000.0,
+   13
+  ],
+  "Hero | Super Splendor Xtec|3": [
+   60000.0,
+   10
+  ],
+  "Hero | Super Splendor Xtec|4": [
+   60000.0,
+   3
+  ],
+  "Hero | Super Splendor Xtec|5": [
+   70000.0,
+   3
+  ],
+  "Hero | Super Splendor Xtec|11": [
+   43500.0,
+   2
+  ],
+  "Hero | Super Splendor Xtec 2.0|0": [
+   80000.0,
+   10
+  ],
+  "Hero | Super Splendor Xtec 2.0|1": [
+   85000.0,
+   16
+  ],
+  "Hero | Super Splendor Xtec 2.0|2": [
+   65000.0,
+   9
+  ],
+  "Hero | Super Splendor Xtec 2.0|3": [
+   100003.0,
+   3
+  ],
+  "Hero | Xoom 110|0": [
+   106763.0,
+   2
+  ],
+  "Hero | Xoom 110|1": [
+   70000.0,
+   7
+  ],
+  "Hero | Xoom 110|2": [
+   65000.0,
+   11
+  ],
+  "Hero | Xoom 110|3": [
+   60000.0,
+   11
+  ],
+  "Hero | Xoom 125|0": [
+   100000.0,
+   6
+  ],
+  "Hero | Xoom 125|1": [
+   90000.0,
+   11
+  ],
+  "Hero | Xoom 125|2": [
+   80000.0,
+   4
+  ],
+  "Hero | Xoom 125|3": [
+   60000.0,
+   2
+  ],
+  "Hero | Xoom 160|0": [
+   137500.0,
+   4
+  ],
+  "Hero | Xoom 160|1": [
+   132500.0,
+   2
+  ],
+  "Hero | Xpulse 200 4V|0": [
+   160000.0,
+   18
+  ],
+  "Hero | Xpulse 200 4V|1": [
+   145000.0,
+   10
+  ],
+  "Hero | Xpulse 200 4V|2": [
+   130000.0,
+   37
+  ],
+  "Hero | Xpulse 200 4V|3": [
+   122500.0,
+   26
+  ],
+  "Hero | Xpulse 200 4V|4": [
+   100000.0,
+   38
+  ],
+  "Hero | Xpulse 200 4V|5": [
+   75000.0,
+   7
+  ],
+  "Hero | Xpulse 200 4V|6": [
+   65000.0,
+   4
+  ],
+  "Hero | Xpulse 200T|3": [
+   107500.0,
+   2
+  ],
+  "Hero | Xpulse 200T|5": [
+   80000.0,
+   5
+  ],
+  "Hero | Xpulse 200T|6": [
+   55000.0,
+   4
+  ],
+  "Hero | Xpulse 200T|7": [
+   62500.0,
+   10
+  ],
+  "Hero | Xpulse 200T 4V|2": [
+   85000.0,
+   3
+  ],
+  "Hero | Xpulse 200T 4V|3": [
+   112500.0,
+   4
+  ],
+  "Hero | Xpulse 200T 4V|7": [
+   45000.0,
+   2
+  ],
+  "Hero | Xpulse 210|0": [
+   190000.0,
+   21
+  ],
+  "Hero | Xpulse 210|1": [
+   185000.0,
+   24
+  ],
+  "Hero | Xpulse 210|4": [
+   100000.0,
+   2
+  ],
+  "Hero | Xtreme|11": [
+   37500.0,
+   2
+  ],
+  "Hero | Xtreme|12": [
+   37500.0,
+   2
+  ],
+  "Hero | Xtreme|13": [
+   35999.5,
+   10
+  ],
+  "Hero | Xtreme 125R|0": [
+   100000.0,
+   84
+  ],
+  "Hero | Xtreme 125R|1": [
+   90000.0,
+   174
+  ],
+  "Hero | Xtreme 125R|2": [
+   80000.0,
+   168
+  ],
+  "Hero | Xtreme 125R|3": [
+   87500.0,
+   2
+  ],
+  "Hero | Xtreme 160R|0": [
+   90000.0,
+   4
+  ],
+  "Hero | Xtreme 160R|1": [
+   100000.0,
+   13
+  ],
+  "Hero | Xtreme 160R|2": [
+   95000.0,
+   6
+  ],
+  "Hero | Xtreme 160R|3": [
+   75000.0,
+   11
+  ],
+  "Hero | Xtreme 160R|4": [
+   75000.0,
+   35
+  ],
+  "Hero | Xtreme 160R|5": [
+   55000.0,
+   29
+  ],
+  "Hero | Xtreme 160R|6": [
+   50000.0,
+   26
+  ],
+  "Hero | Xtreme 160R 4V|0": [
+   141500.0,
+   8
+  ],
+  "Hero | Xtreme 160R 4V|1": [
+   120000.0,
+   15
+  ],
+  "Hero | Xtreme 160R 4V|2": [
+   100000.0,
+   40
+  ],
+  "Hero | Xtreme 160R 4V|3": [
+   100000.0,
+   14
+  ],
+  "Hero | Xtreme 200R|6": [
+   42340.0,
+   2
+  ],
+  "Hero | Xtreme 200R|8": [
+   36000.0,
+   5
+  ],
+  "Hero | Xtreme 200S|4": [
+   90000.0,
+   3
+  ],
+  "Hero | Xtreme 200S|5": [
+   85000.0,
+   5
+  ],
+  "Hero | Xtreme 200S|6": [
+   60000.0,
+   5
+  ],
+  "Hero | Xtreme 200S|7": [
+   54000.0,
+   6
+  ],
+  "Hero | Xtreme 200S 4V|5": [
+   55000.0,
+   2
+  ],
+  "Hero | Xtreme 200S 4V|7": [
+   456656.5,
+   2
+  ],
+  "Hero | Xtreme 2014|12": [
+   30000.0,
+   11
+  ],
+  "Hero | Xtreme 250R|0": [
+   172500.0,
+   6
+  ],
+  "Hero | Xtreme 250R|1": [
+   170000.0,
+   15
+  ],
+  "Hero | Xtreme Sports|8": [
+   45000.0,
+   5
+  ],
+  "Hero | Xtreme Sports|9": [
+   32000.0,
+   5
+  ],
+  "Hero | Xtreme Sports|10": [
+   36000.0,
+   5
+  ],
+  "Hero | Xtreme Sports|11": [
+   35000.0,
+   3
+  ],
+  "Honda | Activa|0": [
+   90000.0,
+   43
+  ],
+  "Honda | Activa|1": [
+   85000.0,
+   74
+  ],
+  "Honda | Activa|2": [
+   75000.0,
+   67
+  ],
+  "Honda | Activa|3": [
+   67999.0,
+   85
+  ],
+  "Honda | Activa|4": [
+   60000.0,
+   83
+  ],
+  "Honda | Activa|5": [
+   52500.0,
+   52
+  ],
+  "Honda | Activa|6": [
+   50000.0,
+   33
+  ],
+  "Honda | Activa|7": [
+   40000.0,
+   38
+  ],
+  "Honda | Activa|8": [
+   40000.0,
+   39
+  ],
+  "Honda | Activa|9": [
+   38000.0,
+   42
+  ],
+  "Honda | Activa|10": [
+   35000.0,
+   28
+  ],
+  "Honda | Activa|11": [
+   30000.0,
+   50
+  ],
+  "Honda | Activa|12": [
+   28000.0,
+   67
+  ],
+  "Honda | Activa|13": [
+   25000.0,
+   53
+  ],
+  "Honda | Activa|14": [
+   22000.0,
+   52
+  ],
+  "Honda | Activa|15": [
+   15000.0,
+   25
+  ],
+  "Honda | Activa|16": [
+   20000.0,
+   17
+  ],
+  "Honda | Activa|17": [
+   11000.0,
+   4
+  ],
+  "Honda | Activa|18": [
+   20000.0,
+   7
+  ],
+  "Honda | Activa|19": [
+   20000.0,
+   3
+  ],
+  "Honda | Activa|20": [
+   18000.0,
+   5
+  ],
+  "Honda | Activa 125|0": [
+   105000.0,
+   17
+  ],
+  "Honda | Activa 125|1": [
+   85000.0,
+   15
+  ],
+  "Honda | Activa 125|2": [
+   70000.0,
+   33
+  ],
+  "Honda | Activa 125|3": [
+   70000.0,
+   31
+  ],
+  "Honda | Activa 125|4": [
+   65000.0,
+   21
+  ],
+  "Honda | Activa 125|5": [
+   50000.0,
+   23
+  ],
+  "Honda | Activa 125|6": [
+   52500.0,
+   14
+  ],
+  "Honda | Activa 125|7": [
+   45000.0,
+   33
+  ],
+  "Honda | Activa 125|8": [
+   42000.0,
+   13
+  ],
+  "Honda | Activa 125|9": [
+   31000.0,
+   16
+  ],
+  "Honda | Activa 125|10": [
+   35000.0,
+   14
+  ],
+  "Honda | Activa 125|11": [
+   30000.0,
+   15
+  ],
+  "Honda | Activa 125|12": [
+   33000.0,
+   4
+  ],
+  "Honda | Activa 3G|0": [
+   27000.0,
+   3
+  ],
+  "Honda | Activa 3G|8": [
+   50000.0,
+   2
+  ],
+  "Honda | Activa 3G|9": [
+   36000.0,
+   12
+  ],
+  "Honda | Activa 3G|10": [
+   30000.0,
+   61
+  ],
+  "Honda | Activa 3G|11": [
+   27000.0,
+   27
+  ],
+  "Honda | Activa 3G|12": [
+   21500.0,
+   6
+  ],
+  "Honda | Activa 3G|13": [
+   30000.0,
+   6
+  ],
+  "Honda | Activa 3G|15": [
+   20000.0,
+   2
+  ],
+  "Honda | Activa 4G|7": [
+   45000.0,
+   3
+  ],
+  "Honda | Activa 4G|8": [
+   40000.0,
+   15
+  ],
+  "Honda | Activa 4G|9": [
+   35000.0,
+   54
+  ],
+  "Honda | Activa 4G|10": [
+   20000.0,
+   3
+  ],
+  "Honda | Activa 4G|11": [
+   45000.0,
+   2
+  ],
+  "Honda | Activa 5G|0": [
+   67500.0,
+   4
+  ],
+  "Honda | Activa 5G|1": [
+   87500.0,
+   2
+  ],
+  "Honda | Activa 5G|2": [
+   90000.0,
+   3
+  ],
+  "Honda | Activa 5G|3": [
+   81500.0,
+   2
+  ],
+  "Honda | Activa 5G|4": [
+   57500.0,
+   2
+  ],
+  "Honda | Activa 5G|5": [
+   50000.0,
+   3
+  ],
+  "Honda | Activa 5G|6": [
+   50000.0,
+   20
+  ],
+  "Honda | Activa 5G|7": [
+   40000.0,
+   37
+  ],
+  "Honda | Activa 5G|8": [
+   40000.0,
+   43
+  ],
+  "Honda | Activa e|1": [
+   100000.0,
+   3
+  ],
+  "Honda | Activa i|7": [
+   38500.0,
+   2
+  ],
+  "Honda | Activa i|8": [
+   35000.0,
+   7
+  ],
+  "Honda | Activa i|9": [
+   38000.0,
+   3
+  ],
+  "Honda | Activa i|10": [
+   30000.0,
+   5
+  ],
+  "Honda | Activa i|11": [
+   31500.0,
+   4
+  ],
+  "Honda | Activa i|12": [
+   17500.0,
+   4
+  ],
+  "Honda | Activa i|13": [
+   30000.0,
+   3
+  ],
+  "Honda | Activa i|14": [
+   30000.0,
+   3
+  ],
+  "Honda | Aviator|8": [
+   27000.0,
+   6
+  ],
+  "Honda | Aviator|9": [
+   36000.0,
+   6
+  ],
+  "Honda | Aviator|10": [
+   23000.0,
+   5
+  ],
+  "Honda | Aviator|11": [
+   27500.0,
+   8
+  ],
+  "Honda | Aviator|12": [
+   22000.0,
+   8
+  ],
+  "Honda | Aviator|13": [
+   19979.0,
+   10
+  ],
+  "Honda | Aviator|14": [
+   21500.0,
+   10
+  ],
+  "Honda | Aviator|15": [
+   20000.0,
+   7
+  ],
+  "Honda | CB 125 Hornet|0": [
+   112500.0,
+   12
+  ],
+  "Honda | CB 125 Hornet|1": [
+   100000.0,
+   21
+  ],
+  "Honda | CB 125 Hornet|9": [
+   30000.0,
+   4
+  ],
+  "Honda | CB Hornet 160R|0": [
+   60000.0,
+   2
+  ],
+  "Honda | CB Hornet 160R|6": [
+   45000.0,
+   2
+  ],
+  "Honda | CB Hornet 160R|7": [
+   50000.0,
+   16
+  ],
+  "Honda | CB Hornet 160R|8": [
+   50000.0,
+   36
+  ],
+  "Honda | CB Hornet 160R|9": [
+   45000.0,
+   69
+  ],
+  "Honda | CB Hornet 160R|10": [
+   40000.0,
+   33
+  ],
+  "Honda | CB Shine SP|6": [
+   67500.0,
+   2
+  ],
+  "Honda | CB Shine SP|7": [
+   50000.0,
+   16
+  ],
+  "Honda | CB Shine SP|8": [
+   40000.0,
+   14
+  ],
+  "Honda | CB Shine SP|9": [
+   35000.0,
+   8
+  ],
+  "Honda | CB Shine SP|10": [
+   38999.5,
+   14
+  ],
+  "Honda | CB Shine SP|11": [
+   60000.0,
+   3
+  ],
+  "Honda | CB Shine SP|12": [
+   42000.0,
+   3
+  ],
+  "Honda | CB Shine SP|13": [
+   30000.0,
+   3
+  ],
+  "Honda | CB Trigger|11": [
+   26500.0,
+   8
+  ],
+  "Honda | CB Trigger|12": [
+   25000.0,
+   16
+  ],
+  "Honda | CB Trigger|13": [
+   30000.0,
+   6
+  ],
+  "Honda | CB Twister|12": [
+   23500.0,
+   4
+  ],
+  "Honda | CB Twister|13": [
+   20000.0,
+   8
+  ],
+  "Honda | CB Twister|14": [
+   22500.0,
+   8
+  ],
+  "Honda | CB Twister|15": [
+   20000.0,
+   15
+  ],
+  "Honda | CB Twister|16": [
+   37500.0,
+   4
+  ],
+  "Honda | CB Unicorn|4": [
+   105000.0,
+   2
+  ],
+  "Honda | CB Unicorn|8": [
+   50500.0,
+   4
+  ],
+  "Honda | CB Unicorn|9": [
+   52500.0,
+   4
+  ],
+  "Honda | CB Unicorn|10": [
+   32500.0,
+   2
+  ],
+  "Honda | CB Unicorn|12": [
+   35000.0,
+   3
+  ],
+  "Honda | CB Unicorn|13": [
+   50000.0,
+   3
+  ],
+  "Honda | CB Unicorn|15": [
+   29000.0,
+   2
+  ],
+  "Honda | CB Unicorn 150|5": [
+   80000.0,
+   2
+  ],
+  "Honda | CB Unicorn 150|6": [
+   70000.0,
+   2
+  ],
+  "Honda | CB Unicorn 150|7": [
+   60000.0,
+   12
+  ],
+  "Honda | CB Unicorn 150|8": [
+   64999.0,
+   9
+  ],
+  "Honda | CB Unicorn 150|9": [
+   60000.0,
+   5
+  ],
+  "Honda | CB Unicorn 150|10": [
+   50000.0,
+   5
+  ],
+  "Honda | CB Unicorn 150|11": [
+   44000.0,
+   3
+  ],
+  "Honda | CB Unicorn 150|12": [
+   40000.0,
+   5
+  ],
+  "Honda | CB Unicorn 150|13": [
+   35000.0,
+   5
+  ],
+  "Honda | CB Unicorn 150|14": [
+   40004.5,
+   6
+  ],
+  "Honda | CB Unicorn 150|15": [
+   22000.0,
+   3
+  ],
+  "Honda | CB Unicorn 150|16": [
+   50000.0,
+   3
+  ],
+  "Honda | CB Unicorn 160|0": [
+   130000.0,
+   5
+  ],
+  "Honda | CB Unicorn 160|3": [
+   95000.0,
+   3
+  ],
+  "Honda | CB Unicorn 160|4": [
+   85000.0,
+   2
+  ],
+  "Honda | CB Unicorn 160|5": [
+   75000.0,
+   3
+  ],
+  "Honda | CB Unicorn 160|8": [
+   50000.0,
+   7
+  ],
+  "Honda | CB Unicorn 160|9": [
+   47500.0,
+   4
+  ],
+  "Honda | CB Unicorn 160|10": [
+   35000.0,
+   7
+  ],
+  "Honda | CB Unicorn 160|11": [
+   40000.0,
+   28
+  ],
+  "Honda | CB Unicorn Dazzler|15": [
+   29999.5,
+   2
+  ],
+  "Honda | CB200X|1": [
+   132500.0,
+   2
+  ],
+  "Honda | CB200X|2": [
+   120000.0,
+   15
+  ],
+  "Honda | CB200X|3": [
+   135000.0,
+   4
+  ],
+  "Honda | CB200X|4": [
+   110000.0,
+   3
+  ],
+  "Honda | CB300F|2": [
+   136499.5,
+   4
+  ],
+  "Honda | CB300F Flex-Fuel|1": [
+   140000.0,
+   2
+  ],
+  "Honda | CB300F Flex-Fuel|2": [
+   155000.0,
+   2
+  ],
+  "Honda | CB300R|2": [
+   220000.0,
+   2
+  ],
+  "Honda | CB300R|3": [
+   173999.5,
+   2
+  ],
+  "Honda | CB300R|4": [
+   197500.0,
+   2
+  ],
+  "Honda | CB350|0": [
+   215000.0,
+   6
+  ],
+  "Honda | CB350|1": [
+   205000.0,
+   11
+  ],
+  "Honda | CB350|2": [
+   189000.0,
+   9
+  ],
+  "Honda | CB350|3": [
+   200000.0,
+   8
+  ],
+  "Honda | CB350|4": [
+   170000.0,
+   4
+  ],
+  "Honda | CB350|5": [
+   130000.0,
+   6
+  ],
+  "Honda | CB350C|0": [
+   227500.0,
+   4
+  ],
+  "Honda | CB350C|1": [
+   215000.0,
+   3
+  ],
+  "Honda | CB350RS|0": [
+   205000.0,
+   8
+  ],
+  "Honda | CB350RS|1": [
+   212500.0,
+   4
+  ],
+  "Honda | CB350RS|2": [
+   200000.0,
+   10
+  ],
+  "Honda | CB350RS|3": [
+   190000.0,
+   11
+  ],
+  "Honda | CB350RS|4": [
+   150000.0,
+   7
+  ],
+  "Honda | CB350RS|5": [
+   150000.0,
+   4
+  ],
+  "Honda | CBF Stunner|11": [
+   35000.0,
+   2
+  ],
+  "Honda | CBF Stunner|12": [
+   15000.0,
+   2
+  ],
+  "Honda | CBF Stunner|13": [
+   15000.0,
+   2
+  ],
+  "Honda | CBF Stunner|14": [
+   19000.0,
+   4
+  ],
+  "Honda | CBF Stunner|15": [
+   27500.0,
+   2
+  ],
+  "Honda | CBF Stunner|16": [
+   25000.0,
+   5
+  ],
+  "Honda | CBR-250R|11": [
+   52500.0,
+   2
+  ],
+  "Honda | CBR-250R|13": [
+   45000.0,
+   2
+  ],
+  "Honda | CBR-250R|14": [
+   60000.0,
+   2
+  ],
+  "Honda | CBR150 R|9": [
+   65000.0,
+   4
+  ],
+  "Honda | CBR150 R|11": [
+   50000.0,
+   6
+  ],
+  "Honda | CBR150 R|12": [
+   40000.0,
+   4
+  ],
+  "Honda | CBR150 R|13": [
+   25000.0,
+   3
+  ],
+  "Honda | CBR150 R|14": [
+   47500.0,
+   2
+  ],
+  "Honda | CBR250R|7": [
+   120000.0,
+   2
+  ],
+  "Honda | CBR250R|8": [
+   125000.0,
+   3
+  ],
+  "Honda | CBR250R|10": [
+   90000.0,
+   5
+  ],
+  "Honda | CBR250R|12": [
+   60000.0,
+   2
+  ],
+  "Honda | CBR250R|13": [
+   60000.0,
+   9
+  ],
+  "Honda | CBR250R|14": [
+   90000.0,
+   5
+  ],
+  "Honda | CBR250R|15": [
+   46500.0,
+   4
+  ],
+  "Honda | CD 110 Dream|2": [
+   62500.0,
+   2
+  ],
+  "Honda | CD 110 Dream|3": [
+   52100.0,
+   2
+  ],
+  "Honda | CD 110 Dream|4": [
+   50000.0,
+   7
+  ],
+  "Honda | CD 110 Dream|5": [
+   45000.0,
+   3
+  ],
+  "Honda | CD 110 Dream|6": [
+   47500.0,
+   4
+  ],
+  "Honda | CD 110 Dream|7": [
+   40000.0,
+   5
+  ],
+  "Honda | CD 110 Dream|8": [
+   40000.0,
+   7
+  ],
+  "Honda | CD 110 Dream|9": [
+   37275.0,
+   6
+  ],
+  "Honda | CD 110 Dream|10": [
+   25000.0,
+   3
+  ],
+  "Honda | CD 110 Dream|11": [
+   32500.0,
+   2
+  ],
+  "Honda | Dio|0": [
+   105000.0,
+   5
+  ],
+  "Honda | Dio|1": [
+   82500.0,
+   6
+  ],
+  "Honda | Dio|2": [
+   75000.0,
+   7
+  ],
+  "Honda | Dio|3": [
+   59000.0,
+   13
+  ],
+  "Honda | Dio|4": [
+   55000.0,
+   15
+  ],
+  "Honda | Dio|5": [
+   50000.0,
+   12
+  ],
+  "Honda | Dio|6": [
+   52500.0,
+   8
+  ],
+  "Honda | Dio|7": [
+   45000.0,
+   16
+  ],
+  "Honda | Dio|8": [
+   41000.0,
+   8
+  ],
+  "Honda | Dio|9": [
+   32500.0,
+   6
+  ],
+  "Honda | Dio|10": [
+   30000.0,
+   3
+  ],
+  "Honda | Dio|12": [
+   30000.0,
+   6
+  ],
+  "Honda | Dio|13": [
+   30000.0,
+   6
+  ],
+  "Honda | Dio|14": [
+   22000.0,
+   5
+  ],
+  "Honda | Dio 125|0": [
+   90000.0,
+   6
+  ],
+  "Honda | Dio 125|1": [
+   80000.0,
+   5
+  ],
+  "Honda | Dio 125|2": [
+   75000.0,
+   13
+  ],
+  "Honda | Dio 125|3": [
+   65000.0,
+   4
+  ],
+  "Honda | Dream Neo|11": [
+   50000.0,
+   3
+  ],
+  "Honda | Dream Neo|12": [
+   26000.0,
+   15
+  ],
+  "Honda | Dream Yuga|6": [
+   32500.0,
+   2
+  ],
+  "Honda | Dream Yuga|7": [
+   52500.0,
+   2
+  ],
+  "Honda | Dream Yuga|8": [
+   30000.0,
+   4
+  ],
+  "Honda | Dream Yuga|9": [
+   35000.0,
+   8
+  ],
+  "Honda | Dream Yuga|10": [
+   30000.0,
+   7
+  ],
+  "Honda | Dream Yuga|11": [
+   32500.0,
+   8
+  ],
+  "Honda | Dream Yuga|12": [
+   30000.0,
+   13
+  ],
+  "Honda | Dream Yuga|13": [
+   25000.0,
+   15
+  ],
+  "Honda | Dream Yuga|14": [
+   30000.0,
+   5
+  ],
+  "Honda | Grazia|7": [
+   40000.0,
+   8
+  ],
+  "Honda | Grazia|8": [
+   31000.0,
+   14
+  ],
+  "Honda | Grazia|9": [
+   38000.0,
+   3
+  ],
+  "Honda | Hness CB350|0": [
+   220000.0,
+   4
+  ],
+  "Honda | Hness CB350|1": [
+   190000.0,
+   7
+  ],
+  "Honda | Hness CB350|2": [
+   195000.0,
+   8
+  ],
+  "Honda | Hness CB350|3": [
+   180000.0,
+   5
+  ],
+  "Honda | Hness CB350|4": [
+   172500.0,
+   12
+  ],
+  "Honda | Hness CB350|5": [
+   160000.0,
+   14
+  ],
+  "Honda | Hness CB350|6": [
+   150000.0,
+   3
+  ],
+  "Honda | Hornet 2.0|0": [
+   115000.0,
+   4
+  ],
+  "Honda | Hornet 2.0|1": [
+   127500.0,
+   12
+  ],
+  "Honda | Hornet 2.0|2": [
+   125000.0,
+   21
+  ],
+  "Honda | Hornet 2.0|3": [
+   117500.0,
+   12
+  ],
+  "Honda | Hornet 2.0|4": [
+   95000.0,
+   9
+  ],
+  "Honda | Hornet 2.0|5": [
+   90000.0,
+   12
+  ],
+  "Honda | Hornet 2.0|6": [
+   75000.0,
+   17
+  ],
+  "Honda | Hornet 2.0|9": [
+   55000.0,
+   2
+  ],
+  "Honda | Livo|0": [
+   75000.0,
+   4
+  ],
+  "Honda | Livo|1": [
+   80000.0,
+   2
+  ],
+  "Honda | Livo|2": [
+   79000.0,
+   2
+  ],
+  "Honda | Livo|3": [
+   60000.0,
+   5
+  ],
+  "Honda | Livo|4": [
+   50000.0,
+   9
+  ],
+  "Honda | Livo|5": [
+   53000.0,
+   10
+  ],
+  "Honda | Livo|6": [
+   52500.0,
+   4
+  ],
+  "Honda | Livo|7": [
+   45000.0,
+   19
+  ],
+  "Honda | Livo|8": [
+   40000.0,
+   15
+  ],
+  "Honda | Livo|9": [
+   36000.0,
+   22
+  ],
+  "Honda | Livo|10": [
+   32500.0,
+   17
+  ],
+  "Honda | Livo|11": [
+   30000.0,
+   6
+  ],
+  "Honda | NX200|0": [
+   160000.0,
+   6
+  ],
+  "Honda | NX200|1": [
+   160000.0,
+   11
+  ],
+  "Honda | Navi|10": [
+   31500.0,
+   2
+  ],
+  "Honda | SP 125|0": [
+   92000.0,
+   59
+  ],
+  "Honda | SP 125|1": [
+   90000.0,
+   73
+  ],
+  "Honda | SP 125|2": [
+   75000.0,
+   93
+  ],
+  "Honda | SP 125|3": [
+   75000.0,
+   80
+  ],
+  "Honda | SP 125|4": [
+   60000.0,
+   82
+  ],
+  "Honda | SP 125|5": [
+   60000.0,
+   51
+  ],
+  "Honda | SP 125|6": [
+   60000.0,
+   48
+  ],
+  "Honda | SP 125|7": [
+   50000.0,
+   21
+  ],
+  "Honda | SP 125|8": [
+   37750.0,
+   16
+  ],
+  "Honda | SP 125|9": [
+   42500.0,
+   22
+  ],
+  "Honda | SP 125|10": [
+   35000.0,
+   8
+  ],
+  "Honda | SP 125|12": [
+   27500.0,
+   2
+  ],
+  "Honda | SP 125|13": [
+   32500.0,
+   2
+  ],
+  "Honda | SP160|0": [
+   115000.0,
+   7
+  ],
+  "Honda | SP160|1": [
+   100000.0,
+   8
+  ],
+  "Honda | SP160|2": [
+   102500.0,
+   20
+  ],
+  "Honda | SP160|3": [
+   105000.0,
+   7
+  ],
+  "Honda | Shine|0": [
+   80000.0,
+   13
+  ],
+  "Honda | Shine|1": [
+   85000.0,
+   16
+  ],
+  "Honda | Shine|2": [
+   80000.0,
+   21
+  ],
+  "Honda | Shine|3": [
+   65000.0,
+   23
+  ],
+  "Honda | Shine|4": [
+   60000.0,
+   40
+  ],
+  "Honda | Shine|5": [
+   60000.0,
+   21
+  ],
+  "Honda | Shine|6": [
+   53500.0,
+   32
+  ],
+  "Honda | Shine|7": [
+   45000.0,
+   35
+  ],
+  "Honda | Shine|8": [
+   50000.0,
+   34
+  ],
+  "Honda | Shine|9": [
+   40000.0,
+   21
+  ],
+  "Honda | Shine|10": [
+   37500.0,
+   22
+  ],
+  "Honda | Shine|11": [
+   30000.0,
+   34
+  ],
+  "Honda | Shine|12": [
+   31000.0,
+   28
+  ],
+  "Honda | Shine|13": [
+   30000.0,
+   28
+  ],
+  "Honda | Shine|14": [
+   25000.0,
+   25
+  ],
+  "Honda | Shine|15": [
+   30500.0,
+   14
+  ],
+  "Honda | Shine|16": [
+   25000.0,
+   5
+  ],
+  "Honda | Shine|17": [
+   25000.0,
+   5
+  ],
+  "Honda | Shine|19": [
+   20000.0,
+   4
+  ],
+  "Honda | Shine 100|0": [
+   80000.0,
+   9
+  ],
+  "Honda | Shine 100|1": [
+   60000.0,
+   12
+  ],
+  "Honda | Shine 100|2": [
+   57000.0,
+   20
+  ],
+  "Honda | Shine 100|3": [
+   55000.0,
+   15
+  ],
+  "Honda | Shine 100|12": [
+   23500.0,
+   4
+  ],
+  "Honda | Shine 100|13": [
+   11500.0,
+   2
+  ],
+  "Honda | Unicorn|0": [
+   110000.0,
+   9
+  ],
+  "Honda | Unicorn|1": [
+   120000.0,
+   10
+  ],
+  "Honda | Unicorn|2": [
+   95000.0,
+   16
+  ],
+  "Honda | Unicorn|3": [
+   85000.0,
+   10
+  ],
+  "Honda | Unicorn|4": [
+   86500.0,
+   14
+  ],
+  "Honda | Unicorn|5": [
+   75000.0,
+   14
+  ],
+  "Honda | Unicorn|6": [
+   76500.0,
+   6
+  ],
+  "Honda | Unicorn|7": [
+   62500.0,
+   14
+  ],
+  "Honda | Unicorn|8": [
+   62500.0,
+   14
+  ],
+  "Honda | Unicorn|9": [
+   50000.0,
+   15
+  ],
+  "Honda | Unicorn|10": [
+   40000.0,
+   13
+  ],
+  "Honda | Unicorn|11": [
+   35000.0,
+   6
+  ],
+  "Honda | Unicorn|12": [
+   40000.0,
+   16
+  ],
+  "Honda | Unicorn|13": [
+   32000.0,
+   14
+  ],
+  "Honda | Unicorn|14": [
+   35000.0,
+   14
+  ],
+  "Honda | Unicorn|15": [
+   30000.0,
+   6
+  ],
+  "Honda | Unicorn|16": [
+   30000.0,
+   7
+  ],
+  "Honda | Unicorn|17": [
+   20000.0,
+   5
+  ],
+  "Honda | Unicorn|18": [
+   32000.0,
+   2
+  ],
+  "Honda | Unicorn|21": [
+   27500.0,
+   2
+  ],
+  "Honda | X-Blade|4": [
+   70000.0,
+   9
+  ],
+  "Honda | X-Blade|5": [
+   60000.0,
+   5
+  ],
+  "Honda | X-Blade|6": [
+   70000.0,
+   14
+  ],
+  "Honda | X-Blade|7": [
+   65000.0,
+   15
+  ],
+  "Honda | X-Blade|8": [
+   50000.0,
+   21
+  ],
+  "Husqvarna | Svartpilen 250|4": [
+   145000.0,
+   6
+  ],
+  "Husqvarna | Svartpilen 250|5": [
+   125000.0,
+   5
+  ],
+  "Husqvarna | Svartpilen 250|6": [
+   140000.0,
+   9
+  ],
+  "Husqvarna | Svartpilen 401|1": [
+   287500.0,
+   2
+  ],
+  "Husqvarna | Svartpilen 401|2": [
+   240000.0,
+   4
+  ],
+  "Husqvarna | Vitpilen 250|2": [
+   200000.0,
+   10
+  ],
+  "Husqvarna | Vitpilen 250|3": [
+   165000.0,
+   3
+  ],
+  "Husqvarna | Vitpilen 250|4": [
+   140000.0,
+   2
+  ],
+  "Husqvarna | Vitpilen 250|5": [
+   155000.0,
+   8
+  ],
+  "Husqvarna | Vitpilen 250|6": [
+   125000.0,
+   3
+  ],
+  "Hyosung | Aquila GV250|10": [
+   120000.0,
+   2
+  ],
+  "Jawa | 350|0": [
+   180000.0,
+   3
+  ],
+  "Jawa | 350|1": [
+   205000.0,
+   6
+  ],
+  "Jawa | 350|2": [
+   210000.0,
+   2
+  ],
+  "Jawa | 350|3": [
+   152500.0,
+   2
+  ],
+  "Jawa | 350|6": [
+   122500.0,
+   8
+  ],
+  "Jawa | 350|7": [
+   130000.0,
+   4
+  ],
+  "Jawa | 42|0": [
+   175000.0,
+   5
+  ],
+  "Jawa | 42|1": [
+   200000.0,
+   2
+  ],
+  "Jawa | 42|2": [
+   160000.0,
+   27
+  ],
+  "Jawa | 42|3": [
+   155000.0,
+   35
+  ],
+  "Jawa | 42|4": [
+   135000.0,
+   35
+  ],
+  "Jawa | 42|5": [
+   120000.0,
+   59
+  ],
+  "Jawa | 42|6": [
+   100000.0,
+   47
+  ],
+  "Jawa | 42|7": [
+   100000.0,
+   20
+  ],
+  "Jawa | 42 Bobber|0": [
+   235000.0,
+   14
+  ],
+  "Jawa | 42 Bobber|1": [
+   210000.0,
+   28
+  ],
+  "Jawa | 42 Bobber|2": [
+   190000.0,
+   34
+  ],
+  "Jawa | 42 Bobber|3": [
+   167500.0,
+   34
+  ],
+  "Jawa | 42 Bobber|4": [
+   160000.0,
+   16
+  ],
+  "Jawa | 42 Bobber|5": [
+   185000.0,
+   2
+  ],
+  "Jawa | 42 FJ|0": [
+   200000.0,
+   7
+  ],
+  "Jawa | 42 FJ|1": [
+   200000.0,
+   18
+  ],
+  "Jawa | 42 FJ|2": [
+   192500.0,
+   16
+  ],
+  "Jawa | All Star 42|4": [
+   120000.0,
+   5
+  ],
+  "Jawa | All Stars 42|0": [
+   150000.0,
+   2
+  ],
+  "Jawa | All Stars 42|1": [
+   187500.0,
+   2
+  ],
+  "Jawa | All Stars 42|2": [
+   175000.0,
+   2
+  ],
+  "Jawa | All Stars 42|3": [
+   155000.0,
+   3
+  ],
+  "Jawa | All Stars 42|4": [
+   120000.0,
+   2
+  ],
+  "Jawa | All Stars 42 Bobber|0": [
+   220000.0,
+   13
+  ],
+  "Jawa | All Stars 42 Bobber|1": [
+   210000.0,
+   9
+  ],
+  "Jawa | All Stars 42 Bobber|2": [
+   185000.0,
+   18
+  ],
+  "Jawa | All Stars 42 Bobber|3": [
+   160000.0,
+   13
+  ],
+  "Jawa | All Stars 42 Bobber|5": [
+   127500.0,
+   2
+  ],
+  "Jawa | All Stars 42 FJ|0": [
+   224500.0,
+   2
+  ],
+  "Jawa | All Stars 42 FJ|1": [
+   230000.0,
+   3
+  ],
+  "Jawa | Perak|1": [
+   195000.0,
+   4
+  ],
+  "Jawa | Perak|2": [
+   167500.0,
+   8
+  ],
+  "Jawa | Perak|3": [
+   160000.0,
+   7
+  ],
+  "Jawa | Perak|4": [
+   150000.0,
+   21
+  ],
+  "Jawa | Perak|5": [
+   132500.0,
+   18
+  ],
+  "Jawa | Perak|6": [
+   120000.0,
+   13
+  ],
+  "Jawa | Standard|1": [
+   180000.0,
+   2
+  ],
+  "Jawa | Standard|3": [
+   120000.0,
+   3
+  ],
+  "Jawa | Standard|4": [
+   150000.0,
+   2
+  ],
+  "Jawa | Standard|5": [
+   130000.0,
+   3
+  ],
+  "Jawa | Standard|6": [
+   110000.0,
+   13
+  ],
+  "Jawa | Standard|7": [
+   120000.0,
+   7
+  ],
+  "KTM | 125 Duke|4": [
+   110000.0,
+   3
+  ],
+  "KTM | 125 Duke|5": [
+   120000.0,
+   6
+  ],
+  "KTM | 125 Duke|6": [
+   85000.0,
+   9
+  ],
+  "KTM | 125 Duke|7": [
+   80000.0,
+   17
+  ],
+  "KTM | 125 Duke 2022|0": [
+   787500.0,
+   2
+  ],
+  "KTM | 125 Duke 2022|7": [
+   87499.5,
+   4
+  ],
+  "KTM | 160 Duke|0": [
+   180000.0,
+   5
+  ],
+  "KTM | 160 Duke|1": [
+   180000.0,
+   3
+  ],
+  "KTM | 200 Duke|0": [
+   210000.0,
+   13
+  ],
+  "KTM | 200 Duke|1": [
+   198500.0,
+   18
+  ],
+  "KTM | 200 Duke|2": [
+   170000.0,
+   33
+  ],
+  "KTM | 200 Duke|3": [
+   145000.0,
+   31
+  ],
+  "KTM | 200 Duke|4": [
+   135000.0,
+   20
+  ],
+  "KTM | 200 Duke|5": [
+   150000.0,
+   13
+  ],
+  "KTM | 200 Duke|6": [
+   130000.0,
+   13
+  ],
+  "KTM | 200 Duke|7": [
+   100000.0,
+   9
+  ],
+  "KTM | 200 Duke|8": [
+   80000.0,
+   11
+  ],
+  "KTM | 200 Duke|9": [
+   90000.0,
+   16
+  ],
+  "KTM | 200 Duke|10": [
+   95000.0,
+   8
+  ],
+  "KTM | 200 Duke|11": [
+   65000.0,
+   3
+  ],
+  "KTM | 200 Duke|12": [
+   70000.0,
+   5
+  ],
+  "KTM | 200 Duke|13": [
+   70000.0,
+   3
+  ],
+  "KTM | 250 Adventure|1": [
+   247500.0,
+   2
+  ],
+  "KTM | 250 Adventure|2": [
+   225000.0,
+   2
+  ],
+  "KTM | 250 Adventure|3": [
+   180000.0,
+   3
+  ],
+  "KTM | 250 Adventure|4": [
+   150000.0,
+   2
+  ],
+  "KTM | 250 Duke|0": [
+   235000.0,
+   20
+  ],
+  "KTM | 250 Duke|1": [
+   220000.0,
+   26
+  ],
+  "KTM | 250 Duke|2": [
+   200000.0,
+   24
+  ],
+  "KTM | 250 Duke|3": [
+   200000.0,
+   21
+  ],
+  "KTM | 250 Duke|4": [
+   190000.0,
+   11
+  ],
+  "KTM | 250 Duke|5": [
+   150000.0,
+   17
+  ],
+  "KTM | 250 Duke|6": [
+   155000.0,
+   10
+  ],
+  "KTM | 250 Duke|7": [
+   130000.0,
+   8
+  ],
+  "KTM | 250 Duke|8": [
+   120000.0,
+   7
+  ],
+  "KTM | 250 Duke|9": [
+   125000.0,
+   2
+  ],
+  "KTM | 390 Adventure|0": [
+   320000.0,
+   4
+  ],
+  "KTM | 390 Adventure|2": [
+   320000.0,
+   3
+  ],
+  "KTM | 390 Adventure|3": [
+   265000.0,
+   9
+  ],
+  "KTM | 390 Adventure|4": [
+   250000.0,
+   5
+  ],
+  "KTM | 390 Adventure|5": [
+   215000.0,
+   6
+  ],
+  "KTM | 390 Adventure|6": [
+   200000.0,
+   6
+  ],
+  "KTM | 390 Adventure S|0": [
+   440000.0,
+   3
+  ],
+  "KTM | 390 Adventure S|1": [
+   365000.0,
+   3
+  ],
+  "KTM | 390 Adventure S|3": [
+   300000.0,
+   3
+  ],
+  "KTM | 390 Adventure X|1": [
+   310000.0,
+   2
+  ],
+  "KTM | 390 Adventure X|2": [
+   320000.0,
+   2
+  ],
+  "KTM | 390 Adventure X|3": [
+   235000.0,
+   2
+  ],
+  "KTM | 390 Adventure X Plus|1": [
+   335000.0,
+   3
+  ],
+  "KTM | 390 Duke|0": [
+   292500.0,
+   8
+  ],
+  "KTM | 390 Duke|1": [
+   300000.0,
+   16
+  ],
+  "KTM | 390 Duke|2": [
+   270000.0,
+   16
+  ],
+  "KTM | 390 Duke|3": [
+   250000.0,
+   15
+  ],
+  "KTM | 390 Duke|4": [
+   250000.0,
+   3
+  ],
+  "KTM | 390 Duke|5": [
+   200000.0,
+   8
+  ],
+  "KTM | 390 Duke|6": [
+   215000.0,
+   7
+  ],
+  "KTM | 390 Duke|7": [
+   160000.0,
+   9
+  ],
+  "KTM | 390 Duke|8": [
+   170000.0,
+   5
+  ],
+  "KTM | 390 Duke|9": [
+   110000.0,
+   5
+  ],
+  "KTM | 390 Duke|10": [
+   105000.0,
+   5
+  ],
+  "KTM | 390 Duke|12": [
+   72500.0,
+   4
+  ],
+  "KTM | 390 Duke|13": [
+   90000.0,
+   2
+  ],
+  "KTM | 390 Duke R|0": [
+   320000.0,
+   5
+  ],
+  "KTM | 390 Duke R|1": [
+   322500.0,
+   6
+  ],
+  "KTM | 390 Duke R|2": [
+   330000.0,
+   4
+  ],
+  "KTM | RC 125|2": [
+   150000.0,
+   4
+  ],
+  "KTM | RC 125|3": [
+   150000.0,
+   3
+  ],
+  "KTM | RC 125|4": [
+   120000.0,
+   5
+  ],
+  "KTM | RC 125|5": [
+   115000.0,
+   8
+  ],
+  "KTM | RC 125|6": [
+   130000.0,
+   5
+  ],
+  "KTM | RC 125|7": [
+   92500.0,
+   6
+  ],
+  "KTM | RC 160|0": [
+   175000.0,
+   2
+  ],
+  "KTM | RC 200|0": [
+   152500.0,
+   2
+  ],
+  "KTM | RC 200|1": [
+   210000.0,
+   5
+  ],
+  "KTM | RC 200|2": [
+   190000.0,
+   9
+  ],
+  "KTM | RC 200|3": [
+   170000.0,
+   17
+  ],
+  "KTM | RC 200|4": [
+   150000.0,
+   25
+  ],
+  "KTM | RC 200|5": [
+   150000.0,
+   13
+  ],
+  "KTM | RC 200|6": [
+   135000.0,
+   13
+  ],
+  "KTM | RC 200|7": [
+   140000.0,
+   9
+  ],
+  "KTM | RC 200|8": [
+   120000.0,
+   6
+  ],
+  "KTM | RC 200|9": [
+   120000.0,
+   11
+  ],
+  "KTM | RC 200|10": [
+   95000.0,
+   6
+  ],
+  "KTM | RC 200|11": [
+   72500.0,
+   2
+  ],
+  "KTM | RC 390|4": [
+   205000.0,
+   4
+  ],
+  "KTM | RC 390|5": [
+   187500.0,
+   2
+  ],
+  "KTM | RC 390|6": [
+   172500.0,
+   2
+  ],
+  "KTM | RC 390|7": [
+   150000.0,
+   3
+  ],
+  "KTM | RC 390|8": [
+   110000.0,
+   3
+  ],
+  "KTM | RC 390|11": [
+   70000.0,
+   6
+  ],
+  "Kawasaki | Ninja 1000|5": [
+   1037500.0,
+   2
+  ],
+  "Kawasaki | Ninja 300|0": [
+   315000.0,
+   2
+  ],
+  "Kawasaki | Ninja 300|1": [
+   320000.0,
+   5
+  ],
+  "Kawasaki | Ninja 300|2": [
+   297500.0,
+   4
+  ],
+  "Kawasaki | Ninja 300|3": [
+   139500.0,
+   2
+  ],
+  "Kawasaki | Ninja 300|4": [
+   272500.0,
+   4
+  ],
+  "Kawasaki | Ninja 300|5": [
+   225000.0,
+   4
+  ],
+  "Kawasaki | Ninja 300|7": [
+   230000.0,
+   7
+  ],
+  "Kawasaki | Ninja 300|8": [
+   225000.0,
+   5
+  ],
+  "Kawasaki | Ninja 300|12": [
+   200000.0,
+   3
+  ],
+  "Kawasaki | Ninja ZX-10R|2": [
+   1050000.0,
+   2
+  ],
+  "Kawasaki | Vulcan S|6": [
+   600000.0,
+   2
+  ],
+  "Kawasaki | W175|2": [
+   120000.0,
+   3
+  ],
+  "Kawasaki | W175|3": [
+   82500.0,
+   4
+  ],
+  "Kawasaki | Z650|6": [
+   420000.0,
+   2
+  ],
+  "Kawasaki | Z900|0": [
+   1050000.0,
+   2
+  ],
+  "Keeway | SR125|1": [
+   92500.0,
+   2
+  ],
+  "Keeway | SR125|2": [
+   100000.0,
+   2
+  ],
+  "Keeway | SR125|3": [
+   72500.0,
+   2
+  ],
+  "Keeway | SR125|4": [
+   85000.0,
+   3
+  ],
+  "Keeway | SR250|2": [
+   130000.0,
+   2
+  ],
+  "Keeway | SR250|3": [
+   132500.0,
+   2
+  ],
+  "Keeway | V302C|4": [
+   325000.0,
+   3
+  ],
+  "Lectrix | LXS 2.0|0": [
+   90000.0,
+   2
+  ],
+  "Lectrix | LXS 2.0|3": [
+   36000.0,
+   3
+  ],
+  "Mahindra | Centuro|8": [
+   37500.0,
+   2
+  ],
+  "Mahindra | Centuro|11": [
+   25000.0,
+   5
+  ],
+  "Mahindra | Centuro|12": [
+   22500.0,
+   6
+  ],
+  "Mahindra | Centuro|13": [
+   25000.0,
+   6
+  ],
+  "Mahindra | Duro|13": [
+   10000.0,
+   2
+  ],
+  "Mahindra | Duro|14": [
+   25000.0,
+   4
+  ],
+  "Mahindra | Duro|15": [
+   15000.0,
+   2
+  ],
+  "Mahindra | Gusto|10": [
+   24000.0,
+   4
+  ],
+  "Mahindra | Gusto|11": [
+   17500.0,
+   8
+  ],
+  "Mahindra | Gusto 125|10": [
+   27500.0,
+   2
+  ],
+  "Mahindra | Mojo XT300|10": [
+   105000.0,
+   4
+  ],
+  "Mahindra | Rodeo|16": [
+   11500.0,
+   2
+  ],
+  "OLA | Roadster X|0": [
+   95000.0,
+   4
+  ],
+  "OLA | Roadster X|1": [
+   110000.0,
+   3
+  ],
+  "OLA | Roadster X Plus|0": [
+   105000.0,
+   4
+  ],
+  "OLA | Roadster X Plus|1": [
+   90000.0,
+   3
+  ],
+  "OLA | S1 2021|3": [
+   65000.0,
+   8
+  ],
+  "OLA | S1 2021|4": [
+   57500.0,
+   10
+  ],
+  "OLA | S1 Air|2": [
+   70000.0,
+   25
+  ],
+  "OLA | S1 Air|3": [
+   60000.0,
+   17
+  ],
+  "OLA | S1 Air|4": [
+   50000.0,
+   2
+  ],
+  "OLA | S1 Pro|0": [
+   120000.0,
+   8
+  ],
+  "OLA | S1 Pro|1": [
+   105000.0,
+   20
+  ],
+  "OLA | S1 Pro|2": [
+   95000.0,
+   9
+  ],
+  "OLA | S1 Pro|3": [
+   75000.0,
+   44
+  ],
+  "OLA | S1 Pro|4": [
+   60000.0,
+   43
+  ],
+  "OLA | S1 Pro|5": [
+   50000.0,
+   3
+  ],
+  "OLA | S1 Pro Gen 2|0": [
+   69000.0,
+   2
+  ],
+  "OLA | S1 Pro Gen 2|1": [
+   100000.0,
+   8
+  ],
+  "OLA | S1 Pro Gen 2|2": [
+   87500.0,
+   44
+  ],
+  "OLA | S1 Pro Gen 2|3": [
+   100000.0,
+   17
+  ],
+  "OLA | S1 X|0": [
+   114000.0,
+   6
+  ],
+  "OLA | S1 X|1": [
+   80000.0,
+   26
+  ],
+  "OLA | S1 X|2": [
+   65000.0,
+   54
+  ],
+  "OLA | S1 X|3": [
+   60000.0,
+   5
+  ],
+  "OLA | S1 X|4": [
+   66500.0,
+   4
+  ],
+  "OLA | S1 X Gen 2|2": [
+   65000.0,
+   15
+  ],
+  "OPG Mobility | Faast F4|4": [
+   62500.0,
+   2
+  ],
+  "Oben | Rorr EVO|0": [
+   135000.0,
+   4
+  ],
+  "Oben | Rorr EZ|1": [
+   97500.0,
+   8
+  ],
+  "Oben | Rorr EZ Sigma|0": [
+   121388.5,
+   4
+  ],
+  "Okinawa | Praise|3": [
+   58000.0,
+   5
+  ],
+  "Okinawa | Praise|4": [
+   50000.0,
+   7
+  ],
+  "Okinawa | Praise|5": [
+   30000.0,
+   3
+  ],
+  "Okinawa | Ridge Plus|4": [
+   32500.0,
+   2
+  ],
+  "Okinawa | i-Praise|3": [
+   80000.0,
+   2
+  ],
+  "Okinawa | i-Praise|4": [
+   45000.0,
+   4
+  ],
+  "Revolt | RV BlazeX|1": [
+   99750.0,
+   2
+  ],
+  "Revolt | RV1|2": [
+   87000.0,
+   4
+  ],
+  "Revolt | RV400|0": [
+   112500.0,
+   2
+  ],
+  "Revolt | RV400|1": [
+   90000.0,
+   3
+  ],
+  "Revolt | RV400|2": [
+   100000.0,
+   11
+  ],
+  "Revolt | RV400|3": [
+   80000.0,
+   8
+  ],
+  "Revolt | RV400|4": [
+   70000.0,
+   26
+  ],
+  "Revolt | RV400|5": [
+   75000.0,
+   9
+  ],
+  "Revolt | RV400|6": [
+   80000.0,
+   7
+  ],
+  "River | Indie|0": [
+   155000.0,
+   5
+  ],
+  "Royal Enfield | Bear 650|0": [
+   400000.0,
+   3
+  ],
+  "Royal Enfield | Bear 650|1": [
+   390000.0,
+   7
+  ],
+  "Royal Enfield | Bear 650|2": [
+   357500.0,
+   2
+  ],
+  "Royal Enfield | Bullet 350|0": [
+   200000.0,
+   34
+  ],
+  "Royal Enfield | Bullet 350|1": [
+   185000.0,
+   53
+  ],
+  "Royal Enfield | Bullet 350|2": [
+   180000.0,
+   46
+  ],
+  "Royal Enfield | Bullet 350|3": [
+   172500.0,
+   48
+  ],
+  "Royal Enfield | Bullet 350|4": [
+   150000.0,
+   22
+  ],
+  "Royal Enfield | Bullet 350|5": [
+   135000.0,
+   22
+  ],
+  "Royal Enfield | Bullet 350|6": [
+   120000.0,
+   12
+  ],
+  "Royal Enfield | Bullet 350|7": [
+   155000.0,
+   26
+  ],
+  "Royal Enfield | Bullet 350|8": [
+   120000.0,
+   15
+  ],
+  "Royal Enfield | Bullet 350|9": [
+   145000.0,
+   14
+  ],
+  "Royal Enfield | Bullet 350|10": [
+   115000.0,
+   15
+  ],
+  "Royal Enfield | Bullet 350|11": [
+   100000.0,
+   13
+  ],
+  "Royal Enfield | Bullet 350|12": [
+   97500.0,
+   10
+  ],
+  "Royal Enfield | Bullet 350|13": [
+   95000.0,
+   8
+  ],
+  "Royal Enfield | Bullet 350|14": [
+   100000.0,
+   7
+  ],
+  "Royal Enfield | Bullet 350|15": [
+   90000.0,
+   5
+  ],
+  "Royal Enfield | Bullet 350|17": [
+   150000.0,
+   2
+  ],
+  "Royal Enfield | Bullet 350|19": [
+   100000.0,
+   3
+  ],
+  "Royal Enfield | Bullet 350|20": [
+   132500.0,
+   2
+  ],
+  "Royal Enfield | Bullet 500|9": [
+   150000.0,
+   3
+  ],
+  "Royal Enfield | Bullet 500|10": [
+   134999.0,
+   7
+  ],
+  "Royal Enfield | Bullet 500|11": [
+   137500.0,
+   2
+  ],
+  "Royal Enfield | Classic 350|0": [
+   220000.0,
+   54
+  ],
+  "Royal Enfield | Classic 350|1": [
+   215000.0,
+   85
+  ],
+  "Royal Enfield | Classic 350|2": [
+   200000.0,
+   96
+  ],
+  "Royal Enfield | Classic 350|3": [
+   185000.0,
+   75
+  ],
+  "Royal Enfield | Classic 350|4": [
+   180000.0,
+   83
+  ],
+  "Royal Enfield | Classic 350|5": [
+   160000.0,
+   89
+  ],
+  "Royal Enfield | Classic 350|6": [
+   150000.0,
+   93
+  ],
+  "Royal Enfield | Classic 350|7": [
+   140000.0,
+   78
+  ],
+  "Royal Enfield | Classic 350|8": [
+   120000.0,
+   98
+  ],
+  "Royal Enfield | Classic 350|9": [
+   115000.0,
+   99
+  ],
+  "Royal Enfield | Classic 350|10": [
+   110000.0,
+   78
+  ],
+  "Royal Enfield | Classic 350|11": [
+   110000.0,
+   51
+  ],
+  "Royal Enfield | Classic 350|12": [
+   90000.0,
+   36
+  ],
+  "Royal Enfield | Classic 350|13": [
+   83000.0,
+   10
+  ],
+  "Royal Enfield | Classic 350|14": [
+   80000.0,
+   7
+  ],
+  "Royal Enfield | Classic 350|15": [
+   80000.0,
+   9
+  ],
+  "Royal Enfield | Classic 350|16": [
+   75000.0,
+   2
+  ],
+  "Royal Enfield | Classic 350 2021|5": [
+   175000.0,
+   2
+  ],
+  "Royal Enfield | Classic 500|7": [
+   140000.0,
+   3
+  ],
+  "Royal Enfield | Classic 500|8": [
+   150000.0,
+   13
+  ],
+  "Royal Enfield | Classic 500|9": [
+   120000.0,
+   9
+  ],
+  "Royal Enfield | Classic 500|10": [
+   120000.0,
+   15
+  ],
+  "Royal Enfield | Classic 500|11": [
+   117500.0,
+   10
+  ],
+  "Royal Enfield | Classic 500|12": [
+   120000.0,
+   7
+  ],
+  "Royal Enfield | Classic 500|13": [
+   150000.0,
+   3
+  ],
+  "Royal Enfield | Classic 500|14": [
+   67500.0,
+   4
+  ],
+  "Royal Enfield | Classic 500|15": [
+   150000.0,
+   2
+  ],
+  "Royal Enfield | Classic 650|1": [
+   420000.0,
+   4
+  ],
+  "Royal Enfield | Classic Chrome|5": [
+   172500.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|2": [
+   220000.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|7": [
+   150000.0,
+   6
+  ],
+  "Royal Enfield | Classic Desert Storm|8": [
+   140000.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|9": [
+   140000.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|10": [
+   170000.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|11": [
+   110000.0,
+   2
+  ],
+  "Royal Enfield | Classic Desert Storm|14": [
+   100000.0,
+   3
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|3": [
+   190000.0,
+   7
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|4": [
+   175000.0,
+   2
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|5": [
+   200000.0,
+   5
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|6": [
+   160000.0,
+   5
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|7": [
+   150000.0,
+   13
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|8": [
+   125000.0,
+   21
+  ],
+  "Royal Enfield | Classic Gunmetal Grey|9": [
+   100000.0,
+   8
+  ],
+  "Royal Enfield | Classic Signals|2": [
+   165000.0,
+   2
+  ],
+  "Royal Enfield | Classic Signals|3": [
+   227500.0,
+   4
+  ],
+  "Royal Enfield | Classic Signals|4": [
+   170000.0,
+   14
+  ],
+  "Royal Enfield | Classic Signals|5": [
+   180000.0,
+   2
+  ],
+  "Royal Enfield | Classic Signals|6": [
+   150000.0,
+   3
+  ],
+  "Royal Enfield | Classic Signals|7": [
+   150000.0,
+   16
+  ],
+  "Royal Enfield | Classic Signals|8": [
+   150000.0,
+   4
+  ],
+  "Royal Enfield | Classic Squadron Blue|10": [
+   95000.0,
+   3
+  ],
+  "Royal Enfield | Classic Stealth Black|0": [
+   200000.0,
+   7
+  ],
+  "Royal Enfield | Classic Stealth Black|1": [
+   225000.0,
+   15
+  ],
+  "Royal Enfield | Classic Stealth Black|2": [
+   215000.0,
+   6
+  ],
+  "Royal Enfield | Classic Stealth Black|3": [
+   200000.0,
+   14
+  ],
+  "Royal Enfield | Classic Stealth Black|4": [
+   175000.0,
+   9
+  ],
+  "Royal Enfield | Classic Stealth Black|5": [
+   185000.0,
+   4
+  ],
+  "Royal Enfield | Classic Stealth Black|6": [
+   150000.0,
+   12
+  ],
+  "Royal Enfield | Classic Stealth Black|7": [
+   130000.0,
+   3
+  ],
+  "Royal Enfield | Classic Stealth Black|8": [
+   175000.0,
+   5
+  ],
+  "Royal Enfield | Classic Stealth Black|9": [
+   120000.0,
+   2
+  ],
+  "Royal Enfield | Continental GT|11": [
+   165000.0,
+   3
+  ],
+  "Royal Enfield | Continental GT|13": [
+   120000.0,
+   2
+  ],
+  "Royal Enfield | Continental GT 650|0": [
+   400000.0,
+   27
+  ],
+  "Royal Enfield | Continental GT 650|1": [
+   390000.0,
+   45
+  ],
+  "Royal Enfield | Continental GT 650|2": [
+   350000.0,
+   38
+  ],
+  "Royal Enfield | Continental GT 650|3": [
+   320000.0,
+   21
+  ],
+  "Royal Enfield | Continental GT 650|4": [
+   285000.0,
+   24
+  ],
+  "Royal Enfield | Continental GT 650|5": [
+   245000.0,
+   6
+  ],
+  "Royal Enfield | Continental GT 650|6": [
+   267000.0,
+   6
+  ],
+  "Royal Enfield | Continental GT 650|7": [
+   175000.0,
+   4
+  ],
+  "Royal Enfield | Electra 4 S|9": [
+   110502.0,
+   4
+  ],
+  "Royal Enfield | Electra 4 S|10": [
+   80000.0,
+   3
+  ],
+  "Royal Enfield | Electra 4 S|11": [
+   85000.0,
+   2
+  ],
+  "Royal Enfield | Electra 4 S|12": [
+   85000.0,
+   2
+  ],
+  "Royal Enfield | Electra 4 S|13": [
+   100000.0,
+   2
+  ],
+  "Royal Enfield | Electra 4 S|14": [
+   75000.0,
+   2
+  ],
+  "Royal Enfield | Electra 5 S|3": [
+   170000.0,
+   2
+  ],
+  "Royal Enfield | Electra 5 S|9": [
+   110000.0,
+   3
+  ],
+  "Royal Enfield | Electra 5 S|10": [
+   105000.0,
+   6
+  ],
+  "Royal Enfield | Electra 5 S|11": [
+   120000.0,
+   3
+  ],
+  "Royal Enfield | Electra 5 S|12": [
+   100000.0,
+   3
+  ],
+  "Royal Enfield | Electra 5 S|13": [
+   77500.0,
+   2
+  ],
+  "Royal Enfield | Electra 5 S|14": [
+   35000.0,
+   2
+  ],
+  "Royal Enfield | Electra Twinspark|7": [
+   130000.0,
+   4
+  ],
+  "Royal Enfield | Electra Twinspark|8": [
+   120000.0,
+   3
+  ],
+  "Royal Enfield | Electra Twinspark|9": [
+   105000.0,
+   4
+  ],
+  "Royal Enfield | Electra Twinspark|10": [
+   90000.0,
+   5
+  ],
+  "Royal Enfield | Electra Twinspark|11": [
+   80000.0,
+   9
+  ],
+  "Royal Enfield | Electra Twinspark|12": [
+   70000.0,
+   5
+  ],
+  "Royal Enfield | Electra Twinspark|13": [
+   80000.0,
+   4
+  ],
+  "Royal Enfield | Electra Twinspark|14": [
+   102500.0,
+   6
+  ],
+  "Royal Enfield | Goan Classic 350|0": [
+   220000.0,
+   5
+  ],
+  "Royal Enfield | Goan Classic 350|1": [
+   210000.0,
+   15
+  ],
+  "Royal Enfield | Goan Classic 350|2": [
+   210000.0,
+   2
+  ],
+  "Royal Enfield | Guerrilla 450|0": [
+   285000.0,
+   9
+  ],
+  "Royal Enfield | Guerrilla 450|1": [
+   260000.0,
+   22
+  ],
+  "Royal Enfield | Guerrilla 450|2": [
+   250000.0,
+   13
+  ],
+  "Royal Enfield | Himalayan|3": [
+   205000.0,
+   21
+  ],
+  "Royal Enfield | Himalayan|4": [
+   190000.0,
+   37
+  ],
+  "Royal Enfield | Himalayan|5": [
+   177500.0,
+   28
+  ],
+  "Royal Enfield | Himalayan|6": [
+   190000.0,
+   11
+  ],
+  "Royal Enfield | Himalayan|7": [
+   130000.0,
+   11
+  ],
+  "Royal Enfield | Himalayan|8": [
+   127500.0,
+   4
+  ],
+  "Royal Enfield | Himalayan|9": [
+   115000.0,
+   8
+  ],
+  "Royal Enfield | Himalayan|10": [
+   100000.0,
+   9
+  ],
+  "Royal Enfield | Himalayan 440|3": [
+   190000.0,
+   6
+  ],
+  "Royal Enfield | Himalayan 440|4": [
+   200000.0,
+   4
+  ],
+  "Royal Enfield | Himalayan 440|9": [
+   135045.0,
+   4
+  ],
+  "Royal Enfield | Himalayan 440|10": [
+   100000.0,
+   5
+  ],
+  "Royal Enfield | Himalayan 450|0": [
+   362500.0,
+   8
+  ],
+  "Royal Enfield | Himalayan 450|1": [
+   320000.0,
+   15
+  ],
+  "Royal Enfield | Himalayan 450|2": [
+   300000.0,
+   33
+  ],
+  "Royal Enfield | Himalayan 450|3": [
+   300000.0,
+   7
+  ],
+  "Royal Enfield | Himalayan 450|4": [
+   170000.0,
+   2
+  ],
+  "Royal Enfield | Himalayan 450|6": [
+   250000.0,
+   3
+  ],
+  "Royal Enfield | Hunter 350|0": [
+   190000.0,
+   86
+  ],
+  "Royal Enfield | Hunter 350|1": [
+   170000.0,
+   153
+  ],
+  "Royal Enfield | Hunter 350|2": [
+   160000.0,
+   152
+  ],
+  "Royal Enfield | Hunter 350|3": [
+   150000.0,
+   146
+  ],
+  "Royal Enfield | Hunter 350|4": [
+   150000.0,
+   73
+  ],
+  "Royal Enfield | Interceptor 650|0": [
+   310000.0,
+   2
+  ],
+  "Royal Enfield | Interceptor 650|1": [
+   375000.0,
+   3
+  ],
+  "Royal Enfield | Interceptor 650|2": [
+   345000.0,
+   14
+  ],
+  "Royal Enfield | Interceptor 650|3": [
+   320000.0,
+   10
+  ],
+  "Royal Enfield | Interceptor 650|4": [
+   289000.0,
+   21
+  ],
+  "Royal Enfield | Interceptor 650|5": [
+   243000.0,
+   18
+  ],
+  "Royal Enfield | Interceptor 650|6": [
+   220000.0,
+   15
+  ],
+  "Royal Enfield | Interceptor 650|7": [
+   220000.0,
+   27
+  ],
+  "Royal Enfield | Machismo|18": [
+   110000.0,
+   2
+  ],
+  "Royal Enfield | Meteor 350|0": [
+   232500.0,
+   24
+  ],
+  "Royal Enfield | Meteor 350|1": [
+   210000.0,
+   56
+  ],
+  "Royal Enfield | Meteor 350|2": [
+   200000.0,
+   76
+  ],
+  "Royal Enfield | Meteor 350|3": [
+   190000.0,
+   64
+  ],
+  "Royal Enfield | Meteor 350|4": [
+   180000.0,
+   71
+  ],
+  "Royal Enfield | Meteor 350|5": [
+   170000.0,
+   54
+  ],
+  "Royal Enfield | Meteor 350|6": [
+   170000.0,
+   14
+  ],
+  "Royal Enfield | Scram 411|1": [
+   195000.0,
+   2
+  ],
+  "Royal Enfield | Scram 411|2": [
+   199999.5,
+   8
+  ],
+  "Royal Enfield | Scram 411|3": [
+   170000.0,
+   13
+  ],
+  "Royal Enfield | Scram 411|4": [
+   170000.0,
+   25
+  ],
+  "Royal Enfield | Scram 440|0": [
+   250000.0,
+   3
+  ],
+  "Royal Enfield | Scram 440|1": [
+   260000.0,
+   15
+  ],
+  "Royal Enfield | Shotgun 650|1": [
+   385000.0,
+   6
+  ],
+  "Royal Enfield | Shotgun 650|2": [
+   397500.0,
+   14
+  ],
+  "Royal Enfield | Super Meteor 650|0": [
+   420000.0,
+   9
+  ],
+  "Royal Enfield | Super Meteor 650|1": [
+   402500.0,
+   20
+  ],
+  "Royal Enfield | Super Meteor 650|2": [
+   400000.0,
+   21
+  ],
+  "Royal Enfield | Super Meteor 650|3": [
+   350000.0,
+   31
+  ],
+  "Royal Enfield | Super Meteor 650|4": [
+   400000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird 350|6": [
+   135500.0,
+   2
+  ],
+  "Royal Enfield | Thunderbird 350|7": [
+   110000.0,
+   21
+  ],
+  "Royal Enfield | Thunderbird 350|8": [
+   92500.0,
+   40
+  ],
+  "Royal Enfield | Thunderbird 350|9": [
+   90000.0,
+   46
+  ],
+  "Royal Enfield | Thunderbird 350|10": [
+   90000.0,
+   43
+  ],
+  "Royal Enfield | Thunderbird 350|11": [
+   80000.0,
+   38
+  ],
+  "Royal Enfield | Thunderbird 350|12": [
+   82500.0,
+   22
+  ],
+  "Royal Enfield | Thunderbird 350|13": [
+   60000.0,
+   15
+  ],
+  "Royal Enfield | Thunderbird 350|14": [
+   75000.0,
+   5
+  ],
+  "Royal Enfield | Thunderbird 350|15": [
+   55000.0,
+   6
+  ],
+  "Royal Enfield | Thunderbird 350|16": [
+   55000.0,
+   4
+  ],
+  "Royal Enfield | Thunderbird 350|21": [
+   32500.0,
+   2
+  ],
+  "Royal Enfield | Thunderbird 350X|6": [
+   100000.0,
+   4
+  ],
+  "Royal Enfield | Thunderbird 350X|7": [
+   117500.0,
+   42
+  ],
+  "Royal Enfield | Thunderbird 350X|8": [
+   100000.0,
+   40
+  ],
+  "Royal Enfield | Thunderbird 350X|9": [
+   76000.0,
+   4
+  ],
+  "Royal Enfield | Thunderbird 350X|12": [
+   60000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird 500|8": [
+   175000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird 500|9": [
+   95000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird 500|10": [
+   100000.0,
+   8
+  ],
+  "Royal Enfield | Thunderbird 500|11": [
+   97500.0,
+   4
+  ],
+  "Royal Enfield | Thunderbird 500|12": [
+   90000.0,
+   5
+  ],
+  "Royal Enfield | Thunderbird 500|13": [
+   80000.0,
+   11
+  ],
+  "Royal Enfield | Thunderbird Twinspark|10": [
+   90000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird Twinspark|12": [
+   67500.0,
+   2
+  ],
+  "Royal Enfield | Thunderbird Twinspark|13": [
+   57500.0,
+   2
+  ],
+  "Royal Enfield | Thunderbird Twinspark|14": [
+   80000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird Twinspark|15": [
+   60000.0,
+   5
+  ],
+  "Royal Enfield | Thunderbird Twinspark|16": [
+   85000.0,
+   3
+  ],
+  "Royal Enfield | Thunderbird Twinspark|17": [
+   70000.0,
+   3
+  ],
+  "Simple Energy | Dot One|1": [
+   150000.0,
+   2
+  ],
+  "Simple Energy | One|0": [
+   192500.0,
+   2
+  ],
+  "Suzuki | Access|7": [
+   70000.0,
+   2
+  ],
+  "Suzuki | Access 125|0": [
+   100000.0,
+   31
+  ],
+  "Suzuki | Access 125|1": [
+   85000.0,
+   29
+  ],
+  "Suzuki | Access 125|2": [
+   80000.0,
+   46
+  ],
+  "Suzuki | Access 125|3": [
+   72000.0,
+   39
+  ],
+  "Suzuki | Access 125|4": [
+   70000.0,
+   35
+  ],
+  "Suzuki | Access 125|5": [
+   57500.0,
+   24
+  ],
+  "Suzuki | Access 125|6": [
+   50000.0,
+   24
+  ],
+  "Suzuki | Access 125|7": [
+   45000.0,
+   38
+  ],
+  "Suzuki | Access 125|8": [
+   45000.0,
+   23
+  ],
+  "Suzuki | Access 125|9": [
+   33000.0,
+   17
+  ],
+  "Suzuki | Access 125|10": [
+   34000.0,
+   13
+  ],
+  "Suzuki | Access 125|11": [
+   26000.0,
+   18
+  ],
+  "Suzuki | Access 125|12": [
+   25000.0,
+   20
+  ],
+  "Suzuki | Access 125|13": [
+   24000.0,
+   14
+  ],
+  "Suzuki | Access 125|14": [
+   25000.0,
+   19
+  ],
+  "Suzuki | Access 125|15": [
+   20000.0,
+   13
+  ],
+  "Suzuki | Access 125|16": [
+   24500.0,
+   5
+  ],
+  "Suzuki | Access 125|17": [
+   25000.0,
+   3
+  ],
+  "Suzuki | Avenis 125|0": [
+   92500.0,
+   8
+  ],
+  "Suzuki | Avenis 125|1": [
+   95000.0,
+   6
+  ],
+  "Suzuki | Avenis 125|2": [
+   77500.0,
+   12
+  ],
+  "Suzuki | Avenis 125|3": [
+   70000.0,
+   17
+  ],
+  "Suzuki | Avenis 125|4": [
+   65000.0,
+   9
+  ],
+  "Suzuki | Burgman Street 125|0": [
+   110000.0,
+   13
+  ],
+  "Suzuki | Burgman Street 125|1": [
+   85000.0,
+   20
+  ],
+  "Suzuki | Burgman Street 125|2": [
+   85500.0,
+   22
+  ],
+  "Suzuki | Burgman Street 125|3": [
+   80000.0,
+   10
+  ],
+  "Suzuki | Burgman Street 125|4": [
+   70000.0,
+   13
+  ],
+  "Suzuki | Burgman Street 125|5": [
+   65000.0,
+   13
+  ],
+  "Suzuki | Burgman Street 125|6": [
+   60000.0,
+   5
+  ],
+  "Suzuki | Burgman Street 125|7": [
+   55500.0,
+   6
+  ],
+  "Suzuki | Burgman Street 125|8": [
+   37500.0,
+   6
+  ],
+  "Suzuki | Burgman Street EX|1": [
+   110000.0,
+   4
+  ],
+  "Suzuki | Burgman Street EX|2": [
+   90000.0,
+   5
+  ],
+  "Suzuki | Burgman Street EX|3": [
+   80000.0,
+   3
+  ],
+  "Suzuki | Burgman Street EX|4": [
+   82500.0,
+   4
+  ],
+  "Suzuki | Burgman Street EX|5": [
+   57500.0,
+   2
+  ],
+  "Suzuki | Burgman Street EX|6": [
+   55000.0,
+   3
+  ],
+  "Suzuki | Burgman Street EX|7": [
+   60000.0,
+   2
+  ],
+  "Suzuki | Burgman Street EX|8": [
+   55000.0,
+   2
+  ],
+  "Suzuki | GS150R|12": [
+   17500.0,
+   2
+  ],
+  "Suzuki | GS150R|13": [
+   19600.0,
+   2
+  ],
+  "Suzuki | GS150R|16": [
+   22000.0,
+   3
+  ],
+  "Suzuki | GS150R|17": [
+   25000.0,
+   2
+  ],
+  "Suzuki | Gixxer|0": [
+   132500.0,
+   4
+  ],
+  "Suzuki | Gixxer|2": [
+   100000.0,
+   3
+  ],
+  "Suzuki | Gixxer|3": [
+   85000.0,
+   2
+  ],
+  "Suzuki | Gixxer|4": [
+   99000.0,
+   5
+  ],
+  "Suzuki | Gixxer|5": [
+   60000.0,
+   5
+  ],
+  "Suzuki | Gixxer|6": [
+   72500.0,
+   6
+  ],
+  "Suzuki | Gixxer|7": [
+   55000.0,
+   9
+  ],
+  "Suzuki | Gixxer|8": [
+   48000.0,
+   19
+  ],
+  "Suzuki | Gixxer|9": [
+   40000.0,
+   15
+  ],
+  "Suzuki | Gixxer|10": [
+   45000.0,
+   20
+  ],
+  "Suzuki | Gixxer|11": [
+   37500.0,
+   18
+  ],
+  "Suzuki | Gixxer|12": [
+   35000.0,
+   11
+  ],
+  "Suzuki | Gixxer 250|6": [
+   125000.0,
+   3
+  ],
+  "Suzuki | Gixxer SF|0": [
+   115000.0,
+   3
+  ],
+  "Suzuki | Gixxer SF|1": [
+   140000.0,
+   14
+  ],
+  "Suzuki | Gixxer SF|2": [
+   110000.0,
+   15
+  ],
+  "Suzuki | Gixxer SF|3": [
+   105000.0,
+   16
+  ],
+  "Suzuki | Gixxer SF|4": [
+   90000.0,
+   22
+  ],
+  "Suzuki | Gixxer SF|5": [
+   80000.0,
+   18
+  ],
+  "Suzuki | Gixxer SF|6": [
+   75000.0,
+   10
+  ],
+  "Suzuki | Gixxer SF|7": [
+   60000.0,
+   17
+  ],
+  "Suzuki | Gixxer SF|8": [
+   55000.0,
+   14
+  ],
+  "Suzuki | Gixxer SF|9": [
+   40000.0,
+   21
+  ],
+  "Suzuki | Gixxer SF|10": [
+   50000.0,
+   17
+  ],
+  "Suzuki | Gixxer SF|11": [
+   40000.0,
+   18
+  ],
+  "Suzuki | Gixxer SF|12": [
+   40000.0,
+   3
+  ],
+  "Suzuki | Gixxer SF 250|1": [
+   210000.0,
+   2
+  ],
+  "Suzuki | Gixxer SF 250|2": [
+   162500.0,
+   6
+  ],
+  "Suzuki | Gixxer SF 250|3": [
+   150000.0,
+   10
+  ],
+  "Suzuki | Gixxer SF 250|4": [
+   120000.0,
+   5
+  ],
+  "Suzuki | Gixxer SF 250|5": [
+   120000.0,
+   7
+  ],
+  "Suzuki | Gixxer SF 250|6": [
+   97500.0,
+   2
+  ],
+  "Suzuki | Gixxer SF 250|7": [
+   65000.0,
+   6
+  ],
+  "Suzuki | Gixxer SF 250 Flex Fuel|2": [
+   137500.0,
+   2
+  ],
+  "Suzuki | Gixxer SF Fi|2": [
+   107500.0,
+   2
+  ],
+  "Suzuki | Gixxer SF Fi|4": [
+   67500.0,
+   2
+  ],
+  "Suzuki | Gixxer SF Fi|6": [
+   58000.0,
+   3
+  ],
+  "Suzuki | Gixxer SF Fi|7": [
+   79000.0,
+   4
+  ],
+  "Suzuki | Gixxer SF Fi|8": [
+   50000.0,
+   6
+  ],
+  "Suzuki | Gixxer SF Fi|9": [
+   46325.0,
+   4
+  ],
+  "Suzuki | Gixxer SF Fi|10": [
+   47500.0,
+   2
+  ],
+  "Suzuki | Hayate|13": [
+   18000.0,
+   4
+  ],
+  "Suzuki | Hayate|14": [
+   25000.0,
+   2
+  ],
+  "Suzuki | Hayate EP|9": [
+   35000.0,
+   2
+  ],
+  "Suzuki | Intruder 150|7": [
+   42500.0,
+   2
+  ],
+  "Suzuki | Intruder 150|8": [
+   50000.0,
+   15
+  ],
+  "Suzuki | Intruder 150|9": [
+   50000.0,
+   3
+  ],
+  "Suzuki | Intruder 150 Fi|8": [
+   50000.0,
+   4
+  ],
+  "Suzuki | SlingShot Plus|14": [
+   30000.0,
+   2
+  ],
+  "Suzuki | Swish|11": [
+   30000.0,
+   3
+  ],
+  "Suzuki | Swish|12": [
+   21500.0,
+   2
+  ],
+  "Suzuki | Swish|13": [
+   14750.0,
+   4
+  ],
+  "Suzuki | Swish|14": [
+   22500.0,
+   4
+  ],
+  "Suzuki | V-Strom SX|0": [
+   200000.0,
+   9
+  ],
+  "Suzuki | V-Strom SX|1": [
+   200000.0,
+   7
+  ],
+  "Suzuki | V-Strom SX|2": [
+   185000.0,
+   7
+  ],
+  "Suzuki | V-Strom SX|3": [
+   180000.0,
+   11
+  ],
+  "Suzuki | V-Strom SX|4": [
+   150000.0,
+   6
+  ],
+  "Suzuki | Zeus CD|18": [
+   15000.0,
+   2
+  ],
+  "TVS | Apache RR 310|0": [
+   275000.0,
+   9
+  ],
+  "TVS | Apache RR 310|1": [
+   272500.0,
+   16
+  ],
+  "TVS | Apache RR 310|2": [
+   257500.0,
+   12
+  ],
+  "TVS | Apache RR 310|3": [
+   220000.0,
+   15
+  ],
+  "TVS | Apache RR 310|4": [
+   192500.0,
+   16
+  ],
+  "TVS | Apache RR 310|5": [
+   195000.0,
+   15
+  ],
+  "TVS | Apache RR 310|6": [
+   148000.0,
+   8
+  ],
+  "TVS | Apache RR 310|7": [
+   145000.0,
+   3
+  ],
+  "TVS | Apache RR 310|8": [
+   140000.0,
+   9
+  ],
+  "TVS | Apache RTR 160|0": [
+   130000.0,
+   36
+  ],
+  "TVS | Apache RTR 160|1": [
+   105000.0,
+   35
+  ],
+  "TVS | Apache RTR 160|2": [
+   100000.0,
+   39
+  ],
+  "TVS | Apache RTR 160|3": [
+   95000.0,
+   33
+  ],
+  "TVS | Apache RTR 160|4": [
+   80000.0,
+   36
+  ],
+  "TVS | Apache RTR 160|5": [
+   75000.0,
+   28
+  ],
+  "TVS | Apache RTR 160|6": [
+   69000.0,
+   30
+  ],
+  "TVS | Apache RTR 160|7": [
+   60000.0,
+   28
+  ],
+  "TVS | Apache RTR 160|8": [
+   50000.0,
+   38
+  ],
+  "TVS | Apache RTR 160|9": [
+   45000.0,
+   36
+  ],
+  "TVS | Apache RTR 160|10": [
+   41000.0,
+   42
+  ],
+  "TVS | Apache RTR 160|11": [
+   40000.0,
+   25
+  ],
+  "TVS | Apache RTR 160|12": [
+   35000.0,
+   21
+  ],
+  "TVS | Apache RTR 160|13": [
+   30000.0,
+   14
+  ],
+  "TVS | Apache RTR 160|14": [
+   30500.0,
+   16
+  ],
+  "TVS | Apache RTR 160|15": [
+   30000.0,
+   13
+  ],
+  "TVS | Apache RTR 160|16": [
+   35000.0,
+   5
+  ],
+  "TVS | Apache RTR 160|17": [
+   35000.0,
+   4
+  ],
+  "TVS | Apache RTR 160|19": [
+   27500.0,
+   2
+  ],
+  "TVS | Apache RTR 160 4V|0": [
+   140000.0,
+   17
+  ],
+  "TVS | Apache RTR 160 4V|1": [
+   120000.0,
+   31
+  ],
+  "TVS | Apache RTR 160 4V|2": [
+   110000.0,
+   45
+  ],
+  "TVS | Apache RTR 160 4V|3": [
+   95000.0,
+   63
+  ],
+  "TVS | Apache RTR 160 4V|4": [
+   85000.0,
+   68
+  ],
+  "TVS | Apache RTR 160 4V|5": [
+   75000.0,
+   98
+  ],
+  "TVS | Apache RTR 160 4V|6": [
+   70000.0,
+   53
+  ],
+  "TVS | Apache RTR 160 4V|7": [
+   60000.0,
+   73
+  ],
+  "TVS | Apache RTR 160 4V|8": [
+   58000.0,
+   53
+  ],
+  "TVS | Apache RTR 160 4V|9": [
+   45000.0,
+   7
+  ],
+  "TVS | Apache RTR 180|0": [
+   60000.0,
+   3
+  ],
+  "TVS | Apache RTR 180|2": [
+   92500.0,
+   2
+  ],
+  "TVS | Apache RTR 180|3": [
+   99500.0,
+   4
+  ],
+  "TVS | Apache RTR 180|4": [
+   85000.0,
+   5
+  ],
+  "TVS | Apache RTR 180|6": [
+   55000.0,
+   3
+  ],
+  "TVS | Apache RTR 180|7": [
+   50000.0,
+   11
+  ],
+  "TVS | Apache RTR 180|8": [
+   50000.0,
+   13
+  ],
+  "TVS | Apache RTR 180|9": [
+   45000.0,
+   19
+  ],
+  "TVS | Apache RTR 180|10": [
+   35000.0,
+   9
+  ],
+  "TVS | Apache RTR 180|11": [
+   35000.0,
+   11
+  ],
+  "TVS | Apache RTR 180|12": [
+   30000.0,
+   11
+  ],
+  "TVS | Apache RTR 180|13": [
+   37000.0,
+   3
+  ],
+  "TVS | Apache RTR 180|14": [
+   25000.0,
+   7
+  ],
+  "TVS | Apache RTR 180|15": [
+   22500.0,
+   10
+  ],
+  "TVS | Apache RTR 180 ABS|6": [
+   70000.0,
+   3
+  ],
+  "TVS | Apache RTR 180 ABS|7": [
+   62000.0,
+   3
+  ],
+  "TVS | Apache RTR 200 4V|0": [
+   162500.0,
+   4
+  ],
+  "TVS | Apache RTR 200 4V|1": [
+   145000.0,
+   5
+  ],
+  "TVS | Apache RTR 200 4V|2": [
+   130000.0,
+   9
+  ],
+  "TVS | Apache RTR 200 4V|3": [
+   100000.0,
+   19
+  ],
+  "TVS | Apache RTR 200 4V|4": [
+   90000.0,
+   13
+  ],
+  "TVS | Apache RTR 200 4V|5": [
+   100000.0,
+   27
+  ],
+  "TVS | Apache RTR 200 4V|6": [
+   82500.0,
+   8
+  ],
+  "TVS | Apache RTR 200 4V|7": [
+   75000.0,
+   24
+  ],
+  "TVS | Apache RTR 200 4V|8": [
+   60000.0,
+   37
+  ],
+  "TVS | Apache RTR 200 4V|9": [
+   50000.0,
+   33
+  ],
+  "TVS | Apache RTR 200 4V|10": [
+   50000.0,
+   12
+  ],
+  "TVS | Apache RTR 310|0": [
+   250000.0,
+   3
+  ],
+  "TVS | Apache RTR 310|1": [
+   230790.0,
+   5
+  ],
+  "TVS | Apache RTR 310|2": [
+   210000.0,
+   9
+  ],
+  "TVS | Apache RTR 310|3": [
+   210000.0,
+   7
+  ],
+  "TVS | Apache RTX|0": [
+   247500.0,
+   8
+  ],
+  "TVS | Apache RTX|7": [
+   400000.0,
+   2
+  ],
+  "TVS | Centra|22": [
+   15000.0,
+   3
+  ],
+  "TVS | Heavy Duty Super XL|1": [
+   57500.0,
+   2
+  ],
+  "TVS | Jive|15": [
+   16000.0,
+   2
+  ],
+  "TVS | Jupiter|0": [
+   90000.0,
+   26
+  ],
+  "TVS | Jupiter|1": [
+   85000.0,
+   52
+  ],
+  "TVS | Jupiter|2": [
+   70000.0,
+   49
+  ],
+  "TVS | Jupiter|3": [
+   66500.0,
+   28
+  ],
+  "TVS | Jupiter|4": [
+   54999.0,
+   31
+  ],
+  "TVS | Jupiter|5": [
+   50000.0,
+   28
+  ],
+  "TVS | Jupiter|6": [
+   46500.0,
+   18
+  ],
+  "TVS | Jupiter|7": [
+   45000.0,
+   37
+  ],
+  "TVS | Jupiter|8": [
+   38500.0,
+   37
+  ],
+  "TVS | Jupiter|9": [
+   32000.0,
+   34
+  ],
+  "TVS | Jupiter|10": [
+   28000.0,
+   29
+  ],
+  "TVS | Jupiter|11": [
+   25000.0,
+   19
+  ],
+  "TVS | Jupiter|12": [
+   25000.0,
+   13
+  ],
+  "TVS | Jupiter|13": [
+   35000.0,
+   2
+  ],
+  "TVS | Jupiter 125|0": [
+   90000.0,
+   21
+  ],
+  "TVS | Jupiter 125|1": [
+   90000.0,
+   31
+  ],
+  "TVS | Jupiter 125|2": [
+   75000.0,
+   47
+  ],
+  "TVS | Jupiter 125|3": [
+   70000.0,
+   24
+  ],
+  "TVS | Jupiter 125|4": [
+   60000.0,
+   45
+  ],
+  "TVS | Jupiter 125|5": [
+   50000.0,
+   10
+  ],
+  "TVS | Jupiter 125|6": [
+   60000.0,
+   6
+  ],
+  "TVS | Jupiter 125|7": [
+   50000.0,
+   7
+  ],
+  "TVS | Jupiter 125|8": [
+   35000.0,
+   8
+  ],
+  "TVS | Jupiter 125|9": [
+   30000.0,
+   7
+  ],
+  "TVS | Jupiter 125|10": [
+   30000.0,
+   9
+  ],
+  "TVS | Jupiter 125|11": [
+   25000.0,
+   3
+  ],
+  "TVS | Jupiter 125|12": [
+   27500.0,
+   6
+  ],
+  "TVS | Jupiter 2013|3": [
+   61000.0,
+   2
+  ],
+  "TVS | Jupiter 2013|12": [
+   27500.0,
+   2
+  ],
+  "TVS | Jupiter Grande|0": [
+   90000.0,
+   3
+  ],
+  "TVS | Jupiter Grande|2": [
+   82500.0,
+   2
+  ],
+  "TVS | Jupiter Grande|6": [
+   42500.0,
+   2
+  ],
+  "TVS | Jupiter Grande|7": [
+   40000.0,
+   10
+  ],
+  "TVS | Jupiter Grande|8": [
+   30000.0,
+   5
+  ],
+  "TVS | Jupiter Grande|9": [
+   25000.0,
+   3
+  ],
+  "TVS | Jupiter Grande|12": [
+   33500.0,
+   2
+  ],
+  "TVS | Ntorq 125|0": [
+   95000.0,
+   31
+  ],
+  "TVS | Ntorq 125|1": [
+   90000.0,
+   50
+  ],
+  "TVS | Ntorq 125|2": [
+   75000.0,
+   64
+  ],
+  "TVS | Ntorq 125|3": [
+   70000.0,
+   93
+  ],
+  "TVS | Ntorq 125|4": [
+   61000.0,
+   64
+  ],
+  "TVS | Ntorq 125|5": [
+   55000.0,
+   45
+  ],
+  "TVS | Ntorq 125|6": [
+   50000.0,
+   43
+  ],
+  "TVS | Ntorq 125|7": [
+   48000.0,
+   41
+  ],
+  "TVS | Ntorq 125|8": [
+   40000.0,
+   32
+  ],
+  "TVS | Ntorq 150|0": [
+   120000.0,
+   12
+  ],
+  "TVS | Ntorq 150|1": [
+   120000.0,
+   3
+  ],
+  "TVS | Ntorq 150|3": [
+   70000.0,
+   3
+  ],
+  "TVS | Ntorq 150|4": [
+   65000.0,
+   2
+  ],
+  "TVS | Ntorq 150|7": [
+   45000.0,
+   3
+  ],
+  "TVS | Ntorq 150|8": [
+   40000.0,
+   2
+  ],
+  "TVS | Orbiter|0": [
+   110000.0,
+   5
+  ],
+  "TVS | Orbiter|1": [
+   90000.0,
+   2
+  ],
+  "TVS | Phoenix|12": [
+   25000.0,
+   5
+  ],
+  "TVS | Phoenix|13": [
+   19000.0,
+   4
+  ],
+  "TVS | Radeon|0": [
+   60000.0,
+   10
+  ],
+  "TVS | Radeon|1": [
+   60000.0,
+   17
+  ],
+  "TVS | Radeon|2": [
+   50000.0,
+   15
+  ],
+  "TVS | Radeon|3": [
+   52000.0,
+   13
+  ],
+  "TVS | Radeon|4": [
+   42999.0,
+   11
+  ],
+  "TVS | Radeon|5": [
+   48000.0,
+   10
+  ],
+  "TVS | Radeon|6": [
+   40000.0,
+   9
+  ],
+  "TVS | Radeon|7": [
+   38000.0,
+   11
+  ],
+  "TVS | Radeon|8": [
+   35000.0,
+   3
+  ],
+  "TVS | Raider 125|0": [
+   90000.0,
+   70
+  ],
+  "TVS | Raider 125|1": [
+   90000.0,
+   103
+  ],
+  "TVS | Raider 125|2": [
+   80000.0,
+   138
+  ],
+  "TVS | Raider 125|3": [
+   70000.0,
+   206
+  ],
+  "TVS | Raider 125|4": [
+   65000.0,
+   112
+  ],
+  "TVS | Raider 125|5": [
+   61000.0,
+   36
+  ],
+  "TVS | Ronin|0": [
+   145000.0,
+   31
+  ],
+  "TVS | Ronin|1": [
+   140000.0,
+   49
+  ],
+  "TVS | Ronin|2": [
+   129500.0,
+   22
+  ],
+  "TVS | Ronin|3": [
+   120000.0,
+   31
+  ],
+  "TVS | Ronin|4": [
+   120000.0,
+   14
+  ],
+  "TVS | Ronin New|0": [
+   145000.0,
+   7
+  ],
+  "TVS | Ronin New|1": [
+   147500.0,
+   10
+  ],
+  "TVS | Ronin New|2": [
+   150000.0,
+   2
+  ],
+  "TVS | Ronin New|3": [
+   140000.0,
+   2
+  ],
+  "TVS | Scooty Pep DLX|4": [
+   45000.0,
+   2
+  ],
+  "TVS | Scooty Pep DLX|6": [
+   28500.0,
+   2
+  ],
+  "TVS | Scooty Pep DLX|9": [
+   35000.0,
+   2
+  ],
+  "TVS | Scooty Pep DLX|11": [
+   25000.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|3": [
+   50000.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|4": [
+   40000.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|5": [
+   40000.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|6": [
+   35000.0,
+   3
+  ],
+  "TVS | Scooty Pep Plus|7": [
+   27500.0,
+   4
+  ],
+  "TVS | Scooty Pep Plus|8": [
+   35000.0,
+   6
+  ],
+  "TVS | Scooty Pep Plus|9": [
+   26500.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|10": [
+   32000.0,
+   3
+  ],
+  "TVS | Scooty Pep Plus|12": [
+   25500.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|13": [
+   13500.0,
+   2
+  ],
+  "TVS | Scooty Pep Plus|14": [
+   32000.0,
+   2
+  ],
+  "TVS | Scooty Streak|14": [
+   12500.0,
+   2
+  ],
+  "TVS | Sport|0": [
+   65000.0,
+   22
+  ],
+  "TVS | Sport|1": [
+   60000.0,
+   25
+  ],
+  "TVS | Sport|2": [
+   50000.0,
+   30
+  ],
+  "TVS | Sport|3": [
+   50000.0,
+   24
+  ],
+  "TVS | Sport|4": [
+   35000.0,
+   15
+  ],
+  "TVS | Sport|5": [
+   40000.0,
+   15
+  ],
+  "TVS | Sport|6": [
+   35000.0,
+   7
+  ],
+  "TVS | Sport|7": [
+   29000.0,
+   8
+  ],
+  "TVS | Sport|8": [
+   30000.0,
+   13
+  ],
+  "TVS | Sport|9": [
+   26500.0,
+   6
+  ],
+  "TVS | Sport|10": [
+   20000.0,
+   5
+  ],
+  "TVS | Sport|11": [
+   25000.0,
+   5
+  ],
+  "TVS | Sport|12": [
+   27500.0,
+   2
+  ],
+  "TVS | Sport|13": [
+   22000.0,
+   2
+  ],
+  "TVS | Sport|14": [
+   20000.0,
+   5
+  ],
+  "TVS | Sport|15": [
+   18000.0,
+   3
+  ],
+  "TVS | Sport|19": [
+   15000.0,
+   2
+  ],
+  "TVS | Star City|5": [
+   55000.0,
+   2
+  ],
+  "TVS | Star City|6": [
+   55000.0,
+   2
+  ],
+  "TVS | Star City|8": [
+   30000.0,
+   2
+  ],
+  "TVS | Star City|9": [
+   22500.0,
+   2
+  ],
+  "TVS | Star City|10": [
+   30000.0,
+   3
+  ],
+  "TVS | Star City|11": [
+   35000.0,
+   2
+  ],
+  "TVS | Star City|13": [
+   21000.0,
+   2
+  ],
+  "TVS | Star City|14": [
+   20000.0,
+   5
+  ],
+  "TVS | Star City|15": [
+   19000.0,
+   2
+  ],
+  "TVS | Star City Plus|1": [
+   60000.0,
+   2
+  ],
+  "TVS | Star City Plus|4": [
+   50000.0,
+   5
+  ],
+  "TVS | Star City Plus|5": [
+   55000.0,
+   6
+  ],
+  "TVS | Star City Plus|6": [
+   45000.0,
+   5
+  ],
+  "TVS | Star City Plus|8": [
+   35000.0,
+   3
+  ],
+  "TVS | Star City Plus|9": [
+   37500.0,
+   6
+  ],
+  "TVS | Star City Plus|10": [
+   25000.0,
+   4
+  ],
+  "TVS | Star City Plus|11": [
+   23250.0,
+   2
+  ],
+  "TVS | Star City Plus|12": [
+   33000.0,
+   2
+  ],
+  "TVS | Star City Plus|15": [
+   27500.0,
+   2
+  ],
+  "TVS | Star City Plus|16": [
+   21500.0,
+   2
+  ],
+  "TVS | Streak|16": [
+   10000.0,
+   2
+  ],
+  "TVS | Victor|6": [
+   31500.0,
+   4
+  ],
+  "TVS | Victor|7": [
+   40000.0,
+   8
+  ],
+  "TVS | Victor|8": [
+   30000.0,
+   7
+  ],
+  "TVS | Victor|9": [
+   30000.0,
+   6
+  ],
+  "TVS | Victor|10": [
+   26000.0,
+   9
+  ],
+  "TVS | Victor GLX|9": [
+   20000.0,
+   2
+  ],
+  "TVS | Wego|7": [
+   35000.0,
+   2
+  ],
+  "TVS | Wego|8": [
+   40000.0,
+   3
+  ],
+  "TVS | Wego|9": [
+   20000.0,
+   3
+  ],
+  "TVS | Wego|11": [
+   25000.0,
+   3
+  ],
+  "TVS | Wego|12": [
+   25000.0,
+   5
+  ],
+  "TVS | Wego|13": [
+   25000.0,
+   12
+  ],
+  "TVS | Wego|14": [
+   21500.0,
+   8
+  ],
+  "TVS | Wego|15": [
+   30000.0,
+   13
+  ],
+  "TVS | XL 100|7": [
+   44000.0,
+   2
+  ],
+  "TVS | XL 100|8": [
+   30000.0,
+   2
+  ],
+  "TVS | XL 100 Comfort|2": [
+   40000.0,
+   2
+  ],
+  "TVS | XL 100 Comfort|3": [
+   50000.0,
+   3
+  ],
+  "TVS | XL 100 Comfort|4": [
+   56500.0,
+   2
+  ],
+  "TVS | XL 100 Heavy Duty|0": [
+   55000.0,
+   3
+  ],
+  "TVS | XL 100 Heavy Duty|1": [
+   48000.0,
+   3
+  ],
+  "TVS | XL 100 Heavy Duty|2": [
+   45000.0,
+   4
+  ],
+  "TVS | XL 100 Heavy Duty|3": [
+   39500.0,
+   6
+  ],
+  "TVS | XL 100 Heavy Duty|4": [
+   30000.0,
+   5
+  ],
+  "TVS | XL 100 Heavy Duty|5": [
+   35000.0,
+   7
+  ],
+  "TVS | XL 100 Heavy Duty|7": [
+   20000.0,
+   3
+  ],
+  "TVS | XL 100 Heavy Duty|8": [
+   20000.0,
+   2
+  ],
+  "TVS | XL 100 Heavy Duty|9": [
+   20250.0,
+   2
+  ],
+  "TVS | XL 100 Heavy Duty|10": [
+   25000.0,
+   3
+  ],
+  "TVS | XL Super|15": [
+   31500.0,
+   2
+  ],
+  "TVS | Zest 110|0": [
+   73500.0,
+   4
+  ],
+  "TVS | Zest 110|1": [
+   75000.0,
+   7
+  ],
+  "TVS | Zest 110|3": [
+   62499.5,
+   2
+  ],
+  "TVS | Zest 110|7": [
+   37500.0,
+   4
+  ],
+  "TVS | Zest 110|8": [
+   30000.0,
+   5
+  ],
+  "TVS | Zest 110|9": [
+   30000.0,
+   4
+  ],
+  "TVS | Zest 110|10": [
+   30000.0,
+   3
+  ],
+  "TVS | Zest 110|11": [
+   25000.0,
+   5
+  ],
+  "TVS | iQube|0": [
+   120000.0,
+   11
+  ],
+  "TVS | iQube|1": [
+   105000.0,
+   7
+  ],
+  "TVS | iQube|2": [
+   92500.0,
+   18
+  ],
+  "TVS | iQube|3": [
+   85000.0,
+   17
+  ],
+  "TVS | iQube|4": [
+   60000.0,
+   10
+  ],
+  "Tork | Kratos R|3": [
+   39500.0,
+   2
+  ],
+  "Tork | Kratos R|4": [
+   70000.0,
+   2
+  ],
+  "Triumph | Scrambler 400 X|0": [
+   295000.0,
+   8
+  ],
+  "Triumph | Scrambler 400 X|1": [
+   280000.0,
+   20
+  ],
+  "Triumph | Scrambler 400 X|2": [
+   250000.0,
+   35
+  ],
+  "Triumph | Scrambler 400 X|3": [
+   249500.0,
+   2
+  ],
+  "Triumph | Scrambler 400 XC|0": [
+   295000.0,
+   4
+  ],
+  "Triumph | Scrambler 400 XC|1": [
+   310000.0,
+   5
+  ],
+  "Triumph | Speed 400|0": [
+   262500.0,
+   22
+  ],
+  "Triumph | Speed 400|1": [
+   250000.0,
+   28
+  ],
+  "Triumph | Speed 400|2": [
+   220000.0,
+   30
+  ],
+  "Triumph | Speed 400|3": [
+   220000.0,
+   17
+  ],
+  "Triumph | Speed T4|0": [
+   225000.0,
+   12
+  ],
+  "Triumph | Speed T4|1": [
+   210000.0,
+   23
+  ],
+  "Triumph | Speed T4|2": [
+   207500.0,
+   2
+  ],
+  "Triumph | Street Twin|9": [
+   400000.0,
+   2
+  ],
+  "Triumph | Thruxton 400|1": [
+   260000.0,
+   3
+  ],
+  "Triumph | Tracker 400|0": [
+   272500.0,
+   4
+  ],
+  "UM | Renegade Classic|8": [
+   57500.0,
+   2
+  ],
+  "UM | Renegade Commando|8": [
+   82500.0,
+   2
+  ],
+  "UM | Renegade Commando|9": [
+   60000.0,
+   6
+  ],
+  "Ultraviolette | F77 Mach 2|0": [
+   357500.0,
+   2
+  ],
+  "Ultraviolette | F77 Mach 2|1": [
+   400000.0,
+   3
+  ],
+  "Ultraviolette | F77 Mach 2|2": [
+   295000.0,
+   4
+  ],
+  "Ultraviolette | F77 SuperStreet|1": [
+   340000.0,
+   8
+  ],
+  "Ultraviolette | X47 Crossover|0": [
+   310000.0,
+   7
+  ],
+  "Ultraviolette | X47 Crossover|1": [
+   300000.0,
+   2
+  ],
+  "VIDA | V1|2": [
+   87000.0,
+   13
+  ],
+  "VIDA | V1|3": [
+   82500.0,
+   4
+  ],
+  "VIDA | V2|1": [
+   95000.0,
+   10
+  ],
+  "VIDA | VX2|0": [
+   110000.0,
+   9
+  ],
+  "VIDA | VX2|1": [
+   90000.0,
+   6
+  ],
+  "VLF | Mobster|0": [
+   155000.0,
+   3
+  ],
+  "Vespa | 125|1": [
+   157500.0,
+   2
+  ],
+  "Vespa | LX 125|4": [
+   62500.0,
+   2
+  ],
+  "Vespa | LX 125|8": [
+   40000.0,
+   2
+  ],
+  "Vespa | LX 125|13": [
+   27500.0,
+   2
+  ],
+  "Vespa | Notte|7": [
+   75000.0,
+   2
+  ],
+  "Vespa | S 125|0": [
+   147500.0,
+   2
+  ],
+  "Vespa | SXL 125|2": [
+   111000.0,
+   2
+  ],
+  "Vespa | SXL 125|5": [
+   80000.0,
+   3
+  ],
+  "Vespa | SXL 125|7": [
+   55000.0,
+   2
+  ],
+  "Vespa | SXL 125|8": [
+   49500.0,
+   4
+  ],
+  "Vespa | SXL 125|9": [
+   47500.0,
+   4
+  ],
+  "Vespa | SXL 150|8": [
+   68000.0,
+   3
+  ],
+  "Vespa | SXL 150|9": [
+   42500.0,
+   2
+  ],
+  "Vespa | SXL 150|10": [
+   40000.0,
+   2
+  ],
+  "Vespa | SXL 150|11": [
+   60000.0,
+   3
+  ],
+  "Vespa | VX 125|13": [
+   27500.0,
+   2
+  ],
+  "Vespa | VXL 125|3": [
+   95000.0,
+   2
+  ],
+  "Vespa | VXL 125|4": [
+   70000.0,
+   5
+  ],
+  "Vespa | VXL 125|5": [
+   55000.0,
+   4
+  ],
+  "Vespa | VXL 125|7": [
+   52500.0,
+   2
+  ],
+  "Vespa | VXL 125|8": [
+   50000.0,
+   7
+  ],
+  "Vespa | VXL 125|11": [
+   40000.0,
+   5
+  ],
+  "Vespa | VXL 150|7": [
+   57500.0,
+   2
+  ],
+  "Vespa | ZX 125|1": [
+   92000.0,
+   4
+  ],
+  "Vespa | ZX 125|2": [
+   80000.0,
+   2
+  ],
+  "Vespa | ZX 125|4": [
+   61000.0,
+   3
+  ],
+  "Vespa | ZX 125|5": [
+   80000.0,
+   3
+  ],
+  "Vespa | ZX 125|12": [
+   47500.0,
+   2
+  ],
+  "Yamaha | Aerox 155|0": [
+   150000.0,
+   7
+  ],
+  "Yamaha | Aerox 155|1": [
+   130000.0,
+   16
+  ],
+  "Yamaha | Aerox 155|2": [
+   132500.0,
+   22
+  ],
+  "Yamaha | Aerox 155|3": [
+   115000.0,
+   13
+  ],
+  "Yamaha | Aerox 155|4": [
+   120000.0,
+   13
+  ],
+  "Yamaha | Aerox E|2": [
+   125000.0,
+   2
+  ],
+  "Yamaha | Aerox E|4": [
+   125000.0,
+   2
+  ],
+  "Yamaha | Alpha|7": [
+   40000.0,
+   3
+  ],
+  "Yamaha | Alpha|9": [
+   27000.0,
+   3
+  ],
+  "Yamaha | Alpha|11": [
+   30000.0,
+   4
+  ],
+  "Yamaha | Cygnus Ray ZR|8": [
+   35000.0,
+   3
+  ],
+  "Yamaha | Cygnus Ray ZR|9": [
+   30000.0,
+   5
+  ],
+  "Yamaha | FZ Blue Flex|3": [
+   82500.0,
+   2
+  ],
+  "Yamaha | FZ FI|0": [
+   93000.0,
+   3
+  ],
+  "Yamaha | FZ FI|1": [
+   97500.0,
+   2
+  ],
+  "Yamaha | FZ FI|2": [
+   94000.0,
+   6
+  ],
+  "Yamaha | FZ FI|3": [
+   90000.0,
+   5
+  ],
+  "Yamaha | FZ FI|4": [
+   80000.0,
+   10
+  ],
+  "Yamaha | FZ FI|5": [
+   72000.0,
+   7
+  ],
+  "Yamaha | FZ FI|6": [
+   62500.0,
+   8
+  ],
+  "Yamaha | FZ FI|7": [
+   68000.0,
+   11
+  ],
+  "Yamaha | FZ FI|8": [
+   51000.0,
+   3
+  ],
+  "Yamaha | FZ FI|9": [
+   45000.0,
+   6
+  ],
+  "Yamaha | FZ FI|10": [
+   36500.0,
+   4
+  ],
+  "Yamaha | FZ FI|11": [
+   47500.0,
+   2
+  ],
+  "Yamaha | FZ FI|13": [
+   30000.0,
+   2
+  ],
+  "Yamaha | FZ Rave|1": [
+   125000.0,
+   2
+  ],
+  "Yamaha | FZ S|1": [
+   91500.0,
+   2
+  ],
+  "Yamaha | FZ S|7": [
+   62500.0,
+   2
+  ],
+  "Yamaha | FZ S|8": [
+   55000.0,
+   3
+  ],
+  "Yamaha | FZ S|9": [
+   57500.0,
+   8
+  ],
+  "Yamaha | FZ S|10": [
+   40000.0,
+   16
+  ],
+  "Yamaha | FZ S|11": [
+   32500.0,
+   9
+  ],
+  "Yamaha | FZ S|12": [
+   32500.0,
+   24
+  ],
+  "Yamaha | FZ S|13": [
+   30000.0,
+   7
+  ],
+  "Yamaha | FZ S|14": [
+   35000.0,
+   8
+  ],
+  "Yamaha | FZ S|15": [
+   35000.0,
+   4
+  ],
+  "Yamaha | FZ S|16": [
+   45000.0,
+   2
+  ],
+  "Yamaha | FZ S FI|0": [
+   80000.0,
+   3
+  ],
+  "Yamaha | FZ S FI|2": [
+   85000.0,
+   3
+  ],
+  "Yamaha | FZ S FI|3": [
+   95000.0,
+   7
+  ],
+  "Yamaha | FZ S FI|4": [
+   85000.0,
+   23
+  ],
+  "Yamaha | FZ S FI|5": [
+   75000.0,
+   39
+  ],
+  "Yamaha | FZ S FI|6": [
+   65000.0,
+   32
+  ],
+  "Yamaha | FZ S FI|7": [
+   55000.0,
+   28
+  ],
+  "Yamaha | FZ S FI|8": [
+   50000.0,
+   13
+  ],
+  "Yamaha | FZ S FI|9": [
+   62500.0,
+   8
+  ],
+  "Yamaha | FZ S FI|10": [
+   40000.0,
+   9
+  ],
+  "Yamaha | FZ S FI|11": [
+   40000.0,
+   7
+  ],
+  "Yamaha | FZ S FI|12": [
+   30500.0,
+   6
+  ],
+  "Yamaha | FZ S FI|13": [
+   28000.0,
+   3
+  ],
+  "Yamaha | FZ S FI|14": [
+   27500.0,
+   2
+  ],
+  "Yamaha | FZ S FI|15": [
+   61500.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|0": [
+   140000.0,
+   19
+  ],
+  "Yamaha | FZ S Hybrid|1": [
+   140000.0,
+   16
+  ],
+  "Yamaha | FZ S Hybrid|3": [
+   100000.0,
+   3
+  ],
+  "Yamaha | FZ S Hybrid|4": [
+   77500.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|5": [
+   109500.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|6": [
+   75000.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|7": [
+   75000.0,
+   4
+  ],
+  "Yamaha | FZ S Hybrid|8": [
+   50000.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|9": [
+   43000.0,
+   2
+  ],
+  "Yamaha | FZ S Hybrid|12": [
+   28900.0,
+   2
+  ],
+  "Yamaha | FZ S V 2.0|2": [
+   75000.0,
+   2
+  ],
+  "Yamaha | FZ S V 2.0|4": [
+   77500.0,
+   4
+  ],
+  "Yamaha | FZ S V 2.0|5": [
+   70000.0,
+   5
+  ],
+  "Yamaha | FZ S V 2.0|6": [
+   49000.0,
+   3
+  ],
+  "Yamaha | FZ S V 2.0|7": [
+   75000.0,
+   7
+  ],
+  "Yamaha | FZ S V 2.0|8": [
+   50000.0,
+   17
+  ],
+  "Yamaha | FZ S V 2.0|9": [
+   50000.0,
+   14
+  ],
+  "Yamaha | FZ S V 2.0|10": [
+   45250.0,
+   10
+  ],
+  "Yamaha | FZ S V 2.0|11": [
+   31500.0,
+   10
+  ],
+  "Yamaha | FZ S V 2.0|12": [
+   38000.0,
+   13
+  ],
+  "Yamaha | FZ V 2.0|7": [
+   68000.0,
+   5
+  ],
+  "Yamaha | FZ V 2.0|8": [
+   55000.0,
+   4
+  ],
+  "Yamaha | FZ V 2.0|9": [
+   49000.0,
+   4
+  ],
+  "Yamaha | FZ V 2.0|10": [
+   38000.0,
+   14
+  ],
+  "Yamaha | FZ V 2.0|11": [
+   35000.0,
+   11
+  ],
+  "Yamaha | FZ V 2.0|12": [
+   20000.0,
+   3
+  ],
+  "Yamaha | FZ X|0": [
+   140000.0,
+   3
+  ],
+  "Yamaha | FZ X|1": [
+   120000.0,
+   9
+  ],
+  "Yamaha | FZ X|2": [
+   119000.0,
+   18
+  ],
+  "Yamaha | FZ X|3": [
+   100000.0,
+   21
+  ],
+  "Yamaha | FZ X|4": [
+   90000.0,
+   25
+  ],
+  "Yamaha | FZ X|5": [
+   75000.0,
+   21
+  ],
+  "Yamaha | FZ X|6": [
+   62500.0,
+   4
+  ],
+  "Yamaha | FZ X|13": [
+   52500.0,
+   2
+  ],
+  "Yamaha | FZ X Hybrid|0": [
+   155000.0,
+   5
+  ],
+  "Yamaha | FZ1|7": [
+   61000.0,
+   2
+  ],
+  "Yamaha | FZ1|11": [
+   50000.0,
+   3
+  ],
+  "Yamaha | FZ1|12": [
+   42500.0,
+   2
+  ],
+  "Yamaha | FZ1|15": [
+   20000.0,
+   3
+  ],
+  "Yamaha | FZ1|16": [
+   15000.0,
+   3
+  ],
+  "Yamaha | FZ16|0": [
+   42500.0,
+   2
+  ],
+  "Yamaha | FZ16|10": [
+   37750.0,
+   6
+  ],
+  "Yamaha | FZ16|11": [
+   40000.0,
+   6
+  ],
+  "Yamaha | FZ16|12": [
+   30000.0,
+   9
+  ],
+  "Yamaha | FZ16|13": [
+   30000.0,
+   8
+  ],
+  "Yamaha | FZ16|14": [
+   30000.0,
+   9
+  ],
+  "Yamaha | FZ16|15": [
+   30000.0,
+   7
+  ],
+  "Yamaha | FZ16|16": [
+   45000.0,
+   4
+  ],
+  "Yamaha | FZ16|17": [
+   25000.0,
+   2
+  ],
+  "Yamaha | FZ25|3": [
+   100000.0,
+   3
+  ],
+  "Yamaha | FZ25|4": [
+   100000.0,
+   11
+  ],
+  "Yamaha | FZ25|5": [
+   100000.0,
+   9
+  ],
+  "Yamaha | FZ25|6": [
+   90000.0,
+   6
+  ],
+  "Yamaha | FZ25|7": [
+   77500.0,
+   14
+  ],
+  "Yamaha | FZ25|8": [
+   65000.0,
+   18
+  ],
+  "Yamaha | FZ25|9": [
+   60000.0,
+   17
+  ],
+  "Yamaha | FZS FI V4|0": [
+   145000.0,
+   12
+  ],
+  "Yamaha | FZS FI V4|1": [
+   120000.0,
+   11
+  ],
+  "Yamaha | FZS FI V4|2": [
+   110000.0,
+   37
+  ],
+  "Yamaha | FZS FI V4|3": [
+   99999.5,
+   32
+  ],
+  "Yamaha | FZS FI V4|4": [
+   80000.0,
+   7
+  ],
+  "Yamaha | FZS FI V4|5": [
+   70000.0,
+   3
+  ],
+  "Yamaha | FZS FI V4|6": [
+   50000.0,
+   3
+  ],
+  "Yamaha | FZS FI V4|7": [
+   70000.0,
+   2
+  ],
+  "Yamaha | Fascino 110|7": [
+   42500.0,
+   4
+  ],
+  "Yamaha | Fascino 110|8": [
+   20500.0,
+   2
+  ],
+  "Yamaha | Fascino 110|9": [
+   35000.0,
+   3
+  ],
+  "Yamaha | Fascino 110|10": [
+   35000.0,
+   8
+  ],
+  "Yamaha | Fascino 125|1": [
+   90000.0,
+   5
+  ],
+  "Yamaha | Fascino 125|3": [
+   62500.0,
+   8
+  ],
+  "Yamaha | Fascino 125|4": [
+   50000.0,
+   7
+  ],
+  "Yamaha | Fascino 125|5": [
+   50000.0,
+   10
+  ],
+  "Yamaha | Fascino 125|6": [
+   45000.0,
+   5
+  ],
+  "Yamaha | Fascino 125|7": [
+   37500.0,
+   4
+  ],
+  "Yamaha | Fascino 125|8": [
+   45000.0,
+   7
+  ],
+  "Yamaha | Fascino 125|9": [
+   35000.0,
+   9
+  ],
+  "Yamaha | Fascino 125|11": [
+   18000.0,
+   3
+  ],
+  "Yamaha | Fazer|11": [
+   42500.0,
+   4
+  ],
+  "Yamaha | Fazer|12": [
+   36500.0,
+   8
+  ],
+  "Yamaha | Fazer|14": [
+   32500.0,
+   6
+  ],
+  "Yamaha | Fazer|15": [
+   20000.0,
+   3
+  ],
+  "Yamaha | Fazer|16": [
+   22500.0,
+   4
+  ],
+  "Yamaha | Fazer 25|9": [
+   45000.0,
+   2
+  ],
+  "Yamaha | Fazer FI V 2.0|8": [
+   40000.0,
+   2
+  ],
+  "Yamaha | Fazer FI V 2.0|9": [
+   40000.0,
+   5
+  ],
+  "Yamaha | Fazer FI V 2.0|10": [
+   37500.0,
+   4
+  ],
+  "Yamaha | Gladiator|18": [
+   25000.0,
+   2
+  ],
+  "Yamaha | MT 15|0": [
+   135000.0,
+   2
+  ],
+  "Yamaha | MT 15|4": [
+   130000.0,
+   7
+  ],
+  "Yamaha | MT 15|5": [
+   115000.0,
+   21
+  ],
+  "Yamaha | MT 15|6": [
+   110000.0,
+   19
+  ],
+  "Yamaha | MT 15|7": [
+   80000.0,
+   4
+  ],
+  "Yamaha | MT 15 V2|0": [
+   175000.0,
+   19
+  ],
+  "Yamaha | MT 15 V2|1": [
+   170000.0,
+   47
+  ],
+  "Yamaha | MT 15 V2|2": [
+   152500.0,
+   72
+  ],
+  "Yamaha | MT 15 V2|3": [
+   135000.0,
+   53
+  ],
+  "Yamaha | MT 15 V2|4": [
+   125000.0,
+   49
+  ],
+  "Yamaha | MT 15 V2|5": [
+   90000.0,
+   9
+  ],
+  "Yamaha | MT 15 V2|6": [
+   85000.0,
+   4
+  ],
+  "Yamaha | MT 15 V2|12": [
+   57500.0,
+   2
+  ],
+  "Yamaha | R15 V4|0": [
+   190000.0,
+   39
+  ],
+  "Yamaha | R15 V4|1": [
+   170000.0,
+   63
+  ],
+  "Yamaha | R15 V4|2": [
+   160000.0,
+   95
+  ],
+  "Yamaha | R15 V4|3": [
+   148000.0,
+   113
+  ],
+  "Yamaha | R15 V4|4": [
+   140000.0,
+   89
+  ],
+  "Yamaha | R15 V4|5": [
+   127500.0,
+   38
+  ],
+  "Yamaha | R15 V4|6": [
+   125000.0,
+   4
+  ],
+  "Yamaha | R15 V4|7": [
+   95000.0,
+   2
+  ],
+  "Yamaha | R15S|0": [
+   165000.0,
+   4
+  ],
+  "Yamaha | R15S|1": [
+   170000.0,
+   7
+  ],
+  "Yamaha | R15S|2": [
+   150000.0,
+   9
+  ],
+  "Yamaha | R15S|3": [
+   132500.0,
+   12
+  ],
+  "Yamaha | R15S|4": [
+   125000.0,
+   6
+  ],
+  "Yamaha | R15S|5": [
+   120000.0,
+   3
+  ],
+  "Yamaha | R15S|7": [
+   67500.0,
+   4
+  ],
+  "Yamaha | R15S|8": [
+   60000.0,
+   10
+  ],
+  "Yamaha | R15S|9": [
+   65500.0,
+   2
+  ],
+  "Yamaha | R15S|10": [
+   50000.0,
+   8
+  ],
+  "Yamaha | R15S|11": [
+   47500.0,
+   2
+  ],
+  "Yamaha | R15S|14": [
+   55000.0,
+   2
+  ],
+  "Yamaha | R3|9": [
+   275000.0,
+   2
+  ],
+  "Yamaha | R3|10": [
+   262500.0,
+   2
+  ],
+  "Yamaha | Ray Z|7": [
+   32500.0,
+   2
+  ],
+  "Yamaha | Ray Z|11": [
+   37500.0,
+   2
+  ],
+  "Yamaha | Ray Z|12": [
+   17000.0,
+   4
+  ],
+  "Yamaha | Ray Z|13": [
+   35000.0,
+   2
+  ],
+  "Yamaha | Ray ZR 125|0": [
+   90000.0,
+   19
+  ],
+  "Yamaha | Ray ZR 125|1": [
+   85000.0,
+   18
+  ],
+  "Yamaha | Ray ZR 125|2": [
+   80000.0,
+   19
+  ],
+  "Yamaha | Ray ZR 125|3": [
+   65000.0,
+   13
+  ],
+  "Yamaha | Ray ZR 125|4": [
+   53500.0,
+   8
+  ],
+  "Yamaha | Ray ZR 125|5": [
+   50000.0,
+   15
+  ],
+  "Yamaha | Ray ZR 125|6": [
+   40000.0,
+   3
+  ],
+  "Yamaha | SS 125|12": [
+   23500.0,
+   2
+  ],
+  "Yamaha | SS 125|13": [
+   25000.0,
+   3
+  ],
+  "Yamaha | SS 125|14": [
+   30000.0,
+   3
+  ],
+  "Yamaha | SZ R|8": [
+   30000.0,
+   2
+  ],
+  "Yamaha | SZ R|13": [
+   30000.0,
+   5
+  ],
+  "Yamaha | SZ R|14": [
+   30004.0,
+   8
+  ],
+  "Yamaha | SZ R|15": [
+   18500.0,
+   2
+  ],
+  "Yamaha | SZ RR V 2.0|11": [
+   40009.0,
+   3
+  ],
+  "Yamaha | SZ X|16": [
+   27500.0,
+   2
+  ],
+  "Yamaha | SZ-RR|8": [
+   40000.0,
+   5
+  ],
+  "Yamaha | SZ-RR|9": [
+   35000.0,
+   3
+  ],
+  "Yamaha | SZ-RR|10": [
+   25000.0,
+   2
+  ],
+  "Yamaha | SZ-RR|11": [
+   40000.0,
+   3
+  ],
+  "Yamaha | Saluto|6": [
+   60000.0,
+   3
+  ],
+  "Yamaha | Saluto|7": [
+   35000.0,
+   4
+  ],
+  "Yamaha | Saluto|8": [
+   40000.0,
+   7
+  ],
+  "Yamaha | Saluto|9": [
+   32000.0,
+   7
+  ],
+  "Yamaha | Saluto|11": [
+   29999.0,
+   3
+  ],
+  "Yamaha | Saluto RX|9": [
+   25000.0,
+   3
+  ],
+  "Yamaha | Saluto RX|10": [
+   17500.0,
+   2
+  ],
+  "Yamaha | XSR 155|0": [
+   175000.0,
+   26
+  ],
+  "Yamaha | XSR 155|1": [
+   162500.0,
+   14
+  ],
+  "Yamaha | YBR 110|13": [
+   25000.0,
+   2
+  ],
+  "Yamaha | YBR 110|14": [
+   15000.0,
+   3
+  ],
+  "Yamaha | YZ250|4": [
+   72500.0,
+   2
+  ],
+  "Yamaha | YZ250|9": [
+   60000.0,
+   2
+  ],
+  "Yamaha | YZF R15|8": [
+   70000.0,
+   5
+  ],
+  "Yamaha | YZF R15|9": [
+   60000.0,
+   12
+  ],
+  "Yamaha | YZF R15|10": [
+   58000.0,
+   11
+  ],
+  "Yamaha | YZF R15|11": [
+   65000.0,
+   9
+  ],
+  "Yamaha | YZF R15|12": [
+   40000.0,
+   11
+  ],
+  "Yamaha | YZF R15|13": [
+   50000.0,
+   9
+  ],
+  "Yamaha | YZF R15|14": [
+   47500.0,
+   6
+  ],
+  "Yamaha | YZF R15|15": [
+   47500.0,
+   4
+  ],
+  "Yamaha | YZF R15 S|10": [
+   72500.0,
+   2
+  ],
+  "Yamaha | YZF R15 S|11": [
+   49499.5,
+   2
+  ],
+  "Yamaha | YZF R15 V3|0": [
+   157500.0,
+   2
+  ],
+  "Yamaha | YZF R15 V3|1": [
+   157500.0,
+   2
+  ],
+  "Yamaha | YZF R15 V3|2": [
+   120000.0,
+   2
+  ],
+  "Yamaha | YZF R15 V3|3": [
+   140000.0,
+   3
+  ],
+  "Yamaha | YZF R15 V3|4": [
+   120000.0,
+   18
+  ],
+  "Yamaha | YZF R15 V3|5": [
+   110000.0,
+   51
+  ],
+  "Yamaha | YZF R15 V3|6": [
+   100000.0,
+   32
+  ],
+  "Yamaha | YZF R15 V3|7": [
+   100000.0,
+   56
+  ],
+  "Yamaha | YZF R15 V3|8": [
+   89500.0,
+   28
+  ],
+  "Yamaha | YZF R15 V3|10": [
+   477500.0,
+   2
+  ],
+  "Yezdi | Adventure|0": [
+   232500.0,
+   18
+  ],
+  "Yezdi | Adventure|1": [
+   220000.0,
+   47
+  ],
+  "Yezdi | Adventure|2": [
+   180000.0,
+   21
+  ],
+  "Yezdi | Adventure|3": [
+   180000.0,
+   14
+  ],
+  "Yezdi | Adventure|4": [
+   150000.0,
+   23
+  ],
+  "Yezdi | Roadster|0": [
+   225000.0,
+   43
+  ],
+  "Yezdi | Roadster|1": [
+   200000.0,
+   33
+  ],
+  "Yezdi | Roadster|2": [
+   170000.0,
+   18
+  ],
+  "Yezdi | Roadster|3": [
+   160000.0,
+   38
+  ],
+  "Yezdi | Roadster|4": [
+   145000.0,
+   75
+  ],
+  "Yezdi | Scrambler|0": [
+   250000.0,
+   3
+  ],
+  "Yezdi | Scrambler|3": [
+   180000.0,
+   2
+  ],
+  "Yezdi | Scrambler|4": [
+   139999.0,
+   23
+  ],
+  "Zontes | 350X|1": [
+   284999.5,
+   2
+  ]
+ },
+ "test": {
+  "ads_total": 29732,
+  "ads_tested": 13598,
+  "models_tested": 157,
+  "before": {
+   "MAE": 27422.13671875,
+   "R2": 0.34419530630111694,
+   "R2_log": 0.6655940184489598,
+   "within_20pct": 0.511472275334608,
+   "median_abs_pct_err": 0.19525234636287625
+  },
+  "after": {
+   "MAE": 27607.868883772284,
+   "R2": 0.3315503897117893,
+   "R2_log": 0.6875169373878256,
+   "within_20pct": 0.5421385497867334,
+   "median_abs_pct_err": 0.17972445378672147
+  },
+  "overall_ratio": 1.080872876626291,
+  "ratio_by_band": {
+   "0-1": [
+    0.9636821198706941,
+    1375
+   ],
+   "13-30": [
+    1.1449307965364055,
+    1235
+   ],
+   "2-3": [
+    1.0261255849450275,
+    2183
+   ],
+   "4-5": [
+    1.080028190423314,
+    2229
+   ],
+   "6-8": [
+    1.141362698198603,
+    3304
+   ],
+   "9-12": [
+    1.144446126345969,
+    3272
+   ]
+  }
+ }
+}

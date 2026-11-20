@@ -1,0 +1,182 @@
+{
+ "bike": {
+  "Andhra Pradesh": {
+   "ratio": 1.0,
+   "ads": 278
+  },
+  "Assam": {
+   "ratio": 0.9777777777777777,
+   "ads": 199
+  },
+  "Bihar": {
+   "ratio": 1.0,
+   "ads": 567
+  },
+  "Chhattisgarh": {
+   "ratio": 1.0,
+   "ads": 156
+  },
+  "Delhi": {
+   "ratio": 0.9230769230769231,
+   "ads": 1131
+  },
+  "Gujarat": {
+   "ratio": 1.0,
+   "ads": 693
+  },
+  "Haryana": {
+   "ratio": 0.96,
+   "ads": 637
+  },
+  "Jammu and Kashmir": {
+   "ratio": 1.0625,
+   "ads": 131
+  },
+  "Jharkhand": {
+   "ratio": 1.0,
+   "ads": 236
+  },
+  "Karnataka": {
+   "ratio": 1.0810810810810811,
+   "ads": 1199
+  },
+  "Kerala": {
+   "ratio": 1.0,
+   "ads": 135
+  },
+  "Madhya Pradesh": {
+   "ratio": 1.0,
+   "ads": 411
+  },
+  "Maharashtra": {
+   "ratio": 1.0129957805907175,
+   "ads": 1822
+  },
+  "Odisha": {
+   "ratio": 1.0,
+   "ads": 260
+  },
+  "Punjab": {
+   "ratio": 1.0,
+   "ads": 169
+  },
+  "Rajasthan": {
+   "ratio": 1.0,
+   "ads": 417
+  },
+  "Tamil Nadu": {
+   "ratio": 1.0,
+   "ads": 555
+  },
+  "Telangana": {
+   "ratio": 1.0090699904122724,
+   "ads": 614
+  },
+  "Uttar Pradesh": {
+   "ratio": 1.0,
+   "ads": 1664
+  },
+  "Uttarakhand": {
+   "ratio": 1.0,
+   "ads": 175
+  },
+  "West Bengal": {
+   "ratio": 1.0,
+   "ads": 677
+  }
+ },
+ "car": {
+  "Andhra Pradesh": {
+   "ratio": 1.0526315789473684,
+   "ads": 458
+  },
+  "Assam": {
+   "ratio": 0.9836065573770492,
+   "ads": 546
+  },
+  "Bihar": {
+   "ratio": 1.0,
+   "ads": 1020
+  },
+  "Chandigarh": {
+   "ratio": 0.9875771604938272,
+   "ads": 402
+  },
+  "Chhattisgarh": {
+   "ratio": 0.9682459677419355,
+   "ads": 674
+  },
+  "Delhi": {
+   "ratio": 0.93,
+   "ads": 5233
+  },
+  "Gujarat": {
+   "ratio": 1.0,
+   "ads": 4645
+  },
+  "Haryana": {
+   "ratio": 0.918918918918919,
+   "ads": 2397
+  },
+  "Himachal Pradesh": {
+   "ratio": 0.9895833333333334,
+   "ads": 265
+  },
+  "Jammu and Kashmir": {
+   "ratio": 1.0,
+   "ads": 413
+  },
+  "Jharkhand": {
+   "ratio": 0.9574468085106383,
+   "ads": 670
+  },
+  "Karnataka": {
+   "ratio": 1.15,
+   "ads": 3172
+  },
+  "Kerala": {
+   "ratio": 1.103612962193479,
+   "ads": 955
+  },
+  "Madhya Pradesh": {
+   "ratio": 1.0,
+   "ads": 1609
+  },
+  "Maharashtra": {
+   "ratio": 1.0204081632653061,
+   "ads": 10611
+  },
+  "Odisha": {
+   "ratio": 1.0,
+   "ads": 569
+  },
+  "Punjab": {
+   "ratio": 1.0,
+   "ads": 1349
+  },
+  "Rajasthan": {
+   "ratio": 1.0,
+   "ads": 2030
+  },
+  "Tamil Nadu": {
+   "ratio": 1.1214160401002506,
+   "ads": 3200
+  },
+  "Telangana": {
+   "ratio": 1.0757575757575757,
+   "ads": 2161
+  },
+  "Uttar Pradesh": {
+   "ratio": 0.9375,
+   "ads": 4774
+  },
+  "Uttarakhand": {
+   "ratio": 0.9858148893360161,
+   "ads": 556
+  },
+  "West Bengal": {
+   "ratio": 0.8916666666666667,
+   "ads": 1697
+  }
+ }
+}

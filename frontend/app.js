@@ -218,12 +218,25 @@ async function onModel() {
   } catch { /* variants are optional */ }
   updateFields();
 }
+F.fuel.addEventListener("change", () => updateFields());
 function updateFields() {
   const m = current() || {};
   const v = currentVariant();
   const flags = new Set([KIND, m.engine, m.fuel === "electric" ? "ev" : "ice"]);
   if (KIND === "car" && (m.engine !== "market" || !v)) flags.add("carfree");
   $$("[data-for]").forEach((f) => f.classList.toggle("hide", !f.dataset.for.split(" ").every((t) => flags.has(t))));
+  // only the fuels / gearboxes this model came in; electric cars are single-speed, so no gearbox box (sent as Automatic)
+  if (KIND === "car") {
+    const main = { petrol: "Petrol", diesel: "Diesel", cng: "CNG", electric: "Electric", hybrid: "Hybrid", lpg: "LPG" }[m.fuel];
+    const fill = (sel, opts) => {
+      const keep = opts.includes(sel.value) ? sel.value : (opts.includes(main) ? main : opts.includes(m.transmission_mode) ? m.transmission_mode : opts[0]);
+      if ([...sel.options].map((o) => o.value).join() !== opts.join()) sel.innerHTML = opts.map((o) => `<option>${o}</option>`).join("");
+      sel.value = keep;
+    };
+    fill(F.fuel, m.fuels && m.fuels.length ? m.fuels : ["Petrol", "Diesel", "CNG", "Electric", "Hybrid"]);
+    fill(F.trans, m.gearboxes && m.gearboxes.length ? m.gearboxes : ["Manual", "Automatic"]);
+    F.trans.closest(".field").classList.toggle("hide", !flags.has("carfree") || F.fuel.value === "Electric");
+  }
   $("#advEmpty").hidden = $$("#adv .field").some((f) => !f.classList.contains("hide"));
   const yrs = m.years ? ` · ads from ${m.years[0]}–${m.years[1]}` : "";
   $("#engineHint").innerHTML = !m.engine ? "" : m.engine === "market"
@@ -291,7 +304,7 @@ async function run(scrollTo) {
   const body = { type: KIND, brand: F.brand.value, model: F.model.value, year: +F.year.value, km: readKm(),
     owners: +F.owner.value, seller: F.seller.value, state: F.state.value, city: F.city.value || null };
   if (v) body.variant = v.id;
-  if (KIND === "car" && (m.engine !== "market" || !v)) Object.assign(body, { fuel: F.fuel.value, transmission: F.trans.value });
+  if (KIND === "car" && (m.engine !== "market" || !v)) Object.assign(body, { fuel: F.fuel.value, transmission: F.fuel.value === "Electric" ? "Automatic" : F.trans.value });
   if (m.engine === "ml") body.cc = +F.cc.value || null;
   if (KIND === "car" && m.engine === "ml") Object.assign(body, { power: +F.power.value || null, seats: +F.seats.value || null });
   if (m.engine === "dep" && +F.exs.value >= 10000) body.new_price = +F.exs.value;
@@ -420,13 +433,14 @@ function show(d, first, m) {
 
 /* before / after tax: a new one in the chosen state vs this used one */
 function renderTaxBreak(d) {
-  const box = $("#taxBreak"), b = d.tax && d.tax.breakdown;
-  if (!b) { box.hidden = true; return; }
+  const box = $("#taxBreak"), b = (d.tax && d.tax.breakdown) || null;
+  if (!b && !(d.tax && d.tax.then)) { box.hidden = true; return; }
   const pct = (x) => (Math.round(x * 1000) / 10).toString().replace(/\.0$/, "") + "%";
   const row = (label, value, cls = "") => `<div class="tb-row ${cls}"><span>${label}</span><span>${value}</span></div>`;
   const where = d.tax.state ? `in ${esc(d.tax.state)}` : "(state not chosen)";
-  let html;
-  if (b.car_on_road) {
+  let html = "";
+  if (!b) {
+  } else if (b.car_on_road) {
     html = `<h5>New vs used, with taxes</h5>` +
       row("New on-road price (GST, road tax, insurance included)", inr(b.car_on_road), "total") +
       row("This used car", inr(d.price), "used") +
@@ -442,6 +456,16 @@ function renderTaxBreak(d) {
       row("This used one (predicted)", inr(d.price), "used") +
       `<p class="tb-note">Buying used from a private seller adds no GST or road tax, only a small RC transfer fee. ` +
       (b.road_known ? `You'd pay ${inr(Math.max(0, b.on_road - d.price))} less than a new one on the road.` : "") + `</p>`;
+  }
+  const th = d.tax.then;
+  if (th && th.national) {
+    const n = th.national, conf = { high: "official rates", medium: "well-reported rates", low: "rough, few records that far back" }[n.confidence] || "";
+    html += `<h5 class="tb-then">When it was bought (${th.year})</h5>` +
+      row(`National tax then <small>${esc(n.parts)}</small>`, pct(n.rate)) +
+      row(`National tax now <small>${esc(th.national_now.parts)}</small>`, pct(th.national_now.rate)) +
+      (th.road_then ? row(`Road tax then in ${esc(d.tax.state)}`, pct(th.road_then.rate)) : "") +
+      (th.ex_showroom_at_then_tax ? row(`Today's bike at ${th.year} tax`, inr(th.ex_showroom_at_then_tax)) : "") +
+      `<p class="tb-note">From our India tax history file (1990-2026; ${conf}). The price model uses this too: it knows how much tax the first owner paid.</p>`;
   }
   box.innerHTML = html;
   box.hidden = false;

@@ -24,6 +24,18 @@ Course baseline (Kaggle 2020-21 bikes): in Colab, XGBoost R² 0.921 vs the base 
 **Tried and switched off:** battery size, engine cc and power for two-wheelers (battery kWh for 56% of EV ads from variant specs/names) — changes stayed within noise on 138 test EV scooters. More EV ads would help more than more features.
 **Checked end to end:** `backend/tests/sweep_test.py` prices every one of the 1,104 models in the dropdowns at three years plus 15 edge cases — 0 failures; median gap to real ads of the same model and age 5.4%.
 
+## v2: India tax history (20 Nov 2026)
+- `backend/tax_history.py` stores the national tax on a **new** vehicle in India for every year from 1990 to 2026: excise + VAT
+  (before July 2017), GST + cess (2017-2025), GST 2.0 (from 22 Sep 2025), EV rates, and state road-tax periods for two-wheelers.
+  Each rule has a source and a confidence level (pre-2008 rates are rough).
+- `backend/data/tax_history.json` holds the rules; `backend/data/variant_tax_history.csv` holds every variant × every year it was sold (43,978 rows).
+- The v2 models use two inputs from the file: the tax rate the year it was bought, and how that compares with today's rate.
+  Accuracy barely moves (bikes 12.41% → 12.37% typical miss, cars 8.28% → 8.32%). The year already carries most of that signal.
+  An age guard keeps an older vehicle from being priced above a newer one.
+- The Price tab shows "When it was bought": the national tax then and now, plus that year's state road tax.
+- **Fallback (v1, before the tax retrain):** models in `backend/models_v1_pre_tax/`, site in `frontend_v1/`, git tag `v1-pre-tax`.
+  Run it with `RESALEIQ_VERSION=v1 .venv/bin/uvicorn backend.app.main:app --port 8000`.
+
 ## Run it (2 commands)
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt

@@ -31,7 +31,10 @@ BASE_NUMS = ["age", "log_km", "owners", "log_new", "log_new_model"]
 # engine cc and power (the model's, from the BikeWale catalogue). Cars need none: their variant's new price says it.
 # Tested 13 Nov: all two-wheelers 12.4% -> 12.3% typical miss, electric scooters 61.6% -> 63.0% within 20% but
 # 14.1% -> 14.4% typical miss -- all within noise (138 EV scooters in the test set), so they stay switched off.
-EXTRA_NUMS = {"bike": [], "car": []}            # to try again: {"bike": ["battery_kwh", "cc", "bhp"], ...}
+# v2: the Indian tax a new one paid the year it was bought (tax_history.py, 1990-2026) and how it compares with today's
+# tax_then = excise + VAT / GST + cess rate on the price before tax; tax_shift = log(1 + then) - log(1 + now)
+TAX_NUMS = ["tax_then", "tax_shift"]
+EXTRA_NUMS = {"bike": TAX_NUMS, "car": TAX_NUMS}  # specs were tried and dropped: ["battery_kwh", "cc", "bhp"]
 NUMS = list(BASE_NUMS)
 MONO = {"age": -1, "log_km": -1, "owners": -1, "log_new": 1, "log_new_model": 1}
 CFG = {
@@ -112,6 +115,7 @@ def load(kind):
     q1, q3, n = g.transform(lambda s: s.quantile(.25)), g.transform(lambda s: s.quantile(.75)), g.transform("size")
     u = u[(n < 10) | u.lp.between(q1 - 1.5 * (q3 - q1), q3 + 1.5 * (q3 - q1))]
 
+    add_tax(u, kind)
     u["log_km"] = np.log1p(u.km)
     u["log_new"] = np.log(u.new_price)
     u["log_new_model"] = np.log(u.new_price_model)
@@ -123,6 +127,32 @@ def load(kind):
     log = {"ads_loaded": int(n0), "final_rows": int(len(u)), "models": int(u.model_key.nunique()),
            "ev_rows": int((u.fuel == "Electric").sum()), "with_variant_price": float(u.new_price.notna().mean())}
     return u, log
+
+
+def add_tax(u, kind):
+    """tax_then / tax_shift for every ad, from the tax-history rules (engine size: bikes the model's cc, cars from the
+    variant name in litres; car class also uses the body type)."""
+    from datetime import date
+    from tax_history import national_tax
+    if kind == "car":
+        eng = pd.to_numeric(u.versionName.astype(str).str.extract(r"(?<![\d.])([0-4]\.\d)(?![\d])", expand=False), errors="coerce")
+        body = u.bodyStyleId.astype(str)
+    else:
+        eng = pd.to_numeric(u.cc, errors="coerce")
+        body = pd.Series("", index=u.index)
+    keys = pd.DataFrame({"y": u.makeYear.astype(int), "e": eng.round(2), "f": u.fuel, "b": body})
+    memo = {}
+    def rates(y, e, f, b):
+        k = (y, e, f, b)
+        if k not in memo:
+            e = None if e != e else float(e)
+            t = national_tax(kind, date(int(y), 7, 1), e, f, b)["rate"]
+            n = national_tax(kind, date(NOW, 7, 1), e, f, b)["rate"]
+            memo[k] = (t, float(np.log1p(t) - np.log1p(n)))
+        return memo[k]
+    r = [rates(*row) for row in keys.itertuples(index=False)]
+    u["tax_then"] = [x[0] for x in r]
+    u["tax_shift"] = [x[1] for x in r]
 
 
 def to_frame(df, cats):

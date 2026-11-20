@@ -308,7 +308,9 @@ plt.tight_layout(); plt.savefig("figures/m8_shap_beeswarm.png", dpi=150); plt.sh
 # %% [markdown]
 # ## Module 9 — Main models: trained on live 2026 listings (cars and two-wheelers)
 # The models the website uses. Trained on 30,306 BikeWale two-wheeler ads and 91,748 CarWale car ads (Nov 2026).
-# * **Features:** brand, model, exact variant, the variant's new price, fuel, body type, gearbox, state, city, seller type, age, km, owners
+# * **Features:** brand, model, exact variant, the variant's new price, fuel, body type, gearbox, state, city, seller type, age, km, owners,
+#   and (v2) **the Indian tax a new one paid the year it was bought** — from our tax history file `tax_history.py` (1990-2026:
+#   excise + VAT before July 2017, GST + cess after, GST 2.0 from 22 Sep 2025)
 # * **Monotone rules:** the price never rises with age, km or owners, and never falls as the new price rises
 # * **Model:** XGBoost with native categories; several boosted models with different random seeds, averaged
 # * **Benchmarks:** a simple rule (new price × typical share kept at that age) and, for cars, **CarWale's own valuation** on the same ads
@@ -320,7 +322,11 @@ plt.tight_layout(); plt.savefig("figures/m8_shap_beeswarm.png", dpi=150); plt.sh
 import xgboost as xgb
 NOW = 2026
 MCATS = ["brand", "model_key", "variant", "fuel", "body", "transmission", "state", "city", "seller"]
-MNUMS = ["age", "log_km", "owners", "log_new", "log_new_model"]
+sys.path.insert(0, DATA)                          # tax_history.py ships in the data zip
+from tax_history import national_tax
+from datetime import date
+TAX_NUMS = ["tax_then", "tax_shift"]             # tax rate when bought; log(1 + then) - log(1 + today)
+MNUMS = ["age", "log_km", "owners", "log_new", "log_new_model"] + TAX_NUMS
 MONO = {"age": -1, "log_km": -1, "owners": -1, "log_new": 1, "log_new_model": 1}
 SIZE = {"bike": (5, 10), "car": (3, 8)}        # (models averaged, tree depth) -- same as the website
 city_state_full = pd.read_csv(f"{DATA}/city_state_full.csv").drop_duplicates("city")
@@ -370,14 +376,33 @@ def load_market(kind):
     g = u.groupby(["model_key", "ag"], observed=True).lp
     q1, q3, n = g.transform(lambda s: s.quantile(.25)), g.transform(lambda s: s.quantile(.75)), g.transform("size")
     u = u[(n < 10) | u.lp.between(q1 - 1.5 * (q3 - q1), q3 + 1.5 * (q3 - q1))]       # outliers per model + age group
+    add_tax(u, kind, dict(zip(catm.brand + " | " + catm.model, catm.cc)) if kind == "bike" else None)
     u["log_km"] = np.log1p(u.km); u["log_new"] = np.log(u.new_price); u["log_new_model"] = np.log(u.new_price_model)
     for col, k in [("variant", 3), ("city", 25), ("model_key", 3)]:                   # rare categories -> missing
         vc = u[col].value_counts(); u.loc[u[col].map(vc) < k, col] = np.nan
     print(f"{kind}: {n0:,} ads loaded -> {len(u):,} after cleaning, {u.model_key.nunique()} models, {int((u.fuel == 'Electric').sum()):,} electric")
     return u.reset_index(drop=True)
 
-def mframe(df, cats):
-    X = df[MCATS + MNUMS].copy()
+def add_tax(u, kind, cc_map=None):
+    """tax_then / tax_shift per ad. Engine size: bikes the model's cc (catalogue), cars from the variant name in litres."""
+    if kind == "car":
+        eng = pd.to_numeric(u.versionName.astype(str).str.extract(r"(?<![\d.])([0-4]\.\d)(?![\d])", expand=False), errors="coerce")
+        body = u.bodyStyleId.astype(str)
+    else:
+        eng = pd.to_numeric(u.model_key.map(cc_map), errors="coerce")
+        body = pd.Series("", index=u.index)
+    memo, out = {}, []
+    for y, e, f, b in zip(u.makeYear.astype(int), eng.round(2), u.fuel, body):
+        k = (y, e, f, b)
+        if k not in memo:
+            ee = None if e != e else float(e)
+            t = national_tax(kind, date(y, 7, 1), ee, f, b)["rate"]; n = national_tax(kind, date(NOW, 7, 1), ee, f, b)["rate"]
+            memo[k] = (t, np.log1p(t) - np.log1p(n))
+        out.append(memo[k])
+    u["tax_then"] = [x[0] for x in out]; u["tax_shift"] = [x[1] for x in out]
+
+def mframe(df, cats, nums=None):
+    X = df[MCATS + (nums or MNUMS)].copy()
     for c in MCATS:
         X[c] = pd.Categorical(X[c], categories=cats[c])
     return X
@@ -387,22 +412,23 @@ def mmetrics(y, p):
     return {"Ads": len(y), "Typical miss": np.median(e), "Within ±10%": np.mean(e <= .1), "Within ±20%": np.mean(e <= .2),
             "R2 (log)": 1 - np.sum((np.log(y) - np.log(p)) ** 2) / np.sum((np.log(y) - np.log(y).mean()) ** 2)}
 
-def train_market(kind):
-    u = load_market(kind)
+def train_market(kind, nums=None, u=None):
+    nums = nums or MNUMS
+    u = load_market(kind) if u is None else u
     cats = {c: sorted(u[c].dropna().astype(str).unique().tolist()) for c in MCATS}
     tr, te = train_test_split(u, test_size=0.2, random_state=42)
     tr2, va = train_test_split(tr, test_size=0.15, random_state=7)
     seeds, depth = SIZE[kind]
     params = {"objective": "reg:squarederror", "tree_method": "hist", "max_cat_to_onehot": 1, "max_cat_threshold": 16,
               "eta": 0.03, "max_depth": depth, "min_child_weight": 5, "subsample": 0.8, "colsample_bytree": 0.7, "lambda": 3.0,
-              "monotone_constraints": "(" + ",".join(str(MONO.get(f, 0)) for f in MCATS + MNUMS) + ")"}
-    dtr2 = xgb.DMatrix(mframe(tr2, cats), tr2.lp, enable_categorical=True)
-    dva = xgb.DMatrix(mframe(va, cats), va.lp, enable_categorical=True)
+              "monotone_constraints": "(" + ",".join(str(MONO.get(f, 0)) for f in MCATS + nums) + ")"}
+    dtr2 = xgb.DMatrix(mframe(tr2, cats, nums), tr2.lp, enable_categorical=True)
+    dva = xgb.DMatrix(mframe(va, cats, nums), va.lp, enable_categorical=True)
     rounds = [xgb.train({**params, "seed": s}, dtr2, 6000, evals=[(dva, "va")], early_stopping_rounds=200,
                         verbose_eval=False).best_iteration + 1 for s in range(seeds)]
-    dtr = xgb.DMatrix(mframe(tr, cats), tr.lp, enable_categorical=True)
+    dtr = xgb.DMatrix(mframe(tr, cats, nums), tr.lp, enable_categorical=True)
     boosters = [xgb.train({**params, "seed": s}, dtr, num_boost_round=r) for s, r in zip(range(seeds), rounds)]
-    dte = xgb.DMatrix(mframe(te, cats), enable_categorical=True)
+    dte = xgb.DMatrix(mframe(te, cats, nums), enable_categorical=True)
     pt = np.exp(np.mean([b.predict(dte) for b in boosters], axis=0))
     rows = {"All test ads": mmetrics(te.price, pt)}
     seg = te.fuel if kind == "car" else te.fuel + " " + te.body
@@ -422,11 +448,11 @@ def train_market(kind):
     floor = float(np.median(np.abs(d.price[n >= 5] / cell[n >= 5] - 1)))
     out = pd.DataFrame(rows).T
     print(f"noise floor ({kind}): asking prices for the same variant, year and seller sit {floor:.1%} apart (median)")
-    return out, floor, boosters, cats, te
+    return out, floor, boosters, cats, te, u
 
-market_results, floors = {}, {}
+market_results, floors, market_data = {}, {}, {}
 for kind in ("car", "bike"):
-    market_results[kind], floors[kind], *_ = train_market(kind)
+    market_results[kind], floors[kind], *_, market_data[kind] = train_market(kind)
     display(market_results[kind].style.format({"Ads": "{:,.0f}", "Typical miss": "{:.1%}", "Within ±10%": "{:.1%}",
                                                "Within ±20%": "{:.1%}", "R2 (log)": "{:.3f}"}))
 
@@ -441,6 +467,32 @@ for a, kind in zip(ax, ("car", "bike")):
     a.set_title(("Cars" if kind == "car" else "Two-wheelers") + ": typical miss (lower is better)", fontsize=11)
     a.set_xlabel("% gap to the real asking price (median)")
 plt.savefig("figures/m9_market_models.png", dpi=150, bbox_inches="tight"); plt.show()
+
+# %% [markdown]
+# ## Module 9b — India's tax history (1990-2026) and whether it helps the model
+# `tax_history.py` stores the national tax on a NEW vehicle for every year since 1990, with a source and a confidence level
+# for each rule (pre-2008 rates are rough). The website shows it on the Price tab, and the v2 models above use it as an input.
+# Below: the rates over time, then the two-wheeler model trained **with and without** the tax inputs on the same split.
+
+# %%
+yrs = list(range(1990, 2027))
+cases = {"Bike 150cc": ("bike", 150, "Petrol", ""), "Bike 450cc": ("bike", 450, "Petrol", ""), "Electric scooter": ("bike", None, "Electric", ""),
+         "Small car (1.2 L hatch)": ("car", 1.2, "Petrol", "3"), "Big SUV (2.0 L diesel)": ("car", 2.0, "Diesel", "11")}
+plt.figure(figsize=(10, 4.2))
+for name, (k, e, f, b) in cases.items():
+    plt.step(yrs, [national_tax(k, date(y, 7, 1), e, f, b)["rate"] * 100 for y in yrs], where="post", label=name)
+for x, t in [(2017.5, "GST"), (2025.7, "GST 2.0")]:
+    plt.axvline(x, color="#86868b", ls=":", lw=1); plt.text(x + .2, 70, t, color="#86868b", fontsize=9)
+plt.ylabel("National tax on a new one (%)"); plt.title("Tax on a new vehicle in India, 1990-2026 (excise + VAT, then GST)")
+plt.legend(fontsize=8.5, ncol=2); plt.tight_layout(); plt.savefig("figures/m9b_tax_history.png", dpi=150); plt.show()
+
+# %%
+base_nums = [n for n in MNUMS if n not in TAX_NUMS]
+without, *_ = train_market("bike", nums=base_nums, u=market_data["bike"])
+cmp_tbl = pd.DataFrame({"Without tax history (v1)": without.loc["All test ads"], "With tax history (v2)": market_results["bike"].loc["All test ads"]}).T
+display(cmp_tbl.style.format({"Ads": "{:,.0f}", "Typical miss": "{:.2%}", "Within ±10%": "{:.1%}", "Within ±20%": "{:.1%}", "R2 (log)": "{:.4f}"}))
+print("A change under ~0.3 points is noise: the year already tells the model most of what the tax rate does.")
+cmp_tbl.round(4).to_csv("figures/m9b_tax_feature_bike.csv")
 
 # %% [markdown]
 # ## Module 10 — Save tables for the report
