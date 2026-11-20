@@ -357,6 +357,7 @@ function show(d, first, m) {
       : isEv ? ["Battery health", "~" + Math.round(d.battery_health) + "%"] : ["Age", d.age + " yr"]);
     minis.push([KIND === "car" ? "New (ex-showroom)" : "New on-road", inr(d.new_price)]);
   }
+  renderTaxBreak(d);
   $("#miniStats").innerHTML = minis.map(([k, v]) => `<div class="mini"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
   $("#summary").textContent = d.summary + (d.brand_note ? " " + d.brand_note : "");
 
@@ -415,6 +416,35 @@ function show(d, first, m) {
       { xLabel: (x) => `${x}y`, yLabel: money, marker: { x: ai, y: pts[ai].y, label: inr(d.price) } });
     $("#curveLegend").innerHTML = `<span class="lg lg-p"></span> Predicted price · dot = your vehicle`;
   }
+}
+
+/* before / after tax: a new one in the chosen state vs this used one */
+function renderTaxBreak(d) {
+  const box = $("#taxBreak"), b = d.tax && d.tax.breakdown;
+  if (!b) { box.hidden = true; return; }
+  const pct = (x) => (Math.round(x * 1000) / 10).toString().replace(/\.0$/, "") + "%";
+  const row = (label, value, cls = "") => `<div class="tb-row ${cls}"><span>${label}</span><span>${value}</span></div>`;
+  const where = d.tax.state ? `in ${esc(d.tax.state)}` : "(state not chosen)";
+  let html;
+  if (b.car_on_road) {
+    html = `<h5>New vs used, with taxes</h5>` +
+      row("New on-road price (GST, road tax, insurance included)", inr(b.car_on_road), "total") +
+      row("This used car", inr(d.price), "used") +
+      `<p class="tb-note">CarWale lists each car variant's on-road price; its split by state isn't published there. A used car bought from a private seller pays no GST or road tax again, only an RC transfer fee.</p>`;
+  } else {
+    html = `<h5>A new one ${where}, before and after tax</h5>` +
+      row("Price before tax", inr(b.before_tax)) +
+      row(`+ GST ${pct(b.gst_rate)}`, inr(b.gst_amount)) +
+      row("= Ex-showroom price", inr(b.ex_showroom), "sub") +
+      (b.road_known ? row(`+ Road tax ${pct(b.road_rate)}`, inr(b.road_amount)) : row("+ Road tax", "not in our table for this state")) +
+      row("+ Insurance and registration", inr(b.insurance + b.registration)) +
+      row(b.road_known ? "= On-road price (new)" : "= On-road price, before road tax", inr(b.on_road), "total") +
+      row("This used one (predicted)", inr(d.price), "used") +
+      `<p class="tb-note">Buying used from a private seller adds no GST or road tax, only a small RC transfer fee. ` +
+      (b.road_known ? `You'd pay ${inr(Math.max(0, b.on_road - d.price))} less than a new one on the road.` : "") + `</p>`;
+  }
+  box.innerHTML = html;
+  box.hidden = false;
 }
 
 /* result tabs */

@@ -350,6 +350,21 @@ def tax_note(kind, p, info, newp, fuel):
                 t.update({"road_base": base, "road_cess": CESS.get(p.state, 0.0), "road_rate": eff,
                           "road_amount": round(eff * newp, -2), "ex_showroom": round(newp, -2),
                           "cheapest_state": cs, "cheapest_rate": cr, "source": SOURCES.get(p.state)})
+        if newp:
+            # a new one, before and after tax: price before GST -> + GST = ex-showroom -> + road tax, insurance,
+            # registration = on-road. Road tax is unknown for states outside our table (then left out).
+            gst = g_now or 0.0
+            before = newp / (1 + gst)
+            road = t.get("road_amount") if t.get("road_rate") is not None else None
+            ins = dep.insurance_2w(newp, cc, ev)
+            reg = 700 if ev else 1_400
+            t["breakdown"] = {"before_tax": round(before, -2), "gst_rate": gst, "gst_amount": round(newp - before, -2),
+                              "ex_showroom": round(newp, -2), "road_rate": t.get("road_rate"), "road_amount": road,
+                              "insurance": round(ins, -2), "registration": reg,
+                              "on_road": round(newp + (road or 0) + ins + reg, -2), "road_known": road is not None}
+    elif newp:
+        # CarWale gives each car variant's new on-road price (GST, road tax and insurance already inside)
+        t["breakdown"] = {"car_on_road": round(newp, -2)}
     return t if len(t) > 1 else None
 
 
@@ -456,6 +471,8 @@ def predict_dep(kind, p: PredictIn, info):
                               f"similar {'two-wheelers' if kind == '2w' else 'cars'} lose value, measured on real listings. Treat it as a rough guide.")},
         "method": "Each factor multiplies the price in turn (shown as % change).",
     })
+    fuel_word = "Electric" if info.get("fuel") == "electric" else "Petrol"
+    out["tax"] = tax_note(kind, p, info, exs, fuel_word) if kind == "2w" else None
     return out
 
 

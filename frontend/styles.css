@@ -269,3 +269,15 @@ b { font-weight: 600; }
 
 /* a result that no longer matches the form (the update failed) */
 .res.stale .price, .res.stale .range, .res.stale .mini-stats, .res.stale .res-summary, .res.stale .pane:not([data-p="price"]) { opacity: .35; filter: grayscale(.7); }
+
+/* ---------- before / after tax ---------- */
+.tax-break { margin: -6px 0 22px; border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
+.tax-break h5 { font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; letter-spacing: .01em; }
+.tb-row { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; padding: 5px 0; font-variant-numeric: tabular-nums; }
+.tb-row span:first-child { color: var(--muted); }
+.tb-row.sub span:first-child { color: var(--text); font-weight: 600; }
+.tb-row.total { border-top: 1px solid var(--line); margin-top: 4px; padding-top: 9px; font-weight: 700; font-size: 15px; }
+.tb-row.total span:first-child { color: var(--text); }
+.tb-row.used { color: var(--accent); font-weight: 700; }
+.tb-row.used span:first-child { color: var(--accent); }
+.tb-note { font-size: 12px; color: var(--faint); margin-top: 6px; }
